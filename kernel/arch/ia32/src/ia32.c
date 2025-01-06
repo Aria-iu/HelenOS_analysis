@@ -1,0 +1,279 @@
+/*
+ * Copyright (c) 2024 Jiri Svoboda
+ * Copyright (c) 2001-2004 Jakub Jermar
+ * Copyright (c) 2009 Martin Decky
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ *
+ * - Redistributions of source code must retain the above copyright
+ *   notice, this list of conditions and the following disclaimer.
+ * - Redistributions in binary form must reproduce the above copyright
+ *   notice, this list of conditions and the following disclaimer in the
+ *   documentation and/or other materials provided with the distribution.
+ * - The name of the author may not be used to endorse or promote products
+ *   derived from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+ * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+ * IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+ * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+ * NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+
+/** @addtogroup kernel_ia32
+ * @{
+ */
+/** @file
+ */
+
+#include <arch.h>
+#include <arch/arch.h>
+#include <stdint.h>
+#include <errno.h>
+#include <memw.h>
+#include <interrupt.h>
+#include <console/console.h>
+#include <syscall/syscall.h>
+#include <sysinfo/sysinfo.h>
+#include <arch/bios/bios.h>
+#include <arch/boot/boot.h>
+#include <arch/drivers/i8254.h>
+#include <genarch/acpi/acpi.h>
+#include <genarch/drivers/ega/ega.h>
+#include <genarch/drivers/i8042/i8042.h>
+#include <genarch/drivers/i8259/i8259.h>
+#include <genarch/drivers/ns16550/ns16550.h>
+#include <genarch/drivers/legacy/ia32/io.h>
+#include <genarch/fb/bfb.h>
+#include <genarch/kbrd/kbrd.h>
+#include <genarch/srln/srln.h>
+#include <genarch/multiboot/multiboot.h>
+#include <genarch/multiboot/multiboot2.h>
+#include <genarch/pic/pic_ops.h>
+#include <arch/pm.h>
+#include <arch/vreg.h>
+#include <arch/mm/pat.h>
+
+#ifdef CONFIG_SMP
+#include <arch/smp/apic.h>
+#endif
+
+static void ia32_pre_mm_init(void);
+static void ia32_post_mm_init(void);
+static void ia32_post_cpu_init(void);
+static void ia32_pre_smp_init(void);
+static void ia32_post_smp_init(void);
+
+arch_ops_t ia32_ops = {
+	.pre_mm_init = ia32_pre_mm_init,
+	.post_mm_init = ia32_post_mm_init,
+	.post_cpu_init = ia32_post_cpu_init,
+	.pre_smp_init = ia32_pre_smp_init,
+	.post_smp_init = ia32_post_smp_init,
+};
+
+arch_ops_t *arch_ops = &ia32_ops;
+
+/** Perform ia32-specific initialization before main_bsp() is called.
+ *
+ * @param signature Multiboot signature.
+ * @param info      Multiboot information structure.
+ *
+ */
+void ia32_pre_main(uint32_t signature, void *info)
+{
+	/* Parse multiboot information obtained from the bootloader. */
+	multiboot_info_parse(signature, (multiboot_info_t *) info);
+	multiboot2_info_parse(signature, (multiboot2_info_t *) info);
+
+#ifdef CONFIG_SMP
+	size_t unmapped_size = (uintptr_t) unmapped_end - BOOT_OFFSET;
+	/* Copy AP bootstrap routines below 1 MB. */
+	memcpy((void *) AP_BOOT_OFFSET, (void *) BOOT_OFFSET, unmapped_size);
+#endif
+}
+
+void ia32_pre_mm_init(void)
+{
+	pm_init();
+
+#ifndef PROCESSOR_i486
+	/* Use PCD+PWT bit combination in PTE to mean write-combining mode. */
+	if (pat_supported())
+		pat_set_mapping(false, true, true, PAT_TYPE_WRITE_COMBINING);
+#endif
+
+	if (config.cpu_active == 1) {
+		interrupt_init();
+		bios_init();
+
+		/* PIC */
+		i8259_init((i8259_t *) I8259_PIC0_BASE,
+		    (i8259_t *) I8259_PIC1_BASE, IVT_IRQBASE);
+
+		/* Set PIC operations. */
+		pic_ops = &i8259_pic_ops;
+	}
+}
+
+void ia32_post_mm_init(void)
+{
+	vreg_init();
+
+	if (config.cpu_active == 1) {
+		/* Initialize IRQ routing */
+		irq_init(IRQ_COUNT, IRQ_COUNT);
+
+		/* hard clock */
+		i8254_init();
+
+#if (defined(CONFIG_FB) || defined(CONFIG_EGA))
+		bool bfb = false;
+#endif
+
+#ifdef CONFIG_FB
+		bfb = bfb_init();
+#endif
+
+#ifdef CONFIG_EGA
+		if (!bfb) {
+			outdev_t *egadev = ega_init(EGA_BASE, EGA_VIDEORAM);
+			if (egadev)
+				stdout_wire(egadev);
+		}
+#endif
+
+		/* Merge all memory zones to 1 big zone */
+		zone_merge_all();
+	}
+}
+
+void ia32_post_cpu_init(void)
+{
+#ifdef CONFIG_SMP
+	if (config.cpu_active > 1) {
+		l_apic_init();
+		l_apic_debug();
+	}
+#endif
+}
+
+void ia32_pre_smp_init(void)
+{
+	if (config.cpu_active == 1) {
+#ifdef CONFIG_SMP
+		acpi_init();
+#endif /* CONFIG_SMP */
+	}
+}
+
+void ia32_post_smp_init(void)
+{
+	/* Currently the only supported platform for ia32 is 'pc'. */
+	static const char *platform = "pc";
+
+	sysinfo_set_item_data("platform", NULL, (void *) platform,
+	    str_size(platform));
+
+#ifdef CONFIG_PC_KBD
+	/*
+	 * Initialize the i8042 controller. Then initialize the keyboard
+	 * module and connect it to i8042. Enable keyboard interrupts.
+	 */
+	i8042_instance_t *i8042_instance = i8042_init((i8042_t *) I8042_BASE, IRQ_KBD);
+	if (i8042_instance) {
+		kbrd_instance_t *kbrd_instance = kbrd_init();
+		if (kbrd_instance) {
+			indev_t *sink = stdin_wire();
+			indev_t *kbrd = kbrd_wire(kbrd_instance, sink);
+			i8042_wire(i8042_instance, kbrd);
+			pic_ops->enable_irqs(1 << IRQ_KBD);
+			pic_ops->enable_irqs(1 << IRQ_MOUSE);
+		}
+	}
+#endif
+
+#if (defined(CONFIG_NS16550) || defined(CONFIG_NS16550_OUT))
+	/*
+	 * Initialize the ns16550 controller.
+	 */
+#ifdef CONFIG_NS16550_OUT
+	outdev_t *ns16550_out;
+	outdev_t **ns16550_out_ptr = &ns16550_out;
+#else
+	outdev_t **ns16550_out_ptr = NULL;
+#endif
+	ns16550_instance_t *ns16550_instance =
+	    ns16550_init(NS16550_BASE, 0, IRQ_NS16550, NULL, NULL,
+	    ns16550_out_ptr);
+	if (ns16550_instance) {
+		ns16550_format_set(ns16550_instance, 38400,
+		    LCR_PARITY_NONE | LCR_STOP_BIT_TWO | LCR_WORD_LEN_8);
+#ifdef CONFIG_NS16550
+		srln_instance_t *srln_instance = srln_init();
+		if (srln_instance) {
+			indev_t *sink = stdin_wire();
+			indev_t *srln = srln_wire(srln_instance, sink);
+			ns16550_wire(ns16550_instance, srln);
+			pic_ops->enable_irqs(1 << IRQ_NS16550);
+		}
+#endif
+#ifdef CONFIG_NS16550_OUT
+		if (ns16550_out) {
+			stdout_wire(ns16550_out);
+		}
+#endif
+	}
+#endif
+
+	sysinfo_set_item_val(pic_ops->get_name(), NULL, true);
+}
+
+void calibrate_delay_loop(void)
+{
+	i8254_calibrate_delay_loop();
+	if (config.cpu_active == 1) {
+		/*
+		 * This has to be done only on UP.
+		 * On SMP, i8254 is not used for time keeping and its interrupt pin remains masked.
+		 */
+		i8254_normal_operation();
+	}
+}
+
+/** Construct function pointer
+ *
+ * @param fptr   function pointer structure
+ * @param addr   function address
+ * @param caller calling function address
+ *
+ * @return address of the function pointer
+ *
+ */
+void *arch_construct_function(fncptr_t *fptr, void *addr, void *caller)
+{
+	return addr;
+}
+
+void arch_reboot(void)
+{
+#ifdef CONFIG_PC_KBD
+	i8042_cpu_reset((i8042_t *) I8042_BASE);
+#endif
+}
+
+void irq_initialize_arch(irq_t *irq)
+{
+	(void) irq;
+}
+
+/** @}
+ */

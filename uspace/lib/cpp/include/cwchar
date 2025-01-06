@@ -1,0 +1,105 @@
+/*
+ * Copyright (c) 2018 Jaroslav Jindrak
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ *
+ * - Redistributions of source code must retain the above copyright
+ *   notice, this list of conditions and the following disclaimer.
+ * - Redistributions in binary form must reproduce the above copyright
+ *   notice, this list of conditions and the following disclaimer in the
+ *   documentation and/or other materials provided with the distribution.
+ * - The name of the author may not be used to endorse or promote products
+ *   derived from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+ * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+ * IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+ * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+ * NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+
+#ifndef LIBCPP_WCHAR
+#define LIBCPP_WCHAR
+
+#include <wchar.h>
+#include <time.h>
+
+namespace std
+{
+    /* using ::mbstate_t; */
+    using ::size_t;
+    using ::wint_t;
+    using ::tm;
+
+    /* using ::wcscpy; */
+    /* using ::wcsncpy; */
+    /* using ::wcscat; */
+    /* using ::wcsncat; */
+    /* using ::wcsnxfrm; */
+
+    /* using ::wcslen; */
+    /* using ::wcscmp; */
+    /* using ::wcsncmp; */
+    /* using ::wcscoll; */
+    /* using ::wcschr; */
+    /* using ::wcsrchr; */
+    /* using ::wcsspn; */
+    /* using ::wcscspn; */
+    /* using ::wcspbrk; */
+    /* using ::wcsstr; */
+    /* using ::wcstok; */
+
+    /* using ::wmemcpy; */
+    /* using ::wmemmove; */
+    /* using ::wmemcmp; */
+    /* using ::wmemchr; */
+    /* using ::wmemset; */
+
+    /* using ::msbinit; */
+    /* using ::btowc; */
+    /* using ::wctob; */
+    /* using ::mbrlen; */
+    /* using ::mbrtowc; */
+    /* using ::wctomb; */
+    /* using ::mbsrtowcs; */
+    /* using ::wcsrtombs; */
+
+    /* using ::fgetwc; */
+    /* using ::getwc; */
+    /* using ::fgetws; */
+    /* using ::fputwc; */
+    /* using ::putwc; */
+    /* using ::fputws; */
+    /* using ::getwchar; */
+    /* using ::putwchar; */
+    /* using ::ungetwc; */
+    /* using ::fwide; */
+    /* using ::wscanf; */
+    /* using ::fwscanf; */
+    /* using ::swscanf; */
+    /* using ::vwscanf; */
+    /* using ::vfwscanf; */
+    /* using ::vswscanf; */
+    /* using ::wprintf; */
+    /* using ::fwprintf; */
+    /* using ::swprintf; */
+
+    /* using ::wcsftime; */
+    /* using ::wcstol; */
+    /* using ::wcstoll; */
+    /* using ::wcstoul; */
+    /* using ::wcstoull; */
+    /* using ::wcstof; */
+    /* using ::wcstod; */
+    /* using ::wcstold; */
+}
+
+#endif

@@ -1,0 +1,66 @@
+i8259:
+	match 100 isa/i8259
+	mem_range 0x20 2
+	mem_range 0xa0 2
+
+apic:
+	match 100 isa/apic
+	mem_range 0xfec00000 0x14
+
+com1:
+	match 100 isa/ns8250
+	irq 4
+	io_range 3f8 8
+
+com2:
+	match 100 isa/ns8250
+	irq 3
+	io_range 2f8 8
+
+lpt1:
+	match 100 isa/lpt
+	io_range 378 8
+	irq 7
+
+lpt2:
+	match 100 isa/lpt
+	io_range 278 8
+	irq 5
+
+i8042:
+	match 100 isa/i8042
+	irq 1
+	irq 12
+	io_range 060 5
+
+ne2k:
+	match 100 isa/ne2k
+	irq 5
+	io_range 300 20
+
+sb16:
+	match 100 isa/sb16
+	io_range 220 20
+	io_range 330 2
+	irq 5
+	dma 1
+	dma 5
+
+cmos-rtc:
+	match 100 isa/cmos-rtc
+	io_range 70 2
+
+fdc:
+	match 100 isa/fdc
+	io_range 0x3f0 8
+	irq 6
+	dma 2
+
+ide1:
+	match 100 isa/ide
+	io_range 0x1f0 8
+	io_range 0x3f0 8
+	io_range 0x170 8
+	io_range 0x370 8
+	irq 14
+	irq 15

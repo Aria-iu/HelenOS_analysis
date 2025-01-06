@@ -1,0 +1,84 @@
+#!/bin/sh
+
+#
+# Copyright (c) 2019 Jiří Zárevúcky
+# All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions
+# are met:
+#
+# - Redistributions of source code must retain the above copyright
+#   notice, this list of conditions and the following disclaimer.
+# - Redistributions in binary form must reproduce the above copyright
+#   notice, this list of conditions and the following disclaimer in the
+#   documentation and/or other materials provided with the distribution.
+# - The name of the author may not be used to endorse or promote products
+#   derived from this software without specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+# IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+# OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+# IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+# INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+# NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+# DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+# THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+# (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+# THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+
+usage()
+{
+	echo "Usage:"
+	echo
+	echo "	$0 search_pattern [-- <pathspec> ]"
+	echo "	$0 search_pattern replacement [-- <pathspec> ]"
+	echo
+	echo "Pattern should be a basic regexp as accepted by grep and sed."
+	echo "For information on pathspec syntax, see git documentation."
+	echo
+	exit 1
+}
+
+check_unstaged()
+{
+	if ( git status --porcelain | grep '^.[^ ]' ); then
+		echo "You have unstaged changes in your tree."
+		echo "Either stage them with 'git add', commit them,"
+		echo "or discard them with 'git checkout -- .'"
+		exit 1
+	fi
+}
+
+_slashify()
+{
+	# Some shells have shoddy handling of backslashes in echo.
+	printf '%s\n' "$1" | sed 's/\([^\\]\)\//\1\\\//g'
+}
+
+if [ "$1" = "--" ]; then
+	usage
+elif [ "$1" = "-d" ]; then
+	check_unstaged
+
+	pattern=`_slashify "$2"`
+	shift
+	shift
+	git grep -I -l "$pattern" "$@" | xargs sed -i "/$pattern/d"
+
+elif [ "$#" -eq 1 ]  || [ "$2" = "--" ]; then
+	pattern=`_slashify "$1"`
+	shift
+	git grep -I -n "$pattern" "$@"
+elif [ "$#" -eq 2 ] || [ "$3" = "--" ]; then
+	check_unstaged
+
+	pattern=`_slashify "$1"`
+	replacement=`_slashify "$2"`
+	shift
+	shift
+	git grep -I -l "$pattern" "$@" | xargs sed -i "s/$pattern/$replacement/g"
+else
+	usage
+fi

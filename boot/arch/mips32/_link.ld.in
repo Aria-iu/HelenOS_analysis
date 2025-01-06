@@ -1,0 +1,36 @@
+ENTRY(start)
+
+SECTIONS {
+#if defined(MACHINE_msim)
+	. = 0xbfc00000;
+#elif defined(MACHINE_lmalta) || defined(MACHINE_bmalta)
+	. = 0x80103000;
+#endif
+	.text : {
+		loader_start = .;
+		KEEP(*(BOOTSTRAP));
+		*(.text .text.*);
+	}
+	.data : {
+		*(.data .data.*);       /* initialized data */
+		*(.rodata .rodata.*);
+		*(.sdata .sdata.*);
+		*(.reginfo);
+		*(.sbss .sbss.*);
+		*(.scommon .scommon.*);
+		*(.bss .bss.*);        /* uninitialized static variables */
+		*(COMMON);      /* global variables */
+		loader_end = .;
+		payload_start = .;
+		KEEP(*(.payload));
+		payload_end = .;
+	}
+
+	/DISCARD/ : {
+		*(.gnu.*);
+		*(.mdebug*);
+		*(.pdr);
+		*(.comment);
+		*(.note);
+	}
+}

@@ -1,0 +1,33 @@
+#include <arch/arch.h>
+
+ENTRY(start)
+
+SECTIONS {
+	. = 0x0;
+	.text : {
+		HIDDEN(loader_start = .);
+		KEEP(*(BOOTSTRAP));
+		*(.text .text.*);
+	}
+	.dynamic : { *(.dynamic); }
+	.rela.got : { *(.rela.got); }
+	.hash : { *(.hash); }
+	.dynsym : { *(.dynsym); }
+	.dynstr : { *(.dynstr); }
+	. = 0x8000;
+	.data : {
+		*(.data .data.*);      /* initialized data */
+		*(.rodata .rodata.*);
+		*(.bss .bss.*);        /* uninitialized static variables */
+		*(COMMON);      /* global variables */
+		*(.got .got.*);
+		HIDDEN(loader_end = .);
+		HIDDEN(payload_start = .);
+		KEEP(*(.payload));
+		HIDDEN(payload_end = .);
+	}
+
+	/DISCARD/ : {
+		*(*);
+	}
+}
