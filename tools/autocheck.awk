@@ -30,6 +30,36 @@
 # Authors:
 # 	Jiří Zárevúcky <jiri.zarevucky@nic.cz>
 
+# 这段代码是一个用 awk 编写的脚本，主要用于处理 C 语言的结构体定义文件，
+# 并生成一些静态断言来验证结构体的大小和成员的偏移量。
+# 
+#	输入: 一个包含 C 语言结构体定义的文件。
+# 	输出: 生成一些静态断言（_Static_assert），用于验证结构体的大小和成员的偏移量是否符合预期。
+#
+# 	输入：example_structs.h
+#	typedef struct example_struct {
+#	    int a;
+#	    char b;
+#	    double c;
+#	} example_struct_t;
+#	输出：example_structs.check.c
+#	// Generated file. Fix the included header if static assert fails.
+#	// Inlined "example_structs.h"
+#	typedef struct example_struct {
+#		int a;
+#		char b;
+#		double c;
+#	} example_struct_t;
+#
+#	_Static_assert(EXAMPLE_STRUCT_SIZE == sizeof(struct example_struct), "");
+#	_Static_assert(EXAMPLE_STRUCT_OFFSET_A == __builtin_offsetof(struct example_struct, a), "");
+#	_Static_assert(EXAMPLE_STRUCT_SIZE_A == sizeof(((struct example_struct){ }).a), "");
+#	_Static_assert(EXAMPLE_STRUCT_OFFSET_B == __builtin_offsetof(struct example_struct, b), "");
+#	_Static_assert(EXAMPLE_STRUCT_SIZE_B == sizeof(((struct example_struct){ }).b), "");
+#	_Static_assert(EXAMPLE_STRUCT_OFFSET_C == __builtin_offsetof(struct example_struct, c), "");
+#	_Static_assert(EXAMPLE_STRUCT_SIZE_C == sizeof(((struct example_struct){ }).c), "");
+
+
 BEGIN {
 	filename = ARGV[1]
 	output_lines = 0

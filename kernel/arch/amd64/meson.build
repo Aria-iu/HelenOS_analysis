@@ -78,6 +78,8 @@ _check_headers = [
 	'include/arch/kseg_struct.h',
 ]
 # 这里使用的 autocheck 生成器是在 meson/part/tools下定义的一个工具。
+# 将autockeck处理国的 _check_headers 的头文件加入 arch_src 中
+# autocheck.process(h)返回的文件是元文件.check.c
 foreach h : _check_headers
 	arch_src += [ autocheck.process(h) ]
 endforeach

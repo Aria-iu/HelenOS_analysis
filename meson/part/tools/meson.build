@@ -104,6 +104,7 @@ endif
 
 # 定义 autocheck 生成器：
 # 使用 autocheck.awk 脚本生成 .check.c 文件。这个生成器会将输入文件作为参数传递给 autocheck.awk 脚本，并捕获输出生成 .check.c 文件.
+# 生成的文件是原文件的后缀加上.check.c
 autocheck = generator(find_program(_tools_dir / 'autocheck.awk'),
 	arguments: [ '@INPUT@' ],
 	output: '@PLAINNAME@.check.c',
