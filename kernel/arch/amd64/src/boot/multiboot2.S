@@ -124,21 +124,35 @@ multiboot2_header_start:
 	tag_terminator_end:
 multiboot2_header_end:
 
+//  START_STACK = BOOT_OFFSET - BOOT_STACK_SIZE 
+//	BOOT_OFFSET     = 0x108000
+//  AP_BOOT_OFFSET  = 0x008000
+//  BOOT_STACK_SIZE = 0x000400
+//  START_STACK = 0x108000 - 0x000400
 SYMBOL(multiboot2_image_start)
-	cli
-	cld
+	cli					// 清除中断标志（Clear Interrupt Flag）。这条指令会禁用中断，防止在初始化过程中被中断打断。
+	cld					// 清除方向标志（Clear Direction Flag）。这条指令通常用于字符串操作指令，确保字符串操作是从低地址向高地址进行的。
 
 	/* Initialize stack pointer */
+	// 将START_STACK的值移动到esp寄存器中。esp是x86体系结构中的堆栈指针寄存器，用于指向当前栈顶的地址。
 	movl $START_STACK, %esp
 
 	/*
-	 * Initialize Global Descriptor Table and
-	 * Interrupt Descriptor Table registers
+	 * Initialize 
+	 * Global Descriptor Table and
+	 * Interrupt Descriptor Table 
+	 * registers
+	 */
+	/*
+	 *	这里加载的是和multiboot的同一个bootstrap_gdtr和bootstrap_idtr
 	 */
 	lgdtl bootstrap_gdtr
 	lidtl bootstrap_idtr
 
 	/* Kernel data + stack */
+	// $GDT_SELECTOR(KDATA_DES) 是一个宏，计算内核数据段的选择器。
+	// 设置内核数据段和栈段的寄存器。通过加载GDT和IDT指针，
+	// CPU可以访问相应的描述符表，从而正确地管理内存段和中断处理。
 	movw $GDT_SELECTOR(KDATA_DES), %cx
 	movw %cx, %es
 	movw %cx, %ds
@@ -148,10 +162,18 @@ SYMBOL(multiboot2_image_start)
 	 * Simics seems to remove hidden part of GS on entering user mode
 	 * when _visible_ part of GS does not point to user-mode segment.
 	 */
+	// 计算用户数据段的选择器
+	// 将 %cx 寄存器中的值（用户数据段的选择器）移动到 %fs 寄存器中，设置 fs 段为用户数据段。
+	// 将 %cx 寄存器中的值（用户数据段的选择器）移动到 %gs 寄存器中，设置 gs 段为用户数据段。
 	movw $GDT_SELECTOR(UDATA_DES), %cx
 	movw %cx, %fs
 	movw %cx, %gs
 
+	// jmpl 是一个长跳转指令，用于切换到一个新的代码段并跳转到指定的地址。
+	// 通过 jmpl 指令，CPU切换到由 GDT_SELECTOR(KTEXT32_DES) 指定的代码段。这通常用于从当前的代码段切换到内核的32位代码段。
+	// 跳转到 multiboot2_meeting_point 标签所指示的地址，继续执行后续的代码。
+	// 在操作系统启动过程中，可能会使用长跳转来切换到不同的代码段，例如从启动代码段切换到内核代码段。
+	// 切换到保护模式。
 	jmpl $GDT_SELECTOR(KTEXT32_DES), $multiboot2_meeting_point
 	multiboot2_meeting_point:
 
@@ -159,8 +181,12 @@ SYMBOL(multiboot2_image_start)
 	 * Protected 32-bit. We want to reuse the code-seg descriptor,
 	 * the Default operand size must not be 1 when entering long mode.
 	 */
-
+	
 	/* Save multiboot arguments */
+	// multiboot_eax 定义在 multiboot.S 中，为 .long 0
+	// multiboot_ebx 定义在 multiboot.S 中，为 .long 0
+	// 这两条指令将多引导（Multiboot）参数保存到内存中的变量 multiboot_eax 和 multiboot_ebx 中。
+	// 这些参数是由引导加载器传递给内核的，包含了启动时的配置信息。
 	movl %eax, multiboot_eax
 	movl %ebx, multiboot_ebx
 

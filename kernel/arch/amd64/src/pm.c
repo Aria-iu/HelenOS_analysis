@@ -46,11 +46,18 @@
  * mode, we use, for each privilege level, two segments spanning the
  * whole memory. One is for code and one is for data.
  */
-
+// 这是 GDT 表，如果 config 了 FB （framebuffer），那么就要有10项，不然，有8项（8个段）。 
+// 下面各段的基地址都初始化为 0。
 descriptor_t gdt[GDT_ITEMS] = {
+	// 空描述符
 	[NULL_DES] = {
 		0
 	},
+	// 内核代码段描述符
+	// 段限长 4GB - 1 ， 段大小 4GB
+	// 内核特权级
+	// 启用长模式
+	// 页面颗粒度为1 ， 4KB一个页面。
 	[KTEXT_DES] = {
 		.limit_0_15 = 0xffffU,
 		.limit_16_19 = 0xfU,
@@ -58,12 +65,21 @@ descriptor_t gdt[GDT_ITEMS] = {
 		.longmode = 1,
 		.granularity = 1
 	},
+	// 内核数据段描述符
+	// 段限长 4GB - 1 ， 段大小 4GB
+	// 内核特权级
+	// 页面颗粒度为1 ， 4KB一个页面。
 	[KDATA_DES] = {
 		.limit_0_15 = 0xffffU,
 		.limit_16_19 = 0xfU,
 		.access = AR_PRESENT | AR_DATA | AR_WRITABLE | DPL_KERNEL,
 		.granularity = 1
 	},
+	// 用户数据段描述符
+	// 段限长 4GB - 1 ， 段大小 4GB
+	// 用户特权级
+	// 特殊位，通常用于任务状态段（TSS）或其他特殊用途。
+	// 页面颗粒度为1 ， 4KB一个页面。
 	[UDATA_DES] = {
 		.limit_0_15 = 0xffffU,
 		.limit_16_19 = 0xfU,
@@ -71,6 +87,8 @@ descriptor_t gdt[GDT_ITEMS] = {
 		.special = 1,
 		.granularity = 1
 	},
+	// 用户代码段描述符：
+	// 与内核代码段类似，但特权级为用户级（特权级3）。
 	[UTEXT_DES] = {
 		.limit_0_15 = 0xffffU,
 		.limit_16_19 = 0xfU,
@@ -78,6 +96,8 @@ descriptor_t gdt[GDT_ITEMS] = {
 		.longmode = 1,
 		.granularity = 1
 	},
+	// 内核32位代码段描述符：
+	// .special = 1：表示这是一个非长模式的代码段。
 	[KTEXT32_DES] = {
 		.limit_0_15 = 0xffffU,
 		.limit_16_19 = 0xfU,
@@ -89,6 +109,7 @@ descriptor_t gdt[GDT_ITEMS] = {
 	 * TSS descriptor - set up will be completed later,
 	 * on AMD64 it is 64-bit - 2 items in the table
 	 */
+	// 任务状态段（TSS）描述符，用于任务切换。
 	[TSS_DES] = {
 		0
 	},

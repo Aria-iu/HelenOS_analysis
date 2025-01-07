@@ -73,10 +73,10 @@ multiboot_header:
 	.long MULTIBOOT_HEADER_FLAGS							  /* 指示内核支持的特性，如是否需要图形帧缓冲区等 */
 	.long -(MULTIBOOT_HEADER_MAGIC + MULTIBOOT_HEADER_FLAGS)  /* checksum */
 	.long multiboot_header									  /* 标记 Multiboot 头的开始位置 */
-	.long unmapped_start									  /* 这是内核未映射段的起始地址. */
+	.long unmapped_start									  /* 这是内核未映射段的起始地址. load_addr */
 	.long 0
 	.long 0
-	.long multiboot_image_start								  /* 内核映像的起始地址 */
+	.long multiboot_image_start								  /* 内核映像的起始地址 entry_addr */
 
 SYMBOL(multiboot_image_start)
 	cli
@@ -682,15 +682,21 @@ SYMBOL(ptl_0)
 	.fill 255, 8, 0
 #endif
 
+// 这条指令用于指定代码将要写入的段（section）。K_DATA_START 是段的名称，通常表示内核数据段的开始位置。
+// "aw" 是段的属性: 可分配+可写
+// @progbits 是段的类型，表示这是一个程序数据段，包含实际的程序数据。
 .section K_DATA_START, "aw", @progbits
-
+// .word 0：定义了一个16位的值，初始化为0。这是IDT的大小字段。
+// .long 0：定义了一个32位的值，初始化为0。这是IDT的基地址字段。
+// IDT用于处理中断和异常
 SYMBOL(bootstrap_idtr)
 	.word 0
 	.long 0
 
+// GDT用于定义段的属性和权限
 SYMBOL(bootstrap_gdtr)
-	.word GDT_SELECTOR(GDT_ITEMS)
-	.long KA2PA(gdt)
+	.word GDT_SELECTOR(GDT_ITEMS)	// 表示GDT的大小，若有n个GDT表项，那么就是 8*n 个字节。
+	.long KA2PA(gdt)				// 定义了GDT的基地址字段。将gdt从Kernel_Address - 0xffffffff80000000 的偏移。
 
 SYMBOL(multiboot_eax)
 	.long 0
