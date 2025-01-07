@@ -38,11 +38,14 @@
 #include <arch/cpu.h>
 
 #define START_STACK  (BOOT_OFFSET - BOOT_STACK_SIZE)
-
+/*
+	若系统使用BIOS启动，GRUB就会作为32位程序加载运行，再将内核的映像文件加载到内存中。
+*/
+// 这里表示这个汇编文件被编译后会被链接到 section K_TEXT_START，也就是内核的入口部分（根据_link.ld）
 .section K_TEXT_START, "ax"
 
 .code32
-
+// 下面定义了三个宏，分别是pm_error  pm_status  pm2_status
 .macro pm_error msg
 	movl \msg, %esi
 	jmp pm_error_halt
@@ -63,16 +66,17 @@
 #endif
 .endm
 
+// 4字节对齐，这是32位程序。
 .align 4
 multiboot_header:
-	.long MULTIBOOT_HEADER_MAGIC
-	.long MULTIBOOT_HEADER_FLAGS
+	.long MULTIBOOT_HEADER_MAGIC							  /* 标识这是一个Multiboot头，值为 0x1badb002 */
+	.long MULTIBOOT_HEADER_FLAGS							  /* 指示内核支持的特性，如是否需要图形帧缓冲区等 */
 	.long -(MULTIBOOT_HEADER_MAGIC + MULTIBOOT_HEADER_FLAGS)  /* checksum */
-	.long multiboot_header
-	.long unmapped_start
+	.long multiboot_header									  /* 标记 Multiboot 头的开始位置 */
+	.long unmapped_start									  /* 这是内核未映射段的起始地址. */
 	.long 0
 	.long 0
-	.long multiboot_image_start
+	.long multiboot_image_start								  /* 内核映像的起始地址 */
 
 SYMBOL(multiboot_image_start)
 	cli

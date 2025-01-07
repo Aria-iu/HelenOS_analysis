@@ -35,7 +35,9 @@
 #include <genarch/multiboot/multiboot2.h>
 
 #define START_STACK  (BOOT_OFFSET - BOOT_STACK_SIZE)
-
+/*
+	若系统使用UEFI启动，GRUB就会作为64位程序加载运行，再将内核的映像文件加载到内存中。
+*/
 .section K_TEXT_START, "ax"
 
 .code32

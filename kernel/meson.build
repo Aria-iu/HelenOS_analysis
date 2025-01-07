@@ -100,6 +100,9 @@ subdir('test')
 #################################################################################
 
 # 定义内核编译头文件目录。
+# 编译静态库的头文件目录有：
+#		generic/include  genarch/include  arch/amd64/include  ../abi/arch/amd64/include
+#		../abi/include	 ../common/include  test
 kernel_include_dirs = include_directories(
 	'generic/include',
 	'genarch/include',
