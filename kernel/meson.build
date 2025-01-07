@@ -89,7 +89,7 @@ subdir('generic')
 #################################################################################
 #							变量表
 #	generic_src
-#
+#	instrumentable_src
 #################################################################################
 # Defines test_src
 subdir('test')
@@ -198,6 +198,14 @@ if cc.get_id() == 'clang'
 endif
 
 # instrumentables 和 noninstrumentables 是两个静态库目标，分别用于构建需要和不需要进行函数调用跟踪的代码模块。
+
+# instrumentables 静态库
+#名称: instrumentables
+#源文件: instrumentable_src
+#包含目录: kernel_include_dirs
+#隐式包含目录: false（不自动包含源文件所在目录）
+#C 编译参数: kernel_c_args，如果 CONFIG_TRACE 为真，则添加 -finstrument-functions 参数。这个参数用于启用函数调用跟踪，通常用于调试和性能分析。
+#位置无关代码: false（不生成位置无关代码，通常用于静态库）
 instrumentables = static_library('instrumentables', instrumentable_src,
 	include_directories: kernel_include_dirs,
 	implicit_include_directories: false,
@@ -205,6 +213,13 @@ instrumentables = static_library('instrumentables', instrumentable_src,
 	pic: false,
 )
 
+# noninstrumentables 静态库
+#名称: noninstrumentables
+#源文件: arch_src, genarch_src, generic_src, test_src
+#包含目录: kernel_include_dirs
+#隐式包含目录: false
+#C 编译参数: kernel_c_args
+#位置无关代码: false
 noninstrumentables = static_library('noninstrumentables', arch_src, genarch_src, generic_src, test_src,
 	include_directories: kernel_include_dirs,
 	implicit_include_directories: false,
@@ -219,6 +234,16 @@ kernel_map_name = kernel_name + '.map'
 kernel_map_path = meson.current_build_dir() / kernel_map_name
 
 # kernel_elf 是一个可执行文件目标，用于构建最终的内核 ELF 文件。它会将所有静态库链接在一起，并生成一个包含符号表的映射文件 kernel.map。
+# kernel_elf 是最终的内核 ELF 文件，它将所有静态库链接在一起，并生成一个包含符号表的映射文件 kernel.map，用于调试和分析内核的符号和内存布局.
+#******** 详细解析 ************
+# 	编译内核的选项：
+#		1. 	include文件目录： kernel_include_dirs
+#		2.  编译c文件的参数 ： kernel_c_args
+#		3.  链接参数		  ： kernel_c_args + kernel_linl_args + -Wl,-Map /home/zyc/code/build/amd64_dbg/kernel/kernel.elf.map
+#		4.	链接依赖		  ： _link.ld
+#		5. 	链接整个静态库  :  all_kernel_objects（包括 instrumentables 和 noninstrumentables）
+#		6.  位置无关代码	  :  false（不生成位置无关代码）
+##############################
 kernel_elf = executable(kernel_name,
 	include_directories: kernel_include_dirs,
 	implicit_include_directories: false,
@@ -230,6 +255,7 @@ kernel_elf = executable(kernel_name,
 	link_whole: all_kernel_objects,
 	pie: false,
 )
+
 
 # kernel_dbg 是一个自定义目标，用于从内核 ELF 文件中提取调试信息，生成 kernel.dbg 文件。
 kernel_dbg = custom_target('kernel.dbg',
