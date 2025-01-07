@@ -81,6 +81,7 @@
 #####################################################################################################################
 
 # _config_file：将 Makefile.config 文件从构建根目录复制到当前目录
+# build_root()下的 Makefile.config 是由 configure.sh ARCH 生成的。。。
 _config_file = configure_file(
 	input: meson.build_root() / 'Makefile.config',
 	output: 'Makefile.config',

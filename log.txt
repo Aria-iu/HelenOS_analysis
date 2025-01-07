@@ -1,0 +1,50 @@
+kernel_elf = executable(kernel_name,
+        include_directories: kernel_include_dirs,
+        implicit_include_directories: false,
+        c_args: kernel_c_args,
+        link_args: kernel_c_args + kernel_link_args + [
+                '-Wl,-Map,' + kernel_map_path,
+        ],
+        link_depends: kernel_ldscript,
+        link_whole: all_kernel_objects,
+        pie: false,
+)
+message('[kernel_name] : ' + kernel_name)
+message('[kernel_map_path] : '+ kernel_map_path)
+foreach arg : kernel_c_args_debug
+  message('[kernel_c_args] : ' + arg)
+endforeach
+foreach larg : kernel_link_args
+  message('[kernel_link_args] : ' + larg)
+endforeach
+
+Message: [kernel_name] : kernel.elf
+Message: [kernel_map_path] : /home/zyc/code/build/amd64_dbg/kernel/kernel.elf.map
+Message: [kernel_c_args] : -D__LE__
+Message: [kernel_c_args] : -fno-omit-frame-pointer
+Message: [kernel_c_args] : -mno-sse
+Message: [kernel_c_args] : -mno-sse2
+Message: [kernel_c_args] : -mcmodel=kernel
+Message: [kernel_c_args] : -mno-red-zone
+Message: [kernel_c_args] : -fno-unwind-tables
+Message: [kernel_c_args] : -march=opteron
+Message: [kernel_c_args] : -imacros
+Message: [kernel_c_args] : /home/zyc/code/build/amd64_dbg/config.h
+Message: [kernel_c_args] : -D_HELENOS_SOURCE
+Message: [kernel_c_args] : -DKERNEL
+Message: [kernel_c_args] : -DHELENOS_RELEASE=0.14.1
+Message: [kernel_c_args] : -DHELENOS_COPYRIGHT=Copyright (c) 2001-2024 HelenOS project
+Message: [kernel_c_args] : -DHELENOS_CODENAME=Aladar
+Message: [kernel_c_args] : -D__64_BITS__
+Message: [kernel_c_args] : -ffreestanding
+Message: [kernel_c_args] : -fdebug-prefix-map=../../kernel/=
+Message: [kernel_c_args] : -fdebug-prefix-map=../../../kernel/=
+Message: [kernel_c_args] : -Wno-cast-function-type
+Message: [kernel_c_args] : --param=min-pagesize=0
+Message: [kernel_link_args] : -Wl,-z,max-page-size=0x1000
+Message: [kernel_link_args] : -nostdlib
+Message: [kernel_link_args] : -Wl,--nmagic
+Message: [kernel_link_args] : -T
+Message: [kernel_link_args] : /home/zyc/code/build/amd64_dbg/kernel/_link.ld
+Message: [kernel_link_args] : -Wl,--no-warn-rwx-segments
+

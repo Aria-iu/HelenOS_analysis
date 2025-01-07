@@ -77,21 +77,29 @@ subdir('arch' / KARCH)
 										# 'include/arch/istate_struct.check.c',
 										# 'include/arch/kseg_struct.check.c',
 ##############################################################################
-# Defines genarch_src.
+# Defines genarch_src. 填充genarch_src的内容。
 subdir('genarch')
 #################################################################################
 #							变量表
-#
-#
-#
+#	genarch_src
 #
 #################################################################################
 # Defines generic_src, instrumentable_src.
 subdir('generic')
-
+#################################################################################
+#							变量表
+#	generic_src
+#
+#################################################################################
 # Defines test_src
 subdir('test')
+#################################################################################
+#							变量表
+#	test_src
+#
+#################################################################################
 
+# 定义内核编译头文件目录。
 kernel_include_dirs = include_directories(
 	'generic/include',
 	'genarch/include',
@@ -102,10 +110,11 @@ kernel_include_dirs = include_directories(
 	'test',
 )
 
+# 一系列编译时的宏定义，用于控制内核编译的行为和特性。
 kernel_defs = [
 	'-imacros', meson.build_root() / 'config.h',
-	'-D_HELENOS_SOURCE',
-	'-DKERNEL',
+	'-D_HELENOS_SOURCE',							# -D_HELENOS_SOURCE 表示这是一个 HelenOS 内核的源代码
+	'-DKERNEL',										# -DKERNEL 表示正在编译的是内核代码
 	'-DHELENOS_RELEASE=' + HELENOS_RELEASE,
 	'-DHELENOS_COPYRIGHT=' + HELENOS_COPYRIGHT,
 	'-DHELENOS_CODENAME=' + HELENOS_CODENAME,
@@ -113,6 +122,8 @@ kernel_defs = [
 ]
 
 # Preprocess linker script using C preprocessor.
+# 包含了链接时需要的参数，如 -Wl,--nmagic 表示生成的 ELF 文件不包含符号表和重定位表等信息，以减小文件大小。
+# 通过 C 预处理器预处理链接脚本文件 _link.ld.in。预处理后的文件将被命名为 _link.ld，并用于后续的链接过程。
 kernel_ldscript = custom_target('_link.ld',
 	input: 'arch' / KARCH / '_link.ld.in',
 	output: '_link.ld',
@@ -140,10 +151,12 @@ kernel_link_args = arch_kernel_link_args + [
 # the permissions are not relevant anyway (needed for binutils 2.39+).
 kernel_link_args += ldflags_ignore_rwx_segments
 
+# 如果配置了 LTO（Link Time Optimization），则会添加 -flto 参数以启用链接时优化。
 if CONFIG_LTO
 	kernel_link_args += [ '-flto' ]
 endif
 
+# 编译 C 代码时需要的参数，如 -ffreestanding 表示编译为独立的代码，不依赖于标准库。
 kernel_c_args = arch_kernel_c_args + kernel_defs + [
 	'-ffreestanding',
 	'-fdebug-prefix-map=../../kernel/=',
@@ -170,10 +183,12 @@ if not CONFIG_LINE_DEBUG
 	kernel_c_args += [ '-gdwarf-5', '-g1', '-gno-statement-frontiers' ]
 endif
 
+# 如果配置了 LTO，同样会添加 -flto 参数。
 if CONFIG_LTO
 	kernel_c_args += [ '-flto' ]
 endif
 
+# 如果使用的是 Clang 编译器，还会添加一些特定的参数，如 -fno-stack-protector 禁用栈保护等.
 if cc.get_id() == 'clang'
 	kernel_c_args += [
 		'-fno-stack-protector',
@@ -182,6 +197,7 @@ if cc.get_id() == 'clang'
 	]
 endif
 
+# instrumentables 和 noninstrumentables 是两个静态库目标，分别用于构建需要和不需要进行函数调用跟踪的代码模块。
 instrumentables = static_library('instrumentables', instrumentable_src,
 	include_directories: kernel_include_dirs,
 	implicit_include_directories: false,
@@ -202,6 +218,7 @@ kernel_name = 'kernel.elf'
 kernel_map_name = kernel_name + '.map'
 kernel_map_path = meson.current_build_dir() / kernel_map_name
 
+# kernel_elf 是一个可执行文件目标，用于构建最终的内核 ELF 文件。它会将所有静态库链接在一起，并生成一个包含符号表的映射文件 kernel.map。
 kernel_elf = executable(kernel_name,
 	include_directories: kernel_include_dirs,
 	implicit_include_directories: false,
@@ -214,6 +231,7 @@ kernel_elf = executable(kernel_name,
 	pie: false,
 )
 
+# kernel_dbg 是一个自定义目标，用于从内核 ELF 文件中提取调试信息，生成 kernel.dbg 文件。
 kernel_dbg = custom_target('kernel.dbg',
 	output: 'kernel.dbg',
 	input: kernel_elf,
@@ -225,6 +243,7 @@ kernel_dbg = custom_target('kernel.dbg',
 	],
 )
 
+# kernel_elf_stripped 是一个自定义目标，用于从内核 ELF 文件中剥离不必要的调试信息，生成精简版的 kernel.elf.stripped 文件。
 kernel_elf_stripped = custom_target(kernel_name + '.stripped',
 	output: kernel_name + '.stripped',
 	input: kernel_elf,
@@ -236,8 +255,10 @@ kernel_elf_stripped = custom_target(kernel_name + '.stripped',
 	],
 )
 
+# rd_init_binaries 和 install_files 用于将构建好的内核文件和相关文件添加到分发包中，并安装到指定目录。
 rd_init_binaries += [[ kernel_elf_stripped, 'boot/kernel.elf' ]]
 install_files += [[ 'boot', kernel_elf_stripped.full_path(), 'kernel.elf' ]]
+# install_deps 用于指定安装时依赖的目标。
 install_deps += [ kernel_elf_stripped ]
 
 if CONFIG_SYMTAB
@@ -246,6 +267,7 @@ if CONFIG_SYMTAB
 	install_deps += [ kernel_dbg ]
 endif
 
+# kernel_disasm 是一个自定义目标，用于生成内核 ELF 文件的反汇编文件 kernel.elf.disasm，以便于调试和分析内核代码.
 kernel_disasm = custom_target('kernel.elf.disasm',
 	command: [ objdump, '-S', '@INPUT@' ],
 	input: kernel_elf,
@@ -259,3 +281,13 @@ if false
 	install_files += [[ 'boot', kernel_disasm.full_path(), 'kernel.elf.disasm' ]]
 	install_deps += [ kernel_disasm ]
 endif
+##############################################################################
+#							变量表
+#	kernel_elf							executable(...);
+#	kernel_elf_stripped					custom_target(... input: kernel_elf, ...);
+#	kernel_dbg							custom_target(... input: kernel_elf, ...);
+#	rd_init_binaries					[[ kernel_elf_stripped, 'boot/kernel.elf' ] , [ kernel_dbg, 'kernel.dbg' ], ]
+#	install_files						[[ 'boot', kernel_elf_stripped.full_path(), 'kernel.elf' ] ,
+#										 [ 'boot', kernel_dbg.full_path(), 'kernel.dbg' ]]
+#	install_deps						[kernel_elf_stripped , kernel_dbg]
+################################################################################

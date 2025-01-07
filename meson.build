@@ -284,6 +284,16 @@ exported_devel_files = [
 uspace_lib_install_script_text = []
 
 subdir('kernel')
+##############################################################################
+#							变量表
+#	kernel_elf							executable(...);
+#	kernel_elf_stripped					custom_target(... input: kernel_elf, ...);
+#	kernel_dbg							custom_target(... input: kernel_elf, ...);
+#	rd_init_binaries					[[ kernel_elf_stripped, 'boot/kernel.elf' ] , [ kernel_dbg, 'kernel.dbg' ], ]
+#	install_files						[[ 'boot', kernel_elf_stripped.full_path(), 'kernel.elf' ] ,
+#										 [ 'boot', kernel_dbg.full_path(), 'kernel.dbg' ]]
+#	install_deps						[kernel_elf_stripped , kernel_dbg]
+################################################################################
 subdir('uspace')
 
 subdir('meson/part/exports')
