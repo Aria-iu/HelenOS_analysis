@@ -190,40 +190,55 @@ SYMBOL(multiboot2_image_start)
 	movl %eax, multiboot_eax
 	movl %ebx, multiboot_ebx
 
+	// 检测CPU是否支持扩展的CPUID指令集
+	// 将 INTEL_CPUID_EXTENDED 的值（即 0x80000000）加载到 eax 寄存器中。
+	// 这是为了调用CPUID指令来检测CPU是否支持扩展的CPUID指令集。
 	movl $(INTEL_CPUID_EXTENDED), %eax
+	// CPUID指令会根据 eax 寄存器中的值返回CPU的相关信息。
+	// 当 eax 为 0x80000000 时，CPUID指令会返回CPU支持的最大扩展CPUID输入值。
 	cpuid
+	// 比较 eax 寄存器的值与 INTEL_CPUID_EXTENDED 的值。
+	// 如果 eax 的值大于 INTEL_CPUID_EXTENDED，则说明CPU支持扩展的CPUID指令集。
 	cmp $(INTEL_CPUID_EXTENDED), %eax
 	ja extended_cpuid_supported
 
 		jmp pm_error_halt
 
 	extended_cpuid_supported:
-
+	// 将 AMD_CPUID_EXTENDED 的值（即 0x80000001）加载到 eax 寄存器中。
+	// 这是为了调用CPUID指令来检测CPU是否支持长模式和非执行内存保护。
 	movl $(AMD_CPUID_EXTENDED), %eax
 	cpuid
+	// 检查 edx 寄存器的第29位（即 AMD_EXT_LONG_MODE）是否被设置。
+	// 如果该位被设置，则表示CPU支持长模式。
 	bt $(AMD_EXT_LONG_MODE), %edx
 	jc long_mode_supported
 
 		jmp pm_error_halt
 
 	long_mode_supported:
-
+	// 检查 edx 寄存器的第20位（即 AMD_EXT_NOEXECUTE）是否被设置。
+	// 如果该位被设置，则表示CPU支持非执行内存保护特性。
 	bt $(AMD_EXT_NOEXECUTE), %edx
 	jc noexecute_supported
 
 		jmp pm_error_halt
 
 	noexecute_supported:
-
+	// 将 INTEL_CPUID_STANDARD 的值（即 0x00000001）加载到 eax 寄存器中。
+	// 这是为了调用CPUID指令来检测CPU是否支持FXSAVE指令。
 	movl $(INTEL_CPUID_STANDARD), %eax
 	cpuid
+	// 检查 edx 寄存器的第24位（即 INTEL_FXSAVE）是否被设置。
+	// 如果该位被设置，则表示CPU支持FXSAVE指令。
 	bt $(INTEL_FXSAVE), %edx
 	jc fx_supported
 
 		jmp pm_error_halt
 
 	fx_supported:
-
+	// 检查 edx 寄存器的第26位（即 INTEL_SSE2）是否被设置。
+	// 如果该位被设置，则表示CPU支持SSE2指令集。
 	bt $(INTEL_SSE2), %edx
 	jc sse2_supported
 
@@ -235,27 +250,54 @@ SYMBOL(multiboot2_image_start)
 	 * Enable 64-bit page translation entries - CR4.PAE = 1.
 	 * Paging is not enabled until after long mode is enabled.
 	 */
-
+	/*
+	 * 这段代码是启用64位长模式的汇编代码片段。
+	 */
+	// 将控制寄存器CR4的值加载到EAX寄存器中。
+	// CR4寄存器用于控制处理器的某些功能，如物理地址扩展（PAE）等。
 	movl %cr4, %eax
+	// 将EAX寄存器的值与CR4_PAE的值进行逻辑或操作。CR4_PAE是物理地址扩展的位掩码，设置此位可以启用物理地址扩展，允许处理器使用更多的物理地址空间。
 	orl $CR4_PAE, %eax
+	// 将EAX寄存器的值（即已设置物理地址扩展的CR4值）写回CR4寄存器，从而启用物理地址扩展。
 	movl %eax, %cr4
 
 	/* Set up paging tables */
+	// 将页表基地址（ptl_0）加载到eax中。
 	leal ptl_0, %eax
+	// 将eax写入CR3中，从而设置页表基址。
 	movl %eax, %cr3
 
 	/* Enable long mode */
+	// 将AMD_MSR_EFER的值加载到ECX寄存器中。
+	// 将EFER寄存器的地址（即 0xc0000080）加载到ECX寄存器中。
+	// ECX寄存器用于指定要访问的MSR寄存器地址。
 	movl $AMD_MSR_EFER, %ecx
+	// 读取MSR寄存器的值。读取的值被存储在EAX和EDX寄存器中。
+	// 对于EFER寄存器，其值存储在EAX寄存器中。
 	rdmsr                     /* read EFER */
+	// 将EAX寄存器的值与AMD_LME的值进行逻辑或操作。
+	// AMD_LME是长模式启用的位掩码，
+	// 设置此位可以启用长模式。通过逻辑或操作，将EAX寄存器中的LME位设置为1。
 	orl $AMD_LME, %eax        /* set LME = 1 */
+	// 将EAX和EDX寄存器中的值写回MSR寄存器。由于EFER寄存器的值存储在EAX寄存器中，
+	// 因此写回操作会将修改后的值（即已启用长模式的EFER值）写回EFER寄存器，从而启用长模式。
 	wrmsr
 
 	/* Enable paging to activate long mode (set CR0.PG = 1) */
+	// 将控制寄存器CR0的值加载到EAX寄存器中。CR0寄存器用于控制处理器的某些功能，如分页等。
 	movl %cr0, %eax
+	// 将EAX寄存器的值与CR0_PG的值进行逻辑或操作。
+	// CR0_PG是分页的位掩码，设置此位可以启用分页。
 	orl $CR0_PG, %eax
+	// 将EAX寄存器的值（即已设置分页的CR0值）写回CR0寄存器，
+	// 从而启用分页并激活长模式。
 	movl %eax, %cr0
 
 	/* At this point we are in compatibility mode */
+	// 这条指令是一个长跳转（far jump），用于切换到64位代码段。
+	// GDT_SELECTOR(KTEXT_DES)是全局描述符表（GDT）中的一个选择符，
+	// 指向64位代码段描述符。start64是64位代码的入口点。
+	// 执行这条指令后，处理器将切换到64位长模式，并开始执行64位代码。
 	jmpl $GDT_SELECTOR(KTEXT_DES), $start64
 
 pm_error_halt:
@@ -275,14 +317,31 @@ start64:
 	movq $(PA2KA(START_STACK)), %rsp
 
 	/* Create the first stack frame */
+	// 这里创建了第一个栈帧，为了方便开始调用函数。
+	/*
+	 *	--------------------
+	 *  |					|
+	 *  |					|
+	 *  |		0			|	--------->  0xffffffff80107bf8 (rsp , rbp)
+	 *  |					|	--------->  0xffffffff80107c00
+	 *  |-------------------	--------->  0xffffffff80108000
+	 */
 	pushq $0
 	movq %rsp, %rbp
 
 	/* Call amd64_pre_main(multiboot_eax, multiboot_ebx) */
+	// 将 multiboot_eax 的值加载到EDI寄存器中。multiboot_eax 是一个变量，
+	// 通常用于存储从引导加载器传递给内核的EAX寄存器的值。
+	// EDI寄存器是第一个参数的寄存器。
 	movl multiboot_eax, %edi
+	// 将 multiboot_ebx 的值加载到ESI寄存器中。multiboot_ebx 是一个变量，
+	// 通常用于存储从引导加载器传递给内核的EBX寄存器的值。
+	// ESI寄存器是第二个参数的寄存器。
 	movl multiboot_ebx, %esi
 
 #ifdef MEMORY_MODEL_large
+	// 将 amd64_pre_main 函数的地址加载到RAX寄存器中。
+	// movabsq 指令用于加载64位的绝对地址。
 	movabsq $amd64_pre_main, %rax
 	callq *%rax
 #else
