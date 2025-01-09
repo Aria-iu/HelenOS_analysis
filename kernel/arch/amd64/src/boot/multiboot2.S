@@ -339,6 +339,10 @@ start64:
 	// ESI寄存器是第二个参数的寄存器。
 	movl multiboot_ebx, %esi
 
+// 执行特定于 AMD64 架构的初始化操作
+// 其中有两步：
+//      1. 调用 multiboot_info_parse和multiboot2_info_parse来处理传入的关于硬件和启动参数的信息
+//      2. 调用 memcpy将启动代码 从 0x108000 cp 到 0x8000 地址。为 AP 启动做准备。
 #ifdef MEMORY_MODEL_large
 	// 将 amd64_pre_main 函数的地址加载到RAX寄存器中。
 	// movabsq 指令用于加载64位的绝对地址。

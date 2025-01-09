@@ -42,6 +42,7 @@ extern uint8_t kernel_load_address[];
 /* Address of the end of kernel. */
 extern uint8_t kdata_end[];
 
+// main_bsp 和 main_ap 分别是 启动核心 和 辅助核心 的启动后的入口地址。
 extern void main_bsp(void);
 extern void main_ap(void);
 

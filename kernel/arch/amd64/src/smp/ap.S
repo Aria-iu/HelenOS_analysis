@@ -29,7 +29,9 @@
 
 #
 # Init code for application processors.
-#
+# 这些是 AP 处理器的启动代码，unmapped_ap_boot 是在unmapped段中 ， 为AP设置的 启动代码 。
+# 这些代码会被从 0x108000 cp 到 0x8000 开头的 1MB 之下的地方。
+# _link.ld 中的 ap_boot 是偏移之后的地址。
 
 #include <abi/asmtool.h>
 #include <arch/boot/boot.h>

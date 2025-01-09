@@ -63,6 +63,9 @@ SECTIONS {
  /DISCARD/ : {
   *(*);
  }
+ # ap的启动代码时从0x108000 复制HEADERS+unmapped段的长度，完全复制到这个 0x8000地址的。
+ # ap_boot 就是 unmapped_ap_boot 在原代码偏移之后的地址。
+ # ap_gdtr 就是 unmapped_ap_gdtr 在原代码偏移之后的地址。
  ap_boot = unmapped_ap_boot - 0x108000 + 0x008000;
  ap_gdtr = unmapped_ap_gdtr - 0x108000 + 0x008000;
  protected_ap_gdtr = ((ap_gdtr) + 0xffffffff80000000);

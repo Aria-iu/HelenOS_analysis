@@ -87,6 +87,8 @@ arch_ops_t *arch_ops = &amd64_ops;
  * @param signature Multiboot signature.
  * @param info      Multiboot information structure.
  *
+ * signature是多引导签名，用于标识引导加载器传递的信息的类型。
+ * info指向多引导信息结构的指针，包含了引导加载器传递的各种信息。
  */
 void amd64_pre_main(uint32_t signature, void *info)
 {
@@ -97,6 +99,8 @@ void amd64_pre_main(uint32_t signature, void *info)
 #ifdef CONFIG_SMP
 	size_t unmapped_size = (uintptr_t) unmapped_end - BOOT_OFFSET;
 	/* Copy AP bootstrap routines below 1 MB. */
+    // 使用 memcpy 函数将从 BOOT_OFFSET 开始的 unmapped_size 字节的数据复制到 AP_BOOT_OFFSET 指定的位置。
+    // AP_BOOT_OFFSET 通常位于1MB以下的内存区域（例如，0x008000）。
 	memcpy((void *) AP_BOOT_OFFSET, (void *) BOOT_OFFSET, unmapped_size);
 #endif
 }
