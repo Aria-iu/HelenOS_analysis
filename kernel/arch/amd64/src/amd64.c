@@ -105,6 +105,7 @@ void amd64_pre_main(uint32_t signature, void *info)
 #endif
 }
 
+// 在main.c中的 main_bsp_separated_stack(void) 中被调用。
 void amd64_pre_mm_init(void)
 {
 	/* Enable no-execute pages */

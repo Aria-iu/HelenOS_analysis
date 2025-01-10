@@ -39,6 +39,7 @@
 #include <arch/pm.h>
 #include <stdint.h>
 
+// IDT_ITEMS ÊÇ 64.
 #define IVT_ITEMS  IDT_ITEMS
 #define IVT_FIRST  0
 

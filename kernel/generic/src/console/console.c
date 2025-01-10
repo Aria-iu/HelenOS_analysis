@@ -310,6 +310,9 @@ void kio_push_char(const char32_t ch)
 
 // Attention plz！！！
 // 这里是AMD64架构打印一个uchar的具体实现。
+// 一个真实的串口设备（例如ns16550）需要驱动来实现它的 outdev_operations_t *op;
+// 然后注册到 stdout ，刚开始 输出信息会存储到一个缓存中 (kio_flush()中如果stdout没有初始化，就退出)
+// 当串口被初始化之后，调用输出，就会把所有信息都通过 op -> write来输出。
 void putuchar(const char32_t ch)
 {
 	bool ordy = ((stdout) && (stdout->op->write));

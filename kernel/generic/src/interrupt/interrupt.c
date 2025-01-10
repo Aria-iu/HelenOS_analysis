@@ -64,6 +64,7 @@
  * out-of-bound array access.
  */
 
+// 异常处理表
 exc_table_t exc_table[IVT_ITEMS];
 IRQ_SPINLOCK_INITIALIZE(exctbl_lock);
 
@@ -78,18 +79,22 @@ IRQ_SPINLOCK_INITIALIZE(exctbl_lock);
  * @return Previously registered exception handler.
  *
  */
+// 注册异常处理函数handler，返回之前的异常处理函数。
 iroutine_t exc_register(unsigned int n, const char *name, bool hot,
     iroutine_t handler)
 {
 #if (IVT_ITEMS > 0)
+	// 注册异常的位置要小于IVT_ITEMS。
 	assert(n < IVT_ITEMS);
-
+	
 	irq_spinlock_lock(&exctbl_lock, true);
 
 	iroutine_t old = exc_table[n].handler;
+	// 注册新的 handler ， name ， hot 
 	exc_table[n].handler = handler;
 	exc_table[n].name = name;
 	exc_table[n].hot = hot;
+	// 将该项的cycles和count设置为 0 
 	exc_table[n].cycles = 0;
 	exc_table[n].count = 0;
 
@@ -163,7 +168,9 @@ _NO_TRACE void exc_dispatch(unsigned int n, istate_t *istate)
  */
 _NO_TRACE static void exc_undef(unsigned int n, istate_t *istate)
 {
+	// 如果异常来自用户空间，则调用fault_from_uspace函数处理。
 	fault_if_from_uspace(istate, "Unhandled exception %u.", n);
+	// 如果异常来自内核空间，则触发内核恐慌。
 	panic_badtrap(istate, n, "Unhandled exception %u.", n);
 }
 
@@ -336,17 +343,22 @@ static cmd_info_t exc_info = {
  */
 void exc_init(void)
 {
+	// 空操作：可以确保 exc_undef不会被优化掉。
 	(void) exc_undef;
-
+	// IVT是中断向量表。
+	// AMD64架构 IVT_ITEMS = 64.
 #if (IVT_ITEMS > 0)
 	unsigned int i;
-
+	// 将每个中断向量表项注册为未定义异常处理函数exc_undef。
 	for (i = 0; i < IVT_ITEMS; i++)
 		exc_register(i, "undef", false, (iroutine_t) exc_undef);
 #endif
-
+	// 初始化完异常向量表后
+	// 若启用了KCONSOLE
 #ifdef CONFIG_KCONSOLE
+	// 初始化命令 exc_info
 	cmd_initialize(&exc_info);
+	// 注册命令 exc_info
 	if (!cmd_register(&exc_info))
 		printf("Cannot register command %s\n", exc_info.name);
 #endif

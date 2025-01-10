@@ -213,12 +213,16 @@ void main_bsp_separated_stack(void)
 	LOG("\nconfig.base=%p config.kernel_size=%zu",
 	    (void *) config.base, config.kernel_size);
 
+	// AMD64架构 CONFIG_KCONSOLE 被定义了。
 #ifdef CONFIG_KCONSOLE
 	/*
 	 * kconsole data structures must be initialized very early
 	 * because other subsystems will register their respective
 	 * commands.
 	 */
+	/*
+	* 内核控制台初始化。
+	*/
 	kconsole_init();
 #endif
 
@@ -226,11 +230,17 @@ void main_bsp_separated_stack(void)
 	 * Exception handler initialization, before architecture
 	 * starts adding its own handlers
 	 */
+	/*
+	* 异常处理机制 init。
+	* 
+	*/
 	exc_init();
 
 	/*
 	 * Memory management subsystems initialization.
+	 * 内存管理子系统初始化
 	 */
+	// 这个宏在AMD64架构下调用 amd64_pre_mm_init
 	ARCH_OP(pre_mm_init);
 	km_identity_init();
 	frame_init();
@@ -243,8 +253,11 @@ void main_bsp_separated_stack(void)
 	tlb_init();
 	km_non_identity_init();
 	ddi_init();
+	// 这个宏在AMD64架构下调用 amd64_pre_mm_init
 	ARCH_OP(post_mm_init);
 	reserve_init();
+	// 对于AMD64架构来说，这里是调用 amd64_pre_smp_init
+	// 其中会初始化几个驱动。。。
 	ARCH_OP(pre_smp_init);
 	smp_init();
 
