@@ -308,6 +308,8 @@ void kio_push_char(const char32_t ch)
 		kio_uspace++;
 }
 
+// Attention plz！！！
+// 这里是AMD64架构打印一个uchar的具体实现。
 void putuchar(const char32_t ch)
 {
 	bool ordy = ((stdout) && (stdout->op->write));

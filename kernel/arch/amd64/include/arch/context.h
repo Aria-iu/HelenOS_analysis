@@ -44,6 +44,8 @@
  */
 #define SP_DELTA  16
 
+// AMD64架构，将传进来的 pc指针应该指向的函数地址 栈地址 栈大小
+// 设置到context_t c中。
 #define context_set(c, _pc, stack, size) \
 	do { \
 		(c)->pc = (uintptr_t) (_pc); \

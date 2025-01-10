@@ -133,7 +133,9 @@ ballocs_t ballocs = {
 static context_t ctx;
 
 // NOTE: All kernel stacks must be aligned to STACK_SIZE, see CURRENT.
+// 8K大小。
 static const size_t bootstrap_stack_size = STACK_SIZE;
+// 内核的新栈。。。
 static _Alignas(STACK_SIZE) uint8_t bootstrap_stack[STACK_SIZE];
 
 /* Just a convenient value for some assembly code. */
@@ -162,19 +164,36 @@ static void main_ap_separated_stack(void);
  * Assuming interrupts_disable().
  *
  */
+/*
+	#define _NO_TRACE  __attribute__((no_instrument_function))
+	宏定义 _NO_TRACE 使用了 GCC 的 __attribute__((no_instrument_function)) 属性。
+	这个属性的作用是告诉编译器不要对指定的函数进行函数调用跟踪（instrumentation）。
+	具体作用可见 /ZYC-Debug/Images/-finstrument-functions.png
+	*/ 
+
 _NO_TRACE void main_bsp(void)
 {
+	// 设置当前系统中的CPU数量为1。这通常在多处理器系统中会被更新。
 	config.cpu_count = 1;
+	// 设置当前活跃的CPU数量为1。这表示主核心已经启动并运行。
 	config.cpu_active = 1;
-
+	// 设置内核的基地址。kernel_load_address 是内核加载到内存中的起始地址。
 	config.base = (uintptr_t) kernel_load_address;
-
+	// 计算内核的大小。kdata_end 是内核数据段的结束地址，config.base 是内核的基地址。
+	// ALIGN_UP 宏用于将计算结果向上对齐到页面大小（PAGE_SIZE）。
+	// 暂时的_link.ld 中， kdata_end			=  FFFF FFFF 801A AF29
+	//					   kernel_load_address	=  FFFF FFFF 8010 8000
+	// PAGE_SIZE = (1 << 12)
 	config.kernel_size =
 	    ALIGN_UP((uintptr_t) kdata_end - config.base, PAGE_SIZE);
 
 	context_create(&ctx, main_bsp_separated_stack,
 	    bootstrap_stack, bootstrap_stack_size);
 	context_restore(&ctx);
+	// context_restore中，将新的任务的信息存到当前CPU上，由于是启动CPU，
+	// 也就是说，唯一的CPU去执行 main_bsp_separated_stack 这个任务，那么
+	// 当前函数就像是时光一样
+	// 永远不会返回。。。。
 	/* not reached */
 }
 
@@ -186,10 +205,11 @@ _NO_TRACE void main_bsp(void)
 void main_bsp_separated_stack(void)
 {
 	/* Keep this the first thing. */
+	// 将当前栈的基地址处作为CURRENT的起始地址，方便直接使用CURRENT得到当前的current_t结构。
 	current_initialize(CURRENT);
-
+	// 这里使用了printf！！！
 	version_print();
-
+	// 最终调用dummy_printf
 	LOG("\nconfig.base=%p config.kernel_size=%zu",
 	    (void *) config.base, config.kernel_size);
 

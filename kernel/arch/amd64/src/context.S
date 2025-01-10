@@ -70,6 +70,8 @@ FUNCTION_END(context_save_arch)
 # Restore CPU context from context_t variable
 # pointed by the 1st argument. Returns 0 in EAX.
 #
+# context_restore_arch 在 AMD 64 架构下是直接使用汇编语言写的 将context_t 结构体的
+# 字段（各个寄存器）复制到当前CPU中。赋值EAX = 0，返回。
 FUNCTION_BEGIN(context_restore_arch)
 	movq CONTEXT_OFFSET_R15(%rdi), %r15
 	movq CONTEXT_OFFSET_R14(%rdi), %r14

@@ -47,6 +47,19 @@
  * address must be aligned to STACK_SIZE.
  *
  */
+/*
+*		grow up
+*			|
+*			|
+	--------------------
+	|					|
+	|	STACK			|
+	|					|
+	|-----------------------------> CURRENT
+			|
+			|
+			grow down
+*/
 #define CURRENT \
 	((current_t *) (((uintptr_t) __builtin_frame_address(0)) & \
 	    (~((uintptr_t) STACK_SIZE - 1))))

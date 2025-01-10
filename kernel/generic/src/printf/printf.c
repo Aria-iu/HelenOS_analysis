@@ -35,6 +35,7 @@
 #include <print.h>
 #include <stdarg.h>
 
+// 这里实现了体系结构无关的printf，具体的输出在各个架构的putuchar的具体实现。
 int printf(const char *fmt, ...)
 {
 	int ret;

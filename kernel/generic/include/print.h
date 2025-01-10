@@ -32,6 +32,9 @@
 /** @file
  */
 
+// That's it!!! 
+// 这里定义了系统内部使用的打印信息函数 printf。
+
 #ifndef KERN_PRINT_H_
 #define KERN_PRINT_H_
 

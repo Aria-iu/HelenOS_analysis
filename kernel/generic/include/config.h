@@ -39,6 +39,9 @@
 #include <macros.h>
 
 #define STACK_FRAMES  2
+// #define FRAMES2SIZE(frames)  ((frames) << FRAME_WIDTH)
+// #define FRAME_WIDTH  12  /* 4K */
+// 8KµÄÕ»´óÐ¡¡£
 #define STACK_SIZE    FRAMES2SIZE(STACK_FRAMES)
 
 #define STACK_SIZE_USER  (1 * 1024 * 1024)
