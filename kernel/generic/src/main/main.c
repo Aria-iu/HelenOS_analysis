@@ -244,7 +244,9 @@ void main_bsp_separated_stack(void)
 	ARCH_OP(pre_mm_init);
 	// 将内核的内存进行直接映射。
 	km_identity_init();
+	// 物理页帧初始化。。
 	frame_init();
+	// zones_print_list();
 	slab_cache_init();
 	malloc_init();
 	ra_init();

@@ -692,6 +692,7 @@ _NO_TRACE static void zone_construct(zone_t *zone, pfn_t start, size_t count,
  * @return Size of zone configuration info (in bytes).
  *
  */
+// 计算一个zone的配置信息占用的字节数。
 size_t zone_conf_size(size_t count)
 {
 	return (count * sizeof(frame_t) + bitmap_size(count));
@@ -766,25 +767,32 @@ size_t zone_create(pfn_t start, size_t count, pfn_t confframe,
 				}
 
 				if (overlap)
+					// 如果覆盖了，就一直找。
 					continue;
 
 				break;
 			}
 
+			// 如果找不到，内核panic。
 			if (confframe >= start + count)
 				panic("Cannot find configuration data for zone.");
 		}
 
+		// 创建一个新的zone，插入到zones变量中，排序后，返回znum下标。
 		size_t znum = zones_insert_zone(start, count, flags);
 		if (znum == (size_t) -1) {
 			irq_spinlock_unlock(&zones.lock, true);
 			return (size_t) -1;
 		}
 
+		// confdata指向这个zone的数据配置帧的内核地址。
 		void *confdata = (void *) PA2KA(PFN2ADDR(confframe));
+		// Create new frame zone.
+		// 构造一下这个zone结构体，初始化。。
 		zone_construct(&zones.info[znum], start, count, flags, confdata);
 
 		/* If confdata in zone, mark as unavailable */
+		// 如果配置数据帧在zone中，标记其为不可用。
 		if ((confframe >= start) && (confframe < start + count)) {
 			for (size_t i = confframe; i < confframe + confcount; i++)
 				zone_mark_unavailable(&zones.info[znum],
@@ -802,7 +810,9 @@ size_t zone_create(pfn_t start, size_t count, pfn_t confframe,
 		irq_spinlock_unlock(&zones.lock, true);
 		return (size_t) -1;
 	}
-
+	
+	// 不可用的内存部分，直接在zones中加入一个zone_t变量就可以，不许要找一个数据配置帧来存储信息。
+	// 最后一个参数是NULL。
 	zone_construct(&zones.info[znum], start, count, flags, NULL);
 
 	irq_spinlock_unlock(&zones.lock, true);

@@ -87,17 +87,46 @@ static void init_e820_memory(pfn_t minconf, bool low)
 
 			// 将内存大小转换为帧数。
 			size_t count = SIZE2FRAMES(new_size);
+			// 内存的起始页帧号。
 			pfn_t pfn = ADDR2PFN(new_base);
 			pfn_t conf;
 
 			if (low) {
+				// 低内存：对AMD64架构，是0-2GB。
 				if ((minconf < pfn) || (minconf >= pfn + count))
+					// ——————————————————
+					// |		AP_KERNEL				  |
+					// |								  |----> pfn2
+					// |								  |
+					// |								  |----> pfn2 + count
+					// |__________________________________| --->   minconf
+					// |
+					// |									--->   pfn1
+					// |
+					// minconf指向AP_BOOTOFFFSET + 内核大小的帧数。。。
+					// 若传进来的minconf帧数小于pfn，就是更新后的基地址大于minconf
+					// 则可以将conf设置为pfn。。
+					// 或者这块内存是在minconf之前，但是这块内存的长度不超过minconf。
+					// 将新的conf设置为pfn。
 					conf = pfn;
 				else
+					// ——————————————————
+					// |		AP_KERNEL				  |
+					// |								  |
+					// |								  |
+					// |								  |----> pfn
+					// |__________________________________| --->   minconf
+					// |
+					// |									---> pfn + count
+					// |
+					// 这里，内存的地址起始在minconf之前，结束在minconf之后。
+					// 将新的conf直接设置为传进来的minconf。
 					conf = minconf;
+				// 创建一个新的内存区域，参数需要基地址页帧数，内存大小的帧数和conf。
 				zone_create(pfn, count, conf,
 				    ZONE_AVAILABLE | ZONE_LOWMEM);
 			} else {
+				// 如果是处理高端内存，就从低端内存中分配出来内存存储数据配置帧。
 				conf = zone_external_conf_alloc(count);
 				if (conf != 0)
 					zone_create(pfn, count, conf,
@@ -153,8 +182,7 @@ void physmem_print(void)
 }
 
 // AMD64会调用这个函数
-// 低级架构初始化函数，主要负责执行与硬件直接相关的初始化操作。
-// 这些操作通常包括设置内存控制器、初始化内存相关的硬件寄存器等。
+// 低内存初始化。
 void frame_low_arch_init(void)
 {
 	pfn_t minconf;
