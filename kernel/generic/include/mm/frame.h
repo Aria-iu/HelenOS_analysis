@@ -45,6 +45,7 @@
 #include <arch/mm/frame.h>
 
 /** Maximum number of zones in the system. */
+// 最大的内存区域数量。
 #define ZONES_MAX  32
 
 typedef uint8_t frame_flags_t;
@@ -90,29 +91,38 @@ typedef uint8_t zone_flags_t;
 	    (((zf) & ~ZONE_EF_MASK) & (f)))
 
 typedef struct {
+	// 引用计数
 	size_t refcount;  /**< Tracking of shared frames */
+	// 如果该帧是由 slab 分配的，这个指针指向 slab 的父结构体。
 	void *parent;     /**< If allocated by slab, this points there */
 } frame_t;
 
 typedef struct {
+	// 该区域中第一个帧的帧号（pfn_t）
 	/** Frame_no of the first frame in the frames array */
 	pfn_t base;
 
+	// 该区域的大小，即该区域中帧的总数。
 	/** Size of zone */
 	size_t count;
 
+	// 该区域中空闲帧的数量
 	/** Number of free frame_t structures */
 	size_t free_count;
 
+	// 该区域中已使用帧的数量
 	/** Number of busy frame_t structures */
 	size_t busy_count;
 
+	// 该区域的类型标志，用于标识区域的属性（如内存类型、用途等）
 	/** Type of the zone */
 	zone_flags_t flags;
 
+	// 位图，用于快速检查帧的使用状态。每个位对应一个帧，0 表示空闲，1 表示已使用
 	/** Frame bitmap */
 	bitmap_t bitmap;
 
+	// 该区域中所有帧的数组，每个帧用 frame_t 结构体表示
 	/** Array of frame_t structures in this zone */
 	frame_t *frames;
 } zone_t;
@@ -122,8 +132,11 @@ typedef struct {
  * Some of the attributes in zone_t structures are 'read-only'
  */
 typedef struct {
+	// 中断自旋锁，用于保护 zones 结构体的访问
 	IRQ_SPINLOCK_DECLARE(lock);
+	// 系统中内存区域的总数
 	size_t count;
+	// 一个数组，包含所有内存区域的信息。每个元素是一个 zone_t 结构体，表示一个内存区域。
 	zone_t info[ZONES_MAX];
 } zones_t;
 

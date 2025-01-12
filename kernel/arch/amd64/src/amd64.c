@@ -93,9 +93,11 @@ arch_ops_t *arch_ops = &amd64_ops;
 void amd64_pre_main(uint32_t signature, void *info)
 {
 	/* Parse multiboot information obtained from the bootloader. */
+	// 在这里解析multiboot2规范传来的信息。。。
+	// AMD64使用的是multiboot2规范，所以multiboot_info_parse会直接返回，multiboot2_info_parse会被调用。
 	multiboot_info_parse(signature, (multiboot_info_t *) info);
 	multiboot2_info_parse(signature, (multiboot2_info_t *) info);
-
+	
 #ifdef CONFIG_SMP
 	size_t unmapped_size = (uintptr_t) unmapped_end - BOOT_OFFSET;
 	/* Copy AP bootstrap routines below 1 MB. */
@@ -109,31 +111,54 @@ void amd64_pre_main(uint32_t signature, void *info)
 void amd64_pre_mm_init(void)
 {
 	/* Enable no-execute pages */
+	// 将 MSR_EFER的 AMD_NXE 置位。
+	// 设置这个位可以禁止执行某些内存区域的代码，增强系统的安全性。
+	// 设置NXE位后，可以将某些内存区域标记为“不可执行”
 	write_msr(AMD_MSR_EFER, read_msr(AMD_MSR_EFER) | AMD_NXE);
 	/* Enable FPU */
+	// 设置CPU以启用浮点运算单元（FPU）的。
+	// 通过修改控制寄存器CR0和CR4来启用FPU的相关功能。
 	cpu_setup_fpu();
 
 	/* Initialize segmentation */
 	pm_init();
 
 	/* Disable I/O on nonprivileged levels, clear the nested-thread flag */
+	// 通过清除 RFLAGS 寄存器中的 IOPL 位，确保只有特权级（如内核级）的代码可以执行 I/O 操作。
+	// 通过清除 RFLAGS 寄存器中的 NT 位，确保系统不会使用嵌套任务切换机制。
 	write_rflags(read_rflags() & ~(RFLAGS_IOPL | RFLAGS_NT));
 	/* Disable alignment check */
+	// 通过清除 CR0 寄存器中的 AM 位，禁用对齐检查。
+	// 对齐检查用于确保数据访问操作的地址是按字节、字或双字对齐的。
+	// 在某些情况下，禁用对齐检查可以提高性能，但可能会导致未对齐访问的性能问题。
 	write_cr0(read_cr0() & ~CR0_AM);
 
 	/* Use PCD+PWT bit combination in PTE to mean write-combining mode. */
+	// 通过 pat_supported 函数检查 CPU 是否支持物理地址扩展（PAT）
 	if (pat_supported())
+		// 如果支持 PAT，通过 pat_set_mapping 函数设置页面表条目（PTE）的 
+		// PCD（Page Cache Disable）和 PWT（Page Write Through）位，以启用写合并模式（Write-Combining）。
 		pat_set_mapping(false, true, true, PAT_TYPE_WRITE_COMBINING);
 
 	if (config.cpu_active == 1) {
+		// 初始化中断处理机制
 		interrupt_init();
+		// 初始化 BIOS 相关的功能
+		// 这里的bios实际上是通过 kernel/arch/amd64/src/bios文件找到ia32架构下的bios.c
+		// Meson 是个很神奇的工具。
 		bios_init();
 
 		/* PIC */
+		// 通过 i8259_init 函数初始化 PIC，
+		// 设置主从 PIC 的基地址和中断向量基地址。这确保了系统能够正确处理外部中断请求。
+		// IVT_IRQBASE =  32			中断向量基地址，通常为 32，表示 IRQ0 对应的中断向量号为 32。
+		// I8259_PIC0_BASE = 0x20U		主 PIC 的基地址
+		// I8259_PIC1_BASE = 0xA0U		从 PIC 的基地址
 		i8259_init((i8259_t *) I8259_PIC0_BASE,
 		    (i8259_t *) I8259_PIC1_BASE, IVT_IRQBASE);
 
 		/* Set PIC operations. */
+		// 通过 pic_ops = &i8259_pic_ops 设置 PIC 的操作接口，以便后续可以调用 PIC 的相关操作函数。
 		pic_ops = &i8259_pic_ops;
 	}
 }

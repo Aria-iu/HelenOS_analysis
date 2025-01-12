@@ -35,13 +35,23 @@
 #include <arch/bios/bios.h>
 #include <typedefs.h>
 
+// 定义了一个宏，指向 BDA 中存储 EBDA 段地址的位置 0x40E
 #define BIOS_EBDA_PTR  0x40eU
 
+// 存储 EBDA 的物理地址
 uintptr_t ebda = 0;
 
+// 即使是AMD64架构，bios初始化依然使用这个函数。
+// 从 BIOS 数据区（BIOS Data Area, BDA）中读取
+// 扩展 BIOS 数据区（Extended BIOS Data Area, EBDA）的地址，
+// 并将其存储在全局变量 ebda 中。
 void bios_init(void)
 {
 	/* Copy the EBDA address out from BIOS Data Area */
+	// x86 架构中，内存地址被分为段（Segment）和偏移（Offset）。
+	// 段地址和偏移地址结合在一起形成一个物理地址。
+	// 具体来说，段地址需要乘以 16（即左移 4 位）
+	// 取出该地址的值，乘以16得到EBDA 的物理地址。
 	ebda = *((uint16_t *) BIOS_EBDA_PTR) * 0x10U;
 }
 

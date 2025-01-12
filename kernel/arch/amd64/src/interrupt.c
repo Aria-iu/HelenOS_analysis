@@ -161,6 +161,7 @@ static void irq_interrupt(unsigned int n, istate_t *istate)
 	assert(inum < IRQ_COUNT);
 	assert(inum != IRQ_PIC1);
 
+	// 查找对应 IRQ
 	irq_t *irq = irq_dispatch_and_lock(inum);
 	if (irq) {
 		/*
@@ -200,13 +201,17 @@ static void pic_spurious(unsigned int n, istate_t *istate)
 #endif
 }
 
+// 中断初始化。。
 void interrupt_init(void)
 {
 	unsigned int i;
 
+	// 重新注册 exc_table
 	for (i = 0; i < IVT_ITEMS; i++)
 		exc_register(i, "null", false, (iroutine_t) null_interrupt);
 
+	// IRQ_COUNT = 16
+	// IRQ_BASE  = 32
 	for (i = 0; i < IRQ_COUNT; i++) {
 		if ((i != IRQ_PIC0_SPUR) && (i != IRQ_PIC1_SPUR) &&
 		    (i != IRQ_PIC1))
@@ -214,6 +219,11 @@ void interrupt_init(void)
 			    (iroutine_t) irq_interrupt);
 	}
 
+	// VECTOR_DE：除法错误（Division Error）。
+	// VECTOR_NM：非屏蔽中断（Non - Maskable Interrupt）。
+	// VECTOR_SS：栈段错误（Stack Segment Fault）。
+	// VECTOR_GP：通用保护错误（General Protection Fault）。
+	// VECTOR_PIC0_SPUR 和 VECTOR_PIC1_SPUR：主从 PIC 的 spurious 中断。
 	exc_register(VECTOR_DE, "de_fault", true, (iroutine_t) de_fault);
 	exc_register(VECTOR_NM, "nm_fault", true, (iroutine_t) nm_fault);
 	exc_register(VECTOR_SS, "ss_fault", true, (iroutine_t) ss_fault);
@@ -224,6 +234,7 @@ void interrupt_init(void)
 	    (iroutine_t) pic_spurious);
 
 #ifdef CONFIG_SMP
+	// 在多处理器系统中同步 TLB（Translation Lookaside Buffer）
 	exc_register(VECTOR_TLB_SHOOTDOWN_IPI, "tlb_shootdown", true,
 	    (iroutine_t) tlb_shootdown_ipi);
 #endif

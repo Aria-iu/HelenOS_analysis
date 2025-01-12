@@ -149,8 +149,10 @@ static void multiboot_memmap(uint32_t length, multiboot_memmap_t *memmap)
  * @param info      Multiboot information structure.
  *
  */
+// Parse multiboot information structure. 解析multiboot的信息结构体。
 void multiboot_info_parse(uint32_t signature, const multiboot_info_t *info)
 {
+	// 验证魔数字段。
 	if (signature != MULTIBOOT_LOADER_MAGIC)
 		return;
 

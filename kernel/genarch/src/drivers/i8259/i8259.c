@@ -73,6 +73,7 @@ pic_ops_t i8259_pic_ops = {
 static i8259_t *saved_pic0;
 static i8259_t *saved_pic1;
 
+// irq0_vec  =  32
 void i8259_init(i8259_t *pic0, i8259_t *pic1, unsigned int irq0_vec)
 {
 	saved_pic0 = pic0;
@@ -94,6 +95,7 @@ void i8259_init(i8259_t *pic0, i8259_t *pic1, unsigned int irq0_vec)
 	pio_write_8(&pic1->port1, I8259_ICW1 | I8259_ICW1_NEEDICW4);
 
 	/* ICW2: IRQ 8 maps to interrupt vector address irq0_vec + 8 */
+	// I8259_IRQ_COUNT = 8
 	pio_write_8(&pic1->port2, irq0_vec + I8259_IRQ_COUNT);
 
 	/* ICW3: pic1 is known as I8259_IRQ_SLAVE */
@@ -103,8 +105,10 @@ void i8259_init(i8259_t *pic0, i8259_t *pic1, unsigned int irq0_vec)
 	pio_write_8(&pic1->port2, 1);
 
 	/* disable all irq's */
+	// 禁用所有中断
 	i8259_disable_irqs(0xffff);
 	/* but enable I8259_IRQ_SLAVE */
+	// 启用从 PIC 的中断
 	i8259_enable_irqs(1 << I8259_IRQ_SLAVE);
 }
 

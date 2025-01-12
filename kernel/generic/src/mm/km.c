@@ -86,6 +86,7 @@ static unsigned km_flush_deferred(void)
 /** Architecture dependent setup of identity-mapped kernel memory. */
 void km_identity_init(void)
 {
+	// 设置config中的内核内存映射地址和长度。
 	km_identity_arch_init();
 	config.identity_configured = true;
 }

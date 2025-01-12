@@ -52,6 +52,7 @@ static void init_e820_memory(pfn_t minconf, bool low)
 	unsigned int i;
 
 	for (i = 0; i < e820counter; i++) {
+		// 获取到内存块的基地址和长度。
 		uint64_t base64 = e820table[i].base_address;
 		uint64_t size64 = e820table[i].size;
 
@@ -69,15 +70,22 @@ static void init_e820_memory(pfn_t minconf, bool low)
 		uintptr_t base = (uintptr_t) base64;
 		size_t size = (size_t) size64;
 
+		// 根据内核需要的物理内存划分低端内存和高端内存。
+		// 低端内存被内核使用，通常用于存储内核代码、数据结构、设备驱动等。
+		// 高端内存被用户程序使用，通常用于用户空间程序和内核动态分配的内存。
+		// 低内存区域的管理相对简单，因为这些地址可以直接映射到内核的虚拟地址空间。
+		// 高内存区域的管理相对复杂，因为这些地址需要通过页表映射来管理，以支持虚拟内存系统。
 		if (!frame_adjust_zone_bounds(low, &base, &size))
 			continue;
 
+		// 对于每一块内存，检查其类型，创建一个对应的内存区域结构。
 		if (e820table[i].type == MEMMAP_MEMORY_AVAILABLE) {
 			/* To be safe, make the available zone possibly smaller */
 			uint64_t new_base = ALIGN_UP(base, FRAME_SIZE);
 			uint64_t new_size = ALIGN_DOWN(size - (new_base - base),
 			    FRAME_SIZE);
 
+			// 将内存大小转换为帧数。
 			size_t count = SIZE2FRAMES(new_size);
 			pfn_t pfn = ADDR2PFN(new_base);
 			pfn_t conf;
@@ -95,8 +103,8 @@ static void init_e820_memory(pfn_t minconf, bool low)
 					zone_create(pfn, count, conf,
 					    ZONE_AVAILABLE | ZONE_HIGHMEM);
 			}
-		} else if ((e820table[i].type == MEMMAP_MEMORY_ACPI) ||
-		    (e820table[i].type == MEMMAP_MEMORY_NVS)) {
+		} 
+		else if ((e820table[i].type == MEMMAP_MEMORY_ACPI) || (e820table[i].type == MEMMAP_MEMORY_NVS)) {
 			/* To be safe, make the firmware zone possibly larger */
 			uint64_t new_base = ALIGN_DOWN(base, FRAME_SIZE);
 			uint64_t new_size = ALIGN_UP(size + (base - new_base),
@@ -104,7 +112,8 @@ static void init_e820_memory(pfn_t minconf, bool low)
 
 			zone_create(ADDR2PFN(new_base), SIZE2FRAMES(new_size), 0,
 			    ZONE_FIRMWARE);
-		} else {
+		} 
+		else {
 			/* To be safe, make the reserved zone possibly larger */
 			uint64_t new_base = ALIGN_DOWN(base, FRAME_SIZE);
 			uint64_t new_size = ALIGN_UP(size + (base - new_base),
@@ -143,6 +152,9 @@ void physmem_print(void)
 	}
 }
 
+// AMD64会调用这个函数
+// 低级架构初始化函数，主要负责执行与硬件直接相关的初始化操作。
+// 这些操作通常包括设置内存控制器、初始化内存相关的硬件寄存器等。
 void frame_low_arch_init(void)
 {
 	pfn_t minconf;
@@ -151,20 +163,29 @@ void frame_low_arch_init(void)
 		minconf = 1;
 
 #ifdef CONFIG_SMP
+		// 如果是多核系统，之前会把内核copy到AP_BOOT_OFFSET上，长度是unmapped_size
+		// 所以需要确定多核心系统需要设置的内核占用内存。。。
 		size_t unmapped_size =
 		    (uintptr_t) unmapped_end - BOOT_OFFSET;
 
+		// FRAME_WIDTH = 12
+		// ADDR2PFN(addr) = ((addr) >> FRAME_WIDTH)
 		minconf = max(minconf,
 		    ADDR2PFN(AP_BOOT_OFFSET + unmapped_size));
 #endif
 
+		// 如果是多核心系统，minconf指向的是除开AP需要的内存和第一个页帧外第二个页帧号。
+		// 否则，就是第二个页帧号（1）。
 		init_e820_memory(minconf, true);
 
 		/* Reserve frame 0 (BIOS data) */
+		// 第一个页帧是为BIOS留的。。。
 		frame_mark_unavailable(0, 1);
 
 #ifdef CONFIG_SMP
 		/* Reserve AP real mode bootstrap memory */
+		// 保留 AP 处理器 实模式 启动需要的内存。
+		// Question Here： MultiBoot2启动之后就是保护模式32位？APP处理器由主处理器启动，是否还是需要从实模式Boot？
 		frame_mark_unavailable(AP_BOOT_OFFSET >> FRAME_WIDTH,
 		    unmapped_size >> FRAME_WIDTH);
 #endif

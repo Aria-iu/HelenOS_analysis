@@ -65,7 +65,9 @@ static void multiboot2_memmap(uint32_t length, const multiboot2_memmap_t *memmap
 	multiboot2_memmap_entry_t *entry = (multiboot2_memmap_entry_t *)
 	    ((uintptr_t) memmap + sizeof(*memmap));
 	uint32_t pos = offsetof(multiboot2_tag_t, memmap) + sizeof(*memmap);
-
+	
+	// 初始化e820table中的内存字段。包括base_address、size、type。
+	// 在初始化frame_init()中需要使用
 	while ((pos < length) && (e820counter < MEMMAP_E820_MAX_RECORDS)) {
 		e820table[e820counter].base_address = entry->base_address;
 		e820table[e820counter].size = entry->size;
@@ -111,8 +113,10 @@ static void multiboot2_fbinfo(const multiboot2_fbinfo_t *fbinfo)
  * @param info      Multiboot2 information structure.
  *
  */
+// Parse multiboot2 information structure. 解析multiboot2信息结构。
 void multiboot2_info_parse(uint32_t signature, const multiboot2_info_t *info)
 {
+	// 验证魔数字段。
 	if (signature != MULTIBOOT2_LOADER_MAGIC)
 		return;
 

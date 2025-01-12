@@ -73,7 +73,12 @@ static const char *vendor_str[] = {
  */
 void cpu_setup_fpu(void)
 {
+	// 不仿真数学协处理器
+	// CR0_MP位的值通常定义为0x00000001，表示“数学协处理器存在”。
+	// 设置该位表示CPU支持懒惰上下文切换（lazy context switch）。
 	write_cr0((read_cr0() & ~CR0_EM) | CR0_MP);
+	// 设置CR4_OSFXSR位，表示“操作系统支持FXSAVE和FXRSTOR指令”。
+	// 这些指令用于保存和恢复FPU的状态，包括浮点寄存器、SIMD寄存器等。F
 	write_cr4(read_cr4() | CR4_OSFXSR);
 }
 

@@ -275,12 +275,15 @@ void pm_init(void)
 	descriptor_t *gdt_p = (descriptor_t *) gdtr.base;
 	tss_descriptor_t *tss_desc;
 
+	// Attention plz！！ 多处理器系统中，每一个CPU对应一个GDT和它的TSS。
+	// 所有CPU使用同一个IDT即可。
 	/*
 	 * Each CPU has its private GDT and TSS.
 	 * All CPUs share one IDT.
 	 */
 
 	if (config.cpu_active == 1) {
+		// 当前 CPU是bootstrap CPU。
 		idt_init();
 		/*
 		 * NOTE: bootstrap CPU has statically allocated TSS, because
@@ -299,23 +302,27 @@ void pm_init(void)
 		if (!tss_p)
 			panic("Cannot allocate TSS.");
 	}
-
+	// 清空 tss 段。
 	tss_initialize(tss_p);
-
+	// 设置 gdt中的 tss描述符。
 	tss_desc = (tss_descriptor_t *) (&gdt_p[TSS_DES]);
 	tss_desc->present = 1;
 	tss_desc->type = AR_TSS;
 	tss_desc->dpl = PL_KERNEL;
-
+	// 设置 gdt tss描述符的 base和limit。
 	gdt_tss_setbase(&gdt_p[TSS_DES], (uintptr_t) tss_p);
 	gdt_tss_setlimit(&gdt_p[TSS_DES], TSS_BASIC_SIZE - 1);
-
+	// 重新加载 gdtr和idtr。
 	gdtr_load(&gdtr);
 	idtr_load(&idtr);
 	/*
 	 * As of this moment, the current CPU has its own GDT pointing
 	 * to its own TSS. We just need to load the TR register.
 	 */
+	// 加载 TR 寄存器。
+	// 加载任务状态段到TR寄存器中。
+	// 执行 ltr 指令。ltr 指令的作用是将指定的选择子加载到任务寄存器（TR）中。
+	// 使得当前 CPU 可以使用该 TSS 来管理任务的上下文切换。这是操作系统任务管理机制中的一个重要步骤。
 	tr_load(GDT_SELECTOR(TSS_DES));
 }
 

@@ -1,0 +1,33 @@
+typedef struct {
+	/** Number of processors detected. */
+	unsigned int cpu_count;
+	/** Number of processors that are up and running. */
+	volatile size_t cpu_active;
+
+	uintptr_t base;
+	/** Size of memory in bytes taken by kernel and stack. */
+	size_t kernel_size;
+
+	bool identity_configured;
+	/** Base address of the kernel identity mapped memory. */
+	uintptr_t identity_base;
+	/** Size of the kernel identity mapped memory. */
+	size_t identity_size;
+
+	bool non_identity_configured;
+
+	/** End of physical memory. */
+	uint64_t physmem_end;
+} config_t;
+
+extern config_t config;
+
+config : cpu_count					= 1
+config : cpu_active					= 1 ，若是 多个核心 启动，会增加。
+config : base						= kernel_load_address
+config : kernel_size				= ALIGN_UP((uintptr_t) kdata_end - config.base, PAGE_SIZE);
+config : identity_configured		= true
+config : identity_base				= KM_AMD64_IDENTITY_START（UINT64_C(0xffffffff80000000)）
+config : identity_size				= KM_AMD64_IDENTITY_SIZE（UINT64_C(0x0000000080000000)）
+config : non_identity_configured	= false
+config : physmem_end

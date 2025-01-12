@@ -50,6 +50,7 @@
 
 __HELENOS_DECLS_BEGIN;
 
+// PFN 是 Page Frame Number ， 是页帧号。
 typedef uintptr_t pfn_t;
 typedef uintptr_t ipl_t;
 typedef uintptr_t sysarg_t;

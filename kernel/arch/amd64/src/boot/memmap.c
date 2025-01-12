@@ -33,7 +33,13 @@
  */
 
 #include <arch/boot/memmap.h>
-
+/*
+	typedef struct e820memmap {
+		uint64_t base_address;
+		uint64_t size;
+		uint32_t type;
+	} __attribute__((packed)) e820memmap_t;
+*/
 uint8_t e820counter = 0;
 e820memmap_t e820table[MEMMAP_E820_MAX_RECORDS];
 

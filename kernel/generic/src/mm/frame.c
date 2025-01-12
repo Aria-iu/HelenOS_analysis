@@ -1115,16 +1115,22 @@ void frame_init(void)
 	}
 
 	/* Tell the architecture to create some memory */
+	// AMD64架构实际上调用 ia32 的 frame_low_arch_init。
 	frame_low_arch_init();
 
+	// ADDR2PFN(addr)   --->  ((addr) >> 12)  // 4K
+	// SIZE2FRAMES(size)--->  (((size) == 0) ? 0 : ((((size) - 1) >> 12) + 1))
 	if (config.cpu_active == 1) {
+		// 将内核占用的物理帧标记为不可用
 		frame_mark_unavailable(ADDR2PFN(KA2PA(config.base)),
 		    SIZE2FRAMES(config.kernel_size));
 
+		// 遍历初始化时定义的任务列表init.tasks，将每个任务的物理内存区域标记为不可用。
 		for (size_t i = 0; i < init.cnt; i++)
 			frame_mark_unavailable(ADDR2PFN(init.tasks[i].paddr),
 			    SIZE2FRAMES(init.tasks[i].size));
 
+		// 这是 Boot allocations. 部分，这部分物理内存标记为不可用。
 		if (ballocs.size)
 			frame_mark_unavailable(ADDR2PFN(KA2PA(ballocs.base)),
 			    SIZE2FRAMES(ballocs.size));
@@ -1133,6 +1139,8 @@ void frame_init(void)
 		 * Blacklist first frame, as allocating NULL would
 		 * fail in some places
 		 */
+		// 将第一个物理帧（页框号为0）标记为不可用。
+		// 这是为了避免分配空指针（NULL），因为在某些地方分配空指针可能会导致错误
 		frame_mark_unavailable(0, 1);
 	}
 
@@ -1155,6 +1163,8 @@ void frame_init(void)
  */
 bool frame_adjust_zone_bounds(bool low, uintptr_t *basep, size_t *sizep)
 {
+	// 根据这个limit划分低端内存和高端内存
+	// limit = 0x80000000（2GB）
 	uintptr_t limit = KA2PA(config.identity_base) + config.identity_size;
 
 	if (low) {

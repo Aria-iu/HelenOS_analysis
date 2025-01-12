@@ -38,7 +38,9 @@
 
 void km_identity_arch_init(void)
 {
+	// KM_AMD64_IDENTITY_START      UINT64_C(0xffffffff80000000)
 	config.identity_base = KM_AMD64_IDENTITY_START;
+	// KM_AMD64_IDENTITY_SIZE       UINT64_C(0x0000000080000000)
 	config.identity_size = KM_AMD64_IDENTITY_SIZE;
 }
 
