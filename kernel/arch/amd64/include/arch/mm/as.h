@@ -35,14 +35,18 @@
 #ifndef KERN_amd64_AS_H_
 #define KERN_amd64_AS_H_
 
+// 地址空间空洞范围是 0x0000 8000 0000 0000 - 0xffff 7fff ffff ffff
 #define ADDRESS_SPACE_HOLE_START  UINT64_C(0x0000800000000000)
 #define ADDRESS_SPACE_HOLE_END    UINT64_C(0xffff7fffffffffff)
 
+// 两个架构特定的配置
 #define KERNEL_ADDRESS_SPACE_SHADOWED_ARCH  0
 #define KERNEL_SEPARATE_PTL0_ARCH           0
 
+// 内核虚拟地址空间范围 0xffff800000000000 - 0xffffffffffffffff
 #define KERNEL_ADDRESS_SPACE_START_ARCH  UINT64_C(0xffff800000000000)
 #define KERNEL_ADDRESS_SPACE_END_ARCH    UINT64_C(0xffffffffffffffff)
+// 用户程序虚拟地址空间范围 0x0000000000000000 - 0x00007fffffffffff
 #define USER_ADDRESS_SPACE_START_ARCH    UINT64_C(0x0000000000000000)
 #define USER_ADDRESS_SPACE_END_ARCH      UINT64_C(0x00007fffffffffff)
 

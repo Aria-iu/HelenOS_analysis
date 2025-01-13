@@ -85,6 +85,8 @@
  * Each architecture decides what functions will be used to carry out
  * address space operations such as creating or locking page tables.
  */
+// 每个架构会自己实现一个地址空间的操作结构体
+// 这个结构体的方法如创建或者锁定页表。
 const as_operations_t *as_operations = NULL;
 
 /** Cache for as_t objects */
@@ -113,6 +115,7 @@ SPINLOCK_INITIALIZE(asidlock);
 LIST_INITIALIZE(inactive_as_with_asid_list);
 
 /** Kernel address space. */
+// 内核地址空间
 as_t *AS_KERNEL = NULL;
 
 static void *as_areas_getkey(odlink_t *);
@@ -142,20 +145,25 @@ _NO_TRACE static size_t as_destructor(void *obj)
 }
 
 /** Initialize address space subsystem. */
-// ������ʼ���ں˵ĵ�ַ�ռ���ϵͳ��
+// 地址空间初始化
 void as_init(void)
 {
+	// AMD64架构地址空间初始化调用的是ia32架构的as_arch_init。
 	as_arch_init();
 
+	// 创建一个slab分配器分配结构体 as_t
 	as_cache = slab_cache_create("as_t", sizeof(as_t), 0,
 	    as_constructor, as_destructor, SLAB_CACHE_MAGDEFERRED);
 
+	// 创建一个slab分配器分配结构体 as_page_mapping_t
 	as_page_mapping_cache = slab_cache_create("as_page_mapping_t",
 	    sizeof(as_page_mapping_t), 0, NULL, NULL, SLAB_CACHE_MAGDEFERRED);
 
+	// 创建一个slab分配器分配结构体 used_space_ival_t
 	used_space_ival_cache = slab_cache_create("used_space_ival_t",
 	    sizeof(used_space_ival_t), 0, NULL, NULL, SLAB_CACHE_MAGDEFERRED);
-
+	
+	// FLAG_AS_KERNEL = 1<<0;
 	AS_KERNEL = as_create(FLAG_AS_KERNEL);
 	if (!AS_KERNEL)
 		panic("Cannot create kernel address space.");
@@ -169,12 +177,15 @@ void as_init(void)
  */
 as_t *as_create(unsigned int flags)
 {
+	// 分配一个as_t结构。
 	as_t *as = (as_t *) slab_alloc(as_cache, FRAME_ATOMIC);
 	if (!as)
 		return NULL;
 
+	// as_create_arch(as, flags) ---> ((void)as, (void)flags, EOK)
 	(void) as_create_arch(as, 0);
 
+	// 初始化這個字典。
 	odict_initialize(&as->as_areas, as_areas_getkey, as_areas_cmp);
 
 	if (flags & FLAG_AS_KERNEL)
@@ -186,6 +197,8 @@ as_t *as_create(unsigned int flags)
 	as->cpu_refcount = 0;
 
 #ifdef AS_PAGE_TABLE
+	// AMD64结构走这个分支
+	// 创建一个页表，设置为内核地址空间as的genarch.page_table字段。
 	as->genarch.page_table = page_table_create(flags);
 #else
 	page_table_create(flags);
