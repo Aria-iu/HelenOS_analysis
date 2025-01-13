@@ -70,6 +70,7 @@
 #define USER_ADDRESS_SPACE_END      USER_ADDRESS_SPACE_END_ARCH
 
 /** Kernel address space. */
+// 标识当前地址空间是否为内核地址空间
 #define FLAG_AS_KERNEL  (1 << 0)
 
 /* Address space area attributes. */
@@ -95,6 +96,7 @@
  * supposed to figure in the list as they are shared by all tasks and
  * set up during system initialization.
  *
+ * 地址空间结构体，包含了关于进程地址空间的信息。
  */
 typedef struct as {
 	/** Protected by asidlock. */
@@ -105,7 +107,7 @@ typedef struct as {
 	 * address space is active. Protected by
 	 * asidlock.
 	 */
-	size_t cpu_refcount;
+	size_t cpu_refcount;	// 用来跟踪地址空间在多少个 CPU 核心上活跃
 
 	/** Address space identifier.
 	 *
@@ -113,10 +115,10 @@ typedef struct as {
 	 * support ASIDs. Protected by asidlock.
 	 *
 	 */
-	asid_t asid;
+	asid_t asid;	// 地址空间标识符， 用于区分和标识不同的地址空间
 
 	/** Number of references (i.e. tasks that reference this as). */
-	atomic_refcount_t refcount;
+	atomic_refcount_t refcount;	// 引用计数，标识有多少个任务引用这个地址空间。
 
 	mutex_t lock;
 
@@ -124,7 +126,7 @@ typedef struct as {
 	 *
 	 * Members are of type as_area_t.
 	 */
-	odict_t as_areas;
+	odict_t as_areas;	// 地址空间区域的字典，存储了所有可以访问的内存区域。
 
 	/** Non-generic content. */
 	as_genarch_t genarch;
@@ -133,6 +135,8 @@ typedef struct as {
 	as_arch_t arch;
 } as_t;
 
+// 包含一系列与地址空间操作相关的函数指针。
+// 不同的架构可能有不同的实现，因此这里定义了一个操作接口，架构可以根据需要提供特定的实现。
 typedef struct {
 	pte_t *(*page_table_create)(unsigned int);
 	void (*page_table_destroy)(pte_t *);
@@ -142,15 +146,16 @@ typedef struct {
 } as_operations_t;
 
 /** Single anonymous page mapping. */
+// 表示一个匿名页面的映射
 typedef struct {
 	/** Containing pagemap structure */
 	struct as_pagemap *pagemap;
 	/** Link to @c shinfo->pagemap ordered dictionary */
 	odlink_t lpagemap;
 	/** Virtual address */
-	uintptr_t vaddr;
+	uintptr_t vaddr;			// 虚拟地址
 	/** Physical frame address */
-	uintptr_t frame;
+	uintptr_t frame;			// 物理页框的地址
 } as_page_mapping_t;
 
 /** Map of anonymous pages in a shared area. */
@@ -248,10 +253,12 @@ typedef union mem_backend_data {
 /** Address space area structure.
  *
  * Each as_area_t structure describes one contiguous area of virtual memory.
- *
+ * 
+ * 地址空间中的一个虚拟内存区域。每个区域都有自己的属性。
+ * 
  */
 typedef struct {
-	mutex_t lock;
+	mutex_t lock;					// 该区域的锁
 
 	/** Containing address space. */
 	as_t *as;
@@ -266,13 +273,13 @@ typedef struct {
 	unsigned int attributes;
 
 	/** Number of pages in the area. */
-	size_t pages;
+	size_t pages;					// 该区域的页数
 
 	/** Base address of this area. */
-	uintptr_t base;
+	uintptr_t base;					// 该区域的基地址
 
 	/** Map of used space. */
-	used_space_t used_space;
+	used_space_t used_space;		// 该区域内已用的空间
 
 	/**
 	 * If the address space area is shared. this is
@@ -288,6 +295,7 @@ typedef struct {
 } as_area_t;
 
 /** Address space area backend structure. */
+// 表示内存后端的结构体，每个后端提供了不同的操作方式，例如创建、销毁、共享地址空间区域，以及处理页错误等。
 typedef struct mem_backend {
 	bool (*create)(as_area_t *);
 	bool (*resize)(as_area_t *, size_t);
@@ -311,16 +319,22 @@ extern list_t inactive_as_with_asid_list;
 
 extern void as_init(void);
 
+// 创建地址空间
 extern as_t *as_create(unsigned int);
 extern void as_hold(as_t *);
 extern void as_release(as_t *);
+// 切换当前地址空间
 extern void as_switch(as_t *, as_t *);
+// 处理页面错误
 extern int as_page_fault(uintptr_t, pf_access_t, istate_t *);
 
+// 创建新的区域
 extern as_area_t *as_area_create(as_t *, unsigned int, size_t, unsigned int,
     mem_backend_t *, mem_backend_data_t *, uintptr_t *, uintptr_t);
 extern errno_t as_area_destroy(as_t *, uintptr_t);
+// 改变区域的大小
 extern errno_t as_area_resize(as_t *, uintptr_t, size_t, unsigned int);
+// 共享区域
 extern errno_t as_area_share(as_t *, uintptr_t, size_t, as_t *, unsigned int,
     uintptr_t *, uintptr_t);
 extern errno_t as_area_change_flags(as_t *, unsigned int, uintptr_t);

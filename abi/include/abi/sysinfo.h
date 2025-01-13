@@ -52,7 +52,8 @@ enum {
 };
 
 /** Item value type
- *
+ *	信息项的值类型
+ *  可以是常量值（sysarg_t）、二进制数据、由函数生成的数值、或者由函数生成的二进制数据。
  */
 typedef enum {
 	SYSINFO_VAL_UNDEFINED = 0,     /**< Undefined value */

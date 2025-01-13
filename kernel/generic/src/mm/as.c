@@ -142,6 +142,7 @@ _NO_TRACE static size_t as_destructor(void *obj)
 }
 
 /** Initialize address space subsystem. */
+// 这里会初始化内核的地址空间子系统。
 void as_init(void)
 {
 	as_arch_init();

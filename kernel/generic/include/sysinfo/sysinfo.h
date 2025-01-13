@@ -132,17 +132,23 @@ typedef union {
 } sysinfo_subtree_t;
 
 /** Sysinfo item
- *
+ *	表示一个信息项。
  */
 typedef struct sysinfo_item {
+	// 名称
 	char *name;                           /**< Item name */
 
+	// 值的类型
 	sysinfo_item_val_type_t val_type;     /**< Item value type */
+	// 值
 	sysinfo_item_val_t val;               /**< Item value */
 
+	// 
 	sysinfo_subtree_type_t subtree_type;  /**< Subtree type */
+	// 子树
 	sysinfo_subtree_t subtree;            /**< Subtree */
 
+	// 指向下一个同级信息的指针
 	struct sysinfo_item *next;            /**< Sibling item */
 } sysinfo_item_t;
 

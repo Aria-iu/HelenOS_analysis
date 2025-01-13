@@ -256,7 +256,10 @@ void main_bsp_separated_stack(void)
 	ra_init();
 	// 在slab分配器的基础上创建了一个名为sysinfo_item_t的slab_cash
 	// 用来分配 sysinfo_item_t的内存。
+	// 可以通过这个模块的函数来设置或查询一些系统信息。
 	sysinfo_init();
+
+	// 初始化地址空间子系统。address space init
 	as_init();
 	page_init();
 	tlb_init();
@@ -267,6 +270,7 @@ void main_bsp_separated_stack(void)
 	reserve_init();
 	// 对于AMD64架构来说，这里是调用 amd64_pre_smp_init
 	// 其中会初始化几个驱动。。。
+	// 还会更新系统信息。（依赖上面初始化的sysinfo模块）
 	ARCH_OP(pre_smp_init);
 	smp_init();
 

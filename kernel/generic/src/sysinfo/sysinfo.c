@@ -45,17 +45,22 @@
 #include <stdlib.h>
 
 /** Maximal sysinfo path length */
+// 系统信息路径的最大长度。
 #define SYSINFO_MAX_PATH  2048
 
+// 是否导出了 framebuffer
 bool fb_exported = false;
 
 /** Global sysinfo tree root item */
+// 指向 sysinfo 树的根项。
 static sysinfo_item_t *global_root = NULL;
 
 /** Sysinfo SLAB cache */
+// 指向 sysinfo_item_t 类型的 slab 缓存。
 static slab_cache_t *sysinfo_item_cache;
 
 /** Sysinfo lock */
+// 用于保护 sysinfo 数据结构的锁。
 static mutex_t sysinfo_lock;
 
 /** Sysinfo item constructor
