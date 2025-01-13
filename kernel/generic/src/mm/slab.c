@@ -870,6 +870,7 @@ void slab_print_list(void)
 	}
 }
 
+// main函数调用这个来初始化slab 分配器。
 void slab_cache_init(void)
 {
 	/* Initialize magazine cache */

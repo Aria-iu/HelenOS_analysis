@@ -247,6 +247,7 @@ void main_bsp_separated_stack(void)
 	// 物理页帧初始化。。
 	frame_init();
 	// zones_print_list();
+	// slab 分配器初始化。
 	slab_cache_init();
 	malloc_init();
 	ra_init();

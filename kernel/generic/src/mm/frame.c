@@ -674,7 +674,8 @@ _NO_TRACE static void zone_construct(zone_t *zone, pfn_t start, size_t count,
 		/*
 		 * Initialize the array of frame_t structures.
 		 */
-
+		// О©╫и╪О©╫О©╫О©╫О©╫О╫╚confdataО©╫О©╫н╙О©╫Ф╢╒рЁО©╫О©╫О©╫О©╫о╒О©╫д╣ь╥О©╫
+		// О©╫О©╫р╩О©╫О©╫zoneО©╫О©╫framesО©╫О©╫О©╫О©╫ж╦О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫рЁж║О©╫О©╫
 		zone->frames = (frame_t *) confdata;
 
 		for (size_t i = 0; i < count; i++)
@@ -692,7 +693,7 @@ _NO_TRACE static void zone_construct(zone_t *zone, pfn_t start, size_t count,
  * @return Size of zone configuration info (in bytes).
  *
  */
-// ╪фкЦр╩╦Жzone╣деДжцпео╒у╪сц╣двж╫зйЩ║ё
+// О©╫О©╫О©╫О©╫р╩О©╫О©╫zoneО©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫о╒у╪О©╫ц╣О©╫О©╫ж╫О©╫О©╫О©╫О©╫О©╫
 size_t zone_conf_size(size_t count)
 {
 	return (count * sizeof(frame_t) + bitmap_size(count));
@@ -767,32 +768,34 @@ size_t zone_create(pfn_t start, size_t count, pfn_t confframe,
 				}
 
 				if (overlap)
-					// хГ╧Ш╦╡╦гакё╛╬мр╩ж╠ур║ё
+					// О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫кёО©╫О©╫О©╫р╩ж╠О©╫р║О©╫
 					continue;
 
 				break;
 			}
 
-			// хГ╧Шур╡╩╣╫ё╛дз╨кpanic║ё
+			// О©╫О©╫О©╫О©╫р╡О©╫О©╫О©╫О©╫О©╫О©╫з╨О©╫panicО©╫О©╫
 			if (confframe >= start + count)
 				panic("Cannot find configuration data for zone.");
 		}
 
-		// ╢╢╫╗р╩╦Жпб╣дzoneё╛╡ЕхК╣╫zones╠Да©жпё╛еепР╨Сё╛╥╣╩ьznumоб╠Й║ё
+		// О©╫О©╫О©╫О©╫р╩О©╫О©╫О©╫б╣О©╫zoneО©╫О©╫О©╫О©╫О©╫К╣╫zonesО©╫О©╫О©╫О©╫О©╫пёО©╫О©╫О©╫О©╫О©╫Сё╛╥О©╫О©╫О©╫znumО©╫б╠Й║ё
 		size_t znum = zones_insert_zone(start, count, flags);
 		if (znum == (size_t) -1) {
 			irq_spinlock_unlock(&zones.lock, true);
 			return (size_t) -1;
 		}
 
-		// confdataж╦оРуБ╦Жzone╣дйЩ╬щеДжцж║╣ддз╨к╣ьж╥║ё
+		// confdataж╦О©╫О©╫О©╫О©╫О©╫zoneО©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ж║О©╫О©╫О©╫з╨к╣О©╫ж╥О©╫О©╫
 		void *confdata = (void *) PA2KA(PFN2ADDR(confframe));
 		// Create new frame zone.
-		// ╧╧тЛр╩обуБ╦Жzone╫А╧╧лЕё╛ЁУй╪╩╞║ё║ё
+		// О©╫О©╫О©╫О©╫р╩О©╫О©╫О©╫О©╫О©╫zoneО©╫А╧╧О©╫Её╛О©╫О©╫й╪О©╫О©╫О©╫О©╫О©╫О©╫
 		zone_construct(&zones.info[znum], start, count, flags, confdata);
 
 		/* If confdata in zone, mark as unavailable */
-		// хГ╧ШеДжцйЩ╬щж║тзzoneжпё╛╠Й╪гфДн╙╡╩©исц║ё
+		// Е╕┌Ф·°confframeЕ°╗startЕ┬╟start+countД╧▀И≈╢О╪▄Х╞╢Ф≤▌confdataИ°─Х╕│Е█═Г■╗Д╦─Д╨⌡Е╦╖О╪▄
+		// Ф∙╟И┤▐Ф≤╞ confcountЦ─┌
+		// О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ж║О©╫О©╫zoneО©╫пёО©╫О©╫О©╫О©╫О©╫О©╫н╙О©╫О©╫О©╫О©╫О©╫ц║О©╫
 		if ((confframe >= start) && (confframe < start + count)) {
 			for (size_t i = confframe; i < confframe + confcount; i++)
 				zone_mark_unavailable(&zones.info[znum],
@@ -811,8 +814,8 @@ size_t zone_create(pfn_t start, size_t count, pfn_t confframe,
 		return (size_t) -1;
 	}
 	
-	// ╡╩©исц╣ддз╢Ф╡©╥жё╛ж╠╫стзzonesжп╪схКр╩╦Жzone_t╠Да©╬м©иртё╛╡╩пМр╙урр╩╦ЖйЩ╬щеДжцж║ю╢╢Ф╢╒пео╒║ё
-	// вН╨Ср╩╦Ж╡нйЩйгNULL║ё
+	// О©╫О©╫О©╫О©╫О©╫ц╣О©╫О©╫з╢Ф╡©О©╫жёО©╫ж╠О©╫О©╫О©╫О©╫zonesО©╫п╪О©╫О©╫О©╫р╩О©╫О©╫zone_tО©╫О©╫О©╫О©╫О©╫м©О©╫О©╫тёО©╫О©╫О©╫О©╫О©╫р╙О©╫О©╫р╩О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ж║О©╫О©╫О©╫Ф╢╒О©╫О©╫о╒О©╫О©╫
+	// О©╫О©╫О©╫р╩О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫NULLО©╫О©╫
 	zone_construct(&zones.info[znum], start, count, flags, NULL);
 
 	irq_spinlock_unlock(&zones.lock, true);
@@ -1125,22 +1128,22 @@ void frame_init(void)
 	}
 
 	/* Tell the architecture to create some memory */
-	// AMD64╪э╧╧й╣╪йио╣Всц ia32 ╣д frame_low_arch_init║ё
+	// AMD64О©╫э╧О©╫й╣О©╫О©╫О©╫о╣О©╫О©╫О©╫ ia32 О©╫О©╫ frame_low_arch_initО©╫О©╫
 	frame_low_arch_init();
 
 	// ADDR2PFN(addr)   --->  ((addr) >> 12)  // 4K
 	// SIZE2FRAMES(size)--->  (((size) == 0) ? 0 : ((((size) - 1) >> 12) + 1))
 	if (config.cpu_active == 1) {
-		// ╫╚дз╨ку╪сц╣днОюМж║╠Й╪гн╙╡╩©исц
+		// О©╫О©╫О©╫з╨О©╫у╪О©╫ц╣О©╫О©╫О©╫О©╫О©╫ж║О©╫О©╫О©╫н╙О©╫О©╫О©╫О©╫О©╫О©╫
 		frame_mark_unavailable(ADDR2PFN(KA2PA(config.base)),
 		    SIZE2FRAMES(config.kernel_size));
 
-		// ╠ИюЗЁУй╪╩╞й╠╤╗рЕ╣дхннЯап╠Мinit.tasksё╛╫╚ц©╦ЖхннЯ╣днОюМдз╢ФгЬсР╠Й╪гн╙╡╩©исц║ё
+		// О©╫О©╫О©╫О©╫О©╫О©╫й╪О©╫О©╫й╠О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫п╠О©╫init.tasksО©╫О©╫О©╫О©╫ц©О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫з╢О©╫О©╫О©╫О©╫О©╫О©╫О©╫н╙О©╫О©╫О©╫О©╫О©╫ц║О©╫
 		for (size_t i = 0; i < init.cnt; i++)
 			frame_mark_unavailable(ADDR2PFN(init.tasks[i].paddr),
 			    SIZE2FRAMES(init.tasks[i].size));
 
-		// уБйг Boot allocations. ╡©╥жё╛уБ╡©╥жнОюМдз╢Ф╠Й╪гн╙╡╩©исц║ё
+		// О©╫О©╫О©╫О©╫ Boot allocations. О©╫О©╫О©╫жёО©╫О©╫Б╡©О©╫О©╫О©╫О©╫О©╫О©╫О©╫з╢О©╫О©╫О©╫н╙О©╫О©╫О©╫О©╫О©╫ц║О©╫
 		if (ballocs.size)
 			frame_mark_unavailable(ADDR2PFN(KA2PA(ballocs.base)),
 			    SIZE2FRAMES(ballocs.size));
@@ -1149,8 +1152,8 @@ void frame_init(void)
 		 * Blacklist first frame, as allocating NULL would
 		 * fail in some places
 		 */
-		// ╫╚╣зр╩╦ЖнОюМж║ё╗рЁ©Р╨ен╙0ё╘╠Й╪гн╙╡╩©исц║ё
-		// уБйгн╙ак╠эцБ╥жеД©уж╦уКё╗NULLё╘ё╛рРн╙тздЁп╘╣ь╥╫╥жеД©уж╦уК©идэ╩А╣╪жб╢МнС
+		// О©╫О©╫О©╫О©╫р╩О©╫О©╫О©╫О©╫О©╫О©╫ж║О©╫О©╫рЁО©╫О©╫О©╫н╙0О©╫О©╫О©╫О©╫О©╫н╙О©╫О©╫О©╫О©╫О©╫ц║О©╫
+		// О©╫О©╫О©╫О©╫н╙О©╫к╠О©╫О©╫О©╫О©╫О©╫О©╫О©╫ж╦О©╫Кё╗NULLО©╫О©╫О©╫О©╫О©╫О©╫н╙О©╫О©╫дЁп╘О©╫ь╥О©╫О©╫О©╫О©╫О©╫О©╫ж╦О©╫О©╫О©╫О©╫э╩А╣╪О©╫б╢О©╫О©╫О©╫
 		frame_mark_unavailable(0, 1);
 	}
 
@@ -1173,8 +1176,8 @@ void frame_init(void)
  */
 bool frame_adjust_zone_bounds(bool low, uintptr_t *basep, size_t *sizep)
 {
-	// ╦Ы╬щуБ╦Жlimit╩╝╥ж╣м╤кдз╢Ф╨м╦ъ╤кдз╢Ф
-	// limit = 0x80000000ё╗2GBё╘
+	// О©╫О©╫О©╫О©╫О©╫О©╫О©╫limitО©╫О©╫О©╫ж╣м╤О©╫О©╫з╢О©╫м╦ъ╤О©╫О©╫з╢О©╫
+	// limit = 0x80000000О©╫О©╫2GBО©╫О©╫
 	uintptr_t limit = KA2PA(config.identity_base) + config.identity_size;
 
 	if (low) {
