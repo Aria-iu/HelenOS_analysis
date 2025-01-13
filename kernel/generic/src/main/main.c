@@ -249,8 +249,13 @@ void main_bsp_separated_stack(void)
 	// zones_print_list();
 	// slab 分配器初始化。
 	slab_cache_init();
+	// 初始化malloc分配器。malloc依赖slab分配器来分配内存。
 	malloc_init();
+	// 内存区域初始化，是在slab分配器的基础上创建了一个名为ra_segment_t的slab_cash
+	// 用来分配 ra_segment_t 结构的内存。
 	ra_init();
+	// 在slab分配器的基础上创建了一个名为sysinfo_item_t的slab_cash
+	// 用来分配 sysinfo_item_t的内存。
 	sysinfo_init();
 	as_init();
 	page_init();

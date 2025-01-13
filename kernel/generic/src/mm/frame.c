@@ -901,6 +901,7 @@ loop:
 	irq_spinlock_lock(&zones.lock, true);
 
 	// TODO: Print diagnostic if neither is explicitly specified.
+	// 这里lowmem是用来判断是要从低端内存分配frame还是高端内存分配frame。
 	bool lowmem = (flags & FRAME_LOWMEM) || !(flags & FRAME_HIGHMEM);
 
 	/*

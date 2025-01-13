@@ -117,16 +117,24 @@
 #include <cpu.h>
 #include <stdlib.h>
 
+// 初始化了一个自旋锁 slab_cache_lock，用于保护访问 slab_cache_t 相关的共享资源。
 IRQ_SPINLOCK_STATIC_INITIALIZE(slab_cache_lock);
+// 初始化了一个链表 slab_cache_list，用于存放所有的 SLAB 缓存对象（slab_cache_t）。
 static LIST_INITIALIZE(slab_cache_list);
 
 /** Magazine cache */
+// 一个 slab_cache_t 类型的变量，表示 Magazine Cache
+// 用于存储每个 CPU 的本地缓存，提高内存分配的性能，减少全局锁的竞争。
 static slab_cache_t mag_cache;
 
 /** Cache for cache descriptors */
+// 存储 SLAB 缓存的缓存。它管理 slab_cache_t 类型的缓存结构。
+// 由于 slab_cache_t 本身也需要被管理，因此有一个专门的缓存用于存储 slab_cache_t 对象。
 static slab_cache_t slab_cache_cache;
 
 /** Cache for per-CPU magazines of caches */
+// 用于存储 每个 SLAB 缓存的本地 CPU 缓存。
+// 即每个 SLAB 缓存都可能有自己的本地缓存（杂志缓存），这个缓存可以加速分配过程，减少多核环境下的锁竞争。
 static slab_cache_t slab_mag_cache;
 
 /** Cache for external slab descriptors
@@ -135,14 +143,20 @@ static slab_cache_t slab_mag_cache;
  *   as all slab structures are 'small' - control structures of
  *   their caches do not require further allocation
  */
+// 用于存储外部 SLAB 描述符的缓存。
 static slab_cache_t *slab_extern_cache;
 
 /** Slab descriptor */
 typedef struct {
+	// 指向父缓存的指针
 	slab_cache_t *cache;  /**< Pointer to parent cache. */
+	// full/partial slabs链表中的链接
 	link_t link;          /**< List of full/partial slabs. */
+	// 第一个可用的对象的起始地址
 	void *start;          /**< Start address of first available item. */
+	// 该SLAB中的可用对象数量
 	size_t available;     /**< Count of available items in this slab. */
+	// 下一个可用对象的索引
 	size_t nextavail;     /**< The index of next available item. */
 } slab_t;
 
@@ -155,7 +169,7 @@ static unsigned int _slab_initialized = 0;
  */
 
 /** Allocate frames for slab space and initialize
- *
+ *	这里可以看出，对于slab分配器，无论分配规则有多复杂，底层去分配页帧还是依赖frame_alloc_generic
  */
 _NO_TRACE static slab_t *slab_space_alloc(slab_cache_t *cache,
     unsigned int flags)
@@ -188,6 +202,7 @@ _NO_TRACE static slab_t *slab_space_alloc(slab_cache_t *cache,
 	for (i = 0; i < cache->frames; i++)
 		frame_set_parent(ADDR2PFN(KA2PA(data)) + i, slab, zone);
 
+	// 将slab的起始分配地址设置为新分配出来的帧的内核地址。
 	slab->start = data;
 	slab->available = cache->objects;
 	slab->nextavail = 0;
@@ -873,18 +888,22 @@ void slab_print_list(void)
 // main函数调用这个来初始化slab 分配器。
 void slab_cache_init(void)
 {
+	// 调用 _slab_cache_create 来创建缓存，这些缓存用于管理不同类型的 SLAB 结构，以便高效地分配和回收内存。
 	/* Initialize magazine cache */
+	// 初始化 mag_cache，该缓存管理 slab_magazine_t 类型的对象。
 	_slab_cache_create(&mag_cache, "slab_magazine_t",
 	    sizeof(slab_magazine_t) + SLAB_MAG_SIZE * sizeof(void *),
 	    sizeof(uintptr_t), NULL, NULL, SLAB_CACHE_NOMAGAZINE |
 	    SLAB_CACHE_SLINSIDE);
 
 	/* Initialize slab_cache cache */
+	// 初始化 slab_cache_cache，该缓存管理 slab_cache_t 类型的对象。
 	_slab_cache_create(&slab_cache_cache, "slab_cache_cache",
 	    sizeof(slab_cache_cache), sizeof(uintptr_t), NULL, NULL,
 	    SLAB_CACHE_NOMAGAZINE | SLAB_CACHE_SLINSIDE);
 
 	/* Initialize external slab cache */
+	// 该缓存用于存储 slab_t 类型的外部 SLAB 描述符。
 	slab_extern_cache = slab_cache_create("slab_t", sizeof(slab_t), 0,
 	    NULL, NULL, SLAB_CACHE_SLINSIDE | SLAB_CACHE_MAGDEFERRED);
 

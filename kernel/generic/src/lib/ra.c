@@ -100,6 +100,7 @@ static ra_segment_t *ra_segment_create(uintptr_t base)
 {
 	ra_segment_t *seg;
 
+	// 对于一个内存段，分配依赖于slab内存分配系统。
 	seg = slab_alloc(ra_segment_cache, FRAME_ATOMIC);
 	if (!seg)
 		return NULL;

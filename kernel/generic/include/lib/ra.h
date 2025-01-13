@@ -40,11 +40,16 @@
 #include <adt/hash_table.h>
 #include <synch/spinlock.h>
 
+// 代表一个内存区域。一个内存区域管理着多个span
+// 每个span包含了一大块内存
 typedef struct {
 	IRQ_SPINLOCK_DECLARE(lock);
 	list_t spans;		/**< List of arena's spans. */
 } ra_arena_t;
 
+// 表示一个span
+// 是内存区域中的一个实际的内存块。每个span的内存块大小
+// 由 max_order 进行记录（通常是2的幂次方），span的内存会被划分为多个内存片段。
 typedef struct {
 	link_t span_link;	/**< Arena's list of spans link. */
 
@@ -68,6 +73,9 @@ typedef struct {
  * example, the size of the segment needs to be calculated from the segment
  * base and the base of the following segment.
  */
+// 表示一个内存片段
+// 每个内存片段代表一块具体的内存单元。内存片段的管理是整个内存分配系统的基础，
+// 系统会将内存按片段分割，片段可以被分配给用户，也可以在释放时返回给系统。
 typedef struct {
 	link_t segment_link;	/**< Span's segment list link. */
 

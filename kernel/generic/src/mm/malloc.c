@@ -44,8 +44,11 @@
 #define SLAB_MAX_MALLOC_W  22
 
 /** Caches for malloc */
+// 指向 slab_cache_t 结构体的指针数组。
+// 用于存储为不同大小的内存分配请求创建的 SLAB 缓存。
 static slab_cache_t *malloc_caches[SLAB_MAX_MALLOC_W - SLAB_MIN_MALLOC_W + 1];
 
+// 每个 SLAB 缓存对应的名称。名称格式通常以 malloc- 开头，后跟缓存大小（单位为字节）。
 static const char *malloc_names[] =  {
 	"malloc-16",
 	"malloc-32",
@@ -68,12 +71,15 @@ static const char *malloc_names[] =  {
 	"malloc-4M"
 };
 
+// 初始化一系列不同大小的 SLAB 分配区域。具体来说，
+// 它根据预定义的大小范围，创建多个 SLAB 缓存（malloc_caches）来处理不同大小的内存分配请求。
 void malloc_init(void)
 {
 	/* Initialize structures for malloc */
 	size_t i;
 	size_t size;
 
+	// 创建一系列不同大小的slab分配区域。
 	for (i = 0, size = (1 << SLAB_MIN_MALLOC_W);
 	    i < (SLAB_MAX_MALLOC_W - SLAB_MIN_MALLOC_W + 1);
 	    i++, size <<= 1) {
@@ -133,6 +139,7 @@ static void *mem_alloc(size_t alignment, size_t size)
 	}
 
 	/* We assume that slab objects are aligned naturally */
+	// mem_alloc会调用slab分配器分配适合长度的内存，返回首地址。
 	return slab_alloc(cache_for_size(size), FRAME_ATOMIC);
 }
 
