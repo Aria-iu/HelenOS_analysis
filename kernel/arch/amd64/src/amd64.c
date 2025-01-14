@@ -182,14 +182,18 @@ void amd64_post_mm_init(void)
 		i8254_init();
 
 #if (defined(CONFIG_FB) || defined(CONFIG_EGA))
+		// 标记是否初始化了帧缓冲设备。
+		// AMD64架构中设置了CONFIG_FB 和 CONFIG_EGA
 		bool bfb = false;
 #endif
 
 #ifdef CONFIG_FB
+		// 初始化帧缓冲设备。
 		bfb = bfb_init();
 #endif
 
 #ifdef CONFIG_EGA
+		// 如果没有设置帧缓冲设备的参数或者帧缓冲设备初始化失败，初始化ega设备。
 		if (!bfb) {
 			outdev_t *egadev = ega_init(EGA_BASE, EGA_VIDEORAM);
 			if (egadev)
@@ -198,10 +202,12 @@ void amd64_post_mm_init(void)
 #endif
 
 		/* Merge all memory zones to 1 big zone */
+		// 合并所有可合并的内存区域（zones）为一个大的内存区域
 		zone_merge_all();
 	}
 
 	/* Setup fast SYSCALL/SYSRET */
+	// 设置和启用系统调用（SYSCALL/SYSRET）支持。通过配置CPU的MSR（Model-Specific Register）来实现。
 	syscall_setup_cpu();
 }
 

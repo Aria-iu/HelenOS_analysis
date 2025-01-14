@@ -57,6 +57,7 @@ uint8_t bfb_blue_size = 0;
 
 bool bfb_init(void)
 {
+	// 检查参数是否合法
 	if ((bfb_addr == 0) || (bfb_width == 0) || (bfb_height == 0) ||
 	    (bfb_bpp == 0) || (bfb_scanline == 0))
 		return false;

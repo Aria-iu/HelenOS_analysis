@@ -98,15 +98,22 @@ void i8254_init(void)
 	// 注册 i8254_irq 中断。
 	irq_register(&i8254_irq);
 
+	// 设置 i8254 定时器的模式，并启用相应的中断
 	i8254_normal_operation();
 }
 
 void i8254_normal_operation(void)
 {
+	// 通过 pio_write_8 向 i8254 的控制寄存器写入 0x36，设置定时器的工作模式。
+	// 0x36 通常表示计数器 0 工作在 "模式 3"（方波生成模式），并且是计数器 0 的方式。
 	pio_write_8(CLK_PORT4, 0x36);
+	// 通过 i8259_disable_irqs 禁用 i8254 中断。1 << IRQ_CLK 表示禁用与 IRQ_CLK 对应的中断。
 	i8259_disable_irqs(1 << IRQ_CLK);
+	// 这两行代码向 i8254 定时器的计数器写入一个值，通常是一个分频值，用来设置定时器的周期。
+	// CLK_CONST / HZ 表示时钟常量除以期望的频率值（HZ），然后分成低位和高位写入 i8254。
 	pio_write_8(CLK_PORT1, (CLK_CONST / HZ) & 0xf);
 	pio_write_8(CLK_PORT1, (CLK_CONST / HZ) >> 8);
+	// 通过 i8259_enable_irqs 启用与 IRQ_CLK 对应的中断。
 	i8259_enable_irqs(1 << IRQ_CLK);
 }
 

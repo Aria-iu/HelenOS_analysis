@@ -598,24 +598,33 @@ static void ega_mapped_changed(void *arg)
 	}
 }
 
+// 初始化ega设备
 outdev_t *ega_init(ioport8_t *base, uintptr_t addr)
 {
+	// 为输出设备结构体分配内存
 	outdev_t *egadev = malloc(sizeof(outdev_t));
 	if (!egadev)
 		return NULL;
 
+	// 为 EGA 设备实例结构体分配内存
 	ega_instance_t *instance = malloc(sizeof(ega_instance_t));
 	if (!instance) {
 		free(egadev);
 		return NULL;
 	}
 
+	// 初始化输出设备，传入设备名称、设备结构和设备操作结构
 	outdev_initialize("egadev", egadev, &egadev_ops);
+	// 将 EGA 设备实例结构体赋值给设备的 data 字段
 	egadev->data = instance;
 
+	// 初始化 EGA 设备的自旋锁
 	irq_spinlock_initialize(&instance->lock, "*ega.instance.lock");
 
+	// 设置 EGA 基地址
 	instance->base = base;
+	// 映射显示内存
+	// 将传进来的参数也就是 EGA_VIDEORAM 基地址addr映射EGA_VRAM_SIZE的大小，返回虚拟地址给 instance->addr
 	instance->addr = (uint8_t *) km_map(addr, EGA_VRAM_SIZE,
 	    KM_NATURAL_ALIGNMENT, PAGE_WRITE | PAGE_NOT_CACHEABLE);
 	if (!instance->addr) {
@@ -625,6 +634,7 @@ outdev_t *ega_init(ioport8_t *base, uintptr_t addr)
 		return NULL;
 	}
 
+	// 分配后备缓冲区
 	instance->backbuf = (uint8_t *) malloc(EGA_VRAM_SIZE);
 	if (!instance->backbuf) {
 		LOG("Unable to allocate backbuffer.");
@@ -633,25 +643,29 @@ outdev_t *ega_init(ioport8_t *base, uintptr_t addr)
 		return NULL;
 	}
 
+	// 初始化物理区域
 	ddi_parea_init(&instance->parea);
-	instance->parea.pbase = addr;
-	instance->parea.frames = SIZE2FRAMES(EGA_VRAM_SIZE);
-	instance->parea.unpriv = false;
-	instance->parea.mapped = false;
-	instance->parea.mapped_changed = ega_mapped_changed;
-	instance->parea.arg = (void *) instance;
-	ddi_parea_register(&instance->parea);
+	instance->parea.pbase = addr;							// 设置物理内存的基础地址
+	instance->parea.frames = SIZE2FRAMES(EGA_VRAM_SIZE);	// 将显示内存大小转换为帧数
+	instance->parea.unpriv = false;							// 设置该内存区域是否允许用户空间访问
+	instance->parea.mapped = false;							// 设置映射标记
+	instance->parea.mapped_changed = ega_mapped_changed;	// 设置映射改变时的回调函数
+	instance->parea.arg = (void *) instance;				// 设置回调函数的参数
+	ddi_parea_register(&instance->parea);					// 注册该物理内存区域
 
 	/* Synchronize the back buffer and cursor position. */
+	// 同步后备缓冲区和光标位置
 	memcpy(instance->backbuf, instance->addr, EGA_VRAM_SIZE);
 	ega_sync_cursor(instance);
 
+	// 如果还没有导出 framebuffer（显示缓冲区）
 	if (!fb_exported) {
 		/*
 		 * We export the kernel framebuffer for uspace usage.
 		 * This is used in the case the uspace framebuffer
 		 * driver is not self-sufficient.
 		 */
+		//导出 framebuffer 供用户空间使用
 		sysinfo_set_item_val("fb", NULL, true);
 		sysinfo_set_item_val("fb.kind", NULL, 2);
 		sysinfo_set_item_val("fb.width", NULL, EGA_COLS);
@@ -659,10 +673,11 @@ outdev_t *ega_init(ioport8_t *base, uintptr_t addr)
 		sysinfo_set_item_val("fb.blinking", NULL, true);
 		sysinfo_set_item_val("fb.address.physical", NULL, addr);
 
+		// 标记 framebuffer 已导出
 		fb_exported = true;
 	}
 
-	return egadev;
+	return egadev;	 // 返回初始化好的设备实例
 }
 
 /** @}
