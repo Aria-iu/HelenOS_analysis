@@ -181,6 +181,7 @@ _NO_TRACE void page_mapping_update(as_t *as, uintptr_t page, bool nolock,
  * @param base Starting virtual address of the range that is made global.
  * @param size Size of the address range that is made global.
  */
+// 将这个映射设置为所有页表都可见，而不是只有一个特定的地址空间设置。
 void page_mapping_make_global(uintptr_t base, size_t size)
 {
 	assert(page_mapping_operations);

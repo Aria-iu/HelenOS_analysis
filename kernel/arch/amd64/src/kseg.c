@@ -42,6 +42,10 @@
  * Allocate and initialize a per-CPU structure to be accessible via the
  * GS_KERNEL segment register.
  */
+/*
+* 为每个核心分配一个 kseg_t结构体。
+* 在多核处理器中，每个 CPU 核心都会有一个自己的 kseg_t 结构体，用于保存该核心相关的栈指针（用户栈、内核栈）以及 FSBASE 寄存器的值。
+*/
 void kseg_init(void)
 {
 	kseg_t *kseg;

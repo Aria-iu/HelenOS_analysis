@@ -265,9 +265,11 @@ void main_bsp_separated_stack(void)
 	page_init();
 	// TLB是硬件实现，直接使用即可。
 	tlb_init();
+	// 内核非直接映射部分初始化。
 	km_non_identity_init();
+	// 设备驱动接口初始化。
 	ddi_init();
-	// 这个宏在AMD64架构下调用 amd64_pre_mm_init
+	// 这个宏在AMD64架构下调用 amd64_post_mm_init
 	ARCH_OP(post_mm_init);
 
 	reserve_init();

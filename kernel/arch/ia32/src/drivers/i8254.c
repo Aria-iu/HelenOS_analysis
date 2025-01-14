@@ -60,6 +60,7 @@
 #define LOOPS  150000
 #define SHIFT  11
 
+// 系统时钟中断
 static irq_t i8254_irq;
 
 static irq_ownership_t i8254_claim(irq_t *irq)
@@ -82,11 +83,19 @@ static void i8254_irq_handler(irq_t *irq)
 
 void i8254_init(void)
 {
+	// 初始化中断 i8254_irq ， 会调用 irq_initialize 先将 i8254_irq清零。
+	// 在调用irq_spinlock_initialize初始化 i8254_irq -> lock
+	// 再设置 irq->inr = -1
+	// 最后调用 irq_initialize_arch
 	irq_initialize(&i8254_irq);
+	// 设置 i8254_irq 的字段。
 	i8254_irq.preack = true;
+	// IRQ_CLK = 0
+	// VECTOR_CLK = IVT_IRQBASE + IRQ_CLK = 16 + 0 = 15
 	i8254_irq.inr = IRQ_CLK;
 	i8254_irq.claim = i8254_claim;
 	i8254_irq.handler = i8254_irq_handler;
+	// 注册 i8254_irq 中断。
 	irq_register(&i8254_irq);
 
 	i8254_normal_operation();

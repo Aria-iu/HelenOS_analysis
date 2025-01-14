@@ -163,16 +163,22 @@ void amd64_pre_mm_init(void)
 	}
 }
 
+// ddi初始化之后调用。
 void amd64_post_mm_init(void)
 {
+	// 每CPU虚拟寄存器初始化。
 	vreg_init();
+	// 每CPU kseg初始化，由GS寄存器访问。
 	kseg_init();
 
 	if (config.cpu_active == 1) {
 		/* Initialize IRQ routing */
+		// IRQ_COUNT = 16
+		// 中断机制初始化，但是还没有开始注册外设中断或者定时器之类的中断。
 		irq_init(IRQ_COUNT, IRQ_COUNT);
 
 		/* hard clock */
+		// 硬件计时器初始化。
 		i8254_init();
 
 #if (defined(CONFIG_FB) || defined(CONFIG_EGA))

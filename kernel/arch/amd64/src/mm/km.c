@@ -44,8 +44,12 @@ void km_identity_arch_init(void)
 	config.identity_size = KM_AMD64_IDENTITY_SIZE;
 }
 
+// AMD64架构kernel memory 非直接映射初始化
 void km_non_identity_arch_init(void)
 {
+	// KM_AMD64_NON_IDENTITY_START = 0xffff800000000000
+	// KM_AMD64_NON_IDENTITY_SIZE  = 0x00007fff80000000
+	// 这部分是将内核部分虚拟地址 0xffff800000000000 - 0xffffffff80000000这段地址 非 直接映射到物理内存。
 	km_non_identity_span_add(KM_AMD64_NON_IDENTITY_START,
 	    KM_AMD64_NON_IDENTITY_SIZE);
 }

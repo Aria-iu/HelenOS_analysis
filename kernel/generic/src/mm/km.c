@@ -94,6 +94,7 @@ void km_identity_init(void)
 /** Architecture dependent setup of non-identity-mapped kernel memory. */
 void km_non_identity_init(void)
 {
+	// 创建一个空的 arena
 	km_ni_arena = ra_arena_create();
 	assert(km_ni_arena != NULL);
 	km_non_identity_arch_init();
@@ -105,12 +106,17 @@ bool km_is_non_identity(uintptr_t addr)
 	return km_is_non_identity_arch(addr);
 }
 
+// 内核非直接映射部分
+// base = 0xffff800000000000 
+// size = 0x00007fff80000000
 void km_non_identity_span_add(uintptr_t base, size_t size)
 {
 	bool span_added;
 
+	// 将内核这部分非直接映射设置为所有页表可见
 	page_mapping_make_global(base, size);
 
+	// 非直接映射实现
 	span_added = ra_span_add(km_ni_arena, base, size);
 	assert(span_added);
 	(void) span_added;

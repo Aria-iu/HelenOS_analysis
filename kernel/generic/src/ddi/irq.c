@@ -92,6 +92,9 @@ inr_t last_inr = 0;
  * @param chains  Number of buckets in the hash table.
  *
  */
+/**
+* 初始化中断机制。
+*/
 void irq_init(size_t inrs, size_t chains)
 {
 	last_inr = inrs - 1;
@@ -100,6 +103,10 @@ void irq_init(size_t inrs, size_t chains)
 	    FRAME_ATOMIC);
 	assert(irq_cache);
 
+	// 创建两个哈希表，一个对应用户空间来设置某个中断的处理程序记录
+	// 另一个对应内核设置某个中断的处理程序记录
+	// 可以在不同条件下判断优先使用哪个处理程序
+	// 如果使用用户空间的，则内核处理程序直接将控制权交给用户程序。
 	hash_table_create(&irq_uspace_hash_table, chains, 0, &irq_ht_ops);
 	hash_table_create(&irq_kernel_hash_table, chains, 0, &irq_ht_ops);
 }
@@ -130,6 +137,7 @@ void irq_register(irq_t *irq)
 {
 	irq_spinlock_lock(&irq_kernel_hash_table_lock, true);
 	irq_spinlock_lock(&irq->lock, false);
+	// 内核设置中断，直接将这个中断设置到 irq_kernel_hash_table 中即可。
 	hash_table_insert(&irq_kernel_hash_table, &irq->link);
 	irq_spinlock_unlock(&irq->lock, false);
 	irq_spinlock_unlock(&irq_kernel_hash_table_lock, true);

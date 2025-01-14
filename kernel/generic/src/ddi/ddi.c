@@ -62,6 +62,7 @@
 static mutex_t pareas_lock;
 
 /** Ordered dictionary of enabled physical memory areas by base address. */
+// 一个有序字典，存储已经使能的物理内存区域。
 static odict_t pareas;
 
 static void *pareas_getkey(odlink_t *);

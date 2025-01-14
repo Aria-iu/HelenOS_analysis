@@ -212,6 +212,7 @@ void interrupt_init(void)
 
 	// IRQ_COUNT = 16
 	// IRQ_BASE  = 32
+	// 这里只是将处理函数设置为了 irq_interrupt ， 但是真正的中断处理要在irq_init之后才可以。
 	for (i = 0; i < IRQ_COUNT; i++) {
 		if ((i != IRQ_PIC0_SPUR) && (i != IRQ_PIC1_SPUR) &&
 		    (i != IRQ_PIC1))
