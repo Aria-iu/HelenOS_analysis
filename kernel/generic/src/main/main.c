@@ -261,13 +261,18 @@ void main_bsp_separated_stack(void)
 
 	// 初始化地址空间子系统。address space init
 	as_init();
+	// 分页机制初始化。
 	page_init();
+	// TLB是硬件实现，直接使用即可。
 	tlb_init();
 	km_non_identity_init();
 	ddi_init();
 	// 这个宏在AMD64架构下调用 amd64_pre_mm_init
 	ARCH_OP(post_mm_init);
+
 	reserve_init();
+
+
 	// 对于AMD64架构来说，这里是调用 amd64_pre_smp_init
 	// 其中会初始化几个驱动。。。
 	// 还会更新系统信息。（依赖上面初始化的sysinfo模块）

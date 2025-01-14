@@ -54,6 +54,7 @@
 
 void tlb_init(void)
 {
+	// AMD64架构调用IA32的 tlb_arch_init
 	tlb_arch_init();
 }
 

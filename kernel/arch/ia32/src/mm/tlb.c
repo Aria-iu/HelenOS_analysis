@@ -39,6 +39,8 @@
 #include <typedefs.h>
 
 /** Invalidate all entries in TLB. */
+// 某些情况下，如进程上下文切换时，可能需要刷新TLB，
+// 以确保地址转换的正确性。这可以通过重写CR3寄存器来实现，这会使得TLB中的内容被刷新。
 void tlb_invalidate_all(void)
 {
 	write_cr3(read_cr3());
@@ -67,6 +69,7 @@ void tlb_invalidate_pages(asid_t asid __attribute__((unused)), uintptr_t page, s
 		invlpg(page + i * PAGE_SIZE);
 }
 
+// 空实现。。。
 void tlb_arch_init(void)
 {
 }

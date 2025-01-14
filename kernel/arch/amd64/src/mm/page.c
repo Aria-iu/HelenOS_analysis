@@ -47,6 +47,7 @@
 
 void page_arch_init(void)
 {
+	// 如果是AP Boot，写入cr3寄存器之后返回即可。
 	if (config.cpu_active > 1) {
 		write_cr3((uintptr_t) AS_KERNEL->genarch.page_table);
 		return;
@@ -62,19 +63,26 @@ void page_arch_init(void)
 
 	/*
 	 * PA2KA(identity) mapping for all low-memory frames.
+	 * 将所有low-memory的帧映射到对于的内核虚拟地址。
 	 */
+	// config.identity_size = 0x80000000
+	// config.physmem_end   = ？？ 内存边界大小一般会大于2G，所以这里通常会取identity_size
 	for (cur = 0; cur < min(config.identity_size, config.physmem_end);
 	    cur += FRAME_SIZE)
 		page_mapping_insert(AS_KERNEL, PA2KA(cur), cur, identity_flags);
 
 	page_table_unlock(AS_KERNEL, true);
 
+	// 注册Page Fault的处理函数。
 	exc_register(VECTOR_PF, "page_fault", true, (iroutine_t) page_fault);
+	// 刷新页表。
+	// 读写寄存器的函数实现在 /kernel/arch/'UARCH'/include/arch/asm.h中使用宏定义来产生。
 	write_cr3((uintptr_t) AS_KERNEL->genarch.page_table);
 }
 
 void page_fault(unsigned int n, istate_t *istate)
 {
+	// 找到页错误的虚拟地址。
 	uintptr_t badvaddr = read_cr2();
 
 	if (istate->error_word & PFERR_CODE_RSVD)
@@ -89,6 +97,7 @@ void page_fault(unsigned int n, istate_t *istate)
 	else
 		access = PF_ACCESS_READ;
 
+	// 处理页错误。
 	(void) as_page_fault(badvaddr, access, istate);
 }
 

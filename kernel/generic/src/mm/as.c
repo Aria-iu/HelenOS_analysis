@@ -1523,6 +1523,7 @@ errno_t as_area_change_flags(as_t *as, unsigned int flags, uintptr_t address)
  *         or copy_from_uspace().
  *
  */
+// 在当前地址空间中处理页错误。
 int as_page_fault(uintptr_t address, pf_access_t access, istate_t *istate)
 {
 	uintptr_t page = ALIGN_DOWN(address, PAGE_SIZE);
@@ -1534,6 +1535,11 @@ int as_page_fault(uintptr_t address, pf_access_t access, istate_t *istate)
 	if (!AS)
 		goto page_fault;
 
+	// AS   ----->   CURRENT->as
+// Question Here : 如果处理的是用户程序中的一个页错误，为什么直接使用CURRENT？
+// Answer : 因为每一个CPU对应一个内核栈，每个内核栈基地址处存有CURRENT，指向当前CPU正在执行的任务
+//			的地址空间，如果出现页错误，trap进入内核，这里存放的就是发生页错误的CURRENT。修改这个
+//			地址空间即可处理用户程序的页错误。
 	mutex_lock(&AS->lock);
 	as_area_t *area = find_area_and_lock(AS, page);
 	if (!area) {
