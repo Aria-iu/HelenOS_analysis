@@ -294,6 +294,7 @@ void main_bsp_separated_stack(void)
 	// cpu_init是内核.text段的开头。
 	cpu_init();
 	calibrate_delay_loop();
+	// APIC的设置在 amd64_post_cpu_init 中进行。
 	ARCH_OP(post_cpu_init);
 
 	clock_counter_init();
