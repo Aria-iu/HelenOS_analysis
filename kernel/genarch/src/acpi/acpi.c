@@ -157,12 +157,15 @@ static void configure_via_xsdt(void)
 			struct acpi_sdt_header *hdr =
 			    (struct acpi_sdt_header *) ((uintptr_t) acpi_xsdt->entry[i]);
 
+			// 该条目的物理地址映射到虚拟内存中，返回指向该 ACPI 数据表头部的指针
 			struct acpi_sdt_header *vhdr = map_sdt(hdr);
 			if (CMP_SIGNATURE(vhdr->signature, signature_map[j].signature)) {
 				if (!acpi_sdt_check((uint8_t *) vhdr))
 					break;
-
+				
+				// 将映射的 ACPI 数据表的虚拟地址保存到 signature_map 中对应的指针位置。
 				*signature_map[j].sdt_ptr = vhdr;
+				// 打印日志，说明找到并成功映射了一个 ACPI 数据表。
 				LOG("%p: ACPI %s", *signature_map[j].sdt_ptr,
 				    signature_map[j].description);
 			}
@@ -181,6 +184,8 @@ static uint8_t *search_rsdp(uint8_t *base, size_t len)
 	return NULL;
 }
 
+// 通过查找 RSDP（Root System Description Pointer） 来获取系统的 ACPI 数据表信息，
+// 并进一步加载相关数据表，如 RSDT（Root System Description Table） 和 XSDT（Extended System Description Table）
 void acpi_init(void)
 {
 	/*
@@ -189,6 +194,7 @@ void acpi_init(void)
 	 * 2. search 128K starting at 0xe0000
 	 */
 
+	// ACPI 信息保存在计算机的内存中，RSDP 是指向 ACPI 数据表的指针
 	uint8_t *rsdp = NULL;
 
 	if (ebda)
@@ -200,6 +206,7 @@ void acpi_init(void)
 	if (!rsdp)
 		return;
 
+	// 找到 RSDP 后，获取 RSDT 和 XSDT 地址
 	acpi_rsdp = (struct acpi_rsdp *) rsdp;
 
 	LOG("%p: ACPI Root System Description Pointer", acpi_rsdp);
@@ -210,6 +217,7 @@ void acpi_init(void)
 	if (acpi_rsdp->revision)
 		acpi_xsdt_p = (uintptr_t) acpi_rsdp->xsdt_address;
 
+	// 如果找到了 RSDT 或 XSDT 的地址，代码会将其映射到内存中
 	if (acpi_rsdt_p)
 		acpi_rsdt = (struct acpi_rsdt *) map_sdt(
 		    (struct acpi_sdt_header *) acpi_rsdt_p);
@@ -218,6 +226,8 @@ void acpi_init(void)
 		acpi_xsdt = (struct acpi_xsdt *) map_sdt(
 		    (struct acpi_sdt_header *) acpi_xsdt_p);
 
+	// ACPI 的每个数据表都有一个校验和（checksum），该校验和确保数据表的完整性。
+	// 代码会检查 RSDT 和 XSDT 的校验和是否正确
 	if ((acpi_rsdt) && (!acpi_sdt_check((uint8_t *) acpi_rsdt))) {
 		log(LF_ARCH, LVL_ERROR, "RSDT: bad checksum");
 		return;
@@ -228,6 +238,7 @@ void acpi_init(void)
 		return;
 	}
 
+	// 根据是否找到 XSDT 或 RSDT，选择不同的配置方法
 	if (acpi_xsdt)
 		configure_via_xsdt();
 	else if (acpi_rsdt)

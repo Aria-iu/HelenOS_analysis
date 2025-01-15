@@ -919,12 +919,17 @@ void slab_cache_init(void)
  * existing slabs that are SLAB_CACHE_MAGDEFERRED
  *
  */
+/**
+* 为每个 CPU 启用独立的缓存（称为 cpu_cache），
+* 并为每个处理器分配所需的内存区域（通过 slab 分配器）。
+* 它在系统确定了处理器数量之后调用。
+*/
 void slab_enable_cpucache(void)
 {
 #ifdef CONFIG_DEBUG
 	_slab_initialized = 2;
 #endif
-
+	// 根据系统中的 CPU 数量动态分配内存
 	_slab_cache_create(&slab_mag_cache, "slab_mag_cache",
 	    sizeof(slab_mag_cache_t) * config.cpu_count, sizeof(uintptr_t),
 	    NULL, NULL, SLAB_CACHE_NOMAGAZINE | SLAB_CACHE_SLINSIDE);

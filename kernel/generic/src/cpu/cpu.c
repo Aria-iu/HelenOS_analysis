@@ -60,9 +60,11 @@ cpu_t *cpus;
 void cpu_init(void)
 {
 #ifdef CONFIG_SMP
+	// 多核心系统只有BSP执行这段代码即可。
 	if (config.cpu_active == 1) {
 #endif /* CONFIG_SMP */
 
+		// 为每个CPU分配一个cpu_t的结构。
 		cpus = (cpu_t *) malloc(sizeof(cpu_t) * config.cpu_count);
 		if (!cpus)
 			panic("Cannot allocate CPU structures.");

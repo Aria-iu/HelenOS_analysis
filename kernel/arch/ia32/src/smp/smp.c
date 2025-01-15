@@ -61,18 +61,28 @@
 
 static struct smp_config_operations *ops = NULL;
 
+// 多处理器系统（SMP）初始化函数
+// 根据系统的配置和硬件支持来设置和初始化相关的多处理器设置
 void smp_init(void)
 {
+	// acpi_madt 是一个 ACPI 表，它描述了系统中的多个中断控制器（APIC），
+	// 包括本地 APIC（LAPIC）和 I/O APIC。
 	if (acpi_madt) {
+		// 其中会设置 config.cpu_count
+		// config.cpu_count = madt_l_apic_entry_cnt;
 		acpi_madt_parse();
 		ops = &madt_config_operations;
 	}
 
+	// 若是多核，这里应该大于1
 	if (config.cpu_count == 1) {
 		mps_init();
 		ops = &mps_config_operations;
 	}
 
+	// 多核处理器系统初始化（cpu_count > 1）
+	// 本地 APIC（LAPIC）用于处理本地 CPU 上的中断，
+	// 而 I/O APIC 用于处理 I/O 设备的中断。
 	if (config.cpu_count > 1) {
 		l_apic = (uint32_t *) km_map((uintptr_t) l_apic, PAGE_SIZE,
 		    PAGE_SIZE, PAGE_WRITE | PAGE_NOT_CACHEABLE);

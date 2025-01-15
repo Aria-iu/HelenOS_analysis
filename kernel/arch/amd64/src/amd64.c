@@ -225,6 +225,8 @@ void amd64_pre_smp_init(void)
 {
 	if (config.cpu_active == 1) {
 #ifdef CONFIG_SMP
+		// 如果当前CPU时Boot CPU而且配置是多核。
+		// 用于初始化 ACPI（高级配置和电源接口） 的相关信息
 		acpi_init();
 #endif /* CONFIG_SMP */
 	}

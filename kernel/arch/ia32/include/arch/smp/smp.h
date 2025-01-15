@@ -41,15 +41,19 @@
 /** SMP config opertaions interface. */
 struct smp_config_operations {
 	/** Check whether a processor is enabled. */
+	// 检查给定的处理器是否启用（有效）
 	bool (*cpu_enabled)(size_t);
 
 	/** Check whether a processor is BSP. */
+	// 检查给定的处理器是否为启动处理器
 	bool (*cpu_bootstrap)(size_t);
 
 	/** Return APIC ID of a processor. */
+	// 返回给定处理器的 APIC ID
 	uint8_t (*cpu_apic_id)(size_t);
 
 	/** Return mapping between IRQ and APIC pin. */
+	// 返回 IRQ 与 APIC 引脚（pin）之间的映射关系
 	int (*irq_to_pin)(unsigned int);
 };
 

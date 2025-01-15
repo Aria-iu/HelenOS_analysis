@@ -272,18 +272,19 @@ void main_bsp_separated_stack(void)
 	// 这个宏在AMD64架构下调用 amd64_post_mm_init
 	ARCH_OP(post_mm_init);
 
+	// 对系统当前的内存状况做一个记录
 	reserve_init();
 
 
 	// 对于AMD64架构来说，这里是调用 amd64_pre_smp_init
-	// 其中会初始化几个驱动。。。
-	// 还会更新系统信息。（依赖上面初始化的sysinfo模块）
 	ARCH_OP(pre_smp_init);
 	smp_init();
 
 	/* Slab must be initialized after we know the number of processors. */
 	slab_enable_cpucache();
 
+	// 。。。。。。。。。。。。。
+	// 将给定的内存大小（val）转换为更易于阅读的格式（比如从字节转换为 KB、MB、GB 等），并返回一个合适的单位后缀。
 	uint64_t size;
 	const char *size_suffix;
 	bin_order_suffix(zones_total_size(), &size, &size_suffix, false);

@@ -55,6 +55,7 @@ static ssize_t reserve = 0;
  */
 void reserve_init(void)
 {
+	// 计算当前系统中空闲的页帧（frame）的总数，并将这个数值保存在 reserve 变量中
 	reserve = frame_total_free_get();
 	reserve_initialized = true;
 }
