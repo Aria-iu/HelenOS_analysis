@@ -306,6 +306,7 @@ void calibrate_delay_loop(void)
 		 * This has to be done only on UP.
 		 * On SMP, i8254 is not used for time keeping and its interrupt pin remains masked.
 		 */
+		// 启用i8254时钟中断。
 		i8254_normal_operation();
 	}
 }

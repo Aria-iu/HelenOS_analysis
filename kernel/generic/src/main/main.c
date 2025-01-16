@@ -270,6 +270,7 @@ void main_bsp_separated_stack(void)
 	// 设备驱动接口初始化。
 	ddi_init();
 	// 这个宏在AMD64架构下调用 amd64_post_mm_init
+	// 会初始化i8254时钟。
 	ARCH_OP(post_mm_init);
 
 	// 对系统当前的内存状况做一个记录
@@ -300,12 +301,20 @@ void main_bsp_separated_stack(void)
 	// 每个CPU都需要设置LOCAL APIC，所以这个函数也会在AP上运行。
 	ARCH_OP(post_cpu_init);
 
+	// clock初始化。
 	clock_counter_init();
+	// 定时器初始化。
 	timeout_init();
+	// 空实现。
 	scheduler_init();
+	// 为 cap_t 和 kobject_t 的创建分配slab分配器。
 	caps_init();
+	// 初始化 kernel tasks
 	task_init();
+	// 初始化 threads 字典。
 	thread_init();
+	// Initialize the user waitq subsystem
+	// 
 	sys_waitq_init();
 
 	sysinfo_set_item_data("boot_args", NULL, bargs, str_size(bargs) + 1);

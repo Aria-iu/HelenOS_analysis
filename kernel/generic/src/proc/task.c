@@ -92,10 +92,14 @@ static int tasks_cmp(void *, void *);
 /** Initialize kernel tasks support.
  *
  */
+// 内核任务初始化
 void task_init(void)
 {
+	// TASK   ---->  CURRENT->task
 	TASK = NULL;
+	// 初始化字典 tasks
 	odict_initialize(&tasks, tasks_getkey, tasks_cmp);
+	// 创建分配 task_t 结构体的slab分配器。
 	task_cache = slab_cache_create("task_t", sizeof(task_t), 0,
 	    tsk_constructor, tsk_destructor, 0);
 }

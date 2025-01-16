@@ -179,12 +179,16 @@ static size_t thr_destructor(void *obj)
  */
 void thread_init(void)
 {
+	// THREAD  --->  CURRENT->thread
 	THREAD = NULL;
 
+	// 初始化nrdy原子变量。其定义在scheduler.c中。
 	atomic_store(&nrdy, 0);
+	// 初始化为 thread_t 分配的slab分配器。
 	thread_cache = slab_cache_create("thread_t", sizeof(thread_t), _Alignof(thread_t),
 	    thr_constructor, thr_destructor, 0);
 
+	// 初始化字典 threads
 	odict_initialize(&threads, threads_getkey, threads_cmp);
 }
 
