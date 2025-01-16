@@ -100,6 +100,8 @@ void fpu_enable(void)
 
 void cpu_arch_init(void)
 {
+	// 设置当前CPU的arch.tss为tss_p。
+	// 如果不是BSP，前面说过每个CPU都会分配自己的TSS。
 	CPU->arch.tss = tss_p;
 	CPU->arch.tss->iomap_base = &CPU->arch.tss->iomap[0] -
 	    ((uint8_t *) CPU->arch.tss);

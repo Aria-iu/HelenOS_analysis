@@ -1,0 +1,142 @@
+在多核系统中，LAPIC 可以通过两种方式来指定中断的目标处理器：物理寻址（Physical Destination Mode）和 逻辑寻址（Logical Destination Mode）。这两种方式决定了如何选择接收中断的目标 CPU。
+
+ 1. 物理寻址模式（Physical Destination Mode）
+在物理寻址模式下，LAPIC 中断的目标 CPU 是通过物理 CPU 的标识符（ID）来指定的。每个 CPU 都有一个唯一的物理 ID，通常就是处理器的硬件编号。
+
+- 在物理寻址模式中，当 LAPIC 发出中断时，它会将目标 CPU 的物理 ID 放入中断命令中。
+- 例如，如果系统有 4 个 CPU（编号为 0, 1, 2, 3），LAPIC 发出的中断会直接指定哪个物理 CPU 需要处理这个中断。
+
+ 2. 逻辑寻址模式（Logical Destination Mode）
+在逻辑寻址模式下，中断的目标 CPU 是通过 逻辑 ID 来指定的，这个逻辑 ID 可以是一个特定的处理器集合，而不是直接指定某个物理 CPU。
+
+- 逻辑寻址允许系统根据需要将多个物理 CPU 组合成逻辑上的处理单元。比如，可以将 4 个 CPU 组合成 2 个逻辑组，每个组有 2 个 CPU。
+- 这样，当 LAPIC 发出中断时，它会指定一个逻辑组的 ID，而不是某个具体的物理 CPU。然后，这个逻辑组中的所有 CPU 都会接收到中断。
+
+ 3. 为什么使用物理寻址模式？
+代码中，物理寻址模式通过设置 DESTMOD_PHYS 被启用：
+
+
+icr_t icr;
+icr.lo = l_apic[ICRlo];
+icr.delmod = DELMOD_INIT;
+icr.destmod = DESTMOD_PHYS;  // 物理寻址模式
+icr.level = LEVEL_DEASSERT;
+icr.shorthand = SHORTHAND_ALL_INCL;
+icr.trigger_mode = TRIGMOD_LEVEL;
+l_apic[ICRlo] = icr.lo;
+
+
+启用物理寻址模式有几个原因：
+- 精确控制：你可以直接指定中断发送到特定的物理 CPU。对于一些高性能的任务或核心调度，可能需要将中断发送到特定的 CPU。
+- 简化管理：物理寻址模式简单、直观，并且可以避免在多核系统中管理复杂的逻辑组。
+
+ 4. 总结
+- 物理寻址模式意味着中断会直接发送给某个物理 CPU。
+- 逻辑寻址模式意味着中断会发送到一个逻辑组，多个 CPU 可能会接收到该中断。
+- 物理寻址模式适用于直接、精确地控制中断的目标 CPU。
+
+
+
+
+除了定时器中断，LAPIC（本地高级可编程中断控制器）还可以管理其他几类中断。下面我将详细讲解 LAPIC 支持的各种中断类型以及如何配置它们：
+
+ 1. 定时器中断 (Timer Interrupt)
+
+定时器中断是通过 LAPIC 的本地定时器 (LVT Timer) 配置的。LAPIC 的定时器中断通常用于周期性任务，比如时间片轮转（时钟中断）。
+
+配置方式：
+
+lvt_tm_t tm;
+tm.value = l_apic[LVT_Tm];
+tm.vector = VECTOR_CLK;  // 定时器中断的中断号
+tm.mode = TIMER_PERIODIC; // 配置为周期性定时器
+tm.masked = false;        // 不屏蔽定时器中断
+l_apic[LVT_Tm] = tm.value;
+
+- vector：设置定时器中断的中断向量（如 VECTOR_CLK）。
+- mode：配置定时器模式，可以是周期性的（TIMER_PERIODIC）或单次触发的（TIMER_ONE_SHOT）。
+- masked：如果为 false，定时器中断将被启用；如果为 true，则屏蔽定时器中断。
+
+ 2. 外部中断 (External Interrupts - LINT0 and LINT1)
+
+LAPIC 支持来自外部设备的中断，通常通过 LINT0 和 LINT1 两个线路接收。这些中断可以连接到外部设备，如键盘、鼠标、网络适配器等。
+
+- LINT0：通常用于外部设备发出的中断。
+- LINT1：可用于连接特定设备或外部中断源，如系统错误、热插拔等。
+
+配置方式：
+
+lvt_lint_t lint;
+lint.value = l_apic[LVT_LINT0];
+lint.masked = true;  // 屏蔽 LINT0 中断
+l_apic[LVT_LINT0] = lint.value;
+
+lint.value = l_apic[LVT_LINT1];
+lint.masked = true;  // 屏蔽 LINT1 中断
+l_apic[LVT_LINT1] = lint.value;
+
+- masked：设置是否屏蔽外部中断源。
+
+ 3. 错误中断 (Error Interrupt)
+
+LAPIC 还支持错误中断，用于报告内部错误或外部设备发生错误。通过 LVT Error 寄存器配置。
+
+配置方式：
+
+lvt_error_t error;
+error.value = l_apic[LVT_Err];
+error.masked = true;  // 屏蔽错误中断
+l_apic[LVT_Err] = error.value;
+
+- masked：设置是否屏蔽错误中断。
+
+ 4. 软件中断 (Software Interrupt)
+
+软件中断是由 CPU 通过软件触发的中断，通常用于线程调度、进程上下文切换等。软件中断通过 LAPIC 的 Interrupt Command Register (ICR) 发送给指定的 CPU。
+
+配置方式：
+
+icr_t icr;
+icr.lo = l_apic[ICRlo];
+icr.delmod = DELMOD_INIT;  // 配置为初始化命令
+icr.destmod = DESTMOD_PHYS; // 配置为物理目标模式
+icr.level = LEVEL_DEASSERT;
+icr.shorthand = SHORTHAND_ALL_INCL;
+icr.trigger_mode = TRIGMOD_LEVEL;
+l_apic[ICRlo] = icr.lo;
+
+- delmod：设置中断的发送模式，如初始化命令、边缘触发等。
+- destmod：设置目标模式，可以是物理模式或逻辑模式。
+- level：设置去抑制信号。
+- shorthand：设置广播模式，广播到所有 CPU。
+
+ 5. 高优先级中断 (Fixed Priority Interrupts)
+
+LAPIC 还可以配置固定优先级中断，这些中断可以通过 LVT 寄存器来处理。LAPIC 中断向量可用于设置中断的优先级。
+
+配置方式：
+
+lvt_lint_t lint;
+lint.value = l_apic[LVT_LINT0];
+lint.vector = VECTOR_LINT0;
+lint.masked = false;  // 启用 LINT0 中断
+l_apic[LVT_LINT0] = lint.value;
+
+- vector：设置中断的中断号。
+- masked：配置中断是否被屏蔽。
+
+ 6. 系统管理中断 (SMI)
+系统管理中断 (SMI) 是由硬件或操作系统请求的特定中断类型，通常用于电源管理、硬件控制等操作。LAPIC 也支持处理这种类型的中断。
+
+ 配置过程总结
+
+LAPIC 的中断配置通常包括以下几个方面：
+1. 定时器中断：设置定时器中断，并配置为周期性或单次触发。
+2. 外部中断：LAPIC 支持外部中断源（如 LINT0 和 LINT1），可以通过相应寄存器进行配置。
+3. 错误中断：系统错误或硬件故障时，会触发错误中断。
+4. 软件中断：通过 CPU 发出的软件中断进行进程调度或其他系统管理。
+5. 优先级中断：设置中断的优先级，允许高优先级中断优先处理。
+
+ LAPIC 中断的处理
+
+每个中断向量都对应一个中断服务程序（ISR），这些服务程序需要在操作系统中进行注册并定义。LAPIC 中断通常由系统的调度器处理，具体的中断处理函数会根据中断的类型来决定如何响应。

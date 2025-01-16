@@ -85,6 +85,10 @@ pic_ops_t apic_pic_ops = {
  * always be 32-bit, would use byte oriented instructions.
  *
  */
+/*
+ L_APIC_BASE	 -->   0xfee00000
+ IO_APIC_BASE	 -->   0xfec00000
+*/
 volatile uint32_t *l_apic = (uint32_t *) L_APIC_BASE;
 volatile uint32_t *io_apic = (uint32_t *) IO_APIC_BASE;
 
@@ -428,9 +432,17 @@ int l_apic_send_init_ipi(uint8_t apicid)
 }
 
 /** Initialize Local APIC. */
+/*
+用于初始化 Local APIC（LAPIC，本地中断控制器），
+在多核或多处理器系统中，LAPIC 用于管理本地中断，并协作实现处理器间的中断控制。
+*/
 void l_apic_init(void)
 {
 	/* Initialize LVT Error register. */
+	/*
+	LVT 错误寄存器用于控制错误中断的处理。代码中将该寄存器的掩码位（masked）设置为 true，
+	意味着禁用了错误中断，防止本地 APIC 由于错误触发中断。
+	*/
 	lvt_error_t error;
 
 	error.value = l_apic[LVT_Err];
@@ -438,6 +450,9 @@ void l_apic_init(void)
 	l_apic[LVT_Err] = error.value;
 
 	/* Initialize LVT LINT0 register. */
+	/*
+	LVT LINT0 是本地中断寄存器之一。这里同样将 masked 设置为 true，表示禁用了 LINT0 中断。
+	*/
 	lvt_lint_t lint;
 
 	lint.value = l_apic[LVT_LINT0];
@@ -445,11 +460,18 @@ void l_apic_init(void)
 	l_apic[LVT_LINT0] = lint.value;
 
 	/* Initialize LVT LINT1 register. */
+	/*
+	LVT LINT1 是另一个本地中断寄存器。通过将其掩码位设置为 true，禁用了 LINT1 中断。
+	*/
 	lint.value = l_apic[LVT_LINT1];
 	lint.masked = true;
 	l_apic[LVT_LINT1] = lint.value;
 
 	/* Task Priority Register initialization. */
+	/*
+	任务优先级寄存器（TPR）用于控制中断的优先级。
+	设置其优先级为 0，表示本地 APIC 不会屏蔽任何中断。
+	*/
 	tpr_t tpr;
 
 	tpr.value = l_apic[TPR];
@@ -458,6 +480,10 @@ void l_apic_init(void)
 	l_apic[TPR] = tpr.value;
 
 	/* Spurious-Interrupt Vector Register initialization. */
+	/*
+	SVR 寄存器控制本地 APIC 的伪中断。
+	这里设置了一个伪中断向量 VECTOR_APIC_SPUR，并启用了 LAPIC。
+	*/
 	svr_t svr;
 
 	svr.value = l_apic[SVR];
@@ -470,6 +496,11 @@ void l_apic_init(void)
 		enable_l_apic_in_msr();
 
 	/* Interrupt Command Register initialization. */
+	/*
+		Interrupt Command Register (ICR) 控制 LAPIC 发出的中断命令。
+		设置了 DELMOD_INIT，表示初始化中断。
+		设置了物理寻址模式，表示中断发送给物理 CPU，而不是通过逻辑寻址发送。
+	*/
 	icr_t icr;
 
 	icr.lo = l_apic[ICRlo];
@@ -490,9 +521,13 @@ void l_apic_init(void)
 	/* Program local timer. */
 	lvt_tm_t tm;
 
+	// 读取的是 LAPIC 的 LVT Timer Register（LVT_Tm）的当前值。
 	tm.value = l_apic[LVT_Tm];
+	// VECTOR_CLK 是定时器中断使用的中断号。
 	tm.vector = VECTOR_CLK;
+	// 指定定时器的工作模式
 	tm.mode = TIMER_PERIODIC;
+	// 启用了定时器中断，使其能够正常触发中断。
 	tm.masked = false;
 	l_apic[LVT_Tm] = tm.value;
 

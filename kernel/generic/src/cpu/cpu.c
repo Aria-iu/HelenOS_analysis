@@ -70,18 +70,20 @@ void cpu_init(void)
 			panic("Cannot allocate CPU structures.");
 
 		/* Initialize everything */
+		// 清零
 		memsetb(cpus, sizeof(cpu_t) * config.cpu_count, 0);
 
 		/*
 		 * NOTE: All kernel stacks must be aligned to STACK_SIZE,
 		 *       see CURRENT.
 		 */
+		// 为每个CPU分配各自的内核栈。
 		for (size_t i = 0; i < config.cpu_count; i++) {
 			uintptr_t stack_phys = frame_alloc(STACK_FRAMES,
 			    FRAME_LOWMEM | FRAME_ATOMIC, STACK_SIZE - 1);
 			if (!stack_phys)
 				panic("Cannot allocate CPU stack.");
-
+			// 直接映射。
 			cpus[i].local.stack = (uint8_t *) PA2KA(stack_phys);
 			cpus[i].id = i;
 
@@ -100,6 +102,7 @@ void cpu_init(void)
 	}
 #endif /* CONFIG_SMP */
 
+	// CPU  --->  CURRENT->cpu
 	CPU = &cpus[config.cpu_active - 1];
 
 	CPU->active = true;
@@ -110,7 +113,9 @@ void cpu_init(void)
 	CPU->idle_cycles = ATOMIC_TIME_INITIALIZER();
 	CPU->busy_cycles = ATOMIC_TIME_INITIALIZER();
 
+	// 识别CPU信息。设置当前CPU的cpu_arch_t字段。
 	cpu_identify();
+	// 设置当前CPU的cpu_arch_t字段中的TSS字段。
 	cpu_arch_init();
 }
 

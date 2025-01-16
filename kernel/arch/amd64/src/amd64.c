@@ -214,7 +214,9 @@ void amd64_post_mm_init(void)
 void amd64_post_cpu_init(void)
 {
 #ifdef CONFIG_SMP
+	// 如果是多核系统
 	if (config.cpu_active > 1) {
+		// 初始化LOCAL APIC。
 		l_apic_init();
 		l_apic_debug();
 	}
@@ -296,6 +298,8 @@ void amd64_post_smp_init(void)
 
 void calibrate_delay_loop(void)
 {
+	// 用来校准延迟循环的精确度。
+	// 设置了当前CPU的delay_loop_const和 frequency_mhz字段。
 	i8254_calibrate_delay_loop();
 	if (config.cpu_active == 1) {
 		/*
