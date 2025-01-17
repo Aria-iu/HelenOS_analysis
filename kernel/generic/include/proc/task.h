@@ -65,8 +65,10 @@ struct thread;
 struct cap;
 
 /** Task structure. */
+// 一个 任务的结构描述
 typedef struct task {
 	/** Link to @c tasks ordered dictionary */
+	// 指向tasks字典的链接。
 	odlink_t ltasks;
 
 	/** Task lock.
@@ -74,47 +76,62 @@ typedef struct task {
 	 * Must be acquired before threads_lock and thread lock of any of its
 	 * threads.
 	 */
+	// 锁。
 	IRQ_SPINLOCK_DECLARE(lock);
 
+	// 名字。
 	char name[TASK_NAME_BUFLEN];
 	/** List of threads contained in this task. */
+	// 线程列表
 	list_t threads;
 	/** Address space. */
+	// 地址空间
 	as_t *as;
 	/** Unique identity of task. */
+	// 任务 ID
 	task_id_t taskid;
 	/** Task security container. */
+	// 任务容器id？？？？
 	container_id_t container;
 
 	/** Number of references (i.e. threads). */
+	// 引用计数，管理任务的生命周期
 	atomic_refcount_t refcount;
 	/** Number of threads that haven't exited yet. */
 	// TODO: remove
+	// 还没有退出的线程数量
 	atomic_size_t lifecount;
 
 	/** Task permissions. */
+	// 任务权限
 	perm_t perms;
 
 	/** Capabilities */
+	// 能力信息。
 	cap_info_t *cap_info;
 
 	/* IPC stuff */
 
 	/** Receiving communication endpoint */
+	// IPC接收端。
 	answerbox_t answerbox;
 
 	/** Spinlock protecting the active_calls list. */
+	// 锁，保护 active_calls
 	SPINLOCK_DECLARE(active_calls_lock);
 
 	/**
 	 * List of all calls sent by this task that have not yet been
 	 * answered.
 	 */
+	// 任务当前活跃的呼叫列表，存储所有该任务发起但尚未完成的IPC调用
 	list_t active_calls;
 
+	// 事件数组（events），它可以存储多个不同类型的事件（如任务结束等），用于异步事件通知。
 	event_t events[EVENT_TASK_END - EVENT_END];
 
 	/** IPC statistics */
+	// IPC统计信息，记录该任务的进程间通信情况
 	stats_ipc_t ipc_info;
 
 #ifdef CONFIG_UDEBUG
@@ -126,9 +143,12 @@ typedef struct task {
 #endif /* CONFIG_UDEBUG */
 
 	/** Architecture specific task data. */
+	// 架构特定的数据，通常包含与任务相关的CPU上下文等信息
+	// AMD64架构中包含 iomapver 和 iomap 信息。
 	task_arch_t arch;
 
 	/** Accumulated accounting. */
+	// 用户态和内核态的累计周期数，用于任务性能统计。
 	uint64_t ucycles;
 	uint64_t kcycles;
 

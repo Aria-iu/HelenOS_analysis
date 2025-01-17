@@ -61,6 +61,7 @@
 #define KIO_LENGTH   (KIO_PAGES * PAGE_SIZE / sizeof(char32_t))
 
 /** Kernel log cyclic buffer */
+// 内核 io 环形缓冲区。。大小为8个页
 char32_t kio[KIO_LENGTH] __attribute__((aligned(PAGE_SIZE)));
 
 /** Kernel log initialized */
@@ -82,6 +83,7 @@ static size_t kio_uspace = 0;
 SPINLOCK_INITIALIZE_NAME(kio_lock, "kio_lock");
 
 /** Physical memory area used for kio buffer */
+// 连续物理内存，用于内核io。
 static parea_t kio_parea;
 
 static indev_t stdin_sink;
@@ -188,20 +190,27 @@ static void stdout_scroll_down(outdev_t *dev)
  */
 void kio_init(void)
 {
+	// 找到kernel io buffer的物理地址。
 	void *faddr = (void *) KA2PA(kio);
-
+	
+	// 对齐检查
 	assert((uintptr_t) faddr % FRAME_SIZE == 0);
 
+	// Initialize physical area structure.
 	ddi_parea_init(&kio_parea);
+	// 设置kio_parea的物理基地址、页数和其他字段。
 	kio_parea.pbase = (uintptr_t) faddr;
 	kio_parea.frames = SIZE2FRAMES(sizeof(kio));
 	kio_parea.unpriv = false;
 	kio_parea.mapped = false;
+	// 注册这个parea。
 	ddi_parea_register(&kio_parea);
 
+	// 设置系统信息。
 	sysinfo_set_item_val("kio.faddr", NULL, (sysarg_t) faddr);
 	sysinfo_set_item_val("kio.pages", NULL, KIO_PAGES);
 
+	// 设置 EVENT_KIO 的事件，如果不被屏蔽，调用 kio_update
 	event_set_unmask_callback(EVENT_KIO, kio_update);
 	atomic_store(&kio_inited, true);
 }

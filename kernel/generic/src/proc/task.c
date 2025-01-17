@@ -198,26 +198,37 @@ size_t tsk_destructor(void *obj)
  * @return New task's structure.
  *
  */
+// 创建一个任务，里面没有线程。。
+// as是这个任务的地址空间。
+// name是这个任务的名字。
 task_t *task_create(as_t *as, const char *name)
 {
+	// 分配一个task_t 结构体。
 	task_t *task = (task_t *) slab_alloc(task_cache, FRAME_ATOMIC);
 	if (!task)
 		return NULL;
 
+	// 初始化这个task的引用计数
 	refcount_init(&task->refcount);
 
+	// 初始化 task.arch 架构特定数据
 	task_create_arch(task);
 
+	// 赋值地址空间。
 	task->as = as;
+	// 赋值名字
 	str_cpy(task->name, TASK_NAME_BUFLEN, name);
 
+	// 初始化 container 等字段
 	task->container = CONTAINER;
 	task->perms = 0;
 	task->ucycles = 0;
 	task->kcycles = 0;
 
+	// 初始化 task->cap_info->type_list 列表
 	caps_task_init(task);
 
+	// 初始化 task-> ipc_info
 	task->ipc_info.call_sent = 0;
 	task->ipc_info.call_received = 0;
 	task->ipc_info.answer_sent = 0;

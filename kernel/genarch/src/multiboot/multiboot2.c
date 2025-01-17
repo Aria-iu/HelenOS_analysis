@@ -126,9 +126,11 @@ void multiboot2_info_parse(uint32_t signature, const multiboot2_info_t *info)
 	while (tag->type != MULTIBOOT2_TAG_TERMINATOR) {
 		switch (tag->type) {
 		case MULTIBOOT2_TAG_CMDLINE:
+			// 这里会设置 bargs ，之后bargs会作为启动参数。
 			multiboot2_cmdline(&tag->cmdline);
 			break;
 		case MULTIBOOT2_TAG_MODULE:
+			// 这里会设置 init 初始化任务。
 			multiboot2_module(&tag->module);
 			break;
 		case MULTIBOOT2_TAG_MEMMAP:

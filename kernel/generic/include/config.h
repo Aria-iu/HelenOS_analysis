@@ -58,6 +58,7 @@
 #include <typedefs.h>
 
 typedef struct {
+	// uintptr_t 4×Ö½Ú¡£
 	uintptr_t paddr;
 	size_t size;
 	char name[CONFIG_TASK_NAME_BUFLEN];

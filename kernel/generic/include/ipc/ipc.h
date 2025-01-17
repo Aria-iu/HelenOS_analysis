@@ -32,6 +32,10 @@
 /** @file
  */
 
+// 基于 task 
+// phone_t 就是 IPC 管道。每个任务task有一个phone_t，它可以链接到另一个任务的answerbox_t
+
+
 #ifndef KERN_IPC_H_
 #define KERN_IPC_H_
 
@@ -63,19 +67,27 @@ typedef enum {
 
 /** Structure identifying phone (in TASK structure) */
 typedef struct phone {
+	// 线程安全
 	mutex_t lock;
+	// 
 	link_t link;
 	struct task *caller;
 	struct answerbox *callee;
 	/* A call prepared for hangup ahead of time, so that it cannot fail. */
+	// 预准备的挂断调用，防止调用失败
 	struct call *hangup_call;
+	// phone状态
 	ipc_phone_state_t state;
+	// 原子计数，表示当前活动的呼叫数
 	atomic_size_t active_calls;
 	/** User-defined label */
+	// 用户定义的标签，标识phone
 	sysarg_t label;
 	kobject_t *kobject;
 } phone_t;
 
+// answerbox_t 是任务中接收和处理IPC调用的地方。
+// 每个task有一个或多个answerbox，用来接收其他任务发起的调用请求。
 typedef struct answerbox {
 	IRQ_SPINLOCK_DECLARE(lock);
 
@@ -92,9 +104,12 @@ typedef struct answerbox {
 	atomic_size_t active_calls;
 
 	/** Phones connected to this answerbox. */
+	// 与此answerbox相链接的phones
 	list_t connected_phones;
 	/** Received calls. */
+	// 已接收的呼叫队列
 	list_t calls;
+	// 存储分发的呼叫
 	list_t dispatched_calls;  /* Should be hash table in the future */
 
 	/** Answered calls. */
@@ -103,9 +118,11 @@ typedef struct answerbox {
 	IRQ_SPINLOCK_DECLARE(irq_lock);
 
 	/** Notifications from IRQ handlers. */
+	// 存储与硬件中断相关的通知。
 	list_t irq_notifs;
 } answerbox_t;
 
+// 表示一个IPC调用请求，包含发送方和接收方的信息。
 typedef struct call {
 	kobject_t *kobject;
 
@@ -142,6 +159,7 @@ typedef struct call {
 	 * Identification of the caller.
 	 * Valid only when the call is not forgotten.
 	 */
+	// 表示调用发起者（任务）
 	struct task *sender;
 
 	/*
@@ -149,6 +167,7 @@ typedef struct call {
 	 * This will most of the times be the sender's answerbox,
 	 * but we allow for useful exceptions.
 	 */
+	// 调用者的答复盒
 	answerbox_t *callerbox;
 
 	/** Phone which was used to send the call. */

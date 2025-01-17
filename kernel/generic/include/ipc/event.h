@@ -45,10 +45,12 @@ struct task;
 typedef void (*event_callback_t)(void *);
 
 /** Event notification structure. */
+// 描述一个事件通知对象
 typedef struct {
 	SPINLOCK_DECLARE(lock);
 
 	/** Answerbox for notifications. */
+	// 事件通过这个answerbox发送。
 	answerbox_t *answerbox;
 	/** Interface and method to be used for the notification. */
 	sysarg_t imethod;

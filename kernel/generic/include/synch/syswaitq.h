@@ -31,6 +31,7 @@
  */
 /** @file
  */
+// 操作系统内核中的等待队列（wait queue）模块，主要用于进程或线程间的同步
 
 #ifndef KERN_SYS_WAITQ_H_
 #define KERN_SYS_WAITQ_H_
@@ -41,13 +42,19 @@
 
 extern kobject_ops_t waitq_kobject_ops;
 
+// 初始化用户等待队列子系统
 extern void sys_waitq_init(void);
 
+// 清理退出任务所持有的所有等待队列能力
 extern void sys_waitq_task_cleanup(void);
 
+// 当前任务创建一个等待队列
 extern sys_errno_t sys_waitq_create(uspace_ptr_cap_waitq_handle_t);
+// 使当前任务在指定的等待队列中睡眠，直到被唤醒或者超时。
 extern sys_errno_t sys_waitq_sleep(cap_waitq_handle_t, uint32_t, unsigned int);
+// 用于唤醒在指定等待队列中睡眠的一个任务
 extern sys_errno_t sys_waitq_wakeup(cap_waitq_handle_t);
+// 销毁一个等待队列
 extern sys_errno_t sys_waitq_destroy(cap_waitq_handle_t);
 
 #endif

@@ -49,7 +49,9 @@ static event_t events[EVENT_END];
 
 static void event_initialize(event_t *event)
 {
+	// 初始化event的lock和各个字段。
 	spinlock_initialize(&event->lock, "event.lock");
+	// 设置为NULL或0或false。
 	event->answerbox = NULL;
 	event->counter = 0;
 	event->imethod = 0;
@@ -76,6 +78,7 @@ static event_t *evno2event(int evno, task_t *task)
  */
 void event_init(void)
 {
+	// 初始化 events 数组。
 	for (unsigned int i = 0; i < EVENT_END; i++)
 		event_initialize(evno2event(i, NULL));
 }

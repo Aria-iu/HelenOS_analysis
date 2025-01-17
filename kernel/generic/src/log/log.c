@@ -92,6 +92,7 @@ static void log_update(void *);
  */
 void log_init(void)
 {
+	// 设置 EVENT_KLOG 的事件，如果不被屏蔽，调用 log_update
 	event_set_unmask_callback(EVENT_KLOG, log_update);
 	atomic_store(&log_inited, true);
 }

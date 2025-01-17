@@ -69,6 +69,7 @@
 #define container_check(ctn1, ctn2)  ((ctn1) == (ctn2))
 
 #define DEFAULT_CONTAINER  0
+// main_bsp_separated_stack -> current_initialize中将CURRENT->task设置为NULL。
 #define CONTAINER \
 	((CURRENT->task) ? (CURRENT->task->container) : (DEFAULT_CONTAINER))
 

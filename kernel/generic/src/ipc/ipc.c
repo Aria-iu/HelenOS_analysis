@@ -885,6 +885,7 @@ void ipc_cleanup(void)
  */
 void ipc_init(void)
 {
+	// 分配了为 call_t phone_t answerbox_t结构体分配内存的slab分配器。
 	call_cache = slab_cache_create("call_t", sizeof(call_t), 0, NULL,
 	    NULL, 0);
 	phone_cache = slab_cache_create("phone_t", sizeof(phone_t), 0, NULL,

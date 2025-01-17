@@ -314,25 +314,36 @@ void main_bsp_separated_stack(void)
 	// 初始化 threads 字典。
 	thread_init();
 	// Initialize the user waitq subsystem
-	// 
+	// 创建一个名为waitq_cache的内存池，用于分配等待队列所需的内存
 	sys_waitq_init();
 
+	// 将bargs中的信息设置为系统信息boot_args加入global_root
 	sysinfo_set_item_data("boot_args", NULL, bargs, str_size(bargs) + 1);
 
+	// 在  amd64_pre_main -> multiboot2_info_parse -> multiboot2_module 时初始化 init。
 	if (init.cnt > 0) {
+		// 若初始化的init task不为0
 		size_t i;
 		for (i = 0; i < init.cnt; i++)
+			// 打印信息。。。。任务的物理地址和大小
 			LOG("init[%zu].addr=%p, init[%zu].size=%zu",
 			    i, (void *) init.tasks[i].paddr, i, init.tasks[i].size);
 	} else
 		printf("No init binaries found.\n");
 
+	// 进程间通信初始化
 	ipc_init();
+	// 事件机制初始化
 	event_init();
+	// 内核 io区域 初始化
 	kio_init();
+	// 内核 log 初始化
 	log_init();
+	// 设置一些系统信息。。。
 	stats_init();
 
+	// That's it !!!! BSP上系统的基本初始化完成，下面会启动第一个任务（线程）来
+	// 执行具体的操作，包括拉起 AP和 。。。 
 	/*
 	 * Create kernel task.
 	 */
