@@ -110,6 +110,9 @@ static int threads_cmp(void *, void *);
 /** Initialization and allocation for thread_t structure
  *
  */
+// Attention plz!!! 分配一个thread_t类型的结构的空间后
+// 会使用创建函数来初始化
+// thread_t的kstack在这时候初始化
 static errno_t thr_constructor(void *obj, unsigned int kmflags)
 {
 	thread_t *thread = (thread_t *) obj;
@@ -144,12 +147,14 @@ static errno_t thr_constructor(void *obj, unsigned int kmflags)
 	 * NOTE: All kernel stacks must be aligned to STACK_SIZE,
 	 *       see CURRENT.
 	 */
-
+	
+	// 分配 STACK_FRAMES = 2 个页
 	uintptr_t stack_phys =
 	    frame_alloc(STACK_FRAMES, kmflags, STACK_SIZE - 1);
 	if (!stack_phys)
 		return ENOMEM;
 
+	// 将物理地址转换为内核地址 , 设置到 线程的 内核栈 字段中
 	thread->kstack = (uint8_t *) PA2KA(stack_phys);
 
 #ifdef CONFIG_UDEBUG
@@ -254,12 +259,16 @@ thread_t *thread_create(void (*func)(void *), void *arg, task_t *task,
 	context_create(&thread->saved_context, thread_main_func,
 	    thread->kstack, STACK_SIZE);
 
+	// CURRENT是指向当前内核栈的基地址部分的一个current_t 结构体. 这里初始化.
 	current_initialize((current_t *) thread->kstack);
 
+	// 赋值线程的名字
 	str_cpy(thread->name, THREAD_NAME_BUFLEN, name);
 
+	// 初始化线程执行的函数和参数字段
 	thread->thread_code = func;
 	thread->thread_arg = arg;
+	// ？？
 	thread->ucycles = ATOMIC_TIME_INITIALIZER();
 	thread->kcycles = ATOMIC_TIME_INITIALIZER();
 	thread->uncounted =
@@ -271,6 +280,7 @@ thread_t *thread_create(void (*func)(void *), void *arg, task_t *task,
 	    ((flags & THREAD_FLAG_USPACE) == THREAD_FLAG_USPACE);
 
 	thread->nomigrate = 0;
+	// 初始化线程状态为Entering
 	atomic_init(&thread->state, Entering);
 
 	atomic_init(&thread->sleep_queue, NULL);
@@ -283,6 +293,7 @@ thread_t *thread_create(void (*func)(void *), void *arg, task_t *task,
 
 	waitq_initialize(&thread->join_wq);
 
+	// task字段指向线程所属的任务
 	thread->task = task;
 
 	thread->fpu_context_exists = false;

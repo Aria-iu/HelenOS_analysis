@@ -66,6 +66,9 @@ typedef struct cpu_local {
 	 * Stack used by scheduler when there is no running thread.
 	 * This field is unchanged after initialization.
 	 */
+	// 当前若没有正在运行的线程，需要调度器去运行，
+	// 调度器运行需要栈，这个就是调度器的栈，每个CPU有自己的调度器的栈。
+	// 初始化之后不再变化。
 	uint8_t *stack;
 
 	/**

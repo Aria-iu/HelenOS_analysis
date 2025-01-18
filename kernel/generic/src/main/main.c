@@ -347,6 +347,7 @@ void main_bsp_separated_stack(void)
 	/*
 	 * Create kernel task.
 	 */
+	// 创建内核进程
 	task_t *kernel = task_create(AS_KERNEL, "kernel");
 	if (!kernel)
 		panic("Cannot create kernel task.");
@@ -354,18 +355,29 @@ void main_bsp_separated_stack(void)
 	/*
 	 * Create the first thread.
 	 */
+	// 创建第一个线程
 	thread_t *kinit_thread = thread_create(kinit, NULL, kernel,
 	    THREAD_FLAG_UNCOUNTED, "kinit");
 	if (!kinit_thread)
 		panic("Cannot create kinit thread.");
 	thread_start(kinit_thread);
+	// kinit从task中分离。
 	thread_detach(kinit_thread);
 
 	/*
 	 * This call to scheduler_run() will return to kinit,
 	 * starting the thread of kernel threads.
 	 */
+	// CPU_LOCAL  ---->  (&(CURRENT->cpu)->local)
+	// 上文中cpu_init为每一个CPU初始化了一个cpu_t的结构，通过CURRENT->cpu访问当前的cpu
+	// 第一个参数是src，拷贝给第二个参数。
+	// 前面初始化 CURRENT 后，这里将CURRENT拷贝给 CPU_LOCAL当前CPU对应的stack栈基地址处。
+	// 这里的 CURRENT -> cpu 在  cpu_init 中初始化。
+	// 为CURRENT -> cpu = &cpus[config.cpu_active - 1];就是对应当前active CPU的cpu_t 结构
+	// 这里是在设置当前CPU执行调度器函数scheduler_run使用的CPU本地栈。
 	current_copy(CURRENT, (current_t *) CPU_LOCAL->stack);
+	// 创建一个新的上下文，调用 FUNCTION_BEGIN(context_restore_arch) 进入 scheduler_run。
+	// 启动 scheduler_run ， 当前只有一个线程 kinit ， 所以会去到 kinit 执行。
 	context_replace(scheduler_run, CPU_LOCAL->stack, STACK_SIZE);
 	/* not reached */
 }

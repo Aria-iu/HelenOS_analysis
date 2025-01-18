@@ -236,10 +236,13 @@ task_t *task_create(as_t *as, const char *name)
 	task->ipc_info.irq_notif_received = 0;
 	task->ipc_info.forwarded = 0;
 
+	// task 的事件初始化。 task -> events[]
 	event_task_init(task);
 
+	// 设置 answerbox 为active
 	task->answerbox.active = true;
 
+	// 清空debug_sevtions
 	task->debug_sections = NULL;
 
 #ifdef CONFIG_UDEBUG
@@ -268,9 +271,11 @@ task_t *task_create(as_t *as, const char *name)
 	}
 
 	irq_spinlock_lock(&tasks_lock, true);
-
+	// 设置进程ID
 	task->taskid = ++task_counter;
+	// 初始化 task->ltasks 链接
 	odlink_initialize(&task->ltasks);
+	// 将 task->ltasks 链接 加入 tasks。
 	odict_insert(&task->ltasks, &tasks, NULL);
 
 	irq_spinlock_unlock(&tasks_lock, true);
