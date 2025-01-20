@@ -99,10 +99,15 @@ static char alive[ALIVE_CHARS] = "-\\|/";
  *
  * @param arg Not used.
  */
+/**
+* Attention Plz������
+* �����һ���ں˼�����̡߳���kinit
+* kinit�����߼����ں˳�ʼ�������̴߳������û��ռ��ʼ����
+*/
 void kinit(void *arg)
 {
 	thread_t *thread;
-
+	// 关闭中断。
 	interrupts_disable();
 
 #ifdef CONFIG_SMP
@@ -115,11 +120,14 @@ void kinit(void *arg)
 		 * not mess together with kcpulb threads.
 		 * Just a beautification.
 		 */
+		// kinit线程创建kmp线程并等待它的完成。
+		// cpu1到cpuN-1会被拉起
+		// 
 		thread = thread_create(kmp, NULL, TASK,
 		    THREAD_FLAG_UNCOUNTED, "kmp");
 		if (!thread)
 			panic("Unable to create kmp thread.");
-
+		// kmp是在BSP，也就是cpu[0]上执行。
 		thread_wire(thread, &cpus[0]);
 		thread_start(thread);
 		thread_join(thread);
@@ -133,6 +141,7 @@ void kinit(void *arg)
 			thread = thread_create(kcpulb, NULL, TASK,
 			    THREAD_FLAG_UNCOUNTED, "kcpulb");
 			if (thread != NULL) {
+				// 各个cpu执行自己的kcpulb线程。
 				thread_wire(thread, &cpus[i]);
 				thread_start(thread);
 				thread_detach(thread);
@@ -146,9 +155,13 @@ void kinit(void *arg)
 	/*
 	 * At this point SMP, if present, is configured.
 	 */
+	// 终于到了架构的终点，amd64_post_smp_init
+	// 其中初始化了键盘和鼠标的中断
+	// 初始化ns16550这个串口
 	ARCH_OP(post_smp_init);
 
 	/* Start thread computing system load */
+	// 用于计算系统负载的线程 kload
 	thread = thread_create(kload, NULL, TASK, THREAD_FLAG_NONE,
 	    "kload");
 	if (thread != NULL) {
@@ -163,6 +176,7 @@ void kinit(void *arg)
 		/*
 		 * Create kernel console.
 		 */
+		// 创建kconsole_thread线程，需要使用到stdin。
 		thread = thread_create(kconsole_thread, NULL, TASK,
 		    THREAD_FLAG_NONE, "kconsole");
 		if (thread != NULL) {
@@ -179,8 +193,11 @@ void kinit(void *arg)
 	 * Store the default stack size in sysinfo so that uspace can create
 	 * stack with this default size.
 	 */
+	// 设置系统信息 default.stack_size 为 STACK_SIZE_USER（1024*1024）
 	sysinfo_set_item_val("default.stack_size", NULL, STACK_SIZE_USER);
 
+
+	// 上面的部分需要在关闭中断情况下进行。
 	interrupts_enable();
 
 	/*

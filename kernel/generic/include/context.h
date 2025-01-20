@@ -78,7 +78,9 @@ _NO_TRACE __attribute__((noreturn))
  */
 _NO_TRACE static inline void context_swap(context_t *self, context_t *other)
 {
+	// 将当前CPU上的Context保存到 self 指向的context_t变量上。 
 	if (context_save_arch(self))
+		// 将other指向的context_t变量保存的Context恢复到当前CPU上。
 		context_restore_arch(other);
 }
 

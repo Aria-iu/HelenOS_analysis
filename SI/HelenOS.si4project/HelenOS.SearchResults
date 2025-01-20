@@ -1,1 +1,4 @@
----- context_set Matches (0 in 0 files) ----
+---- amd64_post_smp_init Matches (3 in 1 files) ----
+amd64.c (D:\code\helenos\kernel\arch\amd64\src) line 73 : static void amd64_post_smp_init(void);
+amd64.c (D:\code\helenos\kernel\arch\amd64\src) line 80 : 	.post_smp_init = amd64_post_smp_init
+amd64.c (D:\code\helenos\kernel\arch\amd64\src) line 237 : void amd64_post_smp_init(void)

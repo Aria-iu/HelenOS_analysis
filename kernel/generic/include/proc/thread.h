@@ -139,6 +139,7 @@ typedef struct thread {
 	task_t *task;
 
 	/** Thread's kernel stack. */
+	// 线程的内核栈
 	uint8_t *kstack;
 
 	/*

@@ -256,6 +256,7 @@ thread_t *thread_create(void (*func)(void *), void *arg, task_t *task,
 	thread->tid = ++last_tid;
 	irq_spinlock_unlock(&tidlock, true);
 
+	// 创建线程的上下文，这里的 saved_context 会在 scheduler_run 中被交换到 当前CPU上。
 	context_create(&thread->saved_context, thread_main_func,
 	    thread->kstack, STACK_SIZE);
 

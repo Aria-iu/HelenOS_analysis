@@ -190,20 +190,26 @@ static thread_t *find_best_thread(int *rq_index)
 
 static void switch_task(task_t *task)
 {
+	// TASK ---->  CURRENT->task
 	/* If the task stays the same, a lot of work is avoided. */
+	// 若是同一个任务的线程，直接返回。
 	if (TASK == task)
 		return;
 
+	// 旧的地址空间
 	as_t *old_as = AS;
+	// 要切换的地址空间
 	as_t *new_as = task->as;
 
 	/* It is possible for two tasks to share one address space. */
 	if (old_as != new_as)
+		// 切换地址空间
 		as_switch(old_as, new_as);
 
 	if (TASK)
 		task_release(TASK);
 
+	// 切换新的任务
 	TASK = task;
 
 	task_hold(TASK);
@@ -307,6 +313,7 @@ static void prepare_to_run_thread(int rq_index)
 {
 	relink_rq(rq_index);
 
+	// 切换到选择的线程的任务。
 	switch_task(THREAD->task);
 
 	assert(atomic_get_unordered(&THREAD->cpu) == CPU);
@@ -553,6 +560,7 @@ void scheduler_run(void)
 		assert(CURRENT->mutex_locks == 0);
 
 		int rq_index;
+		// 选出一个线程，赋值给 CURRENT -> thread
 		THREAD = find_best_thread(&rq_index);
 		prepare_to_run_thread(rq_index);
 
@@ -560,11 +568,18 @@ void scheduler_run(void)
 		 * Copy the knowledge of CPU, TASK, THREAD and preemption counter to
 		 * thread's stack.
 		 */
+		// 将初始化的CURRENT的内容拷贝给选择的线程的内核栈的基地址的current_t
 		current_copy(CURRENT, (current_t *) THREAD->kstack);
 
 		/* Switch to thread context. */
+		// 将当前CPU的上下文和选择线程的保存上下文交换
+		// 这样，当前CPU会去执行选择线程的内容。
+		// 当线程返回时，----？？？
+		// 这个swap用的不是很好，应该没有内存交换的意味？？看实现。
 		context_swap(&CPU_LOCAL->scheduler_context, &THREAD->saved_context);
 
+		// 如果再执行到这里，说明CPU恢复了上一步存储到CPU_LOCAL->scheduler_context的
+		// 上下文Context
 		/* Back from another thread. */
 		assert(CPU != NULL);
 		assert(THREAD != NULL);
