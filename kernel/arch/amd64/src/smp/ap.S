@@ -50,6 +50,8 @@
 # The requirement for such an alignment comes from MP Specification's STARTUP
 # IPI requirements.
 
+# unmapped_ap_boot 就是 AP 处理器的启动代码，AP 从这里开始执行。直到 main_ap 中。
+# 这里直接对齐。
 .align 4096
 SYMBOL(unmapped_ap_boot)
 .code16

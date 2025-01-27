@@ -103,11 +103,15 @@ static char alive[ALIVE_CHARS] = "-\\|/";
 * Attention Plz£¡£¡£¡
 * ÕâÀïµÚÒ»¸öÄÚºË¼¶±ğµÄÏß³Ì¡£¡£kinit
 * kinit´¦Àí¸ß¼¶±ğÄÚºË³õÊ¼»¯£¬ÈçÏß³Ì´´½¨£¬ÓÃ»§¿Õ¼ä³õÊ¼»¯¡£
+* 
+* ¿ÉÒÔËµ kinit ÊÇÄÚºËµÄÁé»ê£¬Ò»ÏµÁĞ³õÊ¼»¯Ö®ºó£¬µÚÒ»¸öÄÚºËÏß³Ì£¬
+* ËüµÄÈÎÎñÊ®·ÖÖØ´ó£¬²»½öÒªÀ­ÆğÆäËûAP£¬´´½¨¸ü¶à¸¨ÖúĞÔÄÚºËÏß³Ì
+* ¸üÖØÒªµÄÊÇËüĞèÒªÖ´ĞĞ init µÄÈÎÎñ¡£
 */
 void kinit(void *arg)
 {
 	thread_t *thread;
-	// å…³é—­ä¸­æ–­ã€‚
+	// å…³é—­ä¸­æ–­ã€?
 	interrupts_disable();
 
 #ifdef CONFIG_SMP
@@ -120,14 +124,15 @@ void kinit(void *arg)
 		 * not mess together with kcpulb threads.
 		 * Just a beautification.
 		 */
-		// kinitçº¿ç¨‹åˆ›å»ºkmpçº¿ç¨‹å¹¶ç­‰å¾…å®ƒçš„å®Œæˆã€‚
-		// cpu1åˆ°cpuN-1ä¼šè¢«æ‹‰èµ·
-		// 
+		// BSP´´½¨Ò»¸öĞÂµÄÏß³Ìkmp
+		// kmpÓÃÀ´Æô¶¯AP¡£BSPµÈ´ıkmpÖ´ĞĞÍê
+		// ÔÚkmpÖĞ£¬»á³õÊ¼»¯BSPµÄLocal APIC£¬¶ø APµÄLocal APIC ÔÚ
+		// amd64_post_cpu_initÖĞ³õÊ¼»¯¡£
 		thread = thread_create(kmp, NULL, TASK,
 		    THREAD_FLAG_UNCOUNTED, "kmp");
 		if (!thread)
 			panic("Unable to create kmp thread.");
-		// kmpæ˜¯åœ¨BSPï¼Œä¹Ÿå°±æ˜¯cpu[0]ä¸Šæ‰§è¡Œã€‚
+		// kmpæ˜¯åœ¨BSPï¼Œä¹Ÿå°±æ˜¯cpu[0]ä¸Šæ‰§è¡Œã€?
 		thread_wire(thread, &cpus[0]);
 		thread_start(thread);
 		thread_join(thread);
@@ -141,7 +146,7 @@ void kinit(void *arg)
 			thread = thread_create(kcpulb, NULL, TASK,
 			    THREAD_FLAG_UNCOUNTED, "kcpulb");
 			if (thread != NULL) {
-				// å„ä¸ªcpuæ‰§è¡Œè‡ªå·±çš„kcpulbçº¿ç¨‹ã€‚
+				// å„ä¸ªcpuæ‰§è¡Œè‡ªå·±çš„kcpulbçº¿ç¨‹ã€?
 				thread_wire(thread, &cpus[i]);
 				thread_start(thread);
 				thread_detach(thread);
@@ -161,7 +166,7 @@ void kinit(void *arg)
 	ARCH_OP(post_smp_init);
 
 	/* Start thread computing system load */
-	// ç”¨äºè®¡ç®—ç³»ç»Ÿè´Ÿè½½çš„çº¿ç¨‹ kload
+	// ç”¨äºè®¡ç®—ç³»ç»Ÿè´Ÿè½½çš„çº¿ç¨?kload
 	thread = thread_create(kload, NULL, TASK, THREAD_FLAG_NONE,
 	    "kload");
 	if (thread != NULL) {
@@ -176,7 +181,7 @@ void kinit(void *arg)
 		/*
 		 * Create kernel console.
 		 */
-		// åˆ›å»ºkconsole_threadçº¿ç¨‹ï¼Œéœ€è¦ä½¿ç”¨åˆ°stdinã€‚
+		// åˆ›å»ºkconsole_threadçº¿ç¨‹ï¼Œéœ€è¦ä½¿ç”¨åˆ°stdinã€?
 		thread = thread_create(kconsole_thread, NULL, TASK,
 		    THREAD_FLAG_NONE, "kconsole");
 		if (thread != NULL) {
@@ -193,11 +198,11 @@ void kinit(void *arg)
 	 * Store the default stack size in sysinfo so that uspace can create
 	 * stack with this default size.
 	 */
-	// è®¾ç½®ç³»ç»Ÿä¿¡æ¯ default.stack_size ä¸º STACK_SIZE_USERï¼ˆ1024*1024ï¼‰
+	// è®¾ç½®ç³»ç»Ÿä¿¡æ¯ default.stack_size ä¸?STACK_SIZE_USERï¼?024*1024ï¼?
 	sysinfo_set_item_val("default.stack_size", NULL, STACK_SIZE_USER);
 
 
-	// ä¸Šé¢çš„éƒ¨åˆ†éœ€è¦åœ¨å…³é—­ä¸­æ–­æƒ…å†µä¸‹è¿›è¡Œã€‚
+	// ¿ªÆôÖĞ¶Ï
 	interrupts_enable();
 
 	/*

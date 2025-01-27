@@ -45,10 +45,19 @@
 
 #define NULL_DES     0
 /* Warning: Do not reorder the following items, unless you look into syscall.c! */
+// KTEXT_DES 是在64位的段选择符
+/*
+	在IA-32e模式下，兼容模式和64位模式可以无缝切换，无论当前
+是兼容模式还是64位模式，在转到⼀个新的代码段执行时，如果这个
+代码段描述符的L位是0，处理器将⼯作在兼容模式下；如果这个代码
+段描述符的L位是1，则处理器⼯作在64位模式下。
+	64位模式的段选择符（KTEXT_DES)指向的段描述符的long_mode位是1
+*/
 #define KTEXT_DES    1
 #define KDATA_DES    2
 #define UDATA_DES    3
 #define UTEXT_DES    4
+// KTEXT32_DES 是在兼容模式下的段选择符
 #define KTEXT32_DES  5
 /* End of warning */
 #define TSS_DES      6

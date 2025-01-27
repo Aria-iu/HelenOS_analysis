@@ -120,6 +120,7 @@ config_t config = {
 char bargs[CONFIG_BOOT_ARGUMENTS_BUFLEN] = { };
 
 /** Initial user-space tasks */
+// 在 amd64_pre_main -> multiboot2_info_parse -> multiboot2_module 中初始化
 init_t init = {
 	.cnt = 0
 };
@@ -279,6 +280,8 @@ void main_bsp_separated_stack(void)
 
 	// 对于AMD64架构来说，这里是调用 amd64_pre_smp_init
 	ARCH_OP(pre_smp_init);
+	// 在 amd64_pre_smp_init中分析了ACPI表，得到当前的cpu数量
+	// 和local apic地址还有io apic地址。
 	smp_init();
 
 	/* Slab must be initialized after we know the number of processors. */
@@ -294,7 +297,8 @@ void main_bsp_separated_stack(void)
 
 	// cpu_init是内核.text段的开头。
 	cpu_init();
-	// 时钟操作。
+	// 使用定时器测量当前CPU,用于校准延迟循环
+	// 以便在后续的延迟操作中能够更准确地控制时间。
 	calibrate_delay_loop();
 	// LOCAL APIC的设置在 amd64_post_cpu_init 中进行。
 	// LOCAL APIC初始化。

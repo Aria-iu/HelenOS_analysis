@@ -1,4 +1,10 @@
----- amd64_post_smp_init Matches (3 in 1 files) ----
-amd64.c (D:\code\helenos\kernel\arch\amd64\src) line 73 : static void amd64_post_smp_init(void);
-amd64.c (D:\code\helenos\kernel\arch\amd64\src) line 80 : 	.post_smp_init = amd64_post_smp_init
-amd64.c (D:\code\helenos\kernel\arch\amd64\src) line 237 : void amd64_post_smp_init(void)
+---- KTEXT32_DES Matches (9 in 8 files) ----
+ap.S (D:\code\helenos\kernel\arch\amd64\src\smp) line 65 : 	jmpl $GDT_SELECTOR(KTEXT32_DES), $jump_to_kernel - BOOT_OFFSET + AP_BOOT_OFFSET
+multiboot.S (D:\code\helenos\kernel\arch\amd64\src\boot) line 109 : 	jmpl $GDT_SELECTOR(KTEXT32_DES), $multiboot_meeting_point
+multiboot2.S (D:\code\helenos\kernel\arch\amd64\src\boot) line 173 : 	// 通过 jmpl 指令，CPU切换到由 GDT_SELECTOR(KTEXT32_DES) 指定的代码段。这通常用于从当前的代码段切换到内核的32位代码段。
+multiboot2.S (D:\code\helenos\kernel\arch\amd64\src\boot) line 177 : 	jmpl $GDT_SELECTOR(KTEXT32_DES), $multiboot2_meeting_point
+pm.c (D:\code\helenos\kernel\arch\amd64\src) line 101 : 	[KTEXT32_DES] = {
+pm.h (D:\code\helenos\kernel\arch\amd64\include\arch) line 52 : #define KTEXT32_DES  5
+pm.h (D:\code\helenos\kernel\arch\ia32\include\arch) line 54 : #define KTEXT32_DES        KTEXT_DES
+vesa_real.inc (D:\code\helenos\kernel\arch\ia32\src\boot) line 361 : 			ljmpl $GDT_SELECTOR(KTEXT32_DES), $(vesa_init_protected - vesa_init + VESA_INIT_SEGMENT << 4)
+vesa_ret.inc (D:\code\helenos\kernel\arch\amd64\src\boot) line 24 : 	jmpl $GDT_SELECTOR(KTEXT32_DES), $vesa_meeting_point

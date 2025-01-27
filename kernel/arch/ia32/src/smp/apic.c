@@ -149,6 +149,7 @@ const char *apic_get_name(void)
 
 bool l_apic_is_spurious(unsigned int n)
 {
+	// VECTOR_APIC_SPUR = 63
 	return n == VECTOR_APIC_SPUR;
 }
 
@@ -203,6 +204,7 @@ void apic_init(void)
 	exc_register(VECTOR_APIC_SPUR, "apic_spurious", false,
 	    (iroutine_t) apic_spurious);
 
+	// 改换门厅，现在使用的是 APIC 中断控制器。
 	pic_ops = &apic_pic_ops;
 
 	/*
@@ -524,6 +526,7 @@ void l_apic_init(void)
 	// 读取的是 LAPIC 的 LVT Timer Register（LVT_Tm）的当前值。
 	tm.value = l_apic[LVT_Tm];
 	// VECTOR_CLK 是定时器中断使用的中断号。
+	// VECTOR_CLK = 32
 	tm.vector = VECTOR_CLK;
 	// 指定定时器的工作模式
 	tm.mode = TIMER_PERIODIC;

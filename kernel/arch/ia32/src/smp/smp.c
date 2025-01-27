@@ -108,6 +108,7 @@ static void cpu_arch_id_init(void)
  * BSP initialization (prior the very first call to scheduler()) will be used
  * as an initialization stack for each AP.)
  */
+// 这里时AMD64中的kmp线程函数，用来拉起 AP。通过发送INIT IPI（中断处理指令）来启动应用处理器
 void kmp(void *arg __attribute__((unused)))
 {
 	unsigned int i;
@@ -118,6 +119,7 @@ void kmp(void *arg __attribute__((unused)))
 	 * SMP initialized, cpus array allocated. Assign each CPU its
 	 * physical APIC ID.
 	 */
+	// 为每个CPU赋值它们各自的物理 APIC ID. --- cpus[i].arch.id
 	cpu_arch_id_init();
 
 	/*
@@ -128,6 +130,9 @@ void kmp(void *arg __attribute__((unused)))
 	/*
 	 * Set the warm-reset vector to the real-mode address of 4K-aligned ap_boot()
 	 */
+	// ap_boot是AP启动函数的地址
+	// 设置warm-reset向量，以便APs在启动时能够跳转到正确的地址
+	// 0x467：warm-reset向量的地址
 	*((uint16_t *) (PA2KA(0x467 + 0))) =
 	    (uint16_t) (((uintptr_t) ap_boot) >> 4);  /* segment */
 	*((uint16_t *) (PA2KA(0x467 + 2))) = 0;       /* offset */
@@ -139,22 +144,27 @@ void kmp(void *arg __attribute__((unused)))
 	pio_write_8((ioport8_t *) 0x70, 0xf);
 	pio_write_8((ioport8_t *) 0x71, 0xa);
 
+	// 禁用所有中断，使用 apic 来投递中断的话不再使用 8259
 	i8259_disable_irqs(0xffff);
+	// 初始化APIC
 	apic_init();
 
 	for (i = 0; i < config.cpu_count; i++) {
 		/*
 		 * Skip processors marked unusable.
 		 */
+		// 跳过不可用的CPU
 		if (!ops->cpu_enabled(i))
 			continue;
 
 		/*
 		 * The bootstrap processor is already up.
 		 */
+		// 跳过引导处理器（BSP）
 		if (ops->cpu_bootstrap(i))
 			continue;
 
+		// 跳过自身
 		if (ops->cpu_apic_id(i) == bsp_l_apic) {
 			log(LF_ARCH, LVL_ERROR, "kmp: bad processor entry #%u, "
 			    "will not send IPI to myself", i);
@@ -170,17 +180,20 @@ void kmp(void *arg __attribute__((unused)))
 		 * it needs to be replaced by a generic fuctionality of
 		 * the memory subsystem
 		 */
+		// 准备新的GDT
 		descriptor_t *gdt_new =
 		    (descriptor_t *) malloc(GDT_ITEMS * sizeof(descriptor_t));
 		if (!gdt_new)
 			panic("Cannot allocate memory for GDT.");
 
+		//  复制GDT
 		memcpy(gdt_new, gdt, GDT_ITEMS * sizeof(descriptor_t));
 		memsetb(&gdt_new[TSS_DES], sizeof(descriptor_t), 0);
 		protected_ap_gdtr.limit = GDT_ITEMS * sizeof(descriptor_t);
 		protected_ap_gdtr.base = KA2PA((uintptr_t) gdt_new);
 		gdtr.base = (uintptr_t) gdt_new;
 
+		// 发送INIT IPI
 		if (l_apic_send_init_ipi(ops->cpu_apic_id(i))) {
 			/*
 			 * There may be just one AP being initialized at

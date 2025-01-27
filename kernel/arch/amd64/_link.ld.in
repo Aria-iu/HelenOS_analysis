@@ -98,6 +98,10 @@ SECTIONS {
 #ifdef CONFIG_SMP
 	ap_boot = unmapped_ap_boot - BOOT_OFFSET + AP_BOOT_OFFSET;
 	ap_gdtr = unmapped_ap_gdtr - BOOT_OFFSET + AP_BOOT_OFFSET;
+	/* 这里将 protected_ap_gdtr 设置为 ap_gdtr 的物理地址，在smp.c 中，在
+	   BSP发起IPI之前，需要生成新的GDT给AP使用，新的GDT的gdtr设置在protected_ap_gdtr中。
+	   设置了protected_ap_gdtr后，AP启动之后 lgdtr就使用ap_gdtr这个虚拟地址即可。
+	*/
 	protected_ap_gdtr = PA2KA(ap_gdtr);
 #endif /* CONFIG_SMP */
 

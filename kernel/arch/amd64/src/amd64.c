@@ -140,8 +140,9 @@ void amd64_pre_mm_init(void)
 		// PCD（Page Cache Disable）和 PWT（Page Write Through）位，以启用写合并模式（Write-Combining）。
 		pat_set_mapping(false, true, true, PAT_TYPE_WRITE_COMBINING);
 
+	// 如果。。。
 	if (config.cpu_active == 1) {
-		// 初始化中断处理机制
+		// 初始化中断处理项
 		interrupt_init();
 		// 初始化 BIOS 相关的功能
 		// 这里的bios实际上是通过 kernel/arch/amd64/src/bios文件找到ia32架构下的bios.c
@@ -149,6 +150,7 @@ void amd64_pre_mm_init(void)
 		bios_init();
 
 		/* PIC */
+		// 初始化8259中断控制器芯片。
 		// 通过 i8259_init 函数初始化 PIC，
 		// 设置主从 PIC 的基地址和中断向量基地址。这确保了系统能够正确处理外部中断请求。
 		// IVT_IRQBASE =  32			中断向量基地址，通常为 32，表示 IRQ0 对应的中断向量号为 32。

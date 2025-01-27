@@ -74,6 +74,7 @@ static i8259_t *saved_pic0;
 static i8259_t *saved_pic1;
 
 // irq0_vec  =  32
+// irq0_vec这个参数指使用i8259PIC时映射的中断0号其实是映射到了32号。
 void i8259_init(i8259_t *pic0, i8259_t *pic1, unsigned int irq0_vec)
 {
 	saved_pic0 = pic0;

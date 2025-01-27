@@ -91,7 +91,7 @@ void i8254_init(void)
 	// 设置 i8254_irq 的字段。
 	i8254_irq.preack = true;
 	// IRQ_CLK = 0
-	// VECTOR_CLK = IVT_IRQBASE + IRQ_CLK = 16 + 0 = 15
+	// VECTOR_CLK = IVT_IRQBASE + IRQ_CLK = 32 + 0 = 32
 	i8254_irq.inr = IRQ_CLK;
 	i8254_irq.claim = i8254_claim;
 	i8254_irq.handler = i8254_irq_handler;
@@ -117,13 +117,18 @@ void i8254_normal_operation(void)
 	i8259_enable_irqs(1 << IRQ_CLK);
 }
 
+// CLK_PORT4 = 0X43
+// CLK_PORT1 = 0X40
+// SHIFT = 11
 void i8254_calibrate_delay_loop(void)
 {
 	/*
 	 * One-shot timer. Count-down from 0xffff at 1193180Hz
 	 * MAGIC_NUMBER is the magic value for 1ms.
 	 */
+	// 初始化8254定时器
 	pio_write_8(CLK_PORT4, 0x30);
+	// 将计数器0的初始值设置为0xffff，即65535。这意味着定时器将从65535开始倒计时
 	pio_write_8(CLK_PORT1, 0xff);
 	pio_write_8(CLK_PORT1, 0xff);
 
@@ -133,18 +138,25 @@ void i8254_calibrate_delay_loop(void)
 
 	do {
 		/* will read both status and count */
+		// 读取计数器0的状态和计数值
 		pio_write_8(CLK_PORT4, 0xc2);
+		// 检查定时器是否准备好（即是否已经从0xffff开始倒计时）。
 		not_ok = (uint8_t) ((pio_read_8(CLK_PORT1) >> 6) & 1);
+		// 读取计数器0的当前值。
 		t1 = pio_read_8(CLK_PORT1);
 		t1 |= pio_read_8(CLK_PORT1) << 8;
 	} while (not_ok);
 
+	// 延迟循环的次数
+	// LOOPS = 150000
 	asm_delay_loop(LOOPS);
 
+	// 读取定时器的当前值
 	pio_write_8(CLK_PORT4, 0xd2);
 	t2 = pio_read_8(CLK_PORT1);
 	t2 |= pio_read_8(CLK_PORT1) << 8;
 
+	// 计算校准机制的开销
 	/*
 	 * We want to determine the overhead of the calibrating mechanism.
 	 */
@@ -152,12 +164,14 @@ void i8254_calibrate_delay_loop(void)
 	uint32_t o1 = pio_read_8(CLK_PORT1);
 	o1 |= pio_read_8(CLK_PORT1) << 8;
 
+	// 这里并不进行循环，只是将 t2-t1时间中的（o2-o1）的偏差算出来
 	asm_fake_loop(LOOPS);
 
 	pio_write_8(CLK_PORT4, 0xd2);
 	uint32_t o2 = pio_read_8(CLK_PORT1);
 	o2 |= pio_read_8(CLK_PORT1) << 8;
 
+	// 计算延迟循环的常数
 	uint32_t delta = (t1 - t2) - (o1 - o2);
 	if (!delta)
 		delta = 1;
@@ -166,6 +180,7 @@ void i8254_calibrate_delay_loop(void)
 	    ((MAGIC_NUMBER * LOOPS) / 1000) / delta +
 	    (((MAGIC_NUMBER * LOOPS) / 1000) % delta ? 1 : 0);
 
+	// 计算CPU频率
 	uint64_t clk1 = get_cycle();
 	delay(1 << SHIFT);
 	uint64_t clk2 = get_cycle();
