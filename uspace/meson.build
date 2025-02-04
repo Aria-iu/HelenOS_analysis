@@ -26,6 +26,14 @@
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+##############################################################################
+#							±‰¡ø±Ì
+#	link_map								true
+#	disassemble								CONFIG_LINE_DEBUG
+#	install_nonessential_data				not CONFIG_BAREBONE
+#	install_debug_files						false
+################################################################################
+
 # FIXME: somehow disabling link map makes tools/mkext4.py crash
 link_map = true
 disassemble = CONFIG_LINE_DEBUG

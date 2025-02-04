@@ -26,6 +26,16 @@
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+##############################################################################
+#							变量表
+#	always_static							not CONFIG_BUILD_SHARED_LIBS
+#	installed_libs							[]
+#	libs									[]
+#	include_paths							[]
+#	testfiles								[]
+#	uspace_lib_devel_install_script_text	[]
+################################################################################
+
 always_static = not CONFIG_BUILD_SHARED_LIBS
 
 # Which libraries are installed when CONFIG_DEVEL_FILES is enabled

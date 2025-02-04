@@ -1,10 +1,7 @@
----- KTEXT32_DES Matches (9 in 8 files) ----
-ap.S (D:\code\helenos\kernel\arch\amd64\src\smp) line 65 : 	jmpl $GDT_SELECTOR(KTEXT32_DES), $jump_to_kernel - BOOT_OFFSET + AP_BOOT_OFFSET
-multiboot.S (D:\code\helenos\kernel\arch\amd64\src\boot) line 109 : 	jmpl $GDT_SELECTOR(KTEXT32_DES), $multiboot_meeting_point
-multiboot2.S (D:\code\helenos\kernel\arch\amd64\src\boot) line 173 : 	// 通过 jmpl 指令，CPU切换到由 GDT_SELECTOR(KTEXT32_DES) 指定的代码段。这通常用于从当前的代码段切换到内核的32位代码段。
-multiboot2.S (D:\code\helenos\kernel\arch\amd64\src\boot) line 177 : 	jmpl $GDT_SELECTOR(KTEXT32_DES), $multiboot2_meeting_point
-pm.c (D:\code\helenos\kernel\arch\amd64\src) line 101 : 	[KTEXT32_DES] = {
-pm.h (D:\code\helenos\kernel\arch\amd64\include\arch) line 52 : #define KTEXT32_DES  5
-pm.h (D:\code\helenos\kernel\arch\ia32\include\arch) line 54 : #define KTEXT32_DES        KTEXT_DES
-vesa_real.inc (D:\code\helenos\kernel\arch\ia32\src\boot) line 361 : 			ljmpl $GDT_SELECTOR(KTEXT32_DES), $(vesa_init_protected - vesa_init + VESA_INIT_SEGMENT << 4)
-vesa_ret.inc (D:\code\helenos\kernel\arch\amd64\src\boot) line 24 : 	jmpl $GDT_SELECTOR(KTEXT32_DES), $vesa_meeting_point
+---- elf_load Matches (6 in 3 files) ----
+elf_load.h (D:\code\helenos\kernel\generic\include\lib) line 40 : extern errno_t elf_load(elf_header_t *, as_t *);
+elf.c (D:\code\helenos\kernel\generic\src\lib) line 50 : #include <lib/elf_load.h>
+elf.c (D:\code\helenos\kernel\generic\src\lib) line 63 : errno_t elf_load(elf_header_t *header, as_t *as)
+program.c (D:\code\helenos\kernel\generic\src\proc) line 49 : #include <lib/elf_load.h>
+program_create_from_image in program.c (D:\code\helenos\kernel\generic\src\proc) : 	prg->loader_status = elf_load((elf_header_t *) image_addr, as);
+program_create_loader in program.c (D:\code\helenos\kernel\generic\src\proc) : 	prg->loader_status = elf_load((elf_header_t *) program_loader, as);
