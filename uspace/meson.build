@@ -42,10 +42,18 @@ install_nonessential_data = not CONFIG_BAREBONE
 # This is currently disabled due to boot image size restrictions.
 install_debug_files = false
 
+# 在lib目录下，meson指令生成了很多库，多是动态库，如 libc.so.0.0 。供下面使用。
 subdir('lib')
+
 subdir('app')
 subdir('srv')
 subdir('drv')
+##############################################################################
+#							变量表
+#	apps									[]
+#	srvs									[]
+#	drvs									[]
+################################################################################
 
 dirs = []
 

@@ -1,0 +1,11 @@
+包含文件						路径								实现
+stdlib.h						common/include/stdlib.h
+str.h							common/include/str.h
+printf_core.h					common/include/printf_core.h		common/printf/printf_core.c
+stdio.h							kernel/generic/include/stdio.h
+assert.h						kernel/generic/include/assert.h
+
+
+源代码不包含的头文件，但是使用了，可能是编译器提供的？
+stddef.h
+stdarg.h

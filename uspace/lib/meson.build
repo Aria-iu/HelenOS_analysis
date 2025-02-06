@@ -143,6 +143,19 @@ testfiles = []
 # Text of the install script.
 uspace_lib_devel_install_script_text = []
 
+
+##############################################################################
+#							变量表
+#	src											files()
+#	includes									[]
+#	private_includes							[]
+#	deps										[]
+#	c_args										[]
+#	version										..
+#	test_src									[]
+#	language									'c'['cpp']
+#	allow_shared								false/true
+################################################################################
 foreach l : libs
 	# Variables that might be defined in library meson files:
 
@@ -216,6 +229,7 @@ foreach l : libs
 	endif
 
 	# Pretty much everything depends on libc.
+	# 除了c库，其他库都需要加上libc的依赖。
 	if l != 'c'
 		deps += 'c'
 	endif
@@ -375,7 +389,8 @@ foreach l : libs
 	})
 endforeach
 
-if not CONFIG_PCUT_TESTS
+# 如果没有启用测试用例，那么到此结束。
+if not CONFIG_PCUT_TESTS	
 	subdir_done()
 endif
 

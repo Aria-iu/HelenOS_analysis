@@ -1331,7 +1331,6 @@ static int print_double(double g, char spec, int precision, int width,
  *
  */
 /*
-*	这里是common文件夹，顾名思义，这是所有架构通用的代码集合。
 *	这里是处理打印的函数，由各个架构传入打印实现：从参数 printf_spec_t *ps
 *	然后printf ---> printf_core  (处理字符串格式) ------> 调用 ps的具体实现进行打印。
 *   这种编程方式使得架构无关，是一种很优化但是调用很多的方法。

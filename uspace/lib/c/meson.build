@@ -28,6 +28,25 @@
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+##############################################################################
+#							±‰¡ø±Ì
+#	src											arch_src + files(...)
+#	includes									[
+#													'include',
+#													'arch' / UARCH / 'include',
+#													root_path / 'abi' / 'arch' / UARCH / 'include',
+#													root_path / 'abi' / 'include',
+#													root_path / 'common' / 'include',
+#												]
+#	private_includes							[]
+#	deps										[]
+#	c_args										[ '-fno-builtin', '-D_LIBC_SOURCE' ]
+#	version										..
+#	test_src									files(test/...)
+#	language									'c'
+#	allow_shared								true
+################################################################################
+
 # libarch
 arch_src = []
 subdir('arch' / UARCH)
