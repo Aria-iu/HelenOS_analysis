@@ -1,0 +1,647 @@
+Archive member included to satisfy reference by file (symbol)
+
+uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                              (--whole-archive)
+uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                              (--whole-archive)
+uspace/lib/libfs.a.p/fs_libfs.c.o
+                              uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o (fs_register)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.0                     uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o (task_retval)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .text          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libfs.a.p/fs_libfs.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libfs.a.p/fs_libfs.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libfs.a.p/fs_libfs.c.o
+ .text.fs_instance_create
+                0x0000000000000000      0x10d uspace/lib/libfs.a.p/fs_libfs.c.o
+ .text.fs_instance_get
+                0x0000000000000000       0x74 uspace/lib/libfs.a.p/fs_libfs.c.o
+ .text.fs_instance_destroy
+                0x0000000000000000       0x94 uspace/lib/libfs.a.p/fs_libfs.c.o
+ .data.instances_list
+                0x0000000000000000       0x10 uspace/lib/libfs.a.p/fs_libfs.c.o
+ .data.instances_mutex
+                0x0000000000000000       0x20 uspace/lib/libfs.a.p/fs_libfs.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+LOAD uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+START GROUP
+LOAD uspace/lib/c/libstartfiles.a
+LOAD uspace/lib/libfs.a
+LOAD uspace/lib/libc.so.0.0
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000400000                PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x0000000000400120                . = (SEGMENT_START ("text-segment", 0x400000) + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000400120      0x178
+ *(.hash)
+ .hash          0x0000000000400120      0x178 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x0000000000400298      0x528
+ *(.dynsym)
+ .dynsym        0x0000000000400298      0x528 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+
+.dynstr         0x00000000004007c0      0x3a5
+ *(.dynstr)
+ .dynstr        0x00000000004007c0      0x3a5 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+
+.gnu.version    0x0000000000400b66        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000400b66        0x0 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+
+.gnu.version_d  0x0000000000400b68        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000400b68        0x0 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+
+.gnu.version_r  0x0000000000400b68        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000400b68        0x0 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+
+.rela.dyn       0x0000000000400b68       0x18
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text.__c_start
+                0x0000000000400b68        0x0 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ .rela.rodata.cst8
+                0x0000000000400b68        0x0 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x0000000000400b68        0x0 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000400b68        0x0 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x0000000000400b68       0x18 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+
+.rela.plt       0x0000000000400b80      0x4f8
+ *(.rela.plt)
+ .rela.plt      0x0000000000400b80      0x4f8 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+ .rela.iplt     0x0000000000401078        0x0 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x0000000000401080      0x360
+ *(.plt)
+ .plt           0x0000000000401080      0x360 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+                0x0000000000401090                task_retval
+                0x00000000004010a0                loc_service_connect
+                0x00000000004010b0                printf
+                0x00000000004010c0                async_hangup
+                0x00000000004010d0                async_send_2
+                0x00000000004010e0                async_wait_for
+                0x00000000004010f0                hash_table_create
+                0x0000000000401100                async_data_write_start
+                0x0000000000401110                hash_table_insert
+                0x0000000000401120                async_get_call
+                0x0000000000401130                loc_namespace_get_id
+                0x0000000000401140                service_connect_blocking
+                0x0000000000401150                async_data_read_finalize
+                0x0000000000401160                loc_count_services
+                0x0000000000401170                malloc
+                0x0000000000401180                loc_get_namespaces
+                0x0000000000401190                async_answer_0
+                0x00000000004011a0                async_share_in_start_0_0
+                0x00000000004011b0                fibril_condvar_wait
+                0x00000000004011c0                strtol
+                0x00000000004011d0                async_exchange_end
+                0x00000000004011e0                loc_count_namespaces
+                0x00000000004011f0                fibril_condvar_initialize
+                0x0000000000401200                fibril_condvar_broadcast
+                0x0000000000401210                async_send_4
+                0x0000000000401220                fibril_mutex_unlock
+                0x0000000000401230                async_answer_4
+                0x0000000000401240                loc_get_services
+                0x0000000000401250                async_answer_5
+                0x0000000000401260                async_create_callback_port
+                0x0000000000401270                str_cmp
+                0x0000000000401280                hash_table_remove
+                0x0000000000401290                __helenos_assert_abort
+                0x00000000004012a0                async_data_read_receive
+                0x00000000004012b0                async_accept_0
+                0x00000000004012c0                str_cpy
+                0x00000000004012d0                async_forward_0
+                0x00000000004012e0                str_size
+                0x00000000004012f0                async_answer_1
+                0x0000000000401300                async_exchange_begin
+                0x0000000000401310                async_send_0
+                0x0000000000401320                str_error
+                0x0000000000401330                async_answer_3
+                0x0000000000401340                hash_table_find
+                0x0000000000401350                async_data_write_finalize
+                0x0000000000401360                async_data_write_accept
+                0x0000000000401370                loc_id_probe
+                0x0000000000401380                __libc_main
+                0x0000000000401390                async_manager
+                0x00000000004013a0                async_forget
+                0x00000000004013b0                async_data_write_receive
+                0x00000000004013c0                free
+                0x00000000004013d0                fibril_mutex_lock
+ *(.iplt)
+ .iplt          0x00000000004013e0        0x0 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+
+.plt.got        0x00000000004013e0        0x0
+ *(.plt.got)
+ .plt.got       0x00000000004013e0        0x0 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x00000000004013e0     0x213d
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ .text.startup.main
+                0x00000000004013e0      0x126 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+                0x00000000004013e0                main
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ *fill*         0x0000000000401506        0xa 
+ .text.services_key_hash
+                0x0000000000401510        0x9 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ *fill*         0x0000000000401519        0x7 
+ .text.services_hash
+                0x0000000000401520        0xa uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ *fill*         0x000000000040152a        0x6 
+ .text.services_key_equal
+                0x0000000000401530       0x10 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ .text.locfs_destroy_node
+                0x0000000000401540        0xb uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ *fill*         0x000000000040154b        0x5 
+ .text.locfs_link_node
+                0x0000000000401550        0xb uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ *fill*         0x000000000040155b        0x5 
+ .text.locfs_index_get
+                0x0000000000401560        0xc uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ *fill*         0x000000000040156c        0x4 
+ .text.locfs_size_get
+                0x0000000000401570        0x8 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ *fill*         0x0000000000401578        0x8 
+ .text.locfs_lnkcnt_get
+                0x0000000000401580       0x14 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ *fill*         0x0000000000401594        0xc 
+ .text.locfs_is_directory
+                0x00000000004015a0        0xf uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ *fill*         0x00000000004015af        0x1 
+ .text.locfs_is_file
+                0x00000000004015b0        0xf uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ *fill*         0x00000000004015bf        0x1 
+ .text.locfs_service_get
+                0x00000000004015c0       0x16 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ *fill*         0x00000000004015d6        0xa 
+ .text.locfs_fsprobe
+                0x00000000004015e0        0xb uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ *fill*         0x00000000004015eb        0x5 
+ .text.locfs_mounted
+                0x00000000004015f0       0x15 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ *fill*         0x0000000000401605        0xb 
+ .text.locfs_unmounted
+                0x0000000000401610        0xb uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ *fill*         0x000000000040161b        0x5 
+ .text.locfs_truncate
+                0x0000000000401620        0xb uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ *fill*         0x000000000040162b        0x5 
+ .text.locfs_destroy
+                0x0000000000401630        0xb uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ *fill*         0x000000000040163b        0x5 
+ .text.locfs_node_put
+                0x0000000000401640       0x24 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ *fill*         0x0000000000401664        0xc 
+ .text.services_remove_callback
+                0x0000000000401670        0xe uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ *fill*         0x000000000040167e        0x2 
+ .text.locfs_node_open
+                0x0000000000401680      0x147 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ *fill*         0x00000000004017c7        0x9 
+ .text.locfs_sync
+                0x00000000004017d0       0xe7 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ *fill*         0x00000000004018b7        0x9 
+ .text.locfs_close
+                0x00000000004018c0       0xbc uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ *fill*         0x000000000040197c        0x4 
+ .text.locfs_write
+                0x0000000000401980      0x1b9 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ *fill*         0x0000000000401b39        0x7 
+ .text.locfs_read
+                0x0000000000401b40      0x3af uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ *fill*         0x0000000000401eef        0x1 
+ .text.locfs_has_children
+                0x0000000000401ef0       0x8f uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ *fill*         0x0000000000401f7f        0x1 
+ .text.locfs_create_node
+                0x0000000000401f80       0x2a uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ *fill*         0x0000000000401faa        0x6 
+ .text.locfs_unlink_node
+                0x0000000000401fb0        0xb uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ *fill*         0x0000000000401fbb        0x5 
+ .text.locfs_root_get
+                0x0000000000401fc0       0x68 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ *fill*         0x0000000000402028        0x8 
+ .text.locfs_node_get
+                0x0000000000402030       0x77 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ *fill*         0x00000000004020a7        0x9 
+ .text.locfs_match
+                0x00000000004020b0      0x2af uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ *fill*         0x000000000040235f        0x1 
+ .text.locfs_init
+                0x0000000000402360       0x18 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+                0x0000000000402360                locfs_init
+ .text          0x0000000000402378        0xc uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                0x0000000000402378                _start
+ *fill*         0x0000000000402384        0xc 
+ .text.__c_start
+                0x0000000000402390       0x8c uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                0x0000000000402390                __c_start
+ *fill*         0x000000000040241c        0x4 
+ .text.vfs_connection
+                0x0000000000402420      0xf72 uspace/lib/libfs.a.p/fs_libfs.c.o
+ *fill*         0x0000000000403392        0xe 
+ .text.fs_register
+                0x00000000004033a0      0x167 uspace/lib/libfs.a.p/fs_libfs.c.o
+                0x00000000004033a0                fs_register
+ *fill*         0x0000000000403507        0x9 
+ .text.fs_node_initialize
+                0x0000000000403510        0xd uspace/lib/libfs.a.p/fs_libfs.c.o
+                0x0000000000403510                fs_node_initialize
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000403520      0x288
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.main.str1.1
+                0x0000000000403520       0x90 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+                                         0x4a (size before relaxing)
+ .rodata.main.str1.8
+                0x00000000004035b0      0x146 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+                                         0x90 (size before relaxing)
+ .rodata.locfs_sync.str1.8
+                0x00000000004036f6       0x2e uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ .rodata.locfs_sync.str1.1
+                0x00000000004036f6        0xa uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ .rodata.locfs_read.str1.1
+                0x00000000004036f6        0x1 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ .rodata.locfs_create_node.str1.8
+                0x00000000004036f6       0x29 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ *fill*         0x00000000004036f6        0xa 
+ .rodata.services_ops
+                0x0000000000403700       0x28 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ .rodata.cst8   0x0000000000403728        0x8 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .rodata.vfs_connection.str1.8
+                0x0000000000403730       0x4e uspace/lib/libfs.a.p/fs_libfs.c.o
+ .rodata.vfs_connection.str1.1
+                0x0000000000403730       0x48 uspace/lib/libfs.a.p/fs_libfs.c.o
+ .rodata.vfs_connection
+                0x0000000000403730       0x78 uspace/lib/libfs.a.p/fs_libfs.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x00000000004037a8      0x12c
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x00000000004037a8      0x12c uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+                0x00000000004037a8                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x00000000004038d8      0x560
+ *(.eh_frame)
+ .eh_frame      0x00000000004038d8       0x40 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+ .eh_frame      0x0000000000403918       0x28 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000403940        0x0 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+ .eh_frame      0x0000000000403940      0x448 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+                                        0x460 (size before relaxing)
+ .eh_frame      0x0000000000403d88       0x20 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000403da8       0x90 uspace/lib/libfs.a.p/fs_libfs.c.o
+                                        0x138 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x0000000000403e38        0x0
+ *(.sframe)
+ .sframe        0x0000000000403e38        0x0 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x0000000000404000                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0x0000000000404000        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0000000000404000        0x0
+                0x0000000000404000                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x0000000000404000                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x0000000000404000        0x0
+                0x0000000000404000                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x0000000000404000                PROVIDE (__init_array_end = .)
+
+.fini_array     0x0000000000404000        0x0
+                0x0000000000404000                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x0000000000404000                PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x0000000000404000        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x0000000000404000        0x0 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+
+.dynamic        0x0000000000404000      0x150
+ *(.dynamic)
+ .dynamic       0x0000000000404000      0x150 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+                0x0000000000404000                _DYNAMIC
+
+.got            0x0000000000404150        0x0
+ *(.got)
+ .got           0x0000000000404150        0x0 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+ *(.igot)
+                0x0000000000404150                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x0000000000404150      0x1c0
+ *(.got.plt)
+ .got.plt       0x0000000000404150      0x1c0 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+                0x0000000000404150                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x0000000000404310        0x0 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+
+.data           0x0000000000404320      0x140
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.locfs_vfs_info
+                0x0000000000404320       0x20 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+ .data.locfs_ops
+                0x0000000000404340       0x48 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+                0x0000000000404340                locfs_ops
+ *fill*         0x0000000000404388       0x18 
+ .data.locfs_libfs_ops
+                0x00000000004043a0       0x98 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+                0x00000000004043a0                locfs_libfs_ops
+ *fill*         0x0000000000404438        0x8 
+ .data.services_mutex
+                0x0000000000404440       0x20 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+
+.data1
+ *(.data1)
+                0x0000000000404460                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x0000000000404460                . = .
+                0x0000000000404460                __bss_start = .
+
+.bss            0x0000000000404460       0xe0
+ *(.dynbss)
+ .dynbss        0x0000000000404460       0x48 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+                0x0000000000404460                __progsymbols
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ *fill*         0x00000000004044a8       0x18 
+ .bss.services  0x00000000004044c0       0x38 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ *fill*         0x00000000004044f8        0x8 
+ .bss.fs_name   0x0000000000404500       0x15 uspace/lib/libfs.a.p/fs_libfs.c.o
+ *fill*         0x0000000000404515        0x3 
+ .bss.libfs_ops
+                0x0000000000404518        0x8 uspace/lib/libfs.a.p/fs_libfs.c.o
+ .bss.vfs_out_ops
+                0x0000000000404520        0x8 uspace/lib/libfs.a.p/fs_libfs.c.o
+ *fill*         0x0000000000404528        0x8 
+ .bss.reg       0x0000000000404530       0x10 uspace/lib/libfs.a.p/fs_libfs.c.o
+ *(COMMON)
+                0x0000000000404540                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x0000000000404540                . = ALIGN (0x8)
+                0x0000000000404540                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x0000000000406540        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x0000000000406540                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000406540                . = ALIGN (0x8)
+                0x0000000000404540                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x0000000000406540                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/srv_fs_locfs.p/srv_fs_locfs_locfs_ops.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libfs.a.p/fs_libfs.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/srv_fs_locfs elf64-x86-64)

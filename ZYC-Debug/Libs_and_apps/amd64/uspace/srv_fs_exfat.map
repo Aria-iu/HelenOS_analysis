@@ -1,0 +1,1147 @@
+Archive member included to satisfy reference by file (symbol)
+
+uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                              (--whole-archive)
+uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                              (--whole-archive)
+uspace/lib/libblock.a.p/block_block.c.o
+                              uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o (block_init)
+uspace/lib/libdevice.a.p/device_src_bd.c.o
+                              uspace/lib/libblock.a.p/block_block.c.o (bd_open)
+uspace/lib/libfs.a.p/fs_libfs.c.o
+                              uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o (fs_register)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.0                     uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o (task_retval)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_fat.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_fat.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_fat.c.o
+ .text.exfat_get_cluster
+                0x0000000000000000       0x83 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_fat.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_bitmap.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_bitmap.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_bitmap.c.o
+ .text.exfat_bitmap_clear_clusters
+                0x0000000000000000      0x134 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_bitmap.c.o
+ .text.exfat_bitmap_alloc_clusters
+                0x0000000000000000      0x1ab uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_bitmap.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_dentry.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_dentry.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_dentry.c.o
+ .text.exfat_valid_char
+                0x0000000000000000       0x68 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_dentry.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_directory.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_directory.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_directory.c.o
+ .text.exfat_directory_init
+                0x0000000000000000       0x32 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_directory.c.o
+ .text.exfat_directory_prev
+                0x0000000000000000      0x125 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_directory.c.o
+ .text.exfat_directory_find_continue
+                0x0000000000000000      0x2af uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_directory.c.o
+ .text.exfat_directory_expand
+                0x0000000000000000       0x76 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_directory.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .text          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libblock.a.p/block_block.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libblock.a.p/block_block.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libblock.a.p/block_block.c.o
+ .text.read_blocks.part.0
+                0x0000000000000000       0x18 uspace/lib/libblock.a.p/block_block.c.o
+ .text.write_blocks.part.0
+                0x0000000000000000       0x18 uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_seqread
+                0x0000000000000000      0x1be uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_read_direct
+                0x0000000000000000       0xda uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_write_direct
+                0x0000000000000000       0xda uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_sync_cache
+                0x0000000000000000       0x86 uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_get_bsize
+                0x0000000000000000       0x86 uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_get_nblocks
+                0x0000000000000000       0x86 uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_read_bytes_direct
+                0x0000000000000000      0x1e8 uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_read_toc
+                0x0000000000000000       0x9e uspace/lib/libblock.a.p/block_block.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_bd.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_bd.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_bd.c.o
+ .text.bd_read_toc
+                0x0000000000000000       0x9a uspace/lib/libdevice.a.p/device_src_bd.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libfs.a.p/fs_libfs.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libfs.a.p/fs_libfs.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libfs.a.p/fs_libfs.c.o
+ .text.fs_instance_create
+                0x0000000000000000      0x10d uspace/lib/libfs.a.p/fs_libfs.c.o
+ .text.fs_instance_get
+                0x0000000000000000       0x74 uspace/lib/libfs.a.p/fs_libfs.c.o
+ .text.fs_instance_destroy
+                0x0000000000000000       0x94 uspace/lib/libfs.a.p/fs_libfs.c.o
+ .data.instances_list
+                0x0000000000000000       0x10 uspace/lib/libfs.a.p/fs_libfs.c.o
+ .data.instances_mutex
+                0x0000000000000000       0x20 uspace/lib/libfs.a.p/fs_libfs.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+LOAD uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_fat.c.o
+LOAD uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_bitmap.c.o
+LOAD uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+LOAD uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+LOAD uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_dentry.c.o
+LOAD uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_directory.c.o
+START GROUP
+LOAD uspace/lib/c/libstartfiles.a
+LOAD uspace/lib/libblock.a
+LOAD uspace/lib/libdevice.a
+LOAD uspace/lib/libc.so.0.0
+LOAD uspace/lib/libfs.a
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000400000                PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x0000000000400120                . = (SEGMENT_START ("text-segment", 0x400000) + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000400120      0x1a0
+ *(.hash)
+ .hash          0x0000000000400120      0x1a0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x00000000004002c0      0x618
+ *(.dynsym)
+ .dynsym        0x00000000004002c0      0x618 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+
+.dynstr         0x00000000004008d8      0x404
+ *(.dynstr)
+ .dynstr        0x00000000004008d8      0x404 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+
+.gnu.version    0x0000000000400cdc        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000400cdc        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+
+.gnu.version_d  0x0000000000400ce0        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000400ce0        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+
+.gnu.version_r  0x0000000000400ce0        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000400ce0        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+
+.rela.dyn       0x0000000000400ce0       0x18
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text.__c_start
+                0x0000000000400ce0        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ .rela.rodata.cst8
+                0x0000000000400ce0        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x0000000000400ce0        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000400ce0        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x0000000000400ce0       0x18 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+
+.rela.plt       0x0000000000400cf8      0x5e8
+ *(.rela.plt)
+ .rela.plt      0x0000000000400cf8      0x5e8 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+ .rela.iplt     0x00000000004012e0        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x00000000004012e0      0x400
+ *(.plt)
+ .plt           0x00000000004012e0      0x400 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+                0x00000000004012f0                task_retval
+                0x0000000000401300                loc_service_connect
+                0x0000000000401310                printf
+                0x0000000000401320                async_hangup
+                0x0000000000401330                async_req_0_2
+                0x0000000000401340                str_casecmp
+                0x0000000000401350                async_wait_for
+                0x0000000000401360                hash_table_create
+                0x0000000000401370                async_data_write_start
+                0x0000000000401380                hash_table_insert
+                0x0000000000401390                async_get_call
+                0x00000000004013a0                str_to_utf16
+                0x00000000004013b0                str_decode
+                0x00000000004013c0                service_connect_blocking
+                0x00000000004013d0                async_data_read_finalize
+                0x00000000004013e0                memcpy
+                0x00000000004013f0                puts
+                0x0000000000401400                malloc
+                0x0000000000401410                async_answer_0
+                0x0000000000401420                async_share_in_start_0_0
+                0x0000000000401430                stacktrace_print
+                0x0000000000401440                utf16_to_str
+                0x0000000000401450                strtol
+                0x0000000000401460                async_exchange_end
+                0x0000000000401470                fibril_mutex_trylock
+                0x0000000000401480                calloc
+                0x0000000000401490                async_send_3
+                0x00000000004014a0                fibril_mutex_unlock
+                0x00000000004014b0                async_answer_4
+                0x00000000004014c0                async_req_0_1
+                0x00000000004014d0                async_answer_5
+                0x00000000004014e0                async_create_callback_port
+                0x00000000004014f0                str_cmp
+                0x0000000000401500                hash_table_remove
+                0x0000000000401510                hash_table_remove_item
+                0x0000000000401520                __helenos_assert_abort
+                0x0000000000401530                memset
+                0x0000000000401540                async_data_read_receive
+                0x0000000000401550                hash_table_empty
+                0x0000000000401560                async_accept_0
+                0x0000000000401570                async_data_read_start
+                0x0000000000401580                str_cpy
+                0x0000000000401590                utf16_wsize
+                0x00000000004015a0                str_error_name
+                0x00000000004015b0                str_size
+                0x00000000004015c0                async_answer_1
+                0x00000000004015d0                async_exchange_begin
+                0x00000000004015e0                async_send_0
+                0x00000000004015f0                str_error
+                0x0000000000401600                hash_table_apply
+                0x0000000000401610                async_answer_3
+                0x0000000000401620                hash_table_find
+                0x0000000000401630                async_data_write_finalize
+                0x0000000000401640                async_data_write_accept
+                0x0000000000401650                fibril_rwlock_initialize
+                0x0000000000401660                __libc_main
+                0x0000000000401670                async_manager
+                0x0000000000401680                async_forget
+                0x0000000000401690                async_req_3_0
+                0x00000000004016a0                hash_table_destroy
+                0x00000000004016b0                async_data_write_receive
+                0x00000000004016c0                free
+                0x00000000004016d0                fibril_mutex_lock
+ *(.iplt)
+ .iplt          0x00000000004016e0        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+
+.plt.got        0x00000000004016e0        0x0
+ *(.plt.got)
+ .plt.got       0x00000000004016e0        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x00000000004016e0     0xabad
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ .text.unlikely.exfat_index_get
+                0x00000000004016e0        0xa uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ .text.unlikely.exfat_size_get
+                0x00000000004016ea        0xa uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ .text.unlikely.exfat_lnkcnt_get
+                0x00000000004016f4        0x9 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ .text.unlikely.exfat_is_directory
+                0x00000000004016fd        0x9 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ .text.unlikely.exfat_is_file
+                0x0000000000401706        0x9 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ .text.unlikely.exfat_node_get_new
+                0x000000000040170f       0x79 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ .text.unlikely.exfat_has_children
+                0x0000000000401788        0xc uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ .text.unlikely.exfat_link
+                0x0000000000401794       0x13 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ .text.unlikely.exfat_destroy_node
+                0x00000000004017a7        0x9 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ .text.unlikely.exfat_mounted
+                0x00000000004017b0        0xa uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ .text.unlikely.exfat_match
+                0x00000000004017ba        0xa uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ .text.unlikely.exfat_free_block_count
+                0x00000000004017c4        0xa uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ .text.unlikely.exfat_directory_write_file
+                0x00000000004017ce        0xa uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_directory.c.o
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *fill*         0x00000000004017d8        0x8 
+ .text.startup.main
+                0x00000000004017e0       0xff uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+                0x00000000004017e0                main
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ *fill*         0x00000000004018df        0x1 
+ .text.exfat_cluster_walk
+                0x00000000004018e0      0x215 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_fat.c.o
+                0x00000000004018e0                exfat_cluster_walk
+ *fill*         0x0000000000401af5        0xb 
+ .text.exfat_block_get
+                0x0000000000401b00      0x21a uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_fat.c.o
+                0x0000000000401b00                exfat_block_get
+ *fill*         0x0000000000401d1a        0x6 
+ .text.exfat_block_get_by_clst
+                0x0000000000401d20      0x140 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_fat.c.o
+                0x0000000000401d20                exfat_block_get_by_clst
+ .text.exfat_set_cluster
+                0x0000000000401e60       0x84 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_fat.c.o
+                0x0000000000401e60                exfat_set_cluster
+ *fill*         0x0000000000401ee4        0xc 
+ .text.exfat_alloc_clusters
+                0x0000000000401ef0      0x2c8 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_fat.c.o
+                0x0000000000401ef0                exfat_alloc_clusters
+ *fill*         0x00000000004021b8        0x8 
+ .text.exfat_free_clusters
+                0x00000000004021c0      0x16a uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_fat.c.o
+                0x00000000004021c0                exfat_free_clusters
+ *fill*         0x000000000040232a        0x6 
+ .text.exfat_append_clusters
+                0x0000000000402330      0x10b uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_fat.c.o
+                0x0000000000402330                exfat_append_clusters
+ *fill*         0x000000000040243b        0x5 
+ .text.exfat_chop_clusters
+                0x0000000000402440      0x15b uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_fat.c.o
+                0x0000000000402440                exfat_chop_clusters
+ *fill*         0x000000000040259b        0x5 
+ .text.exfat_zero_cluster
+                0x00000000004025a0       0xe1 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_fat.c.o
+                0x00000000004025a0                exfat_zero_cluster
+ *fill*         0x0000000000402681        0xf 
+ .text.exfat_read_uctable
+                0x0000000000402690      0x2e5 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_fat.c.o
+                0x0000000000402690                exfat_read_uctable
+ *fill*         0x0000000000402975        0xb 
+ .text.exfat_sanity_check
+                0x0000000000402980       0x6b uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_fat.c.o
+                0x0000000000402980                exfat_sanity_check
+ *fill*         0x00000000004029eb        0x5 
+ .text.exfat_bitmap_is_free
+                0x00000000004029f0       0xf7 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_bitmap.c.o
+                0x00000000004029f0                exfat_bitmap_is_free
+ *fill*         0x0000000000402ae7        0x9 
+ .text.exfat_bitmap_set_cluster
+                0x0000000000402af0       0xf7 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_bitmap.c.o
+                0x0000000000402af0                exfat_bitmap_set_cluster
+ *fill*         0x0000000000402be7        0x9 
+ .text.exfat_bitmap_clear_cluster
+                0x0000000000402bf0       0xf7 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_bitmap.c.o
+                0x0000000000402bf0                exfat_bitmap_clear_cluster
+ *fill*         0x0000000000402ce7        0x9 
+ .text.exfat_bitmap_set_clusters
+                0x0000000000402cf0      0x175 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_bitmap.c.o
+                0x0000000000402cf0                exfat_bitmap_set_clusters
+ *fill*         0x0000000000402e65        0xb 
+ .text.exfat_bitmap_append_clusters
+                0x0000000000402e70      0x20c uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_bitmap.c.o
+                0x0000000000402e70                exfat_bitmap_append_clusters
+ *fill*         0x000000000040307c        0x4 
+ .text.exfat_bitmap_free_clusters
+                0x0000000000403080      0x174 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_bitmap.c.o
+                0x0000000000403080                exfat_bitmap_free_clusters
+ *fill*         0x00000000004031f4        0xc 
+ .text.exfat_bitmap_replicate_clusters
+                0x0000000000403200       0x99 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_bitmap.c.o
+                0x0000000000403200                exfat_bitmap_replicate_clusters
+ *fill*         0x0000000000403299        0x7 
+ .text.exfat_node_open
+                0x00000000004032a0        0x8 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x00000000004032a8        0x8 
+ .text.exfat_index_get
+                0x00000000004032b0       0x19 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x00000000004032c9        0x7 
+ .text.exfat_size_get
+                0x00000000004032d0       0x16 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x00000000004032e6        0xa 
+ .text.exfat_lnkcnt_get
+                0x00000000004032f0       0x15 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x0000000000403305        0xb 
+ .text.exfat_is_directory
+                0x0000000000403310       0x19 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x0000000000403329        0x7 
+ .text.exfat_is_file
+                0x0000000000403330       0x19 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x0000000000403349        0x7 
+ .text.exfat_service_get
+                0x0000000000403350        0x8 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x0000000000403358        0x8 
+ .text.exfat_close
+                0x0000000000403360        0x8 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x0000000000403368        0x8 
+ .text.exfat_total_block_count
+                0x0000000000403370       0x1f uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x000000000040338f        0x1 
+ .text.exfat_size_block
+                0x0000000000403390       0x2c uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x00000000004033bc        0x4 
+ .text.exfat_node_sync
+                0x00000000004033c0       0xe9 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x00000000004034a9        0x7 
+ .text.exfat_node_get_new
+                0x00000000004034b0      0x1ff uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x00000000004036af        0x1 
+ .text.exfat_has_children
+                0x00000000004036b0      0x103 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x00000000004037b3        0xd 
+ .text.exfat_unlink
+                0x00000000004037c0      0x178 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x0000000000403938        0x8 
+ .text.exfat_link
+                0x0000000000403940      0x19e uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x0000000000403ade        0x2 
+ .text.exfat_destroy_node
+                0x0000000000403ae0      0x123 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x0000000000403c03        0xd 
+ .text.exfat_fs_open
+                0x0000000000403c10      0x4c6 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x00000000004040d6        0xa 
+ .text.exfat_mounted
+                0x00000000004040e0       0x70 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ .text.exfat_node_put
+                0x0000000000404150       0xb3 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+                0x0000000000404150                exfat_node_put
+ *fill*         0x0000000000404203        0xd 
+ .text.exfat_fs_close
+                0x0000000000404210      0x267 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x0000000000404477        0x9 
+ .text.exfat_fsprobe
+                0x0000000000404480       0x3d uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x00000000004044bd        0x3 
+ .text.exfat_node_get
+                0x00000000004044c0      0x499 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x0000000000404959        0x7 
+ .text.exfat_node_get_core
+                0x0000000000404960      0x383 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x0000000000404ce3        0xd 
+ .text.exfat_match
+                0x0000000000404cf0      0x236 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x0000000000404f26        0xa 
+ .text.exfat_unmounted
+                0x0000000000404f30       0x6c uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x0000000000404f9c        0x4 
+ .text.exfat_sync
+                0x0000000000404fa0      0x128 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x00000000004050c8        0x8 
+ .text.exfat_destroy
+                0x00000000004050d0       0x86 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x0000000000405156        0xa 
+ .text.exfat_free_block_count
+                0x0000000000405160      0x251 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x00000000004053b1        0xf 
+ .text.exfat_truncate
+                0x00000000004053c0      0x293 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x0000000000405653        0xd 
+ .text.exfat_read
+                0x0000000000405660      0x6b9 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x0000000000405d19        0x7 
+ .text.exfat_root_get
+                0x0000000000405d20      0x499 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x00000000004061b9        0x7 
+ .text.exfat_node_expand
+                0x00000000004061c0       0xca uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+                0x00000000004061c0                exfat_node_expand
+ *fill*         0x000000000040628a        0x6 
+ .text.exfat_create_node
+                0x0000000000406290      0x2f1 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x0000000000406581        0xf 
+ .text.exfat_write
+                0x0000000000406590      0x43b uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x00000000004069cb        0x5 
+ .text.exfat_bitmap_get
+                0x00000000004069d0      0x4a9 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+                0x00000000004069d0                exfat_bitmap_get
+ *fill*         0x0000000000406e79        0x7 
+ .text.exfat_uctable_get
+                0x0000000000406e80      0x4a9 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+                0x0000000000406e80                exfat_uctable_get
+ *fill*         0x0000000000407329        0x7 
+ .text.pos_key_hash
+                0x0000000000407330       0x31 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+ *fill*         0x0000000000407361        0xf 
+ .text.pos_hash
+                0x0000000000407370       0x32 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+ *fill*         0x00000000004073a2        0xe 
+ .text.pos_key_equal
+                0x00000000004073b0       0x25 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+ *fill*         0x00000000004073d5        0xb 
+ .text.idx_key_hash
+                0x00000000004073e0       0x21 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+ *fill*         0x0000000000407401        0xf 
+ .text.idx_hash
+                0x0000000000407410       0x22 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+ *fill*         0x0000000000407432        0xe 
+ .text.idx_key_equal
+                0x0000000000407440       0x1c uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+ *fill*         0x000000000040745c        0x4 
+ .text.idx_remove_callback
+                0x0000000000407460        0xe uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+ *fill*         0x000000000040746e        0x2 
+ .text.rm_idx_service_id
+                0x0000000000407470       0x28 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+ *fill*         0x0000000000407498        0x8 
+ .text.rm_pos_service_id
+                0x00000000004074a0       0x28 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+ *fill*         0x00000000004074c8        0x8 
+ .text.exfat_idx_create
+                0x00000000004074d0      0x161 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+ *fill*         0x0000000000407631        0xf 
+ .text.exfat_idx_get_new
+                0x0000000000407640       0x7f uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+                0x0000000000407640                exfat_idx_get_new
+ *fill*         0x00000000004076bf        0x1 
+ .text.exfat_idx_get_by_pos
+                0x00000000004076c0       0xa1 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+                0x00000000004076c0                exfat_idx_get_by_pos
+ *fill*         0x0000000000407761        0xf 
+ .text.exfat_idx_hashin
+                0x0000000000407770       0x32 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+                0x0000000000407770                exfat_idx_hashin
+ *fill*         0x00000000004077a2        0xe 
+ .text.exfat_idx_hashout
+                0x00000000004077b0       0x32 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+                0x00000000004077b0                exfat_idx_hashout
+ *fill*         0x00000000004077e2        0xe 
+ .text.exfat_idx_get_by_index
+                0x00000000004077f0       0x50 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+                0x00000000004077f0                exfat_idx_get_by_index
+ .text.exfat_idx_destroy
+                0x0000000000407840      0x290 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+                0x0000000000407840                exfat_idx_destroy
+ .text.exfat_idx_init
+                0x0000000000407ad0       0x51 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+                0x0000000000407ad0                exfat_idx_init
+ *fill*         0x0000000000407b21        0xf 
+ .text.exfat_idx_fini
+                0x0000000000407b30       0x49 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+                0x0000000000407b30                exfat_idx_fini
+ *fill*         0x0000000000407b79        0x7 
+ .text.exfat_idx_init_by_service_id
+                0x0000000000407b80       0xd0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+                0x0000000000407b80                exfat_idx_init_by_service_id
+ .text.exfat_idx_fini_by_service_id
+                0x0000000000407c50      0x11e uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+                0x0000000000407c50                exfat_idx_fini_by_service_id
+ *fill*         0x0000000000407d6e        0x2 
+ .text.exfat_classify_dentry
+                0x0000000000407d70       0x97 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_dentry.c.o
+                0x0000000000407d70                exfat_classify_dentry
+ *fill*         0x0000000000407e07        0x9 
+ .text.exfat_name_hash
+                0x0000000000407e10       0x74 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_dentry.c.o
+                0x0000000000407e10                exfat_name_hash
+ *fill*         0x0000000000407e84        0xc 
+ .text.exfat_dentry_get_name
+                0x0000000000407e90      0x1d3 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_dentry.c.o
+                0x0000000000407e90                exfat_dentry_get_name
+ *fill*         0x0000000000408063        0xd 
+ .text.exfat_dentry_get_vollabel
+                0x0000000000408070       0xdb uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_dentry.c.o
+                0x0000000000408070                exfat_dentry_get_vollabel
+ *fill*         0x000000000040814b        0x5 
+ .text.exfat_valid_name
+                0x0000000000408150       0x90 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_dentry.c.o
+                0x0000000000408150                exfat_valid_name
+ .text.exfat_directory_block_load
+                0x00000000004081e0       0xe5 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_directory.c.o
+ *fill*         0x00000000004082c5        0xb 
+ .text.exfat_directory_open
+                0x00000000004082d0       0xa0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_directory.c.o
+                0x00000000004082d0                exfat_directory_open
+ .text.exfat_directory_open_parent
+                0x0000000000408370       0x53 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_directory.c.o
+                0x0000000000408370                exfat_directory_open_parent
+ *fill*         0x00000000004083c3        0xd 
+ .text.exfat_directory_close
+                0x00000000004083d0       0x2a uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_directory.c.o
+                0x00000000004083d0                exfat_directory_close
+ *fill*         0x00000000004083fa        0x6 
+ .text.exfat_directory_next
+                0x0000000000408400      0x11f uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_directory.c.o
+                0x0000000000408400                exfat_directory_next
+ *fill*         0x000000000040851f        0x1 
+ .text.exfat_directory_seek
+                0x0000000000408520      0x11b uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_directory.c.o
+                0x0000000000408520                exfat_directory_seek
+ *fill*         0x000000000040863b        0x5 
+ .text.exfat_directory_get
+                0x0000000000408640      0x13a uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_directory.c.o
+                0x0000000000408640                exfat_directory_get
+ *fill*         0x000000000040877a        0x6 
+ .text.exfat_directory_find
+                0x0000000000408780      0x16f uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_directory.c.o
+                0x0000000000408780                exfat_directory_find
+ *fill*         0x00000000004088ef        0x1 
+ .text.exfat_directory_read_file
+                0x00000000004088f0      0x37e uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_directory.c.o
+                0x00000000004088f0                exfat_directory_read_file
+ *fill*         0x0000000000408c6e        0x2 
+ .text.exfat_directory_read_vollabel
+                0x0000000000408c70      0x2fa uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_directory.c.o
+                0x0000000000408c70                exfat_directory_read_vollabel
+ *fill*         0x0000000000408f6a        0x6 
+ .text.exfat_directory_sync_file
+                0x0000000000408f70      0x392 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_directory.c.o
+                0x0000000000408f70                exfat_directory_sync_file
+ *fill*         0x0000000000409302        0xe 
+ .text.exfat_directory_erase_file
+                0x0000000000409310      0x19a uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_directory.c.o
+                0x0000000000409310                exfat_directory_erase_file
+ *fill*         0x00000000004094aa        0x6 
+ .text.exfat_directory_lookup_free
+                0x00000000004094b0      0x3d1 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_directory.c.o
+                0x00000000004094b0                exfat_directory_lookup_free
+ *fill*         0x0000000000409881        0xf 
+ .text.exfat_directory_write_file
+                0x0000000000409890      0x5ba uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_directory.c.o
+                0x0000000000409890                exfat_directory_write_file
+ .text          0x0000000000409e4a        0xc uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                0x0000000000409e4a                _start
+ *fill*         0x0000000000409e56        0xa 
+ .text.__c_start
+                0x0000000000409e60       0x8c uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                0x0000000000409e60                __c_start
+ *fill*         0x0000000000409eec        0x4 
+ .text.cache_key_hash
+                0x0000000000409ef0        0x9 uspace/lib/libblock.a.p/block_block.c.o
+ *fill*         0x0000000000409ef9        0x7 
+ .text.cache_hash
+                0x0000000000409f00        0xa uspace/lib/libblock.a.p/block_block.c.o
+ *fill*         0x0000000000409f0a        0x6 
+ .text.cache_key_equal
+                0x0000000000409f10       0x10 uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_init
+                0x0000000000409f20      0x180 uspace/lib/libblock.a.p/block_block.c.o
+                0x0000000000409f20                block_init
+ .text.block_bb_read
+                0x000000000040a0a0      0x120 uspace/lib/libblock.a.p/block_block.c.o
+                0x000000000040a0a0                block_bb_read
+ .text.block_bb_get
+                0x000000000040a1c0       0x7e uspace/lib/libblock.a.p/block_block.c.o
+                0x000000000040a1c0                block_bb_get
+ *fill*         0x000000000040a23e        0x2 
+ .text.block_cache_init
+                0x000000000040a240      0x16c uspace/lib/libblock.a.p/block_block.c.o
+                0x000000000040a240                block_cache_init
+ *fill*         0x000000000040a3ac        0x4 
+ .text.block_cache_fini
+                0x000000000040a3b0      0x18d uspace/lib/libblock.a.p/block_block.c.o
+                0x000000000040a3b0                block_cache_fini
+ *fill*         0x000000000040a53d        0x3 
+ .text.block_fini
+                0x000000000040a540       0xee uspace/lib/libblock.a.p/block_block.c.o
+                0x000000000040a540                block_fini
+ *fill*         0x000000000040a62e        0x2 
+ .text.block_put
+                0x000000000040a630      0x2f0 uspace/lib/libblock.a.p/block_block.c.o
+                0x000000000040a630                block_put
+ .text.block_get
+                0x000000000040a920      0x528 uspace/lib/libblock.a.p/block_block.c.o
+                0x000000000040a920                block_get
+ *fill*         0x000000000040ae48        0x8 
+ .text.bd_cb_conn
+                0x000000000040ae50       0x3b uspace/lib/libdevice.a.p/device_src_bd.c.o
+ *fill*         0x000000000040ae8b        0x5 
+ .text.bd_open  0x000000000040ae90       0xa8 uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x000000000040ae90                bd_open
+ *fill*         0x000000000040af38        0x8 
+ .text.bd_close
+                0x000000000040af40        0xa uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x000000000040af40                bd_close
+ *fill*         0x000000000040af4a        0x6 
+ .text.bd_read_blocks
+                0x000000000040af50       0x9a uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x000000000040af50                bd_read_blocks
+ *fill*         0x000000000040afea        0x6 
+ .text.bd_write_blocks
+                0x000000000040aff0       0x9a uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x000000000040aff0                bd_write_blocks
+ *fill*         0x000000000040b08a        0x6 
+ .text.bd_sync_cache
+                0x000000000040b090       0x4e uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x000000000040b090                bd_sync_cache
+ *fill*         0x000000000040b0de        0x2 
+ .text.bd_get_block_size
+                0x000000000040b0e0       0x4f uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x000000000040b0e0                bd_get_block_size
+ *fill*         0x000000000040b12f        0x1 
+ .text.bd_get_num_blocks
+                0x000000000040b130       0x5d uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x000000000040b130                bd_get_num_blocks
+ *fill*         0x000000000040b18d        0x3 
+ .text.vfs_connection
+                0x000000000040b190      0xf72 uspace/lib/libfs.a.p/fs_libfs.c.o
+ *fill*         0x000000000040c102        0xe 
+ .text.fs_register
+                0x000000000040c110      0x167 uspace/lib/libfs.a.p/fs_libfs.c.o
+                0x000000000040c110                fs_register
+ *fill*         0x000000000040c277        0x9 
+ .text.fs_node_initialize
+                0x000000000040c280        0xd uspace/lib/libfs.a.p/fs_libfs.c.o
+                0x000000000040c280                fs_node_initialize
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x000000000040c2a0      0x7c0
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.main.str1.8
+                0x000000000040c2a0      0x39e uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+                                         0x7b (size before relaxing)
+ .rodata.main.str1.1
+                0x000000000040c63e      0x1d7 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+                                         0x46 (size before relaxing)
+ .rodata.exfat_cluster_walk.str1.8
+                0x000000000040c815       0x2e uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_fat.c.o
+ .rodata.exfat_cluster_walk.str1.1
+                0x000000000040c815       0x30 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_fat.c.o
+ .rodata.exfat_block_get.str1.1
+                0x000000000040c815       0x19 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_fat.c.o
+ .rodata.exfat_free_clusters.str1.8
+                0x000000000040c815       0x36 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_fat.c.o
+ .rodata.exfat_sanity_check.str1.1
+                0x000000000040c815        0x9 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_fat.c.o
+ .rodata.exfat_unlink.str1.8
+                0x000000000040c815       0x2e uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ .rodata.exfat_unlink.str1.1
+                0x000000000040c815       0x14 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ .rodata.exfat_link.str1.1
+                0x000000000040c815       0x14 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ .rodata.exfat_destroy_node.str1.1
+                0x000000000040c815       0x2d uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ .rodata.exfat_fs_open.str1.8
+                0x000000000040c815       0x7a uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ .rodata.exfat_mounted.str1.1
+                0x000000000040c815        0x8 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ .rodata.exfat_node_get.str1.1
+                0x000000000040c815        0xa uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ .rodata.exfat_destroy.str1.1
+                0x000000000040c815       0x13 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ .rodata.exfat_truncate.str1.1
+                0x000000000040c815       0x17 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ .rodata.exfat_read.str1.1
+                0x000000000040c815       0x1b uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ .rodata.exfat_read.str1.8
+                0x000000000040c815       0x26 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x000000000040c815        0x3 
+ .rodata.cst8   0x000000000040c818       0x10 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ .rodata.exfat_idx_destroy.str1.8
+                0x000000000040c828       0x2e uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+ .rodata.exfat_idx_destroy.str1.1
+                0x000000000040c828       0x12 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+ .rodata.exfat_idx_fini.str1.8
+                0x000000000040c828       0x39 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+ *fill*         0x000000000040c828       0x18 
+ .rodata.uih_ops
+                0x000000000040c840       0x28 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+ *fill*         0x000000000040c868       0x18 
+ .rodata.uph_ops
+                0x000000000040c880       0x28 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+ .rodata.exfat_classify_dentry
+                0x000000000040c8a8      0x100 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_dentry.c.o
+ .rodata.cst8   0x000000000040c9a8        0x8 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .rodata.read_blocks.part.0.str1.8
+                0x000000000040c9b0       0x27 uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.read_blocks.part.0.str1.1
+                0x000000000040c9b0        0x7 uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.block_bb_read.str1.8
+                0x000000000040c9b0       0x4a uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.block_cache_fini.str1.8
+                0x000000000040c9b0       0x48 uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.block_put.str1.1
+                0x000000000040c9b0       0x21 uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.block_put.str1.8
+                0x000000000040c9b0       0x53 uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.block_get.str1.1
+                0x000000000040c9b0       0x1f uspace/lib/libblock.a.p/block_block.c.o
+ *fill*         0x000000000040c9b0       0x10 
+ .rodata.cache_ops
+                0x000000000040c9c0       0x28 uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.vfs_connection.str1.8
+                0x000000000040c9e8       0x4e uspace/lib/libfs.a.p/fs_libfs.c.o
+ .rodata.vfs_connection.str1.1
+                0x000000000040c9e8       0x48 uspace/lib/libfs.a.p/fs_libfs.c.o
+ .rodata.vfs_connection
+                0x000000000040c9e8       0x78 uspace/lib/libfs.a.p/fs_libfs.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x000000000040ca60      0x424
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x000000000040ca60      0x424 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+                0x000000000040ca60                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x000000000040ce88     0x1590
+ *(.eh_frame)
+ .eh_frame      0x000000000040ce88       0x40 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+ .eh_frame      0x000000000040cec8       0x28 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x000000000040cef0        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+ .eh_frame      0x000000000040cef0      0x230 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_fat.c.o
+                                        0x278 (size before relaxing)
+ .eh_frame      0x000000000040d120      0x158 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_bitmap.c.o
+                                        0x1d8 (size before relaxing)
+ .eh_frame      0x000000000040d278      0x750 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+                                        0x768 (size before relaxing)
+ .eh_frame      0x000000000040d9c8      0x2e0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+                                        0x2f8 (size before relaxing)
+ .eh_frame      0x000000000040dca8       0xe8 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_dentry.c.o
+                                        0x128 (size before relaxing)
+ .eh_frame      0x000000000040dd90      0x290 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_directory.c.o
+                                        0x348 (size before relaxing)
+ .eh_frame      0x000000000040e020       0x20 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x000000000040e040      0x1f8 uspace/lib/libblock.a.p/block_block.c.o
+                                        0x3c0 (size before relaxing)
+ .eh_frame      0x000000000040e238      0x150 uspace/lib/libdevice.a.p/device_src_bd.c.o
+                                        0x198 (size before relaxing)
+ .eh_frame      0x000000000040e388       0x90 uspace/lib/libfs.a.p/fs_libfs.c.o
+                                        0x138 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x000000000040e418        0x0
+ *(.sframe)
+ .sframe        0x000000000040e418        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x000000000040f418                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0x000000000040f418        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x000000000040f418        0x0
+                0x000000000040f418                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x000000000040f418                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x000000000040f418        0x0
+                0x000000000040f418                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x000000000040f418                PROVIDE (__init_array_end = .)
+
+.fini_array     0x000000000040f418        0x0
+                0x000000000040f418                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x000000000040f418                PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x000000000040f418        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x000000000040f418        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+
+.dynamic        0x000000000040f418      0x150
+ *(.dynamic)
+ .dynamic       0x000000000040f418      0x150 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+                0x000000000040f418                _DYNAMIC
+
+.got            0x000000000040f568        0x0
+ *(.got)
+ .got           0x000000000040f568        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+ *(.igot)
+                0x000000000040f568                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x000000000040f568      0x210
+ *(.got.plt)
+ .got.plt       0x000000000040f568      0x210 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+                0x000000000040f568                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x000000000040f778        0x0 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+
+.data           0x000000000040f780      0x220
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.exfat_vfs_info
+                0x000000000040f780       0x20 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+                0x000000000040f780                exfat_vfs_info
+ .data.exfat_alloc_lock
+                0x000000000040f7a0       0x20 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_fat.c.o
+ .data.exfat_ops
+                0x000000000040f7c0       0x48 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+                0x000000000040f7c0                exfat_ops
+ *fill*         0x000000000040f808       0x18 
+ .data.exfat_libfs_ops
+                0x000000000040f820       0x98 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+                0x000000000040f820                exfat_libfs_ops
+ *fill*         0x000000000040f8b8        0x8 
+ .data.ffn_list
+                0x000000000040f8c0       0x10 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ *fill*         0x000000000040f8d0       0x10 
+ .data.ffn_mutex
+                0x000000000040f8e0       0x20 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ .data.used_lock
+                0x000000000040f900       0x20 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+ .data.unused_list
+                0x000000000040f920       0x10 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+ *fill*         0x000000000040f930       0x10 
+ .data.unused_lock
+                0x000000000040f940       0x20 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+ .data.dcl      0x000000000040f960       0x10 uspace/lib/libblock.a.p/block_block.c.o
+ *fill*         0x000000000040f970       0x10 
+ .data.dcl_lock
+                0x000000000040f980       0x20 uspace/lib/libblock.a.p/block_block.c.o
+
+.data1
+ *(.data1)
+                0x000000000040f9a0                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x000000000040f9a0                . = .
+                0x000000000040f9a0                __bss_start = .
+
+.bss            0x000000000040f9a0      0x120
+ *(.dynbss)
+ .dynbss        0x000000000040f9a0       0x48 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+                0x000000000040f9a0                __progsymbols
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ *fill*         0x000000000040f9e8       0x18 
+ .bss.ui_hash   0x000000000040fa00       0x38 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+ *fill*         0x000000000040fa38        0x8 
+ .bss.up_hash   0x000000000040fa40       0x38 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+ *fill*         0x000000000040fa78        0x8 
+ .bss.fs_name   0x000000000040fa80       0x15 uspace/lib/libfs.a.p/fs_libfs.c.o
+ *fill*         0x000000000040fa95        0x3 
+ .bss.libfs_ops
+                0x000000000040fa98        0x8 uspace/lib/libfs.a.p/fs_libfs.c.o
+ .bss.vfs_out_ops
+                0x000000000040faa0        0x8 uspace/lib/libfs.a.p/fs_libfs.c.o
+ *fill*         0x000000000040faa8        0x8 
+ .bss.reg       0x000000000040fab0       0x10 uspace/lib/libfs.a.p/fs_libfs.c.o
+ *(COMMON)
+                0x000000000040fac0                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x000000000040fac0                . = ALIGN (0x8)
+                0x000000000040fac0                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x0000000000411ac0        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x0000000000411ac0                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000411ac0                . = ALIGN (0x8)
+                0x000000000040fac0                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x0000000000411ac0                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_fat.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_bitmap.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_ops.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_idx.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_dentry.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_fs_exfat.p/srv_fs_exfat_exfat_directory.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libblock.a.p/block_block.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdevice.a.p/device_src_bd.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libfs.a.p/fs_libfs.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/srv_fs_exfat elf64-x86-64)

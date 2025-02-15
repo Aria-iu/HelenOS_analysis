@@ -1,0 +1,1234 @@
+Archive member included to satisfy reference by file (symbol)
+
+uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                              (--whole-archive)
+uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                              (--whole-archive)
+uspace/lib/libddev.a.p/ddev_src_ddev.c.o
+                              uspace/lib/test-libddev.p/ddev_test_ddev.c.o (ddev_open)
+uspace/lib/libddev.a.p/ddev_src_ddev_srv.c.o
+                              uspace/lib/test-libddev.p/ddev_test_ddev.c.o (ddev_conn)
+uspace/lib/libddev.a.p/ddev_src_info.c.o
+                              uspace/lib/test-libddev.p/ddev_test_ddev.c.o (ddev_info_init)
+uspace/lib/libgfx.a.p/gfx_src_color.c.o
+                              uspace/lib/test-libddev.p/ddev_test_ddev.c.o (gfx_color_new_rgb_i16)
+uspace/lib/libgfx.a.p/gfx_src_context.c.o
+                              uspace/lib/test-libddev.p/ddev_test_ddev.c.o (gfx_context_new)
+uspace/lib/libgfx.a.p/gfx_src_render.c.o
+                              uspace/lib/test-libddev.p/ddev_test_ddev.c.o (gfx_set_color)
+uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+                              uspace/lib/libddev.a.p/ddev_src_ddev.c.o (ipc_gc_create)
+uspace/lib/libipcgfx.a.p/ipcgfx_src_server.c.o
+                              uspace/lib/test-libddev.p/ddev_test_ddev.c.o (gc_conn)
+uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+                              uspace/lib/test-libddev.p/ddev_test_ddev.c.o (pcut_str_error)
+uspace/lib/libpcut.a.p/pcut_src_assert.c.o
+                              uspace/lib/test-libddev.p/ddev_test_ddev.c.o (pcut_failed_assertion_fmt)
+uspace/lib/libpcut.a.p/pcut_src_helper.c.o
+                              uspace/lib/libpcut.a.p/pcut_src_assert.c.o (pcut_snprintf)
+uspace/lib/libpcut.a.p/pcut_src_main.c.o
+                              uspace/lib/test-libddev.p/ddev_test_main.c.o (pcut_main)
+uspace/lib/libpcut.a.p/pcut_src_print.c.o
+                              uspace/lib/libpcut.a.p/pcut_src_main.c.o (pcut_print_tests)
+uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                              uspace/lib/libpcut.a.p/pcut_src_main.c.o (pcut_report_register_handler)
+uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+                              uspace/lib/libpcut.a.p/pcut_src_main.c.o (pcut_report_tap)
+uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+                              uspace/lib/libpcut.a.p/pcut_src_main.c.o (pcut_report_xml)
+uspace/lib/libpcut.a.p/pcut_src_run.c.o
+                              uspace/lib/libpcut.a.p/pcut_src_assert.c.o (pcut_failed_assertion)
+uspace/lib/libpcut.a.p/pcut_src_list.c.o
+                              uspace/lib/libpcut.a.p/pcut_src_main.c.o (pcut_get_real_next)
+uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+                              uspace/lib/libipcgfx.a.p/ipcgfx_src_server.c.o (gfx_bitmap_create)
+uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+                              uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o (gfx_coord2_subtract)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.0                     uspace/lib/libddev.a.p/ddev_src_ddev.c.o (async_connect_me_to)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/test-libddev.p/ddev_test_main.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/test-libddev.p/ddev_test_main.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/test-libddev.p/ddev_test_main.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .text          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libddev.a.p/ddev_src_ddev.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libddev.a.p/ddev_src_ddev.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libddev.a.p/ddev_src_ddev.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libddev.a.p/ddev_src_ddev_srv.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libddev.a.p/ddev_src_ddev_srv.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libddev.a.p/ddev_src_ddev_srv.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libddev.a.p/ddev_src_info.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libddev.a.p/ddev_src_info.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libddev.a.p/ddev_src_info.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_color.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_color.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_color.c.o
+ .text.gfx_color_new_ega
+                0x0000000000000000       0x36 uspace/lib/libgfx.a.p/gfx_src_color.c.o
+ .text.gfx_color_get_ega
+                0x0000000000000000        0xc uspace/lib/libgfx.a.p/gfx_src_color.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_context.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_context.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_context.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_render.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_render.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_render.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ .text.ipc_gc_delete
+                0x0000000000000000       0x27 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libipcgfx.a.p/ipcgfx_src_server.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libipcgfx.a.p/ipcgfx_src_server.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libipcgfx.a.p/ipcgfx_src_server.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_assert.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_assert.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_assert.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_helper.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_helper.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_helper.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_main.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_main.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_main.c.o
+ .text.pcut_is_arg_with_number
+                0x0000000000000000       0x4c uspace/lib/libpcut.a.p/pcut_src_main.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_print.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_print.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_print.c.o
+ .rodata.pcut_print_items.str1.1
+                0x0000000000000000       0x37 uspace/lib/libpcut.a.p/pcut_src_print.c.o
+ .text.pcut_print_items
+                0x0000000000000000       0x9e uspace/lib/libpcut.a.p/pcut_src_print.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_list.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_list.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_list.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+ .text.gfx_bitmap_params_init
+                0x0000000000000000       0x15 uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_coord_div_rneg
+                0x0000000000000000       0x26 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_coord2_add
+                0x0000000000000000       0x16 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_coord2_clip
+                0x0000000000000000       0x38 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_coord2_project
+                0x0000000000000000       0xac uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_span_points_sort
+                0x0000000000000000       0x16 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_rect_rtranslate
+                0x0000000000000000       0x28 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_rect_envelope
+                0x0000000000000000       0xe9 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_rect_clip
+                0x0000000000000000      0x118 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_rect_ctr_on_rect
+                0x0000000000000000       0xd0 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_rect_points_sort
+                0x0000000000000000       0x34 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_rect_is_empty
+                0x0000000000000000       0x1b uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_rect_is_incident
+                0x0000000000000000       0xe5 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_rect_is_inside
+                0x0000000000000000       0x7c uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_rect_dims
+                0x0000000000000000       0x37 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_pix_inside_rect
+                0x0000000000000000       0x51 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+LOAD uspace/lib/test-libddev.p/ddev_test_main.c.o
+START GROUP
+LOAD uspace/lib/c/libstartfiles.a
+LOAD uspace/lib/libddev.a
+LOAD uspace/lib/libgfx.a
+LOAD uspace/lib/libc.so.0.0
+LOAD uspace/lib/libipcgfx.a
+LOAD uspace/lib/libpcut.a
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000400000                PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x0000000000400120                . = (SEGMENT_START ("text-segment", 0x400000) + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000400120      0x258
+ *(.hash)
+ .hash          0x0000000000400120      0x258 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x0000000000400378      0x798
+ *(.dynsym)
+ .dynsym        0x0000000000400378      0x798 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+
+.dynstr         0x0000000000400b10      0x4bc
+ *(.dynstr)
+ .dynstr        0x0000000000400b10      0x4bc uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+
+.gnu.version    0x0000000000400fcc        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000400fcc        0x0 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+
+.gnu.version_d  0x0000000000400fd0        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000400fd0        0x0 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+
+.gnu.version_r  0x0000000000400fd0        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000400fd0        0x0 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+
+.rela.dyn       0x0000000000400fd0       0x48
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text.__c_start
+                0x0000000000400fd0        0x0 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ .rela.text.pcut_run_test_forking
+                0x0000000000400fd0        0x0 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ .rela.text.pcut_main
+                0x0000000000400fd0        0x0 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ .rela.rodata.cst8
+                0x0000000000400fd0        0x0 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x0000000000400fd0        0x0 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000400fd0        0x0 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x0000000000400fd0       0x48 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+
+.rela.plt       0x0000000000401018      0x738
+ *(.rela.plt)
+ .rela.plt      0x0000000000401018      0x738 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+ .rela.iplt     0x0000000000401750        0x0 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x0000000000401750      0x4e0
+ *(.plt)
+ .plt           0x0000000000401750      0x4e0 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+                0x0000000000401760                longjmp
+                0x0000000000401770                async_connect_me_to
+                0x0000000000401780                loc_service_connect
+                0x0000000000401790                printf
+                0x00000000004017a0                async_hangup
+                0x00000000004017b0                async_req_0_2
+                0x00000000004017c0                async_wait_for
+                0x00000000004017d0                snprintf
+                0x00000000004017e0                async_data_write_start
+                0x00000000004017f0                task_wait
+                0x0000000000401800                loc_service_register
+                0x0000000000401810                async_get_call
+                0x0000000000401820                async_data_read_finalize
+                0x0000000000401830                memcpy
+                0x0000000000401840                setvbuf
+                0x0000000000401850                loc_server_unregister
+                0x0000000000401860                puts
+                0x0000000000401870                async_req_1_0
+                0x0000000000401880                vsnprintf
+                0x0000000000401890                async_share_out_receive
+                0x00000000004018a0                fibril_condvar_signal
+                0x00000000004018b0                vfs_put
+                0x00000000004018c0                loc_service_get_id
+                0x00000000004018d0                as_area_destroy
+                0x00000000004018e0                async_answer_0
+                0x00000000004018f0                async_share_in_start_0_0
+                0x0000000000401900                vfs_unlink_path
+                0x0000000000401910                task_spawnvf
+                0x0000000000401920                strtol
+                0x0000000000401930                async_exchange_end
+                0x0000000000401940                str_chr
+                0x0000000000401950                calloc
+                0x0000000000401960                fibril_condvar_wait_timeout
+                0x0000000000401970                async_share_out_finalize
+                0x0000000000401980                async_send_3
+                0x0000000000401990                __context_save
+                0x00000000004019a0                async_answer_2
+                0x00000000004019b0                fibril_mutex_unlock
+                0x00000000004019c0                loc_service_unregister
+                0x00000000004019d0                fibril_create
+                0x00000000004019e0                task_kill
+                0x00000000004019f0                str_cmp
+                0x0000000000401a00                task_get_id
+                0x0000000000401a10                strdup
+                0x0000000000401a20                __helenos_assert_abort
+                0x0000000000401a30                async_data_read_receive
+                0x0000000000401a40                async_accept_0
+                0x0000000000401a50                vfs_read
+                0x0000000000401a60                async_data_read_start
+                0x0000000000401a70                async_share_in_receive
+                0x0000000000401a80                str_cpy
+                0x0000000000401a90                asprintf
+                0x0000000000401aa0                loc_server_register
+                0x0000000000401ab0                str_size
+                0x0000000000401ac0                str_lcmp
+                0x0000000000401ad0                async_answer_1
+                0x0000000000401ae0                async_exchange_begin
+                0x0000000000401af0                async_send_0
+                0x0000000000401b00                str_error
+                0x0000000000401b10                async_share_in_finalize
+                0x0000000000401b20                async_share_out_start
+                0x0000000000401b30                async_data_write_finalize
+                0x0000000000401b40                as_area_get_info
+                0x0000000000401b50                __libc_main
+                0x0000000000401b60                exit
+                0x0000000000401b70                async_forget
+                0x0000000000401b80                async_req_0_0
+                0x0000000000401b90                fibril_add_ready
+                0x0000000000401ba0                fileno
+                0x0000000000401bb0                as_area_create
+                0x0000000000401bc0                async_req_3_0
+                0x0000000000401bd0                vfs_lookup_open
+                0x0000000000401be0                async_set_fallback_port_handler
+                0x0000000000401bf0                async_req_4_0
+                0x0000000000401c00                async_data_write_receive
+                0x0000000000401c10                free
+                0x0000000000401c20                fibril_mutex_lock
+ *(.iplt)
+ .iplt          0x0000000000401c30        0x0 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+
+.plt.got        0x0000000000401c30        0x0
+ *(.plt.got)
+ .plt.got       0x0000000000401c30        0x0 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x0000000000401c30     0x4468
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ .text.startup.main
+                0x0000000000401c30       0x14 uspace/lib/test-libddev.p/ddev_test_main.c.o
+                0x0000000000401c30                main
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ *fill*         0x0000000000401c44        0xc 
+ .text.test_get_gc
+                0x0000000000401c50       0x16 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ *fill*         0x0000000000401c66        0xa 
+ .text.test_get_info
+                0x0000000000401c70       0x14 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ *fill*         0x0000000000401c84        0xc 
+ .text.test_gc_set_color
+                0x0000000000401c90        0xc uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ *fill*         0x0000000000401c9c        0x4 
+ .text.test_dev_get_info_success
+                0x0000000000401ca0      0x42b uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ *fill*         0x00000000004020cb        0x5 
+ .text.test_dev_get_info_failure
+                0x00000000004020d0      0x32b uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ *fill*         0x00000000004023fb        0x5 
+ .text.test_open_close
+                0x0000000000402400      0x298 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ *fill*         0x0000000000402698        0x8 
+ .text.test_ddev_conn
+                0x00000000004026a0       0xb8 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ *fill*         0x0000000000402758        0x8 
+ .text.test_dev_get_gc_failure
+                0x0000000000402760      0x348 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ *fill*         0x0000000000402aa8        0x8 
+ .text.test_dev_get_gc_success
+                0x0000000000402ab0      0x4a8 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ .text          0x0000000000402f58        0xc uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                0x0000000000402f58                _start
+ *fill*         0x0000000000402f64        0xc 
+ .text.__c_start
+                0x0000000000402f70       0x8c uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                0x0000000000402f70                __c_start
+ *fill*         0x0000000000402ffc        0x4 
+ .text.ddev_open
+                0x0000000000403000       0x94 uspace/lib/libddev.a.p/ddev_src_ddev.c.o
+                0x0000000000403000                ddev_open
+ *fill*         0x0000000000403094        0xc 
+ .text.ddev_close
+                0x00000000004030a0       0x21 uspace/lib/libddev.a.p/ddev_src_ddev.c.o
+                0x00000000004030a0                ddev_close
+ *fill*         0x00000000004030c1        0xf 
+ .text.ddev_get_gc
+                0x00000000004030d0       0xbf uspace/lib/libddev.a.p/ddev_src_ddev.c.o
+                0x00000000004030d0                ddev_get_gc
+ *fill*         0x000000000040318f        0x1 
+ .text.ddev_get_info
+                0x0000000000403190       0x86 uspace/lib/libddev.a.p/ddev_src_ddev.c.o
+                0x0000000000403190                ddev_get_info
+ *fill*         0x0000000000403216        0xa 
+ .text.ddev_conn
+                0x0000000000403220      0x1ec uspace/lib/libddev.a.p/ddev_src_ddev_srv.c.o
+                0x0000000000403220                ddev_conn
+ *fill*         0x000000000040340c        0x4 
+ .text.ddev_srv_initialize
+                0x0000000000403410       0x15 uspace/lib/libddev.a.p/ddev_src_ddev_srv.c.o
+                0x0000000000403410                ddev_srv_initialize
+ *fill*         0x0000000000403425        0xb 
+ .text.ddev_info_init
+                0x0000000000403430        0xd uspace/lib/libddev.a.p/ddev_src_info.c.o
+                0x0000000000403430                ddev_info_init
+ *fill*         0x000000000040343d        0x3 
+ .text.gfx_color_new_rgb_i16
+                0x0000000000403440       0x52 uspace/lib/libgfx.a.p/gfx_src_color.c.o
+                0x0000000000403440                gfx_color_new_rgb_i16
+ *fill*         0x0000000000403492        0xe 
+ .text.gfx_color_delete
+                0x00000000004034a0        0xa uspace/lib/libgfx.a.p/gfx_src_color.c.o
+                0x00000000004034a0                gfx_color_delete
+ *fill*         0x00000000004034aa        0x6 
+ .text.gfx_color_get_rgb_i16
+                0x00000000004034b0       0x1a uspace/lib/libgfx.a.p/gfx_src_color.c.o
+                0x00000000004034b0                gfx_color_get_rgb_i16
+ *fill*         0x00000000004034ca        0x6 
+ .text.gfx_context_new
+                0x00000000004034d0       0x49 uspace/lib/libgfx.a.p/gfx_src_context.c.o
+                0x00000000004034d0                gfx_context_new
+ *fill*         0x0000000000403519        0x7 
+ .text.gfx_context_delete
+                0x0000000000403520       0x1b uspace/lib/libgfx.a.p/gfx_src_context.c.o
+                0x0000000000403520                gfx_context_delete
+ *fill*         0x000000000040353b        0x5 
+ .text.gfx_set_clip_rect
+                0x0000000000403540       0x14 uspace/lib/libgfx.a.p/gfx_src_render.c.o
+                0x0000000000403540                gfx_set_clip_rect
+ *fill*         0x0000000000403554        0xc 
+ .text.gfx_set_color
+                0x0000000000403560       0x15 uspace/lib/libgfx.a.p/gfx_src_render.c.o
+                0x0000000000403560                gfx_set_color
+ *fill*         0x0000000000403575        0xb 
+ .text.gfx_fill_rect
+                0x0000000000403580       0x15 uspace/lib/libgfx.a.p/gfx_src_render.c.o
+                0x0000000000403580                gfx_fill_rect
+ *fill*         0x0000000000403595        0xb 
+ .text.gfx_update
+                0x00000000004035a0       0x15 uspace/lib/libgfx.a.p/gfx_src_render.c.o
+                0x00000000004035a0                gfx_update
+ *fill*         0x00000000004035b5        0xb 
+ .text.ipc_gc_bitmap_get_alloc
+                0x00000000004035c0       0x18 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ *fill*         0x00000000004035d8        0x8 
+ .text.ipc_gc_bitmap_render
+                0x00000000004035e0      0x121 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ *fill*         0x0000000000403701        0xf 
+ .text.ipc_gc_bitmap_create
+                0x0000000000403710      0x3a9 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ *fill*         0x0000000000403ab9        0x7 
+ .text.ipc_gc_update
+                0x0000000000403ac0       0x33 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ *fill*         0x0000000000403af3        0xd 
+ .text.ipc_gc_fill_rect
+                0x0000000000403b00       0x43 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ *fill*         0x0000000000403b43        0xd 
+ .text.ipc_gc_set_clip_rect
+                0x0000000000403b50       0x6e uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ *fill*         0x0000000000403bbe        0x2 
+ .text.ipc_gc_set_color
+                0x0000000000403bc0       0x5f uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ *fill*         0x0000000000403c1f        0x1 
+ .text.ipc_gc_bitmap_destroy
+                0x0000000000403c20       0x6b uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ *fill*         0x0000000000403c8b        0x5 
+ .text.ipc_gc_create
+                0x0000000000403c90       0x97 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+                0x0000000000403c90                ipc_gc_create
+ *fill*         0x0000000000403d27        0x9 
+ .text.ipc_gc_get_ctx
+                0x0000000000403d30        0x9 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+                0x0000000000403d30                ipc_gc_get_ctx
+ *fill*         0x0000000000403d39        0x7 
+ .text.gc_conn  0x0000000000403d40      0x8a0 uspace/lib/libipcgfx.a.p/ipcgfx_src_server.c.o
+                0x0000000000403d40                gc_conn
+ .text.test_timeout_handler_fibril
+                0x00000000004045e0       0x6c uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ *fill*         0x000000000040464c        0x4 
+ .text.pcut_str_equals
+                0x0000000000404650       0x13 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+                0x0000000000404650                pcut_str_equals
+ *fill*         0x0000000000404663        0xd 
+ .text.pcut_str_start_equals
+                0x0000000000404670       0x16 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+                0x0000000000404670                pcut_str_start_equals
+ *fill*         0x0000000000404686        0xa 
+ .text.pcut_str_size
+                0x0000000000404690        0xb uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+                0x0000000000404690                pcut_str_size
+ *fill*         0x000000000040469b        0x5 
+ .text.pcut_str_to_int
+                0x00000000004046a0       0x12 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+                0x00000000004046a0                pcut_str_to_int
+ *fill*         0x00000000004046b2        0xe 
+ .text.pcut_str_find_char
+                0x00000000004046c0        0xe uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+                0x00000000004046c0                pcut_str_find_char
+ *fill*         0x00000000004046ce        0x2 
+ .text.pcut_str_error
+                0x00000000004046d0       0x2f uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+                0x00000000004046d0                pcut_str_error
+ *fill*         0x00000000004046ff        0x1 
+ .text.pcut_run_test_forking
+                0x0000000000404700      0x249 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+                0x0000000000404700                pcut_run_test_forking
+ *fill*         0x0000000000404949        0x7 
+ .text.pcut_hook_before_test
+                0x0000000000404950        0x6 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+                0x0000000000404950                pcut_hook_before_test
+ *fill*         0x0000000000404956        0xa 
+ .text.pcut_failed_assertion_fmt
+                0x0000000000404960      0x10a uspace/lib/libpcut.a.p/pcut_src_assert.c.o
+                0x0000000000404960                pcut_failed_assertion_fmt
+ *fill*         0x0000000000404a6a        0x6 
+ .text.pcut_snprintf
+                0x0000000000404a70       0x7f uspace/lib/libpcut.a.p/pcut_src_helper.c.o
+                0x0000000000404a70                pcut_snprintf
+ *fill*         0x0000000000404aef        0x1 
+ .text.run_suite
+                0x0000000000404af0       0xec uspace/lib/libpcut.a.p/pcut_src_main.c.o
+ *fill*         0x0000000000404bdc        0x4 
+ .text.pcut_main
+                0x0000000000404be0      0x447 uspace/lib/libpcut.a.p/pcut_src_main.c.o
+                0x0000000000404be0                pcut_main
+ *fill*         0x0000000000405027        0x9 
+ .text.pcut_print_tests
+                0x0000000000405030       0x99 uspace/lib/libpcut.a.p/pcut_src_print.c.o
+                0x0000000000405030                pcut_print_tests
+ *fill*         0x00000000004050c9        0x7 
+ .text.pcut_print_fail_message
+                0x00000000004050d0       0x41 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                0x00000000004050d0                pcut_print_fail_message
+ *fill*         0x0000000000405111        0xf 
+ .text.pcut_report_register_handler
+                0x0000000000405120        0xd uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                0x0000000000405120                pcut_report_register_handler
+ *fill*         0x000000000040512d        0x3 
+ .text.pcut_report_init
+                0x0000000000405130       0x22 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                0x0000000000405130                pcut_report_init
+ *fill*         0x0000000000405152        0xe 
+ .text.pcut_report_suite_start
+                0x0000000000405160       0x22 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                0x0000000000405160                pcut_report_suite_start
+ *fill*         0x0000000000405182        0xe 
+ .text.pcut_report_suite_done
+                0x0000000000405190       0x22 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                0x0000000000405190                pcut_report_suite_done
+ *fill*         0x00000000004051b2        0xe 
+ .text.pcut_report_test_start
+                0x00000000004051c0       0x22 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                0x00000000004051c0                pcut_report_test_start
+ *fill*         0x00000000004051e2        0xe 
+ .text.pcut_report_test_done
+                0x00000000004051f0       0x22 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                0x00000000004051f0                pcut_report_test_done
+ *fill*         0x0000000000405212        0xe 
+ .text.pcut_report_test_done_unparsed
+                0x0000000000405220      0x15a uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                0x0000000000405220                pcut_report_test_done_unparsed
+ *fill*         0x000000000040537a        0x6 
+ .text.pcut_report_done
+                0x0000000000405380       0x22 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                0x0000000000405380                pcut_report_done
+ *fill*         0x00000000004053a2        0xe 
+ .text.tap_test_start
+                0x00000000004053b0       0x14 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ *fill*         0x00000000004053c4        0xc 
+ .text.tap_suite_start
+                0x00000000004053d0       0x29 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ *fill*         0x00000000004053f9        0x7 
+ .text.tap_init
+                0x0000000000405400       0x2c uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ *fill*         0x000000000040542c        0x4 
+ .text.tap_done
+                0x0000000000405430       0x42 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ *fill*         0x0000000000405472        0xe 
+ .text.tap_suite_done
+                0x0000000000405480       0x33 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ *fill*         0x00000000004054b3        0xd 
+ .text.tap_test_done
+                0x00000000004054c0      0x246 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ *fill*         0x0000000000405706        0xa 
+ .text.xml_test_start
+                0x0000000000405710       0x14 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ *fill*         0x0000000000405724        0xc 
+ .text.xml_suite_done
+                0x0000000000405730       0x21 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ *fill*         0x0000000000405751        0xf 
+ .text.xml_suite_start
+                0x0000000000405760       0x29 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ *fill*         0x0000000000405789        0x7 
+ .text.xml_done
+                0x0000000000405790        0xf uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ *fill*         0x000000000040579f        0x1 
+ .text.xml_init
+                0x00000000004057a0       0x37 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ *fill*         0x00000000004057d7        0x9 
+ .text.xml_test_done
+                0x00000000004057e0      0x1dd uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ *fill*         0x00000000004059bd        0x3 
+ .text.run_test
+                0x00000000004059c0      0x135 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ *fill*         0x0000000000405af5        0xb 
+ .text.pcut_failed_assertion
+                0x0000000000405b00       0xca uspace/lib/libpcut.a.p/pcut_src_run.c.o
+                0x0000000000405b00                pcut_failed_assertion
+ *fill*         0x0000000000405bca        0x6 
+ .text.pcut_run_test_forked
+                0x0000000000405bd0       0x3f uspace/lib/libpcut.a.p/pcut_src_run.c.o
+                0x0000000000405bd0                pcut_run_test_forked
+ *fill*         0x0000000000405c0f        0x1 
+ .text.pcut_run_test_single
+                0x0000000000405c10       0x3f uspace/lib/libpcut.a.p/pcut_src_run.c.o
+                0x0000000000405c10                pcut_run_test_single
+ *fill*         0x0000000000405c4f        0x1 
+ .text.pcut_get_test_timeout
+                0x0000000000405c50       0x2f uspace/lib/libpcut.a.p/pcut_src_run.c.o
+                0x0000000000405c50                pcut_get_test_timeout
+ *fill*         0x0000000000405c7f        0x1 
+ .text.pcut_get_real_next
+                0x0000000000405c80       0x22 uspace/lib/libpcut.a.p/pcut_src_list.c.o
+                0x0000000000405c80                pcut_get_real_next
+ *fill*         0x0000000000405ca2        0xe 
+ .text.pcut_get_real
+                0x0000000000405cb0       0x2a uspace/lib/libpcut.a.p/pcut_src_list.c.o
+                0x0000000000405cb0                pcut_get_real
+ *fill*         0x0000000000405cda        0x6 
+ .text.pcut_fix_list_get_real_head
+                0x0000000000405ce0      0x219 uspace/lib/libpcut.a.p/pcut_src_list.c.o
+                0x0000000000405ce0                pcut_fix_list_get_real_head
+ *fill*         0x0000000000405ef9        0x7 
+ .text.pcut_count_tests
+                0x0000000000405f00       0x3a uspace/lib/libpcut.a.p/pcut_src_list.c.o
+                0x0000000000405f00                pcut_count_tests
+ *fill*         0x0000000000405f3a        0x6 
+ .text.gfx_bitmap_create
+                0x0000000000405f40       0x94 uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+                0x0000000000405f40                gfx_bitmap_create
+ *fill*         0x0000000000405fd4        0xc 
+ .text.gfx_bitmap_destroy
+                0x0000000000405fe0       0x2e uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+                0x0000000000405fe0                gfx_bitmap_destroy
+ *fill*         0x000000000040600e        0x2 
+ .text.gfx_bitmap_render
+                0x0000000000406010       0x18 uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+                0x0000000000406010                gfx_bitmap_render
+ *fill*         0x0000000000406028        0x8 
+ .text.gfx_bitmap_get_alloc
+                0x0000000000406030       0x18 uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+                0x0000000000406030                gfx_bitmap_get_alloc
+ *fill*         0x0000000000406048        0x8 
+ .text.gfx_coord2_subtract
+                0x0000000000406050       0x16 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+                0x0000000000406050                gfx_coord2_subtract
+ *fill*         0x0000000000406066        0xa 
+ .text.gfx_rect_translate
+                0x0000000000406070       0x28 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+                0x0000000000406070                gfx_rect_translate
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x00000000004060a0      0x628
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.test_dev_get_info_success.str1.1
+                0x00000000004060a0      0x34f uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+                                         0xad (size before relaxing)
+ *fill*         0x00000000004063ef        0x1 
+ .rodata.test_dev_get_info_success.str1.8
+                0x00000000004063f0      0x264 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+                                         0xba (size before relaxing)
+ .rodata.test_dev_get_gc_failure.str1.1
+                0x0000000000406654        0x7 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ .rodata.test_dev_get_gc_failure.str1.8
+                0x0000000000406654       0x32 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ .rodata.test_dev_get_gc_success.str1.8
+                0x0000000000406654       0x22 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ .rodata.test_dev_get_gc_success.str1.1
+                0x0000000000406654       0x31 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ .rodata.str1.1
+                0x0000000000406654       0x7b uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ *fill*         0x0000000000406654        0xc 
+ .rodata.cst16  0x0000000000406660       0x10 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ .rodata.str1.1
+                0x0000000000406670       0x1e uspace/lib/test-libddev.p/ddev_test_main.c.o
+ .rodata.cst8   0x0000000000406670        0x8 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .rodata.gc_conn
+                0x0000000000406678       0x48 uspace/lib/libipcgfx.a.p/ipcgfx_src_server.c.o
+ .rodata.pcut_str_error.str1.1
+                0x00000000004066c0       0x13 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ .rodata.pcut_run_test_forking.str1.1
+                0x00000000004066c0       0x13 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ .rodata.pcut_run_test_forking.str1.8
+                0x00000000004066c0       0x21 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ .rodata.pcut_failed_assertion_fmt.str1.1
+                0x00000000004066c0        0x8 uspace/lib/libpcut.a.p/pcut_src_assert.c.o
+ .rodata.pcut_main.str1.1
+                0x00000000004066c0       0x80 uspace/lib/libpcut.a.p/pcut_src_main.c.o
+ .rodata.pcut_print_tests.str1.1
+                0x00000000004066c0       0x27 uspace/lib/libpcut.a.p/pcut_src_print.c.o
+ .rodata.pcut_print_tests.str1.8
+                0x00000000004066c0       0x5c uspace/lib/libpcut.a.p/pcut_src_print.c.o
+ .rodata.pcut_print_fail_message.str1.1
+                0x00000000004066c0        0xc uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+ .rodata.tap_suite_start.str1.1
+                0x00000000004066c0       0x17 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .rodata.tap_init.str1.1
+                0x00000000004066c0        0x7 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .rodata.tap_done.str1.1
+                0x00000000004066c0       0x30 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .rodata.tap_done.str1.8
+                0x00000000004066c0       0x21 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .rodata.tap_suite_done.str1.8
+                0x00000000004066c0       0x49 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .rodata.tap_test_done.str1.1
+                0x00000000004066c0       0x49 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .rodata.xml_suite_done.str1.8
+                0x00000000004066c0       0x1f uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .rodata.xml_suite_start.str1.1
+                0x00000000004066c0       0x14 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .rodata.xml_done.str1.1
+                0x00000000004066c0        0xa uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .rodata.xml_init.str1.1
+                0x00000000004066c0       0x31 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .rodata.xml_test_done.str1.1
+                0x00000000004066c0       0x63 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .rodata.xml_test_done.str1.8
+                0x00000000004066c0       0x24 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .rodata.run_test.str1.1
+                0x00000000004066c0        0x8 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .rodata.cst8   0x00000000004066c0        0x8 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x00000000004066c8      0x2d4
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x00000000004066c8      0x2d4 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+                0x00000000004066c8                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x00000000004069a0      0xd58
+ *(.eh_frame)
+ .eh_frame      0x00000000004069a0      0x188 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ .eh_frame      0x0000000000406b28       0x28 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000406b50        0x0 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ .eh_frame      0x0000000000406b50       0x20 uspace/lib/test-libddev.p/ddev_test_main.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000406b70       0x20 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000406b90       0xb8 uspace/lib/libddev.a.p/ddev_src_ddev.c.o
+                                         0xd0 (size before relaxing)
+ .eh_frame      0x0000000000406c48       0x48 uspace/lib/libddev.a.p/ddev_src_ddev_srv.c.o
+                                         0x60 (size before relaxing)
+ .eh_frame      0x0000000000406c90       0x20 uspace/lib/libddev.a.p/ddev_src_info.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000406cb0       0x70 uspace/lib/libgfx.a.p/gfx_src_color.c.o
+                                         0xd0 (size before relaxing)
+ .eh_frame      0x0000000000406d20       0x50 uspace/lib/libgfx.a.p/gfx_src_context.c.o
+                                         0x68 (size before relaxing)
+ .eh_frame      0x0000000000406d70       0x80 uspace/lib/libgfx.a.p/gfx_src_render.c.o
+                                         0x98 (size before relaxing)
+ .eh_frame      0x0000000000406df0      0x190 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+                                        0x1d0 (size before relaxing)
+ .eh_frame      0x0000000000406f80       0x30 uspace/lib/libipcgfx.a.p/ipcgfx_src_server.c.o
+                                         0x48 (size before relaxing)
+ .eh_frame      0x0000000000406fb0      0x140 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+                                        0x158 (size before relaxing)
+ .eh_frame      0x00000000004070f0       0x28 uspace/lib/libpcut.a.p/pcut_src_assert.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000407118       0x20 uspace/lib/libpcut.a.p/pcut_src_helper.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000407138       0x60 uspace/lib/libpcut.a.p/pcut_src_main.c.o
+                                         0xa0 (size before relaxing)
+ .eh_frame      0x0000000000407198       0x28 uspace/lib/libpcut.a.p/pcut_src_print.c.o
+                                         0x60 (size before relaxing)
+ .eh_frame      0x00000000004071c0      0x160 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                                        0x178 (size before relaxing)
+ .eh_frame      0x0000000000407320       0xe8 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+                                        0x100 (size before relaxing)
+ .eh_frame      0x0000000000407408       0xd0 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+                                         0xe8 (size before relaxing)
+ .eh_frame      0x00000000004074d8       0xa8 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+                                         0xc0 (size before relaxing)
+ .eh_frame      0x0000000000407580       0x98 uspace/lib/libpcut.a.p/pcut_src_list.c.o
+                                         0xb0 (size before relaxing)
+ .eh_frame      0x0000000000407618       0xa0 uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+                                         0xd8 (size before relaxing)
+ .eh_frame      0x00000000004076b8       0x40 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+                                        0x270 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x00000000004076f8        0x0
+ *(.sframe)
+ .sframe        0x00000000004076f8        0x0 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x0000000000408000                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0x0000000000408000        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0000000000408000        0x0
+                0x0000000000408000                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x0000000000408000                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x0000000000408000        0x0
+                0x0000000000408000                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x0000000000408000                PROVIDE (__init_array_end = .)
+
+.fini_array     0x0000000000408000        0x0
+                0x0000000000408000                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x0000000000408000                PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x0000000000408000        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x0000000000408000        0x0 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+
+.dynamic        0x0000000000408000      0x150
+ *(.dynamic)
+ .dynamic       0x0000000000408000      0x150 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+                0x0000000000408000                _DYNAMIC
+
+.got            0x0000000000408150        0x0
+ *(.got)
+ .got           0x0000000000408150        0x0 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ *(.igot)
+                0x0000000000408150                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x0000000000408150      0x280
+ *(.got.plt)
+ .got.plt       0x0000000000408150      0x280 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+                0x0000000000408150                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x00000000004083d0        0x0 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+
+.data           0x00000000004083e0      0x6b0
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.pcut_exported_ddev
+                0x00000000004083e0       0x50 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+                0x00000000004083e0                pcut_exported_ddev
+ *fill*         0x0000000000408430       0x10 
+ .data.pcut_item_7
+                0x0000000000408440       0x50 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ .data.pcut_extras_7
+                0x0000000000408490        0x8 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ *fill*         0x0000000000408498        0x8 
+ .data.pcut_item_6
+                0x00000000004084a0       0x50 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ .data.pcut_extras_6
+                0x00000000004084f0        0x8 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ *fill*         0x00000000004084f8        0x8 
+ .data.pcut_item_5
+                0x0000000000408500       0x50 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ .data.pcut_extras_5
+                0x0000000000408550        0x8 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ *fill*         0x0000000000408558        0x8 
+ .data.pcut_item_4
+                0x0000000000408560       0x50 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ .data.pcut_extras_4
+                0x00000000004085b0        0x8 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ *fill*         0x00000000004085b8        0x8 
+ .data.pcut_item_3
+                0x00000000004085c0       0x50 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ .data.pcut_extras_3
+                0x0000000000408610        0x8 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ *fill*         0x0000000000408618        0x8 
+ .data.test_gc_ops
+                0x0000000000408620       0x58 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ *fill*         0x0000000000408678        0x8 
+ .data.test_ddev_ops
+                0x0000000000408680       0x10 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ *fill*         0x0000000000408690       0x10 
+ .data.pcut_item_2
+                0x00000000004086a0       0x50 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ *fill*         0x00000000004086f0       0x10 
+ .data.pcut_item_1
+                0x0000000000408700       0x50 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ *fill*         0x0000000000408750       0x10 
+ .data.pcut_item_0
+                0x0000000000408760       0x50 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+ *fill*         0x00000000004087b0       0x10 
+ .data.pcut_item_last
+                0x00000000004087c0       0x50 uspace/lib/test-libddev.p/ddev_test_main.c.o
+ .data.pcut_main_extras
+                0x0000000000408810       0x18 uspace/lib/test-libddev.p/ddev_test_main.c.o
+ *fill*         0x0000000000408828       0x18 
+ .data.pcut_item_2
+                0x0000000000408840       0x50 uspace/lib/test-libddev.p/ddev_test_main.c.o
+ *fill*         0x0000000000408890       0x10 
+ .data.pcut_item_1
+                0x00000000004088a0       0x50 uspace/lib/test-libddev.p/ddev_test_main.c.o
+ *fill*         0x00000000004088f0       0x10 
+ .data.pcut_item_0
+                0x0000000000408900       0x50 uspace/lib/test-libddev.p/ddev_test_main.c.o
+ *fill*         0x0000000000408950       0x10 
+ .data.ipc_gc_ops
+                0x0000000000408960       0x58 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+                0x0000000000408960                ipc_gc_ops
+ *fill*         0x00000000004089b8        0x8 
+ .data.forced_termination_cv
+                0x00000000004089c0       0x10 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ *fill*         0x00000000004089d0       0x10 
+ .data.forced_termination_mutex
+                0x00000000004089e0       0x20 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ .data.empty_main_extra
+                0x0000000000408a00       0x18 uspace/lib/libpcut.a.p/pcut_src_main.c.o
+ .data.pcut_run_mode
+                0x0000000000408a18        0x4 uspace/lib/libpcut.a.p/pcut_src_main.c.o
+                0x0000000000408a18                pcut_run_mode
+ *fill*         0x0000000000408a1c        0x4 
+ .data.pcut_report_tap
+                0x0000000000408a20       0x30 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+                0x0000000000408a20                pcut_report_tap
+ *fill*         0x0000000000408a50       0x10 
+ .data.pcut_report_xml
+                0x0000000000408a60       0x30 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+                0x0000000000408a60                pcut_report_xml
+
+.data1
+ *(.data1)
+                0x0000000000408a90                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x0000000000408a90                . = .
+                0x0000000000408a90                __bss_start = .
+
+.bss            0x0000000000408aa0     0x63c8
+ *(.dynbss)
+ .dynbss        0x0000000000408aa0       0x68 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+                0x0000000000408aa0                stdout
+                0x0000000000408ab0                stdin
+                0x0000000000408ac0                __progsymbols
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss.test_running
+                0x0000000000408b08        0x4 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ *fill*         0x0000000000408b0c        0x4 
+ .bss.test_task_id
+                0x0000000000408b10        0x8 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ *fill*         0x0000000000408b18        0x8 
+ .bss.extra_output_buffer
+                0x0000000000408b20     0x2000 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ .bss.error_message_buffer
+                0x000000000040ab20     0x2000 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ .bss.message_buffer_index
+                0x000000000040cb20        0x4 uspace/lib/libpcut.a.p/pcut_src_assert.c.o
+ *fill*         0x000000000040cb24       0x1c 
+ .bss.message_buffer
+                0x000000000040cb40      0x202 uspace/lib/libpcut.a.p/pcut_src_assert.c.o
+ *fill*         0x000000000040cd42       0x1e 
+ .bss.buffer_for_error_messages
+                0x000000000040cd60     0x1000 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+ .bss.buffer_for_extra_output
+                0x000000000040dd60     0x1000 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+ .bss.report_ops
+                0x000000000040ed60        0x8 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+ .bss.failed_test_names
+                0x000000000040ed68        0x8 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .bss.failed_tests_in_suite
+                0x000000000040ed70        0x4 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .bss.tests_in_suite
+                0x000000000040ed74        0x4 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .bss.failed_test_counter
+                0x000000000040ed78        0x4 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .bss.test_counter
+                0x000000000040ed7c        0x4 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .bss.failed_tests_in_suite
+                0x000000000040ed80        0x4 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .bss.tests_in_suite
+                0x000000000040ed84        0x4 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .bss.test_counter
+                0x000000000040ed88        0x4 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ *fill*         0x000000000040ed8c        0x4 
+ .bss.prev_message.0
+                0x000000000040ed90        0x8 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ *fill*         0x000000000040ed98        0x8 
+ .bss.default_suite
+                0x000000000040eda0       0x50 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .bss.current_suite
+                0x000000000040edf0        0x8 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .bss.current_test
+                0x000000000040edf8        0x8 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .bss.leave_means_exit
+                0x000000000040ee00        0x4 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .bss.print_test_error
+                0x000000000040ee04        0x4 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .bss.report_test_result
+                0x000000000040ee08        0x4 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .bss.execute_teardown_on_failure
+                0x000000000040ee0c        0x4 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ *fill*         0x000000000040ee10       0x10 
+ .bss.start_test_jump
+                0x000000000040ee20       0x48 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ *(COMMON)
+                0x000000000040ee68                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x000000000040ee68                . = ALIGN (0x8)
+                0x000000000040ee68                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x0000000000410e68        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x0000000000410e68                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000410e68                . = ALIGN (0x8)
+                0x000000000040ee68                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x0000000000410e68                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/lib/test-libddev.p/ddev_test_ddev.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/lib/test-libddev.p/ddev_test_main.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libddev.a.p/ddev_src_ddev.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libddev.a.p/ddev_src_ddev_srv.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libddev.a.p/ddev_src_info.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libgfx.a.p/gfx_src_color.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libgfx.a.p/gfx_src_context.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libgfx.a.p/gfx_src_render.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libipcgfx.a.p/ipcgfx_src_server.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libpcut.a.p/pcut_src_assert.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libpcut.a.p/pcut_src_helper.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libpcut.a.p/pcut_src_main.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libpcut.a.p/pcut_src_print.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libpcut.a.p/pcut_src_list.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/lib/test-libddev elf64-x86-64)

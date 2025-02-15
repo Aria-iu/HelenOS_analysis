@@ -1,0 +1,512 @@
+Archive member included to satisfy reference by file (symbol)
+
+uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                              (--whole-archive)
+uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                              (--whole-archive)
+uspace/lib/libofw.a.p/ofw_src_ofw.c.o
+                              uspace/app_ofw.p/app_ofw_ofw.c.o (ofw_child_it_first)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.0                     uspace/app_ofw.p/app_ofw_ofw.c.o (printf)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/app_ofw.p/app_ofw_ofw.c.o
+ .data          0x0000000000000000        0x0 uspace/app_ofw.p/app_ofw_ofw.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_ofw.p/app_ofw_ofw.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .text          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libofw.a.p/ofw_src_ofw.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libofw.a.p/ofw_src_ofw.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libofw.a.p/ofw_src_ofw.c.o
+ .text.ofw_child_it_get_name
+                0x0000000000000000       0x27 uspace/lib/libofw.a.p/ofw_src_ofw.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/app_ofw.p/app_ofw_ofw.c.o
+START GROUP
+LOAD uspace/lib/c/libstartfiles.a
+LOAD uspace/lib/libofw.a
+LOAD uspace/lib/libc.so.0.0
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000400000                PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x0000000000400120                . = (SEGMENT_START ("text-segment", 0x400000) + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000400120       0x4c
+ *(.hash)
+ .hash          0x0000000000400120       0x4c uspace/app_ofw.p/app_ofw_ofw.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x0000000000400170      0x150
+ *(.dynsym)
+ .dynsym        0x0000000000400170      0x150 uspace/app_ofw.p/app_ofw_ofw.c.o
+
+.dynstr         0x00000000004002c0       0xa0
+ *(.dynstr)
+ .dynstr        0x00000000004002c0       0xa0 uspace/app_ofw.p/app_ofw_ofw.c.o
+
+.gnu.version    0x0000000000400360        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000400360        0x0 uspace/app_ofw.p/app_ofw_ofw.c.o
+
+.gnu.version_d  0x0000000000400360        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000400360        0x0 uspace/app_ofw.p/app_ofw_ofw.c.o
+
+.gnu.version_r  0x0000000000400360        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000400360        0x0 uspace/app_ofw.p/app_ofw_ofw.c.o
+
+.rela.dyn       0x0000000000400360       0x18
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text.__c_start
+                0x0000000000400360        0x0 uspace/app_ofw.p/app_ofw_ofw.c.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ .rela.rodata.cst8
+                0x0000000000400360        0x0 uspace/app_ofw.p/app_ofw_ofw.c.o
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x0000000000400360        0x0 uspace/app_ofw.p/app_ofw_ofw.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000400360        0x0 uspace/app_ofw.p/app_ofw_ofw.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x0000000000400360       0x18 uspace/app_ofw.p/app_ofw_ofw.c.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+
+.rela.plt       0x0000000000400378      0x120
+ *(.rela.plt)
+ .rela.plt      0x0000000000400378      0x120 uspace/app_ofw.p/app_ofw_ofw.c.o
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+ .rela.iplt     0x0000000000400498        0x0 uspace/app_ofw.p/app_ofw_ofw.c.o
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x00000000004004a0       0xd0
+ *(.plt)
+ .plt           0x00000000004004a0       0xd0 uspace/app_ofw.p/app_ofw_ofw.c.o
+                0x00000000004004b0                printf
+                0x00000000004004c0                str_nsize
+                0x00000000004004d0                puts
+                0x00000000004004e0                sysinfo_get_keys
+                0x00000000004004f0                str_dup
+                0x0000000000400500                str_cmp
+                0x0000000000400510                __helenos_assert_abort
+                0x0000000000400520                asprintf
+                0x0000000000400530                str_size
+                0x0000000000400540                __libc_main
+                0x0000000000400550                sysinfo_get_data
+                0x0000000000400560                free
+ *(.iplt)
+ .iplt          0x0000000000400570        0x0 uspace/app_ofw.p/app_ofw_ofw.c.o
+
+.plt.got        0x0000000000400570        0x0
+ *(.plt.got)
+ .plt.got       0x0000000000400570        0x0 uspace/app_ofw.p/app_ofw_ofw.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x0000000000400570      0x799
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ .text.startup.main
+                0x0000000000400570       0xca uspace/app_ofw.p/app_ofw_ofw.c.o
+                0x0000000000400570                main
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ *fill*         0x000000000040063a        0x6 
+ .text.ofw_print_subtree
+                0x0000000000400640      0x18a uspace/app_ofw.p/app_ofw_ofw.c.o
+ .text          0x00000000004007ca        0xc uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                0x00000000004007ca                _start
+ *fill*         0x00000000004007d6        0xa 
+ .text.__c_start
+                0x00000000004007e0       0x8c uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                0x00000000004007e0                __c_start
+ *fill*         0x000000000040086c        0x4 
+ .text.ofw_child_it_first
+                0x0000000000400870      0x134 uspace/lib/libofw.a.p/ofw_src_ofw.c.o
+                0x0000000000400870                ofw_child_it_first
+ *fill*         0x00000000004009a4        0xc 
+ .text.ofw_child_it_next
+                0x00000000004009b0       0x66 uspace/lib/libofw.a.p/ofw_src_ofw.c.o
+                0x00000000004009b0                ofw_child_it_next
+ *fill*         0x0000000000400a16        0xa 
+ .text.ofw_child_it_end
+                0x0000000000400a20       0x11 uspace/lib/libofw.a.p/ofw_src_ofw.c.o
+                0x0000000000400a20                ofw_child_it_end
+ *fill*         0x0000000000400a31        0xf 
+ .text.ofw_child_it_get_path
+                0x0000000000400a40       0x42 uspace/lib/libofw.a.p/ofw_src_ofw.c.o
+                0x0000000000400a40                ofw_child_it_get_path
+ *fill*         0x0000000000400a82        0xe 
+ .text.ofw_child_it_fini
+                0x0000000000400a90       0x33 uspace/lib/libofw.a.p/ofw_src_ofw.c.o
+                0x0000000000400a90                ofw_child_it_fini
+ *fill*         0x0000000000400ac3        0xd 
+ .text.ofw_prop_it_first
+                0x0000000000400ad0       0xc7 uspace/lib/libofw.a.p/ofw_src_ofw.c.o
+                0x0000000000400ad0                ofw_prop_it_first
+ *fill*         0x0000000000400b97        0x9 
+ .text.ofw_prop_it_next
+                0x0000000000400ba0       0x5c uspace/lib/libofw.a.p/ofw_src_ofw.c.o
+                0x0000000000400ba0                ofw_prop_it_next
+ *fill*         0x0000000000400bfc        0x4 
+ .text.ofw_prop_it_end
+                0x0000000000400c00       0x11 uspace/lib/libofw.a.p/ofw_src_ofw.c.o
+                0x0000000000400c00                ofw_prop_it_end
+ *fill*         0x0000000000400c11        0xf 
+ .text.ofw_prop_it_get_name
+                0x0000000000400c20       0x26 uspace/lib/libofw.a.p/ofw_src_ofw.c.o
+                0x0000000000400c20                ofw_prop_it_get_name
+ *fill*         0x0000000000400c46        0xa 
+ .text.ofw_prop_it_get_data
+                0x0000000000400c50       0x81 uspace/lib/libofw.a.p/ofw_src_ofw.c.o
+                0x0000000000400c50                ofw_prop_it_get_data
+ *fill*         0x0000000000400cd1        0xf 
+ .text.ofw_prop_it_fini
+                0x0000000000400ce0       0x29 uspace/lib/libofw.a.p/ofw_src_ofw.c.o
+                0x0000000000400ce0                ofw_prop_it_fini
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000400d10      0x158
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.ofw_print_subtree.str1.1
+                0x0000000000400d10       0xb1 uspace/app_ofw.p/app_ofw_ofw.c.o
+                                         0x17 (size before relaxing)
+ .rodata.main.str1.1
+                0x0000000000400dc1       0x3d uspace/app_ofw.p/app_ofw_ofw.c.o
+ *fill*         0x0000000000400dc1        0x7 
+ .rodata.main.str1.8
+                0x0000000000400dc8       0x97 uspace/app_ofw.p/app_ofw_ofw.c.o
+                                         0x70 (size before relaxing)
+ *fill*         0x0000000000400e5f        0x1 
+ .rodata.cst8   0x0000000000400e60        0x8 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .rodata.ofw_child_it_first.str1.1
+                0x0000000000400e68       0x12 uspace/lib/libofw.a.p/ofw_src_ofw.c.o
+ .rodata.ofw_child_it_next.str1.8
+                0x0000000000400e68       0x27 uspace/lib/libofw.a.p/ofw_src_ofw.c.o
+ .rodata.ofw_child_it_next.str1.1
+                0x0000000000400e68       0x33 uspace/lib/libofw.a.p/ofw_src_ofw.c.o
+ .rodata.ofw_child_it_get_path.str1.1
+                0x0000000000400e68        0x6 uspace/lib/libofw.a.p/ofw_src_ofw.c.o
+ .rodata.ofw_prop_it_get_name.str1.1
+                0x0000000000400e68       0x15 uspace/lib/libofw.a.p/ofw_src_ofw.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x0000000000400e68       0x84
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x0000000000400e68       0x84 uspace/app_ofw.p/app_ofw_ofw.c.o
+                0x0000000000400e68                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x0000000000400ef0      0x25c
+ *(.eh_frame)
+ .eh_frame      0x0000000000400ef0       0x80 uspace/app_ofw.p/app_ofw_ofw.c.o
+ .eh_frame      0x0000000000400f70       0x28 uspace/app_ofw.p/app_ofw_ofw.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000400f98        0x0 uspace/app_ofw.p/app_ofw_ofw.c.o
+ .eh_frame      0x0000000000400f98       0x20 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000400fb8      0x194 uspace/lib/libofw.a.p/ofw_src_ofw.c.o
+                                        0x1c8 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x000000000040114c        0x0
+ *(.sframe)
+ .sframe        0x000000000040114c        0x0 uspace/app_ofw.p/app_ofw_ofw.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x000000000040214c                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0x000000000040214c        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x000000000040214c        0x0
+                0x000000000040214c                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x000000000040214c                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x000000000040214c        0x0
+                0x000000000040214c                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x000000000040214c                PROVIDE (__init_array_end = .)
+
+.fini_array     0x000000000040214c        0x0
+                0x000000000040214c                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x000000000040214c                PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x000000000040214c        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x000000000040214c        0x0 uspace/app_ofw.p/app_ofw_ofw.c.o
+
+.dynamic        0x0000000000402150      0x150
+ *(.dynamic)
+ .dynamic       0x0000000000402150      0x150 uspace/app_ofw.p/app_ofw_ofw.c.o
+                0x0000000000402150                _DYNAMIC
+
+.got            0x00000000004022a0        0x0
+ *(.got)
+ .got           0x00000000004022a0        0x0 uspace/app_ofw.p/app_ofw_ofw.c.o
+ *(.igot)
+                0x00000000004022a0                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x00000000004022a0       0x78
+ *(.got.plt)
+ .got.plt       0x00000000004022a0       0x78 uspace/app_ofw.p/app_ofw_ofw.c.o
+                0x00000000004022a0                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x0000000000402318        0x0 uspace/app_ofw.p/app_ofw_ofw.c.o
+
+.data
+ *(.data .data.* .gnu.linkonce.d.*)
+
+.data1
+ *(.data1)
+                0x0000000000402318                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x0000000000402318                . = .
+                0x0000000000402318                __bss_start = .
+
+.bss            0x0000000000402320       0x48
+ *(.dynbss)
+ *fill*         0x0000000000402320        0x0 
+ .dynbss        0x0000000000402320       0x48 uspace/app_ofw.p/app_ofw_ofw.c.o
+                0x0000000000402320                __progsymbols
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ *(COMMON)
+                0x0000000000402368                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x0000000000402368                . = ALIGN (0x8)
+                0x0000000000402368                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x0000000000404368        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x0000000000404368                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000404368                . = ALIGN (0x8)
+                0x0000000000402368                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x0000000000404368                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/app_ofw.p/app_ofw_ofw.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libofw.a.p/ofw_src_ofw.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/app_ofw elf64-x86-64)

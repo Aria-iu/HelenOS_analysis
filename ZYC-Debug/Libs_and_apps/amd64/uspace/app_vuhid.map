@@ -1,0 +1,886 @@
+Archive member included to satisfy reference by file (symbol)
+
+uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                              (--whole-archive)
+uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                              (--whole-archive)
+uspace/lib/libusb.a.p/usb_src_debug.c.o
+                              uspace/app_vuhid.p/app_vuhid_main.c.o (usb_debug_str_buffer)
+uspace/lib/libdrv.a.p/drv_generic_logbuf.c.o
+                              uspace/lib/libusb.a.p/usb_src_debug.c.o (ddf_dump_buffer)
+uspace/lib/libusbvirt.a.p/usbvirt_src_device.c.o
+                              uspace/app_vuhid.p/app_vuhid_main.c.o (usbvirt_device_plug)
+uspace/lib/libusbvirt.a.p/usbvirt_src_ipc_dev.c.o
+                              uspace/lib/libusbvirt.a.p/usbvirt_src_device.c.o (usbvirt_ipc_handle_call)
+uspace/lib/libusbvirt.a.p/usbvirt_src_stdreq.c.o
+                              uspace/app_vuhid.p/app_vuhid_stdreq.c.o (usbvirt_control_reply_helper)
+uspace/lib/libusbvirt.a.p/usbvirt_src_transfer.c.o
+                              uspace/lib/libusbvirt.a.p/usbvirt_src_ipc_dev.c.o (usbvirt_control_write)
+uspace/lib/libusbvirt.a.p/usbvirt_src_ctrltransfer.c.o
+                              uspace/lib/libusbvirt.a.p/usbvirt_src_transfer.c.o (process_control_transfer)
+uspace/lib/libdevice.a.p/device_src_devman.c.o
+                              uspace/lib/libusbvirt.a.p/usbvirt_src_device.c.o (devman_device_connect)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.0                     uspace/app_vuhid.p/app_vuhid_main.c.o (printf)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/app_vuhid.p/app_vuhid_main.c.o
+ .data          0x0000000000000000        0x0 uspace/app_vuhid.p/app_vuhid_main.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_vuhid.p/app_vuhid_main.c.o
+ .text          0x0000000000000000        0x0 uspace/app_vuhid.p/app_vuhid_device.c.o
+ .data          0x0000000000000000        0x0 uspace/app_vuhid.p/app_vuhid_device.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_vuhid.p/app_vuhid_device.c.o
+ .text          0x0000000000000000        0x0 uspace/app_vuhid.p/app_vuhid_ifaces.c.o
+ .data          0x0000000000000000        0x0 uspace/app_vuhid.p/app_vuhid_ifaces.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_vuhid.p/app_vuhid_ifaces.c.o
+ .text          0x0000000000000000        0x0 uspace/app_vuhid.p/app_vuhid_life.c.o
+ .data          0x0000000000000000        0x0 uspace/app_vuhid.p/app_vuhid_life.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_vuhid.p/app_vuhid_life.c.o
+ .text          0x0000000000000000        0x0 uspace/app_vuhid.p/app_vuhid_stdreq.c.o
+ .data          0x0000000000000000        0x0 uspace/app_vuhid.p/app_vuhid_stdreq.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_vuhid.p/app_vuhid_stdreq.c.o
+ .text          0x0000000000000000        0x0 uspace/app_vuhid.p/app_vuhid_hids_bootkbd.c.o
+ .data          0x0000000000000000        0x0 uspace/app_vuhid.p/app_vuhid_hids_bootkbd.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_vuhid.p/app_vuhid_hids_bootkbd.c.o
+ .text          0x0000000000000000        0x0 uspace/app_vuhid.p/app_vuhid_hids_logitech_wireless.c.o
+ .data          0x0000000000000000        0x0 uspace/app_vuhid.p/app_vuhid_hids_logitech_wireless.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_vuhid.p/app_vuhid_hids_logitech_wireless.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .text          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libusb.a.p/usb_src_debug.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libusb.a.p/usb_src_debug.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libusb.a.p/usb_src_debug.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_logbuf.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_logbuf.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_logbuf.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libusbvirt.a.p/usbvirt_src_device.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libusbvirt.a.p/usbvirt_src_device.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libusbvirt.a.p/usbvirt_src_device.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libusbvirt.a.p/usbvirt_src_ipc_dev.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libusbvirt.a.p/usbvirt_src_ipc_dev.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libusbvirt.a.p/usbvirt_src_ipc_dev.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libusbvirt.a.p/usbvirt_src_stdreq.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libusbvirt.a.p/usbvirt_src_stdreq.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libusbvirt.a.p/usbvirt_src_stdreq.c.o
+ .text.req_nop  0x0000000000000000        0x8 uspace/lib/libusbvirt.a.p/usbvirt_src_stdreq.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libusbvirt.a.p/usbvirt_src_transfer.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libusbvirt.a.p/usbvirt_src_transfer.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libusbvirt.a.p/usbvirt_src_transfer.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libusbvirt.a.p/usbvirt_src_ctrltransfer.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libusbvirt.a.p/usbvirt_src_ctrltransfer.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libusbvirt.a.p/usbvirt_src_ctrltransfer.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_get_handles_internal
+                0x0000000000000000      0x1a2 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_exchange_begin
+                0x0000000000000000       0xbc uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_exchange_end
+                0x0000000000000000        0xa uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_driver_register
+                0x0000000000000000      0x10f uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_add_function
+                0x0000000000000000      0x1b6 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_add_device_to_category
+                0x0000000000000000       0xa1 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_remove_function
+                0x0000000000000000       0x3a uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_drv_fun_online
+                0x0000000000000000       0x96 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_drv_fun_offline
+                0x0000000000000000       0x96 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_parent_device_connect
+                0x0000000000000000       0x26 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .rodata.devman_fun_get_path.str1.8
+                0x0000000000000000       0x2d uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .rodata.devman_fun_get_path.str1.1
+                0x0000000000000000       0x19 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_fun_get_path
+                0x0000000000000000       0xf2 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_fun_get_match_id
+                0x0000000000000000      0x108 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_fun_get_name
+                0x0000000000000000       0xf2 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_fun_get_driver_name
+                0x0000000000000000       0xf2 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_fun_online
+                0x0000000000000000       0x96 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_fun_offline
+                0x0000000000000000       0x96 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_fun_get_child
+                0x0000000000000000       0xb4 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_dev_get_functions
+                0x0000000000000000       0x18 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_dev_get_parent
+                0x0000000000000000       0xb4 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_fun_sid_to_handle
+                0x0000000000000000       0xb4 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_get_drivers
+                0x0000000000000000       0x17 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_driver_get_devices
+                0x0000000000000000       0x18 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_driver_get_handle
+                0x0000000000000000      0x142 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_driver_get_match_id
+                0x0000000000000000      0x108 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_driver_get_name
+                0x0000000000000000       0xf2 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_driver_get_state
+                0x0000000000000000       0xbc uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_driver_load
+                0x0000000000000000       0x96 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_driver_unload
+                0x0000000000000000       0x96 uspace/lib/libdevice.a.p/device_src_devman.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/app_vuhid.p/app_vuhid_main.c.o
+LOAD uspace/app_vuhid.p/app_vuhid_device.c.o
+LOAD uspace/app_vuhid.p/app_vuhid_ifaces.c.o
+LOAD uspace/app_vuhid.p/app_vuhid_life.c.o
+LOAD uspace/app_vuhid.p/app_vuhid_stdreq.c.o
+LOAD uspace/app_vuhid.p/app_vuhid_hids_bootkbd.c.o
+LOAD uspace/app_vuhid.p/app_vuhid_hids_logitech_wireless.c.o
+START GROUP
+LOAD uspace/lib/c/libstartfiles.a
+LOAD uspace/lib/libusb.a
+LOAD uspace/lib/libdrv.a
+LOAD uspace/lib/libinet.a
+LOAD uspace/lib/libc.so.0.0
+LOAD uspace/lib/libpcm.a
+LOAD uspace/lib/libdevice.a
+LOAD uspace/lib/libusbdev.a
+LOAD uspace/lib/libusbhid.a
+LOAD uspace/lib/libusbvirt.a
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000400000                PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x0000000000400158                . = (SEGMENT_START ("text-segment", 0x400000) + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000400158      0x15c
+ *(.hash)
+ .hash          0x0000000000400158      0x15c uspace/app_vuhid.p/app_vuhid_main.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x00000000004002b8      0x480
+ *(.dynsym)
+ .dynsym        0x00000000004002b8      0x480 uspace/app_vuhid.p/app_vuhid_main.c.o
+
+.dynstr         0x0000000000400738      0x2b1
+ *(.dynstr)
+ .dynstr        0x0000000000400738      0x2b1 uspace/app_vuhid.p/app_vuhid_main.c.o
+
+.gnu.version    0x00000000004009ea        0x0
+ *(.gnu.version)
+ .gnu.version   0x00000000004009ea        0x0 uspace/app_vuhid.p/app_vuhid_main.c.o
+
+.gnu.version_d  0x00000000004009f0        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x00000000004009f0        0x0 uspace/app_vuhid.p/app_vuhid_main.c.o
+
+.gnu.version_r  0x00000000004009f0        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x00000000004009f0        0x0 uspace/app_vuhid.p/app_vuhid_main.c.o
+
+.rela.dyn       0x00000000004009f0       0x60
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text.startup.main
+                0x00000000004009f0        0x0 uspace/app_vuhid.p/app_vuhid_main.c.o
+ .rela.text.__c_start
+                0x00000000004009f0        0x0 uspace/app_vuhid.p/app_vuhid_main.c.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ .rela.rodata.cst8
+                0x00000000004009f0        0x0 uspace/app_vuhid.p/app_vuhid_main.c.o
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x00000000004009f0        0x0 uspace/app_vuhid.p/app_vuhid_main.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x00000000004009f0        0x0 uspace/app_vuhid.p/app_vuhid_main.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x00000000004009f0       0x60 uspace/app_vuhid.p/app_vuhid_main.c.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+
+.rela.plt       0x0000000000400a50      0x408
+ *(.rela.plt)
+ .rela.plt      0x0000000000400a50      0x408 uspace/app_vuhid.p/app_vuhid_main.c.o
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+ .rela.iplt     0x0000000000400e58        0x0 uspace/app_vuhid.p/app_vuhid_main.c.o
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x0000000000400e60      0x2c0
+ *(.plt)
+ .plt           0x0000000000400e60      0x2c0 uspace/app_vuhid.p/app_vuhid_main.c.o
+                0x0000000000400e70                printf
+                0x0000000000400e80                async_hangup
+                0x0000000000400e90                async_send_2
+                0x0000000000400ea0                async_wait_for
+                0x0000000000400eb0                getopt_long
+                0x0000000000400ec0                snprintf
+                0x0000000000400ed0                log_init
+                0x0000000000400ee0                async_data_write_start
+                0x0000000000400ef0                async_get_call
+                0x0000000000400f00                service_connect_blocking
+                0x0000000000400f10                async_data_read_finalize
+                0x0000000000400f20                memcpy
+                0x0000000000400f30                puts
+                0x0000000000400f40                malloc
+                0x0000000000400f50                str_append
+                0x0000000000400f60                async_answer_0
+                0x0000000000400f70                fibril_condvar_wait
+                0x0000000000400f80                log_msg
+                0x0000000000400f90                async_exchange_end
+                0x0000000000400fa0                fibril_condvar_initialize
+                0x0000000000400fb0                fprintf
+                0x0000000000400fc0                fibril_condvar_broadcast
+                0x0000000000400fd0                fibril_mutex_unlock
+                0x0000000000400fe0                fibril_create
+                0x0000000000400ff0                realloc
+                0x0000000000401000                async_create_callback_port
+                0x0000000000401010                str_cmp
+                0x0000000000401020                __helenos_assert_abort
+                0x0000000000401030                async_data_read_receive
+                0x0000000000401040                async_accept_0
+                0x0000000000401050                str_cpy
+                0x0000000000401060                fibril_usleep
+                0x0000000000401070                str_size
+                0x0000000000401080                async_answer_1
+                0x0000000000401090                async_exchange_begin
+                0x00000000004010a0                str_error
+                0x00000000004010b0                async_data_write_accept
+                0x00000000004010c0                __libc_main
+                0x00000000004010d0                async_forget
+                0x00000000004010e0                fibril_add_ready
+                0x00000000004010f0                service_connect
+                0x0000000000401100                free
+                0x0000000000401110                fibril_mutex_lock
+ *(.iplt)
+ .iplt          0x0000000000401120        0x0 uspace/app_vuhid.p/app_vuhid_main.c.o
+
+.plt.got        0x0000000000401120        0x0
+ *(.plt.got)
+ .plt.got       0x0000000000401120        0x0 uspace/app_vuhid.p/app_vuhid_main.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x0000000000401120     0x230c
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ .text.unlikely.usbvirt_ipc_handle_call
+                0x0000000000401120        0x7 uspace/lib/libusbvirt.a.p/usbvirt_src_ipc_dev.c.o
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *fill*         0x0000000000401127        0x9 
+ .text.startup.main
+                0x0000000000401130      0x225 uspace/app_vuhid.p/app_vuhid_main.c.o
+                0x0000000000401130                main
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ *fill*         0x0000000000401355        0xb 
+ .text.print_help.part.0
+                0x0000000000401360       0x4d uspace/app_vuhid.p/app_vuhid_main.c.o
+ *fill*         0x00000000004013ad        0x3 
+ .text.on_data_from_device
+                0x00000000004013b0       0x47 uspace/app_vuhid.p/app_vuhid_device.c.o
+ *fill*         0x00000000004013f7        0x9 
+ .text.on_data_to_device
+                0x0000000000401400       0x47 uspace/app_vuhid.p/app_vuhid_device.c.o
+ *fill*         0x0000000000401447        0x9 
+ .text.interface_life_fibril
+                0x0000000000401450       0x48 uspace/app_vuhid.p/app_vuhid_device.c.o
+ *fill*         0x0000000000401498        0x8 
+ .text.add_interface_by_id
+                0x00000000004014a0      0x5c9 uspace/app_vuhid.p/app_vuhid_device.c.o
+                0x00000000004014a0                add_interface_by_id
+ *fill*         0x0000000000401a69        0x7 
+ .text.wait_for_interfaces_death
+                0x0000000000401a70       0x6d uspace/app_vuhid.p/app_vuhid_device.c.o
+                0x0000000000401a70                wait_for_interfaces_death
+ *fill*         0x0000000000401add        0x3 
+ .text.interface_life_live
+                0x0000000000401ae0       0x90 uspace/app_vuhid.p/app_vuhid_life.c.o
+                0x0000000000401ae0                interface_life_live
+ .text.interface_live_on_data_in
+                0x0000000000401b70       0x67 uspace/app_vuhid.p/app_vuhid_life.c.o
+                0x0000000000401b70                interface_live_on_data_in
+ *fill*         0x0000000000401bd7        0x9 
+ .text.req_get_descriptor
+                0x0000000000401be0       0x58 uspace/app_vuhid.p/app_vuhid_stdreq.c.o
+                0x0000000000401be0                req_get_descriptor
+ *fill*         0x0000000000401c38        0x8 
+ .text.req_set_protocol
+                0x0000000000401c40       0x2f uspace/app_vuhid.p/app_vuhid_stdreq.c.o
+                0x0000000000401c40                req_set_protocol
+ *fill*         0x0000000000401c6f        0x1 
+ .text.req_set_report
+                0x0000000000401c70       0x47 uspace/app_vuhid.p/app_vuhid_stdreq.c.o
+                0x0000000000401c70                req_set_report
+ *fill*         0x0000000000401cb7        0x9 
+ .text.on_data_out
+                0x0000000000401cc0       0x96 uspace/app_vuhid.p/app_vuhid_hids_bootkbd.c.o
+ .text          0x0000000000401d56        0xc uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                0x0000000000401d56                _start
+ *fill*         0x0000000000401d62        0xe 
+ .text.__c_start
+                0x0000000000401d70       0x8c uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                0x0000000000401d70                __c_start
+ *fill*         0x0000000000401dfc        0x4 
+ .text.usb_debug_str_buffer
+                0x0000000000401e00       0xa5 uspace/lib/libusb.a.p/usb_src_debug.c.o
+                0x0000000000401e00                usb_debug_str_buffer
+ *fill*         0x0000000000401ea5        0xb 
+ .text.ddf_dump_buffer
+                0x0000000000401eb0      0x3a5 uspace/lib/libdrv.a.p/drv_generic_logbuf.c.o
+                0x0000000000401eb0                ddf_dump_buffer
+ *fill*         0x0000000000402255        0xb 
+ .text.callback_connection
+                0x0000000000402260       0x79 uspace/lib/libusbvirt.a.p/usbvirt_src_device.c.o
+ *fill*         0x00000000004022d9        0x7 
+ .text.usbvirt_device_plug
+                0x00000000004022e0       0xa7 uspace/lib/libusbvirt.a.p/usbvirt_src_device.c.o
+                0x00000000004022e0                usbvirt_device_plug
+ *fill*         0x0000000000402387        0x9 
+ .text.usbvirt_device_unplug
+                0x0000000000402390        0xe uspace/lib/libusbvirt.a.p/usbvirt_src_device.c.o
+                0x0000000000402390                usbvirt_device_unplug
+ *fill*         0x000000000040239e        0x2 
+ .text.ipc_data_in
+                0x00000000004023a0      0x138 uspace/lib/libusbvirt.a.p/usbvirt_src_ipc_dev.c.o
+ *fill*         0x00000000004024d8        0x8 
+ .text.usbvirt_ipc_handle_call
+                0x00000000004024e0      0x447 uspace/lib/libusbvirt.a.p/usbvirt_src_ipc_dev.c.o
+                0x00000000004024e0                usbvirt_ipc_handle_call
+ *fill*         0x0000000000402927        0x9 
+ .text.req_set_address
+                0x0000000000402930       0x27 uspace/lib/libusbvirt.a.p/usbvirt_src_stdreq.c.o
+ *fill*         0x0000000000402957        0x9 
+ .text.req_set_configuration
+                0x0000000000402960       0x66 uspace/lib/libusbvirt.a.p/usbvirt_src_stdreq.c.o
+ *fill*         0x00000000004029c6        0xa 
+ .text.req_get_iface_ep_status
+                0x00000000004029d0       0x20 uspace/lib/libusbvirt.a.p/usbvirt_src_stdreq.c.o
+ .text.req_get_descriptor
+                0x00000000004029f0      0x252 uspace/lib/libusbvirt.a.p/usbvirt_src_stdreq.c.o
+ *fill*         0x0000000000402c42        0xe 
+ .text.req_get_dev_status
+                0x0000000000402c50       0x29 uspace/lib/libusbvirt.a.p/usbvirt_src_stdreq.c.o
+ *fill*         0x0000000000402c79        0x7 
+ .text.usbvirt_control_reply_helper
+                0x0000000000402c80       0x37 uspace/lib/libusbvirt.a.p/usbvirt_src_stdreq.c.o
+                0x0000000000402c80                usbvirt_control_reply_helper
+ *fill*         0x0000000000402cb7        0x9 
+ .text.usbvirt_control_write
+                0x0000000000402cc0      0x106 uspace/lib/libusbvirt.a.p/usbvirt_src_transfer.c.o
+                0x0000000000402cc0                usbvirt_control_write
+ *fill*         0x0000000000402dc6        0xa 
+ .text.usbvirt_control_read
+                0x0000000000402dd0      0x119 uspace/lib/libusbvirt.a.p/usbvirt_src_transfer.c.o
+                0x0000000000402dd0                usbvirt_control_read
+ *fill*         0x0000000000402ee9        0x7 
+ .text.usbvirt_data_out
+                0x0000000000402ef0       0x47 uspace/lib/libusbvirt.a.p/usbvirt_src_transfer.c.o
+                0x0000000000402ef0                usbvirt_data_out
+ *fill*         0x0000000000402f37        0x9 
+ .text.usbvirt_data_in
+                0x0000000000402f40       0x6b uspace/lib/libusbvirt.a.p/usbvirt_src_transfer.c.o
+                0x0000000000402f40                usbvirt_data_in
+ *fill*         0x0000000000402fab        0x5 
+ .text.process_control_transfer
+                0x0000000000402fb0       0xfc uspace/lib/libusbvirt.a.p/usbvirt_src_ctrltransfer.c.o
+                0x0000000000402fb0                process_control_transfer
+ *fill*         0x00000000004030ac        0x4 
+ .text.devman_exchange_begin_blocking
+                0x00000000004030b0      0x1ec uspace/lib/libdevice.a.p/device_src_devman.c.o
+                0x00000000004030b0                devman_exchange_begin_blocking
+ *fill*         0x000000000040329c        0x4 
+ .text.devman_device_connect
+                0x00000000004032a0       0x26 uspace/lib/libdevice.a.p/device_src_devman.c.o
+                0x00000000004032a0                devman_device_connect
+ *fill*         0x00000000004032c6        0xa 
+ .text.devman_fun_get_handle
+                0x00000000004032d0      0x15c uspace/lib/libdevice.a.p/device_src_devman.c.o
+                0x00000000004032d0                devman_fun_get_handle
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000403430      0x550
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.print_help.part.0.str1.1
+                0x0000000000403430      0x231 uspace/app_vuhid.p/app_vuhid_main.c.o
+                                         0x46 (size before relaxing)
+ *fill*         0x0000000000403661        0x7 
+ .rodata.print_help.part.0.str1.8
+                0x0000000000403668      0x2bc uspace/app_vuhid.p/app_vuhid_main.c.o
+                                         0xde (size before relaxing)
+ .rodata.main.str1.1
+                0x0000000000403924       0x96 uspace/app_vuhid.p/app_vuhid_main.c.o
+ .rodata.main.str1.8
+                0x0000000000403924       0x53 uspace/app_vuhid.p/app_vuhid_main.c.o
+ .rodata.str1.1
+                0x0000000000403924       0x40 uspace/app_vuhid.p/app_vuhid_main.c.o
+ .rodata.interface_life_live.str1.1
+                0x0000000000403924        0x3 uspace/app_vuhid.p/app_vuhid_life.c.o
+ *fill*         0x0000000000403924        0xc 
+ .rodata.cst16  0x0000000000403930       0x10 uspace/app_vuhid.p/app_vuhid_life.c.o
+ .rodata.on_data_out.str1.1
+                0x0000000000403940       0x16 uspace/app_vuhid.p/app_vuhid_hids_bootkbd.c.o
+ .rodata.str1.1
+                0x0000000000403940       0x27 uspace/app_vuhid.p/app_vuhid_hids_bootkbd.c.o
+ .rodata.str1.8
+                0x0000000000403940       0x1f uspace/app_vuhid.p/app_vuhid_hids_bootkbd.c.o
+ .rodata.str1.8
+                0x0000000000403940       0x9a uspace/app_vuhid.p/app_vuhid_hids_logitech_wireless.c.o
+ .rodata.str1.1
+                0x0000000000403940        0x4 uspace/app_vuhid.p/app_vuhid_hids_logitech_wireless.c.o
+ .rodata.cst8   0x0000000000403940        0x8 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .rodata.ddf_dump_buffer.str1.1
+                0x0000000000403948       0x3b uspace/lib/libdrv.a.p/drv_generic_logbuf.c.o
+ .rodata.callback_connection.str1.8
+                0x0000000000403948       0x2e uspace/lib/libusbvirt.a.p/usbvirt_src_device.c.o
+ .rodata.callback_connection.str1.1
+                0x0000000000403948        0xc uspace/lib/libusbvirt.a.p/usbvirt_src_device.c.o
+ .rodata.usbvirt_ipc_handle_call
+                0x0000000000403948       0x38 uspace/lib/libusbvirt.a.p/usbvirt_src_ipc_dev.c.o
+ .rodata.str1.1
+                0x0000000000403980       0x62 uspace/lib/libusbvirt.a.p/usbvirt_src_stdreq.c.o
+ .rodata.usbvirt_control_write.str1.1
+                0x0000000000403980       0x10 uspace/lib/libusbvirt.a.p/usbvirt_src_transfer.c.o
+ .rodata.usbvirt_control_write.str1.8
+                0x0000000000403980       0x58 uspace/lib/libusbvirt.a.p/usbvirt_src_transfer.c.o
+ .rodata.process_control_transfer.str1.8
+                0x0000000000403980       0x34 uspace/lib/libusbvirt.a.p/usbvirt_src_ctrltransfer.c.o
+ .rodata.process_control_transfer.str1.1
+                0x0000000000403980       0x23 uspace/lib/libusbvirt.a.p/usbvirt_src_ctrltransfer.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x0000000000403980      0x134
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x0000000000403980      0x134 uspace/app_vuhid.p/app_vuhid_main.c.o
+                0x0000000000403980                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x0000000000403ab8      0x61c
+ *(.eh_frame)
+ .eh_frame      0x0000000000403ab8       0x68 uspace/app_vuhid.p/app_vuhid_main.c.o
+ .eh_frame      0x0000000000403b20       0x28 uspace/app_vuhid.p/app_vuhid_main.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000403b48        0x0 uspace/app_vuhid.p/app_vuhid_main.c.o
+ .eh_frame      0x0000000000403b48       0xd8 uspace/app_vuhid.p/app_vuhid_device.c.o
+                                         0xf0 (size before relaxing)
+ .eh_frame      0x0000000000403c20       0x50 uspace/app_vuhid.p/app_vuhid_life.c.o
+                                         0x68 (size before relaxing)
+ .eh_frame      0x0000000000403c70       0x70 uspace/app_vuhid.p/app_vuhid_stdreq.c.o
+                                         0x88 (size before relaxing)
+ .eh_frame      0x0000000000403ce0       0x20 uspace/app_vuhid.p/app_vuhid_hids_bootkbd.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000403d00       0x20 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000403d20       0x28 uspace/lib/libusb.a.p/usb_src_debug.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000403d48       0x40 uspace/lib/libdrv.a.p/drv_generic_logbuf.c.o
+                                         0x58 (size before relaxing)
+ .eh_frame      0x0000000000403d88       0x68 uspace/lib/libusbvirt.a.p/usbvirt_src_device.c.o
+                                         0x80 (size before relaxing)
+ .eh_frame      0x0000000000403df0       0x88 uspace/lib/libusbvirt.a.p/usbvirt_src_ipc_dev.c.o
+                                         0xa0 (size before relaxing)
+ .eh_frame      0x0000000000403e78       0xe0 uspace/lib/libusbvirt.a.p/usbvirt_src_stdreq.c.o
+                                        0x118 (size before relaxing)
+ .eh_frame      0x0000000000403f58       0xb0 uspace/lib/libusbvirt.a.p/usbvirt_src_transfer.c.o
+                                         0xc8 (size before relaxing)
+ .eh_frame      0x0000000000404008       0x38 uspace/lib/libusbvirt.a.p/usbvirt_src_ctrltransfer.c.o
+                                         0x50 (size before relaxing)
+ .eh_frame      0x0000000000404040       0x94 uspace/lib/libdevice.a.p/device_src_devman.c.o
+                                        0x598 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x00000000004040d4        0x0
+ *(.sframe)
+ .sframe        0x00000000004040d4        0x0 uspace/app_vuhid.p/app_vuhid_main.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x00000000004050d4                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0x00000000004050d4        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss           0x00000000004050d4      0x1e4
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ .tbss.buffer_dump_index
+                0x00000000004050d4        0x4 uspace/lib/libusb.a.p/usb_src_debug.c.o
+ .tbss.buffer_dump
+                0x00000000004050d8      0x1e0 uspace/lib/libusb.a.p/usb_src_debug.c.o
+ *(.tcommon)
+
+.preinit_array  0x00000000004050d4        0x0
+                0x00000000004050d4                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x00000000004050d4                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x00000000004050d4        0x0
+                0x00000000004050d4                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x00000000004050d4                PROVIDE (__init_array_end = .)
+
+.fini_array     0x00000000004050d4        0x0
+                0x00000000004050d4                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x00000000004050d4                PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x00000000004050d4        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x00000000004050d4        0x0 uspace/app_vuhid.p/app_vuhid_main.c.o
+
+.dynamic        0x00000000004050d8      0x150
+ *(.dynamic)
+ .dynamic       0x00000000004050d8      0x150 uspace/app_vuhid.p/app_vuhid_main.c.o
+                0x00000000004050d8                _DYNAMIC
+
+.got            0x0000000000405228        0x0
+ *(.got)
+ .got           0x0000000000405228        0x0 uspace/app_vuhid.p/app_vuhid_main.c.o
+ *(.igot)
+                0x0000000000405228                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x0000000000405228      0x170
+ *(.got.plt)
+ .got.plt       0x0000000000405228      0x170 uspace/app_vuhid.p/app_vuhid_main.c.o
+                0x0000000000405228                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x0000000000405398        0x0 uspace/app_vuhid.p/app_vuhid_main.c.o
+
+.data           0x00000000004053a0      0x860
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.controller
+                0x00000000004053a0        0x8 uspace/app_vuhid.p/app_vuhid_main.c.o
+ *fill*         0x00000000004053a8       0x18 
+ .data.long_options
+                0x00000000004053c0       0x80 uspace/app_vuhid.p/app_vuhid_main.c.o
+ .data.hid_dev  0x0000000000405440       0x38 uspace/app_vuhid.p/app_vuhid_main.c.o
+ *fill*         0x0000000000405478        0x8 
+ .data.vuhid_data
+                0x0000000000405480      0x190 uspace/app_vuhid.p/app_vuhid_main.c.o
+ .data.descriptors
+                0x0000000000405610       0x18 uspace/app_vuhid.p/app_vuhid_main.c.o
+                0x0000000000405610                descriptors
+ *fill*         0x0000000000405628        0x8 
+ .data.configuration
+                0x0000000000405630       0x18 uspace/app_vuhid.p/app_vuhid_main.c.o
+                0x0000000000405630                configuration
+ *fill*         0x0000000000405648        0x8 
+ .data.std_device_descriptor
+                0x0000000000405650       0x12 uspace/app_vuhid.p/app_vuhid_main.c.o
+ *fill*         0x0000000000405662        0x6 
+ .data.std_configuration_descriptor
+                0x0000000000405668        0x9 uspace/app_vuhid.p/app_vuhid_main.c.o
+ *fill*         0x0000000000405671        0xf 
+ .data.hid_ops  0x0000000000405680      0x110 uspace/app_vuhid.p/app_vuhid_main.c.o
+ *fill*         0x0000000000405790       0x10 
+ .data.endpoint_zero_handlers
+                0x00000000004057a0       0x60 uspace/app_vuhid.p/app_vuhid_main.c.o
+ .data.available_hid_interfaces
+                0x0000000000405800       0x18 uspace/app_vuhid.p/app_vuhid_ifaces.c.o
+                0x0000000000405800                available_hid_interfaces
+ *fill*         0x0000000000405818        0x8 
+ .data.vuhid_interface_bootkbd
+                0x0000000000405820       0x68 uspace/app_vuhid.p/app_vuhid_hids_bootkbd.c.o
+                0x0000000000405820                vuhid_interface_bootkbd
+ *fill*         0x0000000000405888       0x18 
+ .data.boot_life
+                0x00000000004058a0       0x38 uspace/app_vuhid.p/app_vuhid_hids_bootkbd.c.o
+ *fill*         0x00000000004058d8        0x8 
+ .data.in_data  0x00000000004058e0       0x40 uspace/app_vuhid.p/app_vuhid_hids_bootkbd.c.o
+ .data.report_descriptor
+                0x0000000000405920       0x3f uspace/app_vuhid.p/app_vuhid_hids_bootkbd.c.o
+                0x0000000000405920                report_descriptor
+ *fill*         0x000000000040595f        0x1 
+ .data.vuhid_interface_logitech_wireless_1
+                0x0000000000405960       0x68 uspace/app_vuhid.p/app_vuhid_hids_logitech_wireless.c.o
+                0x0000000000405960                vuhid_interface_logitech_wireless_1
+ *fill*         0x00000000004059c8       0x18 
+ .data.iface1_life
+                0x00000000004059e0       0x38 uspace/app_vuhid.p/app_vuhid_hids_logitech_wireless.c.o
+ *fill*         0x0000000000405a18        0x8 
+ .data.iface1_report_descriptor
+                0x0000000000405a20       0x94 uspace/app_vuhid.p/app_vuhid_hids_logitech_wireless.c.o
+ *fill*         0x0000000000405ab4        0xc 
+ .data.library_handlers
+                0x0000000000405ac0       0xa8 uspace/lib/libusbvirt.a.p/usbvirt_src_stdreq.c.o
+                0x0000000000405ac0                library_handlers
+ *fill*         0x0000000000405b68       0x18 
+ .data.devman_client_mutex
+                0x0000000000405b80       0x20 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .data.devman_driver_mutex
+                0x0000000000405ba0       0x20 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .data.devman_client_block_mutex
+                0x0000000000405bc0       0x20 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .data.devman_driver_block_mutex
+                0x0000000000405be0       0x20 uspace/lib/libdevice.a.p/device_src_devman.c.o
+
+.data1
+ *(.data1)
+                0x0000000000405c00                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x0000000000405c00                . = .
+                0x0000000000405c00                __bss_start = .
+
+.bss            0x0000000000405c00       0xb8
+ *(.dynbss)
+ .dynbss        0x0000000000405c00       0x88 uspace/app_vuhid.p/app_vuhid_main.c.o
+                0x0000000000405c00                optarg
+                0x0000000000405c08                optind
+                0x0000000000405c20                __progsymbols
+                0x0000000000405c80                stderr
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss.iface1_in_data
+                0x0000000000405c88        0x8 uspace/app_vuhid.p/app_vuhid_hids_logitech_wireless.c.o
+ .bss.DEV       0x0000000000405c90        0x8 uspace/lib/libusbvirt.a.p/usbvirt_src_device.c.o
+ .bss.devman_client_sess
+                0x0000000000405c98        0x8 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .bss.devman_driver_sess
+                0x0000000000405ca0        0x8 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .bss.devman_client_block_sess
+                0x0000000000405ca8        0x8 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .bss.devman_driver_block_sess
+                0x0000000000405cb0        0x8 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ *(COMMON)
+                0x0000000000405cb8                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x0000000000405cb8                . = ALIGN (0x8)
+                0x0000000000405cb8                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x0000000000407cb8        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x0000000000407cb8                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000407cb8                . = ALIGN (0x8)
+                0x0000000000405cb8                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x0000000000407cb8                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/app_vuhid.p/app_vuhid_main.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/app_vuhid.p/app_vuhid_device.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_vuhid.p/app_vuhid_ifaces.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_vuhid.p/app_vuhid_life.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_vuhid.p/app_vuhid_stdreq.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_vuhid.p/app_vuhid_hids_bootkbd.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_vuhid.p/app_vuhid_hids_logitech_wireless.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libusb.a.p/usb_src_debug.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdrv.a.p/drv_generic_logbuf.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libusbvirt.a.p/usbvirt_src_device.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libusbvirt.a.p/usbvirt_src_ipc_dev.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libusbvirt.a.p/usbvirt_src_stdreq.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libusbvirt.a.p/usbvirt_src_transfer.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libusbvirt.a.p/usbvirt_src_ctrltransfer.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdevice.a.p/device_src_devman.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/app_vuhid elf64-x86-64)

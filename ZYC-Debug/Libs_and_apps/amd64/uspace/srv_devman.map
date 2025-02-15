@@ -1,0 +1,996 @@
+Archive member included to satisfy reference by file (symbol)
+
+uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                              (--whole-archive)
+uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                              (--whole-archive)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.0                     uspace/srv_devman.p/srv_devman_driver.c.o (loc_exchange_end)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/srv_devman.p/srv_devman_client_conn.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_devman.p/srv_devman_client_conn.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_devman.p/srv_devman_client_conn.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_devman.p/srv_devman_dev.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_devman.p/srv_devman_dev.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_devman.p/srv_devman_dev.c.o
+ .text.delete_dev_node
+                0x0000000000000000       0x5e uspace/srv_devman.p/srv_devman_dev.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_devman.p/srv_devman_devtree.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_devman.p/srv_devman_devtree.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_devman.p/srv_devman_devtree.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_devman.p/srv_devman_drv_conn.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_devman.p/srv_devman_drv_conn.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_devman.p/srv_devman_drv_conn.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_devman.p/srv_devman_driver.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_devman.p/srv_devman_driver.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_devman.p/srv_devman_driver.c.o
+ .text.init_driver.part.0
+                0x0000000000000000       0x18 uspace/srv_devman.p/srv_devman_driver.c.o
+ .text.create_driver
+                0x0000000000000000       0x54 uspace/srv_devman.p/srv_devman_driver.c.o
+ .text.add_driver
+                0x0000000000000000       0x7c uspace/srv_devman.p/srv_devman_driver.c.o
+ .text.attach_driver
+                0x0000000000000000       0xa5 uspace/srv_devman.p/srv_devman_driver.c.o
+ .text.init_driver
+                0x0000000000000000       0x6c uspace/srv_devman.p/srv_devman_driver.c.o
+ .text.delete_driver
+                0x0000000000000000       0x37 uspace/srv_devman.p/srv_devman_driver.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_devman.p/srv_devman_loc.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_devman.p/srv_devman_loc.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_devman.p/srv_devman_loc.c.o
+ .text.tree_add_loc_function
+                0x0000000000000000       0x46 uspace/srv_devman.p/srv_devman_loc.c.o
+ .text.tree_rem_loc_function
+                0x0000000000000000       0x43 uspace/srv_devman.p/srv_devman_loc.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_devman.p/srv_devman_fun.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_devman.p/srv_devman_fun.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_devman.p/srv_devman_fun.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_devman.p/srv_devman_main.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_devman.p/srv_devman_main.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_devman.p/srv_devman_main.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_devman.p/srv_devman_match.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_devman.p/srv_devman_match.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_devman.p/srv_devman_match.c.o
+ .text.read_match_id
+                0x0000000000000000       0x55 uspace/srv_devman.p/srv_devman_match.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_devman.p/srv_devman_util.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_devman.p/srv_devman_util.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_devman.p/srv_devman_util.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .text          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/srv_devman.p/srv_devman_client_conn.c.o
+LOAD uspace/srv_devman.p/srv_devman_dev.c.o
+LOAD uspace/srv_devman.p/srv_devman_devtree.c.o
+LOAD uspace/srv_devman.p/srv_devman_drv_conn.c.o
+LOAD uspace/srv_devman.p/srv_devman_driver.c.o
+LOAD uspace/srv_devman.p/srv_devman_loc.c.o
+LOAD uspace/srv_devman.p/srv_devman_fun.c.o
+LOAD uspace/srv_devman.p/srv_devman_main.c.o
+LOAD uspace/srv_devman.p/srv_devman_match.c.o
+LOAD uspace/srv_devman.p/srv_devman_util.c.o
+START GROUP
+LOAD uspace/lib/c/libstartfiles.a
+LOAD uspace/lib/libdevice.a
+LOAD uspace/lib/libc.so.0.0
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000400000                PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x0000000000400120                . = (SEGMENT_START ("text-segment", 0x400000) + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000400120      0x24c
+ *(.hash)
+ .hash          0x0000000000400120      0x24c uspace/srv_devman.p/srv_devman_client_conn.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x0000000000400370      0x750
+ *(.dynsym)
+ .dynsym        0x0000000000400370      0x750 uspace/srv_devman.p/srv_devman_client_conn.c.o
+
+.dynstr         0x0000000000400ac0      0x4e3
+ *(.dynstr)
+ .dynstr        0x0000000000400ac0      0x4e3 uspace/srv_devman.p/srv_devman_client_conn.c.o
+
+.gnu.version    0x0000000000400fa4        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000400fa4        0x0 uspace/srv_devman.p/srv_devman_client_conn.c.o
+
+.gnu.version_d  0x0000000000400fa8        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000400fa8        0x0 uspace/srv_devman.p/srv_devman_client_conn.c.o
+
+.gnu.version_r  0x0000000000400fa8        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000400fa8        0x0 uspace/srv_devman.p/srv_devman_client_conn.c.o
+
+.rela.dyn       0x0000000000400fa8       0x18
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text.__c_start
+                0x0000000000400fa8        0x0 uspace/srv_devman.p/srv_devman_client_conn.c.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ .rela.rodata.cst8
+                0x0000000000400fa8        0x0 uspace/srv_devman.p/srv_devman_client_conn.c.o
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x0000000000400fa8        0x0 uspace/srv_devman.p/srv_devman_client_conn.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000400fa8        0x0 uspace/srv_devman.p/srv_devman_client_conn.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x0000000000400fa8       0x18 uspace/srv_devman.p/srv_devman_client_conn.c.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+
+.rela.plt       0x0000000000400fc0      0x720
+ *(.rela.plt)
+ .rela.plt      0x0000000000400fc0      0x720 uspace/srv_devman.p/srv_devman_client_conn.c.o
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+ .rela.iplt     0x00000000004016e0        0x0 uspace/srv_devman.p/srv_devman_client_conn.c.o
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x00000000004016e0      0x4d0
+ *(.plt)
+ .plt           0x00000000004016e0      0x4d0 uspace/srv_devman.p/srv_devman_client_conn.c.o
+                0x00000000004016f0                loc_exchange_end
+                0x0000000000401700                loc_category_get_id
+                0x0000000000401710                task_retval
+                0x0000000000401720                printf
+                0x0000000000401730                async_hangup
+                0x0000000000401740                async_send_2
+                0x0000000000401750                fibril_rwlock_read_unlock
+                0x0000000000401760                async_wait_for
+                0x0000000000401770                hash_table_create
+                0x0000000000401780                log_init
+                0x0000000000401790                async_data_write_start
+                0x00000000004017a0                hash_table_insert
+                0x00000000004017b0                loc_service_register
+                0x00000000004017c0                async_get_call
+                0x00000000004017d0                fibril_mutex_is_locked
+                0x00000000004017e0                async_data_read_finalize
+                0x00000000004017f0                async_get_client_data
+                0x0000000000401800                vfs_stat_path
+                0x0000000000401810                async_sess_args_set
+                0x0000000000401820                malloc
+                0x0000000000401830                async_req_1_0
+                0x0000000000401840                strtoul
+                0x0000000000401850                vfs_put
+                0x0000000000401860                readdir
+                0x0000000000401870                isspace
+                0x0000000000401880                str_append
+                0x0000000000401890                async_answer_0
+                0x00000000004018a0                log_msg
+                0x00000000004018b0                async_set_client_data_destructor
+                0x00000000004018c0                async_exchange_end
+                0x00000000004018d0                calloc
+                0x00000000004018e0                fibril_mutex_unlock
+                0x00000000004018f0                str_dup
+                0x0000000000401900                loc_service_unregister
+                0x0000000000401910                fibril_create
+                0x0000000000401920                loc_service_add_to_cat
+                0x0000000000401930                fibril_rwlock_write_unlock
+                0x0000000000401940                str_cmp
+                0x0000000000401950                hash_table_remove
+                0x0000000000401960                __helenos_assert_abort
+                0x0000000000401970                async_data_read_receive
+                0x0000000000401980                async_accept_0
+                0x0000000000401990                vfs_read
+                0x00000000004019a0                opendir
+                0x00000000004019b0                str_cpy
+                0x00000000004019c0                fibril_rwlock_is_locked
+                0x00000000004019d0                async_set_client_data_constructor
+                0x00000000004019e0                asprintf
+                0x00000000004019f0                loc_server_register
+                0x0000000000401a00                str_size
+                0x0000000000401a10                fibril_rwlock_is_write_locked
+                0x0000000000401a20                list_count
+                0x0000000000401a30                async_answer_1
+                0x0000000000401a40                async_exchange_begin
+                0x0000000000401a50                str_error
+                0x0000000000401a60                hash_table_find
+                0x0000000000401a70                fibril_rwlock_write_lock
+                0x0000000000401a80                async_data_write_accept
+                0x0000000000401a90                fibril_rwlock_initialize
+                0x0000000000401aa0                __libc_main
+                0x0000000000401ab0                async_manager
+                0x0000000000401ac0                async_forget
+                0x0000000000401ad0                async_req_0_0
+                0x0000000000401ae0                async_forward_1
+                0x0000000000401af0                vfs_stat
+                0x0000000000401b00                fibril_add_ready
+                0x0000000000401b10                vfs_lookup_open
+                0x0000000000401b20                str_ncpy
+                0x0000000000401b30                fibril_rwlock_read_lock
+                0x0000000000401b40                closedir
+                0x0000000000401b50                async_set_fallback_port_handler
+                0x0000000000401b60                task_spawnl
+                0x0000000000401b70                service_register
+                0x0000000000401b80                async_callback_receive
+                0x0000000000401b90                free
+                0x0000000000401ba0                fibril_mutex_lock
+ *(.iplt)
+ .iplt          0x0000000000401bb0        0x0 uspace/srv_devman.p/srv_devman_client_conn.c.o
+
+.plt.got        0x0000000000401bb0        0x0
+ *(.plt.got)
+ .plt.got       0x0000000000401bb0        0x0 uspace/srv_devman.p/srv_devman_client_conn.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x0000000000401bb0     0x4f7c
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ .text.startup.main
+                0x0000000000401bb0      0x268 uspace/srv_devman.p/srv_devman_main.c.o
+                0x0000000000401bb0                main
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ *fill*         0x0000000000401e18        0x8 
+ .text.devman_connection_client
+                0x0000000000401e20      0xda9 uspace/srv_devman.p/srv_devman_client_conn.c.o
+                0x0000000000401e20                devman_connection_client
+ *fill*         0x0000000000402bc9        0x7 
+ .text.create_dev_node
+                0x0000000000402bd0       0x39 uspace/srv_devman.p/srv_devman_dev.c.o
+                0x0000000000402bd0                create_dev_node
+ *fill*         0x0000000000402c09        0x7 
+ .text.dev_add_ref
+                0x0000000000402c10       0x26 uspace/srv_devman.p/srv_devman_dev.c.o
+                0x0000000000402c10                dev_add_ref
+ *fill*         0x0000000000402c36        0xa 
+ .text.dev_del_ref
+                0x0000000000402c40       0xa1 uspace/srv_devman.p/srv_devman_dev.c.o
+                0x0000000000402c40                dev_del_ref
+ *fill*         0x0000000000402ce1        0xf 
+ .text.find_dev_node_no_lock
+                0x0000000000402cf0       0x4f uspace/srv_devman.p/srv_devman_dev.c.o
+                0x0000000000402cf0                find_dev_node_no_lock
+ *fill*         0x0000000000402d3f        0x1 
+ .text.find_dev_node
+                0x0000000000402d40       0x9c uspace/srv_devman.p/srv_devman_dev.c.o
+                0x0000000000402d40                find_dev_node
+ *fill*         0x0000000000402ddc        0x4 
+ .text.dev_get_functions
+                0x0000000000402de0       0xa4 uspace/srv_devman.p/srv_devman_dev.c.o
+                0x0000000000402de0                dev_get_functions
+ *fill*         0x0000000000402e84        0xc 
+ .text.handle_key_hash
+                0x0000000000402e90        0x9 uspace/srv_devman.p/srv_devman_devtree.c.o
+ *fill*         0x0000000000402e99        0x7 
+ .text.devman_devices_hash
+                0x0000000000402ea0        0xa uspace/srv_devman.p/srv_devman_devtree.c.o
+ *fill*         0x0000000000402eaa        0x6 
+ .text.devman_functions_hash
+                0x0000000000402eb0        0xa uspace/srv_devman.p/srv_devman_devtree.c.o
+ *fill*         0x0000000000402eba        0x6 
+ .text.devman_devices_key_equal
+                0x0000000000402ec0       0x10 uspace/srv_devman.p/srv_devman_devtree.c.o
+ .text.devman_functions_key_equal
+                0x0000000000402ed0       0x10 uspace/srv_devman.p/srv_devman_devtree.c.o
+ .text.loc_functions_hash
+                0x0000000000402ee0        0xa uspace/srv_devman.p/srv_devman_devtree.c.o
+ *fill*         0x0000000000402eea        0x6 
+ .text.loc_functions_key_equal
+                0x0000000000402ef0       0x10 uspace/srv_devman.p/srv_devman_devtree.c.o
+ .text.service_id_key_hash
+                0x0000000000402f00        0x9 uspace/srv_devman.p/srv_devman_devtree.c.o
+ *fill*         0x0000000000402f09        0x7 
+ .text.create_root_nodes
+                0x0000000000402f10      0x1fd uspace/srv_devman.p/srv_devman_devtree.c.o
+                0x0000000000402f10                create_root_nodes
+ *fill*         0x000000000040310d        0x3 
+ .text.init_device_tree
+                0x0000000000403110       0xb8 uspace/srv_devman.p/srv_devman_devtree.c.o
+                0x0000000000403110                init_device_tree
+ *fill*         0x00000000004031c8        0x8 
+ .text.insert_dev_node
+                0x00000000004031d0       0x90 uspace/srv_devman.p/srv_devman_devtree.c.o
+                0x00000000004031d0                insert_dev_node
+ .text.remove_dev_node
+                0x0000000000403260       0x77 uspace/srv_devman.p/srv_devman_devtree.c.o
+                0x0000000000403260                remove_dev_node
+ *fill*         0x00000000004032d7        0x9 
+ .text.insert_fun_node
+                0x00000000004032e0      0x12a uspace/srv_devman.p/srv_devman_devtree.c.o
+                0x00000000004032e0                insert_fun_node
+ *fill*         0x000000000040340a        0x6 
+ .text.remove_fun_node
+                0x0000000000403410       0x78 uspace/srv_devman.p/srv_devman_devtree.c.o
+                0x0000000000403410                remove_fun_node
+ *fill*         0x0000000000403488        0x8 
+ .text.init_running_drv
+                0x0000000000403490       0x3a uspace/srv_devman.p/srv_devman_drv_conn.c.o
+ *fill*         0x00000000004034ca        0x6 
+ .text.devman_connection_driver
+                0x00000000004034d0      0xd1e uspace/srv_devman.p/srv_devman_drv_conn.c.o
+                0x00000000004034d0                devman_connection_driver
+ *fill*         0x00000000004041ee        0x2 
+ .text.init_driver_list
+                0x00000000004041f0       0x52 uspace/srv_devman.p/srv_devman_driver.c.o
+                0x00000000004041f0                init_driver_list
+ *fill*         0x0000000000404242        0xe 
+ .text.get_driver_info
+                0x0000000000404250      0x1d5 uspace/srv_devman.p/srv_devman_driver.c.o
+                0x0000000000404250                get_driver_info
+ *fill*         0x0000000000404425        0xb 
+ .text.find_best_match_driver
+                0x0000000000404430       0xe4 uspace/srv_devman.p/srv_devman_driver.c.o
+                0x0000000000404430                find_best_match_driver
+ *fill*         0x0000000000404514        0xc 
+ .text.detach_driver
+                0x0000000000404520       0xb3 uspace/srv_devman.p/srv_devman_driver.c.o
+                0x0000000000404520                detach_driver
+ *fill*         0x00000000004045d3        0xd 
+ .text.start_driver
+                0x00000000004045e0       0xa9 uspace/srv_devman.p/srv_devman_driver.c.o
+                0x00000000004045e0                start_driver
+ *fill*         0x0000000000404689        0x7 
+ .text.stop_driver
+                0x0000000000404690       0x7b uspace/srv_devman.p/srv_devman_driver.c.o
+                0x0000000000404690                stop_driver
+ *fill*         0x000000000040470b        0x5 
+ .text.driver_find
+                0x0000000000404710       0x5c uspace/srv_devman.p/srv_devman_driver.c.o
+                0x0000000000404710                driver_find
+ *fill*         0x000000000040476c        0x4 
+ .text.driver_find_by_name
+                0x0000000000404770       0x64 uspace/srv_devman.p/srv_devman_driver.c.o
+                0x0000000000404770                driver_find_by_name
+ *fill*         0x00000000004047d4        0xc 
+ .text.clean_driver
+                0x00000000004047e0      0x105 uspace/srv_devman.p/srv_devman_driver.c.o
+                0x00000000004047e0                clean_driver
+ *fill*         0x00000000004048e5        0xb 
+ .text.lookup_available_drivers
+                0x00000000004048f0      0x1d4 uspace/srv_devman.p/srv_devman_driver.c.o
+                0x00000000004048f0                lookup_available_drivers
+ *fill*         0x0000000000404ac4        0xc 
+ .text.add_device
+                0x0000000000404ad0       0xf1 uspace/srv_devman.p/srv_devman_driver.c.o
+                0x0000000000404ad0                add_device
+ *fill*         0x0000000000404bc1        0xf 
+ .text.initialize_running_driver
+                0x0000000000404bd0      0x1ba uspace/srv_devman.p/srv_devman_driver.c.o
+                0x0000000000404bd0                initialize_running_driver
+ *fill*         0x0000000000404d8a        0x6 
+ .text.assign_driver
+                0x0000000000404d90      0x1e5 uspace/srv_devman.p/srv_devman_driver.c.o
+                0x0000000000404d90                assign_driver
+ *fill*         0x0000000000404f75        0xb 
+ .text.driver_reassign_fibril
+                0x0000000000404f80       0x2b uspace/srv_devman.p/srv_devman_driver.c.o
+ *fill*         0x0000000000404fab        0x5 
+ .text.driver_dev_remove
+                0x0000000000404fb0       0x94 uspace/srv_devman.p/srv_devman_driver.c.o
+                0x0000000000404fb0                driver_dev_remove
+ *fill*         0x0000000000405044        0xc 
+ .text.driver_dev_gone
+                0x0000000000405050       0x94 uspace/srv_devman.p/srv_devman_driver.c.o
+                0x0000000000405050                driver_dev_gone
+ *fill*         0x00000000004050e4        0xc 
+ .text.driver_fun_online
+                0x00000000004050f0       0xac uspace/srv_devman.p/srv_devman_driver.c.o
+                0x00000000004050f0                driver_fun_online
+ *fill*         0x000000000040519c        0x4 
+ .text.driver_fun_offline
+                0x00000000004051a0       0xac uspace/srv_devman.p/srv_devman_driver.c.o
+                0x00000000004051a0                driver_fun_offline
+ *fill*         0x000000000040524c        0x4 
+ .text.driver_get_list
+                0x0000000000405250       0xcc uspace/srv_devman.p/srv_devman_driver.c.o
+                0x0000000000405250                driver_get_list
+ *fill*         0x000000000040531c        0x4 
+ .text.driver_get_devices
+                0x0000000000405320       0xbc uspace/srv_devman.p/srv_devman_driver.c.o
+                0x0000000000405320                driver_get_devices
+ *fill*         0x00000000004053dc        0x4 
+ .text.loc_register_tree_function
+                0x00000000004053e0      0x114 uspace/srv_devman.p/srv_devman_loc.c.o
+                0x00000000004053e0                loc_register_tree_function
+ *fill*         0x00000000004054f4        0xc 
+ .text.loc_unregister_tree_function
+                0x0000000000405500       0x66 uspace/srv_devman.p/srv_devman_loc.c.o
+                0x0000000000405500                loc_unregister_tree_function
+ *fill*         0x0000000000405566        0xa 
+ .text.find_loc_tree_function
+                0x0000000000405570       0x59 uspace/srv_devman.p/srv_devman_loc.c.o
+                0x0000000000405570                find_loc_tree_function
+ *fill*         0x00000000004055c9        0x7 
+ .text.assign_driver_fibril
+                0x00000000004055d0       0x2b uspace/srv_devman.p/srv_devman_fun.c.o
+ *fill*         0x00000000004055fb        0x5 
+ .text.create_fun_node
+                0x0000000000405600       0x59 uspace/srv_devman.p/srv_devman_fun.c.o
+                0x0000000000405600                create_fun_node
+ *fill*         0x0000000000405659        0x7 
+ .text.delete_fun_node
+                0x0000000000405660       0xb6 uspace/srv_devman.p/srv_devman_fun.c.o
+                0x0000000000405660                delete_fun_node
+ *fill*         0x0000000000405716        0xa 
+ .text.fun_add_ref
+                0x0000000000405720       0x26 uspace/srv_devman.p/srv_devman_fun.c.o
+                0x0000000000405720                fun_add_ref
+ *fill*         0x0000000000405746        0xa 
+ .text.fun_del_ref
+                0x0000000000405750       0x4d uspace/srv_devman.p/srv_devman_fun.c.o
+                0x0000000000405750                fun_del_ref
+ *fill*         0x000000000040579d        0x3 
+ .text.fun_busy_lock
+                0x00000000004057a0        0xe uspace/srv_devman.p/srv_devman_fun.c.o
+                0x00000000004057a0                fun_busy_lock
+ *fill*         0x00000000004057ae        0x2 
+ .text.fun_busy_unlock
+                0x00000000004057b0        0xe uspace/srv_devman.p/srv_devman_fun.c.o
+                0x00000000004057b0                fun_busy_unlock
+ *fill*         0x00000000004057be        0x2 
+ .text.find_fun_node_no_lock
+                0x00000000004057c0       0x4f uspace/srv_devman.p/srv_devman_fun.c.o
+                0x00000000004057c0                find_fun_node_no_lock
+ *fill*         0x000000000040580f        0x1 
+ .text.find_fun_node
+                0x0000000000405810       0x9c uspace/srv_devman.p/srv_devman_fun.c.o
+                0x0000000000405810                find_fun_node
+ *fill*         0x00000000004058ac        0x4 
+ .text.set_fun_path
+                0x00000000004058b0      0x112 uspace/srv_devman.p/srv_devman_fun.c.o
+                0x00000000004058b0                set_fun_path
+ *fill*         0x00000000004059c2        0xe 
+ .text.find_fun_node_in_device
+                0x00000000004059d0       0xcb uspace/srv_devman.p/srv_devman_fun.c.o
+                0x00000000004059d0                find_fun_node_in_device
+ *fill*         0x0000000000405a9b        0x5 
+ .text.find_fun_node_by_path
+                0x0000000000405aa0      0x15d uspace/srv_devman.p/srv_devman_fun.c.o
+                0x0000000000405aa0                find_fun_node_by_path
+ *fill*         0x0000000000405bfd        0x3 
+ .text.fun_online
+                0x0000000000405c00      0x140 uspace/srv_devman.p/srv_devman_fun.c.o
+                0x0000000000405c00                fun_online
+ .text.fun_offline
+                0x0000000000405d40      0x1b7 uspace/srv_devman.p/srv_devman_fun.c.o
+                0x0000000000405d40                fun_offline
+ *fill*         0x0000000000405ef7        0x9 
+ .text.devman_connection_parent
+                0x0000000000405f00      0x225 uspace/srv_devman.p/srv_devman_main.c.o
+ *fill*         0x0000000000406125        0xb 
+ .text.devman_connection_device
+                0x0000000000406130      0x223 uspace/srv_devman.p/srv_devman_main.c.o
+ *fill*         0x0000000000406353        0xd 
+ .text.devman_forward
+                0x0000000000406360       0xfd uspace/srv_devman.p/srv_devman_main.c.o
+ *fill*         0x000000000040645d        0x3 
+ .text.devman_client_data_destroy
+                0x0000000000406460        0xa uspace/srv_devman.p/srv_devman_main.c.o
+ *fill*         0x000000000040646a        0x6 
+ .text.devman_client_data_create
+                0x0000000000406470       0x32 uspace/srv_devman.p/srv_devman_main.c.o
+ *fill*         0x00000000004064a2        0xe 
+ .text.get_match_score
+                0x00000000004064b0       0xbb uspace/srv_devman.p/srv_devman_match.c.o
+                0x00000000004064b0                get_match_score
+ *fill*         0x000000000040656b        0x5 
+ .text.parse_match_ids
+                0x0000000000406570      0x136 uspace/srv_devman.p/srv_devman_match.c.o
+                0x0000000000406570                parse_match_ids
+ *fill*         0x00000000004066a6        0xa 
+ .text.read_match_ids
+                0x00000000004066b0      0x1c3 uspace/srv_devman.p/srv_devman_match.c.o
+                0x00000000004066b0                read_match_ids
+ *fill*         0x0000000000406873        0xd 
+ .text.get_abs_path
+                0x0000000000406880       0xe2 uspace/srv_devman.p/srv_devman_util.c.o
+                0x0000000000406880                get_abs_path
+ *fill*         0x0000000000406962        0xe 
+ .text.get_path_elem_end
+                0x0000000000406970       0x23 uspace/srv_devman.p/srv_devman_util.c.o
+                0x0000000000406970                get_path_elem_end
+ *fill*         0x0000000000406993        0xd 
+ .text.skip_spaces
+                0x00000000004069a0       0x2e uspace/srv_devman.p/srv_devman_util.c.o
+                0x00000000004069a0                skip_spaces
+ *fill*         0x00000000004069ce        0x2 
+ .text.skip_line
+                0x00000000004069d0       0x35 uspace/srv_devman.p/srv_devman_util.c.o
+                0x00000000004069d0                skip_line
+ *fill*         0x0000000000406a05        0xb 
+ .text.get_nonspace_len
+                0x0000000000406a10       0x3f uspace/srv_devman.p/srv_devman_util.c.o
+                0x0000000000406a10                get_nonspace_len
+ *fill*         0x0000000000406a4f        0x1 
+ .text.replace_char
+                0x0000000000406a50       0x38 uspace/srv_devman.p/srv_devman_util.c.o
+                0x0000000000406a50                replace_char
+ .text          0x0000000000406a88        0xc uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                0x0000000000406a88                _start
+ *fill*         0x0000000000406a94        0xc 
+ .text.__c_start
+                0x0000000000406aa0       0x8c uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                0x0000000000406aa0                __c_start
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000406b40     0x10e8
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.devman_connection_client
+                0x0000000000406b40       0x98 uspace/srv_devman.p/srv_devman_client_conn.c.o
+ .rodata.delete_dev_node.str1.8
+                0x0000000000406bd8      0xc69 uspace/srv_devman.p/srv_devman_dev.c.o
+                                         0x26 (size before relaxing)
+ .rodata.delete_dev_node.str1.1
+                0x0000000000407841      0x2e7 uspace/srv_devman.p/srv_devman_dev.c.o
+                                         0x3f (size before relaxing)
+ .rodata.dev_add_ref.str1.8
+                0x0000000000407b28       0x2e uspace/srv_devman.p/srv_devman_dev.c.o
+ .rodata.dev_add_ref.str1.1
+                0x0000000000407b28        0x9 uspace/srv_devman.p/srv_devman_dev.c.o
+ .rodata.dev_del_ref.str1.1
+                0x0000000000407b28        0xa uspace/srv_devman.p/srv_devman_dev.c.o
+ .rodata.find_dev_node_no_lock.str1.8
+                0x0000000000407b28       0x27 uspace/srv_devman.p/srv_devman_dev.c.o
+ .rodata.create_root_nodes.str1.1
+                0x0000000000407b28       0x2b uspace/srv_devman.p/srv_devman_devtree.c.o
+ .rodata.create_root_nodes.str1.8
+                0x0000000000407b28       0x88 uspace/srv_devman.p/srv_devman_devtree.c.o
+ .rodata.init_device_tree.str1.1
+                0x0000000000407b28       0x13 uspace/srv_devman.p/srv_devman_devtree.c.o
+ .rodata.remove_dev_node.str1.1
+                0x0000000000407b28       0x18 uspace/srv_devman.p/srv_devman_devtree.c.o
+ *fill*         0x0000000000407b28       0x18 
+ .rodata.loc_devices_ops
+                0x0000000000407b40       0x28 uspace/srv_devman.p/srv_devman_devtree.c.o
+ *fill*         0x0000000000407b68       0x18 
+ .rodata.devman_functions_ops
+                0x0000000000407b80       0x28 uspace/srv_devman.p/srv_devman_devtree.c.o
+ *fill*         0x0000000000407ba8       0x18 
+ .rodata.devman_devices_ops
+                0x0000000000407bc0       0x28 uspace/srv_devman.p/srv_devman_devtree.c.o
+ .rodata.init_running_drv.str1.8
+                0x0000000000407be8       0x2e uspace/srv_devman.p/srv_devman_drv_conn.c.o
+ .rodata.devman_connection_driver.str1.8
+                0x0000000000407be8      0x365 uspace/srv_devman.p/srv_devman_drv_conn.c.o
+ .rodata.devman_connection_driver.str1.1
+                0x0000000000407be8       0x53 uspace/srv_devman.p/srv_devman_drv_conn.c.o
+ .rodata.devman_connection_driver
+                0x0000000000407be8       0x38 uspace/srv_devman.p/srv_devman_drv_conn.c.o
+ .rodata.init_driver.part.0.str1.8
+                0x0000000000407c20       0x29 uspace/srv_devman.p/srv_devman_driver.c.o
+ .rodata.init_driver.part.0.str1.1
+                0x0000000000407c20        0xc uspace/srv_devman.p/srv_devman_driver.c.o
+ .rodata.init_driver_list.str1.1
+                0x0000000000407c20       0x11 uspace/srv_devman.p/srv_devman_driver.c.o
+ .rodata.add_driver.str1.8
+                0x0000000000407c20       0x38 uspace/srv_devman.p/srv_devman_driver.c.o
+ .rodata.get_driver_info.str1.8
+                0x0000000000407c20       0x87 uspace/srv_devman.p/srv_devman_driver.c.o
+ .rodata.get_driver_info.str1.1
+                0x0000000000407c20        0x5 uspace/srv_devman.p/srv_devman_driver.c.o
+ .rodata.attach_driver.str1.8
+                0x0000000000407c20       0x21 uspace/srv_devman.p/srv_devman_driver.c.o
+ .rodata.detach_driver.str1.8
+                0x0000000000407c20       0x21 uspace/srv_devman.p/srv_devman_driver.c.o
+ .rodata.start_driver.str1.8
+                0x0000000000407c20       0x56 uspace/srv_devman.p/srv_devman_driver.c.o
+ .rodata.start_driver.str1.1
+                0x0000000000407c20       0x17 uspace/srv_devman.p/srv_devman_driver.c.o
+ .rodata.stop_driver.str1.1
+                0x0000000000407c20       0x16 uspace/srv_devman.p/srv_devman_driver.c.o
+ .rodata.lookup_available_drivers.str1.8
+                0x0000000000407c20       0x23 uspace/srv_devman.p/srv_devman_driver.c.o
+ .rodata.add_device.str1.8
+                0x0000000000407c20       0x1f uspace/srv_devman.p/srv_devman_driver.c.o
+ .rodata.initialize_running_driver.str1.8
+                0x0000000000407c20       0x9a uspace/srv_devman.p/srv_devman_driver.c.o
+ .rodata.assign_driver.str1.1
+                0x0000000000407c20       0x2e uspace/srv_devman.p/srv_devman_driver.c.o
+ .rodata.assign_driver.str1.8
+                0x0000000000407c20       0x21 uspace/srv_devman.p/srv_devman_driver.c.o
+ .rodata.driver_dev_remove.str1.1
+                0x0000000000407c20       0x16 uspace/srv_devman.p/srv_devman_driver.c.o
+ .rodata.driver_dev_gone.str1.1
+                0x0000000000407c20       0x14 uspace/srv_devman.p/srv_devman_driver.c.o
+ .rodata.driver_fun_online.str1.1
+                0x0000000000407c20       0x16 uspace/srv_devman.p/srv_devman_driver.c.o
+ .rodata.driver_fun_offline.str1.1
+                0x0000000000407c20       0x17 uspace/srv_devman.p/srv_devman_driver.c.o
+ .rodata.loc_register_tree_function.str1.8
+                0x0000000000407c20       0x7d uspace/srv_devman.p/srv_devman_loc.c.o
+ .rodata.loc_register_tree_function.str1.1
+                0x0000000000407c20       0x11 uspace/srv_devman.p/srv_devman_loc.c.o
+ .rodata.delete_fun_node.str1.8
+                0x0000000000407c20       0x26 uspace/srv_devman.p/srv_devman_fun.c.o
+ .rodata.delete_fun_node.str1.1
+                0x0000000000407c20       0x24 uspace/srv_devman.p/srv_devman_fun.c.o
+ .rodata.fun_add_ref.str1.8
+                0x0000000000407c20       0x2e uspace/srv_devman.p/srv_devman_fun.c.o
+ .rodata.fun_add_ref.str1.1
+                0x0000000000407c20        0x9 uspace/srv_devman.p/srv_devman_fun.c.o
+ .rodata.fun_del_ref.str1.1
+                0x0000000000407c20        0xa uspace/srv_devman.p/srv_devman_fun.c.o
+ .rodata.find_fun_node_no_lock.str1.8
+                0x0000000000407c20       0x27 uspace/srv_devman.p/srv_devman_fun.c.o
+ .rodata.set_fun_path.str1.8
+                0x0000000000407c20       0x50 uspace/srv_devman.p/srv_devman_fun.c.o
+ .rodata.set_fun_path.str1.1
+                0x0000000000407c20       0x14 uspace/srv_devman.p/srv_devman_fun.c.o
+ .rodata.find_fun_node_in_device.str1.1
+                0x0000000000407c20        0xd uspace/srv_devman.p/srv_devman_fun.c.o
+ .rodata.find_fun_node_by_path.str1.1
+                0x0000000000407c20        0xd uspace/srv_devman.p/srv_devman_fun.c.o
+ .rodata.fun_online.str1.8
+                0x0000000000407c20       0x4e uspace/srv_devman.p/srv_devman_fun.c.o
+ .rodata.fun_online.str1.1
+                0x0000000000407c20       0x2a uspace/srv_devman.p/srv_devman_fun.c.o
+ .rodata.fun_offline.str1.8
+                0x0000000000407c20       0x4b uspace/srv_devman.p/srv_devman_fun.c.o
+ .rodata.fun_offline.str1.1
+                0x0000000000407c20       0x1d uspace/srv_devman.p/srv_devman_fun.c.o
+ .rodata.devman_connection_parent.str1.8
+                0x0000000000407c20      0x123 uspace/srv_devman.p/srv_devman_main.c.o
+ .rodata.devman_connection_device.str1.8
+                0x0000000000407c20       0x51 uspace/srv_devman.p/srv_devman_main.c.o
+ .rodata.devman_forward.str1.8
+                0x0000000000407c20       0x65 uspace/srv_devman.p/srv_devman_main.c.o
+ .rodata.main.str1.1
+                0x0000000000407c20       0x56 uspace/srv_devman.p/srv_devman_main.c.o
+ .rodata.main.str1.8
+                0x0000000000407c20      0x1ab uspace/srv_devman.p/srv_devman_main.c.o
+ .rodata.read_match_ids.str1.8
+                0x0000000000407c20       0xa1 uspace/srv_devman.p/srv_devman_match.c.o
+ .rodata.read_match_ids.str1.1
+                0x0000000000407c20       0x36 uspace/srv_devman.p/srv_devman_match.c.o
+ .rodata.get_abs_path.str1.1
+                0x0000000000407c20        0x4 uspace/srv_devman.p/srv_devman_util.c.o
+ .rodata.cst8   0x0000000000407c20        0x8 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x0000000000407c28      0x274
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x0000000000407c28      0x274 uspace/srv_devman.p/srv_devman_client_conn.c.o
+                0x0000000000407c28                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x0000000000407ea0      0xc6c
+ *(.eh_frame)
+ .eh_frame      0x0000000000407ea0       0x48 uspace/srv_devman.p/srv_devman_client_conn.c.o
+ .eh_frame      0x0000000000407ee8       0x28 uspace/srv_devman.p/srv_devman_client_conn.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000407f10        0x0 uspace/srv_devman.p/srv_devman_client_conn.c.o
+ .eh_frame      0x0000000000407f10       0xe8 uspace/srv_devman.p/srv_devman_dev.c.o
+                                        0x120 (size before relaxing)
+ .eh_frame      0x0000000000407ff8      0x200 uspace/srv_devman.p/srv_devman_devtree.c.o
+                                        0x218 (size before relaxing)
+ .eh_frame      0x00000000004081f8       0x58 uspace/srv_devman.p/srv_devman_drv_conn.c.o
+                                         0x70 (size before relaxing)
+ .eh_frame      0x0000000000408250      0x380 uspace/srv_devman.p/srv_devman_driver.c.o
+                                        0x468 (size before relaxing)
+ .eh_frame      0x00000000004085d0       0x88 uspace/srv_devman.p/srv_devman_loc.c.o
+                                         0xf0 (size before relaxing)
+ .eh_frame      0x0000000000408658      0x220 uspace/srv_devman.p/srv_devman_fun.c.o
+                                        0x238 (size before relaxing)
+ .eh_frame      0x0000000000408878      0x110 uspace/srv_devman.p/srv_devman_main.c.o
+                                        0x128 (size before relaxing)
+ .eh_frame      0x0000000000408988       0x90 uspace/srv_devman.p/srv_devman_match.c.o
+                                         0xd0 (size before relaxing)
+ .eh_frame      0x0000000000408a18       0xd8 uspace/srv_devman.p/srv_devman_util.c.o
+                                         0xf0 (size before relaxing)
+ .eh_frame      0x0000000000408af0       0x1c uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                                         0x38 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x0000000000408b0c        0x0
+ *(.sframe)
+ .sframe        0x0000000000408b0c        0x0 uspace/srv_devman.p/srv_devman_client_conn.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x0000000000409000                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0x0000000000409000        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0000000000409000        0x0
+                0x0000000000409000                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x0000000000409000                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x0000000000409000        0x0
+                0x0000000000409000                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x0000000000409000                PROVIDE (__init_array_end = .)
+
+.fini_array     0x0000000000409000        0x0
+                0x0000000000409000                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x0000000000409000                PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x0000000000409000        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x0000000000409000        0x0 uspace/srv_devman.p/srv_devman_client_conn.c.o
+
+.dynamic        0x0000000000409000      0x150
+ *(.dynamic)
+ .dynamic       0x0000000000409000      0x150 uspace/srv_devman.p/srv_devman_client_conn.c.o
+                0x0000000000409000                _DYNAMIC
+
+.got            0x0000000000409150        0x0
+ *(.got)
+ .got           0x0000000000409150        0x0 uspace/srv_devman.p/srv_devman_client_conn.c.o
+ *(.igot)
+                0x0000000000409150                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x0000000000409150      0x278
+ *(.got.plt)
+ .got.plt       0x0000000000409150      0x278 uspace/srv_devman.p/srv_devman_client_conn.c.o
+                0x0000000000409150                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x00000000004093c8        0x0 uspace/srv_devman.p/srv_devman_client_conn.c.o
+
+.data
+ *(.data .data.* .gnu.linkonce.d.*)
+
+.data1
+ *(.data1)
+                0x00000000004093c8                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x00000000004093c8                . = .
+                0x00000000004093c8                __bss_start = .
+
+.bss            0x00000000004093e0      0x178
+ *(.dynbss)
+ .dynbss        0x00000000004093e0       0x48 uspace/srv_devman.p/srv_devman_client_conn.c.o
+                0x00000000004093e0                __progsymbols
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss.devman_srv
+                0x0000000000409428        0x8 uspace/srv_devman.p/srv_devman_main.c.o
+                0x0000000000409428                devman_srv
+ *fill*         0x0000000000409430       0x10 
+ .bss.device_tree
+                0x0000000000409440       0xd8 uspace/srv_devman.p/srv_devman_main.c.o
+                0x0000000000409440                device_tree
+ *fill*         0x0000000000409518        0x8 
+ .bss.drivers_list
+                0x0000000000409520       0x38 uspace/srv_devman.p/srv_devman_main.c.o
+                0x0000000000409520                drivers_list
+ *(COMMON)
+                0x0000000000409558                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x0000000000409558                . = ALIGN (0x8)
+                0x0000000000409558                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x000000000040b558        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x000000000040b558                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x000000000040b558                . = ALIGN (0x8)
+                0x0000000000409558                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x000000000040b558                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/srv_devman.p/srv_devman_client_conn.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/srv_devman.p/srv_devman_dev.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_devman.p/srv_devman_devtree.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_devman.p/srv_devman_drv_conn.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_devman.p/srv_devman_driver.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_devman.p/srv_devman_loc.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_devman.p/srv_devman_fun.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_devman.p/srv_devman_main.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_devman.p/srv_devman_match.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_devman.p/srv_devman_util.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/srv_devman elf64-x86-64)

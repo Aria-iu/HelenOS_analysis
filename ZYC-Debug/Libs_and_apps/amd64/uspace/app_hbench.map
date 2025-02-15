@@ -1,0 +1,1047 @@
+Archive member included to satisfy reference by file (symbol)
+
+uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                              (--whole-archive)
+uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                              (--whole-archive)
+uspace/lib/libblock.a.p/block_block.c.o
+                              uspace/app_hbench.p/app_hbench_disk_randread.c.o (block_init)
+uspace/lib/libdevice.a.p/device_src_bd.c.o
+                              uspace/lib/libblock.a.p/block_block.c.o (bd_open)
+uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+                              uspace/app_hbench.p/app_hbench_ipc_ping_pong.c.o (ipc_test_create)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.0                     uspace/lib/libblock.a.p/block_block.c.o (loc_service_connect)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_benchlist.c.o
+ .data          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_benchlist.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_benchlist.c.o
+ .text          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_csv.c.o
+ .data          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_csv.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_csv.c.o
+ .text          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_env.c.o
+ .data          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_env.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_env.c.o
+ .text          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_main.c.o
+ .data          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_main.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_main.c.o
+ .text          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_utils.c.o
+ .data          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_utils.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_utils.c.o
+ .text          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_disk_randread.c.o
+ .data          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_disk_randread.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_disk_randread.c.o
+ .text          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_disk_seqread.c.o
+ .data          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_disk_seqread.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_disk_seqread.c.o
+ .text          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_fs_dirread.c.o
+ .data          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_fs_dirread.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_fs_dirread.c.o
+ .text          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_fs_fileread.c.o
+ .data          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_fs_fileread.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_fs_fileread.c.o
+ .text          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_ipc_ns_ping.c.o
+ .data          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_ipc_ns_ping.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_ipc_ns_ping.c.o
+ .text          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_ipc_ping_pong.c.o
+ .data          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_ipc_ping_pong.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_ipc_ping_pong.c.o
+ .text          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_ipc_read1k.c.o
+ .data          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_ipc_read1k.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_ipc_read1k.c.o
+ .text          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_ipc_write1k.c.o
+ .data          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_ipc_write1k.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_ipc_write1k.c.o
+ .text          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_malloc_malloc1.c.o
+ .data          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_malloc_malloc1.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_malloc_malloc1.c.o
+ .text          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_malloc_malloc2.c.o
+ .data          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_malloc_malloc2.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_malloc_malloc2.c.o
+ .text          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_synch_fibril_mutex.c.o
+ .data          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_synch_fibril_mutex.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_synch_fibril_mutex.c.o
+ .text          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_syscall_taskgetid.c.o
+ .data          0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_syscall_taskgetid.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_hbench.p/app_hbench_syscall_taskgetid.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .text          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libblock.a.p/block_block.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libblock.a.p/block_block.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libblock.a.p/block_block.c.o
+ .text.cache_key_hash
+                0x0000000000000000        0x9 uspace/lib/libblock.a.p/block_block.c.o
+ .text.cache_hash
+                0x0000000000000000        0xa uspace/lib/libblock.a.p/block_block.c.o
+ .text.cache_key_equal
+                0x0000000000000000       0x10 uspace/lib/libblock.a.p/block_block.c.o
+ .text.read_blocks.part.0
+                0x0000000000000000       0x18 uspace/lib/libblock.a.p/block_block.c.o
+ .text.write_blocks.part.0
+                0x0000000000000000       0x18 uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_bb_read
+                0x0000000000000000      0x120 uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_bb_get
+                0x0000000000000000       0x7e uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_cache_init
+                0x0000000000000000      0x16c uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.block_put.str1.1
+                0x0000000000000000       0x21 uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.block_put.str1.8
+                0x0000000000000000       0x53 uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_put
+                0x0000000000000000      0x2f0 uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.block_get.str1.1
+                0x0000000000000000       0x1f uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_get
+                0x0000000000000000      0x528 uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_seqread
+                0x0000000000000000      0x1be uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_write_direct
+                0x0000000000000000       0xda uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_sync_cache
+                0x0000000000000000       0x86 uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_read_bytes_direct
+                0x0000000000000000      0x1e8 uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_read_toc
+                0x0000000000000000       0x9e uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.cache_ops
+                0x0000000000000000       0x28 uspace/lib/libblock.a.p/block_block.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_bd.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_bd.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_bd.c.o
+ .text.bd_read_toc
+                0x0000000000000000       0x9a uspace/lib/libdevice.a.p/device_src_bd.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+ .text.ipc_test_get_ro_area_size
+                0x0000000000000000       0x4f uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+ .text.ipc_test_get_rw_area_size
+                0x0000000000000000       0x4f uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+ .text.ipc_test_share_in_ro
+                0x0000000000000000       0xb6 uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+ .text.ipc_test_share_in_rw
+                0x0000000000000000       0xae uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/app_hbench.p/app_hbench_benchlist.c.o
+LOAD uspace/app_hbench.p/app_hbench_csv.c.o
+LOAD uspace/app_hbench.p/app_hbench_env.c.o
+LOAD uspace/app_hbench.p/app_hbench_main.c.o
+LOAD uspace/app_hbench.p/app_hbench_utils.c.o
+LOAD uspace/app_hbench.p/app_hbench_disk_randread.c.o
+LOAD uspace/app_hbench.p/app_hbench_disk_seqread.c.o
+LOAD uspace/app_hbench.p/app_hbench_fs_dirread.c.o
+LOAD uspace/app_hbench.p/app_hbench_fs_fileread.c.o
+LOAD uspace/app_hbench.p/app_hbench_ipc_ns_ping.c.o
+LOAD uspace/app_hbench.p/app_hbench_ipc_ping_pong.c.o
+LOAD uspace/app_hbench.p/app_hbench_ipc_read1k.c.o
+LOAD uspace/app_hbench.p/app_hbench_ipc_write1k.c.o
+LOAD uspace/app_hbench.p/app_hbench_malloc_malloc1.c.o
+LOAD uspace/app_hbench.p/app_hbench_malloc_malloc2.c.o
+LOAD uspace/app_hbench.p/app_hbench_synch_fibril_mutex.c.o
+LOAD uspace/app_hbench.p/app_hbench_syscall_taskgetid.c.o
+START GROUP
+LOAD uspace/lib/c/libstartfiles.a
+LOAD uspace/lib/libblock.a
+LOAD uspace/lib/libdevice.a
+LOAD uspace/lib/libc.so.0.0
+LOAD uspace/lib/libmath.so.0.0
+LOAD uspace/lib/libipctest.a
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000400000                PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x0000000000400120                . = (SEGMENT_START ("text-segment", 0x400000) + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000400120      0x240
+ *(.hash)
+ .hash          0x0000000000400120      0x240 uspace/app_hbench.p/app_hbench_benchlist.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x0000000000400360      0x708
+ *(.dynsym)
+ .dynsym        0x0000000000400360      0x708 uspace/app_hbench.p/app_hbench_benchlist.c.o
+
+.dynstr         0x0000000000400a68      0x38d
+ *(.dynstr)
+ .dynstr        0x0000000000400a68      0x38d uspace/app_hbench.p/app_hbench_benchlist.c.o
+
+.gnu.version    0x0000000000400df6        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000400df6        0x0 uspace/app_hbench.p/app_hbench_benchlist.c.o
+
+.gnu.version_d  0x0000000000400df8        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000400df8        0x0 uspace/app_hbench.p/app_hbench_benchlist.c.o
+
+.gnu.version_r  0x0000000000400df8        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000400df8        0x0 uspace/app_hbench.p/app_hbench_benchlist.c.o
+
+.rela.dyn       0x0000000000400df8       0x60
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text.startup.main
+                0x0000000000400df8        0x0 uspace/app_hbench.p/app_hbench_benchlist.c.o
+ .rela.text.__c_start
+                0x0000000000400df8        0x0 uspace/app_hbench.p/app_hbench_benchlist.c.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ .rela.rodata.cst8
+                0x0000000000400df8        0x0 uspace/app_hbench.p/app_hbench_benchlist.c.o
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x0000000000400df8        0x0 uspace/app_hbench.p/app_hbench_benchlist.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000400df8        0x0 uspace/app_hbench.p/app_hbench_benchlist.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x0000000000400df8       0x60 uspace/app_hbench.p/app_hbench_benchlist.c.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+
+.rela.plt       0x0000000000400e58      0x690
+ *(.rela.plt)
+ .rela.plt      0x0000000000400e58      0x690 uspace/app_hbench.p/app_hbench_benchlist.c.o
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+ .rela.iplt     0x00000000004014e8        0x0 uspace/app_hbench.p/app_hbench_benchlist.c.o
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x00000000004014f0      0x470
+ *(.plt)
+ .plt           0x00000000004014f0      0x470 uspace/app_hbench.p/app_hbench_benchlist.c.o
+                0x0000000000401500                loc_service_connect
+                0x0000000000401510                printf
+                0x0000000000401520                async_hangup
+                0x0000000000401530                async_req_0_2
+                0x0000000000401540                async_wait_for
+                0x0000000000401550                getopt_long
+                0x0000000000401560                hash_table_create
+                0x0000000000401570                async_data_write_start
+                0x0000000000401580                hash_table_insert
+                0x0000000000401590                __errno
+                0x00000000004015a0                async_get_call
+                0x00000000004015b0                puts
+                0x00000000004015c0                fibril_yield
+                0x00000000004015d0                feof
+                0x00000000004015e0                malloc
+                0x00000000004015f0                async_req_1_0
+                0x0000000000401600                vsnprintf
+                0x0000000000401610                ns_ping
+                0x0000000000401620                loc_service_get_id
+                0x0000000000401630                fibril_detach
+                0x0000000000401640                readdir
+                0x0000000000401650                fibril_get_id
+                0x0000000000401660                async_answer_0
+                0x0000000000401670                stacktrace_print
+                0x0000000000401680                abort
+                0x0000000000401690                async_exchange_end
+                0x00000000004016a0                calloc
+                0x00000000004016b0                fprintf
+                0x00000000004016c0                async_send_3
+                0x00000000004016d0                fseek
+                0x00000000004016e0                fibril_mutex_unlock
+                0x00000000004016f0                str_dup
+                0x0000000000401700                ferror
+                0x0000000000401710                fibril_create
+                0x0000000000401720                rand
+                0x0000000000401730                async_req_0_1
+                0x0000000000401740                str_tok
+                0x0000000000401750                sscanf
+                0x0000000000401760                async_create_callback_port
+                0x0000000000401770                str_cmp
+                0x0000000000401780                fread
+                0x0000000000401790                task_get_id
+                0x00000000004017a0                hash_table_remove_item
+                0x00000000004017b0                ts_sub_diff
+                0x00000000004017c0                fopen
+                0x00000000004017d0                __helenos_assert_abort
+                0x00000000004017e0                async_data_read_start
+                0x00000000004017f0                fclose
+                0x0000000000401800                opendir
+                0x0000000000401810                str_cpy
+                0x0000000000401820                str_error_name
+                0x0000000000401830                getuptime
+                0x0000000000401840                asprintf
+                0x0000000000401850                str_size
+                0x0000000000401860                str_length
+                0x0000000000401870                async_exchange_begin
+                0x0000000000401880                async_send_0
+                0x0000000000401890                str_error
+                0x00000000004018a0                fwrite
+                0x00000000004018b0                hash_table_find
+                0x00000000004018c0                __libc_main
+                0x00000000004018d0                async_forget
+                0x00000000004018e0                async_req_0_0
+                0x00000000004018f0                fibril_add_ready
+                0x0000000000401900                async_req_3_0
+                0x0000000000401910                atoll
+                0x0000000000401920                closedir
+                0x0000000000401930                hash_table_destroy
+                0x0000000000401940                free
+                0x0000000000401950                fibril_mutex_lock
+ *(.iplt)
+ .iplt          0x0000000000401960        0x0 uspace/app_hbench.p/app_hbench_benchlist.c.o
+
+.plt.got        0x0000000000401960        0x0
+ *(.plt.got)
+ .plt.got       0x0000000000401960        0x0 uspace/app_hbench.p/app_hbench_benchlist.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x0000000000401960     0x2aad
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ .text.startup.main
+                0x0000000000401960      0x49f uspace/app_hbench.p/app_hbench_main.c.o
+                0x0000000000401960                main
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ *fill*         0x0000000000401dff        0x1 
+ .text.csv_report_open
+                0x0000000000401e00       0x41 uspace/app_hbench.p/app_hbench_csv.c.o
+                0x0000000000401e00                csv_report_open
+ *fill*         0x0000000000401e41        0xf 
+ .text.csv_report_add_entry
+                0x0000000000401e50       0x61 uspace/app_hbench.p/app_hbench_csv.c.o
+                0x0000000000401e50                csv_report_add_entry
+ *fill*         0x0000000000401eb1        0xf 
+ .text.csv_report_close
+                0x0000000000401ec0       0x22 uspace/app_hbench.p/app_hbench_csv.c.o
+                0x0000000000401ec0                csv_report_close
+ *fill*         0x0000000000401ee2        0xe 
+ .text.param_remove
+                0x0000000000401ef0       0x23 uspace/app_hbench.p/app_hbench_env.c.o
+ *fill*         0x0000000000401f13        0xd 
+ .text.param_key_equal
+                0x0000000000401f20       0x1a uspace/app_hbench.p/app_hbench_env.c.o
+ *fill*         0x0000000000401f3a        0x6 
+ .text.param_equal
+                0x0000000000401f40       0x18 uspace/app_hbench.p/app_hbench_env.c.o
+ *fill*         0x0000000000401f58        0x8 
+ .text.param_key_hash
+                0x0000000000401f60        0xa uspace/app_hbench.p/app_hbench_env.c.o
+ *fill*         0x0000000000401f6a        0x6 
+ .text.param_hash
+                0x0000000000401f70        0xe uspace/app_hbench.p/app_hbench_env.c.o
+ *fill*         0x0000000000401f7e        0x2 
+ .text.bench_env_init
+                0x0000000000401f80       0x3d uspace/app_hbench.p/app_hbench_env.c.o
+                0x0000000000401f80                bench_env_init
+ *fill*         0x0000000000401fbd        0x3 
+ .text.bench_env_cleanup
+                0x0000000000401fc0        0xa uspace/app_hbench.p/app_hbench_env.c.o
+                0x0000000000401fc0                bench_env_cleanup
+ *fill*         0x0000000000401fca        0x6 
+ .text.bench_env_param_set
+                0x0000000000401fd0       0x8c uspace/app_hbench.p/app_hbench_env.c.o
+                0x0000000000401fd0                bench_env_param_set
+ *fill*         0x000000000040205c        0x4 
+ .text.bench_env_param_get
+                0x0000000000402060       0x29 uspace/app_hbench.p/app_hbench_env.c.o
+                0x0000000000402060                bench_env_param_get
+ *fill*         0x0000000000402089        0x7 
+ .text.print_usage
+                0x0000000000402090      0x113 uspace/app_hbench.p/app_hbench_main.c.o
+ *fill*         0x00000000004021a3        0xd 
+ .text.run_benchmark
+                0x00000000004021b0      0x6d5 uspace/app_hbench.p/app_hbench_main.c.o
+ *fill*         0x0000000000402885        0xb 
+ .text.bench_run_init
+                0x0000000000402890       0x19 uspace/app_hbench.p/app_hbench_utils.c.o
+                0x0000000000402890                bench_run_init
+ *fill*         0x00000000004028a9        0x7 
+ .text.bench_run_fail
+                0x00000000004028b0       0x96 uspace/app_hbench.p/app_hbench_utils.c.o
+                0x00000000004028b0                bench_run_fail
+ *fill*         0x0000000000402946        0xa 
+ .text.runner   0x0000000000402950      0x283 uspace/app_hbench.p/app_hbench_disk_randread.c.o
+ *fill*         0x0000000000402bd3        0xd 
+ .text.runner   0x0000000000402be0      0x263 uspace/app_hbench.p/app_hbench_disk_seqread.c.o
+ *fill*         0x0000000000402e43        0xd 
+ .text.runner   0x0000000000402e50       0xba uspace/app_hbench.p/app_hbench_fs_dirread.c.o
+ *fill*         0x0000000000402f0a        0x6 
+ .text.runner   0x0000000000402f10      0x18e uspace/app_hbench.p/app_hbench_fs_fileread.c.o
+ *fill*         0x000000000040309e        0x2 
+ .text.runner   0x00000000004030a0       0x77 uspace/app_hbench.p/app_hbench_ipc_ns_ping.c.o
+ *fill*         0x0000000000403117        0x9 
+ .text.teardown
+                0x0000000000403120       0x17 uspace/app_hbench.p/app_hbench_ipc_ping_pong.c.o
+ *fill*         0x0000000000403137        0x9 
+ .text.setup    0x0000000000403140       0x49 uspace/app_hbench.p/app_hbench_ipc_ping_pong.c.o
+ *fill*         0x0000000000403189        0x7 
+ .text.runner   0x0000000000403190       0x87 uspace/app_hbench.p/app_hbench_ipc_ping_pong.c.o
+ *fill*         0x0000000000403217        0x9 
+ .text.teardown
+                0x0000000000403220       0x17 uspace/app_hbench.p/app_hbench_ipc_read1k.c.o
+ *fill*         0x0000000000403237        0x9 
+ .text.runner   0x0000000000403240       0x87 uspace/app_hbench.p/app_hbench_ipc_read1k.c.o
+ *fill*         0x00000000004032c7        0x9 
+ .text.setup    0x00000000004032d0       0x7b uspace/app_hbench.p/app_hbench_ipc_read1k.c.o
+ *fill*         0x000000000040334b        0x5 
+ .text.teardown
+                0x0000000000403350       0x17 uspace/app_hbench.p/app_hbench_ipc_write1k.c.o
+ *fill*         0x0000000000403367        0x9 
+ .text.runner   0x0000000000403370       0x87 uspace/app_hbench.p/app_hbench_ipc_write1k.c.o
+ *fill*         0x00000000004033f7        0x9 
+ .text.setup    0x0000000000403400       0x7b uspace/app_hbench.p/app_hbench_ipc_write1k.c.o
+ *fill*         0x000000000040347b        0x5 
+ .text.runner   0x0000000000403480       0x80 uspace/app_hbench.p/app_hbench_malloc_malloc1.c.o
+ .text.runner   0x0000000000403500      0x118 uspace/app_hbench.p/app_hbench_malloc_malloc2.c.o
+ *fill*         0x0000000000403618        0x8 
+ .text.competitor
+                0x0000000000403620       0x48 uspace/app_hbench.p/app_hbench_synch_fibril_mutex.c.o
+ *fill*         0x0000000000403668        0x8 
+ .text.runner   0x0000000000403670       0xb5 uspace/app_hbench.p/app_hbench_synch_fibril_mutex.c.o
+ *fill*         0x0000000000403725        0xb 
+ .text.setup    0x0000000000403730        0xb uspace/app_hbench.p/app_hbench_syscall_taskgetid.c.o
+ *fill*         0x000000000040373b        0x5 
+ .text.runner   0x0000000000403740       0x5d uspace/app_hbench.p/app_hbench_syscall_taskgetid.c.o
+ *fill*         0x000000000040379d        0x3 
+ .text.teardown
+                0x00000000004037a0        0xb uspace/app_hbench.p/app_hbench_syscall_taskgetid.c.o
+ .text          0x00000000004037ab        0xc uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                0x00000000004037ab                _start
+ *fill*         0x00000000004037b7        0x9 
+ .text.__c_start
+                0x00000000004037c0       0x8c uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                0x00000000004037c0                __c_start
+ *fill*         0x000000000040384c        0x4 
+ .text.block_init
+                0x0000000000403850      0x180 uspace/lib/libblock.a.p/block_block.c.o
+                0x0000000000403850                block_init
+ .text.block_cache_fini
+                0x00000000004039d0      0x18d uspace/lib/libblock.a.p/block_block.c.o
+                0x00000000004039d0                block_cache_fini
+ *fill*         0x0000000000403b5d        0x3 
+ .text.block_fini
+                0x0000000000403b60       0xee uspace/lib/libblock.a.p/block_block.c.o
+                0x0000000000403b60                block_fini
+ *fill*         0x0000000000403c4e        0x2 
+ .text.block_read_direct
+                0x0000000000403c50       0xda uspace/lib/libblock.a.p/block_block.c.o
+                0x0000000000403c50                block_read_direct
+ *fill*         0x0000000000403d2a        0x6 
+ .text.block_get_bsize
+                0x0000000000403d30       0x86 uspace/lib/libblock.a.p/block_block.c.o
+                0x0000000000403d30                block_get_bsize
+ *fill*         0x0000000000403db6        0xa 
+ .text.block_get_nblocks
+                0x0000000000403dc0       0x86 uspace/lib/libblock.a.p/block_block.c.o
+                0x0000000000403dc0                block_get_nblocks
+ *fill*         0x0000000000403e46        0xa 
+ .text.bd_cb_conn
+                0x0000000000403e50       0x3b uspace/lib/libdevice.a.p/device_src_bd.c.o
+ *fill*         0x0000000000403e8b        0x5 
+ .text.bd_open  0x0000000000403e90       0xa8 uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x0000000000403e90                bd_open
+ *fill*         0x0000000000403f38        0x8 
+ .text.bd_close
+                0x0000000000403f40        0xa uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x0000000000403f40                bd_close
+ *fill*         0x0000000000403f4a        0x6 
+ .text.bd_read_blocks
+                0x0000000000403f50       0x9a uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x0000000000403f50                bd_read_blocks
+ *fill*         0x0000000000403fea        0x6 
+ .text.bd_write_blocks
+                0x0000000000403ff0       0x9a uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x0000000000403ff0                bd_write_blocks
+ *fill*         0x000000000040408a        0x6 
+ .text.bd_sync_cache
+                0x0000000000404090       0x4e uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x0000000000404090                bd_sync_cache
+ *fill*         0x00000000004040de        0x2 
+ .text.bd_get_block_size
+                0x00000000004040e0       0x4f uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x00000000004040e0                bd_get_block_size
+ *fill*         0x000000000040412f        0x1 
+ .text.bd_get_num_blocks
+                0x0000000000404130       0x5d uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x0000000000404130                bd_get_num_blocks
+ *fill*         0x000000000040418d        0x3 
+ .text.ipc_test_create
+                0x0000000000404190       0x9e uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+                0x0000000000404190                ipc_test_create
+ *fill*         0x000000000040422e        0x2 
+ .text.ipc_test_destroy
+                0x0000000000404230       0x31 uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+                0x0000000000404230                ipc_test_destroy
+ *fill*         0x0000000000404261        0xf 
+ .text.ipc_test_ping
+                0x0000000000404270       0x32 uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+                0x0000000000404270                ipc_test_ping
+ *fill*         0x00000000004042a2        0xe 
+ .text.ipc_test_set_rw_buf_size
+                0x00000000004042b0       0x38 uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+                0x00000000004042b0                ipc_test_set_rw_buf_size
+ *fill*         0x00000000004042e8        0x8 
+ .text.ipc_test_read
+                0x00000000004042f0       0x8d uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+                0x00000000004042f0                ipc_test_read
+ *fill*         0x000000000040437d        0x3 
+ .text.ipc_test_write
+                0x0000000000404380       0x8d uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+                0x0000000000404380                ipc_test_write
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000404420      0xd88
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.csv_report_open.str1.1
+                0x0000000000404420      0x275 uspace/app_hbench.p/app_hbench_csv.c.o
+                                          0x2 (size before relaxing)
+ *fill*         0x0000000000404695        0x3 
+ .rodata.csv_report_open.str1.8
+                0x0000000000404698      0xa00 uspace/app_hbench.p/app_hbench_csv.c.o
+                                         0x23 (size before relaxing)
+ .rodata.csv_report_add_entry.str1.1
+                0x0000000000405098       0x10 uspace/app_hbench.p/app_hbench_csv.c.o
+ *fill*         0x0000000000405098        0x8 
+ .rodata.param_hash_table_ops
+                0x00000000004050a0       0x28 uspace/app_hbench.p/app_hbench_env.c.o
+ .rodata.print_usage.str1.8
+                0x00000000004050c8      0x200 uspace/app_hbench.p/app_hbench_main.c.o
+ .rodata.print_usage.str1.1
+                0x00000000004050c8       0x28 uspace/app_hbench.p/app_hbench_main.c.o
+ .rodata.run_benchmark.str1.8
+                0x00000000004050c8       0xf4 uspace/app_hbench.p/app_hbench_main.c.o
+ .rodata.run_benchmark.str1.1
+                0x00000000004050c8       0x41 uspace/app_hbench.p/app_hbench_main.c.o
+ .rodata.main.str1.8
+                0x00000000004050c8       0xee uspace/app_hbench.p/app_hbench_main.c.o
+ .rodata.main.str1.1
+                0x00000000004050c8       0xa7 uspace/app_hbench.p/app_hbench_main.c.o
+ .rodata.main   0x00000000004050c8       0x68 uspace/app_hbench.p/app_hbench_main.c.o
+ .rodata.cst8   0x0000000000405130       0x30 uspace/app_hbench.p/app_hbench_main.c.o
+ .rodata.cst4   0x0000000000405160        0x4 uspace/app_hbench.p/app_hbench_main.c.o
+ *fill*         0x0000000000405164        0xc 
+ .rodata.cst16  0x0000000000405170       0x30 uspace/app_hbench.p/app_hbench_main.c.o
+ .rodata.runner.str1.1
+                0x00000000004051a0       0x2a uspace/app_hbench.p/app_hbench_disk_randread.c.o
+ .rodata.runner.str1.8
+                0x00000000004051a0      0x144 uspace/app_hbench.p/app_hbench_disk_randread.c.o
+ .rodata.str1.1
+                0x00000000004051a0        0xa uspace/app_hbench.p/app_hbench_disk_randread.c.o
+ .rodata.str1.8
+                0x00000000004051a0       0x2e uspace/app_hbench.p/app_hbench_disk_randread.c.o
+ .rodata.runner.str1.1
+                0x00000000004051a0       0x2a uspace/app_hbench.p/app_hbench_disk_seqread.c.o
+ .rodata.runner.str1.8
+                0x00000000004051a0      0x144 uspace/app_hbench.p/app_hbench_disk_seqread.c.o
+ .rodata.str1.1
+                0x00000000004051a0        0x9 uspace/app_hbench.p/app_hbench_disk_seqread.c.o
+ .rodata.str1.8
+                0x00000000004051a0       0x32 uspace/app_hbench.p/app_hbench_disk_seqread.c.o
+ .rodata.runner.str1.1
+                0x00000000004051a0        0xa uspace/app_hbench.p/app_hbench_fs_dirread.c.o
+ .rodata.runner.str1.8
+                0x00000000004051a0       0x22 uspace/app_hbench.p/app_hbench_fs_dirread.c.o
+ .rodata.str1.1
+                0x00000000004051a0        0x9 uspace/app_hbench.p/app_hbench_fs_dirread.c.o
+ .rodata.str1.8
+                0x00000000004051a0       0x49 uspace/app_hbench.p/app_hbench_fs_dirread.c.o
+ .rodata.runner.str1.1
+                0x00000000004051a0       0x72 uspace/app_hbench.p/app_hbench_fs_fileread.c.o
+ .rodata.runner.str1.8
+                0x00000000004051a0       0x22 uspace/app_hbench.p/app_hbench_fs_fileread.c.o
+ .rodata.str1.1
+                0x00000000004051a0        0xa uspace/app_hbench.p/app_hbench_fs_fileread.c.o
+ .rodata.str1.8
+                0x00000000004051a0       0x52 uspace/app_hbench.p/app_hbench_fs_fileread.c.o
+ .rodata.runner.str1.8
+                0x00000000004051a0       0x25 uspace/app_hbench.p/app_hbench_ipc_ns_ping.c.o
+ .rodata.str1.1
+                0x00000000004051a0        0x8 uspace/app_hbench.p/app_hbench_ipc_ns_ping.c.o
+ .rodata.str1.8
+                0x00000000004051a0       0x25 uspace/app_hbench.p/app_hbench_ipc_ns_ping.c.o
+ .rodata.setup.str1.8
+                0x00000000004051a0       0x4e uspace/app_hbench.p/app_hbench_ipc_ping_pong.c.o
+ .rodata.runner.str1.8
+                0x00000000004051a0       0x25 uspace/app_hbench.p/app_hbench_ipc_ping_pong.c.o
+ .rodata.str1.1
+                0x00000000004051a0       0x22 uspace/app_hbench.p/app_hbench_ipc_ping_pong.c.o
+ .rodata.runner.str1.8
+                0x00000000004051a0       0x1f uspace/app_hbench.p/app_hbench_ipc_read1k.c.o
+ .rodata.setup.str1.8
+                0x00000000004051a0       0x77 uspace/app_hbench.p/app_hbench_ipc_read1k.c.o
+ .rodata.str1.1
+                0x00000000004051a0       0x25 uspace/app_hbench.p/app_hbench_ipc_read1k.c.o
+ .rodata.runner.str1.8
+                0x00000000004051a0       0x1f uspace/app_hbench.p/app_hbench_ipc_write1k.c.o
+ .rodata.setup.str1.8
+                0x00000000004051a0       0x77 uspace/app_hbench.p/app_hbench_ipc_write1k.c.o
+ .rodata.str1.1
+                0x00000000004051a0        0x8 uspace/app_hbench.p/app_hbench_ipc_write1k.c.o
+ .rodata.str1.8
+                0x00000000004051a0       0x1f uspace/app_hbench.p/app_hbench_ipc_write1k.c.o
+ .rodata.runner.str1.8
+                0x00000000004051a0       0x2e uspace/app_hbench.p/app_hbench_malloc_malloc1.c.o
+ .rodata.str1.1
+                0x00000000004051a0        0x8 uspace/app_hbench.p/app_hbench_malloc_malloc1.c.o
+ .rodata.str1.8
+                0x00000000004051a0       0x45 uspace/app_hbench.p/app_hbench_malloc_malloc1.c.o
+ .rodata.runner.str1.8
+                0x00000000004051a0       0x56 uspace/app_hbench.p/app_hbench_malloc_malloc2.c.o
+ .rodata.str1.1
+                0x00000000004051a0        0x8 uspace/app_hbench.p/app_hbench_malloc_malloc2.c.o
+ .rodata.str1.8
+                0x00000000004051a0       0x42 uspace/app_hbench.p/app_hbench_malloc_malloc2.c.o
+ .rodata.str1.1
+                0x00000000004051a0        0xd uspace/app_hbench.p/app_hbench_synch_fibril_mutex.c.o
+ .rodata.str1.8
+                0x00000000004051a0       0x26 uspace/app_hbench.p/app_hbench_synch_fibril_mutex.c.o
+ .rodata.str1.1
+                0x00000000004051a0        0xa uspace/app_hbench.p/app_hbench_syscall_taskgetid.c.o
+ .rodata.str1.8
+                0x00000000004051a0       0x22 uspace/app_hbench.p/app_hbench_syscall_taskgetid.c.o
+ .rodata.cst8   0x00000000004051a0        0x8 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .rodata.read_blocks.part.0.str1.8
+                0x00000000004051a8       0x27 uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.read_blocks.part.0.str1.1
+                0x00000000004051a8        0x7 uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.block_bb_read.str1.8
+                0x00000000004051a8       0x4a uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.block_cache_fini.str1.8
+                0x00000000004051a8       0x48 uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.ipc_test_create.str1.1
+                0x00000000004051a8        0x9 uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x00000000004051a8      0x1ec
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x00000000004051a8      0x1ec uspace/app_hbench.p/app_hbench_csv.c.o
+                0x00000000004051a8                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x0000000000405398      0x9f4
+ *(.eh_frame)
+ .eh_frame      0x0000000000405398       0x40 uspace/app_hbench.p/app_hbench_benchlist.c.o
+ .eh_frame      0x00000000004053d8        0x0 uspace/app_hbench.p/app_hbench_benchlist.c.o
+ .eh_frame      0x00000000004053d8       0x78 uspace/app_hbench.p/app_hbench_csv.c.o
+                                         0x90 (size before relaxing)
+ .eh_frame      0x0000000000405450      0x140 uspace/app_hbench.p/app_hbench_env.c.o
+                                        0x158 (size before relaxing)
+ .eh_frame      0x0000000000405590       0x88 uspace/app_hbench.p/app_hbench_main.c.o
+                                         0xa0 (size before relaxing)
+ .eh_frame      0x0000000000405618       0x40 uspace/app_hbench.p/app_hbench_utils.c.o
+                                         0x58 (size before relaxing)
+ .eh_frame      0x0000000000405658       0x30 uspace/app_hbench.p/app_hbench_disk_randread.c.o
+                                         0x48 (size before relaxing)
+ .eh_frame      0x0000000000405688       0x30 uspace/app_hbench.p/app_hbench_disk_seqread.c.o
+                                         0x48 (size before relaxing)
+ .eh_frame      0x00000000004056b8       0x38 uspace/app_hbench.p/app_hbench_fs_dirread.c.o
+                                         0x50 (size before relaxing)
+ .eh_frame      0x00000000004056f0       0x38 uspace/app_hbench.p/app_hbench_fs_fileread.c.o
+                                         0x50 (size before relaxing)
+ .eh_frame      0x0000000000405728       0x30 uspace/app_hbench.p/app_hbench_ipc_ns_ping.c.o
+                                         0x48 (size before relaxing)
+ .eh_frame      0x0000000000405758       0x80 uspace/app_hbench.p/app_hbench_ipc_ping_pong.c.o
+                                         0x98 (size before relaxing)
+ .eh_frame      0x00000000004057d8       0x88 uspace/app_hbench.p/app_hbench_ipc_read1k.c.o
+                                         0xa0 (size before relaxing)
+ .eh_frame      0x0000000000405860       0x88 uspace/app_hbench.p/app_hbench_ipc_write1k.c.o
+                                         0xa0 (size before relaxing)
+ .eh_frame      0x00000000004058e8       0x30 uspace/app_hbench.p/app_hbench_malloc_malloc1.c.o
+                                         0x48 (size before relaxing)
+ .eh_frame      0x0000000000405918       0x40 uspace/app_hbench.p/app_hbench_malloc_malloc2.c.o
+                                         0x58 (size before relaxing)
+ .eh_frame      0x0000000000405958       0x50 uspace/app_hbench.p/app_hbench_synch_fibril_mutex.c.o
+                                         0x68 (size before relaxing)
+ .eh_frame      0x00000000004059a8       0x68 uspace/app_hbench.p/app_hbench_syscall_taskgetid.c.o
+                                         0x80 (size before relaxing)
+ .eh_frame      0x0000000000405a10       0x20 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000405a30      0x110 uspace/lib/libblock.a.p/block_block.c.o
+                                        0x3c0 (size before relaxing)
+ .eh_frame      0x0000000000405b40      0x150 uspace/lib/libdevice.a.p/device_src_bd.c.o
+                                        0x198 (size before relaxing)
+ .eh_frame      0x0000000000405c90       0xfc uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+                                        0x1c8 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x0000000000405d8c        0x0
+ *(.sframe)
+ .sframe        0x0000000000405d8c        0x0 uspace/app_hbench.p/app_hbench_benchlist.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x0000000000406d8c                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0x0000000000406d8c        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0000000000406d8c        0x0
+                0x0000000000406d8c                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x0000000000406d8c                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x0000000000406d8c        0x0
+                0x0000000000406d8c                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x0000000000406d8c                PROVIDE (__init_array_end = .)
+
+.fini_array     0x0000000000406d8c        0x0
+                0x0000000000406d8c                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x0000000000406d8c                PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x0000000000406d8c        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x0000000000406d8c        0x0 uspace/app_hbench.p/app_hbench_benchlist.c.o
+
+.dynamic        0x0000000000406d90      0x150
+ *(.dynamic)
+ .dynamic       0x0000000000406d90      0x150 uspace/app_hbench.p/app_hbench_benchlist.c.o
+                0x0000000000406d90                _DYNAMIC
+
+.got            0x0000000000406ee0        0x0
+ *(.got)
+ .got           0x0000000000406ee0        0x0 uspace/app_hbench.p/app_hbench_benchlist.c.o
+ *(.igot)
+                0x0000000000406ee0                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x0000000000406ee0      0x248
+ *(.got.plt)
+ .got.plt       0x0000000000406ee0      0x248 uspace/app_hbench.p/app_hbench_benchlist.c.o
+                0x0000000000406ee0                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x0000000000407128        0x0 uspace/app_hbench.p/app_hbench_benchlist.c.o
+
+.data           0x0000000000407140      0x3a0
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.benchmark_count
+                0x0000000000407140        0x8 uspace/app_hbench.p/app_hbench_benchlist.c.o
+                0x0000000000407140                benchmark_count
+ *fill*         0x0000000000407148       0x18 
+ .data.benchmarks
+                0x0000000000407160       0x60 uspace/app_hbench.p/app_hbench_benchlist.c.o
+                0x0000000000407160                benchmarks
+ .data.benchmark_rand_read
+                0x00000000004071c0       0x28 uspace/app_hbench.p/app_hbench_disk_randread.c.o
+                0x00000000004071c0                benchmark_rand_read
+ *fill*         0x00000000004071e8       0x18 
+ .data.benchmark_seq_read
+                0x0000000000407200       0x28 uspace/app_hbench.p/app_hbench_disk_seqread.c.o
+                0x0000000000407200                benchmark_seq_read
+ *fill*         0x0000000000407228       0x18 
+ .data.benchmark_dir_read
+                0x0000000000407240       0x28 uspace/app_hbench.p/app_hbench_fs_dirread.c.o
+                0x0000000000407240                benchmark_dir_read
+ *fill*         0x0000000000407268       0x18 
+ .data.benchmark_file_read
+                0x0000000000407280       0x28 uspace/app_hbench.p/app_hbench_fs_fileread.c.o
+                0x0000000000407280                benchmark_file_read
+ *fill*         0x00000000004072a8       0x18 
+ .data.benchmark_ns_ping
+                0x00000000004072c0       0x28 uspace/app_hbench.p/app_hbench_ipc_ns_ping.c.o
+                0x00000000004072c0                benchmark_ns_ping
+ *fill*         0x00000000004072e8       0x18 
+ .data.benchmark_ping_pong
+                0x0000000000407300       0x28 uspace/app_hbench.p/app_hbench_ipc_ping_pong.c.o
+                0x0000000000407300                benchmark_ping_pong
+ *fill*         0x0000000000407328       0x18 
+ .data.benchmark_read1k
+                0x0000000000407340       0x28 uspace/app_hbench.p/app_hbench_ipc_read1k.c.o
+                0x0000000000407340                benchmark_read1k
+ *fill*         0x0000000000407368       0x18 
+ .data.benchmark_write1k
+                0x0000000000407380       0x28 uspace/app_hbench.p/app_hbench_ipc_write1k.c.o
+                0x0000000000407380                benchmark_write1k
+ *fill*         0x00000000004073a8       0x18 
+ .data.benchmark_malloc1
+                0x00000000004073c0       0x28 uspace/app_hbench.p/app_hbench_malloc_malloc1.c.o
+                0x00000000004073c0                benchmark_malloc1
+ *fill*         0x00000000004073e8       0x18 
+ .data.benchmark_malloc2
+                0x0000000000407400       0x28 uspace/app_hbench.p/app_hbench_malloc_malloc2.c.o
+                0x0000000000407400                benchmark_malloc2
+ *fill*         0x0000000000407428       0x18 
+ .data.benchmark_fibril_mutex
+                0x0000000000407440       0x28 uspace/app_hbench.p/app_hbench_synch_fibril_mutex.c.o
+                0x0000000000407440                benchmark_fibril_mutex
+ *fill*         0x0000000000407468       0x18 
+ .data.benchmark_taskgetid
+                0x0000000000407480       0x28 uspace/app_hbench.p/app_hbench_syscall_taskgetid.c.o
+                0x0000000000407480                benchmark_taskgetid
+ *fill*         0x00000000004074a8        0x8 
+ .data.dcl      0x00000000004074b0       0x10 uspace/lib/libblock.a.p/block_block.c.o
+ .data.dcl_lock
+                0x00000000004074c0       0x20 uspace/lib/libblock.a.p/block_block.c.o
+
+.data1
+ *(.data1)
+                0x00000000004074e0                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x00000000004074e0                . = .
+                0x00000000004074e0                __bss_start = .
+
+.bss            0x00000000004074e0      0x8d0
+ *(.dynbss)
+ .dynbss        0x00000000004074e0       0x88 uspace/app_hbench.p/app_hbench_benchlist.c.o
+                0x00000000004074e0                optarg
+                0x00000000004074e8                optind
+                0x0000000000407500                __progsymbols
+                0x0000000000407560                stderr
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss.csv_output
+                0x0000000000407568        0x8 uspace/app_hbench.p/app_hbench_csv.c.o
+ .bss.test      0x0000000000407570        0x8 uspace/app_hbench.p/app_hbench_ipc_ping_pong.c.o
+ *fill*         0x0000000000407578        0x8 
+ .bss.rw_buf    0x0000000000407580      0x400 uspace/app_hbench.p/app_hbench_ipc_read1k.c.o
+ .bss.test      0x0000000000407980        0x8 uspace/app_hbench.p/app_hbench_ipc_read1k.c.o
+ *fill*         0x0000000000407988       0x18 
+ .bss.rw_buf    0x00000000004079a0      0x400 uspace/app_hbench.p/app_hbench_ipc_write1k.c.o
+ .bss.test      0x0000000000407da0        0x8 uspace/app_hbench.p/app_hbench_ipc_write1k.c.o
+ .bss.tid       0x0000000000407da8        0x8 uspace/app_hbench.p/app_hbench_syscall_taskgetid.c.o
+ *(COMMON)
+                0x0000000000407db0                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x0000000000407db0                . = ALIGN (0x8)
+                0x0000000000407db0                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x0000000000409db0        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x0000000000409db0                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000409db0                . = ALIGN (0x8)
+                0x0000000000407db0                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x0000000000409db0                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/app_hbench.p/app_hbench_benchlist.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/app_hbench.p/app_hbench_csv.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_hbench.p/app_hbench_env.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_hbench.p/app_hbench_main.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_hbench.p/app_hbench_utils.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_hbench.p/app_hbench_disk_randread.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_hbench.p/app_hbench_disk_seqread.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_hbench.p/app_hbench_fs_dirread.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_hbench.p/app_hbench_fs_fileread.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_hbench.p/app_hbench_ipc_ns_ping.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_hbench.p/app_hbench_ipc_ping_pong.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_hbench.p/app_hbench_ipc_read1k.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_hbench.p/app_hbench_ipc_write1k.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_hbench.p/app_hbench_malloc_malloc1.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_hbench.p/app_hbench_malloc_malloc2.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_hbench.p/app_hbench_synch_fibril_mutex.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_hbench.p/app_hbench_syscall_taskgetid.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libblock.a.p/block_block.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdevice.a.p/device_src_bd.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/app_hbench elf64-x86-64)

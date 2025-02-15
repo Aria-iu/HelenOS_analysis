@@ -1,0 +1,468 @@
+Archive member included to satisfy reference by file (symbol)
+
+uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                              (--whole-archive)
+uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                              (--whole-archive)
+uspace/lib/libcorecfg.a.p/corecfg_src_corecfg.c.o
+                              uspace/app_corecfg.p/app_corecfg_corecfg.c.o (corecfg_init)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.0                     uspace/lib/libcorecfg.a.p/corecfg_src_corecfg.c.o (loc_service_connect)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+ .data          0x0000000000000000        0x0 uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .text          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libcorecfg.a.p/corecfg_src_corecfg.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libcorecfg.a.p/corecfg_src_corecfg.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libcorecfg.a.p/corecfg_src_corecfg.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+START GROUP
+LOAD uspace/lib/c/libstartfiles.a
+LOAD uspace/lib/libcorecfg.a
+LOAD uspace/lib/libc.so.0.0
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000400000                PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x0000000000400120                . = (SEGMENT_START ("text-segment", 0x400000) + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000400120       0x48
+ *(.hash)
+ .hash          0x0000000000400120       0x48 uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x0000000000400168      0x138
+ *(.dynsym)
+ .dynsym        0x0000000000400168      0x138 uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+
+.dynstr         0x00000000004002a0       0xc7
+ *(.dynstr)
+ .dynstr        0x00000000004002a0       0xc7 uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+
+.gnu.version    0x0000000000400368        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000400368        0x0 uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+
+.gnu.version_d  0x0000000000400368        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000400368        0x0 uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+
+.gnu.version_r  0x0000000000400368        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000400368        0x0 uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+
+.rela.dyn       0x0000000000400368       0x18
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text.__c_start
+                0x0000000000400368        0x0 uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ .rela.rodata.cst8
+                0x0000000000400368        0x0 uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x0000000000400368        0x0 uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000400368        0x0 uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x0000000000400368       0x18 uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+
+.rela.plt       0x0000000000400380      0x108
+ *(.rela.plt)
+ .rela.plt      0x0000000000400380      0x108 uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+ .rela.iplt     0x0000000000400488        0x0 uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x0000000000400490       0xc0
+ *(.plt)
+ .plt           0x0000000000400490       0xc0 uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+                0x00000000004004a0                loc_service_connect
+                0x00000000004004b0                printf
+                0x00000000004004c0                puts
+                0x00000000004004d0                async_req_1_0
+                0x00000000004004e0                loc_service_get_id
+                0x00000000004004f0                async_exchange_end
+                0x0000000000400500                async_req_0_1
+                0x0000000000400510                str_cmp
+                0x0000000000400520                __helenos_assert_abort
+                0x0000000000400530                async_exchange_begin
+                0x0000000000400540                __libc_main
+ *(.iplt)
+ .iplt          0x0000000000400550        0x0 uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+
+.plt.got        0x0000000000400550        0x0
+ *(.plt.got)
+ .plt.got       0x0000000000400550        0x0 uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x0000000000400550      0x2d9
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ .text.startup.main
+                0x0000000000400550      0x11a uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+                0x0000000000400550                main
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x000000000040066a        0xc uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                0x000000000040066a                _start
+ *fill*         0x0000000000400676        0xa 
+ .text.__c_start
+                0x0000000000400680       0x8c uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                0x0000000000400680                __c_start
+ *fill*         0x000000000040070c        0x4 
+ .text.corecfg_init
+                0x0000000000400710       0x71 uspace/lib/libcorecfg.a.p/corecfg_src_corecfg.c.o
+                0x0000000000400710                corecfg_init
+ *fill*         0x0000000000400781        0xf 
+ .text.corecfg_get_enable
+                0x0000000000400790       0x55 uspace/lib/libcorecfg.a.p/corecfg_src_corecfg.c.o
+                0x0000000000400790                corecfg_get_enable
+ *fill*         0x00000000004007e5        0xb 
+ .text.corecfg_set_enable
+                0x00000000004007f0       0x39 uspace/lib/libcorecfg.a.p/corecfg_src_corecfg.c.o
+                0x00000000004007f0                corecfg_set_enable
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000400830      0x128
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.main.str1.1
+                0x0000000000400830       0x99 uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+                                         0x84 (size before relaxing)
+ *fill*         0x00000000004008c9        0x7 
+ .rodata.main.str1.8
+                0x00000000004008d0       0x7f uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+                                         0x4a (size before relaxing)
+ *fill*         0x000000000040094f        0x1 
+ .rodata.cst8   0x0000000000400950        0x8 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .rodata.corecfg_init.str1.8
+                0x0000000000400958       0x2f uspace/lib/libcorecfg.a.p/corecfg_src_corecfg.c.o
+ .rodata.corecfg_init.str1.1
+                0x0000000000400958       0x1d uspace/lib/libcorecfg.a.p/corecfg_src_corecfg.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x0000000000400958       0x3c
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x0000000000400958       0x3c uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+                0x0000000000400958                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x0000000000400998      0x104
+ *(.eh_frame)
+ .eh_frame      0x0000000000400998       0x48 uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+ .eh_frame      0x00000000004009e0       0x28 uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000400a08        0x0 uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+ .eh_frame      0x0000000000400a08       0x20 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000400a28       0x74 uspace/lib/libcorecfg.a.p/corecfg_src_corecfg.c.o
+                                         0x90 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x0000000000400a9c        0x0
+ *(.sframe)
+ .sframe        0x0000000000400a9c        0x0 uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x0000000000401a9c                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0x0000000000401a9c        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0000000000401a9c        0x0
+                0x0000000000401a9c                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x0000000000401a9c                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x0000000000401a9c        0x0
+                0x0000000000401a9c                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x0000000000401a9c                PROVIDE (__init_array_end = .)
+
+.fini_array     0x0000000000401a9c        0x0
+                0x0000000000401a9c                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x0000000000401a9c                PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x0000000000401a9c        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x0000000000401a9c        0x0 uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+
+.dynamic        0x0000000000401aa0      0x150
+ *(.dynamic)
+ .dynamic       0x0000000000401aa0      0x150 uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+                0x0000000000401aa0                _DYNAMIC
+
+.got            0x0000000000401bf0        0x0
+ *(.got)
+ .got           0x0000000000401bf0        0x0 uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+ *(.igot)
+                0x0000000000401bf0                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x0000000000401bf0       0x70
+ *(.got.plt)
+ .got.plt       0x0000000000401bf0       0x70 uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+                0x0000000000401bf0                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x0000000000401c60        0x0 uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+
+.data
+ *(.data .data.* .gnu.linkonce.d.*)
+
+.data1
+ *(.data1)
+                0x0000000000401c60                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x0000000000401c60                . = .
+                0x0000000000401c60                __bss_start = .
+
+.bss            0x0000000000401c60       0x50
+ *(.dynbss)
+ *fill*         0x0000000000401c60        0x0 
+ .dynbss        0x0000000000401c60       0x48 uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+                0x0000000000401c60                __progsymbols
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss.corecfg_sess
+                0x0000000000401ca8        0x8 uspace/lib/libcorecfg.a.p/corecfg_src_corecfg.c.o
+ *(COMMON)
+                0x0000000000401cb0                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x0000000000401cb0                . = ALIGN (0x8)
+                0x0000000000401cb0                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x0000000000403cb0        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x0000000000403cb0                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000403cb0                . = ALIGN (0x8)
+                0x0000000000401cb0                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x0000000000403cb0                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/app_corecfg.p/app_corecfg_corecfg.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libcorecfg.a.p/corecfg_src_corecfg.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/app_corecfg elf64-x86-64)

@@ -1,0 +1,96 @@
+[
+  {
+    "name": "dep133474459655744",
+    "type": "internal",
+    "version": "undefined",
+    "compile_args": [],
+    "link_args": [],
+    "include_directories": [
+      "/home/zyc/code/helenos/uspace/lib/vt/include",
+      "/home/zyc/code/build/amd64/uspace/lib/vt/include"
+    ],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [
+      "dep133474465122096",
+      "dep133474461771920",
+      "dep133474461633840"
+    ],
+    "depends": [
+      "50964ef@@vt@sha"
+    ],
+    "meson_variables": [
+      "_shared_dep"
+    ]
+  },
+  {
+    "name": "dep133474465901024",
+    "type": "internal",
+    "version": "undefined",
+    "compile_args": [],
+    "link_args": [],
+    "include_directories": [
+      "/home/zyc/code/helenos/uspace/lib/vt/include",
+      "/home/zyc/code/build/amd64/uspace/lib/vt/include"
+    ],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [
+      "dep133474465069136",
+      "dep133474465134192",
+      "dep133474461639984"
+    ],
+    "depends": [
+      "50964ef@@vt@sta"
+    ],
+    "meson_variables": [
+      "_static_dep"
+    ]
+  },
+  {
+    "name": "dep133474459449664",
+    "type": "internal",
+    "version": "undefined",
+    "compile_args": [],
+    "link_args": [],
+    "include_directories": [
+      "/home/zyc/code/helenos/uspace/lib/vt/include",
+      "/home/zyc/code/build/amd64/uspace/lib/vt/include"
+    ],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [
+      "dep133474465054928",
+      "dep133474465558304",
+      "dep133474461640512"
+    ],
+    "depends": [
+      "50964ef@@vt@sta"
+    ],
+    "meson_variables": [
+      "_any_dep"
+    ]
+  },
+  {
+    "name": "dep133474459450336",
+    "type": "internal",
+    "version": "undefined",
+    "compile_args": [],
+    "link_args": [],
+    "include_directories": [
+      "/home/zyc/code/helenos/uspace/lib/vt/include",
+      "/home/zyc/code/build/amd64/uspace/lib/vt/include"
+    ],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [
+      "dep133474465055072",
+      "dep133474465559216",
+      "dep133474461642000"
+    ],
+    "depends": [],
+    "meson_variables": [
+      "_include_dep"
+    ]
+  }
+]

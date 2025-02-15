@@ -1,0 +1,1121 @@
+Archive member included to satisfy reference by file (symbol)
+
+uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                              (--whole-archive)
+uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                              (--whole-archive)
+uspace/lib/libwndmgt.a.p/wndmgt_src_wndmgt.c.o
+                              uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o (wndmgt_open)
+uspace/lib/libwndmgt.a.p/wndmgt_src_wndmgt_srv.c.o
+                              uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o (wndmgt_conn)
+uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+                              uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o (pcut_str_equals)
+uspace/lib/libpcut.a.p/pcut_src_assert.c.o
+                              uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o (pcut_failed_assertion_fmt)
+uspace/lib/libpcut.a.p/pcut_src_helper.c.o
+                              uspace/lib/libpcut.a.p/pcut_src_assert.c.o (pcut_snprintf)
+uspace/lib/libpcut.a.p/pcut_src_main.c.o
+                              uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o (pcut_main)
+uspace/lib/libpcut.a.p/pcut_src_print.c.o
+                              uspace/lib/libpcut.a.p/pcut_src_main.c.o (pcut_print_tests)
+uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                              uspace/lib/libpcut.a.p/pcut_src_main.c.o (pcut_report_register_handler)
+uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+                              uspace/lib/libpcut.a.p/pcut_src_main.c.o (pcut_report_tap)
+uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+                              uspace/lib/libpcut.a.p/pcut_src_main.c.o (pcut_report_xml)
+uspace/lib/libpcut.a.p/pcut_src_run.c.o
+                              uspace/lib/libpcut.a.p/pcut_src_assert.c.o (pcut_failed_assertion)
+uspace/lib/libpcut.a.p/pcut_src_list.c.o
+                              uspace/lib/libpcut.a.p/pcut_src_main.c.o (pcut_get_real_next)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.0                     uspace/lib/libwndmgt.a.p/wndmgt_src_wndmgt.c.o (loc_service_connect)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .text          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libwndmgt.a.p/wndmgt_src_wndmgt.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libwndmgt.a.p/wndmgt_src_wndmgt.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libwndmgt.a.p/wndmgt_src_wndmgt.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libwndmgt.a.p/wndmgt_src_wndmgt_srv.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libwndmgt.a.p/wndmgt_src_wndmgt_srv.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libwndmgt.a.p/wndmgt_src_wndmgt_srv.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_assert.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_assert.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_assert.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_helper.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_helper.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_helper.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_main.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_main.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_main.c.o
+ .text.pcut_is_arg_with_number
+                0x0000000000000000       0x4c uspace/lib/libpcut.a.p/pcut_src_main.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_print.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_print.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_print.c.o
+ .rodata.pcut_print_items.str1.1
+                0x0000000000000000       0x37 uspace/lib/libpcut.a.p/pcut_src_print.c.o
+ .text.pcut_print_items
+                0x0000000000000000       0x9e uspace/lib/libpcut.a.p/pcut_src_print.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_list.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_list.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_list.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+LOAD uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+START GROUP
+LOAD uspace/lib/c/libstartfiles.a
+LOAD uspace/lib/libwndmgt.a
+LOAD uspace/lib/libc.so.0.0
+LOAD uspace/lib/libpcut.a
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000400000                PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x0000000000400120                . = (SEGMENT_START ("text-segment", 0x400000) + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000400120      0x230
+ *(.hash)
+ .hash          0x0000000000400120      0x230 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x0000000000400350      0x6a8
+ *(.dynsym)
+ .dynsym        0x0000000000400350      0x6a8 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+
+.dynstr         0x00000000004009f8      0x3f3
+ *(.dynstr)
+ .dynstr        0x00000000004009f8      0x3f3 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+
+.gnu.version    0x0000000000400dec        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000400dec        0x0 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+
+.gnu.version_d  0x0000000000400df0        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000400df0        0x0 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+
+.gnu.version_r  0x0000000000400df0        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000400df0        0x0 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+
+.rela.dyn       0x0000000000400df0       0x48
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text.__c_start
+                0x0000000000400df0        0x0 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+ .rela.text.pcut_run_test_forking
+                0x0000000000400df0        0x0 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+ .rela.text.pcut_main
+                0x0000000000400df0        0x0 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ .rela.rodata.cst8
+                0x0000000000400df0        0x0 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x0000000000400df0        0x0 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000400df0        0x0 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x0000000000400df0       0x48 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+
+.rela.plt       0x0000000000400e38      0x648
+ *(.rela.plt)
+ .rela.plt      0x0000000000400e38      0x648 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+ .rela.iplt     0x0000000000401480        0x0 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x0000000000401480      0x440
+ *(.plt)
+ .plt           0x0000000000401480      0x440 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+                0x0000000000401490                longjmp
+                0x00000000004014a0                loc_service_connect
+                0x00000000004014b0                printf
+                0x00000000004014c0                async_hangup
+                0x00000000004014d0                async_wait_for
+                0x00000000004014e0                snprintf
+                0x00000000004014f0                task_wait
+                0x0000000000401500                loc_service_register
+                0x0000000000401510                async_get_call
+                0x0000000000401520                async_data_read_finalize
+                0x0000000000401530                async_send_1
+                0x0000000000401540                memcpy
+                0x0000000000401550                setvbuf
+                0x0000000000401560                loc_server_unregister
+                0x0000000000401570                puts
+                0x0000000000401580                async_req_1_0
+                0x0000000000401590                vsnprintf
+                0x00000000004015a0                fibril_condvar_signal
+                0x00000000004015b0                vfs_put
+                0x00000000004015c0                loc_service_get_id
+                0x00000000004015d0                async_answer_0
+                0x00000000004015e0                vfs_unlink_path
+                0x00000000004015f0                fibril_condvar_wait
+                0x0000000000401600                task_spawnvf
+                0x0000000000401610                strtol
+                0x0000000000401620                async_exchange_end
+                0x0000000000401630                str_chr
+                0x0000000000401640                calloc
+                0x0000000000401650                fibril_condvar_wait_timeout
+                0x0000000000401660                fibril_condvar_initialize
+                0x0000000000401670                fibril_condvar_broadcast
+                0x0000000000401680                __context_save
+                0x0000000000401690                async_answer_2
+                0x00000000004016a0                fibril_mutex_unlock
+                0x00000000004016b0                str_dup
+                0x00000000004016c0                loc_service_unregister
+                0x00000000004016d0                fibril_create
+                0x00000000004016e0                task_kill
+                0x00000000004016f0                async_create_callback_port
+                0x0000000000401700                str_cmp
+                0x0000000000401710                async_msg_0
+                0x0000000000401720                task_get_id
+                0x0000000000401730                strdup
+                0x0000000000401740                __helenos_assert_abort
+                0x0000000000401750                async_data_read_receive
+                0x0000000000401760                async_accept_0
+                0x0000000000401770                vfs_read
+                0x0000000000401780                async_data_read_start
+                0x0000000000401790                str_cpy
+                0x00000000004017a0                asprintf
+                0x00000000004017b0                loc_server_register
+                0x00000000004017c0                str_size
+                0x00000000004017d0                str_lcmp
+                0x00000000004017e0                async_exchange_begin
+                0x00000000004017f0                async_send_0
+                0x0000000000401800                str_error
+                0x0000000000401810                __libc_main
+                0x0000000000401820                exit
+                0x0000000000401830                async_forget
+                0x0000000000401840                fibril_add_ready
+                0x0000000000401850                fileno
+                0x0000000000401860                async_req_2_0
+                0x0000000000401870                vfs_lookup_open
+                0x0000000000401880                async_set_fallback_port_handler
+                0x0000000000401890                async_callback_receive
+                0x00000000004018a0                free
+                0x00000000004018b0                fibril_mutex_lock
+ *(.iplt)
+ .iplt          0x00000000004018c0        0x0 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+
+.plt.got        0x00000000004018c0        0x0
+ *(.plt.got)
+ .plt.got       0x00000000004018c0        0x0 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x00000000004018c0     0x56ba
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ .text.startup.main
+                0x00000000004018c0       0x14 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+                0x00000000004018c0                main
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ *fill*         0x00000000004018d4        0xc 
+ .text.test_get_window_list
+                0x00000000004018e0       0x17 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x00000000004018f7        0x9 
+ .text.test_get_window_info
+                0x0000000000401900       0x1b uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x000000000040191b        0x5 
+ .text.test_activate_window
+                0x0000000000401920       0x14 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x0000000000401934        0xc 
+ .text.test_close_window
+                0x0000000000401940       0x10 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ .text.test_get_event
+                0x0000000000401950       0x2b uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x000000000040197b        0x5 
+ .text.test_window_changed_deliver
+                0x0000000000401980      0x3a3 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x0000000000401d23        0xd 
+ .text.test_window_removed_deliver
+                0x0000000000401d30      0x3a3 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x00000000004020d3        0xd 
+ .text.test_window_added_deliver
+                0x00000000004020e0      0x3a3 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x0000000000402483        0xd 
+ .text.test_open_close
+                0x0000000000402490      0x29b uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x000000000040272b        0x5 
+ .text.test_window_changed
+                0x0000000000402730       0x55 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x0000000000402785        0xb 
+ .text.test_window_removed
+                0x0000000000402790       0x55 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x00000000004027e5        0xb 
+ .text.test_window_added
+                0x00000000004027f0       0x55 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x0000000000402845        0xb 
+ .text.test_wndmgt_conn
+                0x0000000000402850       0x53 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x00000000004028a3        0xd 
+ .text.test_close_window_success
+                0x00000000004028b0      0x39d uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x0000000000402c4d        0x3 
+ .text.test_close_window_failure
+                0x0000000000402c50      0x39d uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x0000000000402fed        0x3 
+ .text.test_activate_window_success
+                0x0000000000402ff0      0x3dd uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x00000000004033cd        0x3 
+ .text.test_activate_window_failure
+                0x00000000004033d0      0x3dd uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x00000000004037ad        0x3 
+ .text.test_get_window_info_failure
+                0x00000000004037b0      0x3ad uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x0000000000403b5d        0x3 
+ .text.test_get_window_info_success
+                0x0000000000403b60      0x547 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x00000000004040a7        0x9 
+ .text.test_get_window_list_failure
+                0x00000000004040b0      0x36d uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x000000000040441d        0x3 
+ .text.test_get_window_list_success
+                0x0000000000404420      0x4d5 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ .text          0x00000000004048f5        0xc uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                0x00000000004048f5                _start
+ *fill*         0x0000000000404901        0xf 
+ .text.__c_start
+                0x0000000000404910       0x8c uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                0x0000000000404910                __c_start
+ *fill*         0x000000000040499c        0x4 
+ .text.wndmgt_cb_conn
+                0x00000000004049a0      0x1e5 uspace/lib/libwndmgt.a.p/wndmgt_src_wndmgt.c.o
+ *fill*         0x0000000000404b85        0xb 
+ .text.wndmgt_open
+                0x0000000000404b90      0x15b uspace/lib/libwndmgt.a.p/wndmgt_src_wndmgt.c.o
+                0x0000000000404b90                wndmgt_open
+ *fill*         0x0000000000404ceb        0x5 
+ .text.wndmgt_close
+                0x0000000000404cf0       0x63 uspace/lib/libwndmgt.a.p/wndmgt_src_wndmgt.c.o
+                0x0000000000404cf0                wndmgt_close
+ *fill*         0x0000000000404d53        0xd 
+ .text.wndmgt_get_window_list
+                0x0000000000404d60      0x146 uspace/lib/libwndmgt.a.p/wndmgt_src_wndmgt.c.o
+                0x0000000000404d60                wndmgt_get_window_list
+ *fill*         0x0000000000404ea6        0xa 
+ .text.wndmgt_free_window_list
+                0x0000000000404eb0       0x22 uspace/lib/libwndmgt.a.p/wndmgt_src_wndmgt.c.o
+                0x0000000000404eb0                wndmgt_free_window_list
+ *fill*         0x0000000000404ed2        0xe 
+ .text.wndmgt_get_window_info
+                0x0000000000404ee0      0x156 uspace/lib/libwndmgt.a.p/wndmgt_src_wndmgt.c.o
+                0x0000000000404ee0                wndmgt_get_window_info
+ *fill*         0x0000000000405036        0xa 
+ .text.wndmgt_free_window_info
+                0x0000000000405040       0x21 uspace/lib/libwndmgt.a.p/wndmgt_src_wndmgt.c.o
+                0x0000000000405040                wndmgt_free_window_info
+ *fill*         0x0000000000405061        0xf 
+ .text.wndmgt_activate_window
+                0x0000000000405070       0x4a uspace/lib/libwndmgt.a.p/wndmgt_src_wndmgt.c.o
+                0x0000000000405070                wndmgt_activate_window
+ *fill*         0x00000000004050ba        0x6 
+ .text.wndmgt_close_window
+                0x00000000004050c0       0x38 uspace/lib/libwndmgt.a.p/wndmgt_src_wndmgt.c.o
+                0x00000000004050c0                wndmgt_close_window
+ *fill*         0x00000000004050f8        0x8 
+ .text.wndmgt_conn
+                0x0000000000405100      0x4c9 uspace/lib/libwndmgt.a.p/wndmgt_src_wndmgt_srv.c.o
+                0x0000000000405100                wndmgt_conn
+ *fill*         0x00000000004055c9        0x7 
+ .text.wndmgt_srv_initialize
+                0x00000000004055d0       0x15 uspace/lib/libwndmgt.a.p/wndmgt_src_wndmgt_srv.c.o
+                0x00000000004055d0                wndmgt_srv_initialize
+ *fill*         0x00000000004055e5        0xb 
+ .text.wndmgt_srv_ev_pending
+                0x00000000004055f0       0x2e uspace/lib/libwndmgt.a.p/wndmgt_src_wndmgt_srv.c.o
+                0x00000000004055f0                wndmgt_srv_ev_pending
+ *fill*         0x000000000040561e        0x2 
+ .text.test_timeout_handler_fibril
+                0x0000000000405620       0x6c uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ *fill*         0x000000000040568c        0x4 
+ .text.pcut_str_equals
+                0x0000000000405690       0x13 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+                0x0000000000405690                pcut_str_equals
+ *fill*         0x00000000004056a3        0xd 
+ .text.pcut_str_start_equals
+                0x00000000004056b0       0x16 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+                0x00000000004056b0                pcut_str_start_equals
+ *fill*         0x00000000004056c6        0xa 
+ .text.pcut_str_size
+                0x00000000004056d0        0xb uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+                0x00000000004056d0                pcut_str_size
+ *fill*         0x00000000004056db        0x5 
+ .text.pcut_str_to_int
+                0x00000000004056e0       0x12 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+                0x00000000004056e0                pcut_str_to_int
+ *fill*         0x00000000004056f2        0xe 
+ .text.pcut_str_find_char
+                0x0000000000405700        0xe uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+                0x0000000000405700                pcut_str_find_char
+ *fill*         0x000000000040570e        0x2 
+ .text.pcut_str_error
+                0x0000000000405710       0x2f uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+                0x0000000000405710                pcut_str_error
+ *fill*         0x000000000040573f        0x1 
+ .text.pcut_run_test_forking
+                0x0000000000405740      0x249 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+                0x0000000000405740                pcut_run_test_forking
+ *fill*         0x0000000000405989        0x7 
+ .text.pcut_hook_before_test
+                0x0000000000405990        0x6 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+                0x0000000000405990                pcut_hook_before_test
+ *fill*         0x0000000000405996        0xa 
+ .text.pcut_failed_assertion_fmt
+                0x00000000004059a0      0x10a uspace/lib/libpcut.a.p/pcut_src_assert.c.o
+                0x00000000004059a0                pcut_failed_assertion_fmt
+ *fill*         0x0000000000405aaa        0x6 
+ .text.pcut_snprintf
+                0x0000000000405ab0       0x7f uspace/lib/libpcut.a.p/pcut_src_helper.c.o
+                0x0000000000405ab0                pcut_snprintf
+ *fill*         0x0000000000405b2f        0x1 
+ .text.run_suite
+                0x0000000000405b30       0xec uspace/lib/libpcut.a.p/pcut_src_main.c.o
+ *fill*         0x0000000000405c1c        0x4 
+ .text.pcut_main
+                0x0000000000405c20      0x447 uspace/lib/libpcut.a.p/pcut_src_main.c.o
+                0x0000000000405c20                pcut_main
+ *fill*         0x0000000000406067        0x9 
+ .text.pcut_print_tests
+                0x0000000000406070       0x99 uspace/lib/libpcut.a.p/pcut_src_print.c.o
+                0x0000000000406070                pcut_print_tests
+ *fill*         0x0000000000406109        0x7 
+ .text.pcut_print_fail_message
+                0x0000000000406110       0x41 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                0x0000000000406110                pcut_print_fail_message
+ *fill*         0x0000000000406151        0xf 
+ .text.pcut_report_register_handler
+                0x0000000000406160        0xd uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                0x0000000000406160                pcut_report_register_handler
+ *fill*         0x000000000040616d        0x3 
+ .text.pcut_report_init
+                0x0000000000406170       0x22 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                0x0000000000406170                pcut_report_init
+ *fill*         0x0000000000406192        0xe 
+ .text.pcut_report_suite_start
+                0x00000000004061a0       0x22 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                0x00000000004061a0                pcut_report_suite_start
+ *fill*         0x00000000004061c2        0xe 
+ .text.pcut_report_suite_done
+                0x00000000004061d0       0x22 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                0x00000000004061d0                pcut_report_suite_done
+ *fill*         0x00000000004061f2        0xe 
+ .text.pcut_report_test_start
+                0x0000000000406200       0x22 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                0x0000000000406200                pcut_report_test_start
+ *fill*         0x0000000000406222        0xe 
+ .text.pcut_report_test_done
+                0x0000000000406230       0x22 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                0x0000000000406230                pcut_report_test_done
+ *fill*         0x0000000000406252        0xe 
+ .text.pcut_report_test_done_unparsed
+                0x0000000000406260      0x15a uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                0x0000000000406260                pcut_report_test_done_unparsed
+ *fill*         0x00000000004063ba        0x6 
+ .text.pcut_report_done
+                0x00000000004063c0       0x22 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                0x00000000004063c0                pcut_report_done
+ *fill*         0x00000000004063e2        0xe 
+ .text.tap_test_start
+                0x00000000004063f0       0x14 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ *fill*         0x0000000000406404        0xc 
+ .text.tap_suite_start
+                0x0000000000406410       0x29 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ *fill*         0x0000000000406439        0x7 
+ .text.tap_init
+                0x0000000000406440       0x2c uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ *fill*         0x000000000040646c        0x4 
+ .text.tap_done
+                0x0000000000406470       0x42 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ *fill*         0x00000000004064b2        0xe 
+ .text.tap_suite_done
+                0x00000000004064c0       0x33 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ *fill*         0x00000000004064f3        0xd 
+ .text.tap_test_done
+                0x0000000000406500      0x246 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ *fill*         0x0000000000406746        0xa 
+ .text.xml_test_start
+                0x0000000000406750       0x14 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ *fill*         0x0000000000406764        0xc 
+ .text.xml_suite_done
+                0x0000000000406770       0x21 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ *fill*         0x0000000000406791        0xf 
+ .text.xml_suite_start
+                0x00000000004067a0       0x29 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ *fill*         0x00000000004067c9        0x7 
+ .text.xml_done
+                0x00000000004067d0        0xf uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ *fill*         0x00000000004067df        0x1 
+ .text.xml_init
+                0x00000000004067e0       0x37 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ *fill*         0x0000000000406817        0x9 
+ .text.xml_test_done
+                0x0000000000406820      0x1dd uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ *fill*         0x00000000004069fd        0x3 
+ .text.run_test
+                0x0000000000406a00      0x135 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ *fill*         0x0000000000406b35        0xb 
+ .text.pcut_failed_assertion
+                0x0000000000406b40       0xca uspace/lib/libpcut.a.p/pcut_src_run.c.o
+                0x0000000000406b40                pcut_failed_assertion
+ *fill*         0x0000000000406c0a        0x6 
+ .text.pcut_run_test_forked
+                0x0000000000406c10       0x3f uspace/lib/libpcut.a.p/pcut_src_run.c.o
+                0x0000000000406c10                pcut_run_test_forked
+ *fill*         0x0000000000406c4f        0x1 
+ .text.pcut_run_test_single
+                0x0000000000406c50       0x3f uspace/lib/libpcut.a.p/pcut_src_run.c.o
+                0x0000000000406c50                pcut_run_test_single
+ *fill*         0x0000000000406c8f        0x1 
+ .text.pcut_get_test_timeout
+                0x0000000000406c90       0x2f uspace/lib/libpcut.a.p/pcut_src_run.c.o
+                0x0000000000406c90                pcut_get_test_timeout
+ *fill*         0x0000000000406cbf        0x1 
+ .text.pcut_get_real_next
+                0x0000000000406cc0       0x22 uspace/lib/libpcut.a.p/pcut_src_list.c.o
+                0x0000000000406cc0                pcut_get_real_next
+ *fill*         0x0000000000406ce2        0xe 
+ .text.pcut_get_real
+                0x0000000000406cf0       0x2a uspace/lib/libpcut.a.p/pcut_src_list.c.o
+                0x0000000000406cf0                pcut_get_real
+ *fill*         0x0000000000406d1a        0x6 
+ .text.pcut_fix_list_get_real_head
+                0x0000000000406d20      0x219 uspace/lib/libpcut.a.p/pcut_src_list.c.o
+                0x0000000000406d20                pcut_fix_list_get_real_head
+ *fill*         0x0000000000406f39        0x7 
+ .text.pcut_count_tests
+                0x0000000000406f40       0x3a uspace/lib/libpcut.a.p/pcut_src_list.c.o
+                0x0000000000406f40                pcut_count_tests
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000406f80      0x908
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.1
+                0x0000000000406f80      0x511 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+                                         0x20 (size before relaxing)
+ .rodata.test_window_changed_deliver.str1.1
+                0x0000000000407491       0x40 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x0000000000407491        0x7 
+ .rodata.test_window_changed_deliver.str1.8
+                0x0000000000407498      0x394 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+                                         0xe2 (size before relaxing)
+ .rodata.test_close_window_success.str1.1
+                0x000000000040782c       0x5c uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ .rodata.test_activate_window_success.str1.1
+                0x000000000040782c       0x5d uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ .rodata.test_get_window_info_failure.str1.1
+                0x000000000040782c       0x38 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ .rodata.test_get_window_info_success.str1.8
+                0x000000000040782c       0xde uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ .rodata.test_get_window_info_success.str1.1
+                0x000000000040782c       0x3c uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ .rodata.test_get_window_list_failure.str1.1
+                0x000000000040782c       0x1c uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ .rodata.test_get_window_list_success.str1.8
+                0x000000000040782c       0x83 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ .rodata.test_get_window_list_success.str1.1
+                0x000000000040782c       0x36 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ .rodata.str1.1
+                0x000000000040782c      0x12c uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x000000000040782c        0x4 
+ .rodata.cst8   0x0000000000407830       0x10 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+                                          0x8 (size before relaxing)
+ .rodata.cst16  0x0000000000407840       0x10 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ .rodata.cst8   0x0000000000407850        0x8 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .rodata.wndmgt_open.str1.1
+                0x0000000000407858        0xc uspace/lib/libwndmgt.a.p/wndmgt_src_wndmgt.c.o
+ .rodata.wndmgt_conn
+                0x0000000000407858       0x30 uspace/lib/libwndmgt.a.p/wndmgt_src_wndmgt_srv.c.o
+ .rodata.pcut_str_error.str1.1
+                0x0000000000407888       0x13 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ .rodata.pcut_run_test_forking.str1.1
+                0x0000000000407888       0x13 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ .rodata.pcut_run_test_forking.str1.8
+                0x0000000000407888       0x21 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ .rodata.pcut_failed_assertion_fmt.str1.1
+                0x0000000000407888        0x8 uspace/lib/libpcut.a.p/pcut_src_assert.c.o
+ .rodata.pcut_main.str1.1
+                0x0000000000407888       0x80 uspace/lib/libpcut.a.p/pcut_src_main.c.o
+ .rodata.pcut_print_tests.str1.1
+                0x0000000000407888       0x27 uspace/lib/libpcut.a.p/pcut_src_print.c.o
+ .rodata.pcut_print_tests.str1.8
+                0x0000000000407888       0x5c uspace/lib/libpcut.a.p/pcut_src_print.c.o
+ .rodata.pcut_print_fail_message.str1.1
+                0x0000000000407888        0xc uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+ .rodata.tap_suite_start.str1.1
+                0x0000000000407888       0x17 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .rodata.tap_init.str1.1
+                0x0000000000407888        0x7 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .rodata.tap_done.str1.1
+                0x0000000000407888       0x30 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .rodata.tap_done.str1.8
+                0x0000000000407888       0x21 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .rodata.tap_suite_done.str1.8
+                0x0000000000407888       0x49 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .rodata.tap_test_done.str1.1
+                0x0000000000407888       0x49 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .rodata.xml_suite_done.str1.8
+                0x0000000000407888       0x1f uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .rodata.xml_suite_start.str1.1
+                0x0000000000407888       0x14 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .rodata.xml_done.str1.1
+                0x0000000000407888        0xa uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .rodata.xml_init.str1.1
+                0x0000000000407888       0x31 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .rodata.xml_test_done.str1.1
+                0x0000000000407888       0x63 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .rodata.xml_test_done.str1.8
+                0x0000000000407888       0x24 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .rodata.run_test.str1.1
+                0x0000000000407888        0x8 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .rodata.cst8   0x0000000000407888        0x8 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x0000000000407888      0x28c
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x0000000000407888      0x28c uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+                0x0000000000407888                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x0000000000407b18      0xc08
+ *(.eh_frame)
+ .eh_frame      0x0000000000407b18       0x38 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+ .eh_frame      0x0000000000407b50       0x28 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000407b78        0x0 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+ .eh_frame      0x0000000000407b78      0x340 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+                                        0x358 (size before relaxing)
+ .eh_frame      0x0000000000407eb8       0x20 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000407ed8      0x178 uspace/lib/libwndmgt.a.p/wndmgt_src_wndmgt.c.o
+                                        0x190 (size before relaxing)
+ .eh_frame      0x0000000000408050       0x68 uspace/lib/libwndmgt.a.p/wndmgt_src_wndmgt_srv.c.o
+                                         0x80 (size before relaxing)
+ .eh_frame      0x00000000004080b8      0x140 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+                                        0x158 (size before relaxing)
+ .eh_frame      0x00000000004081f8       0x28 uspace/lib/libpcut.a.p/pcut_src_assert.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000408220       0x20 uspace/lib/libpcut.a.p/pcut_src_helper.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000408240       0x60 uspace/lib/libpcut.a.p/pcut_src_main.c.o
+                                         0xa0 (size before relaxing)
+ .eh_frame      0x00000000004082a0       0x28 uspace/lib/libpcut.a.p/pcut_src_print.c.o
+                                         0x60 (size before relaxing)
+ .eh_frame      0x00000000004082c8      0x160 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                                        0x178 (size before relaxing)
+ .eh_frame      0x0000000000408428       0xe8 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+                                        0x100 (size before relaxing)
+ .eh_frame      0x0000000000408510       0xd0 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+                                         0xe8 (size before relaxing)
+ .eh_frame      0x00000000004085e0       0xa8 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+                                         0xc0 (size before relaxing)
+ .eh_frame      0x0000000000408688       0x98 uspace/lib/libpcut.a.p/pcut_src_list.c.o
+                                         0xb0 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x0000000000408720        0x0
+ *(.sframe)
+ .sframe        0x0000000000408720        0x0 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x0000000000409720                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0x0000000000409720        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0000000000409720        0x0
+                0x0000000000409720                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x0000000000409720                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x0000000000409720        0x0
+                0x0000000000409720                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x0000000000409720                PROVIDE (__init_array_end = .)
+
+.fini_array     0x0000000000409720        0x0
+                0x0000000000409720                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x0000000000409720                PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x0000000000409720        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x0000000000409720        0x0 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+
+.dynamic        0x0000000000409720      0x150
+ *(.dynamic)
+ .dynamic       0x0000000000409720      0x150 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+                0x0000000000409720                _DYNAMIC
+
+.got            0x0000000000409870        0x0
+ *(.got)
+ .got           0x0000000000409870        0x0 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+ *(.igot)
+                0x0000000000409870                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x0000000000409870      0x230
+ *(.got.plt)
+ .got.plt       0x0000000000409870      0x230 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+                0x0000000000409870                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x0000000000409aa0        0x0 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+
+.data           0x0000000000409aa0      0x8b0
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.pcut_item_last
+                0x0000000000409aa0       0x50 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+ .data.pcut_main_extras
+                0x0000000000409af0       0x18 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+ *fill*         0x0000000000409b08       0x18 
+ .data.pcut_item_2
+                0x0000000000409b20       0x50 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+ *fill*         0x0000000000409b70       0x10 
+ .data.pcut_item_1
+                0x0000000000409b80       0x50 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+ *fill*         0x0000000000409bd0       0x10 
+ .data.pcut_item_0
+                0x0000000000409be0       0x50 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+ *fill*         0x0000000000409c30       0x10 
+ .data.pcut_exported_wndmgt
+                0x0000000000409c40       0x50 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+                0x0000000000409c40                pcut_exported_wndmgt
+ *fill*         0x0000000000409c90       0x10 
+ .data.pcut_item_14
+                0x0000000000409ca0       0x50 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ .data.pcut_extras_14
+                0x0000000000409cf0        0x8 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x0000000000409cf8        0x8 
+ .data.pcut_item_13
+                0x0000000000409d00       0x50 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ .data.pcut_extras_13
+                0x0000000000409d50        0x8 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x0000000000409d58        0x8 
+ .data.pcut_item_12
+                0x0000000000409d60       0x50 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ .data.pcut_extras_12
+                0x0000000000409db0        0x8 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x0000000000409db8        0x8 
+ .data.pcut_item_11
+                0x0000000000409dc0       0x50 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ .data.pcut_extras_11
+                0x0000000000409e10        0x8 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x0000000000409e18        0x8 
+ .data.pcut_item_10
+                0x0000000000409e20       0x50 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ .data.pcut_extras_10
+                0x0000000000409e70        0x8 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x0000000000409e78        0x8 
+ .data.pcut_item_9
+                0x0000000000409e80       0x50 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ .data.pcut_extras_9
+                0x0000000000409ed0        0x8 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x0000000000409ed8        0x8 
+ .data.pcut_item_8
+                0x0000000000409ee0       0x50 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ .data.pcut_extras_8
+                0x0000000000409f30        0x8 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x0000000000409f38        0x8 
+ .data.pcut_item_7
+                0x0000000000409f40       0x50 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ .data.pcut_extras_7
+                0x0000000000409f90        0x8 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x0000000000409f98        0x8 
+ .data.pcut_item_6
+                0x0000000000409fa0       0x50 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ .data.pcut_extras_6
+                0x0000000000409ff0        0x8 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x0000000000409ff8        0x8 
+ .data.pcut_item_5
+                0x000000000040a000       0x50 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ .data.pcut_extras_5
+                0x000000000040a050        0x8 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x000000000040a058        0x8 
+ .data.pcut_item_4
+                0x000000000040a060       0x50 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ .data.pcut_extras_4
+                0x000000000040a0b0        0x8 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x000000000040a0b8        0x8 
+ .data.pcut_item_3
+                0x000000000040a0c0       0x50 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ .data.pcut_extras_3
+                0x000000000040a110        0x8 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x000000000040a118        0x8 
+ .data.test_wndmgt_cb
+                0x000000000040a120       0x18 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x000000000040a138        0x8 
+ .data.test_wndmgt_srv_ops
+                0x000000000040a140       0x28 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x000000000040a168       0x18 
+ .data.pcut_item_2
+                0x000000000040a180       0x50 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x000000000040a1d0       0x10 
+ .data.pcut_item_1
+                0x000000000040a1e0       0x50 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ *fill*         0x000000000040a230       0x10 
+ .data.pcut_item_0
+                0x000000000040a240       0x50 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ .data.forced_termination_cv
+                0x000000000040a290       0x10 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ .data.forced_termination_mutex
+                0x000000000040a2a0       0x20 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ .data.empty_main_extra
+                0x000000000040a2c0       0x18 uspace/lib/libpcut.a.p/pcut_src_main.c.o
+ .data.pcut_run_mode
+                0x000000000040a2d8        0x4 uspace/lib/libpcut.a.p/pcut_src_main.c.o
+                0x000000000040a2d8                pcut_run_mode
+ *fill*         0x000000000040a2dc        0x4 
+ .data.pcut_report_tap
+                0x000000000040a2e0       0x30 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+                0x000000000040a2e0                pcut_report_tap
+ *fill*         0x000000000040a310       0x10 
+ .data.pcut_report_xml
+                0x000000000040a320       0x30 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+                0x000000000040a320                pcut_report_xml
+
+.data1
+ *(.data1)
+                0x000000000040a350                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x000000000040a350                . = .
+                0x000000000040a350                __bss_start = .
+
+.bss            0x000000000040a360     0x63c8
+ *(.dynbss)
+ .dynbss        0x000000000040a360       0x68 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+                0x000000000040a360                stdout
+                0x000000000040a370                stdin
+                0x000000000040a380                __progsymbols
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss.test_running
+                0x000000000040a3c8        0x4 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ *fill*         0x000000000040a3cc        0x4 
+ .bss.test_task_id
+                0x000000000040a3d0        0x8 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ *fill*         0x000000000040a3d8        0x8 
+ .bss.extra_output_buffer
+                0x000000000040a3e0     0x2000 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ .bss.error_message_buffer
+                0x000000000040c3e0     0x2000 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ .bss.message_buffer_index
+                0x000000000040e3e0        0x4 uspace/lib/libpcut.a.p/pcut_src_assert.c.o
+ *fill*         0x000000000040e3e4       0x1c 
+ .bss.message_buffer
+                0x000000000040e400      0x202 uspace/lib/libpcut.a.p/pcut_src_assert.c.o
+ *fill*         0x000000000040e602       0x1e 
+ .bss.buffer_for_error_messages
+                0x000000000040e620     0x1000 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+ .bss.buffer_for_extra_output
+                0x000000000040f620     0x1000 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+ .bss.report_ops
+                0x0000000000410620        0x8 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+ .bss.failed_test_names
+                0x0000000000410628        0x8 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .bss.failed_tests_in_suite
+                0x0000000000410630        0x4 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .bss.tests_in_suite
+                0x0000000000410634        0x4 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .bss.failed_test_counter
+                0x0000000000410638        0x4 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .bss.test_counter
+                0x000000000041063c        0x4 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .bss.failed_tests_in_suite
+                0x0000000000410640        0x4 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .bss.tests_in_suite
+                0x0000000000410644        0x4 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .bss.test_counter
+                0x0000000000410648        0x4 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ *fill*         0x000000000041064c        0x4 
+ .bss.prev_message.0
+                0x0000000000410650        0x8 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ *fill*         0x0000000000410658        0x8 
+ .bss.default_suite
+                0x0000000000410660       0x50 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .bss.current_suite
+                0x00000000004106b0        0x8 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .bss.current_test
+                0x00000000004106b8        0x8 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .bss.leave_means_exit
+                0x00000000004106c0        0x4 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .bss.print_test_error
+                0x00000000004106c4        0x4 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .bss.report_test_result
+                0x00000000004106c8        0x4 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .bss.execute_teardown_on_failure
+                0x00000000004106cc        0x4 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ *fill*         0x00000000004106d0       0x10 
+ .bss.start_test_jump
+                0x00000000004106e0       0x48 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ *(COMMON)
+                0x0000000000410728                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x0000000000410728                . = ALIGN (0x8)
+                0x0000000000410728                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x0000000000412728        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x0000000000412728                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000412728                . = ALIGN (0x8)
+                0x0000000000410728                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x0000000000412728                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/lib/test-libwndmgt.p/wndmgt_test_main.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/lib/test-libwndmgt.p/wndmgt_test_wndmgt.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libwndmgt.a.p/wndmgt_src_wndmgt.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libwndmgt.a.p/wndmgt_src_wndmgt_srv.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libpcut.a.p/pcut_src_assert.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libpcut.a.p/pcut_src_helper.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libpcut.a.p/pcut_src_main.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libpcut.a.p/pcut_src_print.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libpcut.a.p/pcut_src_list.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/lib/test-libwndmgt elf64-x86-64)

@@ -1,0 +1,1019 @@
+Archive member included to satisfy reference by file (symbol)
+
+uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                              (--whole-archive)
+uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                              (--whole-archive)
+uspace/lib/libcodepage.a.p/codepage_src_cp437.c.o
+                              uspace/srv_hid_output.p/srv_hid_output_port_ega.c.o (cp437_encode)
+uspace/lib/liboutput.a.p/output_src_chargrid.c.o
+                              uspace/srv_hid_output.p/srv_hid_output_output.c.o (chargrid_create)
+uspace/lib/libdevice.a.p/device_src_io_chardev.c.o
+                              uspace/srv_hid_output.p/srv_hid_output_port_chardev.c.o (chardev_open)
+uspace/lib/libfbfont.a.p/fbfont_src_font-8x16.c.o
+                              uspace/srv_hid_output.p/srv_hid_output_port_ddev.c.o (fb_font_glyph)
+uspace/lib/libddev.a.p/ddev_src_ddev.c.o
+                              uspace/srv_hid_output.p/srv_hid_output_port_ddev.c.o (ddev_open)
+uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+                              uspace/srv_hid_output.p/srv_hid_output_port_ddev.c.o (gfx_bitmap_params_init)
+uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+                              uspace/srv_hid_output.p/srv_hid_output_port_ddev.c.o (gfx_rect_envelope)
+uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+                              uspace/lib/libddev.a.p/ddev_src_ddev.c.o (ipc_gc_create)
+uspace/lib/libvt.a.p/vt_src_vt100.c.o
+                              uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o (vt100_cls)
+uspace/lib/libgfx.a.p/gfx_src_color.c.o
+                              uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o (gfx_color_get_rgb_i16)
+uspace/lib/libgfx.a.p/gfx_src_context.c.o
+                              uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o (gfx_context_new)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.0                     uspace/srv_hid_output.p/srv_hid_output_port_ega.c.o (pio_enable)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_hid_output.p/srv_hid_output_port_ega.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_hid_output.p/srv_hid_output_port_ega.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_hid_output.p/srv_hid_output_port_ega.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_hid_output.p/srv_hid_output_port_chardev.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_hid_output.p/srv_hid_output_port_chardev.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_hid_output.p/srv_hid_output_port_chardev.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_hid_output.p/srv_hid_output_port_ddev.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_hid_output.p/srv_hid_output_port_ddev.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_hid_output.p/srv_hid_output_port_ddev.c.o
+ .text.output_ddev_yield
+                0x0000000000000000        0x8 uspace/srv_hid_output.p/srv_hid_output_port_ddev.c.o
+ .text.output_ddev_get_dimensions
+                0x0000000000000000       0x18 uspace/srv_hid_output.p/srv_hid_output_port_ddev.c.o
+ .text.output_ddev_get_caps
+                0x0000000000000000        0xb uspace/srv_hid_output.p/srv_hid_output_port_ddev.c.o
+ .text.output_ddev_flush
+                0x0000000000000000       0x2a uspace/srv_hid_output.p/srv_hid_output_port_ddev.c.o
+ .text.output_ddev_claim
+                0x0000000000000000        0x8 uspace/srv_hid_output.p/srv_hid_output_port_ddev.c.o
+ .text.output_ddev_char_update
+                0x0000000000000000      0x57e uspace/srv_hid_output.p/srv_hid_output_port_ddev.c.o
+ .text.output_ddev_cursor_update
+                0x0000000000000000       0x43 uspace/srv_hid_output.p/srv_hid_output_port_ddev.c.o
+ .rodata.output_ddev_init.str1.1
+                0x0000000000000000       0x34 uspace/srv_hid_output.p/srv_hid_output_port_ddev.c.o
+ .rodata.output_ddev_init.str1.8
+                0x0000000000000000       0xae uspace/srv_hid_output.p/srv_hid_output_port_ddev.c.o
+ .text.output_ddev_init
+                0x0000000000000000      0x1d3 uspace/srv_hid_output.p/srv_hid_output_port_ddev.c.o
+ .data.output_ddev_ops
+                0x0000000000000000       0x38 uspace/srv_hid_output.p/srv_hid_output_port_ddev.c.o
+ .rodata.color_table
+                0x0000000000000000       0x40 uspace/srv_hid_output.p/srv_hid_output_port_ddev.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_hid_output.p/srv_hid_output_output.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_hid_output.p/srv_hid_output_output.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_hid_output.p/srv_hid_output_output.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .text          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libcodepage.a.p/codepage_src_cp437.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libcodepage.a.p/codepage_src_cp437.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libcodepage.a.p/codepage_src_cp437.c.o
+ .text.cp437_decode
+                0x0000000000000000       0x11 uspace/lib/libcodepage.a.p/codepage_src_cp437.c.o
+ .rodata.cp437  0x0000000000000000      0x400 uspace/lib/libcodepage.a.p/codepage_src_cp437.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/liboutput.a.p/output_src_chargrid.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/liboutput.a.p/output_src_chargrid.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/liboutput.a.p/output_src_chargrid.c.o
+ .text.chargrid_destroy
+                0x0000000000000000        0x6 uspace/lib/liboutput.a.p/output_src_chargrid.c.o
+ .text.chargrid_cursor_at
+                0x0000000000000000       0x29 uspace/lib/liboutput.a.p/output_src_chargrid.c.o
+ .rodata.chargrid_putuchar.str1.1
+                0x0000000000000000       0x36 uspace/lib/liboutput.a.p/output_src_chargrid.c.o
+ .text.chargrid_putuchar
+                0x0000000000000000      0x12a uspace/lib/liboutput.a.p/output_src_chargrid.c.o
+ .text.chargrid_newline
+                0x0000000000000000       0xc5 uspace/lib/liboutput.a.p/output_src_chargrid.c.o
+ .text.chargrid_tabstop
+                0x0000000000000000      0x1ac uspace/lib/liboutput.a.p/output_src_chargrid.c.o
+ .text.chargrid_backspace
+                0x0000000000000000       0xc3 uspace/lib/liboutput.a.p/output_src_chargrid.c.o
+ .text.chargrid_clear
+                0x0000000000000000       0x4d uspace/lib/liboutput.a.p/output_src_chargrid.c.o
+ .text.chargrid_clear_row
+                0x0000000000000000       0x52 uspace/lib/liboutput.a.p/output_src_chargrid.c.o
+ .text.chargrid_set_style
+                0x0000000000000000       0x10 uspace/lib/liboutput.a.p/output_src_chargrid.c.o
+ .text.chargrid_set_color
+                0x0000000000000000       0x16 uspace/lib/liboutput.a.p/output_src_chargrid.c.o
+ .text.chargrid_set_rgb_color
+                0x0000000000000000       0x13 uspace/lib/liboutput.a.p/output_src_chargrid.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_io_chardev.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_io_chardev.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_io_chardev.c.o
+ .text.chardev_close
+                0x0000000000000000        0xa uspace/lib/libdevice.a.p/device_src_io_chardev.c.o
+ .text.chardev_read
+                0x0000000000000000       0xc9 uspace/lib/libdevice.a.p/device_src_io_chardev.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libfbfont.a.p/fbfont_src_font-8x16.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libfbfont.a.p/fbfont_src_font-8x16.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libfbfont.a.p/fbfont_src_font-8x16.c.o
+ .text.fb_font_glyph
+                0x0000000000000000      0x9f2 uspace/lib/libfbfont.a.p/fbfont_src_font-8x16.c.o
+ .rodata.fb_font_glyph
+                0x0000000000000000      0xc20 uspace/lib/libfbfont.a.p/fbfont_src_font-8x16.c.o
+ .data.fb_font  0x0000000000000000     0xb530 uspace/lib/libfbfont.a.p/fbfont_src_font-8x16.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libddev.a.p/ddev_src_ddev.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libddev.a.p/ddev_src_ddev.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libddev.a.p/ddev_src_ddev.c.o
+ .text.ddev_open
+                0x0000000000000000       0x94 uspace/lib/libddev.a.p/ddev_src_ddev.c.o
+ .text.ddev_close
+                0x0000000000000000       0x21 uspace/lib/libddev.a.p/ddev_src_ddev.c.o
+ .text.ddev_get_gc
+                0x0000000000000000       0xbf uspace/lib/libddev.a.p/ddev_src_ddev.c.o
+ .text.ddev_get_info
+                0x0000000000000000       0x86 uspace/lib/libddev.a.p/ddev_src_ddev.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+ .text.gfx_bitmap_params_init
+                0x0000000000000000       0x15 uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+ .text.gfx_bitmap_create
+                0x0000000000000000       0x94 uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+ .text.gfx_bitmap_destroy
+                0x0000000000000000       0x2e uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+ .text.gfx_bitmap_render
+                0x0000000000000000       0x18 uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+ .text.gfx_bitmap_get_alloc
+                0x0000000000000000       0x18 uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_coord_div_rneg
+                0x0000000000000000       0x26 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_coord2_add
+                0x0000000000000000       0x16 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_coord2_subtract
+                0x0000000000000000       0x16 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_coord2_clip
+                0x0000000000000000       0x38 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_coord2_project
+                0x0000000000000000       0xac uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_span_points_sort
+                0x0000000000000000       0x16 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_rect_translate
+                0x0000000000000000       0x28 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_rect_rtranslate
+                0x0000000000000000       0x28 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_rect_envelope
+                0x0000000000000000       0xe9 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_rect_clip
+                0x0000000000000000      0x118 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_rect_ctr_on_rect
+                0x0000000000000000       0xd0 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_rect_points_sort
+                0x0000000000000000       0x34 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_rect_is_empty
+                0x0000000000000000       0x1b uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_rect_is_incident
+                0x0000000000000000       0xe5 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_rect_is_inside
+                0x0000000000000000       0x7c uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_rect_dims
+                0x0000000000000000       0x37 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_pix_inside_rect
+                0x0000000000000000       0x51 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ .text.ipc_gc_bitmap_get_alloc
+                0x0000000000000000       0x18 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ .text.ipc_gc_bitmap_render
+                0x0000000000000000      0x121 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ .text.ipc_gc_bitmap_create
+                0x0000000000000000      0x3a9 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ .text.ipc_gc_update
+                0x0000000000000000       0x33 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ .text.ipc_gc_fill_rect
+                0x0000000000000000       0x43 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ .text.ipc_gc_set_clip_rect
+                0x0000000000000000       0x6e uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ .text.ipc_gc_set_color
+                0x0000000000000000       0x5f uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ .text.ipc_gc_bitmap_destroy
+                0x0000000000000000       0x6b uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ .text.ipc_gc_create
+                0x0000000000000000       0x97 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ .text.ipc_gc_delete
+                0x0000000000000000       0x27 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ .text.ipc_gc_get_ctx
+                0x0000000000000000        0x9 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ .data.ipc_gc_ops
+                0x0000000000000000       0x58 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libvt.a.p/vt_src_vt100.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libvt.a.p/vt_src_vt100.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libvt.a.p/vt_src_vt100.c.o
+ .text.vt100_sgr
+                0x0000000000000000       0x38 uspace/lib/libvt.a.p/vt_src_vt100.c.o
+ .text.vt100_set_pos
+                0x0000000000000000       0x3e uspace/lib/libvt.a.p/vt_src_vt100.c.o
+ .text.vt100_resize
+                0x0000000000000000       0x29 uspace/lib/libvt.a.p/vt_src_vt100.c.o
+ .rodata.vt100_set_button_reporting.str1.1
+                0x0000000000000000       0x24 uspace/lib/libvt.a.p/vt_src_vt100.c.o
+ .text.vt100_set_button_reporting
+                0x0000000000000000       0x5f uspace/lib/libvt.a.p/vt_src_vt100.c.o
+ .rodata.vt100_set_title.str1.1
+                0x0000000000000000        0x7 uspace/lib/libvt.a.p/vt_src_vt100.c.o
+ .text.vt100_set_title
+                0x0000000000000000       0x42 uspace/lib/libvt.a.p/vt_src_vt100.c.o
+ .text.vt100_rcvd_char
+                0x0000000000000000     0x2090 uspace/lib/libvt.a.p/vt_src_vt100.c.o
+ .rodata.vt100_rcvd_char
+                0x0000000000000000      0x9e8 uspace/lib/libvt.a.p/vt_src_vt100.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_color.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_color.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_color.c.o
+ .text.gfx_color_new_rgb_i16
+                0x0000000000000000       0x52 uspace/lib/libgfx.a.p/gfx_src_color.c.o
+ .text.gfx_color_new_ega
+                0x0000000000000000       0x36 uspace/lib/libgfx.a.p/gfx_src_color.c.o
+ .text.gfx_color_delete
+                0x0000000000000000        0xa uspace/lib/libgfx.a.p/gfx_src_color.c.o
+ .text.gfx_color_get_rgb_i16
+                0x0000000000000000       0x1a uspace/lib/libgfx.a.p/gfx_src_color.c.o
+ .text.gfx_color_get_ega
+                0x0000000000000000        0xc uspace/lib/libgfx.a.p/gfx_src_color.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_context.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_context.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_context.c.o
+ .text.gfx_context_new
+                0x0000000000000000       0x49 uspace/lib/libgfx.a.p/gfx_src_context.c.o
+ .text.gfx_context_delete
+                0x0000000000000000       0x1b uspace/lib/libgfx.a.p/gfx_src_context.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+LOAD uspace/srv_hid_output.p/srv_hid_output_port_ega.c.o
+LOAD uspace/srv_hid_output.p/srv_hid_output_port_chardev.c.o
+LOAD uspace/srv_hid_output.p/srv_hid_output_port_ddev.c.o
+LOAD uspace/srv_hid_output.p/srv_hid_output_output.c.o
+START GROUP
+LOAD uspace/lib/c/libstartfiles.a
+LOAD uspace/lib/libcodepage.a
+LOAD uspace/lib/libc.so.0.0
+LOAD uspace/lib/libconsole.a
+LOAD uspace/lib/libinput.a
+LOAD uspace/lib/liboutput.a
+LOAD uspace/lib/libdrv.a
+LOAD uspace/lib/libinet.a
+LOAD uspace/lib/libpcm.a
+LOAD uspace/lib/libdevice.a
+LOAD uspace/lib/libfbfont.a
+LOAD uspace/lib/libpixconv.a
+LOAD uspace/lib/libddev.a
+LOAD uspace/lib/libgfx.a
+LOAD uspace/lib/libipcgfx.a
+LOAD uspace/lib/libvt.a
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000400000                PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x0000000000400120                . = (SEGMENT_START ("text-segment", 0x400000) + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000400120      0x15c
+ *(.hash)
+ .hash          0x0000000000400120      0x15c uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x0000000000400280      0x480
+ *(.dynsym)
+ .dynsym        0x0000000000400280      0x480 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+
+.dynstr         0x0000000000400700      0x314
+ *(.dynstr)
+ .dynstr        0x0000000000400700      0x314 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+
+.gnu.version    0x0000000000400a14        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000400a14        0x0 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+
+.gnu.version_d  0x0000000000400a18        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000400a18        0x0 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+
+.gnu.version_r  0x0000000000400a18        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000400a18        0x0 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+
+.rela.dyn       0x0000000000400a18       0x18
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text.__c_start
+                0x0000000000400a18        0x0 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ .rela.rodata.cst8
+                0x0000000000400a18        0x0 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x0000000000400a18        0x0 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000400a18        0x0 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x0000000000400a18       0x18 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+
+.rela.plt       0x0000000000400a30      0x450
+ *(.rela.plt)
+ .rela.plt      0x0000000000400a30      0x450 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+ .rela.iplt     0x0000000000400e80        0x0 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x0000000000400e80      0x2f0
+ *(.plt)
+ .plt           0x0000000000400e80      0x2f0 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+                0x0000000000400e90                pio_enable
+                0x0000000000400ea0                loc_category_get_id
+                0x0000000000400eb0                sysinfo_get_value
+                0x0000000000400ec0                task_retval
+                0x0000000000400ed0                loc_service_connect
+                0x0000000000400ee0                physmem_map
+                0x0000000000400ef0                printf
+                0x0000000000400f00                async_wait_for
+                0x0000000000400f10                snprintf
+                0x0000000000400f20                async_data_write_start
+                0x0000000000400f30                loc_service_register
+                0x0000000000400f40                async_get_call
+                0x0000000000400f50                loc_server_unregister
+                0x0000000000400f60                malloc
+                0x0000000000400f70                async_share_out_receive
+                0x0000000000400f80                fibril_condvar_signal
+                0x0000000000400f90                as_area_destroy
+                0x0000000000400fa0                async_answer_0
+                0x0000000000400fb0                fibril_condvar_wait
+                0x0000000000400fc0                pio_read_8
+                0x0000000000400fd0                async_exchange_end
+                0x0000000000400fe0                loc_service_get_name
+                0x0000000000400ff0                calloc
+                0x0000000000401000                pio_write_8
+                0x0000000000401010                async_share_out_finalize
+                0x0000000000401020                loc_register_cat_change_cb
+                0x0000000000401030                config_key_exists
+                0x0000000000401040                async_answer_2
+                0x0000000000401050                fibril_mutex_unlock
+                0x0000000000401060                str_cmp
+                0x0000000000401070                __helenos_assert_abort
+                0x0000000000401080                async_accept_0
+                0x0000000000401090                config_get_value
+                0x00000000004010a0                loc_server_register
+                0x00000000004010b0                loc_category_get_svcs
+                0x00000000004010c0                async_answer_1
+                0x00000000004010d0                async_exchange_begin
+                0x00000000004010e0                async_send_0
+                0x00000000004010f0                __libc_main
+                0x0000000000401100                async_manager
+                0x0000000000401110                async_forget
+                0x0000000000401120                chr_encode
+                0x0000000000401130                as_area_create
+                0x0000000000401140                async_set_fallback_port_handler
+                0x0000000000401150                free
+                0x0000000000401160                fibril_mutex_lock
+ *(.iplt)
+ .iplt          0x0000000000401170        0x0 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+
+.plt.got        0x0000000000401170        0x0
+ *(.plt.got)
+ .plt.got       0x0000000000401170        0x0 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x0000000000401170     0x2526
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ .text.startup.main
+                0x0000000000401170       0xea uspace/srv_hid_output.p/srv_hid_output_output.c.o
+                0x0000000000401170                main
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ *fill*         0x000000000040125a        0x6 
+ .text.serial_get_caps
+                0x0000000000401260        0xb uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+ *fill*         0x000000000040126b        0x5 
+ .text.serial_vt_putuchar
+                0x0000000000401270        0xd uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+ *fill*         0x000000000040127d        0x3 
+ .text.serial_vt_control_puts
+                0x0000000000401280        0xe uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+ *fill*         0x000000000040128e        0x2 
+ .text.serial_vt_flush
+                0x0000000000401290        0xb uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+ *fill*         0x000000000040129b        0x5 
+ .text.serial_flush
+                0x00000000004012a0        0xe uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+ *fill*         0x00000000004012ae        0x2 
+ .text.serial_cursor_update
+                0x00000000004012b0       0x2b uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+ *fill*         0x00000000004012db        0x5 
+ .text.serial_char_update
+                0x00000000004012e0       0x5d uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+ *fill*         0x000000000040133d        0x3 
+ .text.serial_get_dimensions
+                0x0000000000401340        0xe uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+ *fill*         0x000000000040134e        0x2 
+ .text.serial_claim
+                0x0000000000401350        0xe uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+ *fill*         0x000000000040135e        0x2 
+ .text.serial_yield
+                0x0000000000401360        0xe uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+ *fill*         0x000000000040136e        0x2 
+ .text.serial_init
+                0x0000000000401370       0x97 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+                0x0000000000401370                serial_init
+ *fill*         0x0000000000401407        0x9 
+ .text.ega_yield
+                0x0000000000401410        0x8 uspace/srv_hid_output.p/srv_hid_output_port_ega.c.o
+ *fill*         0x0000000000401418        0x8 
+ .text.ega_get_dimensions
+                0x0000000000401420       0x1a uspace/srv_hid_output.p/srv_hid_output_port_ega.c.o
+ *fill*         0x000000000040143a        0x6 
+ .text.ega_get_caps
+                0x0000000000401440        0xb uspace/srv_hid_output.p/srv_hid_output_port_ega.c.o
+ *fill*         0x000000000040144b        0x5 
+ .text.ega_flush
+                0x0000000000401450        0x6 uspace/srv_hid_output.p/srv_hid_output_port_ega.c.o
+ *fill*         0x0000000000401456        0xa 
+ .text.ega_char_update
+                0x0000000000401460      0x155 uspace/srv_hid_output.p/srv_hid_output_port_ega.c.o
+ *fill*         0x00000000004015b5        0xb 
+ .text.ega_cursor_update
+                0x00000000004015c0       0xac uspace/srv_hid_output.p/srv_hid_output_port_ega.c.o
+ *fill*         0x000000000040166c        0x4 
+ .text.ega_claim
+                0x0000000000401670        0x8 uspace/srv_hid_output.p/srv_hid_output_port_ega.c.o
+ *fill*         0x0000000000401678        0x8 
+ .text.ega_init
+                0x0000000000401680      0x15c uspace/srv_hid_output.p/srv_hid_output_port_ega.c.o
+                0x0000000000401680                ega_init
+ *fill*         0x00000000004017dc        0x4 
+ .text.chardev_flush
+                0x00000000004017e0       0x3a uspace/srv_hid_output.p/srv_hid_output_port_chardev.c.o
+ *fill*         0x000000000040181a        0x6 
+ .text.check_for_dev
+                0x0000000000401820      0x200 uspace/srv_hid_output.p/srv_hid_output_port_chardev.c.o
+ .text.chardev_control_puts
+                0x0000000000401a20      0x256 uspace/srv_hid_output.p/srv_hid_output_port_chardev.c.o
+ *fill*         0x0000000000401c76        0xa 
+ .text.chardev_putuchar
+                0x0000000000401c80      0x224 uspace/srv_hid_output.p/srv_hid_output_port_chardev.c.o
+ *fill*         0x0000000000401ea4        0xc 
+ .text.chardev_init
+                0x0000000000401eb0      0x136 uspace/srv_hid_output.p/srv_hid_output_port_chardev.c.o
+                0x0000000000401eb0                chardev_init
+ *fill*         0x0000000000401fe6        0xa 
+ .text.srv_update_scroll
+                0x0000000000401ff0      0x1b9 uspace/srv_hid_output.p/srv_hid_output_output.c.o
+ *fill*         0x00000000004021a9        0x7 
+ .text.client_connection
+                0x00000000004021b0      0x99d uspace/srv_hid_output.p/srv_hid_output_output.c.o
+ *fill*         0x0000000000402b4d        0x3 
+ .text.outdev_register
+                0x0000000000402b50       0xe0 uspace/srv_hid_output.p/srv_hid_output_output.c.o
+                0x0000000000402b50                outdev_register
+ .text          0x0000000000402c30        0xc uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                0x0000000000402c30                _start
+ *fill*         0x0000000000402c3c        0x4 
+ .text.__c_start
+                0x0000000000402c40       0x8c uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                0x0000000000402c40                __c_start
+ *fill*         0x0000000000402ccc        0x4 
+ .text.cp437_encode
+                0x0000000000402cd0       0x57 uspace/lib/libcodepage.a.p/codepage_src_cp437.c.o
+                0x0000000000402cd0                cp437_encode
+ *fill*         0x0000000000402d27        0x9 
+ .text.chargrid_create
+                0x0000000000402d30       0xd1 uspace/lib/liboutput.a.p/output_src_chargrid.c.o
+                0x0000000000402d30                chargrid_create
+ *fill*         0x0000000000402e01        0xf 
+ .text.chargrid_get_top_row
+                0x0000000000402e10        0xa uspace/lib/liboutput.a.p/output_src_chargrid.c.o
+                0x0000000000402e10                chargrid_get_top_row
+ *fill*         0x0000000000402e1a        0x6 
+ .text.chargrid_set_cursor
+                0x0000000000402e20       0x1a uspace/lib/liboutput.a.p/output_src_chargrid.c.o
+                0x0000000000402e20                chargrid_set_cursor
+ *fill*         0x0000000000402e3a        0x6 
+ .text.chargrid_set_cursor_visibility
+                0x0000000000402e40        0xa uspace/lib/liboutput.a.p/output_src_chargrid.c.o
+                0x0000000000402e40                chargrid_set_cursor_visibility
+ *fill*         0x0000000000402e4a        0x6 
+ .text.chargrid_get_cursor
+                0x0000000000402e50       0x46 uspace/lib/liboutput.a.p/output_src_chargrid.c.o
+                0x0000000000402e50                chargrid_get_cursor
+ *fill*         0x0000000000402e96        0xa 
+ .text.chargrid_get_cursor_visibility
+                0x0000000000402ea0        0xa uspace/lib/liboutput.a.p/output_src_chargrid.c.o
+                0x0000000000402ea0                chargrid_get_cursor_visibility
+ *fill*         0x0000000000402eaa        0x6 
+ .text.chardev_open
+                0x0000000000402eb0       0x35 uspace/lib/libdevice.a.p/device_src_io_chardev.c.o
+                0x0000000000402eb0                chardev_open
+ *fill*         0x0000000000402ee5        0xb 
+ .text.chardev_write
+                0x0000000000402ef0      0x115 uspace/lib/libdevice.a.p/device_src_io_chardev.c.o
+                0x0000000000402ef0                chardev_write
+ *fill*         0x0000000000403005        0xb 
+ .text.vt100_cls
+                0x0000000000403010       0x1b uspace/lib/libvt.a.p/vt_src_vt100.c.o
+                0x0000000000403010                vt100_cls
+ *fill*         0x000000000040302b        0x5 
+ .text.vt100_set_sgr
+                0x0000000000403030      0x3f9 uspace/lib/libvt.a.p/vt_src_vt100.c.o
+                0x0000000000403030                vt100_set_sgr
+ *fill*         0x0000000000403429        0x7 
+ .text.vt100_create
+                0x0000000000403430       0x5c uspace/lib/libvt.a.p/vt_src_vt100.c.o
+                0x0000000000403430                vt100_create
+ *fill*         0x000000000040348c        0x4 
+ .text.vt100_destroy
+                0x0000000000403490        0xa uspace/lib/libvt.a.p/vt_src_vt100.c.o
+                0x0000000000403490                vt100_destroy
+ *fill*         0x000000000040349a        0x6 
+ .text.vt100_get_dimensions
+                0x00000000004034a0       0x13 uspace/lib/libvt.a.p/vt_src_vt100.c.o
+                0x00000000004034a0                vt100_get_dimensions
+ *fill*         0x00000000004034b3        0xd 
+ .text.vt100_yield
+                0x00000000004034c0        0x8 uspace/lib/libvt.a.p/vt_src_vt100.c.o
+                0x00000000004034c0                vt100_yield
+ *fill*         0x00000000004034c8        0x8 
+ .text.vt100_claim
+                0x00000000004034d0        0x8 uspace/lib/libvt.a.p/vt_src_vt100.c.o
+                0x00000000004034d0                vt100_claim
+ *fill*         0x00000000004034d8        0x8 
+ .text.vt100_goto
+                0x00000000004034e0       0x71 uspace/lib/libvt.a.p/vt_src_vt100.c.o
+                0x00000000004034e0                vt100_goto
+ *fill*         0x0000000000403551        0xf 
+ .text.vt100_set_attr
+                0x0000000000403560       0x9b uspace/lib/libvt.a.p/vt_src_vt100.c.o
+                0x0000000000403560                vt100_set_attr
+ *fill*         0x00000000004035fb        0x5 
+ .text.vt100_cursor_visibility
+                0x0000000000403600       0x28 uspace/lib/libvt.a.p/vt_src_vt100.c.o
+                0x0000000000403600                vt100_cursor_visibility
+ *fill*         0x0000000000403628        0x8 
+ .text.vt100_putuchar
+                0x0000000000403630       0x47 uspace/lib/libvt.a.p/vt_src_vt100.c.o
+                0x0000000000403630                vt100_putuchar
+ *fill*         0x0000000000403677        0x9 
+ .text.vt100_flush
+                0x0000000000403680       0x16 uspace/lib/libvt.a.p/vt_src_vt100.c.o
+                0x0000000000403680                vt100_flush
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x00000000004036a0      0xea0
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.ega_init.str1.1
+                0x00000000004036a0      0x1a3 uspace/srv_hid_output.p/srv_hid_output_port_ega.c.o
+                                         0x3e (size before relaxing)
+ .rodata.check_for_dev.str1.1
+                0x0000000000403843       0x57 uspace/srv_hid_output.p/srv_hid_output_port_chardev.c.o
+ *fill*         0x0000000000403843        0x5 
+ .rodata.check_for_dev.str1.8
+                0x0000000000403848      0x18f uspace/srv_hid_output.p/srv_hid_output_port_chardev.c.o
+                                         0x4d (size before relaxing)
+ .rodata.chardev_init.str1.1
+                0x00000000004039d7        0xf uspace/srv_hid_output.p/srv_hid_output_port_chardev.c.o
+ .rodata.chardev_init.str1.8
+                0x00000000004039d7       0x97 uspace/srv_hid_output.p/srv_hid_output_port_chardev.c.o
+ .rodata.srv_update_scroll.str1.8
+                0x00000000004039d7       0x2d uspace/srv_hid_output.p/srv_hid_output_output.c.o
+ .rodata.srv_update_scroll.str1.1
+                0x00000000004039d7       0x15 uspace/srv_hid_output.p/srv_hid_output_output.c.o
+ .rodata.client_connection.str1.1
+                0x00000000004039d7       0x47 uspace/srv_hid_output.p/srv_hid_output_output.c.o
+ *fill*         0x00000000004039d7        0x1 
+ .rodata.client_connection
+                0x00000000004039d8       0x60 uspace/srv_hid_output.p/srv_hid_output_output.c.o
+ .rodata.outdev_register.str1.1
+                0x0000000000403a38       0x14 uspace/srv_hid_output.p/srv_hid_output_output.c.o
+ .rodata.main.str1.1
+                0x0000000000403a38       0x60 uspace/srv_hid_output.p/srv_hid_output_output.c.o
+ .rodata.main.str1.8
+                0x0000000000403a38       0x43 uspace/srv_hid_output.p/srv_hid_output_output.c.o
+ .rodata.cst8   0x0000000000403a38        0x8 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .rodata.u2xxx_to_cp437
+                0x0000000000403a40      0x700 uspace/lib/libcodepage.a.p/codepage_src_cp437.c.o
+ .rodata.u0xxx_to_cp437
+                0x0000000000404140      0x400 uspace/lib/libcodepage.a.p/codepage_src_cp437.c.o
+ .rodata.chargrid_putuchar.str1.8
+                0x0000000000404540       0x2f uspace/lib/liboutput.a.p/output_src_chargrid.c.o
+ .rodata.chargrid_get_cursor.str1.1
+                0x0000000000404540        0x8 uspace/lib/liboutput.a.p/output_src_chargrid.c.o
+ .rodata.vt100_cls.str1.1
+                0x0000000000404540        0x5 uspace/lib/libvt.a.p/vt_src_vt100.c.o
+ .rodata.vt100_sgr.str1.1
+                0x0000000000404540        0x6 uspace/lib/libvt.a.p/vt_src_vt100.c.o
+ .rodata.vt100_set_pos.str1.1
+                0x0000000000404540        0xb uspace/lib/libvt.a.p/vt_src_vt100.c.o
+ .rodata.vt100_set_sgr.str1.1
+                0x0000000000404540       0x12 uspace/lib/libvt.a.p/vt_src_vt100.c.o
+ .rodata.vt100_cursor_visibility.str1.1
+                0x0000000000404540        0xe uspace/lib/libvt.a.p/vt_src_vt100.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x0000000000404540      0x1a4
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x0000000000404540      0x1a4 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+                0x0000000000404540                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x00000000004046e8      0x774
+ *(.eh_frame)
+ .eh_frame      0x00000000004046e8      0x188 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+ .eh_frame      0x0000000000404870       0x28 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000404898        0x0 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+ .eh_frame      0x0000000000404898      0x120 uspace/srv_hid_output.p/srv_hid_output_port_ega.c.o
+                                        0x138 (size before relaxing)
+ .eh_frame      0x00000000004049b8       0xc0 uspace/srv_hid_output.p/srv_hid_output_port_chardev.c.o
+                                         0xd8 (size before relaxing)
+ .eh_frame      0x0000000000404a78        0x0 uspace/srv_hid_output.p/srv_hid_output_port_ddev.c.o
+                                        0x138 (size before relaxing)
+ .eh_frame      0x0000000000404a78       0xb8 uspace/srv_hid_output.p/srv_hid_output_output.c.o
+                                         0xd0 (size before relaxing)
+ .eh_frame      0x0000000000404b30       0x20 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000404b50       0x20 uspace/lib/libcodepage.a.p/codepage_src_cp437.c.o
+                                         0x58 (size before relaxing)
+ .eh_frame      0x0000000000404b70       0xd0 uspace/lib/liboutput.a.p/output_src_chargrid.c.o
+                                        0x268 (size before relaxing)
+ .eh_frame      0x0000000000404c40       0x58 uspace/lib/libdevice.a.p/device_src_io_chardev.c.o
+                                         0xc0 (size before relaxing)
+ .eh_frame      0x0000000000404c98        0x0 uspace/lib/libfbfont.a.p/fbfont_src_font-8x16.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000404c98        0x0 uspace/lib/libddev.a.p/ddev_src_ddev.c.o
+                                         0xd0 (size before relaxing)
+ .eh_frame      0x0000000000404c98        0x0 uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+                                         0xd8 (size before relaxing)
+ .eh_frame      0x0000000000404c98        0x0 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+                                        0x270 (size before relaxing)
+ .eh_frame      0x0000000000404c98        0x0 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+                                        0x1d0 (size before relaxing)
+ .eh_frame      0x0000000000404c98      0x1c4 uspace/lib/libvt.a.p/vt_src_vt100.c.o
+                                        0x2b8 (size before relaxing)
+ .eh_frame      0x0000000000404e5c        0x0 uspace/lib/libgfx.a.p/gfx_src_color.c.o
+                                         0xd0 (size before relaxing)
+ .eh_frame      0x0000000000404e5c        0x0 uspace/lib/libgfx.a.p/gfx_src_context.c.o
+                                         0x68 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x0000000000404e5c        0x0
+ *(.sframe)
+ .sframe        0x0000000000404e5c        0x0 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x0000000000405000                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0x0000000000405000        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0000000000405000        0x0
+                0x0000000000405000                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x0000000000405000                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x0000000000405000        0x0
+                0x0000000000405000                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x0000000000405000                PROVIDE (__init_array_end = .)
+
+.fini_array     0x0000000000405000        0x0
+                0x0000000000405000                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x0000000000405000                PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x0000000000405000        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x0000000000405000        0x0 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+
+.dynamic        0x0000000000405000      0x150
+ *(.dynamic)
+ .dynamic       0x0000000000405000      0x150 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+                0x0000000000405000                _DYNAMIC
+
+.got            0x0000000000405150        0x0
+ *(.got)
+ .got           0x0000000000405150        0x0 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+ *(.igot)
+                0x0000000000405150                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x0000000000405150      0x188
+ *(.got.plt)
+ .got.plt       0x0000000000405150      0x188 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+                0x0000000000405150                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x00000000004052d8        0x0 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+
+.data           0x00000000004052e0      0x140
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.serial_ops
+                0x00000000004052e0       0x38 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+ *fill*         0x0000000000405318        0x8 
+ .data.serial_vt_cb
+                0x0000000000405320       0x28 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+ *fill*         0x0000000000405348       0x18 
+ .data.ega_ops  0x0000000000405360       0x38 uspace/srv_hid_output.p/srv_hid_output_port_ega.c.o
+ *fill*         0x0000000000405398        0x8 
+ .data.discovery_cv
+                0x00000000004053a0       0x10 uspace/srv_hid_output.p/srv_hid_output_port_chardev.c.o
+ *fill*         0x00000000004053b0       0x10 
+ .data.discovery_lock
+                0x00000000004053c0       0x20 uspace/srv_hid_output.p/srv_hid_output_port_chardev.c.o
+ .data.frontbufs
+                0x00000000004053e0       0x10 uspace/srv_hid_output.p/srv_hid_output_output.c.o
+ .data.outdevs  0x00000000004053f0       0x10 uspace/srv_hid_output.p/srv_hid_output_output.c.o
+ .data.color_map
+                0x0000000000405400       0x20 uspace/lib/libvt.a.p/vt_src_vt100.c.o
+                0x0000000000405400                color_map
+
+.data1
+ *(.data1)
+                0x0000000000405420                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x0000000000405420                . = .
+                0x0000000000405420                __bss_start = .
+
+.bss            0x0000000000405420     0x10c0
+ *(.dynbss)
+ .dynbss        0x0000000000405420       0x48 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+                0x0000000000405420                __progsymbols
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss.serial_flush_fn
+                0x0000000000405468        0x8 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+ .bss.serial_control_puts_fn
+                0x0000000000405470        0x8 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+ .bss.serial_putuchar_fn
+                0x0000000000405478        0x8 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+ .bss.ega       0x0000000000405480       0x28 uspace/srv_hid_output.p/srv_hid_output_port_ega.c.o
+ .bss.discovery_finished
+                0x00000000004054a8        0x1 uspace/srv_hid_output.p/srv_hid_output_port_chardev.c.o
+ *fill*         0x00000000004054a9        0x7 
+ .bss.chardev_bused
+                0x00000000004054b0        0x8 uspace/srv_hid_output.p/srv_hid_output_port_chardev.c.o
+ *fill*         0x00000000004054b8        0x8 
+ .bss.chardev_buf
+                0x00000000004054c0     0x1000 uspace/srv_hid_output.p/srv_hid_output_port_chardev.c.o
+ .bss.console_cat_id
+                0x00000000004064c0        0x8 uspace/srv_hid_output.p/srv_hid_output_port_chardev.c.o
+ .bss.serial_cat_id
+                0x00000000004064c8        0x8 uspace/srv_hid_output.p/srv_hid_output_port_chardev.c.o
+ .bss.chardev   0x00000000004064d0        0x8 uspace/srv_hid_output.p/srv_hid_output_port_chardev.c.o
+ .bss.console   0x00000000004064d8        0x8 uspace/srv_hid_output.p/srv_hid_output_port_chardev.c.o
+ *(COMMON)
+                0x00000000004064e0                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x00000000004064e0                . = ALIGN (0x8)
+                0x00000000004064e0                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x00000000004084e0        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x00000000004084e0                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x00000000004084e0                . = ALIGN (0x8)
+                0x00000000004064e0                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x00000000004084e0                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/srv_hid_output.p/srv_hid_output_ctl_serial.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/srv_hid_output.p/srv_hid_output_port_ega.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_hid_output.p/srv_hid_output_port_chardev.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_hid_output.p/srv_hid_output_port_ddev.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_hid_output.p/srv_hid_output_output.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libcodepage.a.p/codepage_src_cp437.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/liboutput.a.p/output_src_chargrid.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdevice.a.p/device_src_io_chardev.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libfbfont.a.p/fbfont_src_font-8x16.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libddev.a.p/ddev_src_ddev.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libvt.a.p/vt_src_vt100.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libgfx.a.p/gfx_src_color.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libgfx.a.p/gfx_src_context.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/srv_hid_output elf64-x86-64)

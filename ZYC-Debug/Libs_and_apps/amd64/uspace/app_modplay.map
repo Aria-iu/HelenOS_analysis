@@ -1,0 +1,773 @@
+Archive member included to satisfy reference by file (symbol)
+
+uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                              (--whole-archive)
+uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                              (--whole-archive)
+uspace/lib/libtrackmod.a.p/trackmod_trackmod.c.o
+                              uspace/app_modplay.p/app_modplay_modplay.c.o (trackmod_module_destroy)
+uspace/lib/libtrackmod.a.p/trackmod_xm.c.o
+                              uspace/lib/libtrackmod.a.p/trackmod_trackmod.c.o (trackmod_xm_load)
+uspace/lib/libtrackmod.a.p/trackmod_protracker.c.o
+                              uspace/lib/libtrackmod.a.p/trackmod_trackmod.c.o (trackmod_protracker_load)
+uspace/lib/libhound.a.p/hound_src_client.c.o
+                              uspace/app_modplay.p/app_modplay_modplay.c.o (hound_context_create_playback)
+uspace/lib/libhound.a.p/hound_src_protocol.c.o
+                              uspace/lib/libhound.a.p/hound_src_client.c.o (hound_service_connect)
+uspace/lib/libconsole.a.p/console_src_console.c.o
+                              uspace/app_modplay.p/app_modplay_modplay.c.o (console_init)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.0                     uspace/lib/libtrackmod.a.p/trackmod_trackmod.c.o (putchar)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/app_modplay.p/app_modplay_modplay.c.o
+ .data          0x0000000000000000        0x0 uspace/app_modplay.p/app_modplay_modplay.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_modplay.p/app_modplay_modplay.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .text          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libtrackmod.a.p/trackmod_trackmod.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libtrackmod.a.p/trackmod_trackmod.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libtrackmod.a.p/trackmod_trackmod.c.o
+ .text.trackmod_sample_get_frame
+                0x0000000000000000       0x36 uspace/lib/libtrackmod.a.p/trackmod_trackmod.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libtrackmod.a.p/trackmod_xm.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libtrackmod.a.p/trackmod_xm.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libtrackmod.a.p/trackmod_xm.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libtrackmod.a.p/trackmod_protracker.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libtrackmod.a.p/trackmod_protracker.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libtrackmod.a.p/trackmod_protracker.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libhound.a.p/hound_src_client.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libhound.a.p/hound_src_client.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libhound.a.p/hound_src_client.c.o
+ .rodata.hound_stream_write.part.0.str1.1
+                0x0000000000000000        0x7 uspace/lib/libhound.a.p/hound_src_client.c.o
+ .text.hound_stream_write.part.0
+                0x0000000000000000       0x18 uspace/lib/libhound.a.p/hound_src_client.c.o
+ .text.hound_context_create_capture
+                0x0000000000000000       0xee uspace/lib/libhound.a.p/hound_src_client.c.o
+ .text.hound_context_get_connected_targets
+                0x0000000000000000       0x6b uspace/lib/libhound.a.p/hound_src_client.c.o
+ .text.hound_context_disconnect_target
+                0x0000000000000000       0x67 uspace/lib/libhound.a.p/hound_src_client.c.o
+ .text.hound_stream_destroy
+                0x0000000000000000       0x61 uspace/lib/libhound.a.p/hound_src_client.c.o
+ .text.hound_stream_write
+                0x0000000000000000       0x2f uspace/lib/libhound.a.p/hound_src_client.c.o
+ .text.hound_stream_read
+                0x0000000000000000       0x3e uspace/lib/libhound.a.p/hound_src_client.c.o
+ .text.hound_stream_drain
+                0x0000000000000000       0x26 uspace/lib/libhound.a.p/hound_src_client.c.o
+ .text.hound_read_main_stream
+                0x0000000000000000       0xb9 uspace/lib/libhound.a.p/hound_src_client.c.o
+ .text.hound_write_replace_main_stream
+                0x0000000000000000       0x39 uspace/lib/libhound.a.p/hound_src_client.c.o
+ .text.hound_context_set_main_stream_params
+                0x0000000000000000       0x27 uspace/lib/libhound.a.p/hound_src_client.c.o
+ .text.hound_write_immediate
+                0x0000000000000000      0x10a uspace/lib/libhound.a.p/hound_src_client.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libhound.a.p/hound_src_protocol.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libhound.a.p/hound_src_protocol.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libhound.a.p/hound_src_protocol.c.o
+ .text.hound_service_disconnect_source_sink
+                0x0000000000000000       0xdf uspace/lib/libhound.a.p/hound_src_protocol.c.o
+ .text.hound_service_stream_read
+                0x0000000000000000        0xa uspace/lib/libhound.a.p/hound_src_protocol.c.o
+ .text.hound_service_set_server_iface
+                0x0000000000000000        0xd uspace/lib/libhound.a.p/hound_src_protocol.c.o
+ .text.hound_connection_handler
+                0x0000000000000000      0x921 uspace/lib/libhound.a.p/hound_src_protocol.c.o
+ .rodata.hound_connection_handler
+                0x0000000000000000       0x40 uspace/lib/libhound.a.p/hound_src_protocol.c.o
+ .text.hound_server_register
+                0x0000000000000000       0x86 uspace/lib/libhound.a.p/hound_src_protocol.c.o
+ .text.hound_server_unregister
+                0x0000000000000000       0x20 uspace/lib/libhound.a.p/hound_src_protocol.c.o
+ .text.hound_server_set_device_change_callback
+                0x0000000000000000        0xa uspace/lib/libhound.a.p/hound_src_protocol.c.o
+ .rodata.hound_server_devices_iterate.str1.1
+                0x0000000000000000        0xa uspace/lib/libhound.a.p/hound_src_protocol.c.o
+ .text.hound_server_devices_iterate
+                0x0000000000000000       0xf6 uspace/lib/libhound.a.p/hound_src_protocol.c.o
+ .bss.cat_id.0  0x0000000000000000        0x8 uspace/lib/libhound.a.p/hound_src_protocol.c.o
+ .bss.resolved.1
+                0x0000000000000000        0x1 uspace/lib/libhound.a.p/hound_src_protocol.c.o
+ .bss.server_iface
+                0x0000000000000000        0x8 uspace/lib/libhound.a.p/hound_src_protocol.c.o
+ .bss.hound_srv
+                0x0000000000000000        0x8 uspace/lib/libhound.a.p/hound_src_protocol.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_done
+                0x0000000000000000        0xa uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_kcon
+                0x0000000000000000        0xa uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_flush
+                0x0000000000000000        0xe uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_clear
+                0x0000000000000000       0x2f uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_get_size
+                0x0000000000000000       0x4b uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_set_style
+                0x0000000000000000       0x31 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_set_color
+                0x0000000000000000       0x47 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_set_rgb_color
+                0x0000000000000000       0x42 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_cursor_visibility
+                0x0000000000000000       0x31 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_set_caption
+                0x0000000000000000       0xa3 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_get_color_cap
+                0x0000000000000000       0x39 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_get_pos
+                0x0000000000000000       0x4b uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_set_pos
+                0x0000000000000000       0x44 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_get_event
+                0x0000000000000000      0x16d uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_map
+                0x0000000000000000       0xea uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_unmap
+                0x0000000000000000       0x37 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_update
+                0x0000000000000000       0x5f uspace/lib/libconsole.a.p/console_src_console.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/app_modplay.p/app_modplay_modplay.c.o
+START GROUP
+LOAD uspace/lib/c/libstartfiles.a
+LOAD uspace/lib/libtrackmod.a
+LOAD uspace/lib/libc.so.0.0
+LOAD uspace/lib/libhound.a
+LOAD uspace/lib/libpcm.a
+LOAD uspace/lib/libconsole.a
+LOAD uspace/lib/libinput.a
+LOAD uspace/lib/liboutput.a
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000400000                PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x0000000000400120                . = (SEGMENT_START ("text-segment", 0x400000) + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000400120      0x140
+ *(.hash)
+ .hash          0x0000000000400120      0x140 uspace/app_modplay.p/app_modplay_modplay.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x0000000000400260      0x3d8
+ *(.dynsym)
+ .dynsym        0x0000000000400260      0x3d8 uspace/app_modplay.p/app_modplay_modplay.c.o
+
+.dynstr         0x0000000000400638      0x1f0
+ *(.dynstr)
+ .dynstr        0x0000000000400638      0x1f0 uspace/app_modplay.p/app_modplay_modplay.c.o
+
+.gnu.version    0x0000000000400828        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000400828        0x0 uspace/app_modplay.p/app_modplay_modplay.c.o
+
+.gnu.version_d  0x0000000000400828        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000400828        0x0 uspace/app_modplay.p/app_modplay_modplay.c.o
+
+.gnu.version_r  0x0000000000400828        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000400828        0x0 uspace/app_modplay.p/app_modplay_modplay.c.o
+
+.rela.dyn       0x0000000000400828       0x48
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text.startup.main
+                0x0000000000400828        0x0 uspace/app_modplay.p/app_modplay_modplay.c.o
+ .rela.text.__c_start
+                0x0000000000400828        0x0 uspace/app_modplay.p/app_modplay_modplay.c.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ .rela.rodata.cst8
+                0x0000000000400828        0x0 uspace/app_modplay.p/app_modplay_modplay.c.o
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x0000000000400828        0x0 uspace/app_modplay.p/app_modplay_modplay.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000400828        0x0 uspace/app_modplay.p/app_modplay_modplay.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x0000000000400828       0x48 uspace/app_modplay.p/app_modplay_modplay.c.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+
+.rela.plt       0x0000000000400870      0x378
+ *(.rela.plt)
+ .rela.plt      0x0000000000400870      0x378 uspace/app_modplay.p/app_modplay_modplay.c.o
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+ .rela.iplt     0x0000000000400be8        0x0 uspace/app_modplay.p/app_modplay_modplay.c.o
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x0000000000400bf0      0x260
+ *(.plt)
+ .plt           0x0000000000400bf0      0x260 uspace/app_modplay.p/app_modplay_modplay.c.o
+                0x0000000000400c00                putchar
+                0x0000000000400c10                vfs_fsession
+                0x0000000000400c20                loc_service_connect
+                0x0000000000400c30                printf
+                0x0000000000400c40                async_hangup
+                0x0000000000400c50                async_wait_for
+                0x0000000000400c60                async_data_write_start
+                0x0000000000400c70                async_send_1
+                0x0000000000400c80                puts
+                0x0000000000400c90                malloc
+                0x0000000000400ca0                async_req_1_0
+                0x0000000000400cb0                loc_service_get_id
+                0x0000000000400cc0                async_exchange_end
+                0x0000000000400cd0                calloc
+                0x0000000000400ce0                async_send_3
+                0x0000000000400cf0                fseek
+                0x0000000000400d00                async_wait_timeout
+                0x0000000000400d10                str_cmp
+                0x0000000000400d20                fread
+                0x0000000000400d30                task_get_id
+                0x0000000000400d40                ts_sub_diff
+                0x0000000000400d50                fopen
+                0x0000000000400d60                __helenos_assert_abort
+                0x0000000000400d70                ftell
+                0x0000000000400d80                async_data_read_start
+                0x0000000000400d90                fclose
+                0x0000000000400da0                getuptime
+                0x0000000000400db0                asprintf
+                0x0000000000400dc0                str_size
+                0x0000000000400dd0                async_exchange_begin
+                0x0000000000400de0                async_send_0
+                0x0000000000400df0                str_error
+                0x0000000000400e00                __libc_main
+                0x0000000000400e10                async_forget
+                0x0000000000400e20                async_req_0_0
+                0x0000000000400e30                async_req_4_0
+                0x0000000000400e40                free
+ *(.iplt)
+ .iplt          0x0000000000400e50        0x0 uspace/app_modplay.p/app_modplay_modplay.c.o
+
+.plt.got        0x0000000000400e50        0x0
+ *(.plt.got)
+ .plt.got       0x0000000000400e50        0x0 uspace/app_modplay.p/app_modplay_modplay.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x0000000000400e50     0x331c
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ .text.startup.main
+                0x0000000000400e50      0x2c6 uspace/app_modplay.p/app_modplay_modplay.c.o
+                0x0000000000400e50                main
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ *fill*         0x0000000000401116        0xa 
+ .text.print_syntax
+                0x0000000000401120       0x23 uspace/app_modplay.p/app_modplay_modplay.c.o
+ .text          0x0000000000401143        0xc uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                0x0000000000401143                _start
+ *fill*         0x000000000040114f        0x1 
+ .text.__c_start
+                0x0000000000401150       0x8c uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                0x0000000000401150                __c_start
+ *fill*         0x00000000004011dc        0x4 
+ .text.trackmod_process_row
+                0x00000000004011e0      0x67d uspace/lib/libtrackmod.a.p/trackmod_trackmod.c.o
+ *fill*         0x000000000040185d        0x3 
+ .text.trackmod_module_new
+                0x0000000000401860       0x14 uspace/lib/libtrackmod.a.p/trackmod_trackmod.c.o
+                0x0000000000401860                trackmod_module_new
+ *fill*         0x0000000000401874        0xc 
+ .text.trackmod_module_destroy
+                0x0000000000401880       0xcd uspace/lib/libtrackmod.a.p/trackmod_trackmod.c.o
+                0x0000000000401880                trackmod_module_destroy
+ *fill*         0x000000000040194d        0x3 
+ .text.trackmod_module_load
+                0x0000000000401950       0x2f uspace/lib/libtrackmod.a.p/trackmod_trackmod.c.o
+                0x0000000000401950                trackmod_module_load
+ *fill*         0x000000000040197f        0x1 
+ .text.trackmod_modplay_create
+                0x0000000000401980      0x110 uspace/lib/libtrackmod.a.p/trackmod_trackmod.c.o
+                0x0000000000401980                trackmod_modplay_create
+ .text.trackmod_modplay_destroy
+                0x0000000000401a90       0x22 uspace/lib/libtrackmod.a.p/trackmod_trackmod.c.o
+                0x0000000000401a90                trackmod_modplay_destroy
+ *fill*         0x0000000000401ab2        0xe 
+ .text.trackmod_modplay_get_samples
+                0x0000000000401ac0      0x5c5 uspace/lib/libtrackmod.a.p/trackmod_trackmod.c.o
+                0x0000000000401ac0                trackmod_modplay_get_samples
+ *fill*         0x0000000000402085        0xb 
+ .text.trackmod_xm_load
+                0x0000000000402090      0xa42 uspace/lib/libtrackmod.a.p/trackmod_xm.c.o
+                0x0000000000402090                trackmod_xm_load
+ *fill*         0x0000000000402ad2        0xe 
+ .text.trackmod_protracker_load
+                0x0000000000402ae0      0x8d2 uspace/lib/libtrackmod.a.p/trackmod_protracker.c.o
+                0x0000000000402ae0                trackmod_protracker_load
+ *fill*         0x00000000004033b2        0xe 
+ .text.hound_context_create_playback
+                0x00000000004033c0       0xee uspace/lib/libhound.a.p/hound_src_client.c.o
+                0x00000000004033c0                hound_context_create_playback
+ *fill*         0x00000000004034ae        0x2 
+ .text.hound_context_destroy
+                0x00000000004034b0       0xbf uspace/lib/libhound.a.p/hound_src_client.c.o
+                0x00000000004034b0                hound_context_destroy
+ *fill*         0x000000000040356f        0x1 
+ .text.hound_context_get_available_targets
+                0x0000000000403570       0x67 uspace/lib/libhound.a.p/hound_src_client.c.o
+                0x0000000000403570                hound_context_get_available_targets
+ *fill*         0x00000000004035d7        0x9 
+ .text.hound_context_connect_target
+                0x00000000004035e0      0x107 uspace/lib/libhound.a.p/hound_src_client.c.o
+                0x00000000004035e0                hound_context_connect_target
+ *fill*         0x00000000004036e7        0x9 
+ .text.hound_stream_create
+                0x00000000004036f0       0xf1 uspace/lib/libhound.a.p/hound_src_client.c.o
+                0x00000000004036f0                hound_stream_create
+ *fill*         0x00000000004037e1        0xf 
+ .text.hound_write_main_stream
+                0x00000000004037f0       0xb9 uspace/lib/libhound.a.p/hound_src_client.c.o
+                0x00000000004037f0                hound_write_main_stream
+ *fill*         0x00000000004038a9        0x7 
+ .text.hound_service_connect
+                0x00000000004038b0       0x3b uspace/lib/libhound.a.p/hound_src_protocol.c.o
+                0x00000000004038b0                hound_service_connect
+ *fill*         0x00000000004038eb        0x5 
+ .text.hound_service_disconnect
+                0x00000000004038f0       0x12 uspace/lib/libhound.a.p/hound_src_protocol.c.o
+                0x00000000004038f0                hound_service_disconnect
+ *fill*         0x0000000000403902        0xe 
+ .text.hound_service_register_context
+                0x0000000000403910       0xf3 uspace/lib/libhound.a.p/hound_src_protocol.c.o
+                0x0000000000403910                hound_service_register_context
+ *fill*         0x0000000000403a03        0xd 
+ .text.hound_service_unregister_context
+                0x0000000000403a10       0x4e uspace/lib/libhound.a.p/hound_src_protocol.c.o
+                0x0000000000403a10                hound_service_unregister_context
+ *fill*         0x0000000000403a5e        0x2 
+ .text.hound_service_get_list
+                0x0000000000403a60      0x368 uspace/lib/libhound.a.p/hound_src_protocol.c.o
+                0x0000000000403a60                hound_service_get_list
+ *fill*         0x0000000000403dc8        0x8 
+ .text.hound_service_connect_source_sink
+                0x0000000000403dd0      0x12e uspace/lib/libhound.a.p/hound_src_protocol.c.o
+                0x0000000000403dd0                hound_service_connect_source_sink
+ *fill*         0x0000000000403efe        0x2 
+ .text.hound_service_stream_enter
+                0x0000000000403f00       0x42 uspace/lib/libhound.a.p/hound_src_protocol.c.o
+                0x0000000000403f00                hound_service_stream_enter
+ *fill*         0x0000000000403f42        0xe 
+ .text.hound_service_stream_exit
+                0x0000000000403f50        0xf uspace/lib/libhound.a.p/hound_src_protocol.c.o
+                0x0000000000403f50                hound_service_stream_exit
+ *fill*         0x0000000000403f5f        0x1 
+ .text.hound_service_stream_drain
+                0x0000000000403f60        0xf uspace/lib/libhound.a.p/hound_src_protocol.c.o
+                0x0000000000403f60                hound_service_stream_drain
+ *fill*         0x0000000000403f6f        0x1 
+ .text.hound_service_stream_write
+                0x0000000000403f70        0xa uspace/lib/libhound.a.p/hound_src_protocol.c.o
+                0x0000000000403f70                hound_service_stream_write
+ *fill*         0x0000000000403f7a        0x6 
+ .text.console_init
+                0x0000000000403f80       0x7c uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x0000000000403f80                console_init
+ *fill*         0x0000000000403ffc        0x4 
+ .text.console_get_event_timeout
+                0x0000000000404000      0x16c uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x0000000000404000                console_get_event_timeout
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000404180      0x678
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.print_syntax.str1.8
+                0x0000000000404180      0x186 uspace/app_modplay.p/app_modplay_modplay.c.o
+                                         0x5f (size before relaxing)
+ .rodata.print_syntax.str1.1
+                0x0000000000404306      0x1d7 uspace/app_modplay.p/app_modplay_modplay.c.o
+                                          0x9 (size before relaxing)
+ .rodata.main.str1.1
+                0x00000000004044dd       0x84 uspace/app_modplay.p/app_modplay_modplay.c.o
+ .rodata.main.str1.8
+                0x00000000004044dd       0xc5 uspace/app_modplay.p/app_modplay_modplay.c.o
+ *fill*         0x00000000004044dd        0x3 
+ .rodata.cst8   0x00000000004044e0        0x8 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .rodata.trackmod_process_row.str1.1
+                0x00000000004044e8       0x1d uspace/lib/libtrackmod.a.p/trackmod_trackmod.c.o
+ .rodata.trackmod_modplay_get_samples.str1.1
+                0x00000000004044e8        0xd uspace/lib/libtrackmod.a.p/trackmod_trackmod.c.o
+ *fill*         0x00000000004044e8       0x18 
+ .rodata.period_table
+                0x0000000000404500      0x180 uspace/lib/libtrackmod.a.p/trackmod_trackmod.c.o
+ .rodata.finetune_factor
+                0x0000000000404680       0x40 uspace/lib/libtrackmod.a.p/trackmod_trackmod.c.o
+ .rodata.cst16  0x00000000004046c0       0x10 uspace/lib/libtrackmod.a.p/trackmod_trackmod.c.o
+ .rodata.trackmod_xm_load.str1.1
+                0x00000000004046d0       0x36 uspace/lib/libtrackmod.a.p/trackmod_xm.c.o
+ .rodata.trackmod_protracker_load.str1.1
+                0x00000000004046d0       0x8b uspace/lib/libtrackmod.a.p/trackmod_protracker.c.o
+ .rodata.str1.1
+                0x00000000004046d0       0x55 uspace/lib/libtrackmod.a.p/trackmod_protracker.c.o
+ *fill*         0x00000000004046d0       0x10 
+ .rodata.smp_tags
+                0x00000000004046e0      0x110 uspace/lib/libtrackmod.a.p/trackmod_protracker.c.o
+ .rodata.cst8   0x00000000004047f0        0x8 uspace/lib/libtrackmod.a.p/trackmod_protracker.c.o
+ .rodata.hound_stream_write.part.0.str1.8
+                0x00000000004047f8       0x2c uspace/lib/libhound.a.p/hound_src_client.c.o
+ .rodata.hound_context_create_playback.str1.1
+                0x00000000004047f8        0x7 uspace/lib/libhound.a.p/hound_src_client.c.o
+ .rodata.hound_context_destroy.str1.1
+                0x00000000004047f8        0x6 uspace/lib/libhound.a.p/hound_src_client.c.o
+ .rodata.hound_context_get_available_targets.str1.1
+                0x00000000004047f8        0xc uspace/lib/libhound.a.p/hound_src_client.c.o
+ .rodata.hound_context_connect_target.str1.1
+                0x00000000004047f8        0xf uspace/lib/libhound.a.p/hound_src_client.c.o
+ .rodata.hound_service_register_context.str1.8
+                0x00000000004047f8       0x2e uspace/lib/libhound.a.p/hound_src_protocol.c.o
+ .rodata.hound_service_register_context.str1.1
+                0x00000000004047f8        0xa uspace/lib/libhound.a.p/hound_src_protocol.c.o
+ .rodata.hound_service_get_list.str1.1
+                0x00000000004047f8        0xa uspace/lib/libhound.a.p/hound_src_protocol.c.o
+ .rodata.hound_service_connect_source_sink.str1.1
+                0x00000000004047f8        0xc uspace/lib/libhound.a.p/hound_src_protocol.c.o
+ .rodata.str1.1
+                0x00000000004047f8        0xc uspace/lib/libhound.a.p/hound_src_protocol.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x00000000004047f8      0x104
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x00000000004047f8      0x104 uspace/app_modplay.p/app_modplay_modplay.c.o
+                0x00000000004047f8                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x0000000000404900      0x524
+ *(.eh_frame)
+ .eh_frame      0x0000000000404900       0x68 uspace/app_modplay.p/app_modplay_modplay.c.o
+ .eh_frame      0x0000000000404968       0x28 uspace/app_modplay.p/app_modplay_modplay.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000404990        0x0 uspace/app_modplay.p/app_modplay_modplay.c.o
+ .eh_frame      0x0000000000404990       0x20 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x00000000004049b0      0x128 uspace/lib/libtrackmod.a.p/trackmod_trackmod.c.o
+                                        0x168 (size before relaxing)
+ .eh_frame      0x0000000000404ad8       0x30 uspace/lib/libtrackmod.a.p/trackmod_xm.c.o
+                                         0x48 (size before relaxing)
+ .eh_frame      0x0000000000404b08       0x30 uspace/lib/libtrackmod.a.p/trackmod_protracker.c.o
+                                         0x48 (size before relaxing)
+ .eh_frame      0x0000000000404b38      0x108 uspace/lib/libhound.a.p/hound_src_client.c.o
+                                        0x2e0 (size before relaxing)
+ .eh_frame      0x0000000000404c40      0x180 uspace/lib/libhound.a.p/hound_src_protocol.c.o
+                                        0x2e8 (size before relaxing)
+ .eh_frame      0x0000000000404dc0       0x64 uspace/lib/libconsole.a.p/console_src_console.c.o
+                                        0x318 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x0000000000404e24        0x0
+ *(.sframe)
+ .sframe        0x0000000000404e24        0x0 uspace/app_modplay.p/app_modplay_modplay.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x0000000000405000                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0x0000000000405000        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0000000000405000        0x0
+                0x0000000000405000                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x0000000000405000                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x0000000000405000        0x0
+                0x0000000000405000                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x0000000000405000                PROVIDE (__init_array_end = .)
+
+.fini_array     0x0000000000405000        0x0
+                0x0000000000405000                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x0000000000405000                PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x0000000000405000        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x0000000000405000        0x0 uspace/app_modplay.p/app_modplay_modplay.c.o
+
+.dynamic        0x0000000000405000      0x150
+ *(.dynamic)
+ .dynamic       0x0000000000405000      0x150 uspace/app_modplay.p/app_modplay_modplay.c.o
+                0x0000000000405000                _DYNAMIC
+
+.got            0x0000000000405150        0x0
+ *(.got)
+ .got           0x0000000000405150        0x0 uspace/app_modplay.p/app_modplay_modplay.c.o
+ *(.igot)
+                0x0000000000405150                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x0000000000405150      0x140
+ *(.got.plt)
+ .got.plt       0x0000000000405150      0x140 uspace/app_modplay.p/app_modplay_modplay.c.o
+                0x0000000000405150                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x0000000000405290        0x0 uspace/app_modplay.p/app_modplay_modplay.c.o
+
+.data           0x0000000000405290       0x20
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.xm_id_text
+                0x0000000000405290       0x12 uspace/lib/libtrackmod.a.p/trackmod_xm.c.o
+ *fill*         0x00000000004052a2        0x6 
+ .data.HOUND_SERVICE
+                0x00000000004052a8        0x8 uspace/lib/libhound.a.p/hound_src_protocol.c.o
+                0x00000000004052a8                HOUND_SERVICE
+
+.data1
+ *(.data1)
+                0x00000000004052b0                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x00000000004052b0                . = .
+                0x00000000004052b0                __bss_start = .
+
+.bss            0x00000000004052c0       0x70
+ *(.dynbss)
+ .dynbss        0x00000000004052c0       0x68 uspace/app_modplay.p/app_modplay_modplay.c.o
+                0x00000000004052c0                stdout
+                0x00000000004052d0                stdin
+                0x00000000004052e0                __progsymbols
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss.quit      0x0000000000405328        0x1 uspace/app_modplay.p/app_modplay_modplay.c.o
+ *(COMMON)
+                0x0000000000405330                . = ALIGN ((. != 0x0)?0x8:0x1)
+ *fill*         0x0000000000405329        0x7 
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x0000000000405330                . = ALIGN (0x8)
+                0x0000000000405330                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x0000000000407330        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x0000000000407330                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000407330                . = ALIGN (0x8)
+                0x0000000000405330                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x0000000000407330                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/app_modplay.p/app_modplay_modplay.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libtrackmod.a.p/trackmod_trackmod.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libtrackmod.a.p/trackmod_xm.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libtrackmod.a.p/trackmod_protracker.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libhound.a.p/hound_src_client.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libhound.a.p/hound_src_protocol.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libconsole.a.p/console_src_console.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/app_modplay elf64-x86-64)

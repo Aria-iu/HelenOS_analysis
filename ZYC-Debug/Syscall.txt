@@ -1,0 +1,348 @@
+这是 OS 提供的 syscall 调用，为了用户空间使用：libc 可以包装这些调用。。。
+
+
+typedef uintptr_t sysarg_t;
+
+系统调用要调用来处理的函数类型（定义最多传6个参数）：
+typedef sysarg_t (*syshandler_t)(sysarg_t, sysarg_t, sysarg_t, sysarg_t,
+    sysarg_t, sysarg_t);
+
+处理系统调用的函数：
+extern sysarg_t syscall_handler(sysarg_t, sysarg_t, sysarg_t, sysarg_t,
+    sysarg_t, sysarg_t, sysarg_t);
+
+系统调用号定义：
+typedef enum {
+	SYS_KIO = 0,
+
+	SYS_THREAD_CREATE,
+	SYS_THREAD_EXIT,
+	SYS_THREAD_GET_ID,
+	SYS_THREAD_USLEEP,
+	SYS_THREAD_UDELAY,
+
+	SYS_TASK_GET_ID,
+	SYS_TASK_SET_NAME,
+	SYS_TASK_KILL,
+	SYS_TASK_EXIT,
+	SYS_PROGRAM_SPAWN_LOADER,
+
+	SYS_WAITQ_CREATE,
+	SYS_WAITQ_SLEEP,
+	SYS_WAITQ_WAKEUP,
+	SYS_WAITQ_DESTROY,
+	SYS_SMC_COHERENCE,
+
+	SYS_AS_AREA_CREATE,
+	SYS_AS_AREA_RESIZE,
+	SYS_AS_AREA_CHANGE_FLAGS,
+	SYS_AS_AREA_GET_INFO,
+	SYS_AS_AREA_DESTROY,
+
+	SYS_PAGE_FIND_MAPPING,
+
+	SYS_IPC_CALL_ASYNC_FAST,
+	SYS_IPC_CALL_ASYNC_SLOW,
+	SYS_IPC_ANSWER_FAST,
+	SYS_IPC_ANSWER_SLOW,
+	SYS_IPC_FORWARD_FAST,
+	SYS_IPC_FORWARD_SLOW,
+	SYS_IPC_WAIT,
+	SYS_IPC_POKE,
+	SYS_IPC_HANGUP,
+	SYS_IPC_CONNECT_KBOX,
+
+	SYS_IPC_EVENT_SUBSCRIBE,
+	SYS_IPC_EVENT_UNSUBSCRIBE,
+	SYS_IPC_EVENT_UNMASK,
+
+	SYS_PERM_GRANT,
+	SYS_PERM_REVOKE,
+
+	SYS_PHYSMEM_MAP,
+	SYS_PHYSMEM_UNMAP,
+	SYS_DMAMEM_MAP,
+	SYS_DMAMEM_UNMAP,
+	SYS_IOSPACE_ENABLE,
+	SYS_IOSPACE_DISABLE,
+
+	SYS_IPC_IRQ_SUBSCRIBE,
+	SYS_IPC_IRQ_UNSUBSCRIBE,
+
+	SYS_SYSINFO_GET_KEYS_SIZE,
+	SYS_SYSINFO_GET_KEYS,
+	SYS_SYSINFO_GET_VAL_TYPE,
+	SYS_SYSINFO_GET_VALUE,
+	SYS_SYSINFO_GET_DATA_SIZE,
+	SYS_SYSINFO_GET_DATA,
+
+	SYS_DEBUG_CONSOLE,
+
+	SYS_KLOG
+} syscall_t;
+
+static syshandler_t syscall_table[] = {
+	/* System management syscalls. */
+	[SYS_KIO] = (syshandler_t) sys_kio,
+
+	/* Thread and task related syscalls. */
+	[SYS_THREAD_CREATE] = (syshandler_t) sys_thread_create,
+	[SYS_THREAD_EXIT] = (syshandler_t) sys_thread_exit,
+	[SYS_THREAD_GET_ID] = (syshandler_t) sys_thread_get_id,
+	[SYS_THREAD_USLEEP] = (syshandler_t) sys_thread_usleep,
+	[SYS_THREAD_UDELAY] = (syshandler_t) sys_thread_udelay,
+
+	[SYS_TASK_GET_ID] = (syshandler_t) sys_task_get_id,
+	[SYS_TASK_SET_NAME] = (syshandler_t) sys_task_set_name,
+	[SYS_TASK_KILL] = (syshandler_t) sys_task_kill,
+	[SYS_TASK_EXIT] = (syshandler_t) sys_task_exit,
+	[SYS_PROGRAM_SPAWN_LOADER] = (syshandler_t) sys_program_spawn_loader,
+
+	/* Synchronization related syscalls. */
+	[SYS_WAITQ_CREATE] = (syshandler_t) sys_waitq_create,
+	[SYS_WAITQ_SLEEP] = (syshandler_t) sys_waitq_sleep,
+	[SYS_WAITQ_WAKEUP] = (syshandler_t) sys_waitq_wakeup,
+	[SYS_WAITQ_DESTROY] = (syshandler_t) sys_waitq_destroy,
+	[SYS_SMC_COHERENCE] = (syshandler_t) sys_smc_coherence,
+
+	/* Address space related syscalls. */
+	[SYS_AS_AREA_CREATE] = (syshandler_t) sys_as_area_create,
+	[SYS_AS_AREA_RESIZE] = (syshandler_t) sys_as_area_resize,
+	[SYS_AS_AREA_CHANGE_FLAGS] = (syshandler_t) sys_as_area_change_flags,
+	[SYS_AS_AREA_GET_INFO] = (syshandler_t) sys_as_area_get_info,
+	[SYS_AS_AREA_DESTROY] = (syshandler_t) sys_as_area_destroy,
+
+	/* Page mapping related syscalls. */
+	[SYS_PAGE_FIND_MAPPING] = (syshandler_t) sys_page_find_mapping,
+
+	/* IPC related syscalls. */
+	[SYS_IPC_CALL_ASYNC_FAST] = (syshandler_t) sys_ipc_call_async_fast,
+	[SYS_IPC_CALL_ASYNC_SLOW] = (syshandler_t) sys_ipc_call_async_slow,
+	[SYS_IPC_ANSWER_FAST] = (syshandler_t) sys_ipc_answer_fast,
+	[SYS_IPC_ANSWER_SLOW] = (syshandler_t) sys_ipc_answer_slow,
+	[SYS_IPC_FORWARD_FAST] = (syshandler_t) sys_ipc_forward_fast,
+	[SYS_IPC_FORWARD_SLOW] = (syshandler_t) sys_ipc_forward_slow,
+	[SYS_IPC_WAIT] = (syshandler_t) sys_ipc_wait_for_call,
+	[SYS_IPC_POKE] = (syshandler_t) sys_ipc_poke,
+	[SYS_IPC_HANGUP] = (syshandler_t) sys_ipc_hangup,
+	[SYS_IPC_CONNECT_KBOX] = (syshandler_t) sys_ipc_connect_kbox,
+
+	/* Event notification syscalls. */
+	[SYS_IPC_EVENT_SUBSCRIBE] = (syshandler_t) sys_ipc_event_subscribe,
+	[SYS_IPC_EVENT_UNSUBSCRIBE] = (syshandler_t) sys_ipc_event_unsubscribe,
+	[SYS_IPC_EVENT_UNMASK] = (syshandler_t) sys_ipc_event_unmask,
+
+	/* Permission related syscalls. */
+	[SYS_PERM_GRANT] = (syshandler_t) sys_perm_grant,
+	[SYS_PERM_REVOKE] = (syshandler_t) sys_perm_revoke,
+
+	/* DDI related syscalls. */
+	[SYS_PHYSMEM_MAP] = (syshandler_t) sys_physmem_map,
+	[SYS_PHYSMEM_UNMAP] = (syshandler_t) sys_physmem_unmap,
+	[SYS_DMAMEM_MAP] = (syshandler_t) sys_dmamem_map,
+	[SYS_DMAMEM_UNMAP] = (syshandler_t) sys_dmamem_unmap,
+	[SYS_IOSPACE_ENABLE] = (syshandler_t) sys_iospace_enable,
+	[SYS_IOSPACE_DISABLE] = (syshandler_t) sys_iospace_disable,
+
+	[SYS_IPC_IRQ_SUBSCRIBE] = (syshandler_t) sys_ipc_irq_subscribe,
+	[SYS_IPC_IRQ_UNSUBSCRIBE] = (syshandler_t) sys_ipc_irq_unsubscribe,
+
+	/* Sysinfo syscalls. */
+	[SYS_SYSINFO_GET_KEYS_SIZE] = (syshandler_t) sys_sysinfo_get_keys_size,
+	[SYS_SYSINFO_GET_KEYS] = (syshandler_t) sys_sysinfo_get_keys,
+	[SYS_SYSINFO_GET_VAL_TYPE] = (syshandler_t) sys_sysinfo_get_val_type,
+	[SYS_SYSINFO_GET_VALUE] = (syshandler_t) sys_sysinfo_get_value,
+	[SYS_SYSINFO_GET_DATA_SIZE] = (syshandler_t) sys_sysinfo_get_data_size,
+	[SYS_SYSINFO_GET_DATA] = (syshandler_t) sys_sysinfo_get_data,
+
+	/* Kernel console syscalls. */
+	[SYS_DEBUG_CONSOLE] = (syshandler_t) sys_debug_console,
+
+	[SYS_KLOG] = (syshandler_t) sys_klog,
+};
+
+处理系统调用：
+    系统调用是一种主动进入内核态的方法，不同于中断和错误等异常，它们是被动的进入内核态。
+/** Low-level syscall handler
+ *
+ * Registers on entry:
+ *
+ * @param %rcx Userspace return address.
+ * @param %r11 Userspace RLFAGS.
+ *
+ * @param %rax Syscall number.
+ * @param %rdi 1st syscall argument.
+ * @param %rsi 2nd syscall argument.
+ * @param %rdx 3rd syscall argument.
+ * @param %r10 4th syscall argument. Used instead of RCX because
+ *             the SYSCALL instruction clobbers it.
+ * @param %r8  5th syscall argument.
+ * @param %r9  6th syscall argument.
+ *
+ * @return Return value is in %rax.
+ *
+ */
+SYMBOL(syscall_entry)
+	/* Switch to hidden %gs */
+	swapgs
+
+	movq %rsp, %gs:KSEG_OFFSET_USTACK_RSP  /* save this thread's user RSP */
+	movq %gs:KSEG_OFFSET_KSTACK_RSP, %rsp  /* set this thread's kernel RSP */
+
+	/*
+	 * Note that the space needed for the imitated istate structure has been
+	 * preallocated for us in thread_create_arch() and set in
+	 * before_thread_runs_arch().
+	 */
+
+	/*
+	 * Save the general purpose registers and push the 7th argument (syscall
+	 * number) onto the stack. Note that the istate structure has a layout
+	 * which supports this.
+	 */
+	movq %rax, ISTATE_OFFSET_RAX(%rsp)  /* 7th argument, passed on stack */
+	movq %rbx, ISTATE_OFFSET_RBX(%rsp)  /* observability */
+	movq %rcx, ISTATE_OFFSET_RCX(%rsp)  /* userspace RIP */
+	movq %rdx, ISTATE_OFFSET_RDX(%rsp)  /* 3rd argument, observability */
+	movq %rsi, ISTATE_OFFSET_RSI(%rsp)  /* 2nd argument, observability */
+	movq %rdi, ISTATE_OFFSET_RDI(%rsp)  /* 1st argument, observability */
+	movq %rbp, ISTATE_OFFSET_RBP(%rsp)  /* need to preserve userspace RBP */
+	movq %r8, ISTATE_OFFSET_R8(%rsp)    /* 5th argument, observability */
+	movq %r9, ISTATE_OFFSET_R9(%rsp)    /* 6th argument, observability */
+	movq %r10, ISTATE_OFFSET_R10(%rsp)  /* 4th argument, observability */
+	movq %r11, ISTATE_OFFSET_R11(%rsp)  /* low 32 bits userspace RFLAGS */
+	movq %r12, ISTATE_OFFSET_R12(%rsp)  /* observability */
+	movq %r13, ISTATE_OFFSET_R13(%rsp)  /* observability */
+	movq %r14, ISTATE_OFFSET_R14(%rsp)  /* observability */
+	movq %r15, ISTATE_OFFSET_R15(%rsp)  /* observability */
+
+	/*
+	 * Switch to kernel FS base.
+	 */
+	movl $AMD_MSR_FS, %ecx
+	movl %gs:KSEG_OFFSET_FSBASE, %eax
+	movl %gs:KSEG_OFFSET_FSBASE+4, %edx
+	wrmsr
+	movq ISTATE_OFFSET_RDX(%rsp), %rdx	/* restore 3rd argument */
+
+	/*
+	 * Save the return address and the userspace stack on locations that
+	 * would normally be taken by them.
+	 */
+	movq %gs:KSEG_OFFSET_USTACK_RSP, %rax
+	movq %rax, ISTATE_OFFSET_RSP(%rsp)
+	movq %rcx, ISTATE_OFFSET_RIP(%rsp)
+
+	/*
+	 * Imitate a regular stack frame linkage.
+	 */
+	movq $0, ISTATE_OFFSET_RBP_FRAME(%rsp)
+	movq %rcx, ISTATE_OFFSET_RIP_FRAME(%rsp)
+	leaq ISTATE_OFFSET_RBP_FRAME(%rsp), %rbp
+
+	/* Switch back to normal %gs */
+	swapgs
+	sti
+
+	/* Copy the 4th argument where it is expected  */
+	movq %r10, %rcx
+
+	/*
+	 * Call syscall_handler() with the 7th argument passed on stack.
+	 */
+	call syscall_handler
+
+	/*
+	 * Test if the saved return address is canonical and not-kernel.
+	 * We do this by looking at the 16 most significant bits
+	 * of the saved return address (two bytes at offset 6).
+	 */
+	testw $0xffff, ISTATE_OFFSET_RIP+6(%rsp)
+	jnz bad_rip
+
+	cli
+
+	/*
+	 * Restore registers needed for return via the SYSRET instruction and
+	 * the clobbered preserved registers (i.e. RBP).
+	 */
+	movq ISTATE_OFFSET_RBP(%rsp), %rbp
+	movq ISTATE_OFFSET_RCX(%rsp), %rcx
+	movq ISTATE_OFFSET_R11(%rsp), %r11
+	movq ISTATE_OFFSET_RSP(%rsp), %rsp
+
+	/*
+	 * Clear the rest of the scratch registers to prevent information leak.
+	 * The 32-bit XOR on the low GPRs actually clears the entire 64-bit
+	 * register and the instruction is shorter.
+	 */
+	xorl %edx, %edx
+	xorl %esi, %esi
+	xorl %edi, %edi
+	xorq %r8, %r8
+	xorq %r9, %r9
+	xorq %r10, %r10
+
+	sysretq
+
+/** Dispatch system call */
+sysarg_t syscall_handler(sysarg_t a1, sysarg_t a2, sysarg_t a3,
+    sysarg_t a4, sysarg_t a5, sysarg_t a6, sysarg_t id)
+{
+	/* Do userpace accounting */
+	ipl_t ipl = interrupts_disable();
+	thread_update_accounting(true);
+	interrupts_restore(ipl);
+
+#ifdef CONFIG_UDEBUG
+	/*
+	 * An istate_t-compatible record was created on the stack by the
+	 * low-level syscall handler. This is the userspace space state
+	 * structure.
+	 */
+	THREAD->udebug.uspace_state = istate_get(THREAD);
+
+	/*
+	 * Early check for undebugged tasks. We do not lock anything as this
+	 * test need not be precise in either direction.
+	 */
+	if (THREAD->udebug.active)
+		udebug_syscall_event(a1, a2, a3, a4, a5, a6, id, 0, false);
+#endif
+
+	sysarg_t rc;
+	if (id < sizeof_array(syscall_table)) {
+		rc = syscall_table[id](a1, a2, a3, a4, a5, a6);
+	} else {
+		log(LF_OTHER, LVL_ERROR,
+		    "Task %" PRIu64 ": Unknown syscall %#" PRIxn, TASK->taskid, id);
+		task_kill_self(true);
+	}
+
+	if (THREAD->interrupted)
+		thread_exit();
+
+#ifdef CONFIG_UDEBUG
+	if (THREAD->udebug.active) {
+		udebug_syscall_event(a1, a2, a3, a4, a5, a6, id, rc, true);
+
+		/*
+		 * Stopping point needed for tasks that only invoke
+		 * non-blocking system calls. Not needed if the task
+		 * is not being debugged (it cannot block here).
+		 */
+		udebug_stoppable_begin();
+		udebug_stoppable_end();
+	}
+
+	/* Clear userspace state pointer */
+	THREAD->udebug.uspace_state = NULL;
+#endif
+
+	/* Do kernel accounting */
+	ipl = interrupts_disable();
+	thread_update_accounting(false);
+	interrupts_restore(ipl);
+
+	return rc;
+}

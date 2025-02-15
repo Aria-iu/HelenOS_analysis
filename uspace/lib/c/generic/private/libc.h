@@ -47,15 +47,16 @@ typedef int (*main_fn_t)(int, char **);
 typedef void (*init_array_entry_t)();
 typedef void (*fini_array_entry_t)();
 
+// 用于存储程序的符号信息
 typedef struct {
-	main_fn_t main;
-	const void *elfstart;
+	main_fn_t main;						// 程序的入口点函数
+	const void *elfstart;				// 程序的起始地址和结束地址
 	const void *end;
-	init_array_entry_t *preinit_array;
+	init_array_entry_t *preinit_array;	// 预初始化函数数组及其长度
 	int preinit_array_len;
-	init_array_entry_t *init_array;
+	init_array_entry_t *init_array;		// 初始化函数数组及其长度
 	int init_array_len;
-	fini_array_entry_t *fini_array;
+	fini_array_entry_t *fini_array;		// 析构函数数组及其长度
 	int fini_array_len;
 } progsymbols_t;
 

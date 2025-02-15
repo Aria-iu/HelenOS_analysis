@@ -1,0 +1,379 @@
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/lib/libcodepage.so.0.0.p/codepage_src_cp437.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libcodepage.so.0.0.p/codepage_src_cp437.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libcodepage.so.0.0.p/codepage_src_cp437.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/lib/libcodepage.so.0.0.p/codepage_src_cp437.c.o
+START GROUP
+LOAD uspace/lib/libc.so.0.0
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000000120                . = (SEGMENT_START ("text-segment", 0x0) + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000000120       0x18
+ *(.hash)
+ .hash          0x0000000000000120       0x18 uspace/lib/libcodepage.so.0.0.p/codepage_src_cp437.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x0000000000000138       0x48
+ *(.dynsym)
+ .dynsym        0x0000000000000138       0x48 uspace/lib/libcodepage.so.0.0.p/codepage_src_cp437.c.o
+
+.dynstr         0x0000000000000180       0x35
+ *(.dynstr)
+ .dynstr        0x0000000000000180       0x35 uspace/lib/libcodepage.so.0.0.p/codepage_src_cp437.c.o
+
+.gnu.version    0x00000000000001b6        0x0
+ *(.gnu.version)
+ .gnu.version   0x00000000000001b6        0x0 uspace/lib/libcodepage.so.0.0.p/codepage_src_cp437.c.o
+
+.gnu.version_d  0x00000000000001b8        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x00000000000001b8        0x0 uspace/lib/libcodepage.so.0.0.p/codepage_src_cp437.c.o
+
+.gnu.version_r  0x00000000000001b8        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x00000000000001b8        0x0 uspace/lib/libcodepage.so.0.0.p/codepage_src_cp437.c.o
+
+.rela.dyn       0x00000000000001b8        0x0
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x00000000000001b8        0x0 uspace/lib/libcodepage.so.0.0.p/codepage_src_cp437.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+ .rela.ifunc    0x00000000000001b8        0x0 uspace/lib/libcodepage.so.0.0.p/codepage_src_cp437.c.o
+
+.rela.plt       0x00000000000001b8        0x0
+ *(.rela.plt)
+ .rela.plt      0x00000000000001b8        0x0 uspace/lib/libcodepage.so.0.0.p/codepage_src_cp437.c.o
+ *(.rela.iplt)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x00000000000001c0        0x0
+ *(.plt)
+ .plt           0x00000000000001c0        0x0 uspace/lib/libcodepage.so.0.0.p/codepage_src_cp437.c.o
+ *(.iplt)
+
+.plt.got        0x00000000000001b8        0x0
+ *(.plt.got)
+ .plt.got       0x00000000000001b8        0x0 uspace/lib/libcodepage.so.0.0.p/codepage_src_cp437.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x00000000000001c0       0x77
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text.cp437_decode
+                0x00000000000001c0       0x14 uspace/lib/libcodepage.so.0.0.p/codepage_src_cp437.c.o
+                0x00000000000001c0                cp437_decode
+ *fill*         0x00000000000001d4        0xc 
+ .text.cp437_encode
+                0x00000000000001e0       0x57 uspace/lib/libcodepage.so.0.0.p/codepage_src_cp437.c.o
+                0x00000000000001e0                cp437_encode
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000000240      0xf00
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.u2xxx_to_cp437
+                0x0000000000000240      0x700 uspace/lib/libcodepage.so.0.0.p/codepage_src_cp437.c.o
+ .rodata.u0xxx_to_cp437
+                0x0000000000000940      0x400 uspace/lib/libcodepage.so.0.0.p/codepage_src_cp437.c.o
+ .rodata.cp437  0x0000000000000d40      0x400 uspace/lib/libcodepage.so.0.0.p/codepage_src_cp437.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x0000000000001140       0x1c
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x0000000000001140       0x1c uspace/lib/libcodepage.so.0.0.p/codepage_src_cp437.c.o
+                0x0000000000001140                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x0000000000001160       0x58
+ *(.eh_frame)
+ .eh_frame      0x0000000000001160       0x58 uspace/lib/libcodepage.so.0.0.p/codepage_src_cp437.c.o
+ .eh_frame      0x00000000000011b8        0x0 uspace/lib/libcodepage.so.0.0.p/codepage_src_cp437.c.o
+ .eh_frame      0x00000000000011b8        0x0 uspace/lib/libcodepage.so.0.0.p/codepage_src_cp437.c.o
+ *(.eh_frame.*)
+
+.sframe         0x00000000000011b8        0x0
+ *(.sframe)
+ .sframe        0x00000000000011b8        0x0 uspace/lib/libcodepage.so.0.0.p/codepage_src_cp437.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x00000000000021b8                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array
+ *(.preinit_array)
+
+.init_array
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+
+.fini_array
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x00000000000021b8        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x00000000000021b8        0x0 uspace/lib/libcodepage.so.0.0.p/codepage_src_cp437.c.o
+
+.dynamic        0x00000000000021b8       0xd0
+ *(.dynamic)
+ .dynamic       0x00000000000021b8       0xd0 uspace/lib/libcodepage.so.0.0.p/codepage_src_cp437.c.o
+                0x00000000000021b8                _DYNAMIC
+
+.got            0x0000000000002288        0x0
+ *(.got)
+ .got           0x0000000000002288        0x0 uspace/lib/libcodepage.so.0.0.p/codepage_src_cp437.c.o
+ *(.igot)
+                0x0000000000002288                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x0000000000002288        0x0
+ *(.got.plt)
+ .got.plt       0x0000000000002288        0x0 uspace/lib/libcodepage.so.0.0.p/codepage_src_cp437.c.o
+ *(.igot.plt)
+
+.data
+ *(.data .data.* .gnu.linkonce.d.*)
+
+.data1
+ *(.data1)
+                [!provide]                        PROVIDE (_edata = .)
+                [!provide]                        PROVIDE (edata = .)
+                0x0000000000002288                . = .
+                [!provide]                        PROVIDE (__bss_start = .)
+
+.bss            0x0000000000002288        0x0
+ *(.dynbss)
+ .dynbss        0x0000000000002288        0x0 uspace/lib/libcodepage.so.0.0.p/codepage_src_cp437.c.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ *(COMMON)
+                0x0000000000002288                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x0000000000002288                . = ALIGN (0x8)
+                0x0000000000002288                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x0000000000004288        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x0000000000004288                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000004288                . = ALIGN (0x8)
+                [!provide]                        PROVIDE (_end = .)
+                [!provide]                        PROVIDE (end = .)
+                0x0000000000004288                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/lib/libcodepage.so.0.0.p/codepage_src_cp437.c.o
+                                         0x13 (size before relaxing)
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/lib/libcodepage.so.0.0 elf64-x86-64)

@@ -1,0 +1,2815 @@
+Archive member included to satisfy reference by file (symbol)
+
+uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                              (--whole-archive)
+uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                              (--whole-archive)
+uspace/lib/libclui.a.p/clui_src_tinput.c.o
+                              uspace/app_sbi.p/app_sbi_src_os_helenos.c.o (tinput_new)
+uspace/lib/libclipboard.a.p/clipboard_src_clipboard.c.o
+                              uspace/lib/libclui.a.p/clui_src_tinput.c.o (clipboard_put_str)
+uspace/lib/libconsole.a.p/console_src_console.c.o
+                              uspace/lib/libclui.a.p/clui_src_tinput.c.o (console_init)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.0                     uspace/app_sbi.p/app_sbi_src_builtin_bi_console.c.o (putchar)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_error.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_error.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_error.c.o
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_char.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_char.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_char.c.o
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_console.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_console.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_console.c.o
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_int.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_int.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_int.c.o
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_task.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_task.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_task.c.o
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_textfile.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_textfile.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_textfile.c.o
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_string.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_string.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_string.c.o
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_os_helenos.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_os_helenos.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_os_helenos.c.o
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_ancr.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_ancr.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_ancr.c.o
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_bigint.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_bigint.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_bigint.c.o
+ .text.bigint_div_digit
+                0x0000000000000000       0xf5 uspace/app_sbi.p/app_sbi_src_bigint.c.o
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_builtin.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_builtin.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_builtin.c.o
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_cspan.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_cspan.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_cspan.c.o
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_imode.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_imode.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_imode.c.o
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_input.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_input.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_input.c.o
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_intmap.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_intmap.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_intmap.c.o
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_lex.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_lex.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_lex.c.o
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_list.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_list.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_list.c.o
+ .text.sbi_list_prepend
+                0x0000000000000000       0x6e uspace/app_sbi.p/app_sbi_src_list.c.o
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_main.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_main.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_main.c.o
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_p_expr.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_p_expr.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_p_expr.c.o
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_p_type.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_p_type.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_p_type.c.o
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_parse.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_parse.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_parse.c.o
+ .text.parse_raise_error
+                0x0000000000000000       0x11 uspace/app_sbi.p/app_sbi_src_parse.c.o
+ .text.parse_note_error
+                0x0000000000000000        0xd uspace/app_sbi.p/app_sbi_src_parse.c.o
+ .rodata.parse_recover_error.str1.1
+                0x0000000000000000       0x17 uspace/app_sbi.p/app_sbi_src_parse.c.o
+ .rodata.parse_recover_error.str1.8
+                0x0000000000000000       0x1f uspace/app_sbi.p/app_sbi_src_parse.c.o
+ .text.parse_recover_error
+                0x0000000000000000       0x41 uspace/app_sbi.p/app_sbi_src_parse.c.o
+ .text.terminates_block
+                0x0000000000000000       0x21 uspace/app_sbi.p/app_sbi_src_parse.c.o
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_program.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_program.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_program.c.o
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.rdata_item_delete.str1.1
+                0x0000000000000000        0xd uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .text.rdata_item_delete
+                0x0000000000000000       0x22 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.rdata_addr_var_delete.str1.1
+                0x0000000000000000       0x11 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .text.rdata_addr_var_delete
+                0x0000000000000000       0x22 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.rdata_addr_prop_delete.str1.1
+                0x0000000000000000       0x12 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .text.rdata_addr_prop_delete
+                0x0000000000000000       0x22 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.rdata_aprop_named_delete.str1.1
+                0x0000000000000000       0x14 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .text.rdata_aprop_named_delete
+                0x0000000000000000       0x22 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.rdata_aprop_indexed_delete.str1.1
+                0x0000000000000000       0x16 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .text.rdata_aprop_indexed_delete
+                0x0000000000000000       0x22 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.rdata_address_delete.str1.1
+                0x0000000000000000       0x10 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .text.rdata_address_delete
+                0x0000000000000000       0x22 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.rdata_value_delete.str1.1
+                0x0000000000000000        0xe uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .text.rdata_value_delete
+                0x0000000000000000       0x22 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .text.rdata_var_delete
+                0x0000000000000000       0x13 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .text.rdata_bool_delete
+                0x0000000000000000       0x13 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .text.rdata_char_delete
+                0x0000000000000000       0x13 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .text.rdata_int_delete
+                0x0000000000000000       0x13 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .text.rdata_string_delete
+                0x0000000000000000       0x13 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.rdata_ref_delete.str1.1
+                0x0000000000000000        0xe uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .text.rdata_ref_delete
+                0x0000000000000000       0x22 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.rdata_deleg_delete.str1.1
+                0x0000000000000000       0x10 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .text.rdata_deleg_delete
+                0x0000000000000000       0x22 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.rdata_enum_delete.str1.1
+                0x0000000000000000        0xf uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .text.rdata_enum_delete
+                0x0000000000000000       0x22 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.rdata_array_delete.str1.1
+                0x0000000000000000       0x10 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .text.rdata_array_delete
+                0x0000000000000000       0x22 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .text.rdata_object_delete
+                0x0000000000000000       0x13 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.rdata_resource_delete.str1.1
+                0x0000000000000000       0x13 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .text.rdata_resource_delete
+                0x0000000000000000       0x22 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.rdata_symbol_delete.str1.1
+                0x0000000000000000       0x11 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .text.rdata_symbol_delete
+                0x0000000000000000       0x22 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .text.rdata_addr_var_destroy
+                0x0000000000000000        0xa uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .text.rdata_aprop_named_destroy
+                0x0000000000000000       0x21 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .text.rdata_addr_prop_destroy
+                0x0000000000000000       0x8c uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .text.rdata_address_destroy
+                0x0000000000000000       0xdb uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .text.rdata_value_destroy
+                0x0000000000000000       0x33 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .text.run_get_current_block_ar
+                0x0000000000000000       0x20 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .text.run_fun_sobject_find
+                0x0000000000000000      0x11d uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_print_fun_bt.str1.1
+                0x0000000000000000        0xf uspace/app_sbi.p/app_sbi_src_run.c.o
+ .text.run_print_fun_bt
+                0x0000000000000000       0x70 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .text.run_block_ar_destroy
+                0x0000000000000000       0x72 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .text.run_proc_ar_new
+                0x0000000000000000       0x2e uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_proc_ar_delete.str1.1
+                0x0000000000000000       0x10 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .text.run_proc_ar_delete
+                0x0000000000000000       0x22 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .text.run_block_ar_new
+                0x0000000000000000       0x2e uspace/app_sbi.p/app_sbi_src_run.c.o
+ .text.run_block_ar_delete
+                0x0000000000000000       0x13 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_run_expr.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_run_expr.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_run_expr.c.o
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_run_texpr.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_run_texpr.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_run_texpr.c.o
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_stree.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_stree.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_stree.c.o
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_strtab.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_strtab.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_strtab.c.o
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .text.stype_get_current_block_vr
+                0x0000000000000000       0x17 uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_stype_expr.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_stype_expr.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_stype_expr.c.o
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+ .text.symbol_get_base_class
+                0x0000000000000000      0x155 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+ .text.prop_to_symbol
+                0x0000000000000000       0x22 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+ .text          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_tdata.c.o
+ .data          0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_tdata.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_sbi.p/app_sbi_src_tdata.c.o
+ .rodata.tdata_is_ti_derived_from_ti.str1.8
+                0x0000000000000000       0x22 uspace/app_sbi.p/app_sbi_src_tdata.c.o
+ .text.tdata_is_ti_derived_from_ti
+                0x0000000000000000       0x4c uspace/app_sbi.p/app_sbi_src_tdata.c.o
+ .text.tdata_tvv_get_val
+                0x0000000000000000        0xa uspace/app_sbi.p/app_sbi_src_tdata.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .text          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libclui.a.p/clui_src_tinput.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libclui.a.p/clui_src_tinput.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libclui.a.p/clui_src_tinput.c.o
+ .text.tinput_destroy
+                0x0000000000000000       0x27 uspace/lib/libclui.a.p/clui_src_tinput.c.o
+ .text.tinput_set_compl_ops
+                0x0000000000000000        0xa uspace/lib/libclui.a.p/clui_src_tinput.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libclipboard.a.p/clipboard_src_clipboard.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libclipboard.a.p/clipboard_src_clipboard.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libclipboard.a.p/clipboard_src_clipboard.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_done
+                0x0000000000000000        0xa uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_kcon
+                0x0000000000000000        0xa uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_set_color
+                0x0000000000000000       0x47 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_set_rgb_color
+                0x0000000000000000       0x42 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_set_caption
+                0x0000000000000000       0xa3 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_get_color_cap
+                0x0000000000000000       0x39 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_get_event_timeout
+                0x0000000000000000      0x16c uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_map
+                0x0000000000000000       0xea uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_unmap
+                0x0000000000000000       0x37 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_update
+                0x0000000000000000       0x5f uspace/lib/libconsole.a.p/console_src_console.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+LOAD uspace/app_sbi.p/app_sbi_src_builtin_bi_error.c.o
+LOAD uspace/app_sbi.p/app_sbi_src_builtin_bi_char.c.o
+LOAD uspace/app_sbi.p/app_sbi_src_builtin_bi_console.c.o
+LOAD uspace/app_sbi.p/app_sbi_src_builtin_bi_int.c.o
+LOAD uspace/app_sbi.p/app_sbi_src_builtin_bi_task.c.o
+LOAD uspace/app_sbi.p/app_sbi_src_builtin_bi_textfile.c.o
+LOAD uspace/app_sbi.p/app_sbi_src_builtin_bi_string.c.o
+LOAD uspace/app_sbi.p/app_sbi_src_os_helenos.c.o
+LOAD uspace/app_sbi.p/app_sbi_src_ancr.c.o
+LOAD uspace/app_sbi.p/app_sbi_src_bigint.c.o
+LOAD uspace/app_sbi.p/app_sbi_src_builtin.c.o
+LOAD uspace/app_sbi.p/app_sbi_src_cspan.c.o
+LOAD uspace/app_sbi.p/app_sbi_src_imode.c.o
+LOAD uspace/app_sbi.p/app_sbi_src_input.c.o
+LOAD uspace/app_sbi.p/app_sbi_src_intmap.c.o
+LOAD uspace/app_sbi.p/app_sbi_src_lex.c.o
+LOAD uspace/app_sbi.p/app_sbi_src_list.c.o
+LOAD uspace/app_sbi.p/app_sbi_src_main.c.o
+LOAD uspace/app_sbi.p/app_sbi_src_p_expr.c.o
+LOAD uspace/app_sbi.p/app_sbi_src_p_type.c.o
+LOAD uspace/app_sbi.p/app_sbi_src_parse.c.o
+LOAD uspace/app_sbi.p/app_sbi_src_program.c.o
+LOAD uspace/app_sbi.p/app_sbi_src_rdata.c.o
+LOAD uspace/app_sbi.p/app_sbi_src_run.c.o
+LOAD uspace/app_sbi.p/app_sbi_src_run_expr.c.o
+LOAD uspace/app_sbi.p/app_sbi_src_run_texpr.c.o
+LOAD uspace/app_sbi.p/app_sbi_src_stree.c.o
+LOAD uspace/app_sbi.p/app_sbi_src_strtab.c.o
+LOAD uspace/app_sbi.p/app_sbi_src_stype.c.o
+LOAD uspace/app_sbi.p/app_sbi_src_stype_expr.c.o
+LOAD uspace/app_sbi.p/app_sbi_src_symbol.c.o
+LOAD uspace/app_sbi.p/app_sbi_src_tdata.c.o
+START GROUP
+LOAD uspace/lib/c/libstartfiles.a
+LOAD uspace/lib/libclui.a
+LOAD uspace/lib/libclipboard.a
+LOAD uspace/lib/libc.so.0.0
+LOAD uspace/lib/libconsole.a
+LOAD uspace/lib/libinput.a
+LOAD uspace/lib/liboutput.a
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000400000                PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x0000000000400120                . = (SEGMENT_START ("text-segment", 0x400000) + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000400120      0x18c
+ *(.hash)
+ .hash          0x0000000000400120      0x18c uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x00000000004002b0      0x5a0
+ *(.dynsym)
+ .dynsym        0x00000000004002b0      0x5a0 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+
+.dynstr         0x0000000000400850      0x284
+ *(.dynstr)
+ .dynstr        0x0000000000400850      0x284 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+
+.gnu.version    0x0000000000400ad4        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000400ad4        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+
+.gnu.version_d  0x0000000000400ad8        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000400ad8        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+
+.gnu.version_r  0x0000000000400ad8        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000400ad8        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+
+.rela.dyn       0x0000000000400ad8       0x60
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text.input_get_line
+                0x0000000000400ad8        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+ .rela.text.__c_start
+                0x0000000000400ad8        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+ .rela.text.tinput_new
+                0x0000000000400ad8        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+ .rela.text.tinput_read_i
+                0x0000000000400ad8        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ .rela.rodata.cst8
+                0x0000000000400ad8        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x0000000000400ad8        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000400ad8        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x0000000000400ad8       0x60 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+
+.rela.plt       0x0000000000400b38      0x528
+ *(.rela.plt)
+ .rela.plt      0x0000000000400b38      0x528 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+ .rela.iplt     0x0000000000401060        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x0000000000401060      0x380
+ *(.plt)
+ .plt           0x0000000000401060      0x380 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+                0x0000000000401070                putchar
+                0x0000000000401080                vfs_fsession
+                0x0000000000401090                wstr_length
+                0x00000000004010a0                loc_service_connect
+                0x00000000004010b0                printf
+                0x00000000004010c0                async_req_0_2
+                0x00000000004010d0                async_wait_for
+                0x00000000004010e0                memmove
+                0x00000000004010f0                async_data_write_start
+                0x0000000000401100                task_wait
+                0x0000000000401110                str_width
+                0x0000000000401120                str_decode
+                0x0000000000401130                putuchar
+                0x0000000000401140                str_ndup
+                0x0000000000401150                qsort
+                0x0000000000401160                fgets
+                0x0000000000401170                async_send_1
+                0x0000000000401180                memcpy
+                0x0000000000401190                puts
+                0x00000000004011a0                feof
+                0x00000000004011b0                malloc
+                0x00000000004011c0                async_req_1_0
+                0x00000000004011d0                loc_service_get_id
+                0x00000000004011e0                fflush
+                0x00000000004011f0                abort
+                0x0000000000401200                async_exchange_end
+                0x0000000000401210                calloc
+                0x0000000000401220                fprintf
+                0x0000000000401230                fibril_mutex_unlock
+                0x0000000000401240                str_dup
+                0x0000000000401250                ferror
+                0x0000000000401260                realloc
+                0x0000000000401270                str_cmp
+                0x0000000000401280                fopen
+                0x0000000000401290                __helenos_assert_abort
+                0x00000000004012a0                memset
+                0x00000000004012b0                async_data_read_start
+                0x00000000004012c0                wstr_to_astr
+                0x00000000004012d0                fclose
+                0x00000000004012e0                task_spawnv
+                0x00000000004012f0                str_size
+                0x0000000000401300                str_length
+                0x0000000000401310                async_exchange_begin
+                0x0000000000401320                async_send_0
+                0x0000000000401330                str_error
+                0x0000000000401340                fwrite
+                0x0000000000401350                str_to_wstr
+                0x0000000000401360                __libc_main
+                0x0000000000401370                exit
+                0x0000000000401380                async_req_0_0
+                0x0000000000401390                chr_encode
+                0x00000000004013a0                async_req_2_0
+                0x00000000004013b0                str_lsize
+                0x00000000004013c0                free
+                0x00000000004013d0                fibril_mutex_lock
+ *(.iplt)
+ .iplt          0x00000000004013e0        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+
+.plt.got        0x00000000004013e0        0x0
+ *(.plt.got)
+ .plt.got       0x00000000004013e0        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x00000000004013e0    0x19e3d
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ .text.unlikely.run_proc_ar_set_args
+                0x00000000004013e0        0xf uspace/app_sbi.p/app_sbi_src_run.c.o
+ .text.unlikely.run_var_new
+                0x00000000004013ef        0x8 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .text.unlikely.run_access_item
+                0x00000000004013f7        0x7 uspace/app_sbi.p/app_sbi_src_run_expr.c.o
+ .text.unlikely.run_expr
+                0x00000000004013fe        0x7 uspace/app_sbi.p/app_sbi_src_run_expr.c.o
+ .text.unlikely.run_texpr
+                0x0000000000401405       0x10 uspace/app_sbi.p/app_sbi_src_run_texpr.c.o
+ .text.unlikely.stree_csimbr_get_name
+                0x0000000000401415        0x7 uspace/app_sbi.p/app_sbi_src_stree.c.o
+ .text.unlikely.stype_box_expr
+                0x000000000040141c        0x8 uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .text.unlikely.stype_convert
+                0x0000000000401424        0x7 uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .text.unlikely.stype_expr
+                0x000000000040142b        0x8 uspace/app_sbi.p/app_sbi_src_stype_expr.c.o
+ .text.unlikely.csimbr_to_symbol
+                0x0000000000401433        0x7 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+ .text.unlikely.symbol_print_fqn
+                0x000000000040143a        0x9 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *fill*         0x0000000000401443        0xd 
+ .text.startup.main
+                0x0000000000401450      0x121 uspace/app_sbi.p/app_sbi_src_main.c.o
+                0x0000000000401450                main
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ *fill*         0x0000000000401571        0xf 
+ .text.bi_boxed_bind
+                0x0000000000401580       0x53 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+                0x0000000000401580                bi_boxed_bind
+ *fill*         0x00000000004015d3        0xd 
+ .text.bi_error_declare
+                0x00000000004015e0        0xf uspace/app_sbi.p/app_sbi_src_builtin_bi_error.c.o
+                0x00000000004015e0                bi_error_declare
+ *fill*         0x00000000004015ef        0x1 
+ .text.bi_error_bind
+                0x00000000004015f0       0x7d uspace/app_sbi.p/app_sbi_src_builtin_bi_error.c.o
+                0x00000000004015f0                bi_error_bind
+ *fill*         0x000000000040166d        0x3 
+ .text.bi_char_get_as_string
+                0x0000000000401670       0x77 uspace/app_sbi.p/app_sbi_src_builtin_bi_char.c.o
+ *fill*         0x00000000004016e7        0x9 
+ .text.bi_char_declare
+                0x00000000004016f0        0x6 uspace/app_sbi.p/app_sbi_src_builtin_bi_char.c.o
+                0x00000000004016f0                bi_char_declare
+ *fill*         0x00000000004016f6        0xa 
+ .text.bi_char_bind
+                0x0000000000401700       0x19 uspace/app_sbi.p/app_sbi_src_builtin_bi_char.c.o
+                0x0000000000401700                bi_char_bind
+ *fill*         0x0000000000401719        0x7 
+ .text.bi_console_write
+                0x0000000000401720       0xeb uspace/app_sbi.p/app_sbi_src_builtin_bi_console.c.o
+ *fill*         0x000000000040180b        0x5 
+ .text.bi_console_writeline
+                0x0000000000401810      0x13b uspace/app_sbi.p/app_sbi_src_builtin_bi_console.c.o
+ *fill*         0x000000000040194b        0x5 
+ .text.bi_console_declare
+                0x0000000000401950       0xb8 uspace/app_sbi.p/app_sbi_src_builtin_bi_console.c.o
+                0x0000000000401950                bi_console_declare
+ *fill*         0x0000000000401a08        0x8 
+ .text.bi_console_bind
+                0x0000000000401a10       0x3c uspace/app_sbi.p/app_sbi_src_builtin_bi_console.c.o
+                0x0000000000401a10                bi_console_bind
+ *fill*         0x0000000000401a4c        0x4 
+ .text.bi_int_get_as_string
+                0x0000000000401a50       0x4e uspace/app_sbi.p/app_sbi_src_builtin_bi_int.c.o
+ *fill*         0x0000000000401a9e        0x2 
+ .text.bi_int_declare
+                0x0000000000401aa0        0x6 uspace/app_sbi.p/app_sbi_src_builtin_bi_int.c.o
+                0x0000000000401aa0                bi_int_declare
+ *fill*         0x0000000000401aa6        0xa 
+ .text.bi_int_bind
+                0x0000000000401ab0       0x19 uspace/app_sbi.p/app_sbi_src_builtin_bi_int.c.o
+                0x0000000000401ab0                bi_int_bind
+ *fill*         0x0000000000401ac9        0x7 
+ .text.bi_task_exec
+                0x0000000000401ad0      0x16b uspace/app_sbi.p/app_sbi_src_builtin_bi_task.c.o
+ *fill*         0x0000000000401c3b        0x5 
+ .text.bi_task_declare
+                0x0000000000401c40        0xf uspace/app_sbi.p/app_sbi_src_builtin_bi_task.c.o
+                0x0000000000401c40                bi_task_declare
+ *fill*         0x0000000000401c4f        0x1 
+ .text.bi_task_bind
+                0x0000000000401c50       0x19 uspace/app_sbi.p/app_sbi_src_builtin_bi_task.c.o
+                0x0000000000401c50                bi_task_bind
+ *fill*         0x0000000000401c69        0x7 
+ .text.bi_textfile_writeline
+                0x0000000000401c70       0xdd uspace/app_sbi.p/app_sbi_src_builtin_bi_textfile.c.o
+ *fill*         0x0000000000401d4d        0x3 
+ .text.bi_textfile_readline
+                0x0000000000401d50      0x15c uspace/app_sbi.p/app_sbi_src_builtin_bi_textfile.c.o
+ *fill*         0x0000000000401eac        0x4 
+ .text.bi_textfile_openwrite
+                0x0000000000401eb0       0xd4 uspace/app_sbi.p/app_sbi_src_builtin_bi_textfile.c.o
+ *fill*         0x0000000000401f84        0xc 
+ .text.bi_textfile_openread
+                0x0000000000401f90       0xd4 uspace/app_sbi.p/app_sbi_src_builtin_bi_textfile.c.o
+ *fill*         0x0000000000402064        0xc 
+ .text.bi_textfile_is_eof
+                0x0000000000402070       0xb0 uspace/app_sbi.p/app_sbi_src_builtin_bi_textfile.c.o
+ .text.bi_textfile_close
+                0x0000000000402120       0x8d uspace/app_sbi.p/app_sbi_src_builtin_bi_textfile.c.o
+ *fill*         0x00000000004021ad        0x3 
+ .text.bi_textfile_declare
+                0x00000000004021b0        0xf uspace/app_sbi.p/app_sbi_src_builtin_bi_textfile.c.o
+                0x00000000004021b0                bi_textfile_declare
+ *fill*         0x00000000004021bf        0x1 
+ .text.bi_textfile_bind
+                0x00000000004021c0       0x98 uspace/app_sbi.p/app_sbi_src_builtin_bi_textfile.c.o
+                0x00000000004021c0                bi_textfile_bind
+ *fill*         0x0000000000402258        0x8 
+ .text.bi_string_slice
+                0x0000000000402260      0x170 uspace/app_sbi.p/app_sbi_src_builtin_bi_string.c.o
+ .text.bi_string_length
+                0x00000000004023d0       0x98 uspace/app_sbi.p/app_sbi_src_builtin_bi_string.c.o
+ *fill*         0x0000000000402468        0x8 
+ .text.bi_string_declare
+                0x0000000000402470        0x6 uspace/app_sbi.p/app_sbi_src_builtin_bi_string.c.o
+                0x0000000000402470                bi_string_declare
+ *fill*         0x0000000000402476        0xa 
+ .text.bi_string_bind
+                0x0000000000402480       0x3c uspace/app_sbi.p/app_sbi_src_builtin_bi_string.c.o
+                0x0000000000402480                bi_string_bind
+ *fill*         0x00000000004024bc        0x4 
+ .text.os_str_acat
+                0x00000000004024c0       0x95 uspace/app_sbi.p/app_sbi_src_os_helenos.c.o
+                0x00000000004024c0                os_str_acat
+ *fill*         0x0000000000402555        0xb 
+ .text.os_str_aslice
+                0x0000000000402560       0xc8 uspace/app_sbi.p/app_sbi_src_os_helenos.c.o
+                0x0000000000402560                os_str_aslice
+ *fill*         0x0000000000402628        0x8 
+ .text.os_str_cmp
+                0x0000000000402630        0xa uspace/app_sbi.p/app_sbi_src_os_helenos.c.o
+                0x0000000000402630                os_str_cmp
+ *fill*         0x000000000040263a        0x6 
+ .text.os_str_length
+                0x0000000000402640        0xa uspace/app_sbi.p/app_sbi_src_os_helenos.c.o
+                0x0000000000402640                os_str_length
+ *fill*         0x000000000040264a        0x6 
+ .text.os_str_dup
+                0x0000000000402650        0xa uspace/app_sbi.p/app_sbi_src_os_helenos.c.o
+                0x0000000000402650                os_str_dup
+ *fill*         0x000000000040265a        0x6 
+ .text.os_str_get_char
+                0x0000000000402660       0xa6 uspace/app_sbi.p/app_sbi_src_os_helenos.c.o
+                0x0000000000402660                os_str_get_char
+ *fill*         0x0000000000402706        0xa 
+ .text.os_chr_to_astr
+                0x0000000000402710       0x7c uspace/app_sbi.p/app_sbi_src_os_helenos.c.o
+                0x0000000000402710                os_chr_to_astr
+ *fill*         0x000000000040278c        0x4 
+ .text.os_input_disp_help
+                0x0000000000402790        0xf uspace/app_sbi.p/app_sbi_src_os_helenos.c.o
+                0x0000000000402790                os_input_disp_help
+ *fill*         0x000000000040279f        0x1 
+ .text.os_input_line
+                0x00000000004027a0      0x143 uspace/app_sbi.p/app_sbi_src_os_helenos.c.o
+                0x00000000004027a0                os_input_line
+ *fill*         0x00000000004028e3        0xd 
+ .text.os_exec  0x00000000004028f0       0x5f uspace/app_sbi.p/app_sbi_src_os_helenos.c.o
+                0x00000000004028f0                os_exec
+ *fill*         0x000000000040294f        0x1 
+ .text.os_store_ef_path
+                0x0000000000402950        0x6 uspace/app_sbi.p/app_sbi_src_os_helenos.c.o
+                0x0000000000402950                os_store_ef_path
+ *fill*         0x0000000000402956        0xa 
+ .text.os_get_lib_path
+                0x0000000000402960        0xf uspace/app_sbi.p/app_sbi_src_os_helenos.c.o
+                0x0000000000402960                os_get_lib_path
+ *fill*         0x000000000040296f        0x1 
+ .text.ancr_csi_process
+                0x0000000000402970      0x37c uspace/app_sbi.p/app_sbi_src_ancr.c.o
+ *fill*         0x0000000000402cec        0x4 
+ .text.ancr_csi_dfs
+                0x0000000000402cf0      0x366 uspace/app_sbi.p/app_sbi_src_ancr.c.o
+ *fill*         0x0000000000403056        0xa 
+ .text.ancr_module_process
+                0x0000000000403060       0xb1 uspace/app_sbi.p/app_sbi_src_ancr.c.o
+                0x0000000000403060                ancr_module_process
+ *fill*         0x0000000000403111        0xf 
+ .text.bigint_alloc.part.0
+                0x0000000000403120       0x18 uspace/app_sbi.p/app_sbi_src_bigint.c.o
+ *fill*         0x0000000000403138        0x8 
+ .text.bigint_sub_abs
+                0x0000000000403140      0x192 uspace/app_sbi.p/app_sbi_src_bigint.c.o
+ *fill*         0x00000000004032d2        0xe 
+ .text.bigint_add_abs
+                0x00000000004032e0      0x124 uspace/app_sbi.p/app_sbi_src_bigint.c.o
+ *fill*         0x0000000000403404        0xc 
+ .text.bigint_init
+                0x0000000000403410       0xcd uspace/app_sbi.p/app_sbi_src_bigint.c.o
+                0x0000000000403410                bigint_init
+ *fill*         0x00000000004034dd        0x3 
+ .text.bigint_shallow_copy
+                0x00000000004034e0       0x1b uspace/app_sbi.p/app_sbi_src_bigint.c.o
+                0x00000000004034e0                bigint_shallow_copy
+ *fill*         0x00000000004034fb        0x5 
+ .text.bigint_clone
+                0x0000000000403500       0x89 uspace/app_sbi.p/app_sbi_src_bigint.c.o
+                0x0000000000403500                bigint_clone
+ *fill*         0x0000000000403589        0x7 
+ .text.bigint_reverse_sign
+                0x0000000000403590       0x89 uspace/app_sbi.p/app_sbi_src_bigint.c.o
+                0x0000000000403590                bigint_reverse_sign
+ *fill*         0x0000000000403619        0x7 
+ .text.bigint_destroy
+                0x0000000000403620       0x2e uspace/app_sbi.p/app_sbi_src_bigint.c.o
+                0x0000000000403620                bigint_destroy
+ *fill*         0x000000000040364e        0x2 
+ .text.bigint_get_value_int
+                0x0000000000403650      0x175 uspace/app_sbi.p/app_sbi_src_bigint.c.o
+                0x0000000000403650                bigint_get_value_int
+ *fill*         0x00000000004037c5        0xb 
+ .text.bigint_is_zero
+                0x00000000004037d0        0xf uspace/app_sbi.p/app_sbi_src_bigint.c.o
+                0x00000000004037d0                bigint_is_zero
+ *fill*         0x00000000004037df        0x1 
+ .text.bigint_is_negative
+                0x00000000004037e0       0x27 uspace/app_sbi.p/app_sbi_src_bigint.c.o
+                0x00000000004037e0                bigint_is_negative
+ *fill*         0x0000000000403807        0x9 
+ .text.bigint_add
+                0x0000000000403810       0x3e uspace/app_sbi.p/app_sbi_src_bigint.c.o
+                0x0000000000403810                bigint_add
+ *fill*         0x000000000040384e        0x2 
+ .text.bigint_sub
+                0x0000000000403850       0x3e uspace/app_sbi.p/app_sbi_src_bigint.c.o
+                0x0000000000403850                bigint_sub
+ *fill*         0x000000000040388e        0x2 
+ .text.bigint_mul
+                0x0000000000403890      0x41d uspace/app_sbi.p/app_sbi_src_bigint.c.o
+                0x0000000000403890                bigint_mul
+ *fill*         0x0000000000403cad        0x3 
+ .text.bigint_get_as_string
+                0x0000000000403cb0      0x2bd uspace/app_sbi.p/app_sbi_src_bigint.c.o
+                0x0000000000403cb0                bigint_get_as_string
+ *fill*         0x0000000000403f6d        0x3 
+ .text.bigint_print
+                0x0000000000403f70       0x32 uspace/app_sbi.p/app_sbi_src_bigint.c.o
+                0x0000000000403f70                bigint_print
+ *fill*         0x0000000000403fa2        0xe 
+ .text.builtin_declare
+                0x0000000000403fb0      0x111 uspace/app_sbi.p/app_sbi_src_builtin.c.o
+                0x0000000000403fb0                builtin_declare
+ *fill*         0x00000000004040c1        0xf 
+ .text.builtin_bind
+                0x00000000004040d0       0x4e uspace/app_sbi.p/app_sbi_src_builtin.c.o
+                0x00000000004040d0                builtin_bind
+ *fill*         0x000000000040411e        0x2 
+ .text.builtin_get_gf_class
+                0x0000000000404120       0x1c uspace/app_sbi.p/app_sbi_src_builtin.c.o
+                0x0000000000404120                builtin_get_gf_class
+ *fill*         0x000000000040413c        0x4 
+ .text.builtin_code_snippet
+                0x0000000000404140       0x56 uspace/app_sbi.p/app_sbi_src_builtin.c.o
+                0x0000000000404140                builtin_code_snippet
+ *fill*         0x0000000000404196        0xa 
+ .text.builtin_find_lvl0
+                0x00000000004041a0       0x57 uspace/app_sbi.p/app_sbi_src_builtin.c.o
+                0x00000000004041a0                builtin_find_lvl0
+ *fill*         0x00000000004041f7        0x9 
+ .text.builtin_find_lvl1
+                0x0000000000404200       0xac uspace/app_sbi.p/app_sbi_src_builtin.c.o
+                0x0000000000404200                builtin_find_lvl1
+ *fill*         0x00000000004042ac        0x4 
+ .text.builtin_fun_bind
+                0x00000000004042b0       0x59 uspace/app_sbi.p/app_sbi_src_builtin.c.o
+                0x00000000004042b0                builtin_fun_bind
+ *fill*         0x0000000000404309        0x7 
+ .text.builtin_run_proc
+                0x0000000000404310       0x42 uspace/app_sbi.p/app_sbi_src_builtin.c.o
+                0x0000000000404310                builtin_run_proc
+ *fill*         0x0000000000404352        0xe 
+ .text.builtin_get_self_mbr_var
+                0x0000000000404360       0x61 uspace/app_sbi.p/app_sbi_src_builtin.c.o
+                0x0000000000404360                builtin_get_self_mbr_var
+ *fill*         0x00000000004043c1        0xf 
+ .text.builtin_return_string
+                0x00000000004043d0       0x62 uspace/app_sbi.p/app_sbi_src_builtin.c.o
+                0x00000000004043d0                builtin_return_string
+ *fill*         0x0000000000404432        0xe 
+ .text.builtin_declare_fun
+                0x0000000000404440       0xb2 uspace/app_sbi.p/app_sbi_src_builtin.c.o
+                0x0000000000404440                builtin_declare_fun
+ *fill*         0x00000000004044f2        0xe 
+ .text.builtin_fun_add_arg
+                0x0000000000404500       0x6b uspace/app_sbi.p/app_sbi_src_builtin.c.o
+                0x0000000000404500                builtin_fun_add_arg
+ *fill*         0x000000000040456b        0x5 
+ .text.cspan_new
+                0x0000000000404570       0x6b uspace/app_sbi.p/app_sbi_src_cspan.c.o
+                0x0000000000404570                cspan_new
+ *fill*         0x00000000004045db        0x5 
+ .text.cspan_merge
+                0x00000000004045e0       0xb9 uspace/app_sbi.p/app_sbi_src_cspan.c.o
+                0x00000000004045e0                cspan_merge
+ *fill*         0x0000000000404699        0x7 
+ .text.cspan_print
+                0x00000000004046a0       0x57 uspace/app_sbi.p/app_sbi_src_cspan.c.o
+                0x00000000004046a0                cspan_print
+ *fill*         0x00000000004046f7        0x9 
+ .text.imode_run
+                0x0000000000404700      0x36a uspace/app_sbi.p/app_sbi_src_imode.c.o
+                0x0000000000404700                imode_run
+ *fill*         0x0000000000404a6a        0x6 
+ .text.input_new_file
+                0x0000000000404a70       0xab uspace/app_sbi.p/app_sbi_src_input.c.o
+                0x0000000000404a70                input_new_file
+ *fill*         0x0000000000404b1b        0x5 
+ .text.input_new_interactive
+                0x0000000000404b20       0x73 uspace/app_sbi.p/app_sbi_src_input.c.o
+                0x0000000000404b20                input_new_interactive
+ *fill*         0x0000000000404b93        0xd 
+ .text.input_new_string
+                0x0000000000404ba0       0x7e uspace/app_sbi.p/app_sbi_src_input.c.o
+                0x0000000000404ba0                input_new_string
+ *fill*         0x0000000000404c1e        0x2 
+ .text.input_get_line
+                0x0000000000404c20      0x118 uspace/app_sbi.p/app_sbi_src_input.c.o
+                0x0000000000404c20                input_get_line
+ *fill*         0x0000000000404d38        0x8 
+ .text.input_get_line_no
+                0x0000000000404d40        0x9 uspace/app_sbi.p/app_sbi_src_input.c.o
+                0x0000000000404d40                input_get_line_no
+ *fill*         0x0000000000404d49        0x7 
+ .text.intmap_init
+                0x0000000000404d50        0xa uspace/app_sbi.p/app_sbi_src_intmap.c.o
+                0x0000000000404d50                intmap_init
+ *fill*         0x0000000000404d5a        0x6 
+ .text.intmap_fini
+                0x0000000000404d60        0xa uspace/app_sbi.p/app_sbi_src_intmap.c.o
+                0x0000000000404d60                intmap_fini
+ *fill*         0x0000000000404d6a        0x6 
+ .text.intmap_set
+                0x0000000000404d70       0xb2 uspace/app_sbi.p/app_sbi_src_intmap.c.o
+                0x0000000000404d70                intmap_set
+ *fill*         0x0000000000404e22        0xe 
+ .text.intmap_get
+                0x0000000000404e30       0x4f uspace/app_sbi.p/app_sbi_src_intmap.c.o
+                0x0000000000404e30                intmap_get
+ *fill*         0x0000000000404e7f        0x1 
+ .text.intmap_first
+                0x0000000000404e80       0x14 uspace/app_sbi.p/app_sbi_src_intmap.c.o
+                0x0000000000404e80                intmap_first
+ *fill*         0x0000000000404e94        0xc 
+ .text.intmap_elem_get_key
+                0x0000000000404ea0        0x8 uspace/app_sbi.p/app_sbi_src_intmap.c.o
+                0x0000000000404ea0                intmap_elem_get_key
+ *fill*         0x0000000000404ea8        0x8 
+ .text.intmap_elem_get_value
+                0x0000000000404eb0        0xa uspace/app_sbi.p/app_sbi_src_intmap.c.o
+                0x0000000000404eb0                intmap_elem_get_value
+ *fill*         0x0000000000404eba        0x6 
+ .text.lex_char_string_core
+                0x0000000000404ec0      0x13b uspace/app_sbi.p/app_sbi_src_lex.c.o
+ *fill*         0x0000000000404ffb        0x5 
+ .text.lex_read_try
+                0x0000000000405000      0x530 uspace/app_sbi.p/app_sbi_src_lex.c.o
+ .text.lclass_print
+                0x0000000000405530       0xb3 uspace/app_sbi.p/app_sbi_src_lex.c.o
+                0x0000000000405530                lclass_print
+ *fill*         0x00000000004055e3        0xd 
+ .text.lem_print
+                0x00000000004055f0       0x86 uspace/app_sbi.p/app_sbi_src_lex.c.o
+                0x00000000004055f0                lem_print
+ *fill*         0x0000000000405676        0xa 
+ .text.lem_print_coords
+                0x0000000000405680        0xe uspace/app_sbi.p/app_sbi_src_lex.c.o
+                0x0000000000405680                lem_print_coords
+ *fill*         0x000000000040568e        0x2 
+ .text.lex_init
+                0x0000000000405690       0x50 uspace/app_sbi.p/app_sbi_src_lex.c.o
+                0x0000000000405690                lex_init
+ .text.lex_next
+                0x00000000004056e0       0x51 uspace/app_sbi.p/app_sbi_src_lex.c.o
+                0x00000000004056e0                lex_next
+ *fill*         0x0000000000405731        0xf 
+ .text.lex_get_current
+                0x0000000000405740       0x55 uspace/app_sbi.p/app_sbi_src_lex.c.o
+                0x0000000000405740                lex_get_current
+ *fill*         0x0000000000405795        0xb 
+ .text.lex_peek_prev
+                0x00000000004057a0       0x26 uspace/app_sbi.p/app_sbi_src_lex.c.o
+                0x00000000004057a0                lex_peek_prev
+ *fill*         0x00000000004057c6        0xa 
+ .text.sbi_list_first.part.0
+                0x00000000004057d0       0x18 uspace/app_sbi.p/app_sbi_src_list.c.o
+ *fill*         0x00000000004057e8        0x8 
+ .text.list_init
+                0x00000000004057f0       0x12 uspace/app_sbi.p/app_sbi_src_list.c.o
+                0x00000000004057f0                list_init
+ *fill*         0x0000000000405802        0xe 
+ .text.list_fini
+                0x0000000000405810       0x39 uspace/app_sbi.p/app_sbi_src_list.c.o
+                0x0000000000405810                list_fini
+ *fill*         0x0000000000405849        0x7 
+ .text.sbi_list_append
+                0x0000000000405850       0x6e uspace/app_sbi.p/app_sbi_src_list.c.o
+                0x0000000000405850                sbi_list_append
+ *fill*         0x00000000004058be        0x2 
+ .text.sbi_list_remove
+                0x00000000004058c0       0xc1 uspace/app_sbi.p/app_sbi_src_list.c.o
+                0x00000000004058c0                sbi_list_remove
+ *fill*         0x0000000000405981        0xf 
+ .text.sbi_list_first
+                0x0000000000405990       0x1c uspace/app_sbi.p/app_sbi_src_list.c.o
+                0x0000000000405990                sbi_list_first
+ *fill*         0x00000000004059ac        0x4 
+ .text.sbi_list_last
+                0x00000000004059b0       0x2a uspace/app_sbi.p/app_sbi_src_list.c.o
+                0x00000000004059b0                sbi_list_last
+ *fill*         0x00000000004059da        0x6 
+ .text.list_next
+                0x00000000004059e0       0x45 uspace/app_sbi.p/app_sbi_src_list.c.o
+                0x00000000004059e0                list_next
+ *fill*         0x0000000000405a25        0xb 
+ .text.list_prev
+                0x0000000000405a30       0x44 uspace/app_sbi.p/app_sbi_src_list.c.o
+                0x0000000000405a30                list_prev
+ *fill*         0x0000000000405a74        0xc 
+ .text.list_is_empty
+                0x0000000000405a80       0x2f uspace/app_sbi.p/app_sbi_src_list.c.o
+                0x0000000000405a80                list_is_empty
+ *fill*         0x0000000000405aaf        0x1 
+ .text.list_node_setdata
+                0x0000000000405ab0        0xa uspace/app_sbi.p/app_sbi_src_list.c.o
+                0x0000000000405ab0                list_node_setdata
+ *fill*         0x0000000000405aba        0x6 
+ .text.parse_expr
+                0x0000000000405ac0       0xf2 uspace/app_sbi.p/app_sbi_src_p_expr.c.o
+                0x0000000000405ac0                parse_expr
+ *fill*         0x0000000000405bb2        0xe 
+ .text.parse_postfix
+                0x0000000000405bc0      0x48a uspace/app_sbi.p/app_sbi_src_p_expr.c.o
+ *fill*         0x000000000040604a        0x6 
+ .text.parse_prefix
+                0x0000000000406050      0x24f uspace/app_sbi.p/app_sbi_src_p_expr.c.o
+ *fill*         0x000000000040629f        0x1 
+ .text.parse_multip
+                0x00000000004062a0       0xc4 uspace/app_sbi.p/app_sbi_src_p_expr.c.o
+ *fill*         0x0000000000406364        0xc 
+ .text.parse_additive
+                0x0000000000406370       0xf6 uspace/app_sbi.p/app_sbi_src_p_expr.c.o
+ *fill*         0x0000000000406466        0xa 
+ .text.parse_comparative
+                0x0000000000406470      0x116 uspace/app_sbi.p/app_sbi_src_p_expr.c.o
+ *fill*         0x0000000000406586        0xa 
+ .text.parse_conjunctive
+                0x0000000000406590       0xa3 uspace/app_sbi.p/app_sbi_src_p_expr.c.o
+ *fill*         0x0000000000406633        0xd 
+ .text.parse_disjunctive
+                0x0000000000406640       0xa3 uspace/app_sbi.p/app_sbi_src_p_expr.c.o
+ *fill*         0x00000000004066e3        0xd 
+ .text.parse_texpr
+                0x00000000004066f0      0x10e uspace/app_sbi.p/app_sbi_src_p_type.c.o
+                0x00000000004066f0                parse_texpr
+ *fill*         0x00000000004067fe        0x2 
+ .text.parse_tpostfix
+                0x0000000000406800      0x349 uspace/app_sbi.p/app_sbi_src_p_type.c.o
+ *fill*         0x0000000000406b49        0x7 
+ .text.parse_symbol_attrs
+                0x0000000000406b50       0xe8 uspace/app_sbi.p/app_sbi_src_parse.c.o
+ *fill*         0x0000000000406c38        0x8 
+ .text.parse_init
+                0x0000000000406c40       0x26 uspace/app_sbi.p/app_sbi_src_parse.c.o
+                0x0000000000406c40                parse_init
+ *fill*         0x0000000000406c66        0xa 
+ .text.parse_ident
+                0x0000000000406c70       0xaf uspace/app_sbi.p/app_sbi_src_parse.c.o
+                0x0000000000406c70                parse_ident
+ *fill*         0x0000000000406d1f        0x1 
+ .text.parse_proc_arg
+                0x0000000000406d20      0x179 uspace/app_sbi.p/app_sbi_src_parse.c.o
+ *fill*         0x0000000000406e99        0x7 
+ .text.parse_fun_sig
+                0x0000000000406ea0      0x268 uspace/app_sbi.p/app_sbi_src_parse.c.o
+ *fill*         0x0000000000407108        0x8 
+ .text.parse_enum
+                0x0000000000407110      0x32e uspace/app_sbi.p/app_sbi_src_parse.c.o
+ *fill*         0x000000000040743e        0x2 
+ .text.parse_stat
+                0x0000000000407440     0x1b24 uspace/app_sbi.p/app_sbi_src_parse.c.o
+                0x0000000000407440                parse_stat
+ *fill*         0x0000000000408f64        0xc 
+ .text.parse_csi
+                0x0000000000408f70     0x194c uspace/app_sbi.p/app_sbi_src_parse.c.o
+ *fill*         0x000000000040a8bc        0x4 
+ .text.parse_module
+                0x000000000040a8c0      0x11f uspace/app_sbi.p/app_sbi_src_parse.c.o
+                0x000000000040a8c0                parse_module
+ *fill*         0x000000000040a9df        0x1 
+ .text.parse_is_error
+                0x000000000040a9e0        0x9 uspace/app_sbi.p/app_sbi_src_parse.c.o
+                0x000000000040a9e0                parse_is_error
+ *fill*         0x000000000040a9e9        0x7 
+ .text.lcur     0x000000000040a9f0        0xd uspace/app_sbi.p/app_sbi_src_parse.c.o
+                0x000000000040a9f0                lcur
+ *fill*         0x000000000040a9fd        0x3 
+ .text.lcur_lc  0x000000000040aa00       0x20 uspace/app_sbi.p/app_sbi_src_parse.c.o
+                0x000000000040aa00                lcur_lc
+ .text.lcur_span
+                0x000000000040aa20       0x23 uspace/app_sbi.p/app_sbi_src_parse.c.o
+                0x000000000040aa20                lcur_span
+ *fill*         0x000000000040aa43        0xd 
+ .text.lprev_span
+                0x000000000040aa50       0x2b uspace/app_sbi.p/app_sbi_src_parse.c.o
+                0x000000000040aa50                lprev_span
+ *fill*         0x000000000040aa7b        0x5 
+ .text.lskip    0x000000000040aa80        0xd uspace/app_sbi.p/app_sbi_src_parse.c.o
+                0x000000000040aa80                lskip
+ *fill*         0x000000000040aa8d        0x3 
+ .text.lcheck   0x000000000040aa90       0x74 uspace/app_sbi.p/app_sbi_src_parse.c.o
+                0x000000000040aa90                lcheck
+ *fill*         0x000000000040ab04        0xc 
+ .text.lmatch   0x000000000040ab10       0x8b uspace/app_sbi.p/app_sbi_src_parse.c.o
+                0x000000000040ab10                lmatch
+ *fill*         0x000000000040ab9b        0x5 
+ .text.lunexpected_error
+                0x000000000040aba0       0x53 uspace/app_sbi.p/app_sbi_src_parse.c.o
+                0x000000000040aba0                lunexpected_error
+ *fill*         0x000000000040abf3        0xd 
+ .text.program_file_process
+                0x000000000040ac00       0xa4 uspace/app_sbi.p/app_sbi_src_program.c.o
+                0x000000000040ac00                program_file_process
+ *fill*         0x000000000040aca4        0xc 
+ .text.program_lib_process
+                0x000000000040acb0      0x1ee uspace/app_sbi.p/app_sbi_src_program.c.o
+                0x000000000040acb0                program_lib_process
+ *fill*         0x000000000040ae9e        0x2 
+ .text.rdata_var_print
+                0x000000000040aea0      0x242 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ *fill*         0x000000000040b0e2        0xe 
+ .text.rdata_item_new.part.0
+                0x000000000040b0f0       0x18 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ *fill*         0x000000000040b108        0x8 
+ .text.rdata_var_delete.part.0
+                0x000000000040b110       0x18 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ *fill*         0x000000000040b128        0x8 
+ .text.rdata_bool_delete.part.0
+                0x000000000040b130       0x18 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ *fill*         0x000000000040b148        0x8 
+ .text.rdata_char_delete.part.0
+                0x000000000040b150       0x18 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ *fill*         0x000000000040b168        0x8 
+ .text.rdata_int_delete.part.0
+                0x000000000040b170       0x18 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ *fill*         0x000000000040b188        0x8 
+ .text.rdata_string_delete.part.0
+                0x000000000040b190       0x18 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ *fill*         0x000000000040b1a8        0x8 
+ .text.rdata_object_delete.part.0
+                0x000000000040b1b0       0x18 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ *fill*         0x000000000040b1c8        0x8 
+ .text.rdata_var_destroy_inner
+                0x000000000040b1d0      0x17b uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ *fill*         0x000000000040b34b        0x5 
+ .text.rdata_item_new
+                0x000000000040b350       0x2c uspace/app_sbi.p/app_sbi_src_rdata.c.o
+                0x000000000040b350                rdata_item_new
+ *fill*         0x000000000040b37c        0x4 
+ .text.rdata_addr_var_new
+                0x000000000040b380       0x2e uspace/app_sbi.p/app_sbi_src_rdata.c.o
+                0x000000000040b380                rdata_addr_var_new
+ *fill*         0x000000000040b3ae        0x2 
+ .text.rdata_aprop_named_new
+                0x000000000040b3b0       0x2e uspace/app_sbi.p/app_sbi_src_rdata.c.o
+                0x000000000040b3b0                rdata_aprop_named_new
+ *fill*         0x000000000040b3de        0x2 
+ .text.rdata_aprop_indexed_new
+                0x000000000040b3e0       0x2e uspace/app_sbi.p/app_sbi_src_rdata.c.o
+                0x000000000040b3e0                rdata_aprop_indexed_new
+ *fill*         0x000000000040b40e        0x2 
+ .text.rdata_addr_prop_new
+                0x000000000040b410       0x3b uspace/app_sbi.p/app_sbi_src_rdata.c.o
+                0x000000000040b410                rdata_addr_prop_new
+ *fill*         0x000000000040b44b        0x5 
+ .text.rdata_address_new
+                0x000000000040b450       0x3b uspace/app_sbi.p/app_sbi_src_rdata.c.o
+                0x000000000040b450                rdata_address_new
+ *fill*         0x000000000040b48b        0x5 
+ .text.rdata_value_new
+                0x000000000040b490       0x2e uspace/app_sbi.p/app_sbi_src_rdata.c.o
+                0x000000000040b490                rdata_value_new
+ *fill*         0x000000000040b4be        0x2 
+ .text.rdata_var_new
+                0x000000000040b4c0       0x2c uspace/app_sbi.p/app_sbi_src_rdata.c.o
+                0x000000000040b4c0                rdata_var_new
+ *fill*         0x000000000040b4ec        0x4 
+ .text.rdata_ref_new
+                0x000000000040b4f0       0x2e uspace/app_sbi.p/app_sbi_src_rdata.c.o
+                0x000000000040b4f0                rdata_ref_new
+ *fill*         0x000000000040b51e        0x2 
+ .text.rdata_deleg_new
+                0x000000000040b520       0x2e uspace/app_sbi.p/app_sbi_src_rdata.c.o
+                0x000000000040b520                rdata_deleg_new
+ *fill*         0x000000000040b54e        0x2 
+ .text.rdata_enum_new
+                0x000000000040b550       0x2e uspace/app_sbi.p/app_sbi_src_rdata.c.o
+                0x000000000040b550                rdata_enum_new
+ *fill*         0x000000000040b57e        0x2 
+ .text.rdata_array_new
+                0x000000000040b580       0x51 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+                0x000000000040b580                rdata_array_new
+ *fill*         0x000000000040b5d1        0xf 
+ .text.rdata_object_new
+                0x000000000040b5e0       0x2e uspace/app_sbi.p/app_sbi_src_rdata.c.o
+                0x000000000040b5e0                rdata_object_new
+ *fill*         0x000000000040b60e        0x2 
+ .text.rdata_bool_new
+                0x000000000040b610       0x2e uspace/app_sbi.p/app_sbi_src_rdata.c.o
+                0x000000000040b610                rdata_bool_new
+ *fill*         0x000000000040b63e        0x2 
+ .text.rdata_char_new
+                0x000000000040b640       0x2e uspace/app_sbi.p/app_sbi_src_rdata.c.o
+                0x000000000040b640                rdata_char_new
+ *fill*         0x000000000040b66e        0x2 
+ .text.rdata_int_new
+                0x000000000040b670       0x2e uspace/app_sbi.p/app_sbi_src_rdata.c.o
+                0x000000000040b670                rdata_int_new
+ *fill*         0x000000000040b69e        0x2 
+ .text.rdata_string_new
+                0x000000000040b6a0       0x2e uspace/app_sbi.p/app_sbi_src_rdata.c.o
+                0x000000000040b6a0                rdata_string_new
+ *fill*         0x000000000040b6ce        0x2 
+ .text.rdata_resource_new
+                0x000000000040b6d0       0x2e uspace/app_sbi.p/app_sbi_src_rdata.c.o
+                0x000000000040b6d0                rdata_resource_new
+ *fill*         0x000000000040b6fe        0x2 
+ .text.rdata_symbol_new
+                0x000000000040b700       0x2e uspace/app_sbi.p/app_sbi_src_rdata.c.o
+                0x000000000040b700                rdata_symbol_new
+ *fill*         0x000000000040b72e        0x2 
+ .text.rdata_array_alloc_element
+                0x000000000040b730      0x13c uspace/app_sbi.p/app_sbi_src_rdata.c.o
+                0x000000000040b730                rdata_array_alloc_element
+ *fill*         0x000000000040b86c        0x4 
+ .text.rdata_value_copy
+                0x000000000040b870      0x187 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+                0x000000000040b870                rdata_value_copy
+ *fill*         0x000000000040b9f7        0x9 
+ .text.rdata_var_copy
+                0x000000000040ba00      0x13e uspace/app_sbi.p/app_sbi_src_rdata.c.o
+                0x000000000040ba00                rdata_var_copy
+ *fill*         0x000000000040bb3e        0x2 
+ .text.rdata_var_destroy
+                0x000000000040bb40      0x189 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+                0x000000000040bb40                rdata_var_destroy
+ *fill*         0x000000000040bcc9        0x7 
+ .text.rdata_aprop_indexed_destroy
+                0x000000000040bcd0      0x1bc uspace/app_sbi.p/app_sbi_src_rdata.c.o
+                0x000000000040bcd0                rdata_aprop_indexed_destroy
+ *fill*         0x000000000040be8c        0x4 
+ .text.rdata_item_destroy
+                0x000000000040be90      0x10e uspace/app_sbi.p/app_sbi_src_rdata.c.o
+                0x000000000040be90                rdata_item_destroy
+ *fill*         0x000000000040bf9e        0x2 
+ .text.rdata_var_read
+                0x000000000040bfa0      0x180 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+                0x000000000040bfa0                rdata_var_read
+ .text.rdata_var_write
+                0x000000000040c120      0x292 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+                0x000000000040c120                rdata_var_write
+ *fill*         0x000000000040c3b2        0xe 
+ .text.rdata_item_print
+                0x000000000040c3c0       0xa4 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+                0x000000000040c3c0                rdata_item_print
+ *fill*         0x000000000040c464        0xc 
+ .text.rdata_value_print
+                0x000000000040c470      0x251 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+                0x000000000040c470                rdata_value_print
+ *fill*         0x000000000040c6c1        0xf 
+ .text.run_block_ar_delete.part.0
+                0x000000000040c6d0       0x18 uspace/app_sbi.p/app_sbi_src_run.c.o
+ *fill*         0x000000000040c6e8        0x8 
+ .text.run_cvt_value_item.part.0
+                0x000000000040c6f0       0x18 uspace/app_sbi.p/app_sbi_src_run.c.o
+ *fill*         0x000000000040c708        0x8 
+ .text.run_exc_payload_get_csi.isra.0
+                0x000000000040c710       0x8f uspace/app_sbi.p/app_sbi_src_run.c.o
+ *fill*         0x000000000040c79f        0x1 
+ .text.run_init
+                0x000000000040c7a0        0x6 uspace/app_sbi.p/app_sbi_src_run.c.o
+                0x000000000040c7a0                run_init
+ *fill*         0x000000000040c7a6        0xa 
+ .text.run_gdata_init
+                0x000000000040c7b0       0x43 uspace/app_sbi.p/app_sbi_src_run.c.o
+                0x000000000040c7b0                run_gdata_init
+ *fill*         0x000000000040c7f3        0xd 
+ .text.run_exc_check_unhandled
+                0x000000000040c800       0x8f uspace/app_sbi.p/app_sbi_src_run.c.o
+                0x000000000040c800                run_exc_check_unhandled
+ *fill*         0x000000000040c88f        0x1 
+ .text.run_raise_error
+                0x000000000040c890       0x18 uspace/app_sbi.p/app_sbi_src_run.c.o
+                0x000000000040c890                run_raise_error
+ *fill*         0x000000000040c8a8        0x8 
+ .text.run_recovery_item
+                0x000000000040c8b0        0x8 uspace/app_sbi.p/app_sbi_src_run.c.o
+                0x000000000040c8b0                run_recovery_item
+ *fill*         0x000000000040c8b8        0x8 
+ .text.run_local_vars_lookup
+                0x000000000040c8c0       0x7d uspace/app_sbi.p/app_sbi_src_run.c.o
+                0x000000000040c8c0                run_local_vars_lookup
+ *fill*         0x000000000040c93d        0x3 
+ .text.run_get_current_proc_ar
+                0x000000000040c940       0x13 uspace/app_sbi.p/app_sbi_src_run.c.o
+                0x000000000040c940                run_get_current_proc_ar
+ *fill*         0x000000000040c953        0xd 
+ .text.run_get_current_csi
+                0x000000000040c960       0x1e uspace/app_sbi.p/app_sbi_src_run.c.o
+                0x000000000040c960                run_get_current_csi
+ *fill*         0x000000000040c97e        0x2 
+ .text.run_sobject_get
+                0x000000000040c980       0xb4 uspace/app_sbi.p/app_sbi_src_run.c.o
+                0x000000000040c980                run_sobject_get
+ *fill*         0x000000000040ca34        0xc 
+ .text.run_sobject_find
+                0x000000000040ca40      0x10d uspace/app_sbi.p/app_sbi_src_run.c.o
+                0x000000000040ca40                run_sobject_find
+ *fill*         0x000000000040cb4d        0x3 
+ .text.run_value_item_to_var
+                0x000000000040cb50      0x180 uspace/app_sbi.p/app_sbi_src_run.c.o
+                0x000000000040cb50                run_value_item_to_var
+ .text.run_proc_ar_create
+                0x000000000040ccd0       0x91 uspace/app_sbi.p/app_sbi_src_run.c.o
+                0x000000000040ccd0                run_proc_ar_create
+ *fill*         0x000000000040cd61        0xf 
+ .text.run_proc_ar_destroy
+                0x000000000040cd70       0xaf uspace/app_sbi.p/app_sbi_src_run.c.o
+                0x000000000040cd70                run_proc_ar_destroy
+ *fill*         0x000000000040ce1f        0x1 
+ .text.run_proc_ar_set_args
+                0x000000000040ce20      0x2dc uspace/app_sbi.p/app_sbi_src_run.c.o
+                0x000000000040ce20                run_proc_ar_set_args
+ *fill*         0x000000000040d0fc        0x4 
+ .text.run_proc_ar_set_setter_arg
+                0x000000000040d100       0xe7 uspace/app_sbi.p/app_sbi_src_run.c.o
+                0x000000000040d100                run_proc_ar_set_setter_arg
+ *fill*         0x000000000040d1e7        0x9 
+ .text.run_reference
+                0x000000000040d1f0       0x53 uspace/app_sbi.p/app_sbi_src_run.c.o
+                0x000000000040d1f0                run_reference
+ *fill*         0x000000000040d243        0xd 
+ .text.run_raise_exc
+                0x000000000040d250       0x55 uspace/app_sbi.p/app_sbi_src_run.c.o
+                0x000000000040d250                run_raise_exc
+ *fill*         0x000000000040d2a5        0xb 
+ .text.run_is_bo
+                0x000000000040d2b0       0x15 uspace/app_sbi.p/app_sbi_src_run.c.o
+                0x000000000040d2b0                run_is_bo
+ *fill*         0x000000000040d2c5        0xb 
+ .text.run_var_new
+                0x000000000040d2d0      0x228 uspace/app_sbi.p/app_sbi_src_run.c.o
+                0x000000000040d2d0                run_var_new
+ *fill*         0x000000000040d4f8        0x8 
+ .text.run_stat
+                0x000000000040d500      0x77a uspace/app_sbi.p/app_sbi_src_run.c.o
+                0x000000000040d500                run_stat
+ *fill*         0x000000000040dc7a        0x6 
+ .text.run_block
+                0x000000000040dc80      0x13a uspace/app_sbi.p/app_sbi_src_run.c.o
+ *fill*         0x000000000040ddba        0x6 
+ .text.run_proc
+                0x000000000040ddc0       0xd9 uspace/app_sbi.p/app_sbi_src_run.c.o
+                0x000000000040ddc0                run_proc
+ *fill*         0x000000000040de99        0x7 
+ .text.run_address_read
+                0x000000000040dea0      0x1fc uspace/app_sbi.p/app_sbi_src_run.c.o
+                0x000000000040dea0                run_address_read
+ *fill*         0x000000000040e09c        0x4 
+ .text.run_cvt_value_item
+                0x000000000040e0a0       0x70 uspace/app_sbi.p/app_sbi_src_run.c.o
+                0x000000000040e0a0                run_cvt_value_item
+ .text.run_item_get_vc
+                0x000000000040e110       0xd6 uspace/app_sbi.p/app_sbi_src_run.c.o
+                0x000000000040e110                run_item_get_vc
+ *fill*         0x000000000040e1e6        0xa 
+ .text.run_dereference
+                0x000000000040e1f0      0x167 uspace/app_sbi.p/app_sbi_src_run.c.o
+                0x000000000040e1f0                run_dereference
+ *fill*         0x000000000040e357        0x9 
+ .text.run_program
+                0x000000000040e360      0x241 uspace/app_sbi.p/app_sbi_src_run.c.o
+                0x000000000040e360                run_program
+ *fill*         0x000000000040e5a1        0xf 
+ .text.run_address_write
+                0x000000000040e5b0      0x1ec uspace/app_sbi.p/app_sbi_src_run.c.o
+                0x000000000040e5b0                run_address_write
+ *fill*         0x000000000040e79c        0x4 
+ .text.run_thread_ar_new
+                0x000000000040e7a0       0x2e uspace/app_sbi.p/app_sbi_src_run.c.o
+                0x000000000040e7a0                run_thread_ar_new
+ *fill*         0x000000000040e7ce        0x2 
+ .text.run_access_item
+                0x000000000040e7d0      0x5a7 uspace/app_sbi.p/app_sbi_src_run_expr.c.o
+ *fill*         0x000000000040ed77        0x9 
+ .text.run_equal
+                0x000000000040ed80       0xe3 uspace/app_sbi.p/app_sbi_src_run_expr.c.o
+                0x000000000040ed80                run_equal
+ *fill*         0x000000000040ee63        0xd 
+ .text.run_new_csi_inst
+                0x000000000040ee70      0x138 uspace/app_sbi.p/app_sbi_src_run_expr.c.o
+                0x000000000040ee70                run_new_csi_inst
+ *fill*         0x000000000040efa8        0x8 
+ .text.run_new_csi_inst_ref
+                0x000000000040efb0       0x31 uspace/app_sbi.p/app_sbi_src_run_expr.c.o
+                0x000000000040efb0                run_new_csi_inst_ref
+ *fill*         0x000000000040efe1        0xf 
+ .text.run_expr
+                0x000000000040eff0     0x2273 uspace/app_sbi.p/app_sbi_src_run_expr.c.o
+                0x000000000040eff0                run_expr
+ *fill*         0x0000000000411263        0xd 
+ .text.run_call_args
+                0x0000000000411270       0xed uspace/app_sbi.p/app_sbi_src_run_expr.c.o
+ *fill*         0x000000000041135d        0x3 
+ .text.run_item_boolean_value
+                0x0000000000411360       0x85 uspace/app_sbi.p/app_sbi_src_run_expr.c.o
+                0x0000000000411360                run_item_boolean_value
+ *fill*         0x00000000004113e5        0xb 
+ .text.run_texpr
+                0x00000000004113f0      0x6e9 uspace/app_sbi.p/app_sbi_src_run_texpr.c.o
+                0x00000000004113f0                run_texpr
+ *fill*         0x0000000000411ad9        0x7 
+ .text.stree_module_new
+                0x0000000000411ae0       0x45 uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000411ae0                stree_module_new
+ *fill*         0x0000000000411b25        0xb 
+ .text.stree_modm_new
+                0x0000000000411b30       0x3b uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000411b30                stree_modm_new
+ *fill*         0x0000000000411b6b        0x5 
+ .text.stree_csi_new
+                0x0000000000411b70       0x72 uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000411b70                stree_csi_new
+ *fill*         0x0000000000411be2        0xe 
+ .text.stree_csimbr_new
+                0x0000000000411bf0       0x3b uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000411bf0                stree_csimbr_new
+ *fill*         0x0000000000411c2b        0x5 
+ .text.stree_ctor_new
+                0x0000000000411c30       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000411c30                stree_ctor_new
+ *fill*         0x0000000000411c5e        0x2 
+ .text.stree_deleg_new
+                0x0000000000411c60       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000411c60                stree_deleg_new
+ *fill*         0x0000000000411c8e        0x2 
+ .text.stree_enum_new
+                0x0000000000411c90       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000411c90                stree_enum_new
+ *fill*         0x0000000000411cbe        0x2 
+ .text.stree_embr_new
+                0x0000000000411cc0       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000411cc0                stree_embr_new
+ *fill*         0x0000000000411cee        0x2 
+ .text.stree_fun_new
+                0x0000000000411cf0       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000411cf0                stree_fun_new
+ *fill*         0x0000000000411d1e        0x2 
+ .text.stree_var_new
+                0x0000000000411d20       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000411d20                stree_var_new
+ *fill*         0x0000000000411d4e        0x2 
+ .text.stree_prop_new
+                0x0000000000411d50       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000411d50                stree_prop_new
+ *fill*         0x0000000000411d7e        0x2 
+ .text.stree_targ_new
+                0x0000000000411d80       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000411d80                stree_targ_new
+ *fill*         0x0000000000411dae        0x2 
+ .text.stree_symbol_attr_new
+                0x0000000000411db0       0x3b uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000411db0                stree_symbol_attr_new
+ *fill*         0x0000000000411deb        0x5 
+ .text.stree_proc_new
+                0x0000000000411df0       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000411df0                stree_proc_new
+ *fill*         0x0000000000411e1e        0x2 
+ .text.stree_proc_arg_new
+                0x0000000000411e20       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000411e20                stree_proc_arg_new
+ *fill*         0x0000000000411e4e        0x2 
+ .text.stree_fun_sig_new
+                0x0000000000411e50       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000411e50                stree_fun_sig_new
+ *fill*         0x0000000000411e7e        0x2 
+ .text.stree_arg_attr_new
+                0x0000000000411e80       0x3b uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000411e80                stree_arg_attr_new
+ *fill*         0x0000000000411ebb        0x5 
+ .text.stree_stat_new
+                0x0000000000411ec0       0x3b uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000411ec0                stree_stat_new
+ *fill*         0x0000000000411efb        0x5 
+ .text.stree_vdecl_new
+                0x0000000000411f00       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000411f00                stree_vdecl_new
+ *fill*         0x0000000000411f2e        0x2 
+ .text.stree_if_new
+                0x0000000000411f30       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000411f30                stree_if_new
+ *fill*         0x0000000000411f5e        0x2 
+ .text.stree_switch_new
+                0x0000000000411f60       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000411f60                stree_switch_new
+ *fill*         0x0000000000411f8e        0x2 
+ .text.stree_while_new
+                0x0000000000411f90       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000411f90                stree_while_new
+ *fill*         0x0000000000411fbe        0x2 
+ .text.stree_for_new
+                0x0000000000411fc0       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000411fc0                stree_for_new
+ *fill*         0x0000000000411fee        0x2 
+ .text.stree_raise_new
+                0x0000000000411ff0       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000411ff0                stree_raise_new
+ *fill*         0x000000000041201e        0x2 
+ .text.stree_break_new
+                0x0000000000412020       0x2b uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000412020                stree_break_new
+ *fill*         0x000000000041204b        0x5 
+ .text.stree_return_new
+                0x0000000000412050       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000412050                stree_return_new
+ *fill*         0x000000000041207e        0x2 
+ .text.stree_wef_new
+                0x0000000000412080       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000412080                stree_wef_new
+ *fill*         0x00000000004120ae        0x2 
+ .text.stree_exps_new
+                0x00000000004120b0       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x00000000004120b0                stree_exps_new
+ *fill*         0x00000000004120de        0x2 
+ .text.stree_except_new
+                0x00000000004120e0       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x00000000004120e0                stree_except_new
+ *fill*         0x000000000041210e        0x2 
+ .text.stree_if_clause_new
+                0x0000000000412110       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000412110                stree_if_clause_new
+ *fill*         0x000000000041213e        0x2 
+ .text.stree_when_new
+                0x0000000000412140       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000412140                stree_when_new
+ *fill*         0x000000000041216e        0x2 
+ .text.stree_block_new
+                0x0000000000412170       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000412170                stree_block_new
+ *fill*         0x000000000041219e        0x2 
+ .text.stree_expr_new
+                0x00000000004121a0       0x3b uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x00000000004121a0                stree_expr_new
+ *fill*         0x00000000004121db        0x5 
+ .text.stree_assign_new
+                0x00000000004121e0       0x3c uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x00000000004121e0                stree_assign_new
+ *fill*         0x000000000041221c        0x4 
+ .text.stree_binop_new
+                0x0000000000412220       0x3c uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000412220                stree_binop_new
+ *fill*         0x000000000041225c        0x4 
+ .text.stree_unop_new
+                0x0000000000412260       0x3c uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000412260                stree_unop_new
+ *fill*         0x000000000041229c        0x4 
+ .text.stree_new_new
+                0x00000000004122a0       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x00000000004122a0                stree_new_new
+ *fill*         0x00000000004122ce        0x2 
+ .text.stree_access_new
+                0x00000000004122d0       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x00000000004122d0                stree_access_new
+ *fill*         0x00000000004122fe        0x2 
+ .text.stree_call_new
+                0x0000000000412300       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000412300                stree_call_new
+ *fill*         0x000000000041232e        0x2 
+ .text.stree_index_new
+                0x0000000000412330       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000412330                stree_index_new
+ *fill*         0x000000000041235e        0x2 
+ .text.stree_as_new
+                0x0000000000412360       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000412360                stree_as_new
+ *fill*         0x000000000041238e        0x2 
+ .text.stree_box_new
+                0x0000000000412390       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000412390                stree_box_new
+ *fill*         0x00000000004123be        0x2 
+ .text.stree_nameref_new
+                0x00000000004123c0       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x00000000004123c0                stree_nameref_new
+ *fill*         0x00000000004123ee        0x2 
+ .text.stree_ident_new
+                0x00000000004123f0       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x00000000004123f0                stree_ident_new
+ *fill*         0x000000000041241e        0x2 
+ .text.stree_literal_new
+                0x0000000000412420       0x3c uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000412420                stree_literal_new
+ *fill*         0x000000000041245c        0x4 
+ .text.stree_self_ref_new
+                0x0000000000412460       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000412460                stree_self_ref_new
+ *fill*         0x000000000041248e        0x2 
+ .text.stree_texpr_new
+                0x0000000000412490       0x3b uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000412490                stree_texpr_new
+ *fill*         0x00000000004124cb        0x5 
+ .text.stree_taccess_new
+                0x00000000004124d0       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x00000000004124d0                stree_taccess_new
+ *fill*         0x00000000004124fe        0x2 
+ .text.stree_tapply_new
+                0x0000000000412500       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000412500                stree_tapply_new
+ *fill*         0x000000000041252e        0x2 
+ .text.stree_tindex_new
+                0x0000000000412530       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000412530                stree_tindex_new
+ *fill*         0x000000000041255e        0x2 
+ .text.stree_tliteral_new
+                0x0000000000412560       0x3c uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000412560                stree_tliteral_new
+ *fill*         0x000000000041259c        0x4 
+ .text.stree_tnameref_new
+                0x00000000004125a0       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x00000000004125a0                stree_tnameref_new
+ *fill*         0x00000000004125ce        0x2 
+ .text.stree_symbol_new
+                0x00000000004125d0       0x49 uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x00000000004125d0                stree_symbol_new
+ *fill*         0x0000000000412619        0x7 
+ .text.stree_program_new
+                0x0000000000412620       0x2e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000412620                stree_program_new
+ *fill*         0x000000000041264e        0x2 
+ .text.stree_symbol_has_attr
+                0x0000000000412650       0x4f uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000412650                stree_symbol_has_attr
+ *fill*         0x000000000041269f        0x1 
+ .text.stree_arg_has_attr
+                0x00000000004126a0       0x4f uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x00000000004126a0                stree_arg_has_attr
+ *fill*         0x00000000004126ef        0x1 
+ .text.stree_is_csi_derived_from_csi
+                0x00000000004126f0       0x2f uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x00000000004126f0                stree_is_csi_derived_from_csi
+ *fill*         0x000000000041271f        0x1 
+ .text.stree_symbol_is_static
+                0x0000000000412720       0x7e uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000412720                stree_symbol_is_static
+ *fill*         0x000000000041279e        0x2 
+ .text.stree_csi_find_targ
+                0x00000000004127a0       0x4f uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x00000000004127a0                stree_csi_find_targ
+ *fill*         0x00000000004127ef        0x1 
+ .text.stree_enum_find_mbr
+                0x00000000004127f0       0x4f uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x00000000004127f0                stree_enum_find_mbr
+ *fill*         0x000000000041283f        0x1 
+ .text.stree_csimbr_get_name
+                0x0000000000412840       0x89 uspace/app_sbi.p/app_sbi_src_stree.c.o
+                0x0000000000412840                stree_csimbr_get_name
+ *fill*         0x00000000004128c9        0x7 
+ .text.strtab_init
+                0x00000000004128d0        0xf uspace/app_sbi.p/app_sbi_src_strtab.c.o
+                0x00000000004128d0                strtab_init
+ *fill*         0x00000000004128df        0x1 
+ .text.strtab_get_sid
+                0x00000000004128e0       0x8d uspace/app_sbi.p/app_sbi_src_strtab.c.o
+                0x00000000004128e0                strtab_get_sid
+ *fill*         0x000000000041296d        0x3 
+ .text.strtab_get_str
+                0x0000000000412970       0x6c uspace/app_sbi.p/app_sbi_src_strtab.c.o
+                0x0000000000412970                strtab_get_str
+ *fill*         0x00000000004129dc        0x4 
+ .text.stype_fun_sig
+                0x00000000004129e0      0x104 uspace/app_sbi.p/app_sbi_src_stype.c.o
+ *fill*         0x0000000000412ae4        0xc 
+ .text.stype_fun_sig_equal.isra.0
+                0x0000000000412af0       0xe3 uspace/app_sbi.p/app_sbi_src_stype.c.o
+ *fill*         0x0000000000412bd3        0xd 
+ .text.stype_ctor_header
+                0x0000000000412be0       0x69 uspace/app_sbi.p/app_sbi_src_stype.c.o
+                0x0000000000412be0                stype_ctor_header
+ *fill*         0x0000000000412c49        0x7 
+ .text.stype_deleg
+                0x0000000000412c50       0xb3 uspace/app_sbi.p/app_sbi_src_stype.c.o
+                0x0000000000412c50                stype_deleg
+ *fill*         0x0000000000412d03        0xd 
+ .text.stype_enum
+                0x0000000000412d10       0x3d uspace/app_sbi.p/app_sbi_src_stype.c.o
+                0x0000000000412d10                stype_enum
+ *fill*         0x0000000000412d4d        0x3 
+ .text.stype_fun_header
+                0x0000000000412d50       0x69 uspace/app_sbi.p/app_sbi_src_stype.c.o
+                0x0000000000412d50                stype_fun_header
+ *fill*         0x0000000000412db9        0x7 
+ .text.stype_prop_header
+                0x0000000000412dc0       0x50 uspace/app_sbi.p/app_sbi_src_stype.c.o
+                0x0000000000412dc0                stype_prop_header
+ .text.stype_convert_failure
+                0x0000000000412e10       0x8e uspace/app_sbi.p/app_sbi_src_stype.c.o
+                0x0000000000412e10                stype_convert_failure
+ *fill*         0x0000000000412e9e        0x2 
+ .text.stype_box_expr
+                0x0000000000412ea0      0x155 uspace/app_sbi.p/app_sbi_src_stype.c.o
+                0x0000000000412ea0                stype_box_expr
+ *fill*         0x0000000000412ff5        0xb 
+ .text.stype_targs_check_equal
+                0x0000000000413000      0x160 uspace/app_sbi.p/app_sbi_src_stype.c.o
+                0x0000000000413000                stype_targs_check_equal
+ .text.stype_deleg_get_sig
+                0x0000000000413160       0xd7 uspace/app_sbi.p/app_sbi_src_stype.c.o
+                0x0000000000413160                stype_deleg_get_sig
+ *fill*         0x0000000000413237        0x9 
+ .text.stype_titem_to_tvv
+                0x0000000000413240      0x136 uspace/app_sbi.p/app_sbi_src_stype.c.o
+                0x0000000000413240                stype_titem_to_tvv
+ *fill*         0x0000000000413376        0xa 
+ .text.stype_class_impl_check_if
+                0x0000000000413380      0x598 uspace/app_sbi.p/app_sbi_src_stype.c.o
+ *fill*         0x0000000000413918        0x8 
+ .text.stype_tobject_find_pred
+                0x0000000000413920      0x247 uspace/app_sbi.p/app_sbi_src_stype.c.o
+                0x0000000000413920                stype_tobject_find_pred
+ *fill*         0x0000000000413b67        0x9 
+ .text.stype_convert
+                0x0000000000413b70      0x4fa uspace/app_sbi.p/app_sbi_src_stype.c.o
+                0x0000000000413b70                stype_convert
+ *fill*         0x000000000041406a        0x6 
+ .text.stype_stat
+                0x0000000000414070      0x5c8 uspace/app_sbi.p/app_sbi_src_stype.c.o
+                0x0000000000414070                stype_stat
+ *fill*         0x0000000000414638        0x8 
+ .text.stype_block
+                0x0000000000414640       0xce uspace/app_sbi.p/app_sbi_src_stype.c.o
+ *fill*         0x000000000041470e        0x2 
+ .text.stype_csi
+                0x0000000000414710      0x4c3 uspace/app_sbi.p/app_sbi_src_stype.c.o
+ *fill*         0x0000000000414bd3        0xd 
+ .text.stype_module
+                0x0000000000414be0       0xaf uspace/app_sbi.p/app_sbi_src_stype.c.o
+                0x0000000000414be0                stype_module
+ *fill*         0x0000000000414c8f        0x1 
+ .text.stype_boolean_titem
+                0x0000000000414c90       0x27 uspace/app_sbi.p/app_sbi_src_stype.c.o
+                0x0000000000414c90                stype_boolean_titem
+ *fill*         0x0000000000414cb7        0x9 
+ .text.stype_local_vars_lookup
+                0x0000000000414cc0       0x6d uspace/app_sbi.p/app_sbi_src_stype.c.o
+                0x0000000000414cc0                stype_local_vars_lookup
+ *fill*         0x0000000000414d2d        0x3 
+ .text.stype_proc_args_lookup
+                0x0000000000414d30      0x187 uspace/app_sbi.p/app_sbi_src_stype.c.o
+                0x0000000000414d30                stype_proc_args_lookup
+ *fill*         0x0000000000414eb7        0x9 
+ .text.stype_note_error
+                0x0000000000414ec0        0xd uspace/app_sbi.p/app_sbi_src_stype.c.o
+                0x0000000000414ec0                stype_note_error
+ *fill*         0x0000000000414ecd        0x3 
+ .text.stype_recovery_titem
+                0x0000000000414ed0        0xf uspace/app_sbi.p/app_sbi_src_stype.c.o
+                0x0000000000414ed0                stype_recovery_titem
+ *fill*         0x0000000000414edf        0x1 
+ .text.stype_proc_vr_new
+                0x0000000000414ee0       0x2e uspace/app_sbi.p/app_sbi_src_stype.c.o
+                0x0000000000414ee0                stype_proc_vr_new
+ *fill*         0x0000000000414f0e        0x2 
+ .text.stype_block_vr_new
+                0x0000000000414f10       0x2e uspace/app_sbi.p/app_sbi_src_stype.c.o
+                0x0000000000414f10                stype_block_vr_new
+ *fill*         0x0000000000414f3e        0x2 
+ .text.stype_access_tobject
+                0x0000000000414f40      0x32f uspace/app_sbi.p/app_sbi_src_stype_expr.c.o
+ *fill*         0x000000000041526f        0x1 
+ .text.stype_expr
+                0x0000000000415270     0x1149 uspace/app_sbi.p/app_sbi_src_stype_expr.c.o
+                0x0000000000415270                stype_expr
+ *fill*         0x00000000004163b9        0x7 
+ .text.stype_call_args
+                0x00000000004163c0      0x18b uspace/app_sbi.p/app_sbi_src_stype_expr.c.o
+ *fill*         0x000000000041654b        0x5 
+ .text.enum_to_symbol.part.0
+                0x0000000000416550       0x18 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+ *fill*         0x0000000000416568        0x8 
+ .text.csi_to_symbol.part.0
+                0x0000000000416570       0x18 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+ *fill*         0x0000000000416588        0x8 
+ .text.symbol_find_epoint_rec.isra.0
+                0x0000000000416590       0xe0 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+ .text.symbol_find_epoint
+                0x0000000000416670       0x8c uspace/app_sbi.p/app_sbi_src_symbol.c.o
+                0x0000000000416670                symbol_find_epoint
+ *fill*         0x00000000004166fc        0x4 
+ .text.symbol_to_deleg
+                0x0000000000416700       0x11 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+                0x0000000000416700                symbol_to_deleg
+ *fill*         0x0000000000416711        0xf 
+ .text.deleg_to_symbol
+                0x0000000000416720       0x22 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+                0x0000000000416720                deleg_to_symbol
+ *fill*         0x0000000000416742        0xe 
+ .text.symbol_to_enum
+                0x0000000000416750       0x11 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+                0x0000000000416750                symbol_to_enum
+ *fill*         0x0000000000416761        0xf 
+ .text.enum_to_symbol
+                0x0000000000416770       0x13 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+                0x0000000000416770                enum_to_symbol
+ *fill*         0x0000000000416783        0xd 
+ .text.symbol_to_csi
+                0x0000000000416790       0x14 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+                0x0000000000416790                symbol_to_csi
+ *fill*         0x00000000004167a4        0xc 
+ .text.csi_to_symbol
+                0x00000000004167b0       0x13 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+                0x00000000004167b0                csi_to_symbol
+ *fill*         0x00000000004167c3        0xd 
+ .text.symbol_to_ctor
+                0x00000000004167d0       0x11 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+                0x00000000004167d0                symbol_to_ctor
+ *fill*         0x00000000004167e1        0xf 
+ .text.ctor_to_symbol
+                0x00000000004167f0       0x22 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+                0x00000000004167f0                ctor_to_symbol
+ *fill*         0x0000000000416812        0xe 
+ .text.symbol_to_fun
+                0x0000000000416820       0x11 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+                0x0000000000416820                symbol_to_fun
+ *fill*         0x0000000000416831        0xf 
+ .text.fun_to_symbol
+                0x0000000000416840       0x22 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+                0x0000000000416840                fun_to_symbol
+ *fill*         0x0000000000416862        0xe 
+ .text.symbol_to_var
+                0x0000000000416870       0x11 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+                0x0000000000416870                symbol_to_var
+ *fill*         0x0000000000416881        0xf 
+ .text.var_to_symbol
+                0x0000000000416890       0x22 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+                0x0000000000416890                var_to_symbol
+ *fill*         0x00000000004168b2        0xe 
+ .text.symbol_to_prop
+                0x00000000004168c0       0x11 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+                0x00000000004168c0                symbol_to_prop
+ *fill*         0x00000000004168d1        0xf 
+ .text.csimbr_to_symbol
+                0x00000000004168e0      0x119 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+                0x00000000004168e0                csimbr_to_symbol
+ *fill*         0x00000000004169f9        0x7 
+ .text.symbol_search_csi_no_base
+                0x0000000000416a00       0x6b uspace/app_sbi.p/app_sbi_src_symbol.c.o
+                0x0000000000416a00                symbol_search_csi_no_base
+ *fill*         0x0000000000416a6b        0x5 
+ .text.symbol_lookup_in_csi
+                0x0000000000416a70      0x1db uspace/app_sbi.p/app_sbi_src_symbol.c.o
+                0x0000000000416a70                symbol_lookup_in_csi
+ *fill*         0x0000000000416c4b        0x5 
+ .text.symbol_xlookup_in_csi
+                0x0000000000416c50       0xd0 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+                0x0000000000416c50                symbol_xlookup_in_csi
+ .text.symbol_search_csi
+                0x0000000000416d20       0xf0 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+                0x0000000000416d20                symbol_search_csi
+ .text.symbol_get_base_class_ref
+                0x0000000000416e10      0x155 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+                0x0000000000416e10                symbol_get_base_class_ref
+ *fill*         0x0000000000416f65        0xb 
+ .text.symbol_print_fqn
+                0x0000000000416f70       0x77 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+                0x0000000000416f70                symbol_print_fqn
+ *fill*         0x0000000000416fe7        0x9 
+ .text.tdata_item_new.part.0
+                0x0000000000416ff0       0x18 uspace/app_sbi.p/app_sbi_src_tdata.c.o
+ *fill*         0x0000000000417008        0x8 
+ .text.tdata_is_csi_derived_from_ti
+                0x0000000000417010       0x2a uspace/app_sbi.p/app_sbi_src_tdata.c.o
+                0x0000000000417010                tdata_is_csi_derived_from_ti
+ *fill*         0x000000000041703a        0x6 
+ .text.tdata_item_subst
+                0x0000000000417040      0x3cc uspace/app_sbi.p/app_sbi_src_tdata.c.o
+                0x0000000000417040                tdata_item_subst
+ *fill*         0x000000000041740c        0x4 
+ .text.tdata_item_subst_fun_sig
+                0x0000000000417410       0xf2 uspace/app_sbi.p/app_sbi_src_tdata.c.o
+ *fill*         0x0000000000417502        0xe 
+ .text.tdata_item_print
+                0x0000000000417510      0x2cf uspace/app_sbi.p/app_sbi_src_tdata.c.o
+                0x0000000000417510                tdata_item_print
+ *fill*         0x00000000004177df        0x1 
+ .text.tdata_item_equal
+                0x00000000004177e0      0x133 uspace/app_sbi.p/app_sbi_src_tdata.c.o
+                0x00000000004177e0                tdata_item_equal
+ *fill*         0x0000000000417913        0xd 
+ .text.tdata_item_new
+                0x0000000000417920       0x2c uspace/app_sbi.p/app_sbi_src_tdata.c.o
+                0x0000000000417920                tdata_item_new
+ *fill*         0x000000000041794c        0x4 
+ .text.tdata_array_new
+                0x0000000000417950       0x2e uspace/app_sbi.p/app_sbi_src_tdata.c.o
+                0x0000000000417950                tdata_array_new
+ *fill*         0x000000000041797e        0x2 
+ .text.tdata_object_new
+                0x0000000000417980       0x2e uspace/app_sbi.p/app_sbi_src_tdata.c.o
+                0x0000000000417980                tdata_object_new
+ *fill*         0x00000000004179ae        0x2 
+ .text.tdata_primitive_new
+                0x00000000004179b0       0x2c uspace/app_sbi.p/app_sbi_src_tdata.c.o
+                0x00000000004179b0                tdata_primitive_new
+ *fill*         0x00000000004179dc        0x4 
+ .text.tdata_deleg_new
+                0x00000000004179e0       0x2e uspace/app_sbi.p/app_sbi_src_tdata.c.o
+                0x00000000004179e0                tdata_deleg_new
+ *fill*         0x0000000000417a0e        0x2 
+ .text.tdata_ebase_new
+                0x0000000000417a10       0x2e uspace/app_sbi.p/app_sbi_src_tdata.c.o
+                0x0000000000417a10                tdata_ebase_new
+ *fill*         0x0000000000417a3e        0x2 
+ .text.tdata_enum_new
+                0x0000000000417a40       0x2e uspace/app_sbi.p/app_sbi_src_tdata.c.o
+                0x0000000000417a40                tdata_enum_new
+ *fill*         0x0000000000417a6e        0x2 
+ .text.tdata_fun_new
+                0x0000000000417a70       0x2e uspace/app_sbi.p/app_sbi_src_tdata.c.o
+                0x0000000000417a70                tdata_fun_new
+ *fill*         0x0000000000417a9e        0x2 
+ .text.tdata_vref_new
+                0x0000000000417aa0       0x2e uspace/app_sbi.p/app_sbi_src_tdata.c.o
+                0x0000000000417aa0                tdata_vref_new
+ *fill*         0x0000000000417ace        0x2 
+ .text.tdata_fun_sig_new
+                0x0000000000417ad0       0x2e uspace/app_sbi.p/app_sbi_src_tdata.c.o
+                0x0000000000417ad0                tdata_fun_sig_new
+ *fill*         0x0000000000417afe        0x2 
+ .text.tdata_tvv_new
+                0x0000000000417b00       0x2e uspace/app_sbi.p/app_sbi_src_tdata.c.o
+                0x0000000000417b00                tdata_tvv_new
+ *fill*         0x0000000000417b2e        0x2 
+ .text.tdata_tvv_set_val
+                0x0000000000417b30        0xa uspace/app_sbi.p/app_sbi_src_tdata.c.o
+                0x0000000000417b30                tdata_tvv_set_val
+ .text          0x0000000000417b3a        0xc uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                0x0000000000417b3a                _start
+ *fill*         0x0000000000417b46        0xa 
+ .text.__c_start
+                0x0000000000417b50       0x8c uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                0x0000000000417b50                __c_start
+ *fill*         0x0000000000417bdc        0x4 
+ .text.compl_cmp
+                0x0000000000417be0       0x10 uspace/lib/libclui.a.p/clui_src_tinput.c.o
+ .text.tinput_console_set_lpos.part.0
+                0x0000000000417bf0       0x18 uspace/lib/libclui.a.p/clui_src_tinput.c.o
+ *fill*         0x0000000000417c08        0x8 
+ .text.tinput_display_tail
+                0x0000000000417c10      0x190 uspace/lib/libclui.a.p/clui_src_tinput.c.o
+ .text.tinput_post_seek
+                0x0000000000417da0       0xaa uspace/lib/libclui.a.p/clui_src_tinput.c.o
+ *fill*         0x0000000000417e4a        0x6 
+ .text.tinput_history_seek.part.0
+                0x0000000000417e50      0x177 uspace/lib/libclui.a.p/clui_src_tinput.c.o
+ *fill*         0x0000000000417fc7        0x9 
+ .text.tinput_sel_delete
+                0x0000000000417fd0      0x117 uspace/lib/libclui.a.p/clui_src_tinput.c.o
+ *fill*         0x00000000004180e7        0x9 
+ .text.tinput_display
+                0x00000000004180f0      0x1f1 uspace/lib/libclui.a.p/clui_src_tinput.c.o
+ *fill*         0x00000000004182e1        0xf 
+ .text.tinput_pre_seek
+                0x00000000004182f0       0xbf uspace/lib/libclui.a.p/clui_src_tinput.c.o
+ *fill*         0x00000000004183af        0x1 
+ .text.tinput_insert_string
+                0x00000000004183b0      0x26b uspace/lib/libclui.a.p/clui_src_tinput.c.o
+ *fill*         0x000000000041861b        0x5 
+ .text.tinput_seek_vertical
+                0x0000000000418620      0x271 uspace/lib/libclui.a.p/clui_src_tinput.c.o
+ *fill*         0x0000000000418891        0xf 
+ .text.tinput_seek_word
+                0x00000000004188a0      0x236 uspace/lib/libclui.a.p/clui_src_tinput.c.o
+ *fill*         0x0000000000418ad6        0xa 
+ .text.tinput_backspace
+                0x0000000000418ae0      0x1f3 uspace/lib/libclui.a.p/clui_src_tinput.c.o
+ *fill*         0x0000000000418cd3        0xd 
+ .text.tinput_new
+                0x0000000000418ce0       0x55 uspace/lib/libclui.a.p/clui_src_tinput.c.o
+                0x0000000000418ce0                tinput_new
+ *fill*         0x0000000000418d35        0xb 
+ .text.tinput_set_prompt
+                0x0000000000418d40       0x37 uspace/lib/libclui.a.p/clui_src_tinput.c.o
+                0x0000000000418d40                tinput_set_prompt
+ *fill*         0x0000000000418d77        0x9 
+ .text.tinput_read_i
+                0x0000000000418d80     0x1cb4 uspace/lib/libclui.a.p/clui_src_tinput.c.o
+                0x0000000000418d80                tinput_read_i
+ *fill*         0x000000000041aa34        0xc 
+ .text.tinput_read
+                0x000000000041aa40       0x12 uspace/lib/libclui.a.p/clui_src_tinput.c.o
+                0x000000000041aa40                tinput_read
+ *fill*         0x000000000041aa52        0xe 
+ .text.clipboard_put_str
+                0x000000000041aa60      0x1b7 uspace/lib/libclipboard.a.p/clipboard_src_clipboard.c.o
+                0x000000000041aa60                clipboard_put_str
+ *fill*         0x000000000041ac17        0x9 
+ .text.clipboard_get_str
+                0x000000000041ac20      0x25a uspace/lib/libclipboard.a.p/clipboard_src_clipboard.c.o
+                0x000000000041ac20                clipboard_get_str
+ *fill*         0x000000000041ae7a        0x6 
+ .text.console_init
+                0x000000000041ae80       0x7c uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x000000000041ae80                console_init
+ *fill*         0x000000000041aefc        0x4 
+ .text.console_flush
+                0x000000000041af00        0xe uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x000000000041af00                console_flush
+ *fill*         0x000000000041af0e        0x2 
+ .text.console_clear
+                0x000000000041af10       0x2f uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x000000000041af10                console_clear
+ *fill*         0x000000000041af3f        0x1 
+ .text.console_get_size
+                0x000000000041af40       0x4b uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x000000000041af40                console_get_size
+ *fill*         0x000000000041af8b        0x5 
+ .text.console_set_style
+                0x000000000041af90       0x31 uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x000000000041af90                console_set_style
+ *fill*         0x000000000041afc1        0xf 
+ .text.console_cursor_visibility
+                0x000000000041afd0       0x31 uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x000000000041afd0                console_cursor_visibility
+ *fill*         0x000000000041b001        0xf 
+ .text.console_get_pos
+                0x000000000041b010       0x4b uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x000000000041b010                console_get_pos
+ *fill*         0x000000000041b05b        0x5 
+ .text.console_set_pos
+                0x000000000041b060       0x44 uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x000000000041b060                console_set_pos
+ *fill*         0x000000000041b0a4        0xc 
+ .text.console_get_event
+                0x000000000041b0b0      0x16d uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x000000000041b0b0                console_get_event
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x000000000041b220     0x5490
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.bi_boxed_bind.str1.1
+                0x000000000041b220     0x132b uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+                                         0x15 (size before relaxing)
+ *fill*         0x000000000041c54b        0x5 
+ .rodata.bi_error_declare.str1.8
+                0x000000000041c550     0x273e uspace/app_sbi.p/app_sbi_src_builtin_bi_error.c.o
+                                         0xeb (size before relaxing)
+ .rodata.bi_error_bind.str1.1
+                0x000000000041ec8e       0x3d uspace/app_sbi.p/app_sbi_src_builtin_bi_error.c.o
+ .rodata.bi_error_bind.str1.8
+                0x000000000041ec8e       0x57 uspace/app_sbi.p/app_sbi_src_builtin_bi_error.c.o
+ .rodata.bi_char_get_as_string.str1.1
+                0x000000000041ec8e       0x26 uspace/app_sbi.p/app_sbi_src_builtin_bi_char.c.o
+ .rodata.bi_char_get_as_string.str1.8
+                0x000000000041ec8e       0x33 uspace/app_sbi.p/app_sbi_src_builtin_bi_char.c.o
+ .rodata.bi_char_bind.str1.1
+                0x000000000041ec8e       0x13 uspace/app_sbi.p/app_sbi_src_builtin_bi_char.c.o
+ .rodata.bi_console_write.str1.1
+                0x000000000041ec8e       0x1e uspace/app_sbi.p/app_sbi_src_builtin_bi_console.c.o
+ .rodata.bi_console_write.str1.8
+                0x000000000041ec8e       0x66 uspace/app_sbi.p/app_sbi_src_builtin_bi_console.c.o
+ .rodata.bi_console_declare.str1.1
+                0x000000000041ec8e       0x18 uspace/app_sbi.p/app_sbi_src_builtin_bi_console.c.o
+ .rodata.bi_int_get_as_string.str1.1
+                0x000000000041ec8e       0x23 uspace/app_sbi.p/app_sbi_src_builtin_bi_int.c.o
+ .rodata.bi_int_get_as_string.str1.8
+                0x000000000041ec8e       0x32 uspace/app_sbi.p/app_sbi_src_builtin_bi_int.c.o
+ .rodata.bi_int_bind.str1.1
+                0x000000000041ec8e       0x12 uspace/app_sbi.p/app_sbi_src_builtin_bi_int.c.o
+ .rodata.bi_task_exec.str1.1
+                0x000000000041ec8e       0x6b uspace/app_sbi.p/app_sbi_src_builtin_bi_task.c.o
+ .rodata.bi_task_exec.str1.8
+                0x000000000041ec8e       0xae uspace/app_sbi.p/app_sbi_src_builtin_bi_task.c.o
+ .rodata.bi_task_declare.str1.8
+                0x000000000041ec8e       0x47 uspace/app_sbi.p/app_sbi_src_builtin_bi_task.c.o
+ .rodata.bi_task_bind.str1.1
+                0x000000000041ec8e        0xa uspace/app_sbi.p/app_sbi_src_builtin_bi_task.c.o
+ .rodata.bi_textfile_writeline.str1.1
+                0x000000000041ec8e       0x4c uspace/app_sbi.p/app_sbi_src_builtin_bi_textfile.c.o
+ .rodata.bi_textfile_writeline.str1.8
+                0x000000000041ec8e       0x8d uspace/app_sbi.p/app_sbi_src_builtin_bi_textfile.c.o
+ .rodata.bi_textfile_readline.str1.8
+                0x000000000041ec8e       0x75 uspace/app_sbi.p/app_sbi_src_builtin_bi_textfile.c.o
+ .rodata.bi_textfile_openwrite.str1.1
+                0x000000000041ec8e       0x2e uspace/app_sbi.p/app_sbi_src_builtin_bi_textfile.c.o
+ .rodata.bi_textfile_openwrite.str1.8
+                0x000000000041ec8e       0x2e uspace/app_sbi.p/app_sbi_src_builtin_bi_textfile.c.o
+ .rodata.bi_textfile_openread.str1.1
+                0x000000000041ec8e        0x3 uspace/app_sbi.p/app_sbi_src_builtin_bi_textfile.c.o
+ .rodata.bi_textfile_openread.str1.8
+                0x000000000041ec8e       0x2e uspace/app_sbi.p/app_sbi_src_builtin_bi_textfile.c.o
+ .rodata.bi_textfile_is_eof.str1.8
+                0x000000000041ec8e       0x29 uspace/app_sbi.p/app_sbi_src_builtin_bi_textfile.c.o
+ .rodata.bi_textfile_close.str1.8
+                0x000000000041ec8e       0x4d uspace/app_sbi.p/app_sbi_src_builtin_bi_textfile.c.o
+ .rodata.bi_textfile_declare.str1.8
+                0x000000000041ec8e      0x16b uspace/app_sbi.p/app_sbi_src_builtin_bi_textfile.c.o
+ .rodata.bi_textfile_bind.str1.1
+                0x000000000041ec8e       0x3c uspace/app_sbi.p/app_sbi_src_builtin_bi_textfile.c.o
+ .rodata.bi_string_slice.str1.1
+                0x000000000041ec8e       0x59 uspace/app_sbi.p/app_sbi_src_builtin_bi_string.c.o
+ .rodata.bi_string_slice.str1.8
+                0x000000000041ec8e       0xc3 uspace/app_sbi.p/app_sbi_src_builtin_bi_string.c.o
+ .rodata.bi_string_bind.str1.1
+                0x000000000041ec8e       0x18 uspace/app_sbi.p/app_sbi_src_builtin_bi_string.c.o
+ .rodata.os_str_acat.str1.1
+                0x000000000041ec8e       0x19 uspace/app_sbi.p/app_sbi_src_os_helenos.c.o
+ .rodata.os_str_aslice.str1.8
+                0x000000000041ec8e       0x52 uspace/app_sbi.p/app_sbi_src_os_helenos.c.o
+ .rodata.os_str_aslice.str1.1
+                0x000000000041ec8e       0x19 uspace/app_sbi.p/app_sbi_src_os_helenos.c.o
+ .rodata.os_chr_to_astr.str1.1
+                0x000000000041ec8e       0x19 uspace/app_sbi.p/app_sbi_src_os_helenos.c.o
+ .rodata.os_input_disp_help.str1.1
+                0x000000000041ec8e       0x16 uspace/app_sbi.p/app_sbi_src_os_helenos.c.o
+ .rodata.os_input_line.str1.1
+                0x000000000041ec8e        0x3 uspace/app_sbi.p/app_sbi_src_os_helenos.c.o
+ .rodata.os_exec.str1.8
+                0x000000000041ec8e       0x23 uspace/app_sbi.p/app_sbi_src_os_helenos.c.o
+ .rodata.os_get_lib_path.str1.1
+                0x000000000041ec8e        0xf uspace/app_sbi.p/app_sbi_src_os_helenos.c.o
+ .rodata.ancr_csi_process.str1.8
+                0x000000000041ec8e       0xce uspace/app_sbi.p/app_sbi_src_ancr.c.o
+ .rodata.ancr_csi_process.str1.1
+                0x000000000041ec8e       0x41 uspace/app_sbi.p/app_sbi_src_ancr.c.o
+ .rodata.bigint_alloc.part.0.str1.1
+                0x000000000041ec8e       0x1a uspace/app_sbi.p/app_sbi_src_bigint.c.o
+ .rodata.bigint_add_abs.str1.8
+                0x000000000041ec8e       0x2a uspace/app_sbi.p/app_sbi_src_bigint.c.o
+ .rodata.bigint_add_abs.str1.1
+                0x000000000041ec8e        0xb uspace/app_sbi.p/app_sbi_src_bigint.c.o
+ .rodata.bigint_is_negative.str1.8
+                0x000000000041ec8e       0x32 uspace/app_sbi.p/app_sbi_src_bigint.c.o
+ .rodata.bigint_print.str1.1
+                0x000000000041ec8e        0x3 uspace/app_sbi.p/app_sbi_src_bigint.c.o
+ *fill*         0x000000000041ec8e        0x2 
+ .rodata.digits.0
+                0x000000000041ec90        0xa uspace/app_sbi.p/app_sbi_src_bigint.c.o
+ .rodata.builtin_declare.str1.1
+                0x000000000041ec9a       0x42 uspace/app_sbi.p/app_sbi_src_builtin.c.o
+ .rodata.builtin_declare.str1.8
+                0x000000000041ec9a       0x2b uspace/app_sbi.p/app_sbi_src_builtin.c.o
+ .rodata.builtin_find_lvl1.str1.1
+                0x000000000041ec9a       0x2c uspace/app_sbi.p/app_sbi_src_builtin.c.o
+ .rodata.builtin_fun_bind.str1.1
+                0x000000000041ec9a       0x1c uspace/app_sbi.p/app_sbi_src_builtin.c.o
+ .rodata.builtin_run_proc.str1.8
+                0x000000000041ec9a       0x27 uspace/app_sbi.p/app_sbi_src_builtin.c.o
+ .rodata.builtin_run_proc.str1.1
+                0x000000000041ec9a        0x3 uspace/app_sbi.p/app_sbi_src_builtin.c.o
+ .rodata.builtin_get_self_mbr_var.str1.1
+                0x000000000041ec9a       0x2e uspace/app_sbi.p/app_sbi_src_builtin.c.o
+ .rodata.cspan_new.str1.1
+                0x000000000041ec9a       0x1a uspace/app_sbi.p/app_sbi_src_cspan.c.o
+ .rodata.cspan_merge.str1.8
+                0x000000000041ec9a       0x29 uspace/app_sbi.p/app_sbi_src_cspan.c.o
+ .rodata.cspan_merge.str1.1
+                0x000000000041ec9a       0x29 uspace/app_sbi.p/app_sbi_src_cspan.c.o
+ .rodata.cspan_print.str1.1
+                0x000000000041ec9a       0x19 uspace/app_sbi.p/app_sbi_src_cspan.c.o
+ .rodata.imode_run.str1.1
+                0x000000000041ec9a       0x46 uspace/app_sbi.p/app_sbi_src_imode.c.o
+ .rodata.imode_run.str1.8
+                0x000000000041ec9a       0x66 uspace/app_sbi.p/app_sbi_src_imode.c.o
+ .rodata.input_new_file.str1.1
+                0x000000000041ec9a       0x1d uspace/app_sbi.p/app_sbi_src_input.c.o
+ .rodata.input_new_interactive.str1.1
+                0x000000000041ec9a        0xd uspace/app_sbi.p/app_sbi_src_input.c.o
+ .rodata.input_new_string.str1.1
+                0x000000000041ec9a        0xa uspace/app_sbi.p/app_sbi_src_input.c.o
+ .rodata.input_get_line.str1.1
+                0x000000000041ec9a        0xc uspace/app_sbi.p/app_sbi_src_input.c.o
+ .rodata.intmap_set.str1.1
+                0x000000000041ec9a       0x1a uspace/app_sbi.p/app_sbi_src_intmap.c.o
+ .rodata.lex_char_string_core.str1.1
+                0x000000000041ec9a       0x3f uspace/app_sbi.p/app_sbi_src_lex.c.o
+ .rodata.lex_char_string_core.str1.8
+                0x000000000041ec9a       0x52 uspace/app_sbi.p/app_sbi_src_lex.c.o
+ .rodata.lex_read_try.str1.1
+                0x000000000041ec9a       0x31 uspace/app_sbi.p/app_sbi_src_lex.c.o
+ .rodata.lex_read_try.str1.8
+                0x000000000041ec9a       0x55 uspace/app_sbi.p/app_sbi_src_lex.c.o
+ *fill*         0x000000000041ec9a        0x6 
+ .rodata.lex_read_try
+                0x000000000041eca0      0x1e8 uspace/app_sbi.p/app_sbi_src_lex.c.o
+ .rodata.lclass_print.str1.1
+                0x000000000041ee88       0x2f uspace/app_sbi.p/app_sbi_src_lex.c.o
+ .rodata.lem_print.str1.1
+                0x000000000041ee88        0xe uspace/app_sbi.p/app_sbi_src_lex.c.o
+ .rodata.str1.1
+                0x000000000041ee88      0x14c uspace/app_sbi.p/app_sbi_src_lex.c.o
+ .rodata.sbi_list_first.part.0.str1.8
+                0x000000000041ee88       0x28 uspace/app_sbi.p/app_sbi_src_list.c.o
+ .rodata.sbi_list_first.part.0.str1.1
+                0x000000000041ee88        0xd uspace/app_sbi.p/app_sbi_src_list.c.o
+ .rodata.list_fini.str1.1
+                0x000000000041ee88       0x14 uspace/app_sbi.p/app_sbi_src_list.c.o
+ .rodata.sbi_list_append.str1.1
+                0x000000000041ee88       0x27 uspace/app_sbi.p/app_sbi_src_list.c.o
+ .rodata.sbi_list_remove.str1.1
+                0x000000000041ee88       0x58 uspace/app_sbi.p/app_sbi_src_list.c.o
+ .rodata.list_next.str1.1
+                0x000000000041ee88        0xd uspace/app_sbi.p/app_sbi_src_list.c.o
+ .rodata.main.str1.1
+                0x000000000041ee88       0x20 uspace/app_sbi.p/app_sbi_src_main.c.o
+ .rodata.parse_postfix.str1.8
+                0x000000000041ee88       0x2a uspace/app_sbi.p/app_sbi_src_p_expr.c.o
+ .rodata.parse_postfix.str1.1
+                0x000000000041ee88        0x8 uspace/app_sbi.p/app_sbi_src_p_expr.c.o
+ .rodata.parse_postfix
+                0x000000000041ee88      0x1a0 uspace/app_sbi.p/app_sbi_src_p_expr.c.o
+ .rodata.parse_tpostfix.str1.8
+                0x000000000041f028       0x2a uspace/app_sbi.p/app_sbi_src_p_type.c.o
+ .rodata.parse_tpostfix.str1.1
+                0x000000000041f028        0x8 uspace/app_sbi.p/app_sbi_src_p_type.c.o
+ .rodata.parse_tpostfix
+                0x000000000041f028      0x130 uspace/app_sbi.p/app_sbi_src_p_type.c.o
+ .rodata.parse_symbol_attrs.str1.8
+                0x000000000041f158       0x1f uspace/app_sbi.p/app_sbi_src_parse.c.o
+ .rodata.parse_symbol_attrs.str1.1
+                0x000000000041f158        0x3 uspace/app_sbi.p/app_sbi_src_parse.c.o
+ .rodata.parse_ident.str1.1
+                0x000000000041f158       0x1c uspace/app_sbi.p/app_sbi_src_parse.c.o
+ .rodata.parse_enum.str1.8
+                0x000000000041f158       0x50 uspace/app_sbi.p/app_sbi_src_parse.c.o
+ .rodata.parse_stat
+                0x000000000041f158      0x180 uspace/app_sbi.p/app_sbi_src_parse.c.o
+ .rodata.parse_csi.str1.8
+                0x000000000041f2d8      0x167 uspace/app_sbi.p/app_sbi_src_parse.c.o
+ .rodata.parse_csi.str1.1
+                0x000000000041f2d8      0x137 uspace/app_sbi.p/app_sbi_src_parse.c.o
+ .rodata.parse_csi
+                0x000000000041f2d8      0x148 uspace/app_sbi.p/app_sbi_src_parse.c.o
+ .rodata.cst8   0x000000000041f420        0x8 uspace/app_sbi.p/app_sbi_src_parse.c.o
+ .rodata.program_file_process.str1.8
+                0x000000000041f428       0x22 uspace/app_sbi.p/app_sbi_src_program.c.o
+ .rodata.program_lib_process.str1.1
+                0x000000000041f428        0xf uspace/app_sbi.p/app_sbi_src_program.c.o
+ .rodata.program_lib_process.str1.8
+                0x000000000041f428       0x4e uspace/app_sbi.p/app_sbi_src_program.c.o
+ .rodata.rdata_var_print.str1.1
+                0x000000000041f428       0x70 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.rdata_var_print
+                0x000000000041f428       0x58 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.rdata_item_new.part.0.str1.1
+                0x000000000041f480       0x1a uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.rdata_var_delete.part.0.str1.8
+                0x000000000041f480       0x29 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.rdata_var_delete.part.0.str1.1
+                0x000000000041f480        0xc uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.rdata_bool_delete.part.0.str1.1
+                0x000000000041f480        0xf uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.rdata_char_delete.part.0.str1.1
+                0x000000000041f480        0xf uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.rdata_int_delete.part.0.str1.1
+                0x000000000041f480        0xe uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.rdata_string_delete.part.0.str1.1
+                0x000000000041f480       0x11 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.rdata_object_delete.part.0.str1.1
+                0x000000000041f480       0x11 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.rdata_var_destroy_inner
+                0x000000000041f480       0x58 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.rdata_value_copy.str1.1
+                0x000000000041f4d8       0x43 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.rdata_value_copy
+                0x000000000041f4d8       0x58 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.rdata_var_copy
+                0x000000000041f530       0x58 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.rdata_var_destroy
+                0x000000000041f588       0x58 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.rdata_var_read
+                0x000000000041f5e0       0x58 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.rdata_var_write
+                0x000000000041f638       0xb0 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.rdata_item_print.str1.1
+                0x000000000041f6e8       0x15 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.rdata_item_print.str1.8
+                0x000000000041f6e8       0x30 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.rdata_value_print
+                0x000000000041f6e8       0x58 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.cst16  0x000000000041f740       0x10 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .rodata.run_block_ar_delete.part.0.str1.8
+                0x000000000041f750       0x27 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_block_ar_delete.part.0.str1.1
+                0x000000000041f750       0x11 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_cvt_value_item.part.0.str1.8
+                0x000000000041f750       0x24 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_exc_payload_get_csi.isra.0.str1.1
+                0x000000000041f750       0x2d uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_exc_payload_get_csi.isra.0.str1.8
+                0x000000000041f750       0x63 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_exc_check_unhandled.str1.8
+                0x000000000041f750       0x22 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_exc_check_unhandled.str1.1
+                0x000000000041f750       0x20 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_sobject_get.str1.1
+                0x000000000041f750       0x1a uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_sobject_get.str1.8
+                0x000000000041f750       0x21 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_sobject_find.str1.1
+                0x000000000041f750       0x1e uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_value_item_to_var.str1.1
+                0x000000000041f750       0x15 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_value_item_to_var.str1.8
+                0x000000000041f750       0x24 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_value_item_to_var
+                0x000000000041f750       0x38 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_proc_ar_create.str1.1
+                0x000000000041f788       0x1a uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_proc_ar_set_args.str1.1
+                0x000000000041f788       0x64 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_proc_ar_set_args.str1.8
+                0x000000000041f788       0x1f uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_proc_ar_set_args
+                0x000000000041f788       0x38 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_proc_ar_set_setter_arg.str1.1
+                0x000000000041f7c0       0x43 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_raise_exc.str1.1
+                0x000000000041f7c0       0x17 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_var_new.str1.1
+                0x000000000041f7c0       0x10 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_var_new
+                0x000000000041f7c0       0x78 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_stat.str1.1
+                0x000000000041f838       0x1d uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_stat.str1.8
+                0x000000000041f838       0x4b uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_stat
+                0x000000000041f838       0x50 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_block.str1.8
+                0x000000000041f888       0x33 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_proc.str1.8
+                0x000000000041f888       0x73 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_address_read.str1.1
+                0x000000000041f888        0xe uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_address_read.str1.8
+                0x000000000041f888       0x53 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_item_get_vc.str1.1
+                0x000000000041f888       0x16 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_dereference.str1.8
+                0x000000000041f888       0x24 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_program.str1.1
+                0x000000000041f888       0x16 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_program.str1.8
+                0x000000000041f888       0x25 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_address_write.str1.8
+                0x000000000041f888       0x59 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_address_write.str1.1
+                0x000000000041f888        0xe uspace/app_sbi.p/app_sbi_src_run.c.o
+ .rodata.run_access_item.str1.8
+                0x000000000041f888      0x173 uspace/app_sbi.p/app_sbi_src_run_expr.c.o
+ .rodata.run_access_item.str1.1
+                0x000000000041f888      0x10b uspace/app_sbi.p/app_sbi_src_run_expr.c.o
+ .rodata.run_access_item
+                0x000000000041f888       0xc8 uspace/app_sbi.p/app_sbi_src_run_expr.c.o
+ .rodata.run_equal.str1.1
+                0x000000000041f950       0x1b uspace/app_sbi.p/app_sbi_src_run_expr.c.o
+ .rodata.run_equal
+                0x000000000041f950       0x58 uspace/app_sbi.p/app_sbi_src_run_expr.c.o
+ .rodata.run_expr.str1.1
+                0x000000000041f9a8      0x297 uspace/app_sbi.p/app_sbi_src_run_expr.c.o
+ .rodata.run_expr.str1.8
+                0x000000000041f9a8      0x5fb uspace/app_sbi.p/app_sbi_src_run_expr.c.o
+ .rodata.run_expr
+                0x000000000041f9a8      0x278 uspace/app_sbi.p/app_sbi_src_run_expr.c.o
+ .rodata.run_item_boolean_value.str1.1
+                0x000000000041fc20       0x29 uspace/app_sbi.p/app_sbi_src_run_expr.c.o
+ .rodata.run_texpr.str1.8
+                0x000000000041fc20       0xec uspace/app_sbi.p/app_sbi_src_run_texpr.c.o
+ .rodata.run_texpr.str1.1
+                0x000000000041fc20       0x72 uspace/app_sbi.p/app_sbi_src_run_texpr.c.o
+ .rodata.run_texpr
+                0x000000000041fc20       0x98 uspace/app_sbi.p/app_sbi_src_run_texpr.c.o
+ *fill*         0x000000000041fcb8        0x8 
+ .rodata.CSWTCH.10
+                0x000000000041fcc0       0x10 uspace/app_sbi.p/app_sbi_src_run_texpr.c.o
+ .rodata.stree_module_new.str1.1
+                0x000000000041fcd0       0x1a uspace/app_sbi.p/app_sbi_src_stree.c.o
+ .rodata.stree_csimbr_get_name
+                0x000000000041fcd0       0x38 uspace/app_sbi.p/app_sbi_src_stree.c.o
+ .rodata.strtab_get_str.str1.8
+                0x000000000041fd08       0x1f uspace/app_sbi.p/app_sbi_src_strtab.c.o
+ .rodata.stype_fun_sig.str1.8
+                0x000000000041fd08       0x28 uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .rodata.stype_deleg.str1.8
+                0x000000000041fd08       0x29 uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .rodata.stype_deleg.str1.1
+                0x000000000041fd08       0x1b uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .rodata.stype_convert_failure.str1.1
+                0x000000000041fd08       0x49 uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .rodata.stype_box_expr.str1.1
+                0x000000000041fd08       0x5b uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .rodata.stype_box_expr
+                0x000000000041fd08       0x30 uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .rodata.stype_targs_check_equal.str1.1
+                0x000000000041fd38       0x57 uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .rodata.stype_targs_check_equal.str1.8
+                0x000000000041fd38       0x1f uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .rodata.stype_deleg_get_sig.str1.1
+                0x000000000041fd38       0x15 uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .rodata.stype_titem_to_tvv.str1.1
+                0x000000000041fd38       0x17 uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .rodata.stype_titem_to_tvv.str1.8
+                0x000000000041fd38       0x2b uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .rodata.stype_class_impl_check_if.str1.1
+                0x000000000041fd38      0x199 uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .rodata.stype_class_impl_check_if.str1.8
+                0x000000000041fd38       0xb6 uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .rodata.stype_tobject_find_pred.str1.1
+                0x000000000041fd38       0x4b uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .rodata.stype_convert.str1.8
+                0x000000000041fd38       0xca uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .rodata.stype_convert.str1.1
+                0x000000000041fd38       0x23 uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .rodata.stype_convert
+                0x000000000041fd38       0x78 uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .rodata.stype_stat.str1.8
+                0x000000000041fdb0      0x1a4 uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .rodata.stype_stat.str1.1
+                0x000000000041fdb0       0x19 uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .rodata.stype_stat
+                0x000000000041fdb0       0x50 uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .rodata.stype_block.str1.1
+                0x000000000041fe00       0x1a uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .rodata.stype_block.str1.8
+                0x000000000041fe00       0x36 uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .rodata.stype_csi.str1.1
+                0x000000000041fe00       0x17 uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .rodata.stype_csi
+                0x000000000041fe00       0x38 uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .rodata.stype_proc_args_lookup.str1.1
+                0x000000000041fe38        0xd uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .rodata.stype_proc_args_lookup
+                0x000000000041fe38       0x38 uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .rodata.stype_access_tobject.str1.8
+                0x000000000041fe70       0xb5 uspace/app_sbi.p/app_sbi_src_stype_expr.c.o
+ .rodata.stype_access_tobject.str1.1
+                0x000000000041fe70       0xc3 uspace/app_sbi.p/app_sbi_src_stype_expr.c.o
+ .rodata.stype_access_tobject
+                0x000000000041fe70       0x38 uspace/app_sbi.p/app_sbi_src_stype_expr.c.o
+ .rodata.stype_expr.str1.8
+                0x000000000041fea8      0x787 uspace/app_sbi.p/app_sbi_src_stype_expr.c.o
+ .rodata.stype_expr.str1.1
+                0x000000000041fea8      0x141 uspace/app_sbi.p/app_sbi_src_stype_expr.c.o
+ .rodata.stype_expr
+                0x000000000041fea8      0x188 uspace/app_sbi.p/app_sbi_src_stype_expr.c.o
+ .rodata.stype_call_args.str1.1
+                0x0000000000420030       0x52 uspace/app_sbi.p/app_sbi_src_stype_expr.c.o
+ .rodata.enum_to_symbol.part.0.str1.8
+                0x0000000000420030       0x2a uspace/app_sbi.p/app_sbi_src_symbol.c.o
+ .rodata.enum_to_symbol.part.0.str1.1
+                0x0000000000420030        0xf uspace/app_sbi.p/app_sbi_src_symbol.c.o
+ .rodata.csi_to_symbol.part.0.str1.1
+                0x0000000000420030        0xc uspace/app_sbi.p/app_sbi_src_symbol.c.o
+ .rodata.symbol_find_epoint_rec.isra.0.str1.1
+                0x0000000000420030       0x2a uspace/app_sbi.p/app_sbi_src_symbol.c.o
+ .rodata.deleg_to_symbol.str1.1
+                0x0000000000420030        0xe uspace/app_sbi.p/app_sbi_src_symbol.c.o
+ .rodata.ctor_to_symbol.str1.1
+                0x0000000000420030        0xd uspace/app_sbi.p/app_sbi_src_symbol.c.o
+ .rodata.var_to_symbol.str1.1
+                0x0000000000420030        0xc uspace/app_sbi.p/app_sbi_src_symbol.c.o
+ .rodata.csimbr_to_symbol.str1.1
+                0x0000000000420030        0xd uspace/app_sbi.p/app_sbi_src_symbol.c.o
+ .rodata.csimbr_to_symbol
+                0x0000000000420030       0x38 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+ .rodata.symbol_lookup_in_csi.str1.8
+                0x0000000000420068       0x31 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+ .rodata.symbol_lookup_in_csi.str1.1
+                0x0000000000420068       0x22 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+ .rodata.symbol_xlookup_in_csi.str1.1
+                0x0000000000420068       0x3d uspace/app_sbi.p/app_sbi_src_symbol.c.o
+ .rodata.symbol_print_fqn.str1.1
+                0x0000000000420068        0x3 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+ .rodata.symbol_print_fqn
+                0x0000000000420068       0x38 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+ .rodata.tdata_item_new.part.0.str1.1
+                0x00000000004200a0       0x1a uspace/app_sbi.p/app_sbi_src_tdata.c.o
+ .rodata.tdata_is_csi_derived_from_ti.str1.8
+                0x00000000004200a0       0x1f uspace/app_sbi.p/app_sbi_src_tdata.c.o
+ .rodata.tdata_item_subst.str1.8
+                0x00000000004200a0       0x29 uspace/app_sbi.p/app_sbi_src_tdata.c.o
+ .rodata.tdata_item_subst.str1.1
+                0x00000000004200a0        0xf uspace/app_sbi.p/app_sbi_src_tdata.c.o
+ .rodata.tdata_item_subst
+                0x00000000004200a0       0x48 uspace/app_sbi.p/app_sbi_src_tdata.c.o
+ .rodata.tdata_item_print.str1.1
+                0x00000000004200e8       0x57 uspace/app_sbi.p/app_sbi_src_tdata.c.o
+ .rodata.tdata_item_print
+                0x00000000004200e8       0x78 uspace/app_sbi.p/app_sbi_src_tdata.c.o
+ .rodata.tdata_item_equal.str1.8
+                0x0000000000420160       0x28 uspace/app_sbi.p/app_sbi_src_tdata.c.o
+ .rodata.tdata_item_equal.str1.1
+                0x0000000000420160        0xb uspace/app_sbi.p/app_sbi_src_tdata.c.o
+ .rodata.tdata_item_equal
+                0x0000000000420160       0x40 uspace/app_sbi.p/app_sbi_src_tdata.c.o
+ .rodata.cst8   0x00000000004201a0        0x8 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .rodata.tinput_console_set_lpos.part.0.str1.8
+                0x00000000004201a8       0x2b uspace/lib/libclui.a.p/clui_src_tinput.c.o
+ .rodata.tinput_console_set_lpos.part.0.str1.1
+                0x00000000004201a8       0x13 uspace/lib/libclui.a.p/clui_src_tinput.c.o
+ .rodata.tinput_display_tail.str1.1
+                0x00000000004201a8        0x4 uspace/lib/libclui.a.p/clui_src_tinput.c.o
+ .rodata.tinput_display.str1.1
+                0x00000000004201a8        0x3 uspace/lib/libclui.a.p/clui_src_tinput.c.o
+ .rodata.tinput_read_i.str1.1
+                0x00000000004201a8       0x17 uspace/lib/libclui.a.p/clui_src_tinput.c.o
+ .rodata.tinput_read_i.str1.8
+                0x00000000004201a8       0xb6 uspace/lib/libclui.a.p/clui_src_tinput.c.o
+ .rodata.tinput_read_i
+                0x00000000004201a8      0x508 uspace/lib/libclui.a.p/clui_src_tinput.c.o
+ .rodata.clipboard_put_str.str1.1
+                0x00000000004206b0        0xa uspace/lib/libclipboard.a.p/clipboard_src_clipboard.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x00000000004206b0      0xc44
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x00000000004206b0      0xc44 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+                0x00000000004206b0                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x00000000004212f8     0x3e00
+ *(.eh_frame)
+ .eh_frame      0x00000000004212f8       0x40 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+ .eh_frame      0x0000000000421338       0x28 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000421360        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+ .eh_frame      0x0000000000421360       0x48 uspace/app_sbi.p/app_sbi_src_builtin_bi_error.c.o
+                                         0x60 (size before relaxing)
+ .eh_frame      0x00000000004213a8       0x70 uspace/app_sbi.p/app_sbi_src_builtin_bi_char.c.o
+                                         0x88 (size before relaxing)
+ .eh_frame      0x0000000000421418       0xc8 uspace/app_sbi.p/app_sbi_src_builtin_bi_console.c.o
+                                         0xe0 (size before relaxing)
+ .eh_frame      0x00000000004214e0       0x68 uspace/app_sbi.p/app_sbi_src_builtin_bi_int.c.o
+                                         0x80 (size before relaxing)
+ .eh_frame      0x0000000000421548       0x68 uspace/app_sbi.p/app_sbi_src_builtin_bi_task.c.o
+                                         0x80 (size before relaxing)
+ .eh_frame      0x00000000004215b0      0x140 uspace/app_sbi.p/app_sbi_src_builtin_bi_textfile.c.o
+                                        0x158 (size before relaxing)
+ .eh_frame      0x00000000004216f0       0x98 uspace/app_sbi.p/app_sbi_src_builtin_bi_string.c.o
+                                         0xb0 (size before relaxing)
+ .eh_frame      0x0000000000421788      0x1e0 uspace/app_sbi.p/app_sbi_src_os_helenos.c.o
+                                        0x1f8 (size before relaxing)
+ .eh_frame      0x0000000000421968       0xa8 uspace/app_sbi.p/app_sbi_src_ancr.c.o
+                                         0xc0 (size before relaxing)
+ .eh_frame      0x0000000000421a10      0x2a0 uspace/app_sbi.p/app_sbi_src_bigint.c.o
+                                        0x2e8 (size before relaxing)
+ .eh_frame      0x0000000000421cb0      0x1e0 uspace/app_sbi.p/app_sbi_src_builtin.c.o
+                                        0x1f8 (size before relaxing)
+ .eh_frame      0x0000000000421e90       0x70 uspace/app_sbi.p/app_sbi_src_cspan.c.o
+                                         0x88 (size before relaxing)
+ .eh_frame      0x0000000000421f00       0x30 uspace/app_sbi.p/app_sbi_src_imode.c.o
+                                         0x48 (size before relaxing)
+ .eh_frame      0x0000000000421f30       0xe0 uspace/app_sbi.p/app_sbi_src_input.c.o
+                                         0xf8 (size before relaxing)
+ .eh_frame      0x0000000000422010      0x108 uspace/app_sbi.p/app_sbi_src_intmap.c.o
+                                        0x120 (size before relaxing)
+ .eh_frame      0x0000000000422118      0x178 uspace/app_sbi.p/app_sbi_src_lex.c.o
+                                        0x190 (size before relaxing)
+ .eh_frame      0x0000000000422290      0x160 uspace/app_sbi.p/app_sbi_src_list.c.o
+                                        0x1a0 (size before relaxing)
+ .eh_frame      0x00000000004223f0       0x30 uspace/app_sbi.p/app_sbi_src_main.c.o
+                                         0x48 (size before relaxing)
+ .eh_frame      0x0000000000422420      0x188 uspace/app_sbi.p/app_sbi_src_p_expr.c.o
+                                        0x1a0 (size before relaxing)
+ .eh_frame      0x00000000004225a8       0x60 uspace/app_sbi.p/app_sbi_src_p_type.c.o
+                                         0x78 (size before relaxing)
+ .eh_frame      0x0000000000422608      0x2b8 uspace/app_sbi.p/app_sbi_src_parse.c.o
+                                        0x350 (size before relaxing)
+ .eh_frame      0x00000000004228c0       0x60 uspace/app_sbi.p/app_sbi_src_program.c.o
+                                         0x78 (size before relaxing)
+ .eh_frame      0x0000000000422920      0x628 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+                                        0x918 (size before relaxing)
+ .eh_frame      0x0000000000422f48      0x5b0 uspace/app_sbi.p/app_sbi_src_run.c.o
+                                        0x6e8 (size before relaxing)
+ .eh_frame      0x00000000004234f8      0x1c8 uspace/app_sbi.p/app_sbi_src_run_expr.c.o
+                                        0x1e0 (size before relaxing)
+ .eh_frame      0x00000000004236c0       0x68 uspace/app_sbi.p/app_sbi_src_run_texpr.c.o
+                                         0x80 (size before relaxing)
+ .eh_frame      0x0000000000423728      0x868 uspace/app_sbi.p/app_sbi_src_stree.c.o
+                                        0x880 (size before relaxing)
+ .eh_frame      0x0000000000423f90       0x80 uspace/app_sbi.p/app_sbi_src_strtab.c.o
+                                         0x98 (size before relaxing)
+ .eh_frame      0x0000000000424010      0x510 uspace/app_sbi.p/app_sbi_src_stype.c.o
+                                        0x548 (size before relaxing)
+ .eh_frame      0x0000000000424520       0xb8 uspace/app_sbi.p/app_sbi_src_stype_expr.c.o
+                                         0xd0 (size before relaxing)
+ .eh_frame      0x00000000004245d8      0x388 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+                                        0x3f0 (size before relaxing)
+ .eh_frame      0x0000000000424960      0x308 uspace/app_sbi.p/app_sbi_src_tdata.c.o
+                                        0x360 (size before relaxing)
+ .eh_frame      0x0000000000424c68       0x20 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000424c88      0x2a0 uspace/lib/libclui.a.p/clui_src_tinput.c.o
+                                        0x2f8 (size before relaxing)
+ .eh_frame      0x0000000000424f28       0x70 uspace/lib/libclipboard.a.p/clipboard_src_clipboard.c.o
+                                         0x88 (size before relaxing)
+ .eh_frame      0x0000000000424f98      0x160 uspace/lib/libconsole.a.p/console_src_console.c.o
+                                        0x318 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x00000000004250f8        0x0
+ *(.sframe)
+ .sframe        0x00000000004250f8        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x00000000004260f8                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0x00000000004260f8        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x00000000004260f8        0x0
+                0x00000000004260f8                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x00000000004260f8                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x00000000004260f8        0x0
+                0x00000000004260f8                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x00000000004260f8                PROVIDE (__init_array_end = .)
+
+.fini_array     0x00000000004260f8        0x0
+                0x00000000004260f8                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x00000000004260f8                PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x00000000004260f8        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x00000000004260f8        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+
+.dynamic        0x00000000004260f8      0x150
+ *(.dynamic)
+ .dynamic       0x00000000004260f8      0x150 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+                0x00000000004260f8                _DYNAMIC
+
+.got            0x0000000000426248        0x0
+ *(.got)
+ .got           0x0000000000426248        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+ *(.igot)
+                0x0000000000426248                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x0000000000426248      0x1d0
+ *(.got.plt)
+ .got.plt       0x0000000000426248      0x1d0 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+                0x0000000000426248                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x0000000000426418        0x0 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+
+.data           0x0000000000426420      0x4e0
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.simple_lc
+                0x0000000000426420      0x170 uspace/app_sbi.p/app_sbi_src_lex.c.o
+ *fill*         0x0000000000426590       0x10 
+ .data.keywords
+                0x00000000004265a0      0x340 uspace/app_sbi.p/app_sbi_src_lex.c.o
+ .data.clip_mutex
+                0x00000000004268e0       0x20 uspace/lib/libclipboard.a.p/clipboard_src_clipboard.c.o
+
+.data1
+ *(.data1)
+                0x0000000000426900                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x0000000000426900                . = .
+                0x0000000000426900                __bss_start = .
+
+.bss            0x0000000000426900      0x370
+ *(.dynbss)
+ .dynbss        0x0000000000426900       0x88 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+                0x0000000000426900                stdout
+                0x0000000000426910                stdin
+                0x0000000000426920                __progsymbols
+                0x0000000000426980                stderr
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ *fill*         0x0000000000426988       0x18 
+ .bss.line_buf  0x00000000004269a0      0x100 uspace/app_sbi.p/app_sbi_src_builtin_bi_textfile.c.o
+ .bss.tinput    0x0000000000426aa0        0x8 uspace/app_sbi.p/app_sbi_src_os_helenos.c.o
+ *fill*         0x0000000000426aa8       0x18 
+ .bss.strlit_buf
+                0x0000000000426ac0       0x81 uspace/app_sbi.p/app_sbi_src_lex.c.o
+ *fill*         0x0000000000426b41       0x1f 
+ .bss.ident_buf
+                0x0000000000426b60       0x81 uspace/app_sbi.p/app_sbi_src_lex.c.o
+ *fill*         0x0000000000426be1       0x1f 
+ .bss.name_buf  0x0000000000426c00       0x41 uspace/app_sbi.p/app_sbi_src_program.c.o
+ *fill*         0x0000000000426c41        0xf 
+ .bss.str_list  0x0000000000426c50       0x18 uspace/app_sbi.p/app_sbi_src_strtab.c.o
+ .bss.clip_sess
+                0x0000000000426c68        0x8 uspace/lib/libclipboard.a.p/clipboard_src_clipboard.c.o
+ *(COMMON)
+                0x0000000000426c70                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x0000000000426c70                . = ALIGN (0x8)
+                0x0000000000426c70                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x0000000000428c70        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x0000000000428c70                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000428c70                . = ALIGN (0x8)
+                0x0000000000426c70                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x0000000000428c70                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/app_sbi.p/app_sbi_src_builtin_bi_boxed.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/app_sbi.p/app_sbi_src_builtin_bi_error.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_sbi.p/app_sbi_src_builtin_bi_char.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_sbi.p/app_sbi_src_builtin_bi_console.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_sbi.p/app_sbi_src_builtin_bi_int.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_sbi.p/app_sbi_src_builtin_bi_task.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_sbi.p/app_sbi_src_builtin_bi_textfile.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_sbi.p/app_sbi_src_builtin_bi_string.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_sbi.p/app_sbi_src_os_helenos.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_sbi.p/app_sbi_src_ancr.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_sbi.p/app_sbi_src_bigint.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_sbi.p/app_sbi_src_builtin.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_sbi.p/app_sbi_src_cspan.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_sbi.p/app_sbi_src_imode.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_sbi.p/app_sbi_src_input.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_sbi.p/app_sbi_src_intmap.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_sbi.p/app_sbi_src_lex.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_sbi.p/app_sbi_src_list.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_sbi.p/app_sbi_src_main.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_sbi.p/app_sbi_src_p_expr.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_sbi.p/app_sbi_src_p_type.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_sbi.p/app_sbi_src_parse.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_sbi.p/app_sbi_src_program.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_sbi.p/app_sbi_src_rdata.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_sbi.p/app_sbi_src_run.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_sbi.p/app_sbi_src_run_expr.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_sbi.p/app_sbi_src_run_texpr.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_sbi.p/app_sbi_src_stree.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_sbi.p/app_sbi_src_strtab.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_sbi.p/app_sbi_src_stype.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_sbi.p/app_sbi_src_stype_expr.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_sbi.p/app_sbi_src_symbol.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_sbi.p/app_sbi_src_tdata.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libclui.a.p/clui_src_tinput.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libclipboard.a.p/clipboard_src_clipboard.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libconsole.a.p/console_src_console.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/app_sbi elf64-x86-64)

@@ -42,6 +42,7 @@
 extern void syscall_entry(void);
 
 /** Enable & setup support for SYSCALL/SYSRET */
+// 这里是初始化系统调用的过程。之后才可以使用SYSCALL 和 SYSRET 指令。
 void syscall_setup_cpu(void)
 {
 	/* Enable SYSCALL/SYSRET */
@@ -62,6 +63,7 @@ void syscall_setup_cpu(void)
 	    ((uint64_t) (GDT_SELECTOR(KDATA_DES) | PL_USER) << 48) |
 	    ((uint64_t) (GDT_SELECTOR(KTEXT_DES) | PL_KERNEL) << 32));
 	// 设置系统调用的入口地址
+    // 这样，之后用户程序调用 syscall num，就会进入内核的 syscall_entry 函数。
 	write_msr(AMD_MSR_LSTAR, (uint64_t)syscall_entry);
 	/*
 	 * Mask RFLAGS on syscall

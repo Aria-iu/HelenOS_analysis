@@ -1,0 +1,1094 @@
+Archive member included to satisfy reference by file (symbol)
+
+uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                              (--whole-archive)
+uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                              (--whole-archive)
+uspace/lib/liblabel.a.p/label_src_empty.c.o
+                              uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o (label_part_empty)
+uspace/lib/liblabel.a.p/label_src_label.c.o
+                              uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o (label_open)
+uspace/lib/liblabel.a.p/label_src_dummy.c.o
+                              uspace/lib/liblabel.a.p/label_src_label.c.o (dummy_label_ops)
+uspace/lib/liblabel.a.p/label_src_mbr.c.o
+                              uspace/lib/liblabel.a.p/label_src_label.c.o (mbr_label_ops)
+uspace/lib/liblabel.a.p/label_src_gpt.c.o
+                              uspace/lib/liblabel.a.p/label_src_label.c.o (gpt_label_ops)
+uspace/lib/libdevice.a.p/device_src_bd_srv.c.o
+                              uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o (bd_srvs_init)
+uspace/lib/libblock.a.p/block_block.c.o
+                              uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o (block_init)
+uspace/lib/libdevice.a.p/device_src_bd.c.o
+                              uspace/lib/libblock.a.p/block_block.c.o (bd_open)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.0                     uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o (loc_category_get_id)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_bd_vbd.p/srv_bd_vbd_vbd.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_bd_vbd.p/srv_bd_vbd_vbd.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_bd_vbd.p/srv_bd_vbd_vbd.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .text          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/liblabel.a.p/label_src_empty.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/liblabel.a.p/label_src_empty.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/liblabel.a.p/label_src_empty.c.o
+ .rodata.label_bd_is_empty.str1.8
+                0x0000000000000000       0x20 uspace/lib/liblabel.a.p/label_src_empty.c.o
+ .text.label_bd_is_empty
+                0x0000000000000000      0x1f2 uspace/lib/liblabel.a.p/label_src_empty.c.o
+ .text.label_bd_empty
+                0x0000000000000000      0x1a5 uspace/lib/liblabel.a.p/label_src_empty.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/liblabel.a.p/label_src_label.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/liblabel.a.p/label_src_label.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/liblabel.a.p/label_src_label.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/liblabel.a.p/label_src_dummy.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/liblabel.a.p/label_src_dummy.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/liblabel.a.p/label_src_dummy.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/liblabel.a.p/label_src_mbr.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/liblabel.a.p/label_src_mbr.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/liblabel.a.p/label_src_mbr.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/liblabel.a.p/label_src_gpt.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/liblabel.a.p/label_src_gpt.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/liblabel.a.p/label_src_gpt.c.o
+ .rodata.efi_signature
+                0x0000000000000000        0x8 uspace/lib/liblabel.a.p/label_src_gpt.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_bd_srv.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_bd_srv.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_bd_srv.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libblock.a.p/block_block.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libblock.a.p/block_block.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libblock.a.p/block_block.c.o
+ .text.cache_key_hash
+                0x0000000000000000        0x9 uspace/lib/libblock.a.p/block_block.c.o
+ .text.cache_hash
+                0x0000000000000000        0xa uspace/lib/libblock.a.p/block_block.c.o
+ .text.cache_key_equal
+                0x0000000000000000       0x10 uspace/lib/libblock.a.p/block_block.c.o
+ .text.read_blocks.part.0
+                0x0000000000000000       0x18 uspace/lib/libblock.a.p/block_block.c.o
+ .text.write_blocks.part.0
+                0x0000000000000000       0x18 uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_bb_read
+                0x0000000000000000      0x120 uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_bb_get
+                0x0000000000000000       0x7e uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_cache_init
+                0x0000000000000000      0x16c uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.block_put.str1.1
+                0x0000000000000000       0x21 uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.block_put.str1.8
+                0x0000000000000000       0x53 uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_put
+                0x0000000000000000      0x2f0 uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.block_get.str1.1
+                0x0000000000000000       0x1f uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_get
+                0x0000000000000000      0x528 uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_seqread
+                0x0000000000000000      0x1be uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_read_bytes_direct
+                0x0000000000000000      0x1e8 uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_read_toc
+                0x0000000000000000       0x9e uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.cache_ops
+                0x0000000000000000       0x28 uspace/lib/libblock.a.p/block_block.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_bd.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_bd.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_bd.c.o
+ .text.bd_read_toc
+                0x0000000000000000       0x9a uspace/lib/libdevice.a.p/device_src_bd.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+LOAD uspace/srv_bd_vbd.p/srv_bd_vbd_vbd.c.o
+START GROUP
+LOAD uspace/lib/c/libstartfiles.a
+LOAD uspace/lib/liblabel.a
+LOAD uspace/lib/libdevice.a
+LOAD uspace/lib/libc.so.0.0
+LOAD uspace/lib/libblock.a
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000400000                PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x0000000000400120                . = (SEGMENT_START ("text-segment", 0x400000) + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000400120      0x1a4
+ *(.hash)
+ .hash          0x0000000000400120      0x1a4 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x00000000004002c8      0x630
+ *(.dynsym)
+ .dynsym        0x00000000004002c8      0x630 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+
+.dynstr         0x00000000004008f8      0x477
+ *(.dynstr)
+ .dynstr        0x00000000004008f8      0x477 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+
+.gnu.version    0x0000000000400d70        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000400d70        0x0 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+
+.gnu.version_d  0x0000000000400d70        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000400d70        0x0 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+
+.gnu.version_r  0x0000000000400d70        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000400d70        0x0 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+
+.rela.dyn       0x0000000000400d70       0x18
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text.__c_start
+                0x0000000000400d70        0x0 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ .rela.rodata.cst8
+                0x0000000000400d70        0x0 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x0000000000400d70        0x0 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000400d70        0x0 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x0000000000400d70       0x18 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+
+.rela.plt       0x0000000000400d88      0x600
+ *(.rela.plt)
+ .rela.plt      0x0000000000400d88      0x600 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+ .rela.iplt     0x0000000000401388        0x0 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x0000000000401390      0x410
+ *(.plt)
+ .plt           0x0000000000401390      0x410 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+                0x00000000004013a0                loc_category_get_id
+                0x00000000004013b0                task_retval
+                0x00000000004013c0                loc_service_connect
+                0x00000000004013d0                printf
+                0x00000000004013e0                async_hangup
+                0x00000000004013f0                fibril_rwlock_read_unlock
+                0x0000000000401400                async_req_0_2
+                0x0000000000401410                async_wait_for
+                0x0000000000401420                uuid_encode_le
+                0x0000000000401430                log_init
+                0x0000000000401440                async_data_write_start
+                0x0000000000401450                loc_service_register
+                0x0000000000401460                async_get_call
+                0x0000000000401470                async_data_read_finalize
+                0x0000000000401480                memcpy
+                0x0000000000401490                puts
+                0x00000000004014a0                malloc
+                0x00000000004014b0                uuid_decode_le
+                0x00000000004014c0                async_answer_0
+                0x00000000004014d0                log_msg
+                0x00000000004014e0                stacktrace_print
+                0x00000000004014f0                async_exchange_end
+                0x0000000000401500                loc_service_get_name
+                0x0000000000401510                calloc
+                0x0000000000401520                loc_register_cat_change_cb
+                0x0000000000401530                async_send_3
+                0x0000000000401540                uuid_generate
+                0x0000000000401550                async_answer_2
+                0x0000000000401560                fibril_mutex_unlock
+                0x0000000000401570                loc_service_unregister
+                0x0000000000401580                async_req_0_1
+                0x0000000000401590                compute_crc32
+                0x00000000004015a0                loc_service_add_to_cat
+                0x00000000004015b0                async_create_callback_port
+                0x00000000004015c0                fibril_rwlock_write_unlock
+                0x00000000004015d0                hash_table_remove_item
+                0x00000000004015e0                __helenos_assert_abort
+                0x00000000004015f0                async_data_read_receive
+                0x0000000000401600                async_accept_0
+                0x0000000000401610                async_data_read_start
+                0x0000000000401620                uuid_parse
+                0x0000000000401630                str_error_name
+                0x0000000000401640                asprintf
+                0x0000000000401650                loc_server_register
+                0x0000000000401660                loc_category_get_svcs
+                0x0000000000401670                list_count
+                0x0000000000401680                async_answer_1
+                0x0000000000401690                async_exchange_begin
+                0x00000000004016a0                str_error
+                0x00000000004016b0                fibril_rwlock_write_lock
+                0x00000000004016c0                async_data_write_finalize
+                0x00000000004016d0                async_data_write_accept
+                0x00000000004016e0                fibril_rwlock_initialize
+                0x00000000004016f0                __libc_main
+                0x0000000000401700                async_manager
+                0x0000000000401710                async_forget
+                0x0000000000401720                async_req_3_0
+                0x0000000000401730                fibril_rwlock_read_lock
+                0x0000000000401740                async_set_fallback_port_handler
+                0x0000000000401750                hash_table_destroy
+                0x0000000000401760                async_data_write_receive
+                0x0000000000401770                async_callback_receive
+                0x0000000000401780                free
+                0x0000000000401790                fibril_mutex_lock
+ *(.iplt)
+ .iplt          0x00000000004017a0        0x0 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+
+.plt.got        0x00000000004017a0        0x0
+ *(.plt.got)
+ .plt.got       0x00000000004017a0        0x0 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x00000000004017a0     0x6ead
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ .text.startup.main
+                0x00000000004017a0       0xf4 uspace/srv_bd_vbd.p/srv_bd_vbd_vbd.c.o
+                0x00000000004017a0                main
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ *fill*         0x0000000000401894        0xc 
+ .text.vbds_label_get_bsize
+                0x00000000004018a0        0xe uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ *fill*         0x00000000004018ae        0x2 
+ .text.vbds_label_get_nblocks
+                0x00000000004018b0        0xe uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ *fill*         0x00000000004018be        0x2 
+ .text.vbds_label_write
+                0x00000000004018c0        0xe uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ *fill*         0x00000000004018ce        0x2 
+ .text.vbds_label_read
+                0x00000000004018d0        0xe uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ *fill*         0x00000000004018de        0x2 
+ .text.vbds_bd_get_num_blocks
+                0x00000000004018e0       0x4b uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ *fill*         0x000000000040192b        0x5 
+ .text.vbds_bd_get_block_size
+                0x0000000000401930       0x4c uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ *fill*         0x000000000040197c        0x4 
+ .text.vbds_bd_write_blocks
+                0x0000000000401980       0xbf uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ *fill*         0x0000000000401a3f        0x1 
+ .text.vbds_bd_read_blocks
+                0x0000000000401a40       0xbf uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ *fill*         0x0000000000401aff        0x1 
+ .text.vbds_bd_sync_cache
+                0x0000000000401b00       0x9a uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ *fill*         0x0000000000401b9a        0x6 
+ .text.vbds_bd_close
+                0x0000000000401ba0       0x44 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ *fill*         0x0000000000401be4        0xc 
+ .text.vbds_bd_open
+                0x0000000000401bf0       0x44 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ *fill*         0x0000000000401c34        0xc 
+ .text.vbds_part_svc_register
+                0x0000000000401c40      0x192 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ *fill*         0x0000000000401dd2        0xe 
+ .text.vbds_part_add
+                0x0000000000401de0      0x18b uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ *fill*         0x0000000000401f6b        0x5 
+ .text.vbds_part_del_ref
+                0x0000000000401f70       0x98 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ *fill*         0x0000000000402008        0x8 
+ .text.vbds_part_by_pid
+                0x0000000000402010      0x134 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ *fill*         0x0000000000402144        0xc 
+ .text.vbds_part_indices_update
+                0x0000000000402150      0x1af uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ *fill*         0x00000000004022ff        0x1 
+ .text.vbds_disks_init
+                0x0000000000402300       0xbf uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+                0x0000000000402300                vbds_disks_init
+ *fill*         0x00000000004023bf        0x1 
+ .text.vbds_disk_add
+                0x00000000004023c0      0x2ea uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+                0x00000000004023c0                vbds_disk_add
+ *fill*         0x00000000004026aa        0x6 
+ .text.vbds_disk_remove
+                0x00000000004026b0      0x22e uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+                0x00000000004026b0                vbds_disk_remove
+ *fill*         0x00000000004028de        0x2 
+ .text.vbds_disks_check_new
+                0x00000000004028e0      0x2a9 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ *fill*         0x0000000000402b89        0x7 
+ .text.vbds_disk_discovery_start
+                0x0000000000402b90       0x54 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+                0x0000000000402b90                vbds_disk_discovery_start
+ *fill*         0x0000000000402be4        0xc 
+ .text.vbds_disk_cat_change_cb
+                0x0000000000402bf0        0xa uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ *fill*         0x0000000000402bfa        0x6 
+ .text.vbds_disk_get_ids
+                0x0000000000402c00       0xb8 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+                0x0000000000402c00                vbds_disk_get_ids
+ *fill*         0x0000000000402cb8        0x8 
+ .text.vbds_disk_info
+                0x0000000000402cc0       0xc4 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+                0x0000000000402cc0                vbds_disk_info
+ *fill*         0x0000000000402d84        0xc 
+ .text.vbds_get_parts
+                0x0000000000402d90       0xc4 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+                0x0000000000402d90                vbds_get_parts
+ *fill*         0x0000000000402e54        0xc 
+ .text.vbds_label_create
+                0x0000000000402e60      0x41a uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+                0x0000000000402e60                vbds_label_create
+ *fill*         0x000000000040327a        0x6 
+ .text.vbds_label_delete
+                0x0000000000403280      0x2e8 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+                0x0000000000403280                vbds_label_delete
+ *fill*         0x0000000000403568        0x8 
+ .text.vbds_part_get_info
+                0x0000000000403570       0x9f uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+                0x0000000000403570                vbds_part_get_info
+ *fill*         0x000000000040360f        0x1 
+ .text.vbds_part_create
+                0x0000000000403610      0x24a uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+                0x0000000000403610                vbds_part_create
+ *fill*         0x000000000040385a        0x6 
+ .text.vbds_part_delete
+                0x0000000000403860      0x215 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+                0x0000000000403860                vbds_part_delete
+ *fill*         0x0000000000403a75        0xb 
+ .text.vbds_suggest_ptype
+                0x0000000000403a80       0xa0 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+                0x0000000000403a80                vbds_suggest_ptype
+ .text.vbds_bd_conn
+                0x0000000000403b20      0x1b3 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+                0x0000000000403b20                vbds_bd_conn
+ *fill*         0x0000000000403cd3        0xd 
+ .text.vbds_client_conn
+                0x0000000000403ce0      0x591 uspace/srv_bd_vbd.p/srv_bd_vbd_vbd.c.o
+ .text          0x0000000000404271        0xc uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                0x0000000000404271                _start
+ *fill*         0x000000000040427d        0x3 
+ .text.__c_start
+                0x0000000000404280       0x8c uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                0x0000000000404280                __c_start
+ *fill*         0x000000000040430c        0x4 
+ .text.label_part_empty
+                0x0000000000404310      0x158 uspace/lib/liblabel.a.p/label_src_empty.c.o
+                0x0000000000404310                label_part_empty
+ *fill*         0x0000000000404468        0x8 
+ .text.label_open
+                0x0000000000404470       0x6e uspace/lib/liblabel.a.p/label_src_label.c.o
+                0x0000000000404470                label_open
+ *fill*         0x00000000004044de        0x2 
+ .text.label_create
+                0x00000000004044e0       0x3f uspace/lib/liblabel.a.p/label_src_label.c.o
+                0x00000000004044e0                label_create
+ *fill*         0x000000000040451f        0x1 
+ .text.label_close
+                0x0000000000404520       0x1a uspace/lib/liblabel.a.p/label_src_label.c.o
+                0x0000000000404520                label_close
+ *fill*         0x000000000040453a        0x6 
+ .text.label_destroy
+                0x0000000000404540        0xe uspace/lib/liblabel.a.p/label_src_label.c.o
+                0x0000000000404540                label_destroy
+ *fill*         0x000000000040454e        0x2 
+ .text.label_get_info
+                0x0000000000404550        0xe uspace/lib/liblabel.a.p/label_src_label.c.o
+                0x0000000000404550                label_get_info
+ *fill*         0x000000000040455e        0x2 
+ .text.label_part_first
+                0x0000000000404560        0xe uspace/lib/liblabel.a.p/label_src_label.c.o
+                0x0000000000404560                label_part_first
+ *fill*         0x000000000040456e        0x2 
+ .text.label_part_next
+                0x0000000000404570       0x11 uspace/lib/liblabel.a.p/label_src_label.c.o
+                0x0000000000404570                label_part_next
+ *fill*         0x0000000000404581        0xf 
+ .text.label_part_get_info
+                0x0000000000404590       0x11 uspace/lib/liblabel.a.p/label_src_label.c.o
+                0x0000000000404590                label_part_get_info
+ *fill*         0x00000000004045a1        0xf 
+ .text.label_part_create
+                0x00000000004045b0        0xe uspace/lib/liblabel.a.p/label_src_label.c.o
+                0x00000000004045b0                label_part_create
+ *fill*         0x00000000004045be        0x2 
+ .text.label_part_destroy
+                0x00000000004045c0       0x11 uspace/lib/liblabel.a.p/label_src_label.c.o
+                0x00000000004045c0                label_part_destroy
+ *fill*         0x00000000004045d1        0xf 
+ .text.label_pspec_init
+                0x00000000004045e0       0x1d uspace/lib/liblabel.a.p/label_src_label.c.o
+                0x00000000004045e0                label_pspec_init
+ *fill*         0x00000000004045fd        0x3 
+ .text.label_suggest_ptype
+                0x0000000000404600        0xe uspace/lib/liblabel.a.p/label_src_label.c.o
+                0x0000000000404600                label_suggest_ptype
+ *fill*         0x000000000040460e        0x2 
+ .text.dummy_create
+                0x0000000000404610        0xb uspace/lib/liblabel.a.p/label_src_dummy.c.o
+ *fill*         0x000000000040461b        0x5 
+ .text.dummy_destroy
+                0x0000000000404620        0xb uspace/lib/liblabel.a.p/label_src_dummy.c.o
+ *fill*         0x000000000040462b        0x5 
+ .text.dummy_part_first
+                0x0000000000404630       0x24 uspace/lib/liblabel.a.p/label_src_dummy.c.o
+ *fill*         0x0000000000404654        0xc 
+ .text.dummy_part_next
+                0x0000000000404660       0x24 uspace/lib/liblabel.a.p/label_src_dummy.c.o
+ *fill*         0x0000000000404684        0xc 
+ .text.dummy_part_get_info
+                0x0000000000404690       0x1b uspace/lib/liblabel.a.p/label_src_dummy.c.o
+ *fill*         0x00000000004046ab        0x5 
+ .text.dummy_part_create
+                0x00000000004046b0        0xb uspace/lib/liblabel.a.p/label_src_dummy.c.o
+ *fill*         0x00000000004046bb        0x5 
+ .text.dummy_suggest_ptype
+                0x00000000004046c0        0xb uspace/lib/liblabel.a.p/label_src_dummy.c.o
+ *fill*         0x00000000004046cb        0x5 
+ .text.dummy_get_info
+                0x00000000004046d0       0x20 uspace/lib/liblabel.a.p/label_src_dummy.c.o
+ .text.dummy_close
+                0x00000000004046f0       0x83 uspace/lib/liblabel.a.p/label_src_dummy.c.o
+ *fill*         0x0000000000404773        0xd 
+ .text.dummy_open
+                0x0000000000404780      0x160 uspace/lib/liblabel.a.p/label_src_dummy.c.o
+ .text.dummy_part_destroy
+                0x00000000004048e0        0xb uspace/lib/liblabel.a.p/label_src_dummy.c.o
+ *fill*         0x00000000004048eb        0x5 
+ .text.mbr_part_first
+                0x00000000004048f0       0x24 uspace/lib/liblabel.a.p/label_src_mbr.c.o
+ *fill*         0x0000000000404914        0xc 
+ .text.mbr_part_next
+                0x0000000000404920       0x24 uspace/lib/liblabel.a.p/label_src_mbr.c.o
+ *fill*         0x0000000000404944        0xc 
+ .text.mbr_suggest_ptype
+                0x0000000000404950       0x72 uspace/lib/liblabel.a.p/label_src_mbr.c.o
+ *fill*         0x00000000004049c2        0xe 
+ .text.mbr_pte_update
+                0x00000000004049d0       0xb2 uspace/lib/liblabel.a.p/label_src_mbr.c.o
+ *fill*         0x0000000000404a82        0xe 
+ .text.mbr_destroy
+                0x0000000000404a90       0xb6 uspace/lib/liblabel.a.p/label_src_mbr.c.o
+ *fill*         0x0000000000404b46        0xa 
+ .text.mbr_create
+                0x0000000000404b50      0x1c5 uspace/lib/liblabel.a.p/label_src_mbr.c.o
+ *fill*         0x0000000000404d15        0xb 
+ .text.mbr_get_info
+                0x0000000000404d20       0xa5 uspace/lib/liblabel.a.p/label_src_mbr.c.o
+ *fill*         0x0000000000404dc5        0xb 
+ .text.link_used.part.0
+                0x0000000000404dd0       0x18 uspace/lib/liblabel.a.p/label_src_mbr.c.o
+ *fill*         0x0000000000404de8        0x8 
+ .text.mbr_close
+                0x0000000000404df0       0xe8 uspace/lib/liblabel.a.p/label_src_mbr.c.o
+ *fill*         0x0000000000404ed8        0x8 
+ .text.mbr_open
+                0x0000000000404ee0      0x6b5 uspace/lib/liblabel.a.p/label_src_mbr.c.o
+ *fill*         0x0000000000405595        0xb 
+ .text.mbr_part_get_info
+                0x00000000004055a0       0x4d uspace/lib/liblabel.a.p/label_src_mbr.c.o
+ *fill*         0x00000000004055ed        0x3 
+ .text.mbr_log_part_to_ptes
+                0x00000000004055f0      0x114 uspace/lib/liblabel.a.p/label_src_mbr.c.o
+ *fill*         0x0000000000405704        0xc 
+ .text.mbr_ebr_update_next
+                0x0000000000405710       0xcd uspace/lib/liblabel.a.p/label_src_mbr.c.o
+ *fill*         0x00000000004057dd        0x3 
+ .text.mbr_part_destroy
+                0x00000000004057e0      0x380 uspace/lib/liblabel.a.p/label_src_mbr.c.o
+ .text.mbr_part_create
+                0x0000000000405b60      0x5ed uspace/lib/liblabel.a.p/label_src_mbr.c.o
+ *fill*         0x000000000040614d        0x3 
+ .text.gpt_part_first
+                0x0000000000406150       0x24 uspace/lib/liblabel.a.p/label_src_gpt.c.o
+ *fill*         0x0000000000406174        0xc 
+ .text.gpt_part_next
+                0x0000000000406180       0x24 uspace/lib/liblabel.a.p/label_src_gpt.c.o
+ *fill*         0x00000000004061a4        0xc 
+ .text.gpt_part_get_info
+                0x00000000004061b0       0x1b uspace/lib/liblabel.a.p/label_src_gpt.c.o
+ *fill*         0x00000000004061cb        0x5 
+ .text.gpt_close
+                0x00000000004061d0       0x83 uspace/lib/liblabel.a.p/label_src_gpt.c.o
+ *fill*         0x0000000000406253        0xd 
+ .text.gpt_pte_update
+                0x0000000000406260      0x24b uspace/lib/liblabel.a.p/label_src_gpt.c.o
+ *fill*         0x00000000004064ab        0x5 
+ .text.gpt_part_destroy
+                0x00000000004064b0       0x8b uspace/lib/liblabel.a.p/label_src_gpt.c.o
+ *fill*         0x000000000040653b        0x5 
+ .text.gpt_part_create
+                0x0000000000406540      0x23b uspace/lib/liblabel.a.p/label_src_gpt.c.o
+ *fill*         0x000000000040677b        0x5 
+ .text.gpt_create
+                0x0000000000406780      0x470 uspace/lib/liblabel.a.p/label_src_gpt.c.o
+ .text.gpt_get_info
+                0x0000000000406bf0       0x7c uspace/lib/liblabel.a.p/label_src_gpt.c.o
+ *fill*         0x0000000000406c6c        0x4 
+ .text.gpt_open
+                0x0000000000406c70      0x8b1 uspace/lib/liblabel.a.p/label_src_gpt.c.o
+ *fill*         0x0000000000407521        0xf 
+ .text.gpt_suggest_ptype
+                0x0000000000407530       0x4a uspace/lib/liblabel.a.p/label_src_gpt.c.o
+ *fill*         0x000000000040757a        0x6 
+ .text.gpt_destroy
+                0x0000000000407580      0x16e uspace/lib/liblabel.a.p/label_src_gpt.c.o
+ *fill*         0x00000000004076ee        0x2 
+ .text.bd_srvs_init
+                0x00000000004076f0        0xd uspace/lib/libdevice.a.p/device_src_bd_srv.c.o
+                0x00000000004076f0                bd_srvs_init
+ *fill*         0x00000000004076fd        0x3 
+ .text.bd_conn  0x0000000000407700      0x49e uspace/lib/libdevice.a.p/device_src_bd_srv.c.o
+                0x0000000000407700                bd_conn
+ *fill*         0x0000000000407b9e        0x2 
+ .text.block_init
+                0x0000000000407ba0      0x180 uspace/lib/libblock.a.p/block_block.c.o
+                0x0000000000407ba0                block_init
+ .text.block_cache_fini
+                0x0000000000407d20      0x18d uspace/lib/libblock.a.p/block_block.c.o
+                0x0000000000407d20                block_cache_fini
+ *fill*         0x0000000000407ead        0x3 
+ .text.block_fini
+                0x0000000000407eb0       0xee uspace/lib/libblock.a.p/block_block.c.o
+                0x0000000000407eb0                block_fini
+ *fill*         0x0000000000407f9e        0x2 
+ .text.block_read_direct
+                0x0000000000407fa0       0xda uspace/lib/libblock.a.p/block_block.c.o
+                0x0000000000407fa0                block_read_direct
+ *fill*         0x000000000040807a        0x6 
+ .text.block_write_direct
+                0x0000000000408080       0xda uspace/lib/libblock.a.p/block_block.c.o
+                0x0000000000408080                block_write_direct
+ *fill*         0x000000000040815a        0x6 
+ .text.block_sync_cache
+                0x0000000000408160       0x86 uspace/lib/libblock.a.p/block_block.c.o
+                0x0000000000408160                block_sync_cache
+ *fill*         0x00000000004081e6        0xa 
+ .text.block_get_bsize
+                0x00000000004081f0       0x86 uspace/lib/libblock.a.p/block_block.c.o
+                0x00000000004081f0                block_get_bsize
+ *fill*         0x0000000000408276        0xa 
+ .text.block_get_nblocks
+                0x0000000000408280       0x86 uspace/lib/libblock.a.p/block_block.c.o
+                0x0000000000408280                block_get_nblocks
+ *fill*         0x0000000000408306        0xa 
+ .text.bd_cb_conn
+                0x0000000000408310       0x3b uspace/lib/libdevice.a.p/device_src_bd.c.o
+ *fill*         0x000000000040834b        0x5 
+ .text.bd_open  0x0000000000408350       0xa8 uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x0000000000408350                bd_open
+ *fill*         0x00000000004083f8        0x8 
+ .text.bd_close
+                0x0000000000408400        0xa uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x0000000000408400                bd_close
+ *fill*         0x000000000040840a        0x6 
+ .text.bd_read_blocks
+                0x0000000000408410       0x9a uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x0000000000408410                bd_read_blocks
+ *fill*         0x00000000004084aa        0x6 
+ .text.bd_write_blocks
+                0x00000000004084b0       0x9a uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x00000000004084b0                bd_write_blocks
+ *fill*         0x000000000040854a        0x6 
+ .text.bd_sync_cache
+                0x0000000000408550       0x4e uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x0000000000408550                bd_sync_cache
+ *fill*         0x000000000040859e        0x2 
+ .text.bd_get_block_size
+                0x00000000004085a0       0x4f uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x00000000004085a0                bd_get_block_size
+ *fill*         0x00000000004085ef        0x1 
+ .text.bd_get_num_blocks
+                0x00000000004085f0       0x5d uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x00000000004085f0                bd_get_num_blocks
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000408660      0xdf8
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.vbds_bd_get_num_blocks.str1.1
+                0x0000000000408660      0x58e uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+                                         0x19 (size before relaxing)
+ .rodata.vbds_bd_get_block_size.str1.1
+                0x0000000000408bee       0x19 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .rodata.vbds_bd_write_blocks.str1.1
+                0x0000000000408bee       0x17 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .rodata.vbds_bd_read_blocks.str1.1
+                0x0000000000408bee       0x16 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .rodata.vbds_bd_sync_cache.str1.1
+                0x0000000000408bee       0x15 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .rodata.vbds_bd_close.str1.1
+                0x0000000000408bee       0x10 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .rodata.vbds_bd_open.str1.1
+                0x0000000000408bee        0xf uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .rodata.vbds_part_svc_register.str1.1
+                0x0000000000408bee       0x30 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ *fill*         0x0000000000408bee        0x2 
+ .rodata.vbds_part_svc_register.str1.8
+                0x0000000000408bf0      0x768 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+                                         0x96 (size before relaxing)
+ .rodata.vbds_part_add.str1.1
+                0x0000000000409358       0x2a uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .rodata.vbds_part_del_ref.str1.1
+                0x0000000000409358       0x32 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .rodata.vbds_part_del_ref.str1.8
+                0x0000000000409358       0x2e uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .rodata.vbds_part_by_pid.str1.1
+                0x0000000000409358       0x4c uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .rodata.vbds_part_indices_update.str1.1
+                0x0000000000409358       0x1b uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .rodata.vbds_part_indices_update.str1.8
+                0x0000000000409358       0x78 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .rodata.vbds_disks_init.str1.1
+                0x0000000000409358        0xa uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .rodata.vbds_disks_init.str1.8
+                0x0000000000409358       0x25 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .rodata.vbds_disk_add.str1.1
+                0x0000000000409358       0x33 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .rodata.vbds_disk_add.str1.8
+                0x0000000000409358      0x112 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .rodata.vbds_disk_remove.str1.1
+                0x0000000000409358       0x41 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .rodata.vbds_disks_check_new.str1.1
+                0x0000000000409358       0x82 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .rodata.vbds_disks_check_new.str1.8
+                0x0000000000409358       0x4d uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .rodata.vbds_disk_discovery_start.str1.8
+                0x0000000000409358       0x34 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .rodata.vbds_disk_info.str1.1
+                0x0000000000409358       0x14 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .rodata.vbds_disk_info.str1.8
+                0x0000000000409358       0x20 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .rodata.vbds_label_create.str1.1
+                0x0000000000409358       0x41 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .rodata.vbds_label_create.str1.8
+                0x0000000000409358       0x9d uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .rodata.vbds_label_delete.str1.1
+                0x0000000000409358       0x2e uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .rodata.vbds_part_create.str1.1
+                0x0000000000409358       0x5d uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .rodata.vbds_part_create.str1.8
+                0x0000000000409358       0xc6 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .rodata.vbds_part_delete.str1.1
+                0x0000000000409358       0x2f uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .rodata.vbds_suggest_ptype.str1.1
+                0x0000000000409358       0x1d uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .rodata.vbds_bd_conn.str1.1
+                0x0000000000409358       0x60 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .rodata.vbds_bd_conn.str1.8
+                0x0000000000409358       0x25 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .rodata.vbds_client_conn.str1.1
+                0x0000000000409358       0xd3 uspace/srv_bd_vbd.p/srv_bd_vbd_vbd.c.o
+ .rodata.vbds_client_conn
+                0x0000000000409358       0x48 uspace/srv_bd_vbd.p/srv_bd_vbd_vbd.c.o
+ .rodata.main.str1.1
+                0x00000000004093a0       0x2c uspace/srv_bd_vbd.p/srv_bd_vbd_vbd.c.o
+ .rodata.main.str1.8
+                0x00000000004093a0       0x90 uspace/srv_bd_vbd.p/srv_bd_vbd_vbd.c.o
+ .rodata.cst8   0x00000000004093a0        0x8 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .rodata.label_bd_is_empty.str1.1
+                0x00000000004093a8       0x49 uspace/lib/liblabel.a.p/label_src_empty.c.o
+ .rodata.mbr_suggest_ptype
+                0x00000000004093a8       0x28 uspace/lib/liblabel.a.p/label_src_mbr.c.o
+ .rodata.link_used.part.0.str1.8
+                0x00000000004093d0       0x51 uspace/lib/liblabel.a.p/label_src_mbr.c.o
+ .rodata.mbr_log_part_to_ptes.str1.8
+                0x00000000004093d0       0x59 uspace/lib/liblabel.a.p/label_src_mbr.c.o
+ .rodata.mbr_log_part_to_ptes.str1.1
+                0x00000000004093d0       0x2d uspace/lib/liblabel.a.p/label_src_mbr.c.o
+ .rodata.cst8   0x00000000004093d0       0x20 uspace/lib/liblabel.a.p/label_src_mbr.c.o
+                                          0x8 (size before relaxing)
+ .rodata.gpt_suggest_ptype.str1.8
+                0x00000000004093f0       0x29 uspace/lib/liblabel.a.p/label_src_gpt.c.o
+ .rodata.gpt_suggest_ptype.str1.1
+                0x00000000004093f0        0xa uspace/lib/liblabel.a.p/label_src_gpt.c.o
+ .rodata.str1.8
+                0x00000000004093f0       0x75 uspace/lib/liblabel.a.p/label_src_gpt.c.o
+ *fill*         0x00000000004093f0       0x10 
+ .rodata.CSWTCH.44
+                0x0000000000409400       0x28 uspace/lib/liblabel.a.p/label_src_gpt.c.o
+ .rodata.cst8   0x0000000000409428       0x18 uspace/lib/liblabel.a.p/label_src_gpt.c.o
+ .rodata.bd_conn
+                0x0000000000409428       0x30 uspace/lib/libdevice.a.p/device_src_bd_srv.c.o
+ .rodata.read_blocks.part.0.str1.8
+                0x0000000000409458       0x27 uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.read_blocks.part.0.str1.1
+                0x0000000000409458        0x7 uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.block_bb_read.str1.8
+                0x0000000000409458       0x4a uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.block_cache_fini.str1.8
+                0x0000000000409458       0x48 uspace/lib/libblock.a.p/block_block.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x0000000000409458      0x354
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x0000000000409458      0x354 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+                0x0000000000409458                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x00000000004097b0     0x1154
+ *(.eh_frame)
+ .eh_frame      0x00000000004097b0      0x5b0 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .eh_frame      0x0000000000409d60       0x28 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000409d88        0x0 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .eh_frame      0x0000000000409d88       0x58 uspace/srv_bd_vbd.p/srv_bd_vbd_vbd.c.o
+                                         0x70 (size before relaxing)
+ .eh_frame      0x0000000000409de0       0x20 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000409e00       0x38 uspace/lib/liblabel.a.p/label_src_empty.c.o
+                                         0xa8 (size before relaxing)
+ .eh_frame      0x0000000000409e38      0x1a8 uspace/lib/liblabel.a.p/label_src_label.c.o
+                                        0x1c0 (size before relaxing)
+ .eh_frame      0x0000000000409fe0      0x180 uspace/lib/liblabel.a.p/label_src_dummy.c.o
+                                        0x198 (size before relaxing)
+ .eh_frame      0x000000000040a160      0x2a0 uspace/lib/liblabel.a.p/label_src_mbr.c.o
+                                        0x2b8 (size before relaxing)
+ .eh_frame      0x000000000040a400      0x1f8 uspace/lib/liblabel.a.p/label_src_gpt.c.o
+                                        0x210 (size before relaxing)
+ .eh_frame      0x000000000040a5f8       0x50 uspace/lib/libdevice.a.p/device_src_bd_srv.c.o
+                                         0x68 (size before relaxing)
+ .eh_frame      0x000000000040a648      0x170 uspace/lib/libblock.a.p/block_block.c.o
+                                        0x3c0 (size before relaxing)
+ .eh_frame      0x000000000040a7b8      0x14c uspace/lib/libdevice.a.p/device_src_bd.c.o
+                                        0x198 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x000000000040a904        0x0
+ *(.sframe)
+ .sframe        0x000000000040a904        0x0 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x000000000040b904                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0x000000000040b904        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x000000000040b904        0x0
+                0x000000000040b904                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x000000000040b904                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x000000000040b904        0x0
+                0x000000000040b904                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x000000000040b904                PROVIDE (__init_array_end = .)
+
+.fini_array     0x000000000040b904        0x0
+                0x000000000040b904                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x000000000040b904                PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x000000000040b904        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x000000000040b904        0x0 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+
+.dynamic        0x000000000040b908      0x150
+ *(.dynamic)
+ .dynamic       0x000000000040b908      0x150 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+                0x000000000040b908                _DYNAMIC
+
+.got            0x000000000040ba58        0x0
+ *(.got)
+ .got           0x000000000040ba58        0x0 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ *(.igot)
+                0x000000000040ba58                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x000000000040ba58      0x218
+ *(.got.plt)
+ .got.plt       0x000000000040ba58      0x218 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+                0x000000000040ba58                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x000000000040bc70        0x0 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+
+.data           0x000000000040bc80      0x200
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.vbds_label_bd_ops
+                0x000000000040bc80       0x20 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .data.vbds_bd_ops
+                0x000000000040bca0       0x40 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .data.vbds_part_id
+                0x000000000040bce0        0x8 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ *fill*         0x000000000040bce8       0x18 
+ .data.probe_list
+                0x000000000040bd00       0x20 uspace/lib/liblabel.a.p/label_src_label.c.o
+ .data.dummy_label_ops
+                0x000000000040bd20       0x58 uspace/lib/liblabel.a.p/label_src_dummy.c.o
+                0x000000000040bd20                dummy_label_ops
+ *fill*         0x000000000040bd78        0x8 
+ .data.mbr_label_ops
+                0x000000000040bd80       0x58 uspace/lib/liblabel.a.p/label_src_mbr.c.o
+                0x000000000040bd80                mbr_label_ops
+ *fill*         0x000000000040bdd8        0x8 
+ .data.gpt_label_ops
+                0x000000000040bde0       0x58 uspace/lib/liblabel.a.p/label_src_gpt.c.o
+                0x000000000040bde0                gpt_label_ops
+ *fill*         0x000000000040be38        0x8 
+ .data.dcl      0x000000000040be40       0x10 uspace/lib/libblock.a.p/block_block.c.o
+ *fill*         0x000000000040be50       0x10 
+ .data.dcl_lock
+                0x000000000040be60       0x20 uspace/lib/libblock.a.p/block_block.c.o
+
+.data1
+ *(.data1)
+                0x000000000040be80                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x000000000040be80                . = .
+                0x000000000040be80                __bss_start = .
+
+.bss            0x000000000040be80       0xd0
+ *(.dynbss)
+ .dynbss        0x000000000040be80       0x48 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+                0x000000000040be80                __progsymbols
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss.part_cid  0x000000000040bec8        0x8 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .bss.vbds_parts
+                0x000000000040bed0       0x10 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .bss.vbds_parts_lock
+                0x000000000040bee0       0x20 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .bss.vbds_disks
+                0x000000000040bf00       0x10 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ *fill*         0x000000000040bf10       0x10 
+ .bss.vbds_disks_lock
+                0x000000000040bf20       0x20 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+ .bss.vbds_srv  0x000000000040bf40        0x8 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+                0x000000000040bf40                vbds_srv
+ .bss.ctl_sid   0x000000000040bf48        0x8 uspace/srv_bd_vbd.p/srv_bd_vbd_vbd.c.o
+ *(COMMON)
+                0x000000000040bf50                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x000000000040bf50                . = ALIGN (0x8)
+                0x000000000040bf50                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x000000000040df50        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x000000000040df50                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x000000000040df50                . = ALIGN (0x8)
+                0x000000000040bf50                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x000000000040df50                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/srv_bd_vbd.p/srv_bd_vbd_disk.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/srv_bd_vbd.p/srv_bd_vbd_vbd.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/liblabel.a.p/label_src_empty.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/liblabel.a.p/label_src_label.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/liblabel.a.p/label_src_dummy.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/liblabel.a.p/label_src_mbr.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/liblabel.a.p/label_src_gpt.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdevice.a.p/device_src_bd_srv.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libblock.a.p/block_block.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdevice.a.p/device_src_bd.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/srv_bd_vbd elf64-x86-64)

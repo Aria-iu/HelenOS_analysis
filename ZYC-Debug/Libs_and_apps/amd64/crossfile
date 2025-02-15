@@ -1,0 +1,25 @@
+# See http://mesonbuild.com/Cross-compilation.html
+
+[binaries]
+c = '/home/zyc/.local/share/HelenOS/cross/bin/amd64-helenos-gcc'
+cpp = '/home/zyc/.local/share/HelenOS/cross/bin/amd64-helenos-g++'
+ar = '/home/zyc/.local/share/HelenOS/cross/bin/amd64-helenos-ar'
+strip = '/home/zyc/.local/share/HelenOS/cross/bin/amd64-helenos-strip'
+nm = '/home/zyc/.local/share/HelenOS/cross/bin/amd64-helenos-nm'
+objcopy = '/home/zyc/.local/share/HelenOS/cross/bin/amd64-helenos-objcopy'
+objdump = '/home/zyc/.local/share/HelenOS/cross/bin/amd64-helenos-objdump'
+as = '/home/zyc/.local/share/HelenOS/cross/bin/amd64-helenos-as'
+ld = '/home/zyc/.local/share/HelenOS/cross/bin/amd64-helenos-ld'
+
+[properties]
+has_function_printf = true
+needs_exe_wrapper = true
+
+cc_arch = 'amd64'
+bits = 64
+
+[host_machine]
+system = 'helenos'
+cpu_family = 'x86_64'
+cpu = 'x86_64'
+endian = 'little'

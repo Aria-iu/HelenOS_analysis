@@ -1,0 +1,966 @@
+Archive member included to satisfy reference by file (symbol)
+
+uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                              (--whole-archive)
+uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                              (--whole-archive)
+uspace/lib/libpcut.a.p/pcut_src_assert.c.o
+                              uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o (pcut_failed_assertion_fmt)
+uspace/lib/libpcut.a.p/pcut_src_helper.c.o
+                              uspace/lib/libpcut.a.p/pcut_src_assert.c.o (pcut_snprintf)
+uspace/lib/libpcut.a.p/pcut_src_main.c.o
+                              uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o (pcut_main)
+uspace/lib/libpcut.a.p/pcut_src_print.c.o
+                              uspace/lib/libpcut.a.p/pcut_src_main.c.o (pcut_print_tests)
+uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                              uspace/lib/libpcut.a.p/pcut_src_main.c.o (pcut_report_register_handler)
+uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+                              uspace/lib/libpcut.a.p/pcut_src_main.c.o (pcut_report_tap)
+uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+                              uspace/lib/libpcut.a.p/pcut_src_main.c.o (pcut_report_xml)
+uspace/lib/libpcut.a.p/pcut_src_run.c.o
+                              uspace/lib/libpcut.a.p/pcut_src_assert.c.o (pcut_failed_assertion)
+uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+                              uspace/lib/libpcut.a.p/pcut_src_main.c.o (pcut_str_equals)
+uspace/lib/libpcut.a.p/pcut_src_list.c.o
+                              uspace/lib/libpcut.a.p/pcut_src_main.c.o (pcut_get_real_next)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.0                     uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o (pio_read_32)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .data          0x0000000000000000        0x0 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .bss           0x0000000000000000        0x0 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .text          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_assert.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_assert.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_assert.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_helper.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_helper.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_helper.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_main.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_main.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_main.c.o
+ .text.pcut_is_arg_with_number
+                0x0000000000000000       0x4c uspace/lib/libpcut.a.p/pcut_src_main.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_print.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_print.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_print.c.o
+ .rodata.pcut_print_items.str1.1
+                0x0000000000000000       0x37 uspace/lib/libpcut.a.p/pcut_src_print.c.o
+ .text.pcut_print_items
+                0x0000000000000000       0x9e uspace/lib/libpcut.a.p/pcut_src_print.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ .rodata.pcut_str_error.str1.1
+                0x0000000000000000       0x13 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ .text.pcut_str_error
+                0x0000000000000000       0x2f uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_list.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_list.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libpcut.a.p/pcut_src_list.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+START GROUP
+LOAD uspace/lib/c/libstartfiles.a
+LOAD uspace/lib/libusbhost.a
+LOAD uspace/lib/libusb.a
+LOAD uspace/lib/libdrv.a
+LOAD uspace/lib/libinet.a
+LOAD uspace/lib/libc.so.0.0
+LOAD uspace/lib/libpcm.a
+LOAD uspace/lib/libdevice.a
+LOAD uspace/lib/libusbvirt.a
+LOAD uspace/lib/libusbdev.a
+LOAD uspace/lib/libpcut.a
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000400000                PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x0000000000400120                . = (SEGMENT_START ("text-segment", 0x400000) + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000400120      0x150
+ *(.hash)
+ .hash          0x0000000000400120      0x150 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x0000000000400270      0x438
+ *(.dynsym)
+ .dynsym        0x0000000000400270      0x438 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+
+.dynstr         0x00000000004006a8      0x1f9
+ *(.dynstr)
+ .dynstr        0x00000000004006a8      0x1f9 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+
+.gnu.version    0x00000000004008a2        0x0
+ *(.gnu.version)
+ .gnu.version   0x00000000004008a2        0x0 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+
+.gnu.version_d  0x00000000004008a8        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x00000000004008a8        0x0 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+
+.gnu.version_r  0x00000000004008a8        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x00000000004008a8        0x0 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+
+.rela.dyn       0x00000000004008a8       0x48
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text.__c_start
+                0x00000000004008a8        0x0 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .rela.text.pcut_main
+                0x00000000004008a8        0x0 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .rela.text.pcut_run_test_forking
+                0x00000000004008a8        0x0 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ .rela.rodata.cst8
+                0x00000000004008a8        0x0 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x00000000004008a8        0x0 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x00000000004008a8        0x0 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x00000000004008a8       0x48 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+
+.rela.plt       0x00000000004008f0      0x3d8
+ *(.rela.plt)
+ .rela.plt      0x00000000004008f0      0x3d8 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+ .rela.iplt     0x0000000000400cc8        0x0 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x0000000000400cd0      0x2a0
+ *(.plt)
+ .plt           0x0000000000400cd0      0x2a0 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+                0x0000000000400ce0                longjmp
+                0x0000000000400cf0                printf
+                0x0000000000400d00                snprintf
+                0x0000000000400d10                task_wait
+                0x0000000000400d20                memcpy
+                0x0000000000400d30                setvbuf
+                0x0000000000400d40                puts
+                0x0000000000400d50                pio_read_32
+                0x0000000000400d60                vsnprintf
+                0x0000000000400d70                fibril_condvar_signal
+                0x0000000000400d80                vfs_put
+                0x0000000000400d90                vfs_unlink_path
+                0x0000000000400da0                task_spawnvf
+                0x0000000000400db0                strtol
+                0x0000000000400dc0                pio_read_8
+                0x0000000000400dd0                str_chr
+                0x0000000000400de0                pio_write_16
+                0x0000000000400df0                fibril_condvar_wait_timeout
+                0x0000000000400e00                pio_write_8
+                0x0000000000400e10                __context_save
+                0x0000000000400e20                fibril_mutex_unlock
+                0x0000000000400e30                fibril_create
+                0x0000000000400e40                pio_write_32
+                0x0000000000400e50                task_kill
+                0x0000000000400e60                udelay
+                0x0000000000400e70                pio_read_16
+                0x0000000000400e80                str_cmp
+                0x0000000000400e90                task_get_id
+                0x0000000000400ea0                strdup
+                0x0000000000400eb0                __helenos_assert_abort
+                0x0000000000400ec0                vfs_read
+                0x0000000000400ed0                asprintf
+                0x0000000000400ee0                str_size
+                0x0000000000400ef0                str_lcmp
+                0x0000000000400f00                __libc_main
+                0x0000000000400f10                exit
+                0x0000000000400f20                fibril_add_ready
+                0x0000000000400f30                fileno
+                0x0000000000400f40                vfs_lookup_open
+                0x0000000000400f50                free
+                0x0000000000400f60                fibril_mutex_lock
+ *(.iplt)
+ .iplt          0x0000000000400f70        0x0 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+
+.plt.got        0x0000000000400f70        0x0
+ *(.plt.got)
+ .plt.got       0x0000000000400f70        0x0 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x0000000000400f70     0x2f9a
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ .text.startup.main
+                0x0000000000400f70       0x14 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+                0x0000000000400f70                main
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ *fill*         0x0000000000400f84        0xc 
+ .text.test_ops_16_flag
+                0x0000000000400f90      0x275 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ *fill*         0x0000000000401205        0xb 
+ .text.test_ops_32_flag
+                0x0000000000401210      0x275 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ *fill*         0x0000000000401485        0xb 
+ .text.test_ops_8_field
+                0x0000000000401490      0x23f uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ *fill*         0x00000000004016cf        0x1 
+ .text.test_ops_8_range
+                0x00000000004016d0      0x27b uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ *fill*         0x000000000040194b        0x5 
+ .text.test_ops_8_flag
+                0x0000000000401950      0x265 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ *fill*         0x0000000000401bb5        0xb 
+ .text.test_ops_32_field
+                0x0000000000401bc0      0x22f uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ *fill*         0x0000000000401def        0x1 
+ .text.test_ops_16_field
+                0x0000000000401df0      0x23f uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ *fill*         0x000000000040202f        0x1 
+ .text.test_ops_16_range
+                0x0000000000402030      0x283 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ *fill*         0x00000000004022b3        0xd 
+ .text.test_ops_32_range
+                0x00000000004022c0      0x283 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .text          0x0000000000402543        0xc uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                0x0000000000402543                _start
+ *fill*         0x000000000040254f        0x1 
+ .text.__c_start
+                0x0000000000402550       0x8c uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                0x0000000000402550                __c_start
+ *fill*         0x00000000004025dc        0x4 
+ .text.pcut_failed_assertion_fmt
+                0x00000000004025e0      0x10a uspace/lib/libpcut.a.p/pcut_src_assert.c.o
+                0x00000000004025e0                pcut_failed_assertion_fmt
+ *fill*         0x00000000004026ea        0x6 
+ .text.pcut_snprintf
+                0x00000000004026f0       0x7f uspace/lib/libpcut.a.p/pcut_src_helper.c.o
+                0x00000000004026f0                pcut_snprintf
+ *fill*         0x000000000040276f        0x1 
+ .text.run_suite
+                0x0000000000402770       0xec uspace/lib/libpcut.a.p/pcut_src_main.c.o
+ *fill*         0x000000000040285c        0x4 
+ .text.pcut_main
+                0x0000000000402860      0x447 uspace/lib/libpcut.a.p/pcut_src_main.c.o
+                0x0000000000402860                pcut_main
+ *fill*         0x0000000000402ca7        0x9 
+ .text.pcut_print_tests
+                0x0000000000402cb0       0x99 uspace/lib/libpcut.a.p/pcut_src_print.c.o
+                0x0000000000402cb0                pcut_print_tests
+ *fill*         0x0000000000402d49        0x7 
+ .text.pcut_print_fail_message
+                0x0000000000402d50       0x41 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                0x0000000000402d50                pcut_print_fail_message
+ *fill*         0x0000000000402d91        0xf 
+ .text.pcut_report_register_handler
+                0x0000000000402da0        0xd uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                0x0000000000402da0                pcut_report_register_handler
+ *fill*         0x0000000000402dad        0x3 
+ .text.pcut_report_init
+                0x0000000000402db0       0x22 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                0x0000000000402db0                pcut_report_init
+ *fill*         0x0000000000402dd2        0xe 
+ .text.pcut_report_suite_start
+                0x0000000000402de0       0x22 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                0x0000000000402de0                pcut_report_suite_start
+ *fill*         0x0000000000402e02        0xe 
+ .text.pcut_report_suite_done
+                0x0000000000402e10       0x22 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                0x0000000000402e10                pcut_report_suite_done
+ *fill*         0x0000000000402e32        0xe 
+ .text.pcut_report_test_start
+                0x0000000000402e40       0x22 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                0x0000000000402e40                pcut_report_test_start
+ *fill*         0x0000000000402e62        0xe 
+ .text.pcut_report_test_done
+                0x0000000000402e70       0x22 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                0x0000000000402e70                pcut_report_test_done
+ *fill*         0x0000000000402e92        0xe 
+ .text.pcut_report_test_done_unparsed
+                0x0000000000402ea0      0x15a uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                0x0000000000402ea0                pcut_report_test_done_unparsed
+ *fill*         0x0000000000402ffa        0x6 
+ .text.pcut_report_done
+                0x0000000000403000       0x22 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                0x0000000000403000                pcut_report_done
+ *fill*         0x0000000000403022        0xe 
+ .text.tap_test_start
+                0x0000000000403030       0x14 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ *fill*         0x0000000000403044        0xc 
+ .text.tap_suite_start
+                0x0000000000403050       0x29 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ *fill*         0x0000000000403079        0x7 
+ .text.tap_init
+                0x0000000000403080       0x2c uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ *fill*         0x00000000004030ac        0x4 
+ .text.tap_done
+                0x00000000004030b0       0x42 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ *fill*         0x00000000004030f2        0xe 
+ .text.tap_suite_done
+                0x0000000000403100       0x33 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ *fill*         0x0000000000403133        0xd 
+ .text.tap_test_done
+                0x0000000000403140      0x246 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ *fill*         0x0000000000403386        0xa 
+ .text.xml_test_start
+                0x0000000000403390       0x14 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ *fill*         0x00000000004033a4        0xc 
+ .text.xml_suite_done
+                0x00000000004033b0       0x21 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ *fill*         0x00000000004033d1        0xf 
+ .text.xml_suite_start
+                0x00000000004033e0       0x29 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ *fill*         0x0000000000403409        0x7 
+ .text.xml_done
+                0x0000000000403410        0xf uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ *fill*         0x000000000040341f        0x1 
+ .text.xml_init
+                0x0000000000403420       0x37 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ *fill*         0x0000000000403457        0x9 
+ .text.xml_test_done
+                0x0000000000403460      0x1dd uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ *fill*         0x000000000040363d        0x3 
+ .text.run_test
+                0x0000000000403640      0x135 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ *fill*         0x0000000000403775        0xb 
+ .text.pcut_failed_assertion
+                0x0000000000403780       0xca uspace/lib/libpcut.a.p/pcut_src_run.c.o
+                0x0000000000403780                pcut_failed_assertion
+ *fill*         0x000000000040384a        0x6 
+ .text.pcut_run_test_forked
+                0x0000000000403850       0x3f uspace/lib/libpcut.a.p/pcut_src_run.c.o
+                0x0000000000403850                pcut_run_test_forked
+ *fill*         0x000000000040388f        0x1 
+ .text.pcut_run_test_single
+                0x0000000000403890       0x3f uspace/lib/libpcut.a.p/pcut_src_run.c.o
+                0x0000000000403890                pcut_run_test_single
+ *fill*         0x00000000004038cf        0x1 
+ .text.pcut_get_test_timeout
+                0x00000000004038d0       0x2f uspace/lib/libpcut.a.p/pcut_src_run.c.o
+                0x00000000004038d0                pcut_get_test_timeout
+ *fill*         0x00000000004038ff        0x1 
+ .text.test_timeout_handler_fibril
+                0x0000000000403900       0x6c uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ *fill*         0x000000000040396c        0x4 
+ .text.pcut_str_equals
+                0x0000000000403970       0x13 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+                0x0000000000403970                pcut_str_equals
+ *fill*         0x0000000000403983        0xd 
+ .text.pcut_str_start_equals
+                0x0000000000403990       0x16 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+                0x0000000000403990                pcut_str_start_equals
+ *fill*         0x00000000004039a6        0xa 
+ .text.pcut_str_size
+                0x00000000004039b0        0xb uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+                0x00000000004039b0                pcut_str_size
+ *fill*         0x00000000004039bb        0x5 
+ .text.pcut_str_to_int
+                0x00000000004039c0       0x12 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+                0x00000000004039c0                pcut_str_to_int
+ *fill*         0x00000000004039d2        0xe 
+ .text.pcut_str_find_char
+                0x00000000004039e0        0xe uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+                0x00000000004039e0                pcut_str_find_char
+ *fill*         0x00000000004039ee        0x2 
+ .text.pcut_run_test_forking
+                0x00000000004039f0      0x249 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+                0x00000000004039f0                pcut_run_test_forking
+ *fill*         0x0000000000403c39        0x7 
+ .text.pcut_hook_before_test
+                0x0000000000403c40        0x6 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+                0x0000000000403c40                pcut_hook_before_test
+ *fill*         0x0000000000403c46        0xa 
+ .text.pcut_get_real_next
+                0x0000000000403c50       0x22 uspace/lib/libpcut.a.p/pcut_src_list.c.o
+                0x0000000000403c50                pcut_get_real_next
+ *fill*         0x0000000000403c72        0xe 
+ .text.pcut_get_real
+                0x0000000000403c80       0x2a uspace/lib/libpcut.a.p/pcut_src_list.c.o
+                0x0000000000403c80                pcut_get_real
+ *fill*         0x0000000000403caa        0x6 
+ .text.pcut_fix_list_get_real_head
+                0x0000000000403cb0      0x219 uspace/lib/libpcut.a.p/pcut_src_list.c.o
+                0x0000000000403cb0                pcut_fix_list_get_real_head
+ *fill*         0x0000000000403ec9        0x7 
+ .text.pcut_count_tests
+                0x0000000000403ed0       0x3a uspace/lib/libpcut.a.p/pcut_src_list.c.o
+                0x0000000000403ed0                pcut_count_tests
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000403f10      0x8a8
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.test_ops_16_flag.str1.1
+                0x0000000000403f10      0x3c1 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+                                         0x25 (size before relaxing)
+ *fill*         0x00000000004042d1        0x7 
+ .rodata.test_ops_16_flag.str1.8
+                0x00000000004042d8      0x4c9 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+                                         0xd9 (size before relaxing)
+ .rodata.test_ops_32_flag.str1.8
+                0x00000000004047a1       0x74 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .rodata.test_ops_32_flag.str1.1
+                0x00000000004047a1       0x1e uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .rodata.test_ops_8_field.str1.8
+                0x00000000004047a1       0x26 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .rodata.test_ops_8_field.str1.1
+                0x00000000004047a1       0x1d uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .rodata.test_ops_8_range.str1.8
+                0x00000000004047a1       0x66 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .rodata.test_ops_8_range.str1.1
+                0x00000000004047a1       0x1c uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .rodata.test_ops_8_flag.str1.8
+                0x00000000004047a1       0x6e uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .rodata.test_ops_8_flag.str1.1
+                0x00000000004047a1        0x4 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .rodata.test_ops_32_field.str1.8
+                0x00000000004047a1       0x28 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .rodata.test_ops_32_field.str1.1
+                0x00000000004047a1       0x27 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .rodata.test_ops_16_field.str1.8
+                0x00000000004047a1       0x28 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .rodata.test_ops_16_field.str1.1
+                0x00000000004047a1       0x1b uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .rodata.test_ops_16_range.str1.8
+                0x00000000004047a1       0x6a uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .rodata.test_ops_16_range.str1.1
+                0x00000000004047a1       0x30 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .rodata.test_ops_32_range.str1.8
+                0x00000000004047a1       0x6a uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .rodata.test_ops_32_range.str1.1
+                0x00000000004047a1       0x42 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .rodata.str1.1
+                0x00000000004047a1       0x81 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ *fill*         0x00000000004047a1        0x7 
+ .rodata.cst8   0x00000000004047a8        0x8 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .rodata.pcut_failed_assertion_fmt.str1.1
+                0x00000000004047b0        0x8 uspace/lib/libpcut.a.p/pcut_src_assert.c.o
+ .rodata.pcut_main.str1.1
+                0x00000000004047b0       0x80 uspace/lib/libpcut.a.p/pcut_src_main.c.o
+ .rodata.pcut_print_tests.str1.1
+                0x00000000004047b0       0x27 uspace/lib/libpcut.a.p/pcut_src_print.c.o
+ .rodata.pcut_print_tests.str1.8
+                0x00000000004047b0       0x5c uspace/lib/libpcut.a.p/pcut_src_print.c.o
+ .rodata.pcut_print_fail_message.str1.1
+                0x00000000004047b0        0xc uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+ .rodata.tap_suite_start.str1.1
+                0x00000000004047b0       0x17 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .rodata.tap_init.str1.1
+                0x00000000004047b0        0x7 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .rodata.tap_done.str1.1
+                0x00000000004047b0       0x30 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .rodata.tap_done.str1.8
+                0x00000000004047b0       0x21 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .rodata.tap_suite_done.str1.8
+                0x00000000004047b0       0x49 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .rodata.tap_test_done.str1.1
+                0x00000000004047b0       0x49 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .rodata.xml_suite_done.str1.8
+                0x00000000004047b0       0x1f uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .rodata.xml_suite_start.str1.1
+                0x00000000004047b0       0x14 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .rodata.xml_done.str1.1
+                0x00000000004047b0        0xa uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .rodata.xml_init.str1.1
+                0x00000000004047b0       0x31 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .rodata.xml_test_done.str1.1
+                0x00000000004047b0       0x63 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .rodata.xml_test_done.str1.8
+                0x00000000004047b0       0x24 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .rodata.run_test.str1.1
+                0x00000000004047b0        0x8 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .rodata.cst8   0x00000000004047b0        0x8 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .rodata.pcut_run_test_forking.str1.1
+                0x00000000004047b8       0x13 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ .rodata.pcut_run_test_forking.str1.8
+                0x00000000004047b8       0x21 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x00000000004047b8      0x1c4
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x00000000004047b8      0x1c4 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+                0x00000000004047b8                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x0000000000404980      0x840
+ *(.eh_frame)
+ .eh_frame      0x0000000000404980      0x1b8 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .eh_frame      0x0000000000404b38       0x28 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000404b60        0x0 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .eh_frame      0x0000000000404b60       0x20 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000404b80       0x28 uspace/lib/libpcut.a.p/pcut_src_assert.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000404ba8       0x20 uspace/lib/libpcut.a.p/pcut_src_helper.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000404bc8       0x60 uspace/lib/libpcut.a.p/pcut_src_main.c.o
+                                         0xa0 (size before relaxing)
+ .eh_frame      0x0000000000404c28       0x28 uspace/lib/libpcut.a.p/pcut_src_print.c.o
+                                         0x60 (size before relaxing)
+ .eh_frame      0x0000000000404c50      0x160 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+                                        0x178 (size before relaxing)
+ .eh_frame      0x0000000000404db0       0xe8 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+                                        0x100 (size before relaxing)
+ .eh_frame      0x0000000000404e98       0xd0 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+                                         0xe8 (size before relaxing)
+ .eh_frame      0x0000000000404f68       0xa8 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+                                         0xc0 (size before relaxing)
+ .eh_frame      0x0000000000405010      0x118 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+                                        0x158 (size before relaxing)
+ .eh_frame      0x0000000000405128       0x98 uspace/lib/libpcut.a.p/pcut_src_list.c.o
+                                         0xb0 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x00000000004051c0        0x0
+ *(.sframe)
+ .sframe        0x00000000004051c0        0x0 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x00000000004061c0                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0x00000000004061c0        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x00000000004061c0        0x0
+                0x00000000004061c0                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x00000000004061c0                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x00000000004061c0        0x0
+                0x00000000004061c0                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x00000000004061c0                PROVIDE (__init_array_end = .)
+
+.fini_array     0x00000000004061c0        0x0
+                0x00000000004061c0                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x00000000004061c0                PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x00000000004061c0        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x00000000004061c0        0x0 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+
+.dynamic        0x00000000004061c0      0x150
+ *(.dynamic)
+ .dynamic       0x00000000004061c0      0x150 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+                0x00000000004061c0                _DYNAMIC
+
+.got            0x0000000000406310        0x0
+ *(.got)
+ .got           0x0000000000406310        0x0 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ *(.igot)
+                0x0000000000406310                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x0000000000406310      0x160
+ *(.got.plt)
+ .got.plt       0x0000000000406310      0x160 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+                0x0000000000406310                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x0000000000406470        0x0 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+
+.data           0x0000000000406480      0x560
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.pcut_item_last
+                0x0000000000406480       0x50 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .data.pcut_main_extras
+                0x00000000004064d0       0x18 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ *fill*         0x00000000004064e8       0x18 
+ .data.pcut_item_10
+                0x0000000000406500       0x50 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .data.pcut_extras_10
+                0x0000000000406550        0x8 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ *fill*         0x0000000000406558        0x8 
+ .data.pcut_item_9
+                0x0000000000406560       0x50 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .data.pcut_extras_9
+                0x00000000004065b0        0x8 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ *fill*         0x00000000004065b8        0x8 
+ .data.pcut_item_8
+                0x00000000004065c0       0x50 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .data.pcut_extras_8
+                0x0000000000406610        0x8 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ *fill*         0x0000000000406618        0x8 
+ .data.pcut_item_7
+                0x0000000000406620       0x50 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .data.pcut_extras_7
+                0x0000000000406670        0x8 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ *fill*         0x0000000000406678        0x8 
+ .data.pcut_item_6
+                0x0000000000406680       0x50 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .data.pcut_extras_6
+                0x00000000004066d0        0x8 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ *fill*         0x00000000004066d8        0x8 
+ .data.pcut_item_5
+                0x00000000004066e0       0x50 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .data.pcut_extras_5
+                0x0000000000406730        0x8 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ *fill*         0x0000000000406738        0x8 
+ .data.pcut_item_4
+                0x0000000000406740       0x50 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .data.pcut_extras_4
+                0x0000000000406790        0x8 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ *fill*         0x0000000000406798        0x8 
+ .data.pcut_item_3
+                0x00000000004067a0       0x50 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .data.pcut_extras_3
+                0x00000000004067f0        0x8 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ *fill*         0x00000000004067f8        0x8 
+ .data.pcut_item_2
+                0x0000000000406800       0x50 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .data.pcut_extras_2
+                0x0000000000406850        0x8 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ *fill*         0x0000000000406858        0x8 
+ .data.pcut_item_1
+                0x0000000000406860       0x50 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ *fill*         0x00000000004068b0       0x10 
+ .data.pcut_item_0
+                0x00000000004068c0       0x50 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .data.empty_main_extra
+                0x0000000000406910       0x18 uspace/lib/libpcut.a.p/pcut_src_main.c.o
+ .data.pcut_run_mode
+                0x0000000000406928        0x4 uspace/lib/libpcut.a.p/pcut_src_main.c.o
+                0x0000000000406928                pcut_run_mode
+ *fill*         0x000000000040692c       0x14 
+ .data.pcut_report_tap
+                0x0000000000406940       0x30 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+                0x0000000000406940                pcut_report_tap
+ *fill*         0x0000000000406970       0x10 
+ .data.pcut_report_xml
+                0x0000000000406980       0x30 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+                0x0000000000406980                pcut_report_xml
+ .data.forced_termination_cv
+                0x00000000004069b0       0x10 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ .data.forced_termination_mutex
+                0x00000000004069c0       0x20 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+
+.data1
+ *(.data1)
+                0x00000000004069e0                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x00000000004069e0                . = .
+                0x00000000004069e0                __bss_start = .
+
+.bss            0x00000000004069e0     0x63c0
+ *(.dynbss)
+ .dynbss        0x00000000004069e0       0x68 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+                0x00000000004069e0                stdout
+                0x00000000004069f0                stdin
+                0x0000000000406a00                __progsymbols
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss.regs      0x0000000000406a48        0x8 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+ .bss.message_buffer_index
+                0x0000000000406a50        0x4 uspace/lib/libpcut.a.p/pcut_src_assert.c.o
+ *fill*         0x0000000000406a54        0xc 
+ .bss.message_buffer
+                0x0000000000406a60      0x202 uspace/lib/libpcut.a.p/pcut_src_assert.c.o
+ *fill*         0x0000000000406c62       0x1e 
+ .bss.buffer_for_error_messages
+                0x0000000000406c80     0x1000 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+ .bss.buffer_for_extra_output
+                0x0000000000407c80     0x1000 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+ .bss.report_ops
+                0x0000000000408c80        0x8 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+ .bss.failed_test_names
+                0x0000000000408c88        0x8 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .bss.failed_tests_in_suite
+                0x0000000000408c90        0x4 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .bss.tests_in_suite
+                0x0000000000408c94        0x4 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .bss.failed_test_counter
+                0x0000000000408c98        0x4 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .bss.test_counter
+                0x0000000000408c9c        0x4 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .bss.failed_tests_in_suite
+                0x0000000000408ca0        0x4 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .bss.tests_in_suite
+                0x0000000000408ca4        0x4 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .bss.test_counter
+                0x0000000000408ca8        0x4 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ *fill*         0x0000000000408cac        0x4 
+ .bss.prev_message.0
+                0x0000000000408cb0        0x8 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ *fill*         0x0000000000408cb8        0x8 
+ .bss.default_suite
+                0x0000000000408cc0       0x50 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .bss.current_suite
+                0x0000000000408d10        0x8 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .bss.current_test
+                0x0000000000408d18        0x8 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .bss.leave_means_exit
+                0x0000000000408d20        0x4 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .bss.print_test_error
+                0x0000000000408d24        0x4 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .bss.report_test_result
+                0x0000000000408d28        0x4 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .bss.execute_teardown_on_failure
+                0x0000000000408d2c        0x4 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ *fill*         0x0000000000408d30       0x10 
+ .bss.start_test_jump
+                0x0000000000408d40       0x48 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .bss.test_running
+                0x0000000000408d88        0x4 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ *fill*         0x0000000000408d8c        0x4 
+ .bss.test_task_id
+                0x0000000000408d90        0x8 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ *fill*         0x0000000000408d98        0x8 
+ .bss.extra_output_buffer
+                0x0000000000408da0     0x2000 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ .bss.error_message_buffer
+                0x000000000040ada0     0x2000 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ *(COMMON)
+                0x000000000040cda0                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x000000000040cda0                . = ALIGN (0x8)
+                0x000000000040cda0                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x000000000040eda0        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x000000000040eda0                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x000000000040eda0                . = ALIGN (0x8)
+                0x000000000040cda0                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x000000000040eda0                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/test_test_drv_xhci.p/drv_bus_usb_xhci_test_reg-ops.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libpcut.a.p/pcut_src_assert.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libpcut.a.p/pcut_src_helper.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libpcut.a.p/pcut_src_main.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libpcut.a.p/pcut_src_print.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libpcut.a.p/pcut_src_report_report.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libpcut.a.p/pcut_src_report_tap.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libpcut.a.p/pcut_src_report_xml.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libpcut.a.p/pcut_src_run.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libpcut.a.p/pcut_src_os_helenos.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libpcut.a.p/pcut_src_list.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/test_test_drv_xhci elf64-x86-64)

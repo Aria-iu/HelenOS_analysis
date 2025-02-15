@@ -1,0 +1,854 @@
+Archive member included to satisfy reference by file (symbol)
+
+uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                              (--whole-archive)
+uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                              (--whole-archive)
+uspace/lib/libinet.a.p/inet_src_addr.c.o
+                              uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o (inet_addr_format)
+uspace/lib/libinet.a.p/inet_src_dnsr.c.o
+                              uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o (dnsr_set_srvaddr)
+uspace/lib/libinet.a.p/inet_src_endpoint.c.o
+                              uspace/srv_net_dhcp.p/srv_net_dhcp_transport.c.o (inet_ep_init)
+uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+                              uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o (eth_addr_encode)
+uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+                              uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o (inetcfg_init)
+uspace/lib/libinet.a.p/inet_src_udp.c.o
+                              uspace/srv_net_dhcp.p/srv_net_dhcp_transport.c.o (udp_create)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.0                     uspace/lib/libinet.a.p/inet_src_dnsr.c.o (loc_exchange_end)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_net_dhcp.p/srv_net_dhcp_main.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_dhcp.p/srv_net_dhcp_main.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_dhcp.p/srv_net_dhcp_main.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_net_dhcp.p/srv_net_dhcp_transport.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_dhcp.p/srv_net_dhcp_transport.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_dhcp.p/srv_net_dhcp_transport.c.o
+ .text.dhcp_transport_fini
+                0x0000000000000000       0x22 uspace/srv_net_dhcp.p/srv_net_dhcp_transport.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .text          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_parse_v4
+                0x0000000000000000       0xf0 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_parse_v6
+                0x0000000000000000      0x378 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.addr128  0x0000000000000000        0xd uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.addr128_compare
+                0x0000000000000000       0x1d uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.eth_addr_solicited_node
+                0x0000000000000000       0x51 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.host2addr128_t_be
+                0x0000000000000000        0xd uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.addr128_t_be2host
+                0x0000000000000000        0xd uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr
+                0x0000000000000000       0x29 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr
+                0x0000000000000000       0x2d uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr6
+                0x0000000000000000       0x5c uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr6
+                0x0000000000000000       0x62 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_addr
+                0x0000000000000000       0x13 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_naddr
+                0x0000000000000000       0x17 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_any
+                0x0000000000000000       0x14 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_any
+                0x0000000000000000       0x18 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_compare
+                0x0000000000000000       0x4f uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_is_any
+                0x0000000000000000       0x3c uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_compare
+                0x0000000000000000       0x4f uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_compare_mask
+                0x0000000000000000       0xe6 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_parse
+                0x0000000000000000       0x5c uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_parse
+                0x0000000000000000       0x84 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.inet_addr_get.str1.8
+                0x0000000000000000       0x29 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.inet_addr_get.str1.1
+                0x0000000000000000        0x6 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_get
+                0x0000000000000000       0x4d uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_get
+                0x0000000000000000       0x54 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_set6
+                0x0000000000000000       0x14 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_set6
+                0x0000000000000000       0x18 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.inet_addr_any_addr6
+                0x0000000000000000       0x14 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .data.inet_eth_addr_solicited_node
+                0x0000000000000000        0x8 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_dnsr.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_dnsr.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_dnsr.c.o
+ .rodata.dnsr_name2host.str1.8
+                0x0000000000000000       0x4f uspace/lib/libinet.a.p/inet_src_dnsr.c.o
+ .text.dnsr_name2host
+                0x0000000000000000      0x26f uspace/lib/libinet.a.p/inet_src_dnsr.c.o
+ .text.dnsr_hostinfo_destroy
+                0x0000000000000000       0x31 uspace/lib/libinet.a.p/inet_src_dnsr.c.o
+ .text.dnsr_get_srvaddr
+                0x0000000000000000       0xf5 uspace/lib/libinet.a.p/inet_src_dnsr.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_endpoint.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_endpoint.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_endpoint.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .text.eth_addr_decode
+                0x0000000000000000       0x43 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .text.eth_addr_compare
+                0x0000000000000000       0x19 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .rodata.eth_addr_format.str1.1
+                0x0000000000000000        0xb uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .text.eth_addr_format
+                0x0000000000000000       0x6f uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .rodata.eth_addr_broadcast
+                0x0000000000000000        0x8 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .text.inetcfg_get_ids_internal.constprop.0
+                0x0000000000000000      0x198 uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .text.inetcfg_addr_delete
+                0x0000000000000000       0x3c uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .text.inetcfg_addr_get
+                0x0000000000000000      0x15c uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .text.inetcfg_addr_get_id
+                0x0000000000000000       0xb3 uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .text.inetcfg_get_addr_list
+                0x0000000000000000       0x15 uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .text.inetcfg_get_link_list
+                0x0000000000000000       0x15 uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .text.inetcfg_get_sroute_list
+                0x0000000000000000       0x15 uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .text.inetcfg_link_add
+                0x0000000000000000       0x3c uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .text.inetcfg_link_remove
+                0x0000000000000000       0x3c uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .text.inetcfg_sroute_delete
+                0x0000000000000000       0x3c uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .text.inetcfg_sroute_get
+                0x0000000000000000      0x1a4 uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .text.inetcfg_sroute_get_id
+                0x0000000000000000       0xab uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_udp.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_udp.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_udp.c.o
+ .text.udp_rmsg_remote_ep
+                0x0000000000000000       0x16 uspace/lib/libinet.a.p/inet_src_udp.c.o
+ .text.udp_rerr_type
+                0x0000000000000000        0x8 uspace/lib/libinet.a.p/inet_src_udp.c.o
+ .text.udp_rerr_code
+                0x0000000000000000        0x8 uspace/lib/libinet.a.p/inet_src_udp.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+LOAD uspace/srv_net_dhcp.p/srv_net_dhcp_main.c.o
+LOAD uspace/srv_net_dhcp.p/srv_net_dhcp_transport.c.o
+START GROUP
+LOAD uspace/lib/c/libstartfiles.a
+LOAD uspace/lib/libinet.a
+LOAD uspace/lib/libc.so.0.0
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000400000                PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x0000000000400120                . = (SEGMENT_START ("text-segment", 0x400000) + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000400120      0x170
+ *(.hash)
+ .hash          0x0000000000400120      0x170 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x0000000000400290      0x4f8
+ *(.dynsym)
+ .dynsym        0x0000000000400290      0x4f8 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+
+.dynstr         0x0000000000400788      0x340
+ *(.dynstr)
+ .dynstr        0x0000000000400788      0x340 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+
+.gnu.version    0x0000000000400ac8        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000400ac8        0x0 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+
+.gnu.version_d  0x0000000000400ac8        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000400ac8        0x0 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+
+.gnu.version_r  0x0000000000400ac8        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000400ac8        0x0 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+
+.rela.dyn       0x0000000000400ac8       0x18
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text.__c_start
+                0x0000000000400ac8        0x0 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ .rela.rodata.cst8
+                0x0000000000400ac8        0x0 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x0000000000400ac8        0x0 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000400ac8        0x0 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x0000000000400ac8       0x18 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+
+.rela.plt       0x0000000000400ae0      0x4c8
+ *(.rela.plt)
+ .rela.plt      0x0000000000400ae0      0x4c8 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+ .rela.iplt     0x0000000000400fa8        0x0 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x0000000000400fb0      0x340
+ *(.plt)
+ .plt           0x0000000000400fb0      0x340 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+                0x0000000000400fc0                loc_exchange_end
+                0x0000000000400fd0                rndgen_create
+                0x0000000000400fe0                task_retval
+                0x0000000000400ff0                loc_service_connect
+                0x0000000000401000                printf
+                0x0000000000401010                async_hangup
+                0x0000000000401020                async_wait_for
+                0x0000000000401030                snprintf
+                0x0000000000401040                log_init
+                0x0000000000401050                async_data_write_start
+                0x0000000000401060                loc_service_register
+                0x0000000000401070                async_get_call
+                0x0000000000401080                fibril_timer_clear
+                0x0000000000401090                async_send_1
+                0x00000000004010a0                loc_server_unregister
+                0x00000000004010b0                rndgen_uint32
+                0x00000000004010c0                puts
+                0x00000000004010d0                malloc
+                0x00000000004010e0                async_req_1_0
+                0x00000000004010f0                loc_service_get_id
+                0x0000000000401100                async_answer_0
+                0x0000000000401110                fibril_condvar_wait
+                0x0000000000401120                log_msg
+                0x0000000000401130                async_data_read
+                0x0000000000401140                fibril_timer_destroy
+                0x0000000000401150                async_exchange_end
+                0x0000000000401160                calloc
+                0x0000000000401170                fibril_timer_set
+                0x0000000000401180                fibril_condvar_initialize
+                0x0000000000401190                fibril_condvar_broadcast
+                0x00000000004011a0                fibril_mutex_unlock
+                0x00000000004011b0                str_dup
+                0x00000000004011c0                async_create_callback_port
+                0x00000000004011d0                __helenos_assert_abort
+                0x00000000004011e0                async_accept_0
+                0x00000000004011f0                async_data_read_start
+                0x0000000000401200                rndgen_destroy
+                0x0000000000401210                asprintf
+                0x0000000000401220                loc_server_register
+                0x0000000000401230                str_size
+                0x0000000000401240                async_exchange_begin
+                0x0000000000401250                async_send_0
+                0x0000000000401260                str_error
+                0x0000000000401270                __libc_main
+                0x0000000000401280                async_manager
+                0x0000000000401290                async_forget
+                0x00000000004012a0                async_req_0_0
+                0x00000000004012b0                fibril_timer_create
+                0x00000000004012c0                async_set_fallback_port_handler
+                0x00000000004012d0                free
+                0x00000000004012e0                fibril_mutex_lock
+ *(.iplt)
+ .iplt          0x00000000004012f0        0x0 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+
+.plt.got        0x00000000004012f0        0x0
+ *(.plt.got)
+ .plt.got       0x00000000004012f0        0x0 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x00000000004012f0     0x2660
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ .text.startup.main
+                0x00000000004012f0       0xeb uspace/srv_net_dhcp.p/srv_net_dhcp_main.c.o
+                0x00000000004012f0                main
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ *fill*         0x00000000004013db        0x5 
+ .text.dhcp_send_request
+                0x00000000004013e0       0xe7 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+ *fill*         0x00000000004014c7        0x9 
+ .text.dhcpsrv_request_timeout
+                0x00000000004014d0       0xff uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+ *fill*         0x00000000004015cf        0x1 
+ .text.dhcp_send_discover
+                0x00000000004015d0       0xa2 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+ *fill*         0x0000000000401672        0xe 
+ .text.dhcpsrv_discover_timeout
+                0x0000000000401680       0xf7 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+ *fill*         0x0000000000401777        0x9 
+ .text.dhcpsrv_recv
+                0x0000000000401780      0x7cd uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+ *fill*         0x0000000000401f4d        0x3 
+ .text.dhcpsrv_links_init
+                0x0000000000401f50       0x1b uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+                0x0000000000401f50                dhcpsrv_links_init
+ *fill*         0x0000000000401f6b        0x5 
+ .text.dhcpsrv_link_add
+                0x0000000000401f70      0x2ca uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+                0x0000000000401f70                dhcpsrv_link_add
+ *fill*         0x000000000040223a        0x6 
+ .text.dhcpsrv_link_remove
+                0x0000000000402240        0xb uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+                0x0000000000402240                dhcpsrv_link_remove
+ *fill*         0x000000000040224b        0x5 
+ .text.dhcpsrv_discover
+                0x0000000000402250       0xe9 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+                0x0000000000402250                dhcpsrv_discover
+ *fill*         0x0000000000402339        0x7 
+ .text.dhcp_client_conn
+                0x0000000000402340      0x129 uspace/srv_net_dhcp.p/srv_net_dhcp_main.c.o
+ *fill*         0x0000000000402469        0x7 
+ .text.dhcp_link_state
+                0x0000000000402470       0x1d uspace/srv_net_dhcp.p/srv_net_dhcp_transport.c.o
+ *fill*         0x000000000040248d        0x3 
+ .text.dhcp_recv_err
+                0x0000000000402490       0x1d uspace/srv_net_dhcp.p/srv_net_dhcp_transport.c.o
+ *fill*         0x00000000004024ad        0x3 
+ .text.dhcp_recv_msg
+                0x00000000004024b0       0xc2 uspace/srv_net_dhcp.p/srv_net_dhcp_transport.c.o
+ *fill*         0x0000000000402572        0xe 
+ .text.dhcp_send
+                0x0000000000402580       0x85 uspace/srv_net_dhcp.p/srv_net_dhcp_transport.c.o
+                0x0000000000402580                dhcp_send
+ *fill*         0x0000000000402605        0xb 
+ .text.dhcp_transport_init
+                0x0000000000402610       0xe4 uspace/srv_net_dhcp.p/srv_net_dhcp_transport.c.o
+                0x0000000000402610                dhcp_transport_init
+ .text          0x00000000004026f4        0xc uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                0x00000000004026f4                _start
+ .text.__c_start
+                0x0000000000402700       0x8c uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                0x0000000000402700                __c_start
+ *fill*         0x000000000040278c        0x4 
+ .text.inet_addr_format_v6
+                0x0000000000402790      0x3bb uspace/lib/libinet.a.p/inet_src_addr.c.o
+ *fill*         0x0000000000402b4b        0x5 
+ .text.inet_addr_format
+                0x0000000000402b50       0x78 uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000402b50                inet_addr_format
+ *fill*         0x0000000000402bc8        0x8 
+ .text.inet_naddr_format
+                0x0000000000402bd0       0xe0 uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000402bd0                inet_naddr_format
+ .text.inet_addr_set
+                0x0000000000402cb0        0xf uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000402cb0                inet_addr_set
+ *fill*         0x0000000000402cbf        0x1 
+ .text.inet_naddr_set
+                0x0000000000402cc0       0x13 uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000402cc0                inet_naddr_set
+ *fill*         0x0000000000402cd3        0xd 
+ .text.dnsr_set_srvaddr
+                0x0000000000402ce0       0xf5 uspace/lib/libinet.a.p/inet_src_dnsr.c.o
+                0x0000000000402ce0                dnsr_set_srvaddr
+ *fill*         0x0000000000402dd5        0xb 
+ .text.inet_ep_init
+                0x0000000000402de0       0x15 uspace/lib/libinet.a.p/inet_src_endpoint.c.o
+                0x0000000000402de0                inet_ep_init
+ *fill*         0x0000000000402df5        0xb 
+ .text.inet_ep2_init
+                0x0000000000402e00       0x1d uspace/lib/libinet.a.p/inet_src_endpoint.c.o
+                0x0000000000402e00                inet_ep2_init
+ *fill*         0x0000000000402e1d        0x3 
+ .text.eth_addr_encode
+                0x0000000000402e20       0x47 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+                0x0000000000402e20                eth_addr_encode
+ *fill*         0x0000000000402e67        0x9 
+ .text.inetcfg_init
+                0x0000000000402e70       0x71 uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+                0x0000000000402e70                inetcfg_init
+ *fill*         0x0000000000402ee1        0xf 
+ .text.inetcfg_addr_create_static
+                0x0000000000402ef0       0xd4 uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+                0x0000000000402ef0                inetcfg_addr_create_static
+ *fill*         0x0000000000402fc4        0xc 
+ .text.inetcfg_link_get
+                0x0000000000402fd0      0x11c uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+                0x0000000000402fd0                inetcfg_link_get
+ *fill*         0x00000000004030ec        0x4 
+ .text.inetcfg_sroute_create
+                0x00000000004030f0      0x11a uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+                0x00000000004030f0                inetcfg_sroute_create
+ *fill*         0x000000000040320a        0x6 
+ .text.udp_cb_conn
+                0x0000000000403210      0x1b9 uspace/lib/libinet.a.p/inet_src_udp.c.o
+ *fill*         0x00000000004033c9        0x7 
+ .text.udp_create
+                0x00000000004033d0      0x13e uspace/lib/libinet.a.p/inet_src_udp.c.o
+                0x00000000004033d0                udp_create
+ *fill*         0x000000000040350e        0x2 
+ .text.udp_destroy
+                0x0000000000403510       0x69 uspace/lib/libinet.a.p/inet_src_udp.c.o
+                0x0000000000403510                udp_destroy
+ *fill*         0x0000000000403579        0x7 
+ .text.udp_assoc_create
+                0x0000000000403580      0x14a uspace/lib/libinet.a.p/inet_src_udp.c.o
+                0x0000000000403580                udp_assoc_create
+ *fill*         0x00000000004036ca        0x6 
+ .text.udp_assoc_destroy
+                0x00000000004036d0       0x69 uspace/lib/libinet.a.p/inet_src_udp.c.o
+                0x00000000004036d0                udp_assoc_destroy
+ *fill*         0x0000000000403739        0x7 
+ .text.udp_assoc_set_nolocal
+                0x0000000000403740       0x3d uspace/lib/libinet.a.p/inet_src_udp.c.o
+                0x0000000000403740                udp_assoc_set_nolocal
+ *fill*         0x000000000040377d        0x3 
+ .text.udp_assoc_send_msg
+                0x0000000000403780      0x102 uspace/lib/libinet.a.p/inet_src_udp.c.o
+                0x0000000000403780                udp_assoc_send_msg
+ *fill*         0x0000000000403882        0xe 
+ .text.udp_assoc_userptr
+                0x0000000000403890        0xa uspace/lib/libinet.a.p/inet_src_udp.c.o
+                0x0000000000403890                udp_assoc_userptr
+ *fill*         0x000000000040389a        0x6 
+ .text.udp_rmsg_size
+                0x00000000004038a0        0xa uspace/lib/libinet.a.p/inet_src_udp.c.o
+                0x00000000004038a0                udp_rmsg_size
+ *fill*         0x00000000004038aa        0x6 
+ .text.udp_rmsg_read
+                0x00000000004038b0       0xa0 uspace/lib/libinet.a.p/inet_src_udp.c.o
+                0x00000000004038b0                udp_rmsg_read
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000403950      0x68c
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.dhcpsrv_request_timeout.str1.8
+                0x0000000000403950      0x264 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+                                         0x29 (size before relaxing)
+ .rodata.dhcpsrv_request_timeout.str1.1
+                0x0000000000403bb4      0x414 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+                                         0x89 (size before relaxing)
+ .rodata.dhcpsrv_discover_timeout.str1.1
+                0x0000000000403fc8       0x67 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+ .rodata.dhcpsrv_recv.str1.1
+                0x0000000000403fc8      0x147 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+ .rodata.dhcpsrv_recv.str1.8
+                0x0000000000403fc8       0xed uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+ .rodata.dhcpsrv_link_add.str1.1
+                0x0000000000403fc8       0x49 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+ .rodata.dhcpsrv_link_add.str1.8
+                0x0000000000403fc8       0x87 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+ .rodata.dhcpsrv_discover.str1.1
+                0x0000000000403fc8       0x17 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+ .rodata.cst8   0x0000000000403fc8        0x8 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+ .rodata.dhcp_client_conn.str1.1
+                0x0000000000403fd0       0x52 uspace/srv_net_dhcp.p/srv_net_dhcp_main.c.o
+ .rodata.main.str1.1
+                0x0000000000403fd0       0x49 uspace/srv_net_dhcp.p/srv_net_dhcp_main.c.o
+ .rodata.main.str1.8
+                0x0000000000403fd0       0x68 uspace/srv_net_dhcp.p/srv_net_dhcp_main.c.o
+ .rodata.dhcp_link_state.str1.1
+                0x0000000000403fd0       0x12 uspace/srv_net_dhcp.p/srv_net_dhcp_transport.c.o
+ .rodata.dhcp_recv_err.str1.1
+                0x0000000000403fd0       0x14 uspace/srv_net_dhcp.p/srv_net_dhcp_transport.c.o
+ .rodata.dhcp_recv_msg.str1.1
+                0x0000000000403fd0       0x29 uspace/srv_net_dhcp.p/srv_net_dhcp_transport.c.o
+ .rodata.dhcp_recv_msg.str1.8
+                0x0000000000403fd0       0x1f uspace/srv_net_dhcp.p/srv_net_dhcp_transport.c.o
+ .rodata.dhcp_send.str1.1
+                0x0000000000403fd0       0x17 uspace/srv_net_dhcp.p/srv_net_dhcp_transport.c.o
+ .rodata.dhcp_transport_init.str1.1
+                0x0000000000403fd0       0x16 uspace/srv_net_dhcp.p/srv_net_dhcp_transport.c.o
+ .rodata.cst8   0x0000000000403fd0        0x8 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .rodata.inet_addr_format_v6.str1.1
+                0x0000000000403fd8        0xb uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.inet_addr_format.str1.1
+                0x0000000000403fd8       0x11 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.inet_naddr_format.str1.1
+                0x0000000000403fd8        0x8 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.addr32_broadcast_all_hosts
+                0x0000000000403fd8        0x4 uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000403fd8                addr32_broadcast_all_hosts
+ .rodata.dnsr_name2host.str1.1
+                0x0000000000403fdc        0x9 uspace/lib/libinet.a.p/inet_src_dnsr.c.o
+ .rodata.inetcfg_init.str1.8
+                0x0000000000403fdc       0x2c uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .rodata.inetcfg_init.str1.1
+                0x0000000000403fdc       0x1e uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .rodata.inetcfg_addr_get.str1.1
+                0x0000000000403fdc       0x1c uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .rodata.udp_create.str1.1
+                0x0000000000403fdc        0x8 uspace/lib/libinet.a.p/inet_src_udp.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x0000000000403fdc      0x154
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x0000000000403fdc      0x154 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+                0x0000000000403fdc                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x0000000000404130      0x6d4
+ *(.eh_frame)
+ .eh_frame      0x0000000000404130      0x198 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+ .eh_frame      0x00000000004042c8       0x28 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x00000000004042f0        0x0 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+ .eh_frame      0x00000000004042f0       0x48 uspace/srv_net_dhcp.p/srv_net_dhcp_main.c.o
+                                         0x60 (size before relaxing)
+ .eh_frame      0x0000000000404338       0xd8 uspace/srv_net_dhcp.p/srv_net_dhcp_transport.c.o
+                                        0x110 (size before relaxing)
+ .eh_frame      0x0000000000404410       0x20 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000404430       0xd8 uspace/lib/libinet.a.p/inet_src_addr.c.o
+                                        0x478 (size before relaxing)
+ .eh_frame      0x0000000000404508       0x30 uspace/lib/libinet.a.p/inet_src_dnsr.c.o
+                                         0xd0 (size before relaxing)
+ .eh_frame      0x0000000000404538       0x40 uspace/lib/libinet.a.p/inet_src_endpoint.c.o
+                                         0x58 (size before relaxing)
+ .eh_frame      0x0000000000404578       0x20 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+                                         0xa0 (size before relaxing)
+ .eh_frame      0x0000000000404598       0xb8 uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+                                        0x2b0 (size before relaxing)
+ .eh_frame      0x0000000000404650      0x1b4 uspace/lib/libinet.a.p/inet_src_udp.c.o
+                                        0x230 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x0000000000404804        0x0
+ *(.sframe)
+ .sframe        0x0000000000404804        0x0 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x0000000000405000                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0x0000000000405000        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0000000000405000        0x0
+                0x0000000000405000                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x0000000000405000                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x0000000000405000        0x0
+                0x0000000000405000                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x0000000000405000                PROVIDE (__init_array_end = .)
+
+.fini_array     0x0000000000405000        0x0
+                0x0000000000405000                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x0000000000405000                PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x0000000000405000        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x0000000000405000        0x0 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+
+.dynamic        0x0000000000405000      0x150
+ *(.dynamic)
+ .dynamic       0x0000000000405000      0x150 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+                0x0000000000405000                _DYNAMIC
+
+.got            0x0000000000405150        0x0
+ *(.got)
+ .got           0x0000000000405150        0x0 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+ *(.igot)
+                0x0000000000405150                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x0000000000405150      0x1b0
+ *(.got.plt)
+ .got.plt       0x0000000000405150      0x1b0 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+                0x0000000000405150                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x0000000000405300        0x0 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+
+.data           0x0000000000405300       0x40
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.dhcp_transport_cb
+                0x0000000000405300       0x18 uspace/srv_net_dhcp.p/srv_net_dhcp_transport.c.o
+ *fill*         0x0000000000405318        0x8 
+ .data.dnsr_sess_mutex
+                0x0000000000405320       0x20 uspace/lib/libinet.a.p/inet_src_dnsr.c.o
+
+.data1
+ *(.data1)
+                0x0000000000405340                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x0000000000405340                . = .
+                0x0000000000405340                __bss_start = .
+
+.bss            0x0000000000405340      0x870
+ *(.dynbss)
+ .dynbss        0x0000000000405340       0x48 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+                0x0000000000405340                __progsymbols
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss.inetcfg_inited
+                0x0000000000405388        0x1 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+                0x0000000000405388                inetcfg_inited
+ *fill*         0x0000000000405389        0x7 
+ .bss.dhcp_links
+                0x0000000000405390       0x10 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+ .bss.msgbuf    0x00000000004053a0      0x400 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+ .bss.msgbuf    0x00000000004057a0      0x400 uspace/srv_net_dhcp.p/srv_net_dhcp_transport.c.o
+ .bss.dnsr_sess
+                0x0000000000405ba0        0x8 uspace/lib/libinet.a.p/inet_src_dnsr.c.o
+ .bss.inetcfg_sess
+                0x0000000000405ba8        0x8 uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ *(COMMON)
+                0x0000000000405bb0                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x0000000000405bb0                . = ALIGN (0x8)
+                0x0000000000405bb0                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x0000000000407bb0        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x0000000000407bb0                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000407bb0                . = ALIGN (0x8)
+                0x0000000000405bb0                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x0000000000407bb0                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/srv_net_dhcp.p/srv_net_dhcp_dhcp.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/srv_net_dhcp.p/srv_net_dhcp_main.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_net_dhcp.p/srv_net_dhcp_transport.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libinet.a.p/inet_src_dnsr.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libinet.a.p/inet_src_endpoint.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libinet.a.p/inet_src_udp.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/srv_net_dhcp elf64-x86-64)

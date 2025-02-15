@@ -1,0 +1,493 @@
+Archive member included to satisfy reference by file (symbol)
+
+uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                              (--whole-archive)
+uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                              (--whole-archive)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.0                     uspace/app_getterm.p/app_getterm_getterm.c.o (printf)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/app_getterm.p/app_getterm_getterm.c.o
+ .data          0x0000000000000000        0x0 uspace/app_getterm.p/app_getterm_getterm.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_getterm.p/app_getterm_getterm.c.o
+ .text          0x0000000000000000        0x0 uspace/app_getterm.p/app_getterm_version.c.o
+ .data          0x0000000000000000        0x0 uspace/app_getterm.p/app_getterm_version.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_getterm.p/app_getterm_version.c.o
+ .text          0x0000000000000000        0x0 uspace/app_getterm.p/app_getterm_welcome.c.o
+ .data          0x0000000000000000        0x0 uspace/app_getterm.p/app_getterm_welcome.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_getterm.p/app_getterm_welcome.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .text          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/app_getterm.p/app_getterm_getterm.c.o
+LOAD uspace/app_getterm.p/app_getterm_version.c.o
+LOAD uspace/app_getterm.p/app_getterm_welcome.c.o
+START GROUP
+LOAD uspace/lib/c/libstartfiles.a
+LOAD uspace/lib/libc.so.0.0
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000400000                PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x0000000000400120                . = (SEGMENT_START ("text-segment", 0x400000) + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000400120       0xa0
+ *(.hash)
+ .hash          0x0000000000400120       0xa0 uspace/app_getterm.p/app_getterm_getterm.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x00000000004001c0      0x1f8
+ *(.dynsym)
+ .dynsym        0x00000000004001c0      0x1f8 uspace/app_getterm.p/app_getterm_getterm.c.o
+
+.dynstr         0x00000000004003b8       0xdd
+ *(.dynstr)
+ .dynstr        0x00000000004003b8       0xdd uspace/app_getterm.p/app_getterm_getterm.c.o
+
+.gnu.version    0x0000000000400496        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000400496        0x0 uspace/app_getterm.p/app_getterm_getterm.c.o
+
+.gnu.version_d  0x0000000000400498        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000400498        0x0 uspace/app_getterm.p/app_getterm_getterm.c.o
+
+.gnu.version_r  0x0000000000400498        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000400498        0x0 uspace/app_getterm.p/app_getterm_getterm.c.o
+
+.rela.dyn       0x0000000000400498       0x60
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text.startup.main
+                0x0000000000400498        0x0 uspace/app_getterm.p/app_getterm_getterm.c.o
+ .rela.text.__c_start
+                0x0000000000400498        0x0 uspace/app_getterm.p/app_getterm_getterm.c.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ .rela.rodata.cst8
+                0x0000000000400498        0x0 uspace/app_getterm.p/app_getterm_getterm.c.o
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x0000000000400498        0x0 uspace/app_getterm.p/app_getterm_getterm.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000400498        0x0 uspace/app_getterm.p/app_getterm_getterm.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x0000000000400498       0x60 uspace/app_getterm.p/app_getterm_getterm.c.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+
+.rela.plt       0x00000000004004f8      0x180
+ *(.rela.plt)
+ .rela.plt      0x00000000004004f8      0x180 uspace/app_getterm.p/app_getterm_getterm.c.o
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+ .rela.iplt     0x0000000000400678        0x0 uspace/app_getterm.p/app_getterm_getterm.c.o
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x0000000000400680      0x110
+ *(.plt)
+ .plt           0x0000000000400680      0x110 uspace/app_getterm.p/app_getterm_getterm.c.o
+                0x0000000000400690                printf
+                0x00000000004006a0                snprintf
+                0x00000000004006b0                task_wait
+                0x00000000004006c0                setvbuf
+                0x00000000004006d0                puts
+                0x00000000004006e0                vfs_put
+                0x00000000004006f0                loc_service_get_id
+                0x0000000000400700                vfs_clone
+                0x0000000000400710                fdopen
+                0x0000000000400720                str_cmp
+                0x0000000000400730                __helenos_assert_abort
+                0x0000000000400740                fclose
+                0x0000000000400750                task_spawnv
+                0x0000000000400760                str_error
+                0x0000000000400770                __libc_main
+                0x0000000000400780                vfs_lookup_open
+ *(.iplt)
+ .iplt          0x0000000000400790        0x0 uspace/app_getterm.p/app_getterm_getterm.c.o
+
+.plt.got        0x0000000000400790        0x0
+ *(.plt.got)
+ .plt.got       0x0000000000400790        0x0 uspace/app_getterm.p/app_getterm_getterm.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x0000000000400790      0x4cc
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ .text.startup.main
+                0x0000000000400790      0x2bf uspace/app_getterm.p/app_getterm_getterm.c.o
+                0x0000000000400790                main
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ *fill*         0x0000000000400a4f        0x1 
+ .text.usage    0x0000000000400a50       0x3e uspace/app_getterm.p/app_getterm_getterm.c.o
+ *fill*         0x0000000000400a8e        0x2 
+ .text.reopen   0x0000000000400a90       0xa8 uspace/app_getterm.p/app_getterm_getterm.c.o
+ *fill*         0x0000000000400b38        0x8 
+ .text.version_print
+                0x0000000000400b40       0x57 uspace/app_getterm.p/app_getterm_version.c.o
+                0x0000000000400b40                version_print
+ *fill*         0x0000000000400b97        0x9 
+ .text.welcome_msg_print
+                0x0000000000400ba0       0x23 uspace/app_getterm.p/app_getterm_welcome.c.o
+                0x0000000000400ba0                welcome_msg_print
+ .text          0x0000000000400bc3        0xc uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                0x0000000000400bc3                _start
+ *fill*         0x0000000000400bcf        0x1 
+ .text.__c_start
+                0x0000000000400bd0       0x8c uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                0x0000000000400bd0                __c_start
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000400c60      0x2d0
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.usage.str1.1
+                0x0000000000400c60      0x111 uspace/app_getterm.p/app_getterm_getterm.c.o
+                                          0x8 (size before relaxing)
+ *fill*         0x0000000000400d71        0x7 
+ .rodata.usage.str1.8
+                0x0000000000400d78      0x1a9 uspace/app_getterm.p/app_getterm_getterm.c.o
+                                         0xf1 (size before relaxing)
+ .rodata.reopen.str1.8
+                0x0000000000400f21       0x2b uspace/app_getterm.p/app_getterm_getterm.c.o
+ .rodata.reopen.str1.1
+                0x0000000000400f21        0xc uspace/app_getterm.p/app_getterm_getterm.c.o
+ .rodata.main.str1.1
+                0x0000000000400f21       0x54 uspace/app_getterm.p/app_getterm_getterm.c.o
+ .rodata.main.str1.8
+                0x0000000000400f21       0x1f uspace/app_getterm.p/app_getterm_getterm.c.o
+ .rodata.version_print.str1.1
+                0x0000000000400f21       0x7d uspace/app_getterm.p/app_getterm_version.c.o
+ .rodata.version_print.str1.8
+                0x0000000000400f21       0x28 uspace/app_getterm.p/app_getterm_version.c.o
+ .rodata.welcome_msg_print.str1.1
+                0x0000000000400f21       0x2e uspace/app_getterm.p/app_getterm_welcome.c.o
+ .rodata.welcome_msg_print.str1.8
+                0x0000000000400f21       0x31 uspace/app_getterm.p/app_getterm_welcome.c.o
+ *fill*         0x0000000000400f21        0x7 
+ .rodata.cst8   0x0000000000400f28        0x8 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x0000000000400f30       0x44
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x0000000000400f30       0x44 uspace/app_getterm.p/app_getterm_getterm.c.o
+                0x0000000000400f30                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x0000000000400f78      0x11c
+ *(.eh_frame)
+ .eh_frame      0x0000000000400f78       0x98 uspace/app_getterm.p/app_getterm_getterm.c.o
+ .eh_frame      0x0000000000401010       0x28 uspace/app_getterm.p/app_getterm_getterm.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000401038        0x0 uspace/app_getterm.p/app_getterm_getterm.c.o
+ .eh_frame      0x0000000000401038       0x20 uspace/app_getterm.p/app_getterm_version.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000401058       0x20 uspace/app_getterm.p/app_getterm_welcome.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000401078       0x1c uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                                         0x38 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x0000000000401094        0x0
+ *(.sframe)
+ .sframe        0x0000000000401094        0x0 uspace/app_getterm.p/app_getterm_getterm.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x0000000000402094                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0x0000000000402094        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0000000000402094        0x0
+                0x0000000000402094                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x0000000000402094                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x0000000000402094        0x0
+                0x0000000000402094                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x0000000000402094                PROVIDE (__init_array_end = .)
+
+.fini_array     0x0000000000402094        0x0
+                0x0000000000402094                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x0000000000402094                PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x0000000000402094        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x0000000000402094        0x0 uspace/app_getterm.p/app_getterm_getterm.c.o
+
+.dynamic        0x0000000000402098      0x150
+ *(.dynamic)
+ .dynamic       0x0000000000402098      0x150 uspace/app_getterm.p/app_getterm_getterm.c.o
+                0x0000000000402098                _DYNAMIC
+
+.got            0x00000000004021e8        0x0
+ *(.got)
+ .got           0x00000000004021e8        0x0 uspace/app_getterm.p/app_getterm_getterm.c.o
+ *(.igot)
+                0x00000000004021e8                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x00000000004021e8       0x98
+ *(.got.plt)
+ .got.plt       0x00000000004021e8       0x98 uspace/app_getterm.p/app_getterm_getterm.c.o
+                0x00000000004021e8                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x0000000000402280        0x0 uspace/app_getterm.p/app_getterm_getterm.c.o
+
+.data
+ *(.data .data.* .gnu.linkonce.d.*)
+
+.data1
+ *(.data1)
+                0x0000000000402280                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x0000000000402280                . = .
+                0x0000000000402280                __bss_start = .
+
+.bss            0x0000000000402280       0x88
+ *(.dynbss)
+ *fill*         0x0000000000402280        0x0 
+ .dynbss        0x0000000000402280       0x88 uspace/app_getterm.p/app_getterm_getterm.c.o
+                0x0000000000402280                stdout
+                0x0000000000402290                stdin
+                0x00000000004022a0                __progsymbols
+                0x0000000000402300                stderr
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ *(COMMON)
+                0x0000000000402308                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x0000000000402308                . = ALIGN (0x8)
+                0x0000000000402308                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x0000000000404308        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x0000000000404308                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000404308                . = ALIGN (0x8)
+                0x0000000000402308                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x0000000000404308                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/app_getterm.p/app_getterm_getterm.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/app_getterm.p/app_getterm_version.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_getterm.p/app_getterm_welcome.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/app_getterm elf64-x86-64)

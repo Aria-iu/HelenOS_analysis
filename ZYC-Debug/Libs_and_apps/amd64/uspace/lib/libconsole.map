@@ -1,0 +1,467 @@
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.0                     uspace/lib/libconsole.so.0.0.p/console_src_console.c.o (vfs_fsession)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/lib/libconsole.so.0.0.p/console_src_con_srv.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libconsole.so.0.0.p/console_src_con_srv.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libconsole.so.0.0.p/console_src_con_srv.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libconsole.so.0.0.p/console_src_console.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libconsole.so.0.0.p/console_src_console.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libconsole.so.0.0.p/console_src_console.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/lib/libconsole.so.0.0.p/console_src_con_srv.c.o
+LOAD uspace/lib/libconsole.so.0.0.p/console_src_console.c.o
+START GROUP
+LOAD uspace/lib/libinput.so.0.0
+LOAD uspace/lib/libc.so.0.0
+LOAD uspace/lib/liboutput.so.0.0
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000000120                . = (SEGMENT_START ("text-segment", 0x0) + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000000120      0x188
+ *(.hash)
+ .hash          0x0000000000000120      0x188 uspace/lib/libconsole.so.0.0.p/console_src_con_srv.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x00000000000002a8      0x588
+ *(.dynsym)
+ .dynsym        0x00000000000002a8      0x588 uspace/lib/libconsole.so.0.0.p/console_src_con_srv.c.o
+
+.dynstr         0x0000000000000830      0x3c3
+ *(.dynstr)
+ .dynstr        0x0000000000000830      0x3c3 uspace/lib/libconsole.so.0.0.p/console_src_con_srv.c.o
+
+.gnu.version    0x0000000000000bf4        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000000bf4        0x0 uspace/lib/libconsole.so.0.0.p/console_src_con_srv.c.o
+
+.gnu.version_d  0x0000000000000bf8        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000000bf8        0x0 uspace/lib/libconsole.so.0.0.p/console_src_con_srv.c.o
+
+.gnu.version_r  0x0000000000000bf8        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000000bf8        0x0 uspace/lib/libconsole.so.0.0.p/console_src_con_srv.c.o
+
+.rela.dyn       0x0000000000000bf8        0x0
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000000bf8        0x0 uspace/lib/libconsole.so.0.0.p/console_src_con_srv.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+ .rela.ifunc    0x0000000000000bf8        0x0 uspace/lib/libconsole.so.0.0.p/console_src_con_srv.c.o
+
+.rela.plt       0x0000000000000bf8      0x378
+ *(.rela.plt)
+ .rela.plt      0x0000000000000bf8      0x378 uspace/lib/libconsole.so.0.0.p/console_src_con_srv.c.o
+ *(.rela.iplt)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x0000000000000f70      0x260
+ *(.plt)
+ .plt           0x0000000000000f70      0x260 uspace/lib/libconsole.so.0.0.p/console_src_con_srv.c.o
+ *(.iplt)
+
+.plt.got        0x00000000000011d0        0x0
+ *(.plt.got)
+ .plt.got       0x00000000000011d0        0x0 uspace/lib/libconsole.so.0.0.p/console_src_con_srv.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x00000000000011d0      0xfaf
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text.con_srvs_init
+                0x00000000000011d0       0x19 uspace/lib/libconsole.so.0.0.p/console_src_con_srv.c.o
+                0x00000000000011d0                con_srvs_init
+ *fill*         0x00000000000011e9        0x7 
+ .text.con_conn
+                0x00000000000011f0      0x731 uspace/lib/libconsole.so.0.0.p/console_src_con_srv.c.o
+                0x00000000000011f0                con_conn
+ *fill*         0x0000000000001921        0xf 
+ .text.console_init
+                0x0000000000001930       0x7c uspace/lib/libconsole.so.0.0.p/console_src_console.c.o
+                0x0000000000001930                console_init
+ *fill*         0x00000000000019ac        0x4 
+ .text.console_done
+                0x00000000000019b0        0xa uspace/lib/libconsole.so.0.0.p/console_src_console.c.o
+                0x00000000000019b0                console_done
+ *fill*         0x00000000000019ba        0x6 
+ .text.console_kcon
+                0x00000000000019c0        0xa uspace/lib/libconsole.so.0.0.p/console_src_console.c.o
+                0x00000000000019c0                console_kcon
+ *fill*         0x00000000000019ca        0x6 
+ .text.console_flush
+                0x00000000000019d0        0xe uspace/lib/libconsole.so.0.0.p/console_src_console.c.o
+                0x00000000000019d0                console_flush
+ *fill*         0x00000000000019de        0x2 
+ .text.console_clear
+                0x00000000000019e0       0x2f uspace/lib/libconsole.so.0.0.p/console_src_console.c.o
+                0x00000000000019e0                console_clear
+ *fill*         0x0000000000001a0f        0x1 
+ .text.console_get_size
+                0x0000000000001a10       0x4b uspace/lib/libconsole.so.0.0.p/console_src_console.c.o
+                0x0000000000001a10                console_get_size
+ *fill*         0x0000000000001a5b        0x5 
+ .text.console_set_style
+                0x0000000000001a60       0x31 uspace/lib/libconsole.so.0.0.p/console_src_console.c.o
+                0x0000000000001a60                console_set_style
+ *fill*         0x0000000000001a91        0xf 
+ .text.console_set_color
+                0x0000000000001aa0       0x47 uspace/lib/libconsole.so.0.0.p/console_src_console.c.o
+                0x0000000000001aa0                console_set_color
+ *fill*         0x0000000000001ae7        0x9 
+ .text.console_set_rgb_color
+                0x0000000000001af0       0x42 uspace/lib/libconsole.so.0.0.p/console_src_console.c.o
+                0x0000000000001af0                console_set_rgb_color
+ *fill*         0x0000000000001b32        0xe 
+ .text.console_cursor_visibility
+                0x0000000000001b40       0x31 uspace/lib/libconsole.so.0.0.p/console_src_console.c.o
+                0x0000000000001b40                console_cursor_visibility
+ *fill*         0x0000000000001b71        0xf 
+ .text.console_set_caption
+                0x0000000000001b80       0xa3 uspace/lib/libconsole.so.0.0.p/console_src_console.c.o
+                0x0000000000001b80                console_set_caption
+ *fill*         0x0000000000001c23        0xd 
+ .text.console_get_color_cap
+                0x0000000000001c30       0x39 uspace/lib/libconsole.so.0.0.p/console_src_console.c.o
+                0x0000000000001c30                console_get_color_cap
+ *fill*         0x0000000000001c69        0x7 
+ .text.console_get_pos
+                0x0000000000001c70       0x4b uspace/lib/libconsole.so.0.0.p/console_src_console.c.o
+                0x0000000000001c70                console_get_pos
+ *fill*         0x0000000000001cbb        0x5 
+ .text.console_set_pos
+                0x0000000000001cc0       0x44 uspace/lib/libconsole.so.0.0.p/console_src_console.c.o
+                0x0000000000001cc0                console_set_pos
+ *fill*         0x0000000000001d04        0xc 
+ .text.console_get_event
+                0x0000000000001d10      0x16d uspace/lib/libconsole.so.0.0.p/console_src_console.c.o
+                0x0000000000001d10                console_get_event
+ *fill*         0x0000000000001e7d        0x3 
+ .text.console_get_event_timeout
+                0x0000000000001e80      0x16c uspace/lib/libconsole.so.0.0.p/console_src_console.c.o
+                0x0000000000001e80                console_get_event_timeout
+ *fill*         0x0000000000001fec        0x4 
+ .text.console_map
+                0x0000000000001ff0       0xea uspace/lib/libconsole.so.0.0.p/console_src_console.c.o
+                0x0000000000001ff0                console_map
+ *fill*         0x00000000000020da        0x6 
+ .text.console_unmap
+                0x00000000000020e0       0x37 uspace/lib/libconsole.so.0.0.p/console_src_console.c.o
+                0x00000000000020e0                console_unmap
+ *fill*         0x0000000000002117        0x9 
+ .text.console_update
+                0x0000000000002120       0x5f uspace/lib/libconsole.so.0.0.p/console_src_console.c.o
+                0x0000000000002120                console_update
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000002180       0x54
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.con_conn
+                0x0000000000002180       0x54 uspace/lib/libconsole.so.0.0.p/console_src_con_srv.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x00000000000021d4       0xbc
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x00000000000021d4       0xbc uspace/lib/libconsole.so.0.0.p/console_src_con_srv.c.o
+                0x00000000000021d4                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x0000000000002290      0x388
+ *(.eh_frame)
+ .eh_frame      0x0000000000002290       0x68 uspace/lib/libconsole.so.0.0.p/console_src_con_srv.c.o
+ .eh_frame      0x00000000000022f8       0x28 uspace/lib/libconsole.so.0.0.p/console_src_con_srv.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000002320        0x0 uspace/lib/libconsole.so.0.0.p/console_src_con_srv.c.o
+ .eh_frame      0x0000000000002320      0x2f8 uspace/lib/libconsole.so.0.0.p/console_src_console.c.o
+                                        0x310 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x0000000000002618        0x0
+ *(.sframe)
+ .sframe        0x0000000000002618        0x0 uspace/lib/libconsole.so.0.0.p/console_src_con_srv.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x0000000000003618                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array
+ *(.preinit_array)
+
+.init_array
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+
+.fini_array
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x0000000000003618        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x0000000000003618        0x0 uspace/lib/libconsole.so.0.0.p/console_src_con_srv.c.o
+
+.dynamic        0x0000000000003618      0x120
+ *(.dynamic)
+ .dynamic       0x0000000000003618      0x120 uspace/lib/libconsole.so.0.0.p/console_src_con_srv.c.o
+                0x0000000000003618                _DYNAMIC
+
+.got            0x0000000000003738        0x0
+ *(.got)
+ .got           0x0000000000003738        0x0 uspace/lib/libconsole.so.0.0.p/console_src_con_srv.c.o
+ *(.igot)
+                0x0000000000003738                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x0000000000003738      0x140
+ *(.got.plt)
+ .got.plt       0x0000000000003738      0x140 uspace/lib/libconsole.so.0.0.p/console_src_con_srv.c.o
+                0x0000000000003738                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+
+.data
+ *(.data .data.* .gnu.linkonce.d.*)
+
+.data1
+ *(.data1)
+                [!provide]                        PROVIDE (_edata = .)
+                [!provide]                        PROVIDE (edata = .)
+                0x0000000000003878                . = .
+                [!provide]                        PROVIDE (__bss_start = .)
+
+.bss            0x0000000000003878        0x0
+ *(.dynbss)
+ .dynbss        0x0000000000003878        0x0 uspace/lib/libconsole.so.0.0.p/console_src_con_srv.c.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ *(COMMON)
+                0x0000000000003878                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x0000000000003878                . = ALIGN (0x8)
+                0x0000000000003878                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x0000000000005878        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x0000000000005878                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000005878                . = ALIGN (0x8)
+                [!provide]                        PROVIDE (_end = .)
+                [!provide]                        PROVIDE (end = .)
+                0x0000000000005878                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/lib/libconsole.so.0.0.p/console_src_con_srv.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/lib/libconsole.so.0.0.p/console_src_console.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/lib/libconsole.so.0.0 elf64-x86-64)

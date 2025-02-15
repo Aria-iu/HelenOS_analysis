@@ -51,6 +51,8 @@
 arch_src = []
 subdir('arch' / UARCH)
 
+# -fno-builtin 是一个GCC编译器选项，用于禁用编译器内置函数
+# -D_LIBC_SOURCE 是一个预处理宏定义，用于启用或修改某些标准库功能的行为
 c_args = [ '-fno-builtin', '-D_LIBC_SOURCE' ]
 
 root_path = '..' / '..' / '..'
@@ -74,6 +76,7 @@ foreach idir : incdirs
 	exported_devel_files += ['include', _sdir, 'libc']
 endforeach
 
+# 这里是架构相关的代码。
 src = [ arch_src ]
 
 src += files(
@@ -222,8 +225,14 @@ test_src = files(
 # so we have to add them manually.
 #
 
+# arch_start_src是架构相关的启动代码。 src/crt0.S
+# crt0.S 是一个常见的启动文件，通常以汇编语言编写，用于执行架构相关的初始化工作。
+# 它的主要职责包括：
+#	设置程序的初始运行环境（如栈、堆、全局变量区等）。
+#	跳转到__c_start
 start_src = [ arch_start_src, files('generic/crt/crt1.c') ]
 
+# files('generic/crt/crt1.c') 是通用的启动文件
 libstartfiles = static_library('startfiles', start_src,
 	include_directories: includes,
 	c_args: arch_uspace_c_args + c_args,

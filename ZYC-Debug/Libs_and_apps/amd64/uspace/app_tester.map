@@ -1,0 +1,1403 @@
+Archive member included to satisfy reference by file (symbol)
+
+uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                              (--whole-archive)
+uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                              (--whole-archive)
+uspace/lib/libdevice.a.p/device_src_io_chardev.c.o
+                              uspace/app_tester.p/app_tester_hw_serial_serial1.c.o (chardev_open)
+uspace/lib/libdevice.a.p/device_src_io_serial.c.o
+                              uspace/app_tester.p/app_tester_hw_serial_serial1.c.o (serial_open)
+uspace/lib/libcodepage.a.p/codepage_src_cp437.c.o
+                              uspace/app_tester.p/app_tester_print_print4.c.o (cp437_decode)
+uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+                              uspace/app_tester.p/app_tester_ipc_readwrite.c.o (ipc_test_create)
+uspace/lib/libconsole.a.p/console_src_console.c.o
+                              uspace/app_tester.p/app_tester_console_console1.c.o (console_init)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.0                     uspace/app_tester.p/app_tester_thread_setjmp1.c.o (longjmp)
+libmath.so.0                  uspace/app_tester.p/app_tester_float_float2.c.o (cosf)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_util.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_util.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_util.c.o
+ .rodata.assert_eq_fn_uint8_t.str1.8
+                0x0000000000000000       0x39 uspace/app_tester.p/app_tester_util.c.o
+ .text.assert_eq_fn_uint8_t
+                0x0000000000000000       0x46 uspace/app_tester.p/app_tester_util.c.o
+ .rodata.assert_eq_fn_uint16_t.str1.8
+                0x0000000000000000       0x35 uspace/app_tester.p/app_tester_util.c.o
+ .text.assert_eq_fn_uint16_t
+                0x0000000000000000       0x46 uspace/app_tester.p/app_tester_util.c.o
+ .rodata.assert_eq_fn_uint32_t.str1.8
+                0x0000000000000000       0x31 uspace/app_tester.p/app_tester_util.c.o
+ .text.assert_eq_fn_uint32_t
+                0x0000000000000000       0x41 uspace/app_tester.p/app_tester_util.c.o
+ .rodata.assert_eq_fn_uint64_t.str1.8
+                0x0000000000000000       0x35 uspace/app_tester.p/app_tester_util.c.o
+ .text.assert_eq_fn_uint64_t
+                0x0000000000000000       0x44 uspace/app_tester.p/app_tester_util.c.o
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_thread_thread1.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_thread_thread1.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_thread_thread1.c.o
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_thread_setjmp1.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_thread_setjmp1.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_thread_setjmp1.c.o
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_print_print1.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_print_print1.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_print_print1.c.o
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_print_print2.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_print_print2.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_print_print2.c.o
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_print_print3.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_print_print3.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_print_print3.c.o
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_print_print4.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_print_print4.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_print_print4.c.o
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_print_print5.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_print_print5.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_print_print5.c.o
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_print_print6.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_print_print6.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_print_print6.c.o
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_console_console1.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_console_console1.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_console_console1.c.o
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_stdio_stdio1.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_stdio_stdio1.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_stdio_stdio1.c.o
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_stdio_stdio2.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_stdio_stdio2.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_stdio_stdio2.c.o
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_stdio_logger1.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_stdio_logger1.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_stdio_logger1.c.o
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_stdio_logger2.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_stdio_logger2.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_stdio_logger2.c.o
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_fault_fault1.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_fault_fault1.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_fault_fault1.c.o
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_fault_fault2.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_fault_fault2.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_fault_fault2.c.o
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_fault_fault3.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_fault_fault3.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_fault_fault3.c.o
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_float_float1.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_float_float1.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_float_float1.c.o
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_float_float2.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_float_float2.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_float_float2.c.o
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_vfs_vfs1.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_vfs_vfs1.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_vfs_vfs1.c.o
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_ipc_readwrite.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_ipc_readwrite.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_ipc_readwrite.c.o
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_ipc_sharein.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_ipc_sharein.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_ipc_sharein.c.o
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_ipc_starve.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_ipc_starve.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_ipc_starve.c.o
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_loop_loop1.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_loop_loop1.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_loop_loop1.c.o
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_mm_common.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_mm_common.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_mm_common.c.o
+ .text.unmap_area
+                0x0000000000000000       0x9b uspace/app_tester.p/app_tester_mm_common.c.o
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_mm_malloc1.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_mm_malloc1.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_mm_malloc1.c.o
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_mm_malloc2.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_mm_malloc2.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_mm_malloc2.c.o
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_mm_malloc3.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_mm_malloc3.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_mm_malloc3.c.o
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_mm_mapping1.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_mm_mapping1.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_mm_mapping1.c.o
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_mm_pager1.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_mm_pager1.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_mm_pager1.c.o
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_hw_serial_serial1.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_hw_serial_serial1.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_hw_serial_serial1.c.o
+ .text          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_chardev_chardev1.c.o
+ .data          0x0000000000000000        0x0 uspace/app_tester.p/app_tester_chardev_chardev1.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_tester.p/app_tester_chardev_chardev1.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .text          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_io_chardev.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_io_chardev.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_io_chardev.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_io_serial.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_io_serial.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_io_serial.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libcodepage.a.p/codepage_src_cp437.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libcodepage.a.p/codepage_src_cp437.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libcodepage.a.p/codepage_src_cp437.c.o
+ .text.cp437_encode
+                0x0000000000000000       0x57 uspace/lib/libcodepage.a.p/codepage_src_cp437.c.o
+ .rodata.u2xxx_to_cp437
+                0x0000000000000000      0x700 uspace/lib/libcodepage.a.p/codepage_src_cp437.c.o
+ .rodata.u0xxx_to_cp437
+                0x0000000000000000      0x400 uspace/lib/libcodepage.a.p/codepage_src_cp437.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+ .text.ipc_test_ping
+                0x0000000000000000       0x32 uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_kcon
+                0x0000000000000000        0xa uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_clear
+                0x0000000000000000       0x2f uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_get_size
+                0x0000000000000000       0x4b uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_cursor_visibility
+                0x0000000000000000       0x31 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_set_caption
+                0x0000000000000000       0xa3 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_get_color_cap
+                0x0000000000000000       0x39 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_get_pos
+                0x0000000000000000       0x4b uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_set_pos
+                0x0000000000000000       0x44 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_get_event
+                0x0000000000000000      0x16d uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_map
+                0x0000000000000000       0xea uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_unmap
+                0x0000000000000000       0x37 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_update
+                0x0000000000000000       0x5f uspace/lib/libconsole.a.p/console_src_console.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/app_tester.p/app_tester_tester.c.o
+LOAD uspace/app_tester.p/app_tester_util.c.o
+LOAD uspace/app_tester.p/app_tester_thread_thread1.c.o
+LOAD uspace/app_tester.p/app_tester_thread_setjmp1.c.o
+LOAD uspace/app_tester.p/app_tester_print_print1.c.o
+LOAD uspace/app_tester.p/app_tester_print_print2.c.o
+LOAD uspace/app_tester.p/app_tester_print_print3.c.o
+LOAD uspace/app_tester.p/app_tester_print_print4.c.o
+LOAD uspace/app_tester.p/app_tester_print_print5.c.o
+LOAD uspace/app_tester.p/app_tester_print_print6.c.o
+LOAD uspace/app_tester.p/app_tester_console_console1.c.o
+LOAD uspace/app_tester.p/app_tester_stdio_stdio1.c.o
+LOAD uspace/app_tester.p/app_tester_stdio_stdio2.c.o
+LOAD uspace/app_tester.p/app_tester_stdio_logger1.c.o
+LOAD uspace/app_tester.p/app_tester_stdio_logger2.c.o
+LOAD uspace/app_tester.p/app_tester_fault_fault1.c.o
+LOAD uspace/app_tester.p/app_tester_fault_fault2.c.o
+LOAD uspace/app_tester.p/app_tester_fault_fault3.c.o
+LOAD uspace/app_tester.p/app_tester_float_float1.c.o
+LOAD uspace/app_tester.p/app_tester_float_float2.c.o
+LOAD uspace/app_tester.p/app_tester_vfs_vfs1.c.o
+LOAD uspace/app_tester.p/app_tester_ipc_readwrite.c.o
+LOAD uspace/app_tester.p/app_tester_ipc_sharein.c.o
+LOAD uspace/app_tester.p/app_tester_ipc_starve.c.o
+LOAD uspace/app_tester.p/app_tester_loop_loop1.c.o
+LOAD uspace/app_tester.p/app_tester_mm_common.c.o
+LOAD uspace/app_tester.p/app_tester_mm_malloc1.c.o
+LOAD uspace/app_tester.p/app_tester_mm_malloc2.c.o
+LOAD uspace/app_tester.p/app_tester_mm_malloc3.c.o
+LOAD uspace/app_tester.p/app_tester_mm_mapping1.c.o
+LOAD uspace/app_tester.p/app_tester_mm_pager1.c.o
+LOAD uspace/app_tester.p/app_tester_hw_serial_serial1.c.o
+LOAD uspace/app_tester.p/app_tester_chardev_chardev1.c.o
+START GROUP
+LOAD uspace/lib/c/libstartfiles.a
+LOAD uspace/lib/libblock.a
+LOAD uspace/lib/libdevice.a
+LOAD uspace/lib/libc.so.0.0
+LOAD uspace/lib/libcodepage.a
+LOAD uspace/lib/libdrv.a
+LOAD uspace/lib/libinet.a
+LOAD uspace/lib/libpcm.a
+LOAD uspace/lib/libmath.so.0.0
+LOAD uspace/lib/libipctest.a
+LOAD uspace/lib/libconsole.a
+LOAD uspace/lib/libinput.a
+LOAD uspace/lib/liboutput.a
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000400000                PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x0000000000400120                . = (SEGMENT_START ("text-segment", 0x400000) + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000400120      0x284
+ *(.hash)
+ .hash          0x0000000000400120      0x284 uspace/app_tester.p/app_tester_tester.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x00000000004003a8      0x8a0
+ *(.dynsym)
+ .dynsym        0x00000000004003a8      0x8a0 uspace/app_tester.p/app_tester_tester.c.o
+
+.dynstr         0x0000000000400c48      0x45b
+ *(.dynstr)
+ .dynstr        0x0000000000400c48      0x45b uspace/app_tester.p/app_tester_tester.c.o
+
+.gnu.version    0x00000000004010a4        0x0
+ *(.gnu.version)
+ .gnu.version   0x00000000004010a4        0x0 uspace/app_tester.p/app_tester_tester.c.o
+
+.gnu.version_d  0x00000000004010a8        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+
+.gnu.version_r  0x00000000004010a8        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+
+.rela.dyn       0x00000000004010a8       0x48
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text.test_thread1
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.test_it
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.test_print1
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.test_print2
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.test_print3
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.test_print4
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.test_print5
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.test_print6
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.test_console1
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.test_stdio1
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.test_stdio2
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.test_logger2
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.test_float1
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.test_float2
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.read_root
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.test_vfs1
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.test_readwrite
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.test_sharein
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.test_starve_ipc
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.test_loop1
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.checked_malloc
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.done_mem
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.alloc_block
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.free_block
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.fill_block
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.check_block
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.get_random_block
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.map_area
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.fill_area
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.test_malloc1
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.test_malloc2
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.test_malloc3
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.test_mapping1
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.test_pager1
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.test_serial1
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.test_chardev1
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .rela.text.__c_start
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ .rela.rodata.cst8
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x00000000004010a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x00000000004010a8       0x48 uspace/app_tester.p/app_tester_tester.c.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+
+.rela.plt       0x00000000004010f0      0x840
+ *(.rela.plt)
+ .rela.plt      0x00000000004010f0      0x840 uspace/app_tester.p/app_tester_tester.c.o
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+ .rela.iplt     0x0000000000401930        0x0 uspace/app_tester.p/app_tester_tester.c.o
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x0000000000401930      0x590
+ *(.plt)
+ .plt           0x0000000000401930      0x590 uspace/app_tester.p/app_tester_tester.c.o
+                0x0000000000401940                longjmp
+                0x0000000000401950                fibril_test_spawn_runners
+                0x0000000000401960                putchar
+                0x0000000000401970                vfs_fsession
+                0x0000000000401980                vfs_write
+                0x0000000000401990                loc_service_connect
+                0x00000000004019a0                printf
+                0x00000000004019b0                async_hangup
+                0x00000000004019c0                vfs_rename_path
+                0x00000000004019d0                async_wait_for
+                0x00000000004019e0                fibril_semaphore_down
+                0x00000000004019f0                snprintf
+                0x0000000000401a00                log_init
+                0x0000000000401a10                async_data_write_start
+                0x0000000000401a20                __errno
+                0x0000000000401a30                service_connect_blocking
+                0x0000000000401a40                async_req_0_4
+                0x0000000000401a50                async_send_1
+                0x0000000000401a60                puts
+                0x0000000000401a70                malloc
+                0x0000000000401a80                async_req_1_0
+                0x0000000000401a90                vfs_put
+                0x0000000000401aa0                loc_service_get_id
+                0x0000000000401ab0                fibril_detach
+                0x0000000000401ac0                readdir
+                0x0000000000401ad0                fibril_get_id
+                0x0000000000401ae0                as_area_destroy
+                0x0000000000401af0                fflush
+                0x0000000000401b00                async_share_in_start_0_0
+                0x0000000000401b10                vfs_unlink_path
+                0x0000000000401b20                log_msg
+                0x0000000000401b30                stacktrace_print
+                0x0000000000401b40                abort
+                0x0000000000401b50                fibril_semaphore_up
+                0x0000000000401b60                cosf
+                0x0000000000401b70                async_exchange_end
+                0x0000000000401b80                calloc
+                0x0000000000401b90                fibril_sleep
+                0x0000000000401ba0                fprintf
+                0x0000000000401bb0                heap_check
+                0x0000000000401bc0                __context_save
+                0x0000000000401bd0                fseek
+                0x0000000000401be0                cos
+                0x0000000000401bf0                str_dup
+                0x0000000000401c00                ferror
+                0x0000000000401c10                fibril_create
+                0x0000000000401c20                sin
+                0x0000000000401c30                rand
+                0x0000000000401c40                async_wait_timeout
+                0x0000000000401c50                async_req_0_1
+                0x0000000000401c60                as_get_physical_mapping
+                0x0000000000401c70                str_size_t
+                0x0000000000401c80                vfs_link_path
+                0x0000000000401c90                str_cmp
+                0x0000000000401ca0                fread
+                0x0000000000401cb0                ts_sub_diff
+                0x0000000000401cc0                fopen
+                0x0000000000401cd0                __helenos_assert_abort
+                0x0000000000401ce0                memset
+                0x0000000000401cf0                vfs_read
+                0x0000000000401d00                async_data_read_start
+                0x0000000000401d10                fclose
+                0x0000000000401d20                opendir
+                0x0000000000401d30                async_as_area_create
+                0x0000000000401d40                str_error_name
+                0x0000000000401d50                getuptime
+                0x0000000000401d60                fgetc
+                0x0000000000401d70                asprintf
+                0x0000000000401d80                fibril_usleep
+                0x0000000000401d90                str_size
+                0x0000000000401da0                fputc
+                0x0000000000401db0                sinf
+                0x0000000000401dc0                str_length
+                0x0000000000401dd0                async_exchange_begin
+                0x0000000000401de0                async_send_0
+                0x0000000000401df0                fwrite
+                0x0000000000401e00                __libc_main
+                0x0000000000401e10                async_forget
+                0x0000000000401e20                fibril_add_ready
+                0x0000000000401e30                async_req_2_0
+                0x0000000000401e40                as_area_create
+                0x0000000000401e50                async_req_3_0
+                0x0000000000401e60                vfs_lookup_open
+                0x0000000000401e70                log_create
+                0x0000000000401e80                closedir
+                0x0000000000401e90                async_req_4_0
+                0x0000000000401ea0                free
+                0x0000000000401eb0                log_level_str
+ *(.iplt)
+ .iplt          0x0000000000401ec0        0x0 uspace/app_tester.p/app_tester_tester.c.o
+
+.plt.got        0x0000000000401ec0        0x0
+ *(.plt.got)
+ .plt.got       0x0000000000401ec0        0x0 uspace/app_tester.p/app_tester_tester.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x0000000000401ec0     0x6cdc
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ .text.unlikely.test_fault3
+                0x0000000000401ec0        0x9 uspace/app_tester.p/app_tester_fault_fault3.c.o
+                0x0000000000401ec0                test_fault3
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *fill*         0x0000000000401ec9        0x7 
+ .text.startup.main
+                0x0000000000401ed0      0x2e1 uspace/app_tester.p/app_tester_tester.c.o
+                0x0000000000401ed0                main
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ *fill*         0x00000000004021b1        0xf 
+ .text.threadtest
+                0x00000000004021c0       0x3b uspace/app_tester.p/app_tester_thread_thread1.c.o
+ *fill*         0x00000000004021fb        0x5 
+ .text.test_thread1
+                0x0000000000402200      0x186 uspace/app_tester.p/app_tester_thread_thread1.c.o
+                0x0000000000402200                test_thread1
+ *fill*         0x0000000000402386        0xa 
+ .text.test_it  0x0000000000402390       0xb0 uspace/app_tester.p/app_tester_thread_setjmp1.c.o
+ .text.test_setjmp1
+                0x0000000000402440       0x14 uspace/app_tester.p/app_tester_thread_setjmp1.c.o
+                0x0000000000402440                test_setjmp1
+ *fill*         0x0000000000402454        0xc 
+ .text.test_print1
+                0x0000000000402460      0x236 uspace/app_tester.p/app_tester_print_print1.c.o
+                0x0000000000402460                test_print1
+ *fill*         0x0000000000402696        0xa 
+ .text.test_print2
+                0x00000000004026a0      0x38a uspace/app_tester.p/app_tester_print_print2.c.o
+                0x00000000004026a0                test_print2
+ *fill*         0x0000000000402a2a        0x6 
+ .text.test_print3
+                0x0000000000402a30      0x271 uspace/app_tester.p/app_tester_print_print3.c.o
+                0x0000000000402a30                test_print3
+ *fill*         0x0000000000402ca1        0xf 
+ .text.test_print4
+                0x0000000000402cb0      0x463 uspace/app_tester.p/app_tester_print_print4.c.o
+                0x0000000000402cb0                test_print4
+ *fill*         0x0000000000403113        0xd 
+ .text.test_print5
+                0x0000000000403120       0xef uspace/app_tester.p/app_tester_print_print5.c.o
+                0x0000000000403120                test_print5
+ *fill*         0x000000000040320f        0x1 
+ .text.test_print6
+                0x0000000000403210      0xc84 uspace/app_tester.p/app_tester_print_print6.c.o
+                0x0000000000403210                test_print6
+ *fill*         0x0000000000403e94        0xc 
+ .text.test_console1
+                0x0000000000403ea0      0x30d uspace/app_tester.p/app_tester_console_console1.c.o
+                0x0000000000403ea0                test_console1
+ *fill*         0x00000000004041ad        0x3 
+ .text.test_stdio1
+                0x00000000004041b0      0x3ec uspace/app_tester.p/app_tester_stdio_stdio1.c.o
+                0x00000000004041b0                test_stdio1
+ *fill*         0x000000000040459c        0x4 
+ .text.test_stdio2
+                0x00000000004045a0      0x308 uspace/app_tester.p/app_tester_stdio_stdio2.c.o
+                0x00000000004045a0                test_stdio2
+ *fill*         0x00000000004048a8        0x8 
+ .text.test_logger1
+                0x00000000004048b0       0x37 uspace/app_tester.p/app_tester_stdio_logger1.c.o
+                0x00000000004048b0                test_logger1
+ *fill*         0x00000000004048e7        0x9 
+ .text.test_logger2
+                0x00000000004048f0       0xf5 uspace/app_tester.p/app_tester_stdio_logger2.c.o
+                0x00000000004048f0                test_logger2
+ *fill*         0x00000000004049e5        0xb 
+ .text.test_fault1
+                0x00000000004049f0       0x16 uspace/app_tester.p/app_tester_fault_fault1.c.o
+                0x00000000004049f0                test_fault1
+ *fill*         0x0000000000404a06        0xa 
+ .text.test_fault2
+                0x0000000000404a10       0x2c uspace/app_tester.p/app_tester_fault_fault2.c.o
+                0x0000000000404a10                test_fault2
+ *fill*         0x0000000000404a3c        0x4 
+ .text.e        0x0000000000404a40       0x8a uspace/app_tester.p/app_tester_float_float1.c.o
+ *fill*         0x0000000000404aca        0x6 
+ .text.test_float1
+                0x0000000000404ad0      0x16b uspace/app_tester.p/app_tester_float_float1.c.o
+                0x0000000000404ad0                test_float1
+ *fill*         0x0000000000404c3b        0x5 
+ .text.test_float2
+                0x0000000000404c40      0x58d uspace/app_tester.p/app_tester_float_float2.c.o
+                0x0000000000404c40                test_float2
+ *fill*         0x00000000004051cd        0x3 
+ .text.read_root
+                0x00000000004051d0      0x103 uspace/app_tester.p/app_tester_vfs_vfs1.c.o
+ *fill*         0x00000000004052d3        0xd 
+ .text.test_vfs1
+                0x00000000004052e0      0x2d4 uspace/app_tester.p/app_tester_vfs_vfs1.c.o
+                0x00000000004052e0                test_vfs1
+ *fill*         0x00000000004055b4        0xc 
+ .text.test_readwrite
+                0x00000000004055c0      0x25d uspace/app_tester.p/app_tester_ipc_readwrite.c.o
+                0x00000000004055c0                test_readwrite
+ *fill*         0x000000000040581d        0x3 
+ .text.test_sharein
+                0x0000000000405820      0x150 uspace/app_tester.p/app_tester_ipc_sharein.c.o
+                0x0000000000405820                test_sharein
+ .text.test_starve_ipc
+                0x0000000000405970      0x197 uspace/app_tester.p/app_tester_ipc_starve.c.o
+                0x0000000000405970                test_starve_ipc
+ *fill*         0x0000000000405b07        0x9 
+ .text.test_loop1
+                0x0000000000405b10       0x2c uspace/app_tester.p/app_tester_loop_loop1.c.o
+                0x0000000000405b10                test_loop1
+ *fill*         0x0000000000405b3c        0x4 
+ .text.checked_malloc
+                0x0000000000405b40      0x161 uspace/app_tester.p/app_tester_mm_common.c.o
+ *fill*         0x0000000000405ca1        0xf 
+ .text.init_mem
+                0x0000000000405cb0       0x1c uspace/app_tester.p/app_tester_mm_common.c.o
+                0x0000000000405cb0                init_mem
+ *fill*         0x0000000000405ccc        0x4 
+ .text.done_mem
+                0x0000000000405cd0      0x202 uspace/app_tester.p/app_tester_mm_common.c.o
+                0x0000000000405cd0                done_mem
+ *fill*         0x0000000000405ed2        0xe 
+ .text.alloc_block
+                0x0000000000405ee0       0xf7 uspace/app_tester.p/app_tester_mm_common.c.o
+                0x0000000000405ee0                alloc_block
+ *fill*         0x0000000000405fd7        0x9 
+ .text.free_block
+                0x0000000000405fe0       0xfa uspace/app_tester.p/app_tester_mm_common.c.o
+                0x0000000000405fe0                free_block
+ *fill*         0x00000000004060da        0x6 
+ .text.fill_block
+                0x00000000004060e0      0x2c2 uspace/app_tester.p/app_tester_mm_common.c.o
+                0x00000000004060e0                fill_block
+ *fill*         0x00000000004063a2        0xe 
+ .text.check_block
+                0x00000000004063b0       0x76 uspace/app_tester.p/app_tester_mm_common.c.o
+                0x00000000004063b0                check_block
+ *fill*         0x0000000000406426        0xa 
+ .text.get_random_block
+                0x0000000000406430       0xb3 uspace/app_tester.p/app_tester_mm_common.c.o
+                0x0000000000406430                get_random_block
+ *fill*         0x00000000004064e3        0xd 
+ .text.map_area
+                0x00000000004064f0       0xdf uspace/app_tester.p/app_tester_mm_common.c.o
+                0x00000000004064f0                map_area
+ *fill*         0x00000000004065cf        0x1 
+ .text.fill_area
+                0x00000000004065d0      0x2f2 uspace/app_tester.p/app_tester_mm_common.c.o
+                0x00000000004065d0                fill_area
+ *fill*         0x00000000004068c2        0xe 
+ .text.test_malloc1
+                0x00000000004068d0      0x360 uspace/app_tester.p/app_tester_mm_malloc1.c.o
+                0x00000000004068d0                test_malloc1
+ .text.test_malloc2
+                0x0000000000406c30       0xb2 uspace/app_tester.p/app_tester_mm_malloc2.c.o
+                0x0000000000406c30                test_malloc2
+ *fill*         0x0000000000406ce2        0xe 
+ .text.test_malloc3
+                0x0000000000406cf0      0x3f9 uspace/app_tester.p/app_tester_mm_malloc3.c.o
+                0x0000000000406cf0                test_malloc3
+ *fill*         0x00000000004070e9        0x7 
+ .text.test_mapping1
+                0x00000000004070f0      0x398 uspace/app_tester.p/app_tester_mm_mapping1.c.o
+                0x00000000004070f0                test_mapping1
+ *fill*         0x0000000000407488        0x8 
+ .text.test_pager1
+                0x0000000000407490      0x1f0 uspace/app_tester.p/app_tester_mm_pager1.c.o
+                0x0000000000407490                test_pager1
+ .text.test_serial1
+                0x0000000000407680      0x4ee uspace/app_tester.p/app_tester_hw_serial_serial1.c.o
+                0x0000000000407680                test_serial1
+ *fill*         0x0000000000407b6e        0x2 
+ .text.test_chardev1
+                0x0000000000407b70      0x4ae uspace/app_tester.p/app_tester_chardev_chardev1.c.o
+                0x0000000000407b70                test_chardev1
+ .text          0x000000000040801e        0xc uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                0x000000000040801e                _start
+ *fill*         0x000000000040802a        0x6 
+ .text.__c_start
+                0x0000000000408030       0x8c uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                0x0000000000408030                __c_start
+ *fill*         0x00000000004080bc        0x4 
+ .text.chardev_open
+                0x00000000004080c0       0x35 uspace/lib/libdevice.a.p/device_src_io_chardev.c.o
+                0x00000000004080c0                chardev_open
+ *fill*         0x00000000004080f5        0xb 
+ .text.chardev_close
+                0x0000000000408100        0xa uspace/lib/libdevice.a.p/device_src_io_chardev.c.o
+                0x0000000000408100                chardev_close
+ *fill*         0x000000000040810a        0x6 
+ .text.chardev_read
+                0x0000000000408110       0xc9 uspace/lib/libdevice.a.p/device_src_io_chardev.c.o
+                0x0000000000408110                chardev_read
+ *fill*         0x00000000004081d9        0x7 
+ .text.chardev_write
+                0x00000000004081e0      0x115 uspace/lib/libdevice.a.p/device_src_io_chardev.c.o
+                0x00000000004081e0                chardev_write
+ *fill*         0x00000000004082f5        0xb 
+ .text.serial_open
+                0x0000000000408300       0x35 uspace/lib/libdevice.a.p/device_src_io_serial.c.o
+                0x0000000000408300                serial_open
+ *fill*         0x0000000000408335        0xb 
+ .text.serial_close
+                0x0000000000408340        0xa uspace/lib/libdevice.a.p/device_src_io_serial.c.o
+                0x0000000000408340                serial_close
+ *fill*         0x000000000040834a        0x6 
+ .text.serial_set_comm_props
+                0x0000000000408350       0x5a uspace/lib/libdevice.a.p/device_src_io_serial.c.o
+                0x0000000000408350                serial_set_comm_props
+ *fill*         0x00000000004083aa        0x6 
+ .text.serial_get_comm_props
+                0x00000000004083b0       0x84 uspace/lib/libdevice.a.p/device_src_io_serial.c.o
+                0x00000000004083b0                serial_get_comm_props
+ *fill*         0x0000000000408434        0xc 
+ .text.cp437_decode
+                0x0000000000408440       0x11 uspace/lib/libcodepage.a.p/codepage_src_cp437.c.o
+                0x0000000000408440                cp437_decode
+ *fill*         0x0000000000408451        0xf 
+ .text.ipc_test_create
+                0x0000000000408460       0x9e uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+                0x0000000000408460                ipc_test_create
+ *fill*         0x00000000004084fe        0x2 
+ .text.ipc_test_destroy
+                0x0000000000408500       0x31 uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+                0x0000000000408500                ipc_test_destroy
+ *fill*         0x0000000000408531        0xf 
+ .text.ipc_test_get_ro_area_size
+                0x0000000000408540       0x4f uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+                0x0000000000408540                ipc_test_get_ro_area_size
+ *fill*         0x000000000040858f        0x1 
+ .text.ipc_test_get_rw_area_size
+                0x0000000000408590       0x4f uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+                0x0000000000408590                ipc_test_get_rw_area_size
+ *fill*         0x00000000004085df        0x1 
+ .text.ipc_test_share_in_ro
+                0x00000000004085e0       0xb6 uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+                0x00000000004085e0                ipc_test_share_in_ro
+ *fill*         0x0000000000408696        0xa 
+ .text.ipc_test_share_in_rw
+                0x00000000004086a0       0xae uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+                0x00000000004086a0                ipc_test_share_in_rw
+ *fill*         0x000000000040874e        0x2 
+ .text.ipc_test_set_rw_buf_size
+                0x0000000000408750       0x38 uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+                0x0000000000408750                ipc_test_set_rw_buf_size
+ *fill*         0x0000000000408788        0x8 
+ .text.ipc_test_read
+                0x0000000000408790       0x8d uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+                0x0000000000408790                ipc_test_read
+ *fill*         0x000000000040881d        0x3 
+ .text.ipc_test_write
+                0x0000000000408820       0x8d uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+                0x0000000000408820                ipc_test_write
+ *fill*         0x00000000004088ad        0x3 
+ .text.console_init
+                0x00000000004088b0       0x7c uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x00000000004088b0                console_init
+ *fill*         0x000000000040892c        0x4 
+ .text.console_done
+                0x0000000000408930        0xa uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x0000000000408930                console_done
+ *fill*         0x000000000040893a        0x6 
+ .text.console_flush
+                0x0000000000408940        0xe uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x0000000000408940                console_flush
+ *fill*         0x000000000040894e        0x2 
+ .text.console_set_style
+                0x0000000000408950       0x31 uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x0000000000408950                console_set_style
+ *fill*         0x0000000000408981        0xf 
+ .text.console_set_color
+                0x0000000000408990       0x47 uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x0000000000408990                console_set_color
+ *fill*         0x00000000004089d7        0x9 
+ .text.console_set_rgb_color
+                0x00000000004089e0       0x42 uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x00000000004089e0                console_set_rgb_color
+ *fill*         0x0000000000408a22        0xe 
+ .text.console_get_event_timeout
+                0x0000000000408a30      0x16c uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x0000000000408a30                console_get_event_timeout
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000408ba0     0x3980
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.main.str1.1
+                0x0000000000408ba0     0x1228 uspace/app_tester.p/app_tester_tester.c.o
+                                         0xad (size before relaxing)
+ .rodata.main.str1.8
+                0x0000000000409dc8     0x18ef uspace/app_tester.p/app_tester_tester.c.o
+                                         0xbe (size before relaxing)
+ .rodata.str1.1
+                0x000000000040b6b7      0x2d5 uspace/app_tester.p/app_tester_tester.c.o
+ .rodata.str1.8
+                0x000000000040b6b7       0x6d uspace/app_tester.p/app_tester_tester.c.o
+ .rodata.test_thread1.str1.1
+                0x000000000040b6b7       0x40 uspace/app_tester.p/app_tester_thread_thread1.c.o
+ .rodata.test_thread1.str1.8
+                0x000000000040b6b7       0x23 uspace/app_tester.p/app_tester_thread_thread1.c.o
+ .rodata.test_it.str1.8
+                0x000000000040b6b7       0xa0 uspace/app_tester.p/app_tester_thread_setjmp1.c.o
+ .rodata.test_print1.str1.8
+                0x000000000040b6b7      0x122 uspace/app_tester.p/app_tester_print_print1.c.o
+ .rodata.test_print1.str1.1
+                0x000000000040b6b7       0xd6 uspace/app_tester.p/app_tester_print_print1.c.o
+ .rodata.test_print2.str1.1
+                0x000000000040b6b7       0x63 uspace/app_tester.p/app_tester_print_print2.c.o
+ .rodata.test_print2.str1.8
+                0x000000000040b6b7      0x3d7 uspace/app_tester.p/app_tester_print_print2.c.o
+ *fill*         0x000000000040b6b7        0x1 
+ .rodata.cst8   0x000000000040b6b8       0x60 uspace/app_tester.p/app_tester_print_print2.c.o
+                                          0x8 (size before relaxing)
+ .rodata.test_print3.str1.8
+                0x000000000040b718      0x31b uspace/app_tester.p/app_tester_print_print3.c.o
+ .rodata.test_print3.str1.1
+                0x000000000040b718        0xf uspace/app_tester.p/app_tester_print_print3.c.o
+ *fill*         0x000000000040b718        0x8 
+ .rodata.cst16  0x000000000040b720       0xe0 uspace/app_tester.p/app_tester_print_print3.c.o
+                                         0x20 (size before relaxing)
+ .rodata.test_print4.str1.8
+                0x000000000040b800      0x2c7 uspace/app_tester.p/app_tester_print_print4.c.o
+ .rodata.test_print4.str1.1
+                0x000000000040b800       0xd8 uspace/app_tester.p/app_tester_print_print4.c.o
+ .rodata.test_print4.str4.8
+                0x000000000040b800      0x468 uspace/app_tester.p/app_tester_print_print4.c.o
+ .rodata.test_print5.str1.1
+                0x000000000040bc68       0x51 uspace/app_tester.p/app_tester_print_print5.c.o
+ .rodata.test_print5.str1.8
+                0x000000000040bc68       0xba uspace/app_tester.p/app_tester_print_print5.c.o
+ .rodata.test_print6.str1.8
+                0x000000000040bc68       0x94 uspace/app_tester.p/app_tester_print_print6.c.o
+ .rodata.test_print6.str1.1
+                0x000000000040bc68      0x3cc uspace/app_tester.p/app_tester_print_print6.c.o
+ .rodata.cst8   0x000000000040bc68      0x2d0 uspace/app_tester.p/app_tester_print_print6.c.o
+ .rodata.test_console1.str1.1
+                0x000000000040bf38       0x80 uspace/app_tester.p/app_tester_console_console1.c.o
+ .rodata.str1.1
+                0x000000000040bf38       0x2f uspace/app_tester.p/app_tester_console_console1.c.o
+ *fill*         0x000000000040bf38        0x8 
+ .rodata.color_name
+                0x000000000040bf40       0x40 uspace/app_tester.p/app_tester_console_console1.c.o
+ .rodata.test_stdio1.str1.1
+                0x000000000040bf80       0xe7 uspace/app_tester.p/app_tester_stdio_stdio1.c.o
+ .rodata.test_stdio2.str1.1
+                0x000000000040bf80       0xda uspace/app_tester.p/app_tester_stdio_stdio2.c.o
+ .rodata.test_logger1.str1.1
+                0x000000000040bf80       0x1a uspace/app_tester.p/app_tester_stdio_logger1.c.o
+ .rodata.test_logger2.str1.1
+                0x000000000040bf80       0x42 uspace/app_tester.p/app_tester_stdio_logger2.c.o
+ .rodata.test_logger2.str1.8
+                0x000000000040bf80       0x53 uspace/app_tester.p/app_tester_stdio_logger2.c.o
+ .rodata.test_fault1.str1.1
+                0x000000000040bf80       0x17 uspace/app_tester.p/app_tester_fault_fault1.c.o
+ .rodata.test_fault2.str1.1
+                0x000000000040bf80       0x21 uspace/app_tester.p/app_tester_fault_fault2.c.o
+ .rodata.test_float1.str1.1
+                0x000000000040bf80       0x4c uspace/app_tester.p/app_tester_float_float1.c.o
+ .rodata.cst8   0x000000000040bf80       0x10 uspace/app_tester.p/app_tester_float_float1.c.o
+ .rodata.test_float2.str1.1
+                0x000000000040bf80       0x1b uspace/app_tester.p/app_tester_float_float2.c.o
+ .rodata.test_float2.str1.8
+                0x000000000040bf80      0x14b uspace/app_tester.p/app_tester_float_float2.c.o
+ .rodata.results_trunc
+                0x000000000040bf80       0x50 uspace/app_tester.p/app_tester_float_float2.c.o
+ *fill*         0x000000000040bfd0       0x10 
+ .rodata.results_sin
+                0x000000000040bfe0       0x50 uspace/app_tester.p/app_tester_float_float2.c.o
+ *fill*         0x000000000040c030       0x10 
+ .rodata.results_cos
+                0x000000000040c040       0x50 uspace/app_tester.p/app_tester_float_float2.c.o
+ *fill*         0x000000000040c090       0x10 
+ .rodata.arguments
+                0x000000000040c0a0       0x50 uspace/app_tester.p/app_tester_float_float2.c.o
+ .rodata.cst8   0x000000000040c0f0       0x50 uspace/app_tester.p/app_tester_float_float2.c.o
+ .rodata.cst4   0x000000000040c0f0       0x14 uspace/app_tester.p/app_tester_float_float2.c.o
+ .rodata.cst16  0x000000000040c104       0x20 uspace/app_tester.p/app_tester_float_float2.c.o
+ .rodata.read_root.str1.1
+                0x000000000040c104       0x41 uspace/app_tester.p/app_tester_vfs_vfs1.c.o
+ .rodata.test_vfs1.str1.1
+                0x000000000040c104      0x13e uspace/app_tester.p/app_tester_vfs_vfs1.c.o
+ .rodata.test_vfs1.str1.8
+                0x000000000040c104       0x21 uspace/app_tester.p/app_tester_vfs_vfs1.c.o
+ .rodata.test_readwrite.str1.8
+                0x000000000040c104      0x12a uspace/app_tester.p/app_tester_ipc_readwrite.c.o
+ .rodata.test_readwrite.str1.1
+                0x000000000040c104       0x3a uspace/app_tester.p/app_tester_ipc_readwrite.c.o
+ .rodata.test_sharein.str1.8
+                0x000000000040c104      0x12a uspace/app_tester.p/app_tester_ipc_sharein.c.o
+ .rodata.test_sharein.str1.1
+                0x000000000040c104       0x17 uspace/app_tester.p/app_tester_ipc_sharein.c.o
+ .rodata.test_starve_ipc.str1.8
+                0x000000000040c104       0x89 uspace/app_tester.p/app_tester_ipc_starve.c.o
+ .rodata.test_starve_ipc.str1.1
+                0x000000000040c104       0x47 uspace/app_tester.p/app_tester_ipc_starve.c.o
+ .rodata.test_loop1.str1.1
+                0x000000000040c104        0xb uspace/app_tester.p/app_tester_loop_loop1.c.o
+ .rodata.checked_malloc.str1.1
+                0x000000000040c104        0xf uspace/app_tester.p/app_tester_mm_common.c.o
+ .rodata.checked_malloc.str1.8
+                0x000000000040c104       0x7b uspace/app_tester.p/app_tester_mm_common.c.o
+ .rodata.done_mem.str1.1
+                0x000000000040c104       0x29 uspace/app_tester.p/app_tester_mm_common.c.o
+ .rodata.alloc_block.str1.1
+                0x000000000040c104        0xc uspace/app_tester.p/app_tester_mm_common.c.o
+ .rodata.fill_block.str1.1
+                0x000000000040c104        0xb uspace/app_tester.p/app_tester_mm_common.c.o
+ .rodata.check_block.str1.8
+                0x000000000040c104       0x2c uspace/app_tester.p/app_tester_mm_common.c.o
+ .rodata.get_random_block.str1.8
+                0x000000000040c104       0x34 uspace/app_tester.p/app_tester_mm_common.c.o
+ .rodata.map_area.str1.1
+                0x000000000040c104        0xd uspace/app_tester.p/app_tester_mm_common.c.o
+ .rodata.fill_area.str1.1
+                0x000000000040c104        0xa uspace/app_tester.p/app_tester_mm_common.c.o
+ .rodata.cst16  0x000000000040c104       0xa0 uspace/app_tester.p/app_tester_mm_common.c.o
+ .rodata.test_malloc1.str1.1
+                0x000000000040c104       0x73 uspace/app_tester.p/app_tester_mm_malloc1.c.o
+ .rodata.str1.1
+                0x000000000040c104       0x81 uspace/app_tester.p/app_tester_mm_malloc1.c.o
+ .rodata.test_malloc2.str1.8
+                0x000000000040c104       0x67 uspace/app_tester.p/app_tester_mm_malloc2.c.o
+ .rodata.test_malloc2.str1.1
+                0x000000000040c104        0x5 uspace/app_tester.p/app_tester_mm_malloc2.c.o
+ .rodata.test_malloc3.str1.1
+                0x000000000040c104       0x78 uspace/app_tester.p/app_tester_mm_malloc3.c.o
+ .rodata.str1.1
+                0x000000000040c104       0x81 uspace/app_tester.p/app_tester_mm_malloc3.c.o
+ .rodata.test_mapping1.str1.8
+                0x000000000040c104       0xee uspace/app_tester.p/app_tester_mm_mapping1.c.o
+ .rodata.test_mapping1.str1.1
+                0x000000000040c104       0x51 uspace/app_tester.p/app_tester_mm_mapping1.c.o
+ .rodata.test_pager1.str1.1
+                0x000000000040c104       0x72 uspace/app_tester.p/app_tester_mm_pager1.c.o
+ .rodata.test_pager1.str1.8
+                0x000000000040c104       0x23 uspace/app_tester.p/app_tester_mm_pager1.c.o
+ *fill*         0x000000000040c104        0x4 
+ .rodata.text   0x000000000040c108        0xd uspace/app_tester.p/app_tester_mm_pager1.c.o
+                0x000000000040c108                text
+ .rodata.test_serial1.str1.8
+                0x000000000040c115      0x289 uspace/app_tester.p/app_tester_hw_serial_serial1.c.o
+ .rodata.test_serial1.str1.1
+                0x000000000040c115       0xa9 uspace/app_tester.p/app_tester_hw_serial_serial1.c.o
+ .rodata.test_chardev1.str1.8
+                0x000000000040c115      0x177 uspace/app_tester.p/app_tester_chardev_chardev1.c.o
+ .rodata.test_chardev1.str1.1
+                0x000000000040c115       0xcb uspace/app_tester.p/app_tester_chardev_chardev1.c.o
+ *fill*         0x000000000040c115        0x3 
+ .rodata.cst8   0x000000000040c118        0x8 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .rodata.cp437  0x000000000040c120      0x400 uspace/lib/libcodepage.a.p/codepage_src_cp437.c.o
+ .rodata.ipc_test_create.str1.1
+                0x000000000040c520        0x9 uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x000000000040c520      0x24c
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x000000000040c520      0x24c uspace/app_tester.p/app_tester_tester.c.o
+                0x000000000040c520                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x000000000040c770      0xbd8
+ *(.eh_frame)
+ .eh_frame      0x000000000040c770       0x48 uspace/app_tester.p/app_tester_tester.c.o
+ .eh_frame      0x000000000040c7b8       0x28 uspace/app_tester.p/app_tester_tester.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x000000000040c7e0        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ .eh_frame      0x000000000040c7e0        0x0 uspace/app_tester.p/app_tester_util.c.o
+                                         0xa8 (size before relaxing)
+ .eh_frame      0x000000000040c7e0       0x50 uspace/app_tester.p/app_tester_thread_thread1.c.o
+                                         0x68 (size before relaxing)
+ .eh_frame      0x000000000040c830       0x50 uspace/app_tester.p/app_tester_thread_setjmp1.c.o
+                                         0x68 (size before relaxing)
+ .eh_frame      0x000000000040c880       0x20 uspace/app_tester.p/app_tester_print_print1.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x000000000040c8a0       0x20 uspace/app_tester.p/app_tester_print_print2.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x000000000040c8c0       0x30 uspace/app_tester.p/app_tester_print_print3.c.o
+                                         0x48 (size before relaxing)
+ .eh_frame      0x000000000040c8f0       0x38 uspace/app_tester.p/app_tester_print_print4.c.o
+                                         0x50 (size before relaxing)
+ .eh_frame      0x000000000040c928       0x20 uspace/app_tester.p/app_tester_print_print5.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x000000000040c948       0x30 uspace/app_tester.p/app_tester_print_print6.c.o
+                                         0x48 (size before relaxing)
+ .eh_frame      0x000000000040c978       0x30 uspace/app_tester.p/app_tester_console_console1.c.o
+                                         0x48 (size before relaxing)
+ .eh_frame      0x000000000040c9a8       0x38 uspace/app_tester.p/app_tester_stdio_stdio1.c.o
+                                         0x50 (size before relaxing)
+ .eh_frame      0x000000000040c9e0       0x30 uspace/app_tester.p/app_tester_stdio_stdio2.c.o
+                                         0x48 (size before relaxing)
+ .eh_frame      0x000000000040ca10       0x20 uspace/app_tester.p/app_tester_stdio_logger1.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x000000000040ca30       0x20 uspace/app_tester.p/app_tester_stdio_logger2.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x000000000040ca50       0x20 uspace/app_tester.p/app_tester_fault_fault1.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x000000000040ca70       0x20 uspace/app_tester.p/app_tester_fault_fault2.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x000000000040ca90       0x20 uspace/app_tester.p/app_tester_fault_fault3.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x000000000040cab0       0x50 uspace/app_tester.p/app_tester_float_float1.c.o
+                                         0x68 (size before relaxing)
+ .eh_frame      0x000000000040cb00       0x28 uspace/app_tester.p/app_tester_float_float2.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x000000000040cb28       0x60 uspace/app_tester.p/app_tester_vfs_vfs1.c.o
+                                         0x78 (size before relaxing)
+ .eh_frame      0x000000000040cb88       0x28 uspace/app_tester.p/app_tester_ipc_readwrite.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x000000000040cbb0       0x30 uspace/app_tester.p/app_tester_ipc_sharein.c.o
+                                         0x48 (size before relaxing)
+ .eh_frame      0x000000000040cbe0       0x30 uspace/app_tester.p/app_tester_ipc_starve.c.o
+                                         0x48 (size before relaxing)
+ .eh_frame      0x000000000040cc10       0x20 uspace/app_tester.p/app_tester_loop_loop1.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x000000000040cc30      0x180 uspace/app_tester.p/app_tester_mm_common.c.o
+                                        0x1c0 (size before relaxing)
+ .eh_frame      0x000000000040cdb0       0x30 uspace/app_tester.p/app_tester_mm_malloc1.c.o
+                                         0x48 (size before relaxing)
+ .eh_frame      0x000000000040cde0       0x28 uspace/app_tester.p/app_tester_mm_malloc2.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x000000000040ce08       0x30 uspace/app_tester.p/app_tester_mm_malloc3.c.o
+                                         0x48 (size before relaxing)
+ .eh_frame      0x000000000040ce38       0x38 uspace/app_tester.p/app_tester_mm_mapping1.c.o
+                                         0x50 (size before relaxing)
+ .eh_frame      0x000000000040ce70       0x30 uspace/app_tester.p/app_tester_mm_pager1.c.o
+                                         0x48 (size before relaxing)
+ .eh_frame      0x000000000040cea0       0x40 uspace/app_tester.p/app_tester_hw_serial_serial1.c.o
+                                         0x58 (size before relaxing)
+ .eh_frame      0x000000000040cee0       0x38 uspace/app_tester.p/app_tester_chardev_chardev1.c.o
+                                         0x50 (size before relaxing)
+ .eh_frame      0x000000000040cf18       0x20 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x000000000040cf38       0xa8 uspace/lib/libdevice.a.p/device_src_io_chardev.c.o
+                                         0xc0 (size before relaxing)
+ .eh_frame      0x000000000040cfe0       0xa8 uspace/lib/libdevice.a.p/device_src_io_serial.c.o
+                                         0xc0 (size before relaxing)
+ .eh_frame      0x000000000040d088       0x20 uspace/lib/libcodepage.a.p/codepage_src_cp437.c.o
+                                         0x58 (size before relaxing)
+ .eh_frame      0x000000000040d0a8      0x188 uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+                                        0x1c8 (size before relaxing)
+ .eh_frame      0x000000000040d230      0x118 uspace/lib/libconsole.a.p/console_src_console.c.o
+                                        0x318 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x000000000040d348        0x0
+ *(.sframe)
+ .sframe        0x000000000040d348        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x000000000040e348                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0x000000000040e348        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x000000000040e348        0x0
+                0x000000000040e348                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x000000000040e348                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x000000000040e348        0x0
+                0x000000000040e348                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x000000000040e348                PROVIDE (__init_array_end = .)
+
+.fini_array     0x000000000040e348        0x0
+                0x000000000040e348                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x000000000040e348                PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x000000000040e348        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x000000000040e348        0x0 uspace/app_tester.p/app_tester_tester.c.o
+
+.dynamic        0x000000000040e348      0x160
+ *(.dynamic)
+ .dynamic       0x000000000040e348      0x160 uspace/app_tester.p/app_tester_tester.c.o
+                0x000000000040e348                _DYNAMIC
+
+.got            0x000000000040e4a8        0x0
+ *(.got)
+ .got           0x000000000040e4a8        0x0 uspace/app_tester.p/app_tester_tester.c.o
+ *(.igot)
+                0x000000000040e4a8                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x000000000040e4a8      0x2d8
+ *(.got.plt)
+ .got.plt       0x000000000040e4a8      0x2d8 uspace/app_tester.p/app_tester_tester.c.o
+                0x000000000040e4a8                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x000000000040e780        0x0 uspace/app_tester.p/app_tester_tester.c.o
+
+.data           0x000000000040e780      0x7c0
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.tests    0x000000000040e780      0x3e0 uspace/app_tester.p/app_tester_tester.c.o
+                0x000000000040e780                tests
+ .data.threads_finished
+                0x000000000040eb60       0x20 uspace/app_tester.p/app_tester_thread_thread1.c.o
+ .data.threads_finished
+                0x000000000040eb80       0x20 uspace/app_tester.p/app_tester_float_float1.c.o
+ .data.text     0x000000000040eba0       0x39 uspace/app_tester.p/app_tester_vfs_vfs1.c.o
+ *fill*         0x000000000040ebd9        0x7 
+ .data.mem_areas
+                0x000000000040ebe0       0x10 uspace/app_tester.p/app_tester_mm_common.c.o
+ .data.mem_blocks
+                0x000000000040ebf0       0x10 uspace/app_tester.p/app_tester_mm_common.c.o
+ .data.phases   0x000000000040ec00       0x80 uspace/app_tester.p/app_tester_mm_malloc1.c.o
+ .data.subphases_default
+                0x000000000040ec80       0x60 uspace/app_tester.p/app_tester_mm_malloc1.c.o
+ .data.subphases_128K
+                0x000000000040ece0       0x60 uspace/app_tester.p/app_tester_mm_malloc1.c.o
+ .data.subphases_32B
+                0x000000000040ed40       0x60 uspace/app_tester.p/app_tester_mm_malloc1.c.o
+ .data.phases   0x000000000040eda0       0x80 uspace/app_tester.p/app_tester_mm_malloc3.c.o
+ .data.subphases_default
+                0x000000000040ee20       0x60 uspace/app_tester.p/app_tester_mm_malloc3.c.o
+ .data.subphases_128K
+                0x000000000040ee80       0x60 uspace/app_tester.p/app_tester_mm_malloc3.c.o
+ .data.subphases_32B
+                0x000000000040eee0       0x60 uspace/app_tester.p/app_tester_mm_malloc3.c.o
+
+.data1
+ *(.data1)
+                0x000000000040ef40                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x000000000040ef40                . = .
+                0x000000000040ef40                __bss_start = .
+
+.bss            0x000000000040ef40    0x40580
+ *(.dynbss)
+ .dynbss        0x000000000040ef40       0x68 uspace/app_tester.p/app_tester_tester.c.o
+                0x000000000040ef40                stdout
+                0x000000000040ef50                stdin
+                0x000000000040ef60                __progsymbols
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss.test_argv
+                0x000000000040efa8        0x8 uspace/app_tester.p/app_tester_tester.c.o
+                0x000000000040efa8                test_argv
+ .bss.test_argc
+                0x000000000040efb0        0x4 uspace/app_tester.p/app_tester_tester.c.o
+                0x000000000040efb0                test_argc
+ .bss.test_quiet
+                0x000000000040efb4        0x1 uspace/app_tester.p/app_tester_tester.c.o
+                0x000000000040efb4                test_quiet
+ .bss.finish    0x000000000040efb5        0x1 uspace/app_tester.p/app_tester_thread_thread1.c.o
+ *fill*         0x000000000040efb6        0x2 
+ .bss.counter   0x000000000040efb8        0x4 uspace/app_tester.p/app_tester_thread_setjmp1.c.o
+ *fill*         0x000000000040efbc        0x4 
+ .bss.jmp_env   0x000000000040efc0       0x48 uspace/app_tester.p/app_tester_thread_setjmp1.c.o
+ *fill*         0x000000000040f008       0x18 
+ .bss.buf       0x000000000040f020       0x21 uspace/app_tester.p/app_tester_stdio_stdio1.c.o
+ *fill*         0x000000000040f041        0x3 
+ .bss.threads_fault
+                0x000000000040f044        0x4 uspace/app_tester.p/app_tester_float_float1.c.o
+ *fill*         0x000000000040f048       0x18 
+ .bss.rw_buf    0x000000000040f060      0x400 uspace/app_tester.p/app_tester_ipc_readwrite.c.o
+ .bss.mem_blocks_count
+                0x000000000040f460        0x8 uspace/app_tester.p/app_tester_mm_common.c.o
+                0x000000000040f460                mem_blocks_count
+ .bss.mem_allocated
+                0x000000000040f468        0x8 uspace/app_tester.p/app_tester_mm_common.c.o
+                0x000000000040f468                mem_allocated
+ .bss.error_flag
+                0x000000000040f470        0x1 uspace/app_tester.p/app_tester_mm_common.c.o
+                0x000000000040f470                error_flag
+ *fill*         0x000000000040f471        0x3 
+ .bss.fd        0x000000000040f474        0x4 uspace/app_tester.p/app_tester_mm_pager1.c.o
+                0x000000000040f474                fd
+ *fill*         0x000000000040f478        0x8 
+ .bss.large_buffer
+                0x000000000040f480    0x40000 uspace/app_tester.p/app_tester_chardev_chardev1.c.o
+ .bss.small_buffer
+                0x000000000044f480       0x40 uspace/app_tester.p/app_tester_chardev_chardev1.c.o
+ *(COMMON)
+                0x000000000044f4c0                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x000000000044f4c0                . = ALIGN (0x8)
+                0x000000000044f4c0                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x00000000004514c0        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x00000000004514c0                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x00000000004514c0                . = ALIGN (0x8)
+                0x000000000044f4c0                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x00000000004514c0                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/app_tester.p/app_tester_tester.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/app_tester.p/app_tester_util.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_tester.p/app_tester_thread_thread1.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_tester.p/app_tester_thread_setjmp1.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_tester.p/app_tester_print_print1.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_tester.p/app_tester_print_print2.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_tester.p/app_tester_print_print3.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_tester.p/app_tester_print_print4.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_tester.p/app_tester_print_print5.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_tester.p/app_tester_print_print6.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_tester.p/app_tester_console_console1.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_tester.p/app_tester_stdio_stdio1.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_tester.p/app_tester_stdio_stdio2.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_tester.p/app_tester_stdio_logger1.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_tester.p/app_tester_stdio_logger2.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_tester.p/app_tester_fault_fault1.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_tester.p/app_tester_fault_fault2.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_tester.p/app_tester_fault_fault3.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_tester.p/app_tester_float_float1.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_tester.p/app_tester_float_float2.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_tester.p/app_tester_vfs_vfs1.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_tester.p/app_tester_ipc_readwrite.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_tester.p/app_tester_ipc_sharein.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_tester.p/app_tester_ipc_starve.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_tester.p/app_tester_loop_loop1.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_tester.p/app_tester_mm_common.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_tester.p/app_tester_mm_malloc1.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_tester.p/app_tester_mm_malloc2.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_tester.p/app_tester_mm_malloc3.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_tester.p/app_tester_mm_mapping1.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_tester.p/app_tester_mm_pager1.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_tester.p/app_tester_hw_serial_serial1.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_tester.p/app_tester_chardev_chardev1.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdevice.a.p/device_src_io_chardev.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdevice.a.p/device_src_io_serial.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libcodepage.a.p/codepage_src_cp437.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libipctest.a.p/ipctest_src_ipc_test.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libconsole.a.p/console_src_console.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/app_tester elf64-x86-64)

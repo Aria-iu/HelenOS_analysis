@@ -1,0 +1,1142 @@
+Archive member included to satisfy reference by file (symbol)
+
+uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                              (--whole-archive)
+uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                              (--whole-archive)
+uspace/lib/libblock.a.p/block_block.c.o
+                              uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o (block_init)
+uspace/lib/libdevice.a.p/device_src_bd.c.o
+                              uspace/lib/libblock.a.p/block_block.c.o (bd_open)
+uspace/lib/libfs.a.p/fs_libfs.c.o
+                              uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o (fs_register)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.0                     uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o (task_retval)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat_dentry.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat_dentry.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat_dentry.c.o
+ .text.fat_lfn_str_nlength
+                0x0000000000000000       0x2b uspace/srv_fs_fat.p/srv_fs_fat_fat_dentry.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat_directory.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat_directory.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat_directory.c.o
+ .text.fat_directory_prev
+                0x0000000000000000       0xb0 uspace/srv_fs_fat.p/srv_fs_fat_fat_directory.c.o
+ .text.fat_directory_get
+                0x0000000000000000       0xd0 uspace/srv_fs_fat.p/srv_fs_fat_fat_directory.c.o
+ .text.fat_directory_write_dentry
+                0x0000000000000000       0xe0 uspace/srv_fs_fat.p/srv_fs_fat_fat_directory.c.o
+ .text.fat_directory_lookup_name
+                0x0000000000000000      0x156 uspace/srv_fs_fat.p/srv_fs_fat_fat_directory.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat_fat.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat_fat.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat_fat.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .text          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libblock.a.p/block_block.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libblock.a.p/block_block.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libblock.a.p/block_block.c.o
+ .text.read_blocks.part.0
+                0x0000000000000000       0x18 uspace/lib/libblock.a.p/block_block.c.o
+ .text.write_blocks.part.0
+                0x0000000000000000       0x18 uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_seqread
+                0x0000000000000000      0x1be uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_read_direct
+                0x0000000000000000       0xda uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_write_direct
+                0x0000000000000000       0xda uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_sync_cache
+                0x0000000000000000       0x86 uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_get_bsize
+                0x0000000000000000       0x86 uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_get_nblocks
+                0x0000000000000000       0x86 uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_read_bytes_direct
+                0x0000000000000000      0x1e8 uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_read_toc
+                0x0000000000000000       0x9e uspace/lib/libblock.a.p/block_block.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_bd.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_bd.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_bd.c.o
+ .text.bd_read_toc
+                0x0000000000000000       0x9a uspace/lib/libdevice.a.p/device_src_bd.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libfs.a.p/fs_libfs.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libfs.a.p/fs_libfs.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libfs.a.p/fs_libfs.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+LOAD uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+LOAD uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+LOAD uspace/srv_fs_fat.p/srv_fs_fat_fat_dentry.c.o
+LOAD uspace/srv_fs_fat.p/srv_fs_fat_fat_directory.c.o
+LOAD uspace/srv_fs_fat.p/srv_fs_fat_fat_fat.c.o
+START GROUP
+LOAD uspace/lib/c/libstartfiles.a
+LOAD uspace/lib/libblock.a
+LOAD uspace/lib/libdevice.a
+LOAD uspace/lib/libc.so.0.0
+LOAD uspace/lib/libfs.a
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000400000                PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x0000000000400120                . = (SEGMENT_START ("text-segment", 0x400000) + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000400120      0x240
+ *(.hash)
+ .hash          0x0000000000400120      0x240 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x0000000000400360      0x708
+ *(.dynsym)
+ .dynsym        0x0000000000400360      0x708 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+
+.dynstr         0x0000000000400a68      0x453
+ *(.dynstr)
+ .dynstr        0x0000000000400a68      0x453 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+
+.gnu.version    0x0000000000400ebc        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000400ebc        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+
+.gnu.version_d  0x0000000000400ec0        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000400ec0        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+
+.gnu.version_r  0x0000000000400ec0        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000400ec0        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+
+.rela.dyn       0x0000000000400ec0       0x18
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text.__c_start
+                0x0000000000400ec0        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ .rela.rodata.cst8
+                0x0000000000400ec0        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x0000000000400ec0        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000400ec0        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x0000000000400ec0       0x18 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+
+.rela.plt       0x0000000000400ed8      0x6d8
+ *(.rela.plt)
+ .rela.plt      0x0000000000400ed8      0x6d8 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+ .rela.iplt     0x00000000004015b0        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x00000000004015b0      0x4a0
+ *(.plt)
+ .plt           0x00000000004015b0      0x4a0 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+                0x00000000004015c0                task_retval
+                0x00000000004015d0                loc_service_connect
+                0x00000000004015e0                printf
+                0x00000000004015f0                async_hangup
+                0x0000000000401600                async_req_0_2
+                0x0000000000401610                str_casecmp
+                0x0000000000401620                async_wait_for
+                0x0000000000401630                snprintf
+                0x0000000000401640                hash_table_create
+                0x0000000000401650                async_data_write_start
+                0x0000000000401660                hash_table_insert
+                0x0000000000401670                async_get_call
+                0x0000000000401680                str_to_utf16
+                0x0000000000401690                str_decode
+                0x00000000004016a0                service_connect_blocking
+                0x00000000004016b0                async_data_read_finalize
+                0x00000000004016c0                memcpy
+                0x00000000004016d0                puts
+                0x00000000004016e0                islower
+                0x00000000004016f0                tolower
+                0x0000000000401700                malloc
+                0x0000000000401710                ascii_check
+                0x0000000000401720                str_rchr
+                0x0000000000401730                async_answer_0
+                0x0000000000401740                async_share_in_start_0_0
+                0x0000000000401750                stacktrace_print
+                0x0000000000401760                utf16_to_str
+                0x0000000000401770                strtol
+                0x0000000000401780                async_exchange_end
+                0x0000000000401790                str_chr
+                0x00000000004017a0                fibril_mutex_trylock
+                0x00000000004017b0                calloc
+                0x00000000004017c0                async_send_3
+                0x00000000004017d0                fibril_mutex_unlock
+                0x00000000004017e0                async_answer_4
+                0x00000000004017f0                async_req_0_1
+                0x0000000000401800                async_answer_5
+                0x0000000000401810                str_tok
+                0x0000000000401820                isalpha
+                0x0000000000401830                async_create_callback_port
+                0x0000000000401840                str_cmp
+                0x0000000000401850                hash_table_remove
+                0x0000000000401860                hash_table_remove_item
+                0x0000000000401870                __helenos_assert_abort
+                0x0000000000401880                memset
+                0x0000000000401890                async_data_read_receive
+                0x00000000004018a0                hash_table_empty
+                0x00000000004018b0                async_accept_0
+                0x00000000004018c0                async_data_read_start
+                0x00000000004018d0                isalnum
+                0x00000000004018e0                str_cpy
+                0x00000000004018f0                utf16_wsize
+                0x0000000000401900                str_error_name
+                0x0000000000401910                str_size
+                0x0000000000401920                async_answer_1
+                0x0000000000401930                async_exchange_begin
+                0x0000000000401940                async_send_0
+                0x0000000000401950                str_error
+                0x0000000000401960                hash_table_apply
+                0x0000000000401970                async_answer_3
+                0x0000000000401980                hash_table_find
+                0x0000000000401990                async_data_write_finalize
+                0x00000000004019a0                async_data_write_accept
+                0x00000000004019b0                fibril_rwlock_initialize
+                0x00000000004019c0                __libc_main
+                0x00000000004019d0                async_manager
+                0x00000000004019e0                async_forget
+                0x00000000004019f0                async_req_3_0
+                0x0000000000401a00                toupper
+                0x0000000000401a10                hash_table_destroy
+                0x0000000000401a20                async_data_write_receive
+                0x0000000000401a30                free
+                0x0000000000401a40                fibril_mutex_lock
+ *(.iplt)
+ .iplt          0x0000000000401a50        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+
+.plt.got        0x0000000000401a50        0x0
+ *(.plt.got)
+ .plt.got       0x0000000000401a50        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x0000000000401a50     0xb844
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ .text.unlikely.fat_index_get
+                0x0000000000401a50        0xa uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ .text.unlikely.fat_size_get
+                0x0000000000401a5a        0xa uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ .text.unlikely.fat_lnkcnt_get
+                0x0000000000401a64        0x9 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ .text.unlikely.fat_is_directory
+                0x0000000000401a6d        0x9 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ .text.unlikely.fat_is_file
+                0x0000000000401a76        0x9 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ .text.unlikely.fat_has_children
+                0x0000000000401a7f        0x9 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ .text.unlikely.fat_link
+                0x0000000000401a88       0x13 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ .text.unlikely.fat_destroy_node
+                0x0000000000401a9b        0x9 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ .text.unlikely.fat_node_put
+                0x0000000000401aa4       0x13 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ .text.unlikely.fat_node_get_new
+                0x0000000000401ab7       0x74 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ .text.unlikely.fat_mounted
+                0x0000000000401b2b        0xa uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ .text.unlikely.fat_create_node
+                0x0000000000401b35       0x13 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ .text.unlikely.fat_node_get_core
+                0x0000000000401b48       0x13 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ .text.unlikely.fat_match
+                0x0000000000401b5b       0x1d uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *fill*         0x0000000000401b78        0x8 
+ .text.startup.main
+                0x0000000000401b80       0xff uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+                0x0000000000401b80                main
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ *fill*         0x0000000000401c7f        0x1 
+ .text.fat_node_open
+                0x0000000000401c80        0x8 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x0000000000401c88        0x8 
+ .text.fat_index_get
+                0x0000000000401c90       0x19 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x0000000000401ca9        0x7 
+ .text.fat_size_get
+                0x0000000000401cb0       0x16 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x0000000000401cc6        0xa 
+ .text.fat_lnkcnt_get
+                0x0000000000401cd0       0x15 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x0000000000401ce5        0xb 
+ .text.fat_is_directory
+                0x0000000000401cf0       0x19 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x0000000000401d09        0x7 
+ .text.fat_is_file
+                0x0000000000401d10       0x19 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x0000000000401d29        0x7 
+ .text.fat_service_get
+                0x0000000000401d30        0x8 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x0000000000401d38        0x8 
+ .text.fat_close
+                0x0000000000401d40        0x8 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x0000000000401d48        0x8 
+ .text.fat_total_block_count
+                0x0000000000401d50       0x55 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x0000000000401da5        0xb 
+ .text.fat_size_block
+                0x0000000000401db0       0x26 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x0000000000401dd6        0xa 
+ .text.fat_free_block_count
+                0x0000000000401de0       0xcb uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x0000000000401eab        0x5 
+ .text.fat_has_children
+                0x0000000000401eb0      0x190 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ .text.fat_unlink
+                0x0000000000402040      0x18b uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x00000000004021cb        0x5 
+ .text.fat_link
+                0x00000000004021d0      0x351 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x0000000000402521        0xf 
+ .text.fat_destroy_node
+                0x0000000000402530       0xcc uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x00000000004025fc        0x4 
+ .text.fat_node_put
+                0x0000000000402600       0xa7 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x00000000004026a7        0x9 
+ .text.fat_node_sync
+                0x00000000004026b0       0xed uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x000000000040279d        0x3 
+ .text.fat_node_get_new
+                0x00000000004027a0      0x1f7 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x0000000000402997        0x9 
+ .text.fat_fs_open.part.0
+                0x00000000004029a0      0x332 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x0000000000402cd2        0xe 
+ .text.fat_fsprobe
+                0x0000000000402ce0      0x12d uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x0000000000402e0d        0x3 
+ .text.fat_mounted
+                0x0000000000402e10      0x19a uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x0000000000402faa        0x6 
+ .text.fat_create_node
+                0x0000000000402fb0      0x207 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x00000000004031b7        0x9 
+ .text.fat_node_get_core
+                0x00000000004031c0      0x34e uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x000000000040350e        0x2 
+ .text.fat_node_get
+                0x0000000000403510       0x6a uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x000000000040357a        0x6 
+ .text.fat_match
+                0x0000000000403580      0x22a uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x00000000004037aa        0x6 
+ .text.fat_root_get
+                0x00000000004037b0       0x6a uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x000000000040381a        0x6 
+ .text.fat_sync
+                0x0000000000403820      0x128 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x0000000000403948        0x8 
+ .text.fat_destroy
+                0x0000000000403950       0x86 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x00000000004039d6        0xa 
+ .text.fat_truncate
+                0x00000000004039e0      0x1fb uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x0000000000403bdb        0x5 
+ .text.fat_unmounted
+                0x0000000000403be0      0x4ac uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x000000000040408c        0x4 
+ .text.fat_write
+                0x0000000000404090      0x636 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x00000000004046c6        0xa 
+ .text.fat_read
+                0x00000000004046d0      0x6a5 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x0000000000404d75        0xb 
+ .text.pos_key_hash
+                0x0000000000404d80       0x31 uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+ *fill*         0x0000000000404db1        0xf 
+ .text.pos_hash
+                0x0000000000404dc0       0x32 uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+ *fill*         0x0000000000404df2        0xe 
+ .text.pos_key_equal
+                0x0000000000404e00       0x2b uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+ *fill*         0x0000000000404e2b        0x5 
+ .text.idx_key_hash
+                0x0000000000404e30       0x21 uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+ *fill*         0x0000000000404e51        0xf 
+ .text.idx_hash
+                0x0000000000404e60       0x22 uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+ *fill*         0x0000000000404e82        0xe 
+ .text.idx_key_equal
+                0x0000000000404e90       0x1c uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+ *fill*         0x0000000000404eac        0x4 
+ .text.idx_remove_callback
+                0x0000000000404eb0        0xe uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+ *fill*         0x0000000000404ebe        0x2 
+ .text.rm_idx_service_id
+                0x0000000000404ec0       0x28 uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+ *fill*         0x0000000000404ee8        0x8 
+ .text.rm_pos_service_id
+                0x0000000000404ef0       0x28 uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+ *fill*         0x0000000000404f18        0x8 
+ .text.fat_idx_create
+                0x0000000000404f20      0x161 uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+ *fill*         0x0000000000405081        0xf 
+ .text.fat_idx_get_new
+                0x0000000000405090       0x7f uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+                0x0000000000405090                fat_idx_get_new
+ *fill*         0x000000000040510f        0x1 
+ .text.fat_idx_get_by_pos
+                0x0000000000405110       0xa1 uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+                0x0000000000405110                fat_idx_get_by_pos
+ *fill*         0x00000000004051b1        0xf 
+ .text.fat_idx_hashin
+                0x00000000004051c0       0x32 uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+                0x00000000004051c0                fat_idx_hashin
+ *fill*         0x00000000004051f2        0xe 
+ .text.fat_idx_hashout
+                0x0000000000405200       0x32 uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+                0x0000000000405200                fat_idx_hashout
+ *fill*         0x0000000000405232        0xe 
+ .text.fat_idx_get_by_index
+                0x0000000000405240       0x50 uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+                0x0000000000405240                fat_idx_get_by_index
+ .text.fat_idx_destroy
+                0x0000000000405290      0x290 uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+                0x0000000000405290                fat_idx_destroy
+ .text.fat_idx_init
+                0x0000000000405520       0x51 uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+                0x0000000000405520                fat_idx_init
+ *fill*         0x0000000000405571        0xf 
+ .text.fat_idx_fini
+                0x0000000000405580       0x49 uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+                0x0000000000405580                fat_idx_fini
+ *fill*         0x00000000004055c9        0x7 
+ .text.fat_idx_init_by_service_id
+                0x00000000004055d0       0xd0 uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+                0x00000000004055d0                fat_idx_init_by_service_id
+ .text.fat_idx_fini_by_service_id
+                0x00000000004056a0      0x11e uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+                0x00000000004056a0                fat_idx_fini_by_service_id
+ *fill*         0x00000000004057be        0x2 
+ .text.fat_dentry_namecmp
+                0x00000000004057c0       0x69 uspace/srv_fs_fat.p/srv_fs_fat_fat_dentry.c.o
+                0x00000000004057c0                fat_dentry_namecmp
+ *fill*         0x0000000000405829        0x7 
+ .text.fat_dentry_name_get
+                0x0000000000405830      0x282 uspace/srv_fs_fat.p/srv_fs_fat_fat_dentry.c.o
+                0x0000000000405830                fat_dentry_name_get
+ *fill*         0x0000000000405ab2        0xe 
+ .text.fat_dentry_name_set
+                0x0000000000405ac0      0x22a uspace/srv_fs_fat.p/srv_fs_fat_fat_dentry.c.o
+                0x0000000000405ac0                fat_dentry_name_set
+ *fill*         0x0000000000405cea        0x6 
+ .text.fat_dentry_vollabel_get
+                0x0000000000405cf0      0x14f uspace/srv_fs_fat.p/srv_fs_fat_fat_dentry.c.o
+                0x0000000000405cf0                fat_dentry_vollabel_get
+ *fill*         0x0000000000405e3f        0x1 
+ .text.fat_classify_dentry
+                0x0000000000405e40       0x57 uspace/srv_fs_fat.p/srv_fs_fat_fat_dentry.c.o
+                0x0000000000405e40                fat_classify_dentry
+ *fill*         0x0000000000405e97        0x9 
+ .text.fat_dentry_chksum
+                0x0000000000405ea0       0x3b uspace/srv_fs_fat.p/srv_fs_fat_fat_dentry.c.o
+                0x0000000000405ea0                fat_dentry_chksum
+ *fill*         0x0000000000405edb        0x5 
+ .text.fat_lfn_size
+                0x0000000000405ee0      0x128 uspace/srv_fs_fat.p/srv_fs_fat_fat_dentry.c.o
+                0x0000000000405ee0                fat_lfn_size
+ *fill*         0x0000000000406008        0x8 
+ .text.fat_lfn_get_entry
+                0x0000000000406010      0x1a4 uspace/srv_fs_fat.p/srv_fs_fat_fat_dentry.c.o
+                0x0000000000406010                fat_lfn_get_entry
+ *fill*         0x00000000004061b4        0xc 
+ .text.fat_lfn_set_entry
+                0x00000000004061c0      0x262 uspace/srv_fs_fat.p/srv_fs_fat_fat_dentry.c.o
+                0x00000000004061c0                fat_lfn_set_entry
+ *fill*         0x0000000000406422        0xe 
+ .text.str_to_ascii
+                0x0000000000406430       0x9e uspace/srv_fs_fat.p/srv_fs_fat_fat_dentry.c.o
+                0x0000000000406430                str_to_ascii
+ *fill*         0x00000000004064ce        0x2 
+ .text.fat_valid_name
+                0x00000000004064d0       0x60 uspace/srv_fs_fat.p/srv_fs_fat_fat_dentry.c.o
+                0x00000000004064d0                fat_valid_name
+ .text.fat_valid_short_name
+                0x0000000000406530       0xd0 uspace/srv_fs_fat.p/srv_fs_fat_fat_dentry.c.o
+                0x0000000000406530                fat_valid_short_name
+ .text.fat_directory_open
+                0x0000000000406600       0x70 uspace/srv_fs_fat.p/srv_fs_fat_fat_directory.c.o
+                0x0000000000406600                fat_directory_open
+ .text.fat_directory_close
+                0x0000000000406670       0x1c uspace/srv_fs_fat.p/srv_fs_fat_fat_directory.c.o
+                0x0000000000406670                fat_directory_close
+ *fill*         0x000000000040668c        0x4 
+ .text.fat_directory_next
+                0x0000000000406690       0xb0 uspace/srv_fs_fat.p/srv_fs_fat_fat_directory.c.o
+                0x0000000000406690                fat_directory_next
+ .text.fat_directory_seek
+                0x0000000000406740       0xa9 uspace/srv_fs_fat.p/srv_fs_fat_fat_directory.c.o
+                0x0000000000406740                fat_directory_seek
+ *fill*         0x00000000004067e9        0x7 
+ .text.fat_directory_read
+                0x00000000004067f0      0x3d6 uspace/srv_fs_fat.p/srv_fs_fat_fat_directory.c.o
+                0x00000000004067f0                fat_directory_read
+ *fill*         0x0000000000406bc6        0xa 
+ .text.fat_directory_erase
+                0x0000000000406bd0      0x298 uspace/srv_fs_fat.p/srv_fs_fat_fat_directory.c.o
+                0x0000000000406bd0                fat_directory_erase
+ *fill*         0x0000000000406e68        0x8 
+ .text.fat_directory_expand
+                0x0000000000406e70      0x153 uspace/srv_fs_fat.p/srv_fs_fat_fat_directory.c.o
+                0x0000000000406e70                fat_directory_expand
+ *fill*         0x0000000000406fc3        0xd 
+ .text.fat_directory_lookup_free
+                0x0000000000406fd0      0x33a uspace/srv_fs_fat.p/srv_fs_fat_fat_directory.c.o
+                0x0000000000406fd0                fat_directory_lookup_free
+ *fill*         0x000000000040730a        0x6 
+ .text.fat_directory_is_sfn_exist
+                0x0000000000407310      0x238 uspace/srv_fs_fat.p/srv_fs_fat_fat_directory.c.o
+                0x0000000000407310                fat_directory_is_sfn_exist
+ *fill*         0x0000000000407548        0x8 
+ .text.fat_directory_create_sfn
+                0x0000000000407550      0x1c5 uspace/srv_fs_fat.p/srv_fs_fat_fat_directory.c.o
+                0x0000000000407550                fat_directory_create_sfn
+ *fill*         0x0000000000407715        0xb 
+ .text.fat_directory_write
+                0x0000000000407720      0x6c7 uspace/srv_fs_fat.p/srv_fs_fat_fat_directory.c.o
+                0x0000000000407720                fat_directory_write
+ *fill*         0x0000000000407de7        0x9 
+ .text.fat_directory_vollabel_get
+                0x0000000000407df0      0x232 uspace/srv_fs_fat.p/srv_fs_fat_fat_directory.c.o
+                0x0000000000407df0                fat_directory_vollabel_get
+ *fill*         0x0000000000408022        0xe 
+ .text.fat_cluster_walk
+                0x0000000000408030      0x718 uspace/srv_fs_fat.p/srv_fs_fat_fat_fat.c.o
+                0x0000000000408030                fat_cluster_walk
+ *fill*         0x0000000000408748        0x8 
+ .text._fat_block_get
+                0x0000000000408750      0x1fd uspace/srv_fs_fat.p/srv_fs_fat_fat_fat.c.o
+                0x0000000000408750                _fat_block_get
+ *fill*         0x000000000040894d        0x3 
+ .text.fat_block_get
+                0x0000000000408950      0x1b6 uspace/srv_fs_fat.p/srv_fs_fat_fat_fat.c.o
+                0x0000000000408950                fat_block_get
+ *fill*         0x0000000000408b06        0xa 
+ .text.fat_fill_gap
+                0x0000000000408b10      0x447 uspace/srv_fs_fat.p/srv_fs_fat_fat_fat.c.o
+                0x0000000000408b10                fat_fill_gap
+ *fill*         0x0000000000408f57        0x9 
+ .text.fat_get_cluster
+                0x0000000000408f60      0x2f8 uspace/srv_fs_fat.p/srv_fs_fat_fat_fat.c.o
+                0x0000000000408f60                fat_get_cluster
+ *fill*         0x0000000000409258        0x8 
+ .text.fat_set_cluster
+                0x0000000000409260      0x3ad uspace/srv_fs_fat.p/srv_fs_fat_fat_fat.c.o
+                0x0000000000409260                fat_set_cluster
+ *fill*         0x000000000040960d        0x3 
+ .text.fat_alloc_shadow_clusters
+                0x0000000000409610      0x12b uspace/srv_fs_fat.p/srv_fs_fat_fat_fat.c.o
+                0x0000000000409610                fat_alloc_shadow_clusters
+ *fill*         0x000000000040973b        0x5 
+ .text.fat_alloc_clusters
+                0x0000000000409740      0x486 uspace/srv_fs_fat.p/srv_fs_fat_fat_fat.c.o
+                0x0000000000409740                fat_alloc_clusters
+ *fill*         0x0000000000409bc6        0xa 
+ .text.fat_free_clusters
+                0x0000000000409bd0      0x1c6 uspace/srv_fs_fat.p/srv_fs_fat_fat_fat.c.o
+                0x0000000000409bd0                fat_free_clusters
+ *fill*         0x0000000000409d96        0xa 
+ .text.fat_append_clusters
+                0x0000000000409da0       0xdb uspace/srv_fs_fat.p/srv_fs_fat_fat_fat.c.o
+                0x0000000000409da0                fat_append_clusters
+ *fill*         0x0000000000409e7b        0x5 
+ .text.fat_chop_clusters
+                0x0000000000409e80      0x16c uspace/srv_fs_fat.p/srv_fs_fat_fat_fat.c.o
+                0x0000000000409e80                fat_chop_clusters
+ *fill*         0x0000000000409fec        0x4 
+ .text.fat_zero_cluster
+                0x0000000000409ff0      0x5a3 uspace/srv_fs_fat.p/srv_fs_fat_fat_fat.c.o
+                0x0000000000409ff0                fat_zero_cluster
+ *fill*         0x000000000040a593        0xd 
+ .text.fat_sanity_check
+                0x000000000040a5a0      0x68f uspace/srv_fs_fat.p/srv_fs_fat_fat_fat.c.o
+                0x000000000040a5a0                fat_sanity_check
+ .text          0x000000000040ac2f        0xc uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                0x000000000040ac2f                _start
+ *fill*         0x000000000040ac3b        0x5 
+ .text.__c_start
+                0x000000000040ac40       0x8c uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                0x000000000040ac40                __c_start
+ *fill*         0x000000000040accc        0x4 
+ .text.cache_key_hash
+                0x000000000040acd0        0x9 uspace/lib/libblock.a.p/block_block.c.o
+ *fill*         0x000000000040acd9        0x7 
+ .text.cache_hash
+                0x000000000040ace0        0xa uspace/lib/libblock.a.p/block_block.c.o
+ *fill*         0x000000000040acea        0x6 
+ .text.cache_key_equal
+                0x000000000040acf0       0x10 uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_init
+                0x000000000040ad00      0x180 uspace/lib/libblock.a.p/block_block.c.o
+                0x000000000040ad00                block_init
+ .text.block_bb_read
+                0x000000000040ae80      0x120 uspace/lib/libblock.a.p/block_block.c.o
+                0x000000000040ae80                block_bb_read
+ .text.block_bb_get
+                0x000000000040afa0       0x7e uspace/lib/libblock.a.p/block_block.c.o
+                0x000000000040afa0                block_bb_get
+ *fill*         0x000000000040b01e        0x2 
+ .text.block_cache_init
+                0x000000000040b020      0x16c uspace/lib/libblock.a.p/block_block.c.o
+                0x000000000040b020                block_cache_init
+ *fill*         0x000000000040b18c        0x4 
+ .text.block_cache_fini
+                0x000000000040b190      0x18d uspace/lib/libblock.a.p/block_block.c.o
+                0x000000000040b190                block_cache_fini
+ *fill*         0x000000000040b31d        0x3 
+ .text.block_fini
+                0x000000000040b320       0xee uspace/lib/libblock.a.p/block_block.c.o
+                0x000000000040b320                block_fini
+ *fill*         0x000000000040b40e        0x2 
+ .text.block_put
+                0x000000000040b410      0x2f0 uspace/lib/libblock.a.p/block_block.c.o
+                0x000000000040b410                block_put
+ .text.block_get
+                0x000000000040b700      0x528 uspace/lib/libblock.a.p/block_block.c.o
+                0x000000000040b700                block_get
+ *fill*         0x000000000040bc28        0x8 
+ .text.bd_cb_conn
+                0x000000000040bc30       0x3b uspace/lib/libdevice.a.p/device_src_bd.c.o
+ *fill*         0x000000000040bc6b        0x5 
+ .text.bd_open  0x000000000040bc70       0xa8 uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x000000000040bc70                bd_open
+ *fill*         0x000000000040bd18        0x8 
+ .text.bd_close
+                0x000000000040bd20        0xa uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x000000000040bd20                bd_close
+ *fill*         0x000000000040bd2a        0x6 
+ .text.bd_read_blocks
+                0x000000000040bd30       0x9a uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x000000000040bd30                bd_read_blocks
+ *fill*         0x000000000040bdca        0x6 
+ .text.bd_write_blocks
+                0x000000000040bdd0       0x9a uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x000000000040bdd0                bd_write_blocks
+ *fill*         0x000000000040be6a        0x6 
+ .text.bd_sync_cache
+                0x000000000040be70       0x4e uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x000000000040be70                bd_sync_cache
+ *fill*         0x000000000040bebe        0x2 
+ .text.bd_get_block_size
+                0x000000000040bec0       0x4f uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x000000000040bec0                bd_get_block_size
+ *fill*         0x000000000040bf0f        0x1 
+ .text.bd_get_num_blocks
+                0x000000000040bf10       0x5d uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x000000000040bf10                bd_get_num_blocks
+ *fill*         0x000000000040bf6d        0x3 
+ .text.vfs_connection
+                0x000000000040bf70      0xf72 uspace/lib/libfs.a.p/fs_libfs.c.o
+ *fill*         0x000000000040cee2        0xe 
+ .text.fs_register
+                0x000000000040cef0      0x167 uspace/lib/libfs.a.p/fs_libfs.c.o
+                0x000000000040cef0                fs_register
+ *fill*         0x000000000040d057        0x9 
+ .text.fs_node_initialize
+                0x000000000040d060        0xd uspace/lib/libfs.a.p/fs_libfs.c.o
+                0x000000000040d060                fs_node_initialize
+ *fill*         0x000000000040d06d        0x3 
+ .text.fs_instance_create
+                0x000000000040d070      0x10d uspace/lib/libfs.a.p/fs_libfs.c.o
+                0x000000000040d070                fs_instance_create
+ *fill*         0x000000000040d17d        0x3 
+ .text.fs_instance_get
+                0x000000000040d180       0x74 uspace/lib/libfs.a.p/fs_libfs.c.o
+                0x000000000040d180                fs_instance_get
+ *fill*         0x000000000040d1f4        0xc 
+ .text.fs_instance_destroy
+                0x000000000040d200       0x94 uspace/lib/libfs.a.p/fs_libfs.c.o
+                0x000000000040d200                fs_instance_destroy
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x000000000040d2a0      0x6c0
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.main.str1.8
+                0x000000000040d2a0      0x33e uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+                                         0x79 (size before relaxing)
+ .rodata.main.str1.1
+                0x000000000040d5de      0x240 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+                                         0x42 (size before relaxing)
+ .rodata.fat_unlink.str1.8
+                0x000000000040d81e       0x2a uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ .rodata.fat_unlink.str1.1
+                0x000000000040d81e       0x14 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ .rodata.fat_link.str1.1
+                0x000000000040d81e       0x14 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ .rodata.fat_destroy_node.str1.1
+                0x000000000040d81e       0x2d uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ .rodata.fat_node_sync.str1.1
+                0x000000000040d81e        0xc uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ .rodata.fat_fs_open.part.0.str1.1
+                0x000000000040d81e       0x12 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ .rodata.fat_mounted.str1.1
+                0x000000000040d81e       0x11 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ .rodata.fat_node_get_core.str1.1
+                0x000000000040d81e        0xa uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ .rodata.fat_destroy.str1.1
+                0x000000000040d81e       0x13 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ .rodata.fat_unmounted.str1.1
+                0x000000000040d81e       0x11 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ .rodata.fat_read.str1.1
+                0x000000000040d81e       0x38 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ .rodata.fat_read.str1.8
+                0x000000000040d81e       0x24 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x000000000040d81e        0x2 
+ .rodata.cst8   0x000000000040d820       0x10 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ .rodata.fat_idx_destroy.str1.8
+                0x000000000040d830       0x2a uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+ .rodata.fat_idx_destroy.str1.1
+                0x000000000040d830       0x1e uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+ .rodata.fat_idx_fini.str1.8
+                0x000000000040d830       0x39 uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+ *fill*         0x000000000040d830       0x10 
+ .rodata.uih_ops
+                0x000000000040d840       0x28 uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+ *fill*         0x000000000040d868       0x18 
+ .rodata.uph_ops
+                0x000000000040d880       0x28 uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+ .rodata.fat_valid_name.str1.1
+                0x000000000040d8a8        0x9 uspace/srv_fs_fat.p/srv_fs_fat_fat_dentry.c.o
+ .rodata.fat_directory_read.str1.8
+                0x000000000040d8a8       0x30 uspace/srv_fs_fat.p/srv_fs_fat_fat_directory.c.o
+ .rodata.fat_directory_read.str1.1
+                0x000000000040d8a8        0xa uspace/srv_fs_fat.p/srv_fs_fat_fat_directory.c.o
+ .rodata.fat_directory_create_sfn.str1.1
+                0x000000000040d8a8        0x3 uspace/srv_fs_fat.p/srv_fs_fat_fat_directory.c.o
+ .rodata.fat_cluster_walk.str1.8
+                0x000000000040d8a8       0x2a uspace/srv_fs_fat.p/srv_fs_fat_fat_fat.c.o
+ .rodata.fat_cluster_walk.str1.1
+                0x000000000040d8a8       0x3b uspace/srv_fs_fat.p/srv_fs_fat_fat_fat.c.o
+ .rodata._fat_block_get.str1.1
+                0x000000000040d8a8       0x26 uspace/srv_fs_fat.p/srv_fs_fat_fat_fat.c.o
+ .rodata.fat_free_clusters.str1.8
+                0x000000000040d8a8       0x2e uspace/srv_fs_fat.p/srv_fs_fat_fat_fat.c.o
+ .rodata.cst8   0x000000000040d8a8        0x8 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .rodata.read_blocks.part.0.str1.8
+                0x000000000040d8b0       0x27 uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.read_blocks.part.0.str1.1
+                0x000000000040d8b0        0x7 uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.block_bb_read.str1.8
+                0x000000000040d8b0       0x4a uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.block_cache_fini.str1.8
+                0x000000000040d8b0       0x48 uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.block_put.str1.1
+                0x000000000040d8b0       0x21 uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.block_put.str1.8
+                0x000000000040d8b0       0x53 uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.block_get.str1.1
+                0x000000000040d8b0       0x1f uspace/lib/libblock.a.p/block_block.c.o
+ *fill*         0x000000000040d8b0       0x10 
+ .rodata.cache_ops
+                0x000000000040d8c0       0x28 uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.vfs_connection.str1.8
+                0x000000000040d8e8       0x4e uspace/lib/libfs.a.p/fs_libfs.c.o
+ .rodata.vfs_connection.str1.1
+                0x000000000040d8e8       0x48 uspace/lib/libfs.a.p/fs_libfs.c.o
+ .rodata.vfs_connection
+                0x000000000040d8e8       0x78 uspace/lib/libfs.a.p/fs_libfs.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x000000000040d960      0x424
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x000000000040d960      0x424 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+                0x000000000040d960                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x000000000040dd88     0x159c
+ *(.eh_frame)
+ .eh_frame      0x000000000040dd88       0x40 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+ .eh_frame      0x000000000040ddc8       0x28 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x000000000040ddf0        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+ .eh_frame      0x000000000040ddf0      0x6f8 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+                                        0x710 (size before relaxing)
+ .eh_frame      0x000000000040e4e8      0x2e0 uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+                                        0x2f8 (size before relaxing)
+ .eh_frame      0x000000000040e7c8      0x210 uspace/srv_fs_fat.p/srv_fs_fat_fat_dentry.c.o
+                                        0x248 (size before relaxing)
+ .eh_frame      0x000000000040e9d8      0x230 uspace/srv_fs_fat.p/srv_fs_fat_fat_directory.c.o
+                                        0x2f8 (size before relaxing)
+ .eh_frame      0x000000000040ec08      0x298 uspace/srv_fs_fat.p/srv_fs_fat_fat_fat.c.o
+                                        0x2b0 (size before relaxing)
+ .eh_frame      0x000000000040eea0       0x20 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x000000000040eec0      0x1f8 uspace/lib/libblock.a.p/block_block.c.o
+                                        0x3c0 (size before relaxing)
+ .eh_frame      0x000000000040f0b8      0x150 uspace/lib/libdevice.a.p/device_src_bd.c.o
+                                        0x198 (size before relaxing)
+ .eh_frame      0x000000000040f208      0x11c uspace/lib/libfs.a.p/fs_libfs.c.o
+                                        0x138 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x000000000040f324        0x0
+ *(.sframe)
+ .sframe        0x000000000040f324        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x0000000000410324                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0x0000000000410324        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0000000000410324        0x0
+                0x0000000000410324                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x0000000000410324                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x0000000000410324        0x0
+                0x0000000000410324                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x0000000000410324                PROVIDE (__init_array_end = .)
+
+.fini_array     0x0000000000410324        0x0
+                0x0000000000410324                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x0000000000410324                PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x0000000000410324        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x0000000000410324        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+
+.dynamic        0x0000000000410328      0x150
+ *(.dynamic)
+ .dynamic       0x0000000000410328      0x150 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+                0x0000000000410328                _DYNAMIC
+
+.got            0x0000000000410478        0x0
+ *(.got)
+ .got           0x0000000000410478        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+ *(.igot)
+                0x0000000000410478                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x0000000000410478      0x260
+ *(.got.plt)
+ .got.plt       0x0000000000410478      0x260 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+                0x0000000000410478                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x00000000004106d8        0x0 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+
+.data           0x00000000004106e0      0x260
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.fat_vfs_info
+                0x00000000004106e0       0x20 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+                0x00000000004106e0                fat_vfs_info
+ .data.fat_ops  0x0000000000410700       0x48 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+                0x0000000000410700                fat_ops
+ *fill*         0x0000000000410748       0x18 
+ .data.fat_libfs_ops
+                0x0000000000410760       0x98 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+                0x0000000000410760                fat_libfs_ops
+ *fill*         0x00000000004107f8        0x8 
+ .data.ffn_list
+                0x0000000000410800       0x10 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ *fill*         0x0000000000410810       0x10 
+ .data.ffn_mutex
+                0x0000000000410820       0x20 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ .data.used_lock
+                0x0000000000410840       0x20 uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+ .data.unused_list
+                0x0000000000410860       0x10 uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+ *fill*         0x0000000000410870       0x10 
+ .data.unused_lock
+                0x0000000000410880       0x20 uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+ .data.fat_alloc_lock
+                0x00000000004108a0       0x20 uspace/srv_fs_fat.p/srv_fs_fat_fat_fat.c.o
+ .data.dcl      0x00000000004108c0       0x10 uspace/lib/libblock.a.p/block_block.c.o
+ *fill*         0x00000000004108d0       0x10 
+ .data.dcl_lock
+                0x00000000004108e0       0x20 uspace/lib/libblock.a.p/block_block.c.o
+ .data.instances_list
+                0x0000000000410900       0x10 uspace/lib/libfs.a.p/fs_libfs.c.o
+ *fill*         0x0000000000410910       0x10 
+ .data.instances_mutex
+                0x0000000000410920       0x20 uspace/lib/libfs.a.p/fs_libfs.c.o
+
+.data1
+ *(.data1)
+                0x0000000000410940                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x0000000000410940                . = .
+                0x0000000000410940                __bss_start = .
+
+.bss            0x0000000000410940      0x120
+ *(.dynbss)
+ .dynbss        0x0000000000410940       0x48 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+                0x0000000000410940                __progsymbols
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ *fill*         0x0000000000410988       0x18 
+ .bss.ui_hash   0x00000000004109a0       0x38 uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+ *fill*         0x00000000004109d8        0x8 
+ .bss.up_hash   0x00000000004109e0       0x38 uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+ *fill*         0x0000000000410a18        0x8 
+ .bss.fs_name   0x0000000000410a20       0x15 uspace/lib/libfs.a.p/fs_libfs.c.o
+ *fill*         0x0000000000410a35        0x3 
+ .bss.libfs_ops
+                0x0000000000410a38        0x8 uspace/lib/libfs.a.p/fs_libfs.c.o
+ .bss.vfs_out_ops
+                0x0000000000410a40        0x8 uspace/lib/libfs.a.p/fs_libfs.c.o
+ *fill*         0x0000000000410a48        0x8 
+ .bss.reg       0x0000000000410a50       0x10 uspace/lib/libfs.a.p/fs_libfs.c.o
+ *(COMMON)
+                0x0000000000410a60                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x0000000000410a60                . = ALIGN (0x8)
+                0x0000000000410a60                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x0000000000412a60        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x0000000000412a60                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000412a60                . = ALIGN (0x8)
+                0x0000000000410a60                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x0000000000412a60                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/srv_fs_fat.p/srv_fs_fat_fat.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/srv_fs_fat.p/srv_fs_fat_fat_ops.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_fs_fat.p/srv_fs_fat_fat_idx.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_fs_fat.p/srv_fs_fat_fat_dentry.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_fs_fat.p/srv_fs_fat_fat_directory.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_fs_fat.p/srv_fs_fat_fat_fat.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libblock.a.p/block_block.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdevice.a.p/device_src_bd.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libfs.a.p/fs_libfs.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/srv_fs_fat elf64-x86-64)

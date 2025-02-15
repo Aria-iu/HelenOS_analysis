@@ -1,0 +1,1619 @@
+
+As-needed library included to satisfy reference by file (symbol)
+
+libblock.so.0                 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o (block_fini)
+libc.so.0                     uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o (memmove)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_compound.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_compound.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_compound.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_file.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_file.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_file.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_print.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_print.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_print.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_source.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_source.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_source.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+LOAD uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+LOAD uspace/lib/libbithenge.so.0.0.p/bithenge_src_compound.c.o
+LOAD uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+LOAD uspace/lib/libbithenge.so.0.0.p/bithenge_src_file.c.o
+LOAD uspace/lib/libbithenge.so.0.0.p/bithenge_src_print.c.o
+LOAD uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+LOAD uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+LOAD uspace/lib/libbithenge.so.0.0.p/bithenge_src_source.c.o
+LOAD uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+LOAD uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+START GROUP
+LOAD uspace/lib/libblock.so.0.0
+LOAD uspace/lib/libdevice.so.0.0
+LOAD uspace/lib/libc.so.0.0
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000000120                . = (SEGMENT_START ("text-segment", 0x0) + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000000120      0x374
+ *(.hash)
+ .hash          0x0000000000000120      0x374 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x0000000000000498      0xb70
+ *(.dynsym)
+ .dynsym        0x0000000000000498      0xb70 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+
+.dynstr         0x0000000000001008      0xa4a
+ *(.dynstr)
+ .dynstr        0x0000000000001008      0xa4a uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+
+.gnu.version    0x0000000000001a52        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000001a52        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+
+.gnu.version_d  0x0000000000001a58        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000001a58        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+
+.gnu.version_r  0x0000000000001a58        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000001a58        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+
+.rela.dyn       0x0000000000001a58     0x10e0
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro.local.block_ops
+                0x0000000000001a58       0x48 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.subblob_ops
+                0x0000000000001aa0       0x60 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.memory_ops
+                0x0000000000001b00       0x48 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.sequential_ops
+                0x0000000000001b48       0x48 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.partial_transform_ops
+                0x0000000000001b90       0x30 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.if_transform_ops
+                0x0000000000001bc0       0x48 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.compose_transform_ops
+                0x0000000000001c08       0x48 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.concat_blob_ops
+                0x0000000000001c50       0x60 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.inputless_transform_ops
+                0x0000000000001cb0       0x48 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.expression_transform_ops
+                0x0000000000001cf8       0x30 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.param_wrapper_ops
+                0x0000000000001d28       0x60 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.subblob_expression_ops
+                0x0000000000001d88       0x30 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.scope_member_expression_ops
+                0x0000000000001db8       0x30 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.const_expression_ops
+                0x0000000000001de8       0x30 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.param_expression_ops
+                0x0000000000001e18       0x30 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.local.current_node_expression
+                0x0000000000001e48       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.current_node_ops
+                0x0000000000001e60       0x30 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.local.in_node_expression
+                0x0000000000001e90       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.in_node_ops
+                0x0000000000001ea8       0x30 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.binary_expression_ops
+                0x0000000000001ed8       0x30 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.file_ops
+                0x0000000000001f08       0x48 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.do_while_transform_ops
+                0x0000000000001f50       0x30 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.do_while_node_seq_ops
+                0x0000000000001f80       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.do_while_node_ops
+                0x0000000000001f98       0x30 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.repeat_transform_ops
+                0x0000000000001fc8       0x48 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.repeat_node_seq_ops
+                0x0000000000002010       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.repeat_node_ops
+                0x0000000000002028       0x48 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.local.struct_transform_ops
+                0x0000000000002070       0x60 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.struct_node_seq_ops
+                0x00000000000020d0       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.struct_node_ops
+                0x00000000000020e8       0x48 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.local.bithenge_primitive_transforms
+                0x0000000000002130       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.primitive_transforms
+                0x0000000000002148      0x300 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.local.bithenge_zero_terminated_transform
+                0x0000000000002448       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.zero_terminated_ops
+                0x0000000000002460       0x48 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.local.bithenge_uint_le_transform
+                0x00000000000024a8       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.local.bithenge_uint_be_transform
+                0x00000000000024c0       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.uint_xe_ops
+                0x00000000000024d8       0x30 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.local.bithenge_uint64be_transform
+                0x0000000000002508       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.uint64be_ops
+                0x0000000000002520       0x48 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.local.bithenge_uint64le_transform
+                0x0000000000002568       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.uint64le_ops
+                0x0000000000002580       0x48 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.local.bithenge_uint32be_transform
+                0x00000000000025c8       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.uint32be_ops
+                0x00000000000025e0       0x48 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.local.bithenge_uint32le_transform
+                0x0000000000002628       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.uint32le_ops
+                0x0000000000002640       0x48 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.local.bithenge_uint16be_transform
+                0x0000000000002688       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.uint16be_ops
+                0x00000000000026a0       0x48 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.local.bithenge_uint16le_transform
+                0x00000000000026e8       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.uint16le_ops
+                0x0000000000002700       0x48 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.local.bithenge_uint8_transform
+                0x0000000000002748       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.uint8_ops
+                0x0000000000002760       0x48 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.local.bithenge_nonzero_boolean_transform
+                0x00000000000027a8       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.nonzero_boolean_ops
+                0x00000000000027c0       0x30 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.local.bithenge_known_length_transform
+                0x00000000000027f0       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.known_length_ops
+                0x0000000000002808       0x48 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.local.bithenge_invalid_transform
+                0x0000000000002850       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.invalid_ops
+                0x0000000000002868       0x30 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.local.bithenge_bits_le_transform
+                0x0000000000002898       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.local.bithenge_bits_be_transform
+                0x00000000000028b0       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.bits_xe_ops
+                0x00000000000028c8       0x30 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.bits_xe_blob_ops
+                0x00000000000028f8       0x48 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.local.bithenge_bit_transform
+                0x0000000000002940       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.bit_ops
+                0x0000000000002958       0x30 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.local.bithenge_ascii_transform
+                0x0000000000002988       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.ascii_ops
+                0x00000000000029a0       0x30 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.barrier_transform_ops
+                0x00000000000029d0       0x60 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.local.simple_internal_node_ops
+                0x0000000000002a30       0x30 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.local.empty_internal_node
+                0x0000000000002a60       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .rela.data.rel.ro.local.empty_internal_node_ops
+                0x0000000000002a78       0x48 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000002ac0       0x78 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+ .rela.ifunc    0x0000000000002b38        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+
+.rela.plt       0x0000000000002b38      0x888
+ *(.rela.plt)
+ .rela.plt      0x0000000000002b38      0x888 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ *(.rela.iplt)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x00000000000033c0      0x5c0
+ *(.plt)
+ .plt           0x00000000000033c0      0x5c0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ *(.iplt)
+
+.plt.got        0x0000000000003980        0x0
+ *(.plt.got)
+ .plt.got       0x0000000000003980        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x0000000000003980     0xcc23
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text.block_size
+                0x0000000000003980        0xf uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ *fill*         0x000000000000398f        0x1 
+ .text.block_destroy
+                0x0000000000003990       0x22 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ *fill*         0x00000000000039b2        0xe 
+ .text.block_read
+                0x00000000000039c0       0x37 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ *fill*         0x00000000000039f7        0x9 
+ .text.bithenge_new_block_blob
+                0x0000000000003a00      0x115 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+                0x0000000000003a00                bithenge_new_block_blob
+ *fill*         0x0000000000003b15        0xb 
+ .text.memory_size
+                0x0000000000003b20        0xf uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+ *fill*         0x0000000000003b2f        0x1 
+ .text.subblob_read_bits
+                0x0000000000003b30       0xa6 uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+ *fill*         0x0000000000003bd6        0xa 
+ .text.sequential_destroy
+                0x0000000000003be0       0x27 uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+ *fill*         0x0000000000003c07        0x9 
+ .text.memory_destroy
+                0x0000000000003c10       0x36 uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+ *fill*         0x0000000000003c46        0xa 
+ .text.memory_read
+                0x0000000000003c50       0x36 uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+ *fill*         0x0000000000003c86        0xa 
+ .text.sequential_read
+                0x0000000000003c90       0xeb uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+ *fill*         0x0000000000003d7b        0x5 
+ .text.subblob_destroy
+                0x0000000000003d80       0x27 uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+ *fill*         0x0000000000003da7        0x9 
+ .text.subblob_read
+                0x0000000000003db0       0x96 uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+ *fill*         0x0000000000003e46        0xa 
+ .text.subblob_size
+                0x0000000000003e50       0x7d uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+ *fill*         0x0000000000003ecd        0x3 
+ .text.sequential_size
+                0x0000000000003ed0       0xf1 uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+ *fill*         0x0000000000003fc1        0xf 
+ .text.bithenge_init_random_access_blob
+                0x0000000000003fd0       0xb7 uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+                0x0000000000003fd0                bithenge_init_random_access_blob
+ *fill*         0x0000000000004087        0x9 
+ .text.bithenge_init_sequential_blob
+                0x0000000000004090       0xb2 uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+                0x0000000000004090                bithenge_init_sequential_blob
+ *fill*         0x0000000000004142        0xe 
+ .text.bithenge_new_blob_from_buffer
+                0x0000000000004150       0xc8 uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+                0x0000000000004150                bithenge_new_blob_from_buffer
+ *fill*         0x0000000000004218        0x8 
+ .text.bithenge_new_blob_from_data
+                0x0000000000004220       0x5b uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+                0x0000000000004220                bithenge_new_blob_from_data
+ *fill*         0x000000000000427b        0x5 
+ .text.bithenge_new_offset_blob
+                0x0000000000004280      0x1a0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+                0x0000000000004280                bithenge_new_offset_blob
+ .text.bithenge_new_subblob
+                0x0000000000004420      0x167 uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+                0x0000000000004420                bithenge_new_subblob
+ *fill*         0x0000000000004587        0x9 
+ .text.bithenge_blob_equal
+                0x0000000000004590      0x1df uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+                0x0000000000004590                bithenge_blob_equal
+ *fill*         0x000000000000476f        0x1 
+ .text.compose_prefix_length
+                0x0000000000004770       0x17 uspace/lib/libbithenge.so.0.0.p/bithenge_src_compound.c.o
+ *fill*         0x0000000000004787        0x9 
+ .text.compose_apply
+                0x0000000000004790       0xa3 uspace/lib/libbithenge.so.0.0.p/bithenge_src_compound.c.o
+ *fill*         0x0000000000004833        0xd 
+ .text.bithenge_transform_dec_ref.part.0
+                0x0000000000004840       0x1c uspace/lib/libbithenge.so.0.0.p/bithenge_src_compound.c.o
+ *fill*         0x000000000000485c        0x4 
+ .text.partial_transform_apply
+                0x0000000000004860       0x1d uspace/lib/libbithenge.so.0.0.p/bithenge_src_compound.c.o
+ *fill*         0x000000000000487d        0x3 
+ .text.if_transform_apply
+                0x0000000000004880       0xc9 uspace/lib/libbithenge.so.0.0.p/bithenge_src_compound.c.o
+ *fill*         0x0000000000004949        0x7 
+ .text.if_transform_prefix_length
+                0x0000000000004950       0xc9 uspace/lib/libbithenge.so.0.0.p/bithenge_src_compound.c.o
+ *fill*         0x0000000000004a19        0x7 
+ .text.compose_destroy
+                0x0000000000004a20       0x9a uspace/lib/libbithenge.so.0.0.p/bithenge_src_compound.c.o
+ *fill*         0x0000000000004aba        0x6 
+ .text.partial_transform_destroy
+                0x0000000000004ac0       0x59 uspace/lib/libbithenge.so.0.0.p/bithenge_src_compound.c.o
+ *fill*         0x0000000000004b19        0x7 
+ .text.if_transform_destroy
+                0x0000000000004b20       0xe2 uspace/lib/libbithenge.so.0.0.p/bithenge_src_compound.c.o
+ *fill*         0x0000000000004c02        0xe 
+ .text.bithenge_new_composed_transform
+                0x0000000000004c10      0x100 uspace/lib/libbithenge.so.0.0.p/bithenge_src_compound.c.o
+                0x0000000000004c10                bithenge_new_composed_transform
+ .text.bithenge_if_transform
+                0x0000000000004d10      0x17e uspace/lib/libbithenge.so.0.0.p/bithenge_src_compound.c.o
+                0x0000000000004d10                bithenge_if_transform
+ *fill*         0x0000000000004e8e        0x2 
+ .text.bithenge_partial_transform
+                0x0000000000004e90       0xae uspace/lib/libbithenge.so.0.0.p/bithenge_src_compound.c.o
+                0x0000000000004e90                bithenge_partial_transform
+ *fill*         0x0000000000004f3e        0x2 
+ .text.inputless_transform_prefix_length
+                0x0000000000004f40        0xf uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ *fill*         0x0000000000004f4f        0x1 
+ .text.expression_indestructible
+                0x0000000000004f50       0x1c uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ *fill*         0x0000000000004f6c        0x4 
+ .text.param_expression_destroy
+                0x0000000000004f70        0xa uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ *fill*         0x0000000000004f7a        0x6 
+ .text.const_expression_destroy
+                0x0000000000004f80       0x22 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ *fill*         0x0000000000004fa2        0xe 
+ .text.scope_member_expression_destroy
+                0x0000000000004fb0       0x22 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ *fill*         0x0000000000004fd2        0xe 
+ .text.in_node_evaluate
+                0x0000000000004fe0       0x50 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .text.current_node_evaluate
+                0x0000000000005030       0x26 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ *fill*         0x0000000000005056        0xa 
+ .text.param_expression_evaluate
+                0x0000000000005060       0x13 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ *fill*         0x0000000000005073        0xd 
+ .text.bithenge_expression_evaluate.part.0
+                0x0000000000005080       0x1c uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ *fill*         0x000000000000509c        0x4 
+ .text.bithenge_expression_dec_ref.part.0
+                0x00000000000050a0       0x1c uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ *fill*         0x00000000000050bc        0x4 
+ .text.const_expression_evaluate
+                0x00000000000050c0       0x2f uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ *fill*         0x00000000000050ef        0x1 
+ .text.bithenge_transform_num_params.part.0
+                0x00000000000050f0       0x1c uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ *fill*         0x000000000000510c        0x4 
+ .text.bithenge_blob_size.part.0
+                0x0000000000005110       0x1c uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ *fill*         0x000000000000512c        0x4 
+ .text.scope_member_expression_evaluate
+                0x0000000000005130       0xd2 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ *fill*         0x0000000000005202        0xe 
+ .text.param_wrapper_fill_scope
+                0x0000000000005210       0xda uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ *fill*         0x00000000000052ea        0x6 
+ .text.param_wrapper_prefix_apply
+                0x00000000000052f0       0x88 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ *fill*         0x0000000000005378        0x8 
+ .text.param_wrapper_prefix_length
+                0x0000000000005380       0x83 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ *fill*         0x0000000000005403        0xd 
+ .text.param_wrapper_apply
+                0x0000000000005410       0x83 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ *fill*         0x0000000000005493        0xd 
+ .text.inputless_transform_prefix_apply
+                0x00000000000054a0       0x47 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ *fill*         0x00000000000054e7        0x9 
+ .text.expression_transform_apply
+                0x00000000000054f0       0x8e uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ *fill*         0x000000000000557e        0x2 
+ .text.concat_blob_size
+                0x0000000000005580      0x134 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ *fill*         0x00000000000056b4        0xc 
+ .text.expression_transform_destroy
+                0x00000000000056c0       0x59 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ *fill*         0x0000000000005719        0x7 
+ .text.concat_blob_destroy
+                0x0000000000005720       0x7e uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ *fill*         0x000000000000579e        0x2 
+ .text.subblob_expression_evaluate
+                0x00000000000057a0      0x17a uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ *fill*         0x000000000000591a        0x6 
+ .text.binary_expression_destroy
+                0x0000000000005920       0x82 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ *fill*         0x00000000000059a2        0xe 
+ .text.subblob_expression_destroy
+                0x00000000000059b0       0xaa uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ *fill*         0x0000000000005a5a        0x6 
+ .text.concat_blob_evaluate_b
+                0x0000000000005a60       0xde uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ *fill*         0x0000000000005b3e        0x2 
+ .text.concat_blob_read
+                0x0000000000005b40      0x15a uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ *fill*         0x0000000000005c9a        0x6 
+ .text.concat_blob_read_bits
+                0x0000000000005ca0      0x192 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ *fill*         0x0000000000005e32        0xe 
+ .text.param_wrapper_destroy
+                0x0000000000005e40      0x10a uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ *fill*         0x0000000000005f4a        0x6 
+ .text.bithenge_init_expression
+                0x0000000000005f50       0x6c uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+                0x0000000000005f50                bithenge_init_expression
+ *fill*         0x0000000000005fbc        0x4 
+ .text.bithenge_binary_expression
+                0x0000000000005fc0      0x103 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+                0x0000000000005fc0                bithenge_binary_expression
+ *fill*         0x00000000000060c3        0xd 
+ .text.bithenge_in_node_expression
+                0x00000000000060d0       0x19 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+                0x00000000000060d0                bithenge_in_node_expression
+ *fill*         0x00000000000060e9        0x7 
+ .text.bithenge_current_node_expression
+                0x00000000000060f0       0x19 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+                0x00000000000060f0                bithenge_current_node_expression
+ *fill*         0x0000000000006109        0x7 
+ .text.bithenge_param_expression
+                0x0000000000006110       0x70 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+                0x0000000000006110                bithenge_param_expression
+ .text.bithenge_const_expression
+                0x0000000000006180       0x70 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+                0x0000000000006180                bithenge_const_expression
+ .text.bithenge_scope_member_expression
+                0x00000000000061f0       0x70 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+                0x00000000000061f0                bithenge_scope_member_expression
+ .text.bithenge_subblob_expression
+                0x0000000000006260      0x14e uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+                0x0000000000006260                bithenge_subblob_expression
+ *fill*         0x00000000000063ae        0x2 
+ .text.bithenge_param_wrapper
+                0x00000000000063b0      0x14b uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+                0x00000000000063b0                bithenge_param_wrapper
+ *fill*         0x00000000000064fb        0x5 
+ .text.bithenge_expression_transform
+                0x0000000000006500       0xae uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+                0x0000000000006500                bithenge_expression_transform
+ *fill*         0x00000000000065ae        0x2 
+ .text.bithenge_inputless_transform
+                0x00000000000065b0       0xae uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+                0x00000000000065b0                bithenge_inputless_transform
+ *fill*         0x000000000000665e        0x2 
+ .text.bithenge_concat_blob
+                0x0000000000006660      0x110 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+                0x0000000000006660                bithenge_concat_blob
+ .text.bithenge_concat_blob_lazy
+                0x0000000000006770      0x1a9 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+                0x0000000000006770                bithenge_concat_blob_lazy
+ *fill*         0x0000000000006919        0x7 
+ .text.binary_expression_evaluate
+                0x0000000000006920      0x3e3 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ *fill*         0x0000000000006d03        0xd 
+ .text.file_size
+                0x0000000000006d10        0xf uspace/lib/libbithenge.so.0.0.p/bithenge_src_file.c.o
+ *fill*         0x0000000000006d1f        0x1 
+ .text.file_destroy
+                0x0000000000006d20       0x21 uspace/lib/libbithenge.so.0.0.p/bithenge_src_file.c.o
+ *fill*         0x0000000000006d41        0xf 
+ .text.file_read
+                0x0000000000006d50       0x4d uspace/lib/libbithenge.so.0.0.p/bithenge_src_file.c.o
+ *fill*         0x0000000000006d9d        0x3 
+ .text.bithenge_new_file_blob
+                0x0000000000006da0      0x121 uspace/lib/libbithenge.so.0.0.p/bithenge_src_file.c.o
+                0x0000000000006da0                bithenge_new_file_blob
+ *fill*         0x0000000000006ec1        0xf 
+ .text.bithenge_new_file_blob_from_fd
+                0x0000000000006ed0       0xb2 uspace/lib/libbithenge.so.0.0.p/bithenge_src_file.c.o
+                0x0000000000006ed0                bithenge_new_file_blob_from_fd
+ *fill*         0x0000000000006f82        0xe 
+ .text.bithenge_new_file_blob_from_file
+                0x0000000000006f90       0xdd uspace/lib/libbithenge.so.0.0.p/bithenge_src_file.c.o
+                0x0000000000006f90                bithenge_new_file_blob_from_file
+ *fill*         0x000000000000706d        0x3 
+ .text.state_printf
+                0x0000000000007070       0xea uspace/lib/libbithenge.so.0.0.p/bithenge_src_print.c.o
+ *fill*         0x000000000000715a        0x6 
+ .text.print_blob
+                0x0000000000007160      0x15c uspace/lib/libbithenge.so.0.0.p/bithenge_src_print.c.o
+ *fill*         0x00000000000072bc        0x4 
+ .text.print_node
+                0x00000000000072c0      0x2c7 uspace/lib/libbithenge.so.0.0.p/bithenge_src_print.c.o
+ *fill*         0x0000000000007587        0x9 
+ .text.print_internal_func
+                0x0000000000007590      0x126 uspace/lib/libbithenge.so.0.0.p/bithenge_src_print.c.o
+ *fill*         0x00000000000076b6        0xa 
+ .text.bithenge_print_node
+                0x00000000000076c0      0x2f4 uspace/lib/libbithenge.so.0.0.p/bithenge_src_print.c.o
+                0x00000000000076c0                bithenge_print_node
+ *fill*         0x00000000000079b4        0xc 
+ .text.bithenge_print_node_to_string
+                0x00000000000079c0      0x312 uspace/lib/libbithenge.so.0.0.p/bithenge_src_print.c.o
+                0x00000000000079c0                bithenge_print_node_to_string
+ *fill*         0x0000000000007cd2        0xe 
+ .text.error_errno.part.0
+                0x0000000000007ce0       0x3e uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ *fill*         0x0000000000007d1e        0x2 
+ .text.bithenge_expression_dec_ref.part.0
+                0x0000000000007d20       0x1c uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ *fill*         0x0000000000007d3c        0x4 
+ .text.bithenge_transform_dec_ref.part.0
+                0x0000000000007d40       0x1c uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ *fill*         0x0000000000007d5c        0x4 
+ .text.bithenge_transform_dec_ref
+                0x0000000000007d60       0x56 uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ *fill*         0x0000000000007db6        0xa 
+ .text.syntax_error.part.0
+                0x0000000000007dc0       0xfe uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ *fill*         0x0000000000007ebe        0x2 
+ .text.expect.part.0
+                0x0000000000007ec0      0x10e uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ *fill*         0x0000000000007fce        0x2 
+ .text.next_token
+                0x0000000000007fd0      0x817 uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ *fill*         0x00000000000087e7        0x9 
+ .text.parse_expression_precedence
+                0x00000000000087f0      0xb12 uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ *fill*         0x0000000000009302        0xe 
+ .text.get_named_transform.isra.0
+                0x0000000000009310       0xc5 uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ *fill*         0x00000000000093d5        0xb 
+ .text.parse_transform_no_compose
+                0x00000000000093e0      0xa6f uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ *fill*         0x0000000000009e4f        0x1 
+ .text.parse_transform
+                0x0000000000009e50      0x1fa uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ *fill*         0x000000000000a04a        0x6 
+ .text.parse_switch
+                0x000000000000a050      0x86a uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ *fill*         0x000000000000a8ba        0x6 
+ .text.parse_struct
+                0x000000000000a8c0      0x32b uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ *fill*         0x000000000000abeb        0x5 
+ .text.parse_if
+                0x000000000000abf0      0x4b9 uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ *fill*         0x000000000000b0a9        0x7 
+ .text.bithenge_parse_script
+                0x000000000000b0b0      0x77a uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+                0x000000000000b0b0                bithenge_parse_script
+ *fill*         0x000000000000b82a        0x6 
+ .text.for_each_noop
+                0x000000000000b830       0x21 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ *fill*         0x000000000000b851        0xf 
+ .text.bithenge_node_inc_ref.part.0
+                0x000000000000b860       0x1c uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ *fill*         0x000000000000b87c        0x4 
+ .text.bithenge_transform_dec_ref.part.0
+                0x000000000000b880       0x1c uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ *fill*         0x000000000000b89c        0x4 
+ .text.bithenge_blob_size.part.0
+                0x000000000000b8a0       0x1c uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ *fill*         0x000000000000b8bc        0x4 
+ .text.bithenge_transform_inc_ref.part.0
+                0x000000000000b8c0       0x1c uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ *fill*         0x000000000000b8dc        0x4 
+ .text.struct_node_get_transform
+                0x000000000000b8e0       0x28 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ *fill*         0x000000000000b908        0x8 
+ .text.repeat_node_get_transform
+                0x000000000000b910       0x1c uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ *fill*         0x000000000000b92c        0x4 
+ .text.do_while_node_get_transform
+                0x000000000000b930       0x1c uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ *fill*         0x000000000000b94c        0x4 
+ .text.bithenge_expression_dec_ref.part.0
+                0x000000000000b950       0x1c uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ *fill*         0x000000000000b96c        0x4 
+ .text.struct_transform_apply
+                0x000000000000b970      0x155 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ *fill*         0x000000000000bac5        0xb 
+ .text.struct_transform_destroy
+                0x000000000000bad0       0xa0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ .text.repeat_node_destroy
+                0x000000000000bb70       0x79 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ *fill*         0x000000000000bbe9        0x7 
+ .text.repeat_transform_destroy
+                0x000000000000bbf0       0x9f uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ *fill*         0x000000000000bc8f        0x1 
+ .text.do_while_transform_destroy
+                0x000000000000bc90       0x9f uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ *fill*         0x000000000000bd2f        0x1 
+ .text.do_while_node_destroy
+                0x000000000000bd30       0xbf uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ *fill*         0x000000000000bdef        0x1 
+ .text.struct_node_destroy
+                0x000000000000bdf0       0xb5 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ *fill*         0x000000000000bea5        0xb 
+ .text.seq_node_field_offset
+                0x000000000000beb0      0x2b8 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ *fill*         0x000000000000c168        0x8 
+ .text.struct_transform_prefix_apply
+                0x000000000000c170      0x192 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ *fill*         0x000000000000c302        0xe 
+ .text.struct_transform_prefix_length
+                0x000000000000c310      0x179 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ *fill*         0x000000000000c489        0x7 
+ .text.repeat_transform_prefix_apply
+                0x000000000000c490      0x24f uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ *fill*         0x000000000000c6df        0x1 
+ .text.do_while_transform_prefix_apply
+                0x000000000000c6e0      0x18b uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ *fill*         0x000000000000c86b        0x5 
+ .text.repeat_transform_apply
+                0x000000000000c870      0x1c4 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ *fill*         0x000000000000ca34        0xc 
+ .text.seq_node_subtransform
+                0x000000000000ca40      0x348 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ *fill*         0x000000000000cd88        0x8 
+ .text.struct_node_get
+                0x000000000000cd90      0x131 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ *fill*         0x000000000000cec1        0xf 
+ .text.repeat_node_get
+                0x000000000000ced0       0x68 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ *fill*         0x000000000000cf38        0x8 
+ .text.struct_node_for_each
+                0x000000000000cf40      0x190 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ .text.repeat_node_for_each
+                0x000000000000d0d0      0x15d uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ *fill*         0x000000000000d22d        0x3 
+ .text.do_while_node_for_each
+                0x000000000000d230      0x194 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ *fill*         0x000000000000d3c4        0xc 
+ .text.bithenge_new_struct
+                0x000000000000d3d0      0x10f uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+                0x000000000000d3d0                bithenge_new_struct
+ *fill*         0x000000000000d4df        0x1 
+ .text.bithenge_repeat_transform
+                0x000000000000d4e0      0x102 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+                0x000000000000d4e0                bithenge_repeat_transform
+ *fill*         0x000000000000d5e2        0xe 
+ .text.bithenge_do_while_transform
+                0x000000000000d5f0      0x102 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+                0x000000000000d5f0                bithenge_do_while_transform
+ *fill*         0x000000000000d6f2        0xe 
+ .text.bithenge_node_from_source
+                0x000000000000d700      0x220 uspace/lib/libbithenge.so.0.0.p/bithenge_src_source.c.o
+                0x000000000000d700                bithenge_node_from_source
+ .text.invalid_apply
+                0x000000000000d920        0xb uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ *fill*         0x000000000000d92b        0x5 
+ .text.prefix_length_1
+                0x000000000000d930        0xf uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ *fill*         0x000000000000d93f        0x1 
+ .text.prefix_length_2
+                0x000000000000d940        0xf uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ *fill*         0x000000000000d94f        0x1 
+ .text.prefix_length_4
+                0x000000000000d950        0xf uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ *fill*         0x000000000000d95f        0x1 
+ .text.prefix_length_8
+                0x000000000000d960        0xf uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ *fill*         0x000000000000d96f        0x1 
+ .text.transform_indestructible
+                0x000000000000d970       0x1c uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ *fill*         0x000000000000d98c        0x4 
+ .text.bits_xe_destroy
+                0x000000000000d990       0x27 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ *fill*         0x000000000000d9b7        0x9 
+ .text.bithenge_blob_size.part.0
+                0x000000000000d9c0       0x1c uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ *fill*         0x000000000000d9dc        0x4 
+ .text.barrier_transform_destroy
+                0x000000000000d9e0       0x6c uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ *fill*         0x000000000000da4c        0x4 
+ .text.bithenge_blob_read.part.0
+                0x000000000000da50       0x1c uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ *fill*         0x000000000000da6c        0x4 
+ .text.bits_xe_apply
+                0x000000000000da70       0xaf uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ *fill*         0x000000000000db1f        0x1 
+ .text.nonzero_boolean_apply
+                0x000000000000db20       0x24 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ *fill*         0x000000000000db44        0xc 
+ .text.bits_xe_size
+                0x000000000000db50       0x47 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ *fill*         0x000000000000db97        0x9 
+ .text.zero_terminated_prefix_length
+                0x000000000000dba0      0x104 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ *fill*         0x000000000000dca4        0xc 
+ .text.zero_terminated_apply
+                0x000000000000dcb0       0xb8 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ *fill*         0x000000000000dd68        0x8 
+ .text.uint32le_apply
+                0x000000000000dd70       0x76 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ *fill*         0x000000000000dde6        0xa 
+ .text.uint8_apply
+                0x000000000000ddf0       0x77 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ *fill*         0x000000000000de67        0x9 
+ .text.uint64le_apply
+                0x000000000000de70       0x77 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ *fill*         0x000000000000dee7        0x9 
+ .text.uint16le_apply
+                0x000000000000def0       0x77 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ *fill*         0x000000000000df67        0x9 
+ .text.uint16be_apply
+                0x000000000000df70       0x7e uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ *fill*         0x000000000000dfee        0x2 
+ .text.bits_xe_read_bits
+                0x000000000000dff0      0xe95 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ *fill*         0x000000000000ee85        0xb 
+ .text.uint32be_apply
+                0x000000000000ee90       0x7a uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ *fill*         0x000000000000ef0a        0x6 
+ .text.uint64be_apply
+                0x000000000000ef10       0x7a uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ *fill*         0x000000000000ef8a        0x6 
+ .text.ascii_apply
+                0x000000000000ef90       0xe6 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ *fill*         0x000000000000f076        0xa 
+ .text.bit_prefix_apply
+                0x000000000000f080       0xbe uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ *fill*         0x000000000000f13e        0x2 
+ .text.bithenge_init_transform
+                0x000000000000f140       0x7f uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x000000000000f140                bithenge_init_transform
+ *fill*         0x000000000000f1bf        0x1 
+ .text.bithenge_transform_prefix_apply
+                0x000000000000f1c0      0x11f uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x000000000000f1c0                bithenge_transform_prefix_apply
+ *fill*         0x000000000000f2df        0x1 
+ .text.bithenge_transform_apply
+                0x000000000000f2e0       0xdb uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x000000000000f2e0                bithenge_transform_apply
+ *fill*         0x000000000000f3bb        0x5 
+ .text.bithenge_transform_prefix_length
+                0x000000000000f3c0       0xa7 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x000000000000f3c0                bithenge_transform_prefix_length
+ *fill*         0x000000000000f467        0x9 
+ .text.bithenge_scope_new
+                0x000000000000f470       0x63 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x000000000000f470                bithenge_scope_new
+ *fill*         0x000000000000f4d3        0xd 
+ .text.bithenge_scope_dec_ref
+                0x000000000000f4e0       0x81 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x000000000000f4e0                bithenge_scope_dec_ref
+ *fill*         0x000000000000f561        0xf 
+ .text.bithenge_scope_outer
+                0x000000000000f570        0xa uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x000000000000f570                bithenge_scope_outer
+ *fill*         0x000000000000f57a        0x6 
+ .text.bithenge_scope_get_error
+                0x000000000000f580        0xa uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x000000000000f580                bithenge_scope_get_error
+ *fill*         0x000000000000f58a        0x6 
+ .text.bithenge_scope_error
+                0x000000000000f590      0x175 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x000000000000f590                bithenge_scope_error
+ *fill*         0x000000000000f705        0xb 
+ .text.bithenge_scope_get_current_node
+                0x000000000000f710       0x13 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x000000000000f710                bithenge_scope_get_current_node
+ *fill*         0x000000000000f723        0xd 
+ .text.bithenge_scope_set_current_node
+                0x000000000000f730       0x1f uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x000000000000f730                bithenge_scope_set_current_node
+ *fill*         0x000000000000f74f        0x1 
+ .text.bithenge_scope_in_node
+                0x000000000000f750       0x13 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x000000000000f750                bithenge_scope_in_node
+ *fill*         0x000000000000f763        0xd 
+ .text.bithenge_scope_set_in_node
+                0x000000000000f770       0x1f uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x000000000000f770                bithenge_scope_set_in_node
+ *fill*         0x000000000000f78f        0x1 
+ .text.bithenge_scope_set_barrier
+                0x000000000000f790        0xa uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x000000000000f790                bithenge_scope_set_barrier
+ *fill*         0x000000000000f79a        0x6 
+ .text.barrier_transform_prefix_apply
+                0x000000000000f7a0       0x71 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ *fill*         0x000000000000f811        0xf 
+ .text.barrier_transform_prefix_length
+                0x000000000000f820       0x67 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ *fill*         0x000000000000f887        0x9 
+ .text.barrier_transform_apply
+                0x000000000000f890       0x67 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ *fill*         0x000000000000f8f7        0x9 
+ .text.bithenge_scope_is_barrier
+                0x000000000000f900        0xa uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x000000000000f900                bithenge_scope_is_barrier
+ *fill*         0x000000000000f90a        0x6 
+ .text.bithenge_scope_alloc_params
+                0x000000000000f910       0x4a uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x000000000000f910                bithenge_scope_alloc_params
+ *fill*         0x000000000000f95a        0x6 
+ .text.bithenge_scope_set_param
+                0x000000000000f960       0x51 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x000000000000f960                bithenge_scope_set_param
+ *fill*         0x000000000000f9b1        0xf 
+ .text.bithenge_scope_get_param
+                0x000000000000f9c0       0x8b uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x000000000000f9c0                bithenge_scope_get_param
+ *fill*         0x000000000000fa4b        0x5 
+ .text.known_length_prefix_length
+                0x000000000000fa50       0x67 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ *fill*         0x000000000000fab7        0x9 
+ .text.known_length_apply
+                0x000000000000fac0       0x8a uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ *fill*         0x000000000000fb4a        0x6 
+ .text.uint_xe_prefix_apply
+                0x000000000000fb50      0x270 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .text.bithenge_barrier_transform_set_subtransform
+                0x000000000000fdc0       0x67 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x000000000000fdc0                bithenge_barrier_transform_set_subtransform
+ *fill*         0x000000000000fe27        0x9 
+ .text.bithenge_new_barrier_transform
+                0x000000000000fe30       0x70 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x000000000000fe30                bithenge_new_barrier_transform
+ .text.empty_internal_node_for_each
+                0x000000000000fea0        0x8 uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+ *fill*         0x000000000000fea8        0x8 
+ .text.empty_internal_node_get
+                0x000000000000feb0        0xb uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+ *fill*         0x000000000000febb        0x5 
+ .text.internal_node_indestructible
+                0x000000000000fec0       0x1c uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+ *fill*         0x000000000000fedc        0x4 
+ .text.simple_internal_node_for_each
+                0x000000000000fee0       0x96 uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+ *fill*         0x000000000000ff76        0xa 
+ .text.bithenge_node_dec_ref
+                0x000000000000ff80       0xd1 uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+                0x000000000000ff80                bithenge_node_dec_ref
+ *fill*         0x0000000000010051        0xf 
+ .text.simple_internal_node_destroy
+                0x0000000000010060       0x66 uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+ *fill*         0x00000000000100c6        0xa 
+ .text.bithenge_init_internal_node
+                0x00000000000100d0       0x16 uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+                0x00000000000100d0                bithenge_init_internal_node
+ *fill*         0x00000000000100e6        0xa 
+ .text.bithenge_new_empty_internal_node
+                0x00000000000100f0       0x19 uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+                0x00000000000100f0                bithenge_new_empty_internal_node
+ *fill*         0x0000000000010109        0x7 
+ .text.bithenge_new_simple_internal_node
+                0x0000000000010110       0xda uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+                0x0000000000010110                bithenge_new_simple_internal_node
+ *fill*         0x00000000000101ea        0x6 
+ .text.bithenge_new_boolean_node
+                0x00000000000101f0       0x40 uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+                0x00000000000101f0                bithenge_new_boolean_node
+ .text.bithenge_new_integer_node
+                0x0000000000010230       0x58 uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+                0x0000000000010230                bithenge_new_integer_node
+ *fill*         0x0000000000010288        0x8 
+ .text.bithenge_node_get
+                0x0000000000010290      0x17f uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+                0x0000000000010290                bithenge_node_get
+ *fill*         0x000000000001040f        0x1 
+ .text.bithenge_new_string_node
+                0x0000000000010410       0x7a uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+                0x0000000000010410                bithenge_new_string_node
+ *fill*         0x000000000001048a        0x6 
+ .text.bithenge_node_equal
+                0x0000000000010490       0x91 uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+                0x0000000000010490                bithenge_node_equal
+ *fill*         0x0000000000010521        0xf 
+ .text.get_for_each_func
+                0x0000000000010530       0x73 uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x00000000000105b0      0x978
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.bithenge_new_block_blob.str1.8
+                0x00000000000105b0      0x395 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+                                         0x36 (size before relaxing)
+ .rodata.bithenge_new_block_blob.str1.1
+                0x0000000000010945      0x2ea uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+                                          0x4 (size before relaxing)
+ .rodata.subblob_read_bits.str1.8
+                0x0000000000010c2f       0x3a uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+ .rodata.subblob_read_bits.str1.1
+                0x0000000000010c2f       0x19 uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+ .rodata.bithenge_init_random_access_blob.str1.8
+                0x0000000000010c2f       0x2d uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+ .rodata.bithenge_init_random_access_blob.str1.1
+                0x0000000000010c2f       0x3c uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+ .rodata.bithenge_init_sequential_blob.str1.1
+                0x0000000000010c2f        0xa uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+ .rodata.bithenge_new_blob_from_buffer.str1.1
+                0x0000000000010c2f        0xf uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+ .rodata.bithenge_new_offset_blob.str1.1
+                0x0000000000010c2f       0x10 uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+ .rodata.bithenge_new_offset_blob.str1.8
+                0x0000000000010c2f       0x3a uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+ .rodata.bithenge_blob_equal.str1.1
+                0x0000000000010c2f       0x26 uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+ *fill*         0x0000000000010c2f        0x1 
+ .rodata.cst8   0x0000000000010c30       0x28 uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+                                          0x8 (size before relaxing)
+ .rodata.compose_apply.str1.8
+                0x0000000000010c58       0x3a uspace/lib/libbithenge.so.0.0.p/bithenge_src_compound.c.o
+ .rodata.compose_apply.str1.1
+                0x0000000000010c58        0x5 uspace/lib/libbithenge.so.0.0.p/bithenge_src_compound.c.o
+ .rodata.bithenge_transform_dec_ref.part.0.str1.8
+                0x0000000000010c58       0x3f uspace/lib/libbithenge.so.0.0.p/bithenge_src_compound.c.o
+ .rodata.bithenge_transform_dec_ref.part.0.str1.1
+                0x0000000000010c58        0xf uspace/lib/libbithenge.so.0.0.p/bithenge_src_compound.c.o
+ .rodata.if_transform_apply.str1.8
+                0x0000000000010c58       0x40 uspace/lib/libbithenge.so.0.0.p/bithenge_src_compound.c.o
+ .rodata.if_transform_apply.str1.1
+                0x0000000000010c58        0xf uspace/lib/libbithenge.so.0.0.p/bithenge_src_compound.c.o
+ .rodata.expression_indestructible.str1.8
+                0x0000000000010c58       0x33 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .rodata.expression_indestructible.str1.1
+                0x0000000000010c58        0x6 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .rodata.bithenge_expression_evaluate.part.0.str1.8
+                0x0000000000010c58       0x40 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .rodata.bithenge_expression_evaluate.part.0.str1.1
+                0x0000000000010c58        0xa uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .rodata.bithenge_expression_dec_ref.part.0.str1.1
+                0x0000000000010c58        0xf uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .rodata.const_expression_evaluate.str1.8
+                0x0000000000010c58       0x3a uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .rodata.const_expression_evaluate.str1.1
+                0x0000000000010c58        0x5 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .rodata.bithenge_transform_num_params.part.0.str1.8
+                0x0000000000010c58       0x3f uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .rodata.bithenge_transform_num_params.part.0.str1.1
+                0x0000000000010c58        0x5 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .rodata.bithenge_blob_size.part.0.str1.8
+                0x0000000000010c58       0x3a uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .rodata.bithenge_blob_size.part.0.str1.1
+                0x0000000000010c58       0x14 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .rodata.scope_member_expression_evaluate.str1.1
+                0x0000000000010c58       0x13 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .rodata.concat_blob_size.str1.8
+                0x0000000000010c58       0x26 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .rodata.concat_blob_read.str1.1
+                0x0000000000010c58       0x19 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .rodata.concat_blob_read_bits.str1.1
+                0x0000000000010c58       0x10 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .rodata.bithenge_init_expression.str1.1
+                0x0000000000010c58       0x1f uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .rodata.bithenge_concat_blob.str1.1
+                0x0000000000010c58        0x8 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .rodata.bithenge_concat_blob_lazy.str1.1
+                0x0000000000010c58        0xd uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .rodata.binary_expression_evaluate
+                0x0000000000010c58       0x3c uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .rodata.bithenge_new_file_blob.str1.8
+                0x0000000000010c94       0x2d uspace/lib/libbithenge.so.0.0.p/bithenge_src_file.c.o
+ .rodata.bithenge_new_file_blob.str1.1
+                0x0000000000010c94        0xd uspace/lib/libbithenge.so.0.0.p/bithenge_src_file.c.o
+ .rodata.print_blob.str1.1
+                0x0000000000010c94       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_print.c.o
+ .rodata.print_blob.str1.8
+                0x0000000000010c94       0x61 uspace/lib/libbithenge.so.0.0.p/bithenge_src_print.c.o
+ .rodata.print_node.str1.1
+                0x0000000000010c94       0x35 uspace/lib/libbithenge.so.0.0.p/bithenge_src_print.c.o
+ .rodata.print_node.str1.8
+                0x0000000000010c94       0x65 uspace/lib/libbithenge.so.0.0.p/bithenge_src_print.c.o
+ .rodata.print_node
+                0x0000000000010c94       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_print.c.o
+ .rodata.print_internal_func.str1.1
+                0x0000000000010cac        0x5 uspace/lib/libbithenge.so.0.0.p/bithenge_src_print.c.o
+ .rodata.bithenge_print_node
+                0x0000000000010cac       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_print.c.o
+ .rodata.bithenge_print_node_to_string
+                0x0000000000010cc4       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_print.c.o
+ .rodata.bithenge_expression_dec_ref.part.0.str1.8
+                0x0000000000010cdc       0x40 uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ .rodata.bithenge_expression_dec_ref.part.0.str1.1
+                0x0000000000010cdc        0xf uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ .rodata.bithenge_transform_dec_ref.part.0.str1.8
+                0x0000000000010cdc       0x3f uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ .rodata.bithenge_transform_dec_ref.str1.1
+                0x0000000000010cdc        0xa uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ .rodata.syntax_error.part.0.str1.1
+                0x0000000000010cdc       0x23 uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ .rodata.expect.part.0.str1.1
+                0x0000000000010cdc        0xb uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ .rodata.next_token.str1.1
+                0x0000000000010cdc       0x46 uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ .rodata.next_token
+                0x0000000000010cdc       0x78 uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ .rodata.parse_expression_precedence.str1.1
+                0x0000000000010d54       0x41 uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ .rodata.parse_expression_precedence.str1.8
+                0x0000000000010d54       0x21 uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ .rodata.parse_expression_precedence
+                0x0000000000010d54       0xe0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ .rodata.get_named_transform.isra.0.str1.1
+                0x0000000000010e34        0x5 uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ .rodata.parse_transform_no_compose.str1.1
+                0x0000000000010e34       0x14 uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ .rodata.parse_transform_no_compose.str1.8
+                0x0000000000010e34       0x48 uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ .rodata.parse_transform_no_compose
+                0x0000000000010e34       0x40 uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ .rodata.parse_if.str1.1
+                0x0000000000010e74        0xe uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ .rodata.bithenge_parse_script.str1.1
+                0x0000000000010e74       0x1c uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ *fill*         0x0000000000010e74        0xc 
+ .rodata.cst16  0x0000000000010e80       0x90 uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+                                         0x10 (size before relaxing)
+ .rodata.cst8   0x0000000000010f10        0x8 uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ .rodata.bithenge_node_inc_ref.part.0.str1.8
+                0x0000000000010f10       0x3a uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ .rodata.bithenge_node_inc_ref.part.0.str1.1
+                0x0000000000010f10        0x5 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ .rodata.bithenge_transform_dec_ref.part.0.str1.8
+                0x0000000000010f10       0x3f uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ .rodata.bithenge_transform_dec_ref.part.0.str1.1
+                0x0000000000010f10        0xf uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ .rodata.bithenge_blob_size.part.0.str1.8
+                0x0000000000010f10       0x3a uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ .rodata.bithenge_blob_size.part.0.str1.1
+                0x0000000000010f10       0x14 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ .rodata.bithenge_transform_inc_ref.part.0.str1.1
+                0x0000000000010f10        0x5 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ .rodata.bithenge_expression_dec_ref.part.0.str1.8
+                0x0000000000010f10       0x40 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ .rodata.struct_transform_destroy.str1.1
+                0x0000000000010f10        0xa uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ .rodata.seq_node_field_offset.str1.8
+                0x0000000000010f10       0x21 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ .rodata.do_while_transform_prefix_apply.str1.8
+                0x0000000000010f10       0x25 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ .rodata.bithenge_node_from_source.str1.1
+                0x0000000000010f10       0x12 uspace/lib/libbithenge.so.0.0.p/bithenge_src_source.c.o
+ .rodata.transform_indestructible.str1.8
+                0x0000000000010f10       0x32 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .rodata.transform_indestructible.str1.1
+                0x0000000000010f10        0x6 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .rodata.bithenge_blob_size.part.0.str1.8
+                0x0000000000010f10       0x3a uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .rodata.bithenge_blob_size.part.0.str1.1
+                0x0000000000010f10       0x14 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .rodata.barrier_transform_destroy.str1.8
+                0x0000000000010f10       0x3f uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .rodata.barrier_transform_destroy.str1.1
+                0x0000000000010f10       0x19 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .rodata.bits_xe_apply.str1.8
+                0x0000000000010f10       0x21 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .rodata.bits_xe_size.str1.1
+                0x0000000000010f10        0x5 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .rodata.bithenge_init_transform.str1.1
+                0x0000000000010f10       0x11 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .rodata.bithenge_init_transform.str1.8
+                0x0000000000010f10       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .rodata.bithenge_transform_prefix_apply.str1.8
+                0x0000000000010f10       0x3a uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .rodata.bithenge_transform_prefix_apply.str1.1
+                0x0000000000010f10        0x5 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .rodata.bithenge_scope_set_param.str1.1
+                0x0000000000010f10        0x6 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .rodata.bithenge_scope_set_param.str1.8
+                0x0000000000010f10       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .rodata.bithenge_barrier_transform_set_subtransform.str1.1
+                0x0000000000010f10       0x1b uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .rodata.bithenge_barrier_transform_set_subtransform.str1.8
+                0x0000000000010f10       0x2e uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .rodata.str1.1
+                0x0000000000010f10       0x93 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .rodata.cst16  0x0000000000010f10       0x80 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .rodata.internal_node_indestructible.str1.8
+                0x0000000000010f10       0x2d uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+ .rodata.internal_node_indestructible.str1.1
+                0x0000000000010f10        0x6 uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+ .rodata.simple_internal_node_for_each.str1.8
+                0x0000000000010f10       0x3a uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+ .rodata.simple_internal_node_for_each.str1.1
+                0x0000000000010f10        0x5 uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+ .rodata.bithenge_node_dec_ref.str1.1
+                0x0000000000010f10       0x23 uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+ .rodata.bithenge_new_simple_internal_node.str1.1
+                0x0000000000010f10        0x4 uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+ .rodata.bithenge_node_get.str1.8
+                0x0000000000010f10       0x8d uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+ .rodata.bithenge_node_equal
+                0x0000000000010f10       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+ .rodata.cst8   0x0000000000010f28       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x0000000000010f28      0x664
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x0000000000010f28      0x664 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+                0x0000000000010f28                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x0000000000011590     0x2174
+ *(.eh_frame)
+ .eh_frame      0x0000000000011590       0xb8 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .eh_frame      0x0000000000011648       0x28 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000011670        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .eh_frame      0x0000000000011670      0x2e8 uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+                                        0x300 (size before relaxing)
+ .eh_frame      0x0000000000011958      0x200 uspace/lib/libbithenge.so.0.0.p/bithenge_src_compound.c.o
+                                        0x218 (size before relaxing)
+ .eh_frame      0x0000000000011b58      0x708 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+                                        0x720 (size before relaxing)
+ .eh_frame      0x0000000000012260      0x108 uspace/lib/libbithenge.so.0.0.p/bithenge_src_file.c.o
+                                        0x120 (size before relaxing)
+ .eh_frame      0x0000000000012368      0x138 uspace/lib/libbithenge.so.0.0.p/bithenge_src_print.c.o
+                                        0x150 (size before relaxing)
+ .eh_frame      0x00000000000124a0      0x2c8 uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+                                        0x2e0 (size before relaxing)
+ .eh_frame      0x0000000000012768      0x508 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+                                        0x520 (size before relaxing)
+ .eh_frame      0x0000000000012c70       0x48 uspace/lib/libbithenge.so.0.0.p/bithenge_src_source.c.o
+                                         0x60 (size before relaxing)
+ .eh_frame      0x0000000000012cb8      0x7d8 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                                        0x7f0 (size before relaxing)
+ .eh_frame      0x0000000000013490      0x274 uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+                                        0x290 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x0000000000013704        0x0
+ *(.sframe)
+ .sframe        0x0000000000013704        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x0000000000014000                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array
+ *(.preinit_array)
+
+.init_array
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+
+.fini_array
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x0000000000014000      0x518
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ .data.rel.ro.local.block_ops
+                0x0000000000014000       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ .data.rel.ro.local.subblob_ops
+                0x0000000000014020       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+ .data.rel.ro.local.memory_ops
+                0x0000000000014040       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+ .data.rel.ro.local.sequential_ops
+                0x0000000000014060       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+ .data.rel.ro.local.partial_transform_ops
+                0x0000000000014080       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_compound.c.o
+ .data.rel.ro.local.if_transform_ops
+                0x00000000000140a0       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_compound.c.o
+ .data.rel.ro.local.compose_transform_ops
+                0x00000000000140c0       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_compound.c.o
+ .data.rel.ro.local.concat_blob_ops
+                0x00000000000140e0       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .data.rel.ro.local.inputless_transform_ops
+                0x0000000000014100       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .data.rel.ro.local.expression_transform_ops
+                0x0000000000014120       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .data.rel.ro.local.param_wrapper_ops
+                0x0000000000014140       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .data.rel.ro.local.subblob_expression_ops
+                0x0000000000014160       0x10 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .data.rel.ro.local.scope_member_expression_ops
+                0x0000000000014170       0x10 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .data.rel.ro.local.const_expression_ops
+                0x0000000000014180       0x10 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .data.rel.ro.local.param_expression_ops
+                0x0000000000014190       0x10 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .data.rel.ro.local.current_node_ops
+                0x00000000000141a0       0x10 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .data.rel.ro.local.in_node_ops
+                0x00000000000141b0       0x10 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .data.rel.ro.local.binary_expression_ops
+                0x00000000000141c0       0x10 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ *fill*         0x00000000000141d0       0x10 
+ .data.rel.ro.local.file_ops
+                0x00000000000141e0       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_file.c.o
+ .data.rel.ro.local.do_while_transform_ops
+                0x0000000000014200       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ .data.rel.ro.local.do_while_node_seq_ops
+                0x0000000000014220        0x8 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ *fill*         0x0000000000014228        0x8 
+ .data.rel.ro.local.do_while_node_ops
+                0x0000000000014230       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ *fill*         0x0000000000014248       0x18 
+ .data.rel.ro.local.repeat_transform_ops
+                0x0000000000014260       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ .data.rel.ro.local.repeat_node_seq_ops
+                0x0000000000014280        0x8 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ *fill*         0x0000000000014288        0x8 
+ .data.rel.ro.local.repeat_node_ops
+                0x0000000000014290       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ .data.rel.ro.local.struct_node_seq_ops
+                0x00000000000142a8        0x8 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ .data.rel.ro.local.struct_node_ops
+                0x00000000000142b0       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ *fill*         0x00000000000142c8       0x18 
+ .data.rel.ro.local.zero_terminated_ops
+                0x00000000000142e0       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .data.rel.ro.local.uint_xe_ops
+                0x0000000000014300       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .data.rel.ro.local.uint64be_ops
+                0x0000000000014320       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .data.rel.ro.local.uint64le_ops
+                0x0000000000014340       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .data.rel.ro.local.uint32be_ops
+                0x0000000000014360       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .data.rel.ro.local.uint32le_ops
+                0x0000000000014380       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .data.rel.ro.local.uint16be_ops
+                0x00000000000143a0       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .data.rel.ro.local.uint16le_ops
+                0x00000000000143c0       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .data.rel.ro.local.uint8_ops
+                0x00000000000143e0       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .data.rel.ro.local.nonzero_boolean_ops
+                0x0000000000014400       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .data.rel.ro.local.known_length_ops
+                0x0000000000014420       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .data.rel.ro.local.invalid_ops
+                0x0000000000014440       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .data.rel.ro.local.bits_xe_ops
+                0x0000000000014460       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .data.rel.ro.local.bits_xe_blob_ops
+                0x0000000000014480       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .data.rel.ro.local.bit_ops
+                0x00000000000144a0       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .data.rel.ro.local.ascii_ops
+                0x00000000000144c0       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .data.rel.ro.local.barrier_transform_ops
+                0x00000000000144e0       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .data.rel.ro.local.empty_internal_node_ops
+                0x0000000000014500       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x0000000000014518        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+
+.dynamic        0x0000000000014518      0x160
+ *(.dynamic)
+ .dynamic       0x0000000000014518      0x160 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+                0x0000000000014518                _DYNAMIC
+
+.got            0x0000000000014678       0x28
+ *(.got)
+ .got           0x0000000000014678       0x28 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ *(.igot)
+                0x00000000000146a0                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x00000000000146a0      0x2f0
+ *(.got.plt)
+ .got.plt       0x00000000000146a0      0x2f0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+                0x00000000000146a0                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+
+.data           0x00000000000149a0      0x2f8
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.rel.local.current_node_expression
+                0x00000000000149a0       0x10 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .data.rel.local.in_node_expression
+                0x00000000000149b0       0x10 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .data.rel.local.struct_transform_ops
+                0x00000000000149c0       0x20 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ .data.rel.local.bithenge_primitive_transforms
+                0x00000000000149e0        0x8 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x00000000000149e0                bithenge_primitive_transforms
+ *fill*         0x00000000000149e8       0x18 
+ .data.rel.primitive_transforms
+                0x0000000000014a00      0x110 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .data.rel.local.bithenge_zero_terminated_transform
+                0x0000000000014b10       0x10 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x0000000000014b10                bithenge_zero_terminated_transform
+ .data.rel.local.bithenge_uint_le_transform
+                0x0000000000014b20       0x10 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x0000000000014b20                bithenge_uint_le_transform
+ .data.rel.local.bithenge_uint_be_transform
+                0x0000000000014b30       0x10 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x0000000000014b30                bithenge_uint_be_transform
+ .data.rel.local.bithenge_uint64be_transform
+                0x0000000000014b40       0x10 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x0000000000014b40                bithenge_uint64be_transform
+ .data.rel.local.bithenge_uint64le_transform
+                0x0000000000014b50       0x10 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x0000000000014b50                bithenge_uint64le_transform
+ .data.rel.local.bithenge_uint32be_transform
+                0x0000000000014b60       0x10 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x0000000000014b60                bithenge_uint32be_transform
+ .data.rel.local.bithenge_uint32le_transform
+                0x0000000000014b70       0x10 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x0000000000014b70                bithenge_uint32le_transform
+ .data.rel.local.bithenge_uint16be_transform
+                0x0000000000014b80       0x10 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x0000000000014b80                bithenge_uint16be_transform
+ .data.rel.local.bithenge_uint16le_transform
+                0x0000000000014b90       0x10 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x0000000000014b90                bithenge_uint16le_transform
+ .data.rel.local.bithenge_uint8_transform
+                0x0000000000014ba0       0x10 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x0000000000014ba0                bithenge_uint8_transform
+ .data.rel.local.bithenge_nonzero_boolean_transform
+                0x0000000000014bb0       0x10 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x0000000000014bb0                bithenge_nonzero_boolean_transform
+ .data.rel.local.bithenge_known_length_transform
+                0x0000000000014bc0       0x10 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x0000000000014bc0                bithenge_known_length_transform
+ .data.rel.local.bithenge_invalid_transform
+                0x0000000000014bd0       0x10 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x0000000000014bd0                bithenge_invalid_transform
+ .data.rel.local.bithenge_bits_le_transform
+                0x0000000000014be0       0x10 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x0000000000014be0                bithenge_bits_le_transform
+ .data.rel.local.bithenge_bits_be_transform
+                0x0000000000014bf0       0x10 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x0000000000014bf0                bithenge_bits_be_transform
+ .data.rel.local.bithenge_bit_transform
+                0x0000000000014c00       0x10 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x0000000000014c00                bithenge_bit_transform
+ .data.rel.local.bithenge_ascii_transform
+                0x0000000000014c10       0x10 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+                0x0000000000014c10                bithenge_ascii_transform
+ .data.true_node
+                0x0000000000014c20       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+ *fill*         0x0000000000014c38        0x8 
+ .data.false_node
+                0x0000000000014c40       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+ *fill*         0x0000000000014c58        0x8 
+ .data.rel.local.simple_internal_node_ops
+                0x0000000000014c60       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+ *fill*         0x0000000000014c78        0x8 
+ .data.rel.local.empty_internal_node
+                0x0000000000014c80       0x18 uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+
+.data1
+ *(.data1)
+                [!provide]                        PROVIDE (_edata = .)
+                [!provide]                        PROVIDE (edata = .)
+                0x0000000000014c98                . = .
+                [!provide]                        PROVIDE (__bss_start = .)
+
+.bss            0x0000000000014c98        0x0
+ *(.dynbss)
+ .dynbss        0x0000000000014c98        0x0 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ *(COMMON)
+                0x0000000000014c98                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x0000000000014c98                . = ALIGN (0x8)
+                0x0000000000014c98                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x0000000000016c98        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x0000000000016c98                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000016c98                . = ALIGN (0x8)
+                [!provide]                        PROVIDE (_end = .)
+                [!provide]                        PROVIDE (end = .)
+                0x0000000000016c98                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/lib/libbithenge.so.0.0.p/bithenge_src_helenos_block.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/lib/libbithenge.so.0.0.p/bithenge_src_blob.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libbithenge.so.0.0.p/bithenge_src_compound.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libbithenge.so.0.0.p/bithenge_src_expression.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libbithenge.so.0.0.p/bithenge_src_file.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libbithenge.so.0.0.p/bithenge_src_print.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libbithenge.so.0.0.p/bithenge_src_script.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libbithenge.so.0.0.p/bithenge_src_sequence.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libbithenge.so.0.0.p/bithenge_src_source.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libbithenge.so.0.0.p/bithenge_src_transform.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libbithenge.so.0.0.p/bithenge_src_tree.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/lib/libbithenge.so.0.0 elf64-x86-64)

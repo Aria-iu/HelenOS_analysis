@@ -1,0 +1,2573 @@
+Archive member included to satisfy reference by file (symbol)
+
+uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                              (--whole-archive)
+uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                              (--whole-archive)
+uspace/lib/libui.a.p/ui_src_ui.c.o
+                              uspace/app_fontedit.p/app_fontedit_fontedit.c.o (ui_destroy)
+uspace/lib/libui.a.p/ui_src_wdecor.c.o
+                              uspace/lib/libui.a.p/ui_src_ui.c.o (ui_wdecor_paint)
+uspace/lib/libui.a.p/ui_src_window.c.o
+                              uspace/app_fontedit.p/app_fontedit_fontedit.c.o (ui_wnd_params_init)
+uspace/lib/libui.a.p/ui_src_clickmatic.c.o
+                              uspace/lib/libui.a.p/ui_src_ui.c.o (ui_clickmatic_create)
+uspace/lib/libui.a.p/ui_src_control.c.o
+                              uspace/lib/libui.a.p/ui_src_window.c.o (ui_control_destroy)
+uspace/lib/libui.a.p/ui_src_dummygc.c.o
+                              uspace/lib/libui.a.p/ui_src_window.c.o (dummygc_create)
+uspace/lib/libui.a.p/ui_src_menu.c.o
+                              uspace/lib/libui.a.p/ui_src_window.c.o (ui_menu_create)
+uspace/lib/libui.a.p/ui_src_menubar.c.o
+                              uspace/lib/libui.a.p/ui_src_window.c.o (ui_menu_bar_press_accel)
+uspace/lib/libui.a.p/ui_src_menudd.c.o
+                              uspace/lib/libui.a.p/ui_src_menubar.c.o (ui_menu_dd_destroy)
+uspace/lib/libui.a.p/ui_src_menuentry.c.o
+                              uspace/lib/libui.a.p/ui_src_window.c.o (ui_menu_entry_create)
+uspace/lib/libui.a.p/ui_src_paint.c.o
+                              uspace/lib/libui.a.p/ui_src_wdecor.c.o (ui_paint_bevel)
+uspace/lib/libui.a.p/ui_src_pbutton.c.o
+                              uspace/lib/libui.a.p/ui_src_wdecor.c.o (ui_pbutton_create)
+uspace/lib/libui.a.p/ui_src_popup.c.o
+                              uspace/lib/libui.a.p/ui_src_menu.c.o (ui_popup_params_init)
+uspace/lib/libui.a.p/ui_src_resource.c.o
+                              uspace/lib/libui.a.p/ui_src_window.c.o (ui_resource_create)
+uspace/lib/libui.a.p/ui_src_accel.c.o
+                              uspace/lib/libui.a.p/ui_src_paint.c.o (ui_accel_process)
+uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+                              uspace/lib/libui.a.p/ui_src_window.c.o (gfx_bitmap_params_init)
+uspace/lib/libgfx.a.p/gfx_src_color.c.o
+                              uspace/app_fontedit.p/app_fontedit_fontedit.c.o (gfx_color_new_rgb_i16)
+uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+                              uspace/app_fontedit.p/app_fontedit_fontedit.c.o (gfx_coord_div_rneg)
+uspace/lib/libgfx.a.p/gfx_src_context.c.o
+                              uspace/lib/libui.a.p/ui_src_dummygc.c.o (gfx_context_new)
+uspace/lib/libgfx.a.p/gfx_src_cursor.c.o
+                              uspace/lib/libui.a.p/ui_src_window.c.o (gfx_cursor_get_pos)
+uspace/lib/libgfx.a.p/gfx_src_render.c.o
+                              uspace/app_fontedit.p/app_fontedit_fontedit.c.o (gfx_set_color)
+uspace/lib/libgfxfont.a.p/gfxfont_src_font.c.o
+                              uspace/app_fontedit.p/app_fontedit_fontedit.c.o (gfx_font_metrics_init)
+uspace/lib/libgfxfont.a.p/gfxfont_src_glyph.c.o
+                              uspace/app_fontedit.p/app_fontedit_fontedit.c.o (gfx_glyph_metrics_init)
+uspace/lib/libgfxfont.a.p/gfxfont_src_glyph_bmp.c.o
+                              uspace/app_fontedit.p/app_fontedit_fontedit.c.o (gfx_glyph_bmp_open)
+uspace/lib/libgfxfont.a.p/gfxfont_src_text.c.o
+                              uspace/app_fontedit.p/app_fontedit_fontedit.c.o (gfx_text_fmt_init)
+uspace/lib/libgfxfont.a.p/gfxfont_src_typeface.c.o
+                              uspace/app_fontedit.p/app_fontedit_fontedit.c.o (gfx_typeface_create)
+uspace/lib/libriff.a.p/riff_src_chunk.c.o
+                              uspace/lib/libgfxfont.a.p/gfxfont_src_typeface.c.o (riff_wopen)
+uspace/lib/libmemgfx.a.p/memgfx_src_memgc.c.o
+                              uspace/lib/libui.a.p/ui_src_window.c.o (mem_gc_create)
+uspace/lib/libmemgfx.a.p/memgfx_src_xlategc.c.o
+                              uspace/lib/libui.a.p/ui_src_window.c.o (xlate_gc_set_off)
+uspace/lib/libdisplay.a.p/display_src_display.c.o
+                              uspace/lib/libui.a.p/ui_src_ui.c.o (display_open)
+uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+                              uspace/lib/libdisplay.a.p/display_src_display.c.o (ipc_gc_create)
+uspace/lib/libcongfx.a.p/congfx_src_console.c.o
+                              uspace/lib/libui.a.p/ui_src_ui.c.o (console_gc_create)
+uspace/lib/libconsole.a.p/console_src_console.c.o
+                              uspace/lib/libui.a.p/ui_src_ui.c.o (console_init)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.0                     uspace/lib/libui.a.p/ui_src_ui.c.o (task_retval)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+ .data          0x0000000000000000        0x0 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .text          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_ui.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_ui.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_ui.c.o
+ .text.ui_create_cons
+                0x0000000000000000       0xa0 uspace/lib/libui.a.p/ui_src_ui.c.o
+ .text.ui_create_disp
+                0x0000000000000000       0xa0 uspace/lib/libui.a.p/ui_src_ui.c.o
+ .rodata.ui_suspend.str1.8
+                0x0000000000000000       0x25 uspace/lib/libui.a.p/ui_src_ui.c.o
+ .rodata.ui_suspend.str1.1
+                0x0000000000000000        0xf uspace/lib/libui.a.p/ui_src_ui.c.o
+ .text.ui_suspend
+                0x0000000000000000       0x60 uspace/lib/libui.a.p/ui_src_ui.c.o
+ .rodata.ui_resume.str1.1
+                0x0000000000000000        0xe uspace/lib/libui.a.p/ui_src_ui.c.o
+ .rodata.ui_resume.str1.8
+                0x0000000000000000       0x27 uspace/lib/libui.a.p/ui_src_ui.c.o
+ .text.ui_resume
+                0x0000000000000000      0x111 uspace/lib/libui.a.p/ui_src_ui.c.o
+ .text.ui_is_suspended
+                0x0000000000000000        0xa uspace/lib/libui.a.p/ui_src_ui.c.o
+ .text.ui_get_rect
+                0x0000000000000000       0x77 uspace/lib/libui.a.p/ui_src_ui.c.o
+ .text.ui_get_clickmatic
+                0x0000000000000000        0xa uspace/lib/libui.a.p/ui_src_ui.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ .text.ui_wdecor_sysmenu_hdl_paint_text
+                0x0000000000000000       0x89 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ .text.ui_wdecor_set_caption
+                0x0000000000000000       0x4a uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ .text.ui_wdecor_sysmenu_open
+                0x0000000000000000       0x22 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ .text.ui_wdecor_sysmenu_left
+                0x0000000000000000       0x22 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ .text.ui_wdecor_sysmenu_right
+                0x0000000000000000       0x22 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ .text.ui_wdecor_sysmenu_accel
+                0x0000000000000000       0x2a uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ .text.ui_wdecor_minimize
+                0x0000000000000000       0x22 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ .text.ui_wdecor_maximize
+                0x0000000000000000       0x22 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ .text.ui_wdecor_unmaximize
+                0x0000000000000000       0x22 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ .text.ui_wdecor_close
+                0x0000000000000000       0x22 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ .text.ui_wdecor_move
+                0x0000000000000000       0x2a uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ .text.ui_wdecor_resize
+                0x0000000000000000       0x2a uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ .text.ui_wdecor_set_cursor
+                0x0000000000000000       0x22 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ .text.ui_wdecor_get_rsztype
+                0x0000000000000000      0x123 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ .rodata.ui_wdecor_cursor_from_rsztype.str1.8
+                0x0000000000000000       0x29 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ .rodata.ui_wdecor_cursor_from_rsztype.str1.1
+                0x0000000000000000        0x6 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ .text.ui_wdecor_cursor_from_rsztype
+                0x0000000000000000       0x6b uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ .rodata.ui_wdecor_cursor_from_rsztype
+                0x0000000000000000       0x68 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_window.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_window.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_window.c.o
+ .rodata.ui_window_add.str1.1
+                0x0000000000000000       0x18 uspace/lib/libui.a.p/ui_src_window.c.o
+ .text.ui_window_add
+                0x0000000000000000       0x2d uspace/lib/libui.a.p/ui_src_window.c.o
+ .rodata.ui_window_remove.str1.1
+                0x0000000000000000       0x1b uspace/lib/libui.a.p/ui_src_window.c.o
+ .rodata.ui_window_remove.str1.8
+                0x0000000000000000       0x29 uspace/lib/libui.a.p/ui_src_window.c.o
+ .text.ui_window_remove
+                0x0000000000000000       0x4e uspace/lib/libui.a.p/ui_src_window.c.o
+ .text.ui_window_resize
+                0x0000000000000000      0x240 uspace/lib/libui.a.p/ui_src_window.c.o
+ .text.ui_window_set_caption
+                0x0000000000000000       0x5e uspace/lib/libui.a.p/ui_src_window.c.o
+ .text.ui_window_get_gc
+                0x0000000000000000        0xa uspace/lib/libui.a.p/ui_src_window.c.o
+ .text.ui_window_set_ctl_cursor
+                0x0000000000000000       0x2a uspace/lib/libui.a.p/ui_src_window.c.o
+ .text.wnd_dcursor_from_cursor
+                0x0000000000000000       0x16 uspace/lib/libui.a.p/ui_src_window.c.o
+ .text.ui_window_send_sysmenu
+                0x0000000000000000       0x8f uspace/lib/libui.a.p/ui_src_window.c.o
+ .text.ui_window_send_minimize
+                0x0000000000000000       0x32 uspace/lib/libui.a.p/ui_src_window.c.o
+ .text.ui_window_send_close
+                0x0000000000000000       0x22 uspace/lib/libui.a.p/ui_src_window.c.o
+ .text.ui_window_send_focus
+                0x0000000000000000       0x22 uspace/lib/libui.a.p/ui_src_window.c.o
+ .text.ui_window_send_unfocus
+                0x0000000000000000       0x3a uspace/lib/libui.a.p/ui_src_window.c.o
+ .text.ui_window_def_sysmenu
+                0x0000000000000000       0x6f uspace/lib/libui.a.p/ui_src_window.c.o
+ .text.ui_window_def_minimize
+                0x0000000000000000       0x1c uspace/lib/libui.a.p/ui_src_window.c.o
+ .text.ui_window_def_kbd
+                0x0000000000000000       0x43 uspace/lib/libui.a.p/ui_src_window.c.o
+ .text.ui_window_send_paint
+                0x0000000000000000       0x26 uspace/lib/libui.a.p/ui_src_window.c.o
+ .text.ui_window_def_unmaximize
+                0x0000000000000000       0xb3 uspace/lib/libui.a.p/ui_src_window.c.o
+ .text.ui_window_send_maximize
+                0x0000000000000000       0x26 uspace/lib/libui.a.p/ui_src_window.c.o
+ .text.ui_window_send_unmaximize
+                0x0000000000000000       0xc8 uspace/lib/libui.a.p/ui_src_window.c.o
+ .text.ui_window_def_pos
+                0x0000000000000000       0x22 uspace/lib/libui.a.p/ui_src_window.c.o
+ .text.ui_window_def_unfocus
+                0x0000000000000000       0x22 uspace/lib/libui.a.p/ui_src_window.c.o
+ .text.ui_window_def_resize
+                0x0000000000000000       0x26 uspace/lib/libui.a.p/ui_src_window.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_clickmatic.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_clickmatic.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_clickmatic.c.o
+ .text.ui_clickmatic_timer_fun
+                0x0000000000000000       0x51 uspace/lib/libui.a.p/ui_src_clickmatic.c.o
+ .text.ui_clickmatic_set_cb
+                0x0000000000000000        0xe uspace/lib/libui.a.p/ui_src_clickmatic.c.o
+ .text.ui_clickmatic_destroy
+                0x0000000000000000       0x31 uspace/lib/libui.a.p/ui_src_clickmatic.c.o
+ .text.ui_clickmatic_press
+                0x0000000000000000       0x3e uspace/lib/libui.a.p/ui_src_clickmatic.c.o
+ .text.ui_clickmatic_release
+                0x0000000000000000        0xe uspace/lib/libui.a.p/ui_src_clickmatic.c.o
+ .text.ui_clickmatic_clicked
+                0x0000000000000000       0x22 uspace/lib/libui.a.p/ui_src_clickmatic.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_control.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_control.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_control.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_dummygc.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_dummygc.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_dummygc.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_menu.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_menu.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_menu.c.o
+ .text.ui_menu_get_geom
+                0x0000000000000000       0xde uspace/lib/libui.a.p/ui_src_menu.c.o
+ .text.ui_menu_kbd_event
+                0x0000000000000000      0x195 uspace/lib/libui.a.p/ui_src_menu.c.o
+ .rodata.ui_menu_kbd_event
+                0x0000000000000000      0x170 uspace/lib/libui.a.p/ui_src_menu.c.o
+ .text.ui_menu_left
+                0x0000000000000000       0x22 uspace/lib/libui.a.p/ui_src_menu.c.o
+ .text.ui_menu_right
+                0x0000000000000000       0x22 uspace/lib/libui.a.p/ui_src_menu.c.o
+ .text.ui_menu_press_accel
+                0x0000000000000000       0x2a uspace/lib/libui.a.p/ui_src_menu.c.o
+ .text.ui_menu_get_idev_id
+                0x0000000000000000        0xa uspace/lib/libui.a.p/ui_src_menu.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_menubar.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_menubar.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_menubar.c.o
+ .text.ui_menu_bar_ctl_destroy
+                0x0000000000000000       0x61 uspace/lib/libui.a.p/ui_src_menubar.c.o
+ .text.ui_menu_bar_create
+                0x0000000000000000       0xb2 uspace/lib/libui.a.p/ui_src_menubar.c.o
+ .text.ui_menu_bar_destroy
+                0x0000000000000000       0x61 uspace/lib/libui.a.p/ui_src_menubar.c.o
+ .text.ui_menu_bar_set_cb
+                0x0000000000000000        0xe uspace/lib/libui.a.p/ui_src_menubar.c.o
+ .text.ui_menu_bar_ctl
+                0x0000000000000000        0x9 uspace/lib/libui.a.p/ui_src_menubar.c.o
+ .text.ui_menu_bar_set_rect
+                0x0000000000000000        0xe uspace/lib/libui.a.p/ui_src_menubar.c.o
+ .text.ui_menu_bar_ctl_paint
+                0x0000000000000000        0xa uspace/lib/libui.a.p/ui_src_menubar.c.o
+ .text.ui_menu_bar_select_sysmenu
+                0x0000000000000000       0x56 uspace/lib/libui.a.p/ui_src_menubar.c.o
+ .text.ui_menu_bar_left
+                0x0000000000000000      0x140 uspace/lib/libui.a.p/ui_src_menubar.c.o
+ .text.ui_menu_bar_right
+                0x0000000000000000      0x140 uspace/lib/libui.a.p/ui_src_menubar.c.o
+ .text.ui_menu_bar_pos_event
+                0x0000000000000000      0x124 uspace/lib/libui.a.p/ui_src_menubar.c.o
+ .text.ui_menu_bar_ctl_pos_event
+                0x0000000000000000        0xa uspace/lib/libui.a.p/ui_src_menubar.c.o
+ .text.ui_menu_bar_key_press_unmod
+                0x0000000000000000      0x1e6 uspace/lib/libui.a.p/ui_src_menubar.c.o
+ .text.ui_menu_bar_kbd_event
+                0x0000000000000000       0xd1 uspace/lib/libui.a.p/ui_src_menubar.c.o
+ .text.ui_menu_bar_ctl_kbd_event
+                0x0000000000000000       0xd1 uspace/lib/libui.a.p/ui_src_menubar.c.o
+ .text.ui_menu_bar_activate
+                0x0000000000000000       0x63 uspace/lib/libui.a.p/ui_src_menubar.c.o
+ .text.ui_menu_bar_deactivate
+                0x0000000000000000      0x149 uspace/lib/libui.a.p/ui_src_menubar.c.o
+ .data.ui_menu_bar_ops
+                0x0000000000000000       0x28 uspace/lib/libui.a.p/ui_src_menubar.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_menudd.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_menudd.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_menudd.c.o
+ .text.ui_menu_dd_press_accel
+                0x0000000000000000       0x15 uspace/lib/libui.a.p/ui_src_menudd.c.o
+ .text.ui_menu_dd_close_req
+                0x0000000000000000        0xd uspace/lib/libui.a.p/ui_src_menudd.c.o
+ .text.ui_menu_dd_right
+                0x0000000000000000       0x13 uspace/lib/libui.a.p/ui_src_menudd.c.o
+ .text.ui_menu_dd_left
+                0x0000000000000000       0x13 uspace/lib/libui.a.p/ui_src_menudd.c.o
+ .text.ui_menu_dd_create
+                0x0000000000000000       0xf0 uspace/lib/libui.a.p/ui_src_menudd.c.o
+ .text.ui_menu_dd_destroy
+                0x0000000000000000       0x51 uspace/lib/libui.a.p/ui_src_menudd.c.o
+ .text.ui_menu_dd_prev
+                0x0000000000000000       0x24 uspace/lib/libui.a.p/ui_src_menudd.c.o
+ .data.ui_menu_dd_menu_cb
+                0x0000000000000000       0x20 uspace/lib/libui.a.p/ui_src_menudd.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_menuentry.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_menuentry.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_menuentry.c.o
+ .text.ui_menu_entry_column_widths
+                0x0000000000000000       0x4d uspace/lib/libui.a.p/ui_src_menuentry.c.o
+ .text.ui_menu_entry_release
+                0x0000000000000000       0x51 uspace/lib/libui.a.p/ui_src_menuentry.c.o
+ .text.ui_menu_entry_cb
+                0x0000000000000000       0x1a uspace/lib/libui.a.p/ui_src_menuentry.c.o
+ .text.ui_menu_entry_press
+                0x0000000000000000       0x27 uspace/lib/libui.a.p/ui_src_menuentry.c.o
+ .text.ui_menu_entry_enter
+                0x0000000000000000       0x26 uspace/lib/libui.a.p/ui_src_menuentry.c.o
+ .text.ui_menu_entry_leave
+                0x0000000000000000       0x26 uspace/lib/libui.a.p/ui_src_menuentry.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_paint.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_paint.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_paint.c.o
+ .text.ui_paint_get_bevel_inside
+                0x0000000000000000       0x2a uspace/lib/libui.a.p/ui_src_paint.c.o
+ .text.ui_paint_inset_frame
+                0x0000000000000000       0x8b uspace/lib/libui.a.p/ui_src_paint.c.o
+ .text.ui_paint_filled_circle
+                0x0000000000000000      0xa42 uspace/lib/libui.a.p/ui_src_paint.c.o
+ .text.ui_paint_up_triangle
+                0x0000000000000000       0xb4 uspace/lib/libui.a.p/ui_src_paint.c.o
+ .text.ui_paint_down_triangle
+                0x0000000000000000       0xac uspace/lib/libui.a.p/ui_src_paint.c.o
+ .text.ui_paint_left_triangle
+                0x0000000000000000       0xb4 uspace/lib/libui.a.p/ui_src_paint.c.o
+ .text.ui_paint_right_triangle
+                0x0000000000000000       0xac uspace/lib/libui.a.p/ui_src_paint.c.o
+ .text.ui_paint_text_rect
+                0x0000000000000000      0x157 uspace/lib/libui.a.p/ui_src_paint.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_pbutton.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_pbutton.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_pbutton.c.o
+ .text.ui_pbutton_ctl
+                0x0000000000000000        0x9 uspace/lib/libui.a.p/ui_src_pbutton.c.o
+ .text.ui_pbutton_set_flags
+                0x0000000000000000        0x9 uspace/lib/libui.a.p/ui_src_pbutton.c.o
+ .text.ui_pbutton_set_default
+                0x0000000000000000        0xa uspace/lib/libui.a.p/ui_src_pbutton.c.o
+ .text.ui_pbutton_get_light
+                0x0000000000000000        0xa uspace/lib/libui.a.p/ui_src_pbutton.c.o
+ .text.ui_pbutton_set_light
+                0x0000000000000000        0xa uspace/lib/libui.a.p/ui_src_pbutton.c.o
+ .text.ui_pbutton_set_caption
+                0x0000000000000000       0x3a uspace/lib/libui.a.p/ui_src_pbutton.c.o
+ .text.ui_pbutton_press
+                0x0000000000000000       0x56 uspace/lib/libui.a.p/ui_src_pbutton.c.o
+ .text.ui_pbutton_release
+                0x0000000000000000       0x71 uspace/lib/libui.a.p/ui_src_pbutton.c.o
+ .text.ui_pbutton_enter
+                0x0000000000000000       0x26 uspace/lib/libui.a.p/ui_src_pbutton.c.o
+ .text.ui_pbutton_leave
+                0x0000000000000000       0x26 uspace/lib/libui.a.p/ui_src_pbutton.c.o
+ .text.ui_pbutton_clicked
+                0x0000000000000000       0x22 uspace/lib/libui.a.p/ui_src_pbutton.c.o
+ .text.ui_pbutton_down
+                0x0000000000000000       0x22 uspace/lib/libui.a.p/ui_src_pbutton.c.o
+ .text.ui_pbutton_up
+                0x0000000000000000       0x22 uspace/lib/libui.a.p/ui_src_pbutton.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_popup.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_popup.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_popup.c.o
+ .text.ui_popup_add
+                0x0000000000000000        0xe uspace/lib/libui.a.p/ui_src_popup.c.o
+ .text.ui_popup_remove
+                0x0000000000000000        0xe uspace/lib/libui.a.p/ui_src_popup.c.o
+ .text.ui_popup_get_gc
+                0x0000000000000000        0xe uspace/lib/libui.a.p/ui_src_popup.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_resource.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_resource.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_resource.c.o
+ .text.ui_resource_expose
+                0x0000000000000000       0x22 uspace/lib/libui.a.p/ui_src_resource.c.o
+ .text.ui_resource_get_font
+                0x0000000000000000        0xa uspace/lib/libui.a.p/ui_src_resource.c.o
+ .text.ui_resource_is_textmode
+                0x0000000000000000        0xa uspace/lib/libui.a.p/ui_src_resource.c.o
+ .text.ui_resource_get_wnd_face_color
+                0x0000000000000000        0xa uspace/lib/libui.a.p/ui_src_resource.c.o
+ .text.ui_resource_get_wnd_text_color
+                0x0000000000000000        0xa uspace/lib/libui.a.p/ui_src_resource.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_accel.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_accel.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.a.p/ui_src_accel.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_color.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_color.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_color.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_coord2_clip
+                0x0000000000000000       0x38 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_coord2_project
+                0x0000000000000000       0xac uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_span_points_sort
+                0x0000000000000000       0x16 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_rect_ctr_on_rect
+                0x0000000000000000       0xd0 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text.gfx_rect_is_incident
+                0x0000000000000000       0xe5 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_context.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_context.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_context.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_cursor.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_cursor.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_cursor.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_render.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_render.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libgfx.a.p/gfx_src_render.c.o
+ .text.gfx_set_clip_rect
+                0x0000000000000000       0x14 uspace/lib/libgfx.a.p/gfx_src_render.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libgfxfont.a.p/gfxfont_src_font.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libgfxfont.a.p/gfxfont_src_font.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libgfxfont.a.p/gfxfont_src_font.c.o
+ .text.gfx_font_get_props
+                0x0000000000000000        0xd uspace/lib/libgfxfont.a.p/gfxfont_src_font.c.o
+ .text.gfx_font_next_glyph
+                0x0000000000000000       0x24 uspace/lib/libgfxfont.a.p/gfxfont_src_font.c.o
+ .text.gfx_font_prev_glyph
+                0x0000000000000000       0x24 uspace/lib/libgfxfont.a.p/gfxfont_src_font.c.o
+ .text.gfx_font_bitmap_pack
+                0x0000000000000000      0x10e uspace/lib/libgfxfont.a.p/gfxfont_src_font.c.o
+ .text.gfx_font_bitmap_unpack
+                0x0000000000000000       0xbf uspace/lib/libgfxfont.a.p/gfxfont_src_font.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libgfxfont.a.p/gfxfont_src_glyph.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libgfxfont.a.p/gfxfont_src_glyph.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libgfxfont.a.p/gfxfont_src_glyph.c.o
+ .text.gfx_glyph_clear_pattern
+                0x0000000000000000       0x91 uspace/lib/libgfxfont.a.p/gfxfont_src_glyph.c.o
+ .text.gfx_glyph_first_pattern
+                0x0000000000000000       0x24 uspace/lib/libgfxfont.a.p/gfxfont_src_glyph.c.o
+ .text.gfx_glyph_next_pattern
+                0x0000000000000000       0x24 uspace/lib/libgfxfont.a.p/gfxfont_src_glyph.c.o
+ .text.gfx_glyph_pattern_str
+                0x0000000000000000        0xa uspace/lib/libgfxfont.a.p/gfxfont_src_glyph.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libgfxfont.a.p/gfxfont_src_glyph_bmp.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libgfxfont.a.p/gfxfont_src_glyph_bmp.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libgfxfont.a.p/gfxfont_src_glyph_bmp.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libgfxfont.a.p/gfxfont_src_text.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libgfxfont.a.p/gfxfont_src_text.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libgfxfont.a.p/gfxfont_src_text.c.o
+ .text.gfx_text_find_pos
+                0x0000000000000000      0x10f uspace/lib/libgfxfont.a.p/gfxfont_src_text.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libgfxfont.a.p/gfxfont_src_typeface.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libgfxfont.a.p/gfxfont_src_typeface.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libgfxfont.a.p/gfxfont_src_typeface.c.o
+ .text.gfx_typeface_next_font
+                0x0000000000000000       0x24 uspace/lib/libgfxfont.a.p/gfxfont_src_typeface.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libriff.a.p/riff_src_chunk.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libriff.a.p/riff_src_chunk.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libriff.a.p/riff_src_chunk.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libmemgfx.a.p/memgfx_src_memgc.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libmemgfx.a.p/memgfx_src_memgc.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libmemgfx.a.p/memgfx_src_memgc.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libmemgfx.a.p/memgfx_src_xlategc.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libmemgfx.a.p/memgfx_src_xlategc.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libmemgfx.a.p/memgfx_src_xlategc.c.o
+ .text.xlate_gc_cursor_set_visible
+                0x0000000000000000       0x12 uspace/lib/libmemgfx.a.p/memgfx_src_xlategc.c.o
+ .text.xlate_gc_cursor_set_pos
+                0x0000000000000000       0x2f uspace/lib/libmemgfx.a.p/memgfx_src_xlategc.c.o
+ .text.xlate_gc_cursor_get_pos
+                0x0000000000000000       0x45 uspace/lib/libmemgfx.a.p/memgfx_src_xlategc.c.o
+ .text.xlate_gc_bitmap_get_alloc
+                0x0000000000000000        0xe uspace/lib/libmemgfx.a.p/memgfx_src_xlategc.c.o
+ .text.xlate_gc_bitmap_render
+                0x0000000000000000       0x5e uspace/lib/libmemgfx.a.p/memgfx_src_xlategc.c.o
+ .text.xlate_gc_bitmap_destroy
+                0x0000000000000000       0x26 uspace/lib/libmemgfx.a.p/memgfx_src_xlategc.c.o
+ .text.xlate_gc_bitmap_create
+                0x0000000000000000       0x9c uspace/lib/libmemgfx.a.p/memgfx_src_xlategc.c.o
+ .text.xlate_gc_update
+                0x0000000000000000        0xe uspace/lib/libmemgfx.a.p/memgfx_src_xlategc.c.o
+ .text.xlate_gc_fill_rect
+                0x0000000000000000       0x2c uspace/lib/libmemgfx.a.p/memgfx_src_xlategc.c.o
+ .text.xlate_gc_set_color
+                0x0000000000000000        0xe uspace/lib/libmemgfx.a.p/memgfx_src_xlategc.c.o
+ .text.xlate_gc_set_clip_rect
+                0x0000000000000000       0x46 uspace/lib/libmemgfx.a.p/memgfx_src_xlategc.c.o
+ .text.xlate_gc_create
+                0x0000000000000000       0xa9 uspace/lib/libmemgfx.a.p/memgfx_src_xlategc.c.o
+ .text.xlate_gc_delete
+                0x0000000000000000       0x27 uspace/lib/libmemgfx.a.p/memgfx_src_xlategc.c.o
+ .text.xlate_gc_get_ctx
+                0x0000000000000000        0x9 uspace/lib/libmemgfx.a.p/memgfx_src_xlategc.c.o
+ .data.xlate_gc_ops
+                0x0000000000000000       0x58 uspace/lib/libmemgfx.a.p/memgfx_src_xlategc.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdisplay.a.p/display_src_display.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdisplay.a.p/display_src_display.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdisplay.a.p/display_src_display.c.o
+ .text.display_window_move
+                0x0000000000000000       0xa1 uspace/lib/libdisplay.a.p/display_src_display.c.o
+ .text.display_window_set_caption
+                0x0000000000000000       0xab uspace/lib/libdisplay.a.p/display_src_display.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ .text.ipc_gc_delete
+                0x0000000000000000       0x27 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libcongfx.a.p/congfx_src_console.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libcongfx.a.p/congfx_src_console.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libcongfx.a.p/congfx_src_console.c.o
+ .text.console_gc_suspend
+                0x0000000000000000       0x40 uspace/lib/libcongfx.a.p/congfx_src_console.c.o
+ .text.console_gc_resume
+                0x0000000000000000       0x2f uspace/lib/libcongfx.a.p/congfx_src_console.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_kcon
+                0x0000000000000000        0xa uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_flush
+                0x0000000000000000        0xe uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_set_style
+                0x0000000000000000       0x31 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_set_color
+                0x0000000000000000       0x47 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_set_rgb_color
+                0x0000000000000000       0x42 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_get_color_cap
+                0x0000000000000000       0x39 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_get_event
+                0x0000000000000000      0x16d uspace/lib/libconsole.a.p/console_src_console.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+START GROUP
+LOAD uspace/lib/c/libstartfiles.a
+LOAD uspace/lib/libui.a
+LOAD uspace/lib/libgfx.a
+LOAD uspace/lib/libc.so.0.0
+LOAD uspace/lib/libgfxfont.a
+LOAD uspace/lib/libriff.a
+LOAD uspace/lib/libmemgfx.a
+LOAD uspace/lib/libdisplay.a
+LOAD uspace/lib/libipcgfx.a
+LOAD uspace/lib/libinput.a
+LOAD uspace/lib/libcongfx.a
+LOAD uspace/lib/libconsole.a
+LOAD uspace/lib/liboutput.a
+LOAD uspace/lib/libclipboard.a
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000400000                PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x0000000000400120                . = (SEGMENT_START ("text-segment", 0x400000) + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000400120      0x234
+ *(.hash)
+ .hash          0x0000000000400120      0x234 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x0000000000400358      0x6c0
+ *(.dynsym)
+ .dynsym        0x0000000000400358      0x6c0 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+
+.dynstr         0x0000000000400a18      0x3ce
+ *(.dynstr)
+ .dynstr        0x0000000000400a18      0x3ce uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+
+.gnu.version    0x0000000000400de6        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000400de6        0x0 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+
+.gnu.version_d  0x0000000000400de8        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000400de8        0x0 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+
+.gnu.version_r  0x0000000000400de8        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000400de8        0x0 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+
+.rela.dyn       0x0000000000400de8       0x48
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text.__c_start
+                0x0000000000400de8        0x0 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+ .rela.text.ui_create
+                0x0000000000400de8        0x0 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ .rela.rodata.cst8
+                0x0000000000400de8        0x0 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x0000000000400de8        0x0 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000400de8        0x0 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x0000000000400de8       0x48 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+
+.rela.plt       0x0000000000400e30      0x660
+ *(.rela.plt)
+ .rela.plt      0x0000000000400e30      0x660 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+ .rela.iplt     0x0000000000401490        0x0 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x0000000000401490      0x450
+ *(.plt)
+ .plt           0x0000000000401490      0x450 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+                0x00000000004014a0                vfs_fsession
+                0x00000000004014b0                async_connect_me_to
+                0x00000000004014c0                task_retval
+                0x00000000004014d0                loc_service_connect
+                0x00000000004014e0                printf
+                0x00000000004014f0                async_hangup
+                0x0000000000401500                async_send_2
+                0x0000000000401510                async_req_0_2
+                0x0000000000401520                async_wait_for
+                0x0000000000401530                snprintf
+                0x0000000000401540                async_data_write_start
+                0x0000000000401550                str_width
+                0x0000000000401560                async_get_call
+                0x0000000000401570                str_decode
+                0x0000000000401580                str_ndup
+                0x0000000000401590                async_send_1
+                0x00000000004015a0                puts
+                0x00000000004015b0                tolower
+                0x00000000004015c0                malloc
+                0x00000000004015d0                async_req_1_0
+                0x00000000004015e0                loc_service_get_id
+                0x00000000004015f0                as_area_destroy
+                0x0000000000401600                async_answer_0
+                0x0000000000401610                async_share_in_start_0_0
+                0x0000000000401620                fibril_condvar_wait
+                0x0000000000401630                async_exchange_end
+                0x0000000000401640                str_chr
+                0x0000000000401650                calloc
+                0x0000000000401660                fibril_condvar_initialize
+                0x0000000000401670                str_test_prefix
+                0x0000000000401680                fibril_condvar_broadcast
+                0x0000000000401690                async_send_3
+                0x00000000004016a0                fseek
+                0x00000000004016b0                fibril_mutex_unlock
+                0x00000000004016c0                str_dup
+                0x00000000004016d0                async_wait_timeout
+                0x00000000004016e0                isalpha
+                0x00000000004016f0                async_create_callback_port
+                0x0000000000401700                str_cmp
+                0x0000000000401710                fread
+                0x0000000000401720                ts_sub_diff
+                0x0000000000401730                fopen
+                0x0000000000401740                __helenos_assert_abort
+                0x0000000000401750                ftell
+                0x0000000000401760                async_data_read_start
+                0x0000000000401770                fclose
+                0x0000000000401780                str_cpy
+                0x0000000000401790                getuptime
+                0x00000000004017a0                fibril_usleep
+                0x00000000004017b0                str_size
+                0x00000000004017c0                str_uint64_t
+                0x00000000004017d0                str_length
+                0x00000000004017e0                str_lcmp
+                0x00000000004017f0                async_exchange_begin
+                0x0000000000401800                async_send_0
+                0x0000000000401810                fwrite
+                0x0000000000401820                async_share_out_start
+                0x0000000000401830                as_area_get_info
+                0x0000000000401840                __libc_main
+                0x0000000000401850                async_forget
+                0x0000000000401860                async_req_0_0
+                0x0000000000401870                async_req_2_0
+                0x0000000000401880                as_area_create
+                0x0000000000401890                async_req_3_0
+                0x00000000004018a0                fibril_timer_create
+                0x00000000004018b0                async_req_4_0
+                0x00000000004018c0                free
+                0x00000000004018d0                fibril_mutex_lock
+ *(.iplt)
+ .iplt          0x00000000004018e0        0x0 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+
+.plt.got        0x00000000004018e0        0x0
+ *(.plt.got)
+ .plt.got       0x00000000004018e0        0x0 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x00000000004018e0    0x11a3f
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ .text.startup.main
+                0x00000000004018e0      0x532 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+                0x00000000004018e0                main
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ *fill*         0x0000000000401e12        0xe 
+ .text.font_edit_close_event
+                0x0000000000401e20        0xd uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+ *fill*         0x0000000000401e2d        0x3 
+ .text.font_edit_paint.isra.0
+                0x0000000000401e30      0x589 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+ *fill*         0x00000000004023b9        0x7 
+ .text.font_edit_pos_event
+                0x00000000004023c0       0xb6 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+ *fill*         0x0000000000402476        0xa 
+ .text.font_edit_kbd_event
+                0x0000000000402480      0x4be uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+ .text          0x000000000040293e        0xc uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                0x000000000040293e                _start
+ *fill*         0x000000000040294a        0x6 
+ .text.__c_start
+                0x0000000000402950       0x8c uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                0x0000000000402950                __c_start
+ *fill*         0x00000000004029dc        0x4 
+ .text.ui_destroy
+                0x00000000004029e0       0x61 uspace/lib/libui.a.p/ui_src_ui.c.o
+                0x00000000004029e0                ui_destroy
+ *fill*         0x0000000000402a41        0xf 
+ .text.ui_run   0x0000000000402a50      0x161 uspace/lib/libui.a.p/ui_src_ui.c.o
+                0x0000000000402a50                ui_run
+ *fill*         0x0000000000402bb1        0xf 
+ .text.ui_paint
+                0x0000000000402bc0       0xd0 uspace/lib/libui.a.p/ui_src_ui.c.o
+                0x0000000000402bc0                ui_paint
+ .text.ui_create
+                0x0000000000402c90      0x4df uspace/lib/libui.a.p/ui_src_ui.c.o
+                0x0000000000402c90                ui_create
+ *fill*         0x000000000040316f        0x1 
+ .text.ui_lock  0x0000000000403170        0xe uspace/lib/libui.a.p/ui_src_ui.c.o
+                0x0000000000403170                ui_lock
+ *fill*         0x000000000040317e        0x2 
+ .text.ui_unlock
+                0x0000000000403180        0xe uspace/lib/libui.a.p/ui_src_ui.c.o
+                0x0000000000403180                ui_unlock
+ *fill*         0x000000000040318e        0x2 
+ .text.ui_quit  0x0000000000403190        0xa uspace/lib/libui.a.p/ui_src_ui.c.o
+                0x0000000000403190                ui_quit
+ *fill*         0x000000000040319a        0x6 
+ .text.ui_is_textmode
+                0x00000000004031a0        0xd uspace/lib/libui.a.p/ui_src_ui.c.o
+                0x00000000004031a0                ui_is_textmode
+ *fill*         0x00000000004031ad        0x3 
+ .text.ui_is_fullscreen
+                0x00000000004031b0        0xe uspace/lib/libui.a.p/ui_src_ui.c.o
+                0x00000000004031b0                ui_is_fullscreen
+ *fill*         0x00000000004031be        0x2 
+ .text.ui_wdecor_btn_min_clicked
+                0x00000000004031c0       0x22 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ *fill*         0x00000000004031e2        0xe 
+ .text.ui_wdecor_btn_close_clicked
+                0x00000000004031f0       0x22 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ *fill*         0x0000000000403212        0xe 
+ .text.ui_wdecor_btn_min_paint
+                0x0000000000403220       0x1d uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ *fill*         0x000000000040323d        0x3 
+ .text.ui_wdecor_btn_max_paint
+                0x0000000000403240       0x40 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ .text.ui_wdecor_btn_max_clicked
+                0x0000000000403280       0x3d uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ *fill*         0x00000000004032bd        0x3 
+ .text.ui_wdecor_btn_close_paint
+                0x00000000004032c0       0x63 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ *fill*         0x0000000000403323        0xd 
+ .text.ui_wdecor_create
+                0x0000000000403330      0x1a2 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+                0x0000000000403330                ui_wdecor_create
+ *fill*         0x00000000004034d2        0xe 
+ .text.ui_wdecor_destroy
+                0x00000000004034e0       0x49 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+                0x00000000004034e0                ui_wdecor_destroy
+ *fill*         0x0000000000403529        0x7 
+ .text.ui_wdecor_set_cb
+                0x0000000000403530        0xe uspace/lib/libui.a.p/ui_src_wdecor.c.o
+                0x0000000000403530                ui_wdecor_set_cb
+ *fill*         0x000000000040353e        0x2 
+ .text.ui_wdecor_set_rect
+                0x0000000000403540      0x3f2 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+                0x0000000000403540                ui_wdecor_set_rect
+ *fill*         0x0000000000403932        0xe 
+ .text.ui_wdecor_set_active
+                0x0000000000403940        0xa uspace/lib/libui.a.p/ui_src_wdecor.c.o
+                0x0000000000403940                ui_wdecor_set_active
+ *fill*         0x000000000040394a        0x6 
+ .text.ui_wdecor_set_maximized
+                0x0000000000403950        0xa uspace/lib/libui.a.p/ui_src_wdecor.c.o
+                0x0000000000403950                ui_wdecor_set_maximized
+ *fill*         0x000000000040395a        0x6 
+ .text.ui_wdecor_sysmenu_hdl_paint_gfx
+                0x0000000000403960       0xde uspace/lib/libui.a.p/ui_src_wdecor.c.o
+                0x0000000000403960                ui_wdecor_sysmenu_hdl_paint_gfx
+ *fill*         0x0000000000403a3e        0x2 
+ .text.ui_wdecor_sysmenu_hdl_paint
+                0x0000000000403a40       0xa9 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+                0x0000000000403a40                ui_wdecor_sysmenu_hdl_paint
+ *fill*         0x0000000000403ae9        0x7 
+ .text.ui_wdecor_sysmenu_hdl_set_active
+                0x0000000000403af0      0x4dc uspace/lib/libui.a.p/ui_src_wdecor.c.o
+                0x0000000000403af0                ui_wdecor_sysmenu_hdl_set_active
+ *fill*         0x0000000000403fcc        0x4 
+ .text.ui_wdecor_paint
+                0x0000000000403fd0      0x789 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+                0x0000000000403fd0                ui_wdecor_paint
+ *fill*         0x0000000000404759        0x7 
+ .text.ui_wdecor_get_geom
+                0x0000000000404760      0x399 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+                0x0000000000404760                ui_wdecor_get_geom
+ *fill*         0x0000000000404af9        0x7 
+ .text.ui_wdecor_rect_from_app
+                0x0000000000404b00       0x7a uspace/lib/libui.a.p/ui_src_wdecor.c.o
+                0x0000000000404b00                ui_wdecor_rect_from_app
+ *fill*         0x0000000000404b7a        0x6 
+ .text.ui_wdecor_app_from_rect
+                0x0000000000404b80       0x2b uspace/lib/libui.a.p/ui_src_wdecor.c.o
+                0x0000000000404b80                ui_wdecor_app_from_rect
+ *fill*         0x0000000000404bab        0x5 
+ .text.ui_wdecor_kbd_event
+                0x0000000000404bb0      0x132 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+                0x0000000000404bb0                ui_wdecor_kbd_event
+ *fill*         0x0000000000404ce2        0xe 
+ .text.ui_wdecor_frame_pos_event
+                0x0000000000404cf0      0x28b uspace/lib/libui.a.p/ui_src_wdecor.c.o
+                0x0000000000404cf0                ui_wdecor_frame_pos_event
+ *fill*         0x0000000000404f7b        0x5 
+ .text.ui_wdecor_pos_event
+                0x0000000000404f80      0x566 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+                0x0000000000404f80                ui_wdecor_pos_event
+ *fill*         0x00000000004054e6        0xa 
+ .text.wd_close
+                0x00000000004054f0       0x22 uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x0000000000405512        0xe 
+ .text.wnd_sysmenu_press_accel
+                0x0000000000405520        0x6 uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x0000000000405526        0xa 
+ .text.ui_window_app_update
+                0x0000000000405530        0x6 uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x0000000000405536        0xa 
+ .text.wd_set_cursor
+                0x0000000000405540       0x41 uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x0000000000405581        0xf 
+ .text.wd_resize
+                0x0000000000405590       0x22 uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x00000000004055b2        0xe 
+ .text.wd_move  0x00000000004055c0       0x22 uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x00000000004055e2        0xe 
+ .text.wnd_sysmenu_close_req
+                0x00000000004055f0       0x27 uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x0000000000405617        0x9 
+ .text.ui_window_cursor_set_visible
+                0x0000000000405620       0x12 uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x0000000000405632        0xe 
+ .text.ui_window_cursor_set_pos
+                0x0000000000405640       0x29 uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x0000000000405669        0x7 
+ .text.ui_window_cursor_get_pos
+                0x0000000000405670       0x3f uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x00000000004056af        0x1 
+ .text.ui_window_update
+                0x00000000004056b0       0x50 uspace/lib/libui.a.p/ui_src_window.c.o
+ .text.ui_window_invalidate
+                0x0000000000405700       0x2e uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x000000000040572e        0x2 
+ .text.dwnd_close_event
+                0x0000000000405730       0x3c uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x000000000040576c        0x4 
+ .text.dwnd_focus_event
+                0x0000000000405770       0x70 uspace/lib/libui.a.p/ui_src_window.c.o
+ .text.ui_window_place
+                0x00000000004057e0      0x233 uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x0000000000405a13        0xd 
+ .text.ui_window_app_invalidate
+                0x0000000000405a20       0x64 uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x0000000000405a84        0xc 
+ .text.wd_sysmenu_accel
+                0x0000000000405a90       0x61 uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x0000000000405af1        0xf 
+ .text.wd_sysmenu_right
+                0x0000000000405b00       0x51 uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x0000000000405b51        0xf 
+ .text.wnd_sysmenu_right
+                0x0000000000405b60       0x59 uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x0000000000405bb9        0x7 
+ .text.wd_sysmenu_left
+                0x0000000000405bc0       0x51 uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x0000000000405c11        0xf 
+ .text.wnd_sysmenu_left
+                0x0000000000405c20       0x59 uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x0000000000405c79        0x7 
+ .text.wnd_sysmenu_eclose
+                0x0000000000405c80       0x22 uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x0000000000405ca2        0xe 
+ .text.wnd_sysmenu_eminimize
+                0x0000000000405cb0       0x32 uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x0000000000405ce2        0xe 
+ .text.wd_minimize
+                0x0000000000405cf0       0x32 uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x0000000000405d22        0xe 
+ .text.dwnd_kbd_event
+                0x0000000000405d30       0x7a uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x0000000000405daa        0x6 
+ .text.dwnd_pos_event
+                0x0000000000405db0       0x8e uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x0000000000405e3e        0x2 
+ .text.dwnd_unfocus_event
+                0x0000000000405e40       0x96 uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x0000000000405ed6        0xa 
+ .text.wd_sysmenu_open
+                0x0000000000405ee0       0x8f uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x0000000000405f6f        0x1 
+ .text.ui_wnd_params_init
+                0x0000000000405f70       0x28 uspace/lib/libui.a.p/ui_src_window.c.o
+                0x0000000000405f70                ui_wnd_params_init
+ *fill*         0x0000000000405f98        0x8 
+ .text.ui_window_create
+                0x0000000000405fa0      0x79a uspace/lib/libui.a.p/ui_src_window.c.o
+                0x0000000000405fa0                ui_window_create
+ *fill*         0x000000000040673a        0x6 
+ .text.ui_window_destroy
+                0x0000000000406740      0x151 uspace/lib/libui.a.p/ui_src_window.c.o
+                0x0000000000406740                ui_window_destroy
+ *fill*         0x0000000000406891        0xf 
+ .text.ui_window_get_active
+                0x00000000004068a0       0x24 uspace/lib/libui.a.p/ui_src_window.c.o
+                0x00000000004068a0                ui_window_get_active
+ *fill*         0x00000000004068c4        0xc 
+ .text.ui_window_size_change
+                0x00000000004068d0      0x2a1 uspace/lib/libui.a.p/ui_src_window.c.o
+                0x00000000004068d0                ui_window_size_change
+ *fill*         0x0000000000406b71        0xf 
+ .text.ui_window_set_cb
+                0x0000000000406b80        0xe uspace/lib/libui.a.p/ui_src_window.c.o
+                0x0000000000406b80                ui_window_set_cb
+ *fill*         0x0000000000406b8e        0x2 
+ .text.ui_window_get_ui
+                0x0000000000406b90        0x9 uspace/lib/libui.a.p/ui_src_window.c.o
+                0x0000000000406b90                ui_window_get_ui
+ *fill*         0x0000000000406b99        0x7 
+ .text.ui_window_get_res
+                0x0000000000406ba0        0xd uspace/lib/libui.a.p/ui_src_window.c.o
+                0x0000000000406ba0                ui_window_get_res
+ *fill*         0x0000000000406bad        0x3 
+ .text.ui_window_get_pos
+                0x0000000000406bb0       0x2b uspace/lib/libui.a.p/ui_src_window.c.o
+                0x0000000000406bb0                ui_window_get_pos
+ *fill*         0x0000000000406bdb        0x5 
+ .text.ui_window_get_app_gc
+                0x0000000000406be0      0x145 uspace/lib/libui.a.p/ui_src_window.c.o
+                0x0000000000406be0                ui_window_get_app_gc
+ *fill*         0x0000000000406d25        0xb 
+ .text.ui_window_get_app_rect
+                0x0000000000406d30       0x30 uspace/lib/libui.a.p/ui_src_window.c.o
+                0x0000000000406d30                ui_window_get_app_rect
+ .text.ui_window_send_kbd
+                0x0000000000406d60       0x63 uspace/lib/libui.a.p/ui_src_window.c.o
+                0x0000000000406d60                ui_window_send_kbd
+ *fill*         0x0000000000406dc3        0xd 
+ .text.ui_window_send_pos
+                0x0000000000406dd0       0x3a uspace/lib/libui.a.p/ui_src_window.c.o
+                0x0000000000406dd0                ui_window_send_pos
+ *fill*         0x0000000000406e0a        0x6 
+ .text.ui_window_def_paint
+                0x0000000000406e10       0x95 uspace/lib/libui.a.p/ui_src_window.c.o
+                0x0000000000406e10                ui_window_def_paint
+ *fill*         0x0000000000406ea5        0xb 
+ .text.ui_window_paint
+                0x0000000000406eb0       0x26 uspace/lib/libui.a.p/ui_src_window.c.o
+                0x0000000000406eb0                ui_window_paint
+ *fill*         0x0000000000406ed6        0xa 
+ .text.ui_window_expose_cb
+                0x0000000000406ee0       0x26 uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x0000000000406f06        0xa 
+ .text.ui_window_def_maximize
+                0x0000000000406f10      0x106 uspace/lib/libui.a.p/ui_src_window.c.o
+                0x0000000000406f10                ui_window_def_maximize
+ *fill*         0x0000000000407016        0xa 
+ .text.wd_maximize
+                0x0000000000407020       0x26 uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x0000000000407046        0xa 
+ .text.wnd_sysmenu_emaximize
+                0x0000000000407050       0x26 uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x0000000000407076        0xa 
+ .text.ui_window_send_resize
+                0x0000000000407080       0x36 uspace/lib/libui.a.p/ui_src_window.c.o
+                0x0000000000407080                ui_window_send_resize
+ *fill*         0x00000000004070b6        0xa 
+ .text.wd_unmaximize
+                0x00000000004070c0       0xc8 uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x0000000000407188        0x8 
+ .text.wnd_sysmenu_erestore
+                0x0000000000407190       0xc8 uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x0000000000407258        0x8 
+ .text.dwnd_resize_event
+                0x0000000000407260       0x92 uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x00000000004072f2        0xe 
+ .text.ui_clickmatic_create
+                0x0000000000407300       0x5f uspace/lib/libui.a.p/ui_src_clickmatic.c.o
+                0x0000000000407300                ui_clickmatic_create
+ *fill*         0x000000000040735f        0x1 
+ .text.ui_control_new
+                0x0000000000407360       0x4a uspace/lib/libui.a.p/ui_src_control.c.o
+                0x0000000000407360                ui_control_new
+ *fill*         0x00000000004073aa        0x6 
+ .text.ui_control_delete
+                0x00000000004073b0       0x12 uspace/lib/libui.a.p/ui_src_control.c.o
+                0x00000000004073b0                ui_control_delete
+ *fill*         0x00000000004073c2        0xe 
+ .text.ui_control_destroy
+                0x00000000004073d0       0x22 uspace/lib/libui.a.p/ui_src_control.c.o
+                0x00000000004073d0                ui_control_destroy
+ *fill*         0x00000000004073f2        0xe 
+ .text.ui_control_kbd_event
+                0x0000000000407400       0x27 uspace/lib/libui.a.p/ui_src_control.c.o
+                0x0000000000407400                ui_control_kbd_event
+ *fill*         0x0000000000407427        0x9 
+ .text.ui_control_paint
+                0x0000000000407430       0x16 uspace/lib/libui.a.p/ui_src_control.c.o
+                0x0000000000407430                ui_control_paint
+ *fill*         0x0000000000407446        0xa 
+ .text.ui_control_pos_event
+                0x0000000000407450       0x16 uspace/lib/libui.a.p/ui_src_control.c.o
+                0x0000000000407450                ui_control_pos_event
+ *fill*         0x0000000000407466        0xa 
+ .text.ui_control_unfocus
+                0x0000000000407470       0x22 uspace/lib/libui.a.p/ui_src_control.c.o
+                0x0000000000407470                ui_control_unfocus
+ *fill*         0x0000000000407492        0xe 
+ .text.dummygc_set_clip_rect
+                0x00000000004074a0        0x8 uspace/lib/libui.a.p/ui_src_dummygc.c.o
+ *fill*         0x00000000004074a8        0x8 
+ .text.dummygc_update
+                0x00000000004074b0        0x8 uspace/lib/libui.a.p/ui_src_dummygc.c.o
+ *fill*         0x00000000004074b8        0x8 
+ .text.dummygc_bitmap_render
+                0x00000000004074c0       0x38 uspace/lib/libui.a.p/ui_src_dummygc.c.o
+ *fill*         0x00000000004074f8        0x8 
+ .text.dummygc_bitmap_get_alloc
+                0x0000000000407500       0x1f uspace/lib/libui.a.p/ui_src_dummygc.c.o
+ *fill*         0x000000000040751f        0x1 
+ .text.dummygc_bitmap_destroy
+                0x0000000000407520       0x3b uspace/lib/libui.a.p/ui_src_dummygc.c.o
+ *fill*         0x000000000040755b        0x5 
+ .text.dummygc_bitmap_create
+                0x0000000000407560       0xd6 uspace/lib/libui.a.p/ui_src_dummygc.c.o
+ *fill*         0x0000000000407636        0xa 
+ .text.dummygc_set_color
+                0x0000000000407640        0x8 uspace/lib/libui.a.p/ui_src_dummygc.c.o
+ *fill*         0x0000000000407648        0x8 
+ .text.dummygc_fill_rect
+                0x0000000000407650        0x8 uspace/lib/libui.a.p/ui_src_dummygc.c.o
+ *fill*         0x0000000000407658        0x8 
+ .text.dummygc_create
+                0x0000000000407660       0x6e uspace/lib/libui.a.p/ui_src_dummygc.c.o
+                0x0000000000407660                dummygc_create
+ *fill*         0x00000000004076ce        0x2 
+ .text.dummygc_destroy
+                0x00000000004076d0       0x21 uspace/lib/libui.a.p/ui_src_dummygc.c.o
+                0x00000000004076d0                dummygc_destroy
+ *fill*         0x00000000004076f1        0xf 
+ .text.dummygc_get_ctx
+                0x0000000000407700        0x9 uspace/lib/libui.a.p/ui_src_dummygc.c.o
+                0x0000000000407700                dummygc_get_ctx
+ *fill*         0x0000000000407709        0x7 
+ .text.ui_menu_popup_close
+                0x0000000000407710       0x22 uspace/lib/libui.a.p/ui_src_menu.c.o
+ *fill*         0x0000000000407732        0xe 
+ .text.ui_menu_create
+                0x0000000000407740       0x46 uspace/lib/libui.a.p/ui_src_menu.c.o
+                0x0000000000407740                ui_menu_create
+ *fill*         0x0000000000407786        0xa 
+ .text.ui_menu_destroy
+                0x0000000000407790       0x49 uspace/lib/libui.a.p/ui_src_menu.c.o
+                0x0000000000407790                ui_menu_destroy
+ *fill*         0x00000000004077d9        0x7 
+ .text.ui_menu_set_cb
+                0x00000000004077e0        0xe uspace/lib/libui.a.p/ui_src_menu.c.o
+                0x00000000004077e0                ui_menu_set_cb
+ *fill*         0x00000000004077ee        0x2 
+ .text.ui_menu_get_res
+                0x00000000004077f0        0xe uspace/lib/libui.a.p/ui_src_menu.c.o
+                0x00000000004077f0                ui_menu_get_res
+ *fill*         0x00000000004077fe        0x2 
+ .text.ui_menu_close
+                0x0000000000407800       0x23 uspace/lib/libui.a.p/ui_src_menu.c.o
+                0x0000000000407800                ui_menu_close
+ *fill*         0x0000000000407823        0xd 
+ .text.ui_menu_is_open
+                0x0000000000407830        0xe uspace/lib/libui.a.p/ui_src_menu.c.o
+                0x0000000000407830                ui_menu_is_open
+ *fill*         0x000000000040783e        0x2 
+ .text.ui_menu_paint_bg_gfx
+                0x0000000000407840      0x149 uspace/lib/libui.a.p/ui_src_menu.c.o
+                0x0000000000407840                ui_menu_paint_bg_gfx
+ *fill*         0x0000000000407989        0x7 
+ .text.ui_menu_paint_bg_text
+                0x0000000000407990      0x144 uspace/lib/libui.a.p/ui_src_menu.c.o
+                0x0000000000407990                ui_menu_paint_bg_text
+ *fill*         0x0000000000407ad4        0xc 
+ .text.ui_menu_paint
+                0x0000000000407ae0       0xf3 uspace/lib/libui.a.p/ui_src_menu.c.o
+                0x0000000000407ae0                ui_menu_paint
+ *fill*         0x0000000000407bd3        0xd 
+ .text.ui_menu_open
+                0x0000000000407be0       0xe6 uspace/lib/libui.a.p/ui_src_menu.c.o
+                0x0000000000407be0                ui_menu_open
+ *fill*         0x0000000000407cc6        0xa 
+ .text.ui_menu_pos_event
+                0x0000000000407cd0      0x17d uspace/lib/libui.a.p/ui_src_menu.c.o
+                0x0000000000407cd0                ui_menu_pos_event
+ *fill*         0x0000000000407e4d        0x3 
+ .text.ui_menu_popup_pos
+                0x0000000000407e50       0x3e uspace/lib/libui.a.p/ui_src_menu.c.o
+ *fill*         0x0000000000407e8e        0x2 
+ .text.ui_menu_up
+                0x0000000000407e90       0xb0 uspace/lib/libui.a.p/ui_src_menu.c.o
+                0x0000000000407e90                ui_menu_up
+ .text.ui_menu_down
+                0x0000000000407f40       0xb0 uspace/lib/libui.a.p/ui_src_menu.c.o
+                0x0000000000407f40                ui_menu_down
+ .text.ui_menu_popup_kbd
+                0x0000000000407ff0      0x1b1 uspace/lib/libui.a.p/ui_src_menu.c.o
+ *fill*         0x00000000004081a1        0xf 
+ .text.ui_menu_close_req
+                0x00000000004081b0       0x22 uspace/lib/libui.a.p/ui_src_menu.c.o
+                0x00000000004081b0                ui_menu_close_req
+ *fill*         0x00000000004081d2        0xe 
+ .text.ui_menu_bar_paint
+                0x00000000004081e0      0x1df uspace/lib/libui.a.p/ui_src_menubar.c.o
+                0x00000000004081e0                ui_menu_bar_paint
+ *fill*         0x00000000004083bf        0x1 
+ .text.ui_menu_bar_entry_rect
+                0x00000000004083c0       0xdd uspace/lib/libui.a.p/ui_src_menubar.c.o
+                0x00000000004083c0                ui_menu_bar_entry_rect
+ *fill*         0x000000000040849d        0x3 
+ .text.ui_menu_bar_select
+                0x00000000004084a0      0x10c uspace/lib/libui.a.p/ui_src_menubar.c.o
+                0x00000000004084a0                ui_menu_bar_select
+ *fill*         0x00000000004085ac        0x4 
+ .text.ui_menu_bar_press_accel
+                0x00000000004085b0       0x8f uspace/lib/libui.a.p/ui_src_menubar.c.o
+                0x00000000004085b0                ui_menu_bar_press_accel
+ *fill*         0x000000000040863f        0x1 
+ .text.ui_menu_bar_select_first
+                0x0000000000408640      0x114 uspace/lib/libui.a.p/ui_src_menubar.c.o
+                0x0000000000408640                ui_menu_bar_select_first
+ *fill*         0x0000000000408754        0xc 
+ .text.ui_menu_bar_select_last
+                0x0000000000408760      0x114 uspace/lib/libui.a.p/ui_src_menubar.c.o
+                0x0000000000408760                ui_menu_bar_select_last
+ *fill*         0x0000000000408874        0xc 
+ .text.ui_menu_dd_first
+                0x0000000000408880       0x24 uspace/lib/libui.a.p/ui_src_menudd.c.o
+                0x0000000000408880                ui_menu_dd_first
+ *fill*         0x00000000004088a4        0xc 
+ .text.ui_menu_dd_next
+                0x00000000004088b0       0x24 uspace/lib/libui.a.p/ui_src_menudd.c.o
+                0x00000000004088b0                ui_menu_dd_next
+ *fill*         0x00000000004088d4        0xc 
+ .text.ui_menu_dd_last
+                0x00000000004088e0       0x24 uspace/lib/libui.a.p/ui_src_menudd.c.o
+                0x00000000004088e0                ui_menu_dd_last
+ *fill*         0x0000000000408904        0xc 
+ .text.ui_menu_dd_caption
+                0x0000000000408910        0xa uspace/lib/libui.a.p/ui_src_menudd.c.o
+                0x0000000000408910                ui_menu_dd_caption
+ *fill*         0x000000000040891a        0x6 
+ .text.ui_menu_dd_get_accel
+                0x0000000000408920        0xe uspace/lib/libui.a.p/ui_src_menudd.c.o
+                0x0000000000408920                ui_menu_dd_get_accel
+ *fill*         0x000000000040892e        0x2 
+ .text.ui_menu_dd_open
+                0x0000000000408930        0xe uspace/lib/libui.a.p/ui_src_menudd.c.o
+                0x0000000000408930                ui_menu_dd_open
+ *fill*         0x000000000040893e        0x2 
+ .text.ui_menu_dd_close
+                0x0000000000408940        0xe uspace/lib/libui.a.p/ui_src_menudd.c.o
+                0x0000000000408940                ui_menu_dd_close
+ *fill*         0x000000000040894e        0x2 
+ .text.ui_menu_dd_is_open
+                0x0000000000408950        0xe uspace/lib/libui.a.p/ui_src_menudd.c.o
+                0x0000000000408950                ui_menu_dd_is_open
+ *fill*         0x000000000040895e        0x2 
+ .text.ui_menu_entry_create
+                0x0000000000408960      0x158 uspace/lib/libui.a.p/ui_src_menuentry.c.o
+                0x0000000000408960                ui_menu_entry_create
+ *fill*         0x0000000000408ab8        0x8 
+ .text.ui_menu_entry_sep_create
+                0x0000000000408ac0      0x107 uspace/lib/libui.a.p/ui_src_menuentry.c.o
+                0x0000000000408ac0                ui_menu_entry_sep_create
+ *fill*         0x0000000000408bc7        0x9 
+ .text.ui_menu_entry_destroy
+                0x0000000000408bd0       0xd8 uspace/lib/libui.a.p/ui_src_menuentry.c.o
+                0x0000000000408bd0                ui_menu_entry_destroy
+ *fill*         0x0000000000408ca8        0x8 
+ .text.ui_menu_entry_set_cb
+                0x0000000000408cb0        0xe uspace/lib/libui.a.p/ui_src_menuentry.c.o
+                0x0000000000408cb0                ui_menu_entry_set_cb
+ *fill*         0x0000000000408cbe        0x2 
+ .text.ui_menu_entry_set_disabled
+                0x0000000000408cc0        0xa uspace/lib/libui.a.p/ui_src_menuentry.c.o
+                0x0000000000408cc0                ui_menu_entry_set_disabled
+ *fill*         0x0000000000408cca        0x6 
+ .text.ui_menu_entry_is_disabled
+                0x0000000000408cd0        0xa uspace/lib/libui.a.p/ui_src_menuentry.c.o
+                0x0000000000408cd0                ui_menu_entry_is_disabled
+ *fill*         0x0000000000408cda        0x6 
+ .text.ui_menu_entry_first
+                0x0000000000408ce0       0x24 uspace/lib/libui.a.p/ui_src_menuentry.c.o
+                0x0000000000408ce0                ui_menu_entry_first
+ *fill*         0x0000000000408d04        0xc 
+ .text.ui_menu_entry_last
+                0x0000000000408d10       0x24 uspace/lib/libui.a.p/ui_src_menuentry.c.o
+                0x0000000000408d10                ui_menu_entry_last
+ *fill*         0x0000000000408d34        0xc 
+ .text.ui_menu_entry_next
+                0x0000000000408d40       0x24 uspace/lib/libui.a.p/ui_src_menuentry.c.o
+                0x0000000000408d40                ui_menu_entry_next
+ *fill*         0x0000000000408d64        0xc 
+ .text.ui_menu_entry_prev
+                0x0000000000408d70       0x24 uspace/lib/libui.a.p/ui_src_menuentry.c.o
+                0x0000000000408d70                ui_menu_entry_prev
+ *fill*         0x0000000000408d94        0xc 
+ .text.ui_menu_entry_calc_width
+                0x0000000000408da0       0x4d uspace/lib/libui.a.p/ui_src_menuentry.c.o
+                0x0000000000408da0                ui_menu_entry_calc_width
+ *fill*         0x0000000000408ded        0x3 
+ .text.ui_menu_entry_height
+                0x0000000000408df0       0x64 uspace/lib/libui.a.p/ui_src_menuentry.c.o
+                0x0000000000408df0                ui_menu_entry_height
+ *fill*         0x0000000000408e54        0xc 
+ .text.ui_menu_entry_get_accel
+                0x0000000000408e60        0xe uspace/lib/libui.a.p/ui_src_menuentry.c.o
+                0x0000000000408e60                ui_menu_entry_get_accel
+ *fill*         0x0000000000408e6e        0x2 
+ .text.ui_menu_entry_selectable
+                0x0000000000408e70        0xd uspace/lib/libui.a.p/ui_src_menuentry.c.o
+                0x0000000000408e70                ui_menu_entry_selectable
+ *fill*         0x0000000000408e7d        0x3 
+ .text.ui_menu_entry_activate
+                0x0000000000408e80       0x36 uspace/lib/libui.a.p/ui_src_menuentry.c.o
+                0x0000000000408e80                ui_menu_entry_activate
+ *fill*         0x0000000000408eb6        0xa 
+ .text.ui_menu_entry_get_geom
+                0x0000000000408ec0      0x147 uspace/lib/libui.a.p/ui_src_menuentry.c.o
+                0x0000000000408ec0                ui_menu_entry_get_geom
+ *fill*         0x0000000000409007        0x9 
+ .text.ui_menu_entry_paint
+                0x0000000000409010      0x1ab uspace/lib/libui.a.p/ui_src_menuentry.c.o
+                0x0000000000409010                ui_menu_entry_paint
+ *fill*         0x00000000004091bb        0x5 
+ .text.ui_menu_entry_pos_event
+                0x00000000004091c0      0x29b uspace/lib/libui.a.p/ui_src_menuentry.c.o
+                0x00000000004091c0                ui_menu_entry_pos_event
+ *fill*         0x000000000040945b        0x5 
+ .text.ui_paint_bevel.part.0.constprop.0
+                0x0000000000409460      0x152 uspace/lib/libui.a.p/ui_src_paint.c.o
+ *fill*         0x00000000004095b2        0xe 
+ .text.ui_paint_maxicon.part.0.isra.0
+                0x00000000004095c0       0x9b uspace/lib/libui.a.p/ui_src_paint.c.o
+ *fill*         0x000000000040965b        0x5 
+ .text.ui_paint_bevel
+                0x0000000000409660      0x225 uspace/lib/libui.a.p/ui_src_paint.c.o
+                0x0000000000409660                ui_paint_bevel
+ *fill*         0x0000000000409885        0xb 
+ .text.ui_paint_get_inset_frame_inside
+                0x0000000000409890       0x15 uspace/lib/libui.a.p/ui_src_paint.c.o
+                0x0000000000409890                ui_paint_get_inset_frame_inside
+ *fill*         0x00000000004098a5        0xb 
+ .text.ui_paint_outset_frame
+                0x00000000004098b0       0x8b uspace/lib/libui.a.p/ui_src_paint.c.o
+                0x00000000004098b0                ui_paint_outset_frame
+ *fill*         0x000000000040993b        0x5 
+ .text.ui_paint_cross
+                0x0000000000409940      0x1bf uspace/lib/libui.a.p/ui_src_paint.c.o
+                0x0000000000409940                ui_paint_cross
+ *fill*         0x0000000000409aff        0x1 
+ .text.ui_paint_minicon
+                0x0000000000409b00       0x86 uspace/lib/libui.a.p/ui_src_paint.c.o
+                0x0000000000409b00                ui_paint_minicon
+ *fill*         0x0000000000409b86        0xa 
+ .text.ui_paint_maxicon
+                0x0000000000409b90       0xd2 uspace/lib/libui.a.p/ui_src_paint.c.o
+                0x0000000000409b90                ui_paint_maxicon
+ *fill*         0x0000000000409c62        0xe 
+ .text.ui_paint_unmaxicon
+                0x0000000000409c70       0xcd uspace/lib/libui.a.p/ui_src_paint.c.o
+                0x0000000000409c70                ui_paint_unmaxicon
+ *fill*         0x0000000000409d3d        0x3 
+ .text.ui_paint_text_box_custom
+                0x0000000000409d40      0x2b9 uspace/lib/libui.a.p/ui_src_paint.c.o
+                0x0000000000409d40                ui_paint_text_box_custom
+ *fill*         0x0000000000409ff9        0x7 
+ .text.ui_paint_text_box
+                0x000000000040a000       0x3b uspace/lib/libui.a.p/ui_src_paint.c.o
+                0x000000000040a000                ui_paint_text_box
+ *fill*         0x000000000040a03b        0x5 
+ .text.ui_paint_text_hbrace
+                0x000000000040a040      0x1b4 uspace/lib/libui.a.p/ui_src_paint.c.o
+                0x000000000040a040                ui_paint_text_hbrace
+ *fill*         0x000000000040a1f4        0xc 
+ .text.ui_text_fmt_init
+                0x000000000040a200       0x19 uspace/lib/libui.a.p/ui_src_paint.c.o
+                0x000000000040a200                ui_text_fmt_init
+ *fill*         0x000000000040a219        0x7 
+ .text.ui_text_width
+                0x000000000040a220       0x80 uspace/lib/libui.a.p/ui_src_paint.c.o
+                0x000000000040a220                ui_text_width
+ .text.ui_paint_text
+                0x000000000040a2a0      0x11b uspace/lib/libui.a.p/ui_src_paint.c.o
+                0x000000000040a2a0                ui_paint_text
+ *fill*         0x000000000040a3bb        0x5 
+ .text.ui_pbutton_ctl_destroy
+                0x000000000040a3c0       0x31 uspace/lib/libui.a.p/ui_src_pbutton.c.o
+ *fill*         0x000000000040a3f1        0xf 
+ .text.ui_pbutton_create
+                0x000000000040a400       0xa0 uspace/lib/libui.a.p/ui_src_pbutton.c.o
+                0x000000000040a400                ui_pbutton_create
+ .text.ui_pbutton_destroy
+                0x000000000040a4a0       0x31 uspace/lib/libui.a.p/ui_src_pbutton.c.o
+                0x000000000040a4a0                ui_pbutton_destroy
+ *fill*         0x000000000040a4d1        0xf 
+ .text.ui_pbutton_set_cb
+                0x000000000040a4e0        0xe uspace/lib/libui.a.p/ui_src_pbutton.c.o
+                0x000000000040a4e0                ui_pbutton_set_cb
+ *fill*         0x000000000040a4ee        0x2 
+ .text.ui_pbutton_set_decor_ops
+                0x000000000040a4f0        0xe uspace/lib/libui.a.p/ui_src_pbutton.c.o
+                0x000000000040a4f0                ui_pbutton_set_decor_ops
+ *fill*         0x000000000040a4fe        0x2 
+ .text.ui_pbutton_set_rect
+                0x000000000040a500        0xe uspace/lib/libui.a.p/ui_src_pbutton.c.o
+                0x000000000040a500                ui_pbutton_set_rect
+ *fill*         0x000000000040a50e        0x2 
+ .text.ui_pbutton_paint
+                0x000000000040a510      0x4c9 uspace/lib/libui.a.p/ui_src_pbutton.c.o
+                0x000000000040a510                ui_pbutton_paint
+ *fill*         0x000000000040a9d9        0x7 
+ .text.ui_pbutton_ctl_paint
+                0x000000000040a9e0        0xa uspace/lib/libui.a.p/ui_src_pbutton.c.o
+ *fill*         0x000000000040a9ea        0x6 
+ .text.ui_pbutton_ctl_pos_event
+                0x000000000040a9f0      0x171 uspace/lib/libui.a.p/ui_src_pbutton.c.o
+ *fill*         0x000000000040ab61        0xf 
+ .text.ui_pbutton_pos_event
+                0x000000000040ab70      0x169 uspace/lib/libui.a.p/ui_src_pbutton.c.o
+                0x000000000040ab70                ui_pbutton_pos_event
+ *fill*         0x000000000040acd9        0x7 
+ .text.ui_popup_window_close
+                0x000000000040ace0       0x22 uspace/lib/libui.a.p/ui_src_popup.c.o
+ *fill*         0x000000000040ad02        0xe 
+ .text.ui_popup_window_kbd
+                0x000000000040ad10       0x32 uspace/lib/libui.a.p/ui_src_popup.c.o
+ *fill*         0x000000000040ad42        0xe 
+ .text.ui_popup_window_pos
+                0x000000000040ad50       0x32 uspace/lib/libui.a.p/ui_src_popup.c.o
+ *fill*         0x000000000040ad82        0xe 
+ .text.ui_popup_params_init
+                0x000000000040ad90       0x19 uspace/lib/libui.a.p/ui_src_popup.c.o
+                0x000000000040ad90                ui_popup_params_init
+ *fill*         0x000000000040ada9        0x7 
+ .text.ui_popup_create
+                0x000000000040adb0      0x132 uspace/lib/libui.a.p/ui_src_popup.c.o
+                0x000000000040adb0                ui_popup_create
+ *fill*         0x000000000040aee2        0xe 
+ .text.ui_popup_destroy
+                0x000000000040aef0       0x31 uspace/lib/libui.a.p/ui_src_popup.c.o
+                0x000000000040aef0                ui_popup_destroy
+ *fill*         0x000000000040af21        0xf 
+ .text.ui_popup_set_cb
+                0x000000000040af30        0xe uspace/lib/libui.a.p/ui_src_popup.c.o
+                0x000000000040af30                ui_popup_set_cb
+ *fill*         0x000000000040af3e        0x2 
+ .text.ui_popup_get_res
+                0x000000000040af40        0xe uspace/lib/libui.a.p/ui_src_popup.c.o
+                0x000000000040af40                ui_popup_get_res
+ *fill*         0x000000000040af4e        0x2 
+ .text.ui_popup_get_idev_id
+                0x000000000040af50        0xa uspace/lib/libui.a.p/ui_src_popup.c.o
+                0x000000000040af50                ui_popup_get_idev_id
+ *fill*         0x000000000040af5a        0x6 
+ .text.ui_resource_create
+                0x000000000040af60      0xe2c uspace/lib/libui.a.p/ui_src_resource.c.o
+                0x000000000040af60                ui_resource_create
+ *fill*         0x000000000040bd8c        0x4 
+ .text.ui_resource_destroy
+                0x000000000040bd90      0x151 uspace/lib/libui.a.p/ui_src_resource.c.o
+                0x000000000040bd90                ui_resource_destroy
+ *fill*         0x000000000040bee1        0xf 
+ .text.ui_resource_set_expose_cb
+                0x000000000040bef0       0x14 uspace/lib/libui.a.p/ui_src_resource.c.o
+                0x000000000040bef0                ui_resource_set_expose_cb
+ *fill*         0x000000000040bf04        0xc 
+ .text.ui_accel_process
+                0x000000000040bf10       0x9d uspace/lib/libui.a.p/ui_src_accel.c.o
+                0x000000000040bf10                ui_accel_process
+ *fill*         0x000000000040bfad        0x3 
+ .text.ui_accel_get
+                0x000000000040bfb0       0x63 uspace/lib/libui.a.p/ui_src_accel.c.o
+                0x000000000040bfb0                ui_accel_get
+ *fill*         0x000000000040c013        0xd 
+ .text.gfx_bitmap_params_init
+                0x000000000040c020       0x15 uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+                0x000000000040c020                gfx_bitmap_params_init
+ *fill*         0x000000000040c035        0xb 
+ .text.gfx_bitmap_create
+                0x000000000040c040       0x94 uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+                0x000000000040c040                gfx_bitmap_create
+ *fill*         0x000000000040c0d4        0xc 
+ .text.gfx_bitmap_destroy
+                0x000000000040c0e0       0x2e uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+                0x000000000040c0e0                gfx_bitmap_destroy
+ *fill*         0x000000000040c10e        0x2 
+ .text.gfx_bitmap_render
+                0x000000000040c110       0x18 uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+                0x000000000040c110                gfx_bitmap_render
+ *fill*         0x000000000040c128        0x8 
+ .text.gfx_bitmap_get_alloc
+                0x000000000040c130       0x18 uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+                0x000000000040c130                gfx_bitmap_get_alloc
+ *fill*         0x000000000040c148        0x8 
+ .text.gfx_color_new_rgb_i16
+                0x000000000040c150       0x52 uspace/lib/libgfx.a.p/gfx_src_color.c.o
+                0x000000000040c150                gfx_color_new_rgb_i16
+ *fill*         0x000000000040c1a2        0xe 
+ .text.gfx_color_new_ega
+                0x000000000040c1b0       0x36 uspace/lib/libgfx.a.p/gfx_src_color.c.o
+                0x000000000040c1b0                gfx_color_new_ega
+ *fill*         0x000000000040c1e6        0xa 
+ .text.gfx_color_delete
+                0x000000000040c1f0        0xa uspace/lib/libgfx.a.p/gfx_src_color.c.o
+                0x000000000040c1f0                gfx_color_delete
+ *fill*         0x000000000040c1fa        0x6 
+ .text.gfx_color_get_rgb_i16
+                0x000000000040c200       0x1a uspace/lib/libgfx.a.p/gfx_src_color.c.o
+                0x000000000040c200                gfx_color_get_rgb_i16
+ *fill*         0x000000000040c21a        0x6 
+ .text.gfx_color_get_ega
+                0x000000000040c220        0xc uspace/lib/libgfx.a.p/gfx_src_color.c.o
+                0x000000000040c220                gfx_color_get_ega
+ *fill*         0x000000000040c22c        0x4 
+ .text.gfx_coord_div_rneg
+                0x000000000040c230       0x26 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+                0x000000000040c230                gfx_coord_div_rneg
+ *fill*         0x000000000040c256        0xa 
+ .text.gfx_coord2_add
+                0x000000000040c260       0x16 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+                0x000000000040c260                gfx_coord2_add
+ *fill*         0x000000000040c276        0xa 
+ .text.gfx_coord2_subtract
+                0x000000000040c280       0x16 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+                0x000000000040c280                gfx_coord2_subtract
+ *fill*         0x000000000040c296        0xa 
+ .text.gfx_rect_translate
+                0x000000000040c2a0       0x28 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+                0x000000000040c2a0                gfx_rect_translate
+ *fill*         0x000000000040c2c8        0x8 
+ .text.gfx_rect_rtranslate
+                0x000000000040c2d0       0x28 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+                0x000000000040c2d0                gfx_rect_rtranslate
+ *fill*         0x000000000040c2f8        0x8 
+ .text.gfx_rect_envelope
+                0x000000000040c300       0xe9 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+                0x000000000040c300                gfx_rect_envelope
+ *fill*         0x000000000040c3e9        0x7 
+ .text.gfx_rect_clip
+                0x000000000040c3f0      0x118 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+                0x000000000040c3f0                gfx_rect_clip
+ *fill*         0x000000000040c508        0x8 
+ .text.gfx_rect_points_sort
+                0x000000000040c510       0x34 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+                0x000000000040c510                gfx_rect_points_sort
+ *fill*         0x000000000040c544        0xc 
+ .text.gfx_rect_is_empty
+                0x000000000040c550       0x1b uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+                0x000000000040c550                gfx_rect_is_empty
+ *fill*         0x000000000040c56b        0x5 
+ .text.gfx_rect_is_inside
+                0x000000000040c570       0x7c uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+                0x000000000040c570                gfx_rect_is_inside
+ *fill*         0x000000000040c5ec        0x4 
+ .text.gfx_rect_dims
+                0x000000000040c5f0       0x37 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+                0x000000000040c5f0                gfx_rect_dims
+ *fill*         0x000000000040c627        0x9 
+ .text.gfx_pix_inside_rect
+                0x000000000040c630       0x51 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+                0x000000000040c630                gfx_pix_inside_rect
+ *fill*         0x000000000040c681        0xf 
+ .text.gfx_context_new
+                0x000000000040c690       0x49 uspace/lib/libgfx.a.p/gfx_src_context.c.o
+                0x000000000040c690                gfx_context_new
+ *fill*         0x000000000040c6d9        0x7 
+ .text.gfx_context_delete
+                0x000000000040c6e0       0x1b uspace/lib/libgfx.a.p/gfx_src_context.c.o
+                0x000000000040c6e0                gfx_context_delete
+ *fill*         0x000000000040c6fb        0x5 
+ .text.gfx_cursor_get_pos
+                0x000000000040c700       0x27 uspace/lib/libgfx.a.p/gfx_src_cursor.c.o
+                0x000000000040c700                gfx_cursor_get_pos
+ *fill*         0x000000000040c727        0x9 
+ .text.gfx_cursor_set_pos
+                0x000000000040c730       0x27 uspace/lib/libgfx.a.p/gfx_src_cursor.c.o
+                0x000000000040c730                gfx_cursor_set_pos
+ *fill*         0x000000000040c757        0x9 
+ .text.gfx_cursor_set_visible
+                0x000000000040c760       0x27 uspace/lib/libgfx.a.p/gfx_src_cursor.c.o
+                0x000000000040c760                gfx_cursor_set_visible
+ *fill*         0x000000000040c787        0x9 
+ .text.gfx_set_color
+                0x000000000040c790       0x15 uspace/lib/libgfx.a.p/gfx_src_render.c.o
+                0x000000000040c790                gfx_set_color
+ *fill*         0x000000000040c7a5        0xb 
+ .text.gfx_fill_rect
+                0x000000000040c7b0       0x15 uspace/lib/libgfx.a.p/gfx_src_render.c.o
+                0x000000000040c7b0                gfx_fill_rect
+ *fill*         0x000000000040c7c5        0xb 
+ .text.gfx_update
+                0x000000000040c7d0       0x15 uspace/lib/libgfx.a.p/gfx_src_render.c.o
+                0x000000000040c7d0                gfx_update
+ *fill*         0x000000000040c7e5        0xb 
+ .text.gfx_font_create_with_info.constprop.0
+                0x000000000040c7f0       0xe4 uspace/lib/libgfxfont.a.p/gfxfont_src_font.c.o
+ *fill*         0x000000000040c8d4        0xc 
+ .text.gfx_font_metrics_init
+                0x000000000040c8e0       0x14 uspace/lib/libgfxfont.a.p/gfxfont_src_font.c.o
+                0x000000000040c8e0                gfx_font_metrics_init
+ *fill*         0x000000000040c8f4        0xc 
+ .text.gfx_font_props_init
+                0x000000000040c900        0xd uspace/lib/libgfxfont.a.p/gfxfont_src_font.c.o
+                0x000000000040c900                gfx_font_props_init
+ *fill*         0x000000000040c90d        0x3 
+ .text.gfx_font_create
+                0x000000000040c910      0x151 uspace/lib/libgfxfont.a.p/gfxfont_src_font.c.o
+                0x000000000040c910                gfx_font_create
+ *fill*         0x000000000040ca61        0xf 
+ .text.gfx_font_create_textmode
+                0x000000000040ca70       0xd8 uspace/lib/libgfxfont.a.p/gfxfont_src_font.c.o
+                0x000000000040ca70                gfx_font_create_textmode
+ *fill*         0x000000000040cb48        0x8 
+ .text.gfx_font_close
+                0x000000000040cb50       0x55 uspace/lib/libgfxfont.a.p/gfxfont_src_font.c.o
+                0x000000000040cb50                gfx_font_close
+ *fill*         0x000000000040cba5        0xb 
+ .text.gfx_font_get_metrics
+                0x000000000040cbb0       0x14 uspace/lib/libgfxfont.a.p/gfxfont_src_font.c.o
+                0x000000000040cbb0                gfx_font_get_metrics
+ *fill*         0x000000000040cbc4        0xc 
+ .text.gfx_font_set_metrics
+                0x000000000040cbd0       0x16 uspace/lib/libgfxfont.a.p/gfxfont_src_font.c.o
+                0x000000000040cbd0                gfx_font_set_metrics
+ *fill*         0x000000000040cbe6        0xa 
+ .text.gfx_font_first_glyph
+                0x000000000040cbf0       0x24 uspace/lib/libgfxfont.a.p/gfxfont_src_font.c.o
+                0x000000000040cbf0                gfx_font_first_glyph
+ *fill*         0x000000000040cc14        0xc 
+ .text.gfx_font_last_glyph
+                0x000000000040cc20       0x24 uspace/lib/libgfxfont.a.p/gfxfont_src_font.c.o
+                0x000000000040cc20                gfx_font_last_glyph
+ *fill*         0x000000000040cc44        0xc 
+ .text.gfx_font_search_glyph
+                0x000000000040cc50       0xa6 uspace/lib/libgfxfont.a.p/gfxfont_src_font.c.o
+                0x000000000040cc50                gfx_font_search_glyph
+ *fill*         0x000000000040ccf6        0xa 
+ .text.gfx_font_splice_at_glyph
+                0x000000000040cd00      0x1ea uspace/lib/libgfxfont.a.p/gfxfont_src_font.c.o
+                0x000000000040cd00                gfx_font_splice_at_glyph
+ *fill*         0x000000000040ceea        0x6 
+ .text.gfx_font_info_load
+                0x000000000040cef0      0x132 uspace/lib/libgfxfont.a.p/gfxfont_src_font.c.o
+                0x000000000040cef0                gfx_font_info_load
+ *fill*         0x000000000040d022        0xe 
+ .text.gfx_font_load
+                0x000000000040d030      0x500 uspace/lib/libgfxfont.a.p/gfxfont_src_font.c.o
+                0x000000000040d030                gfx_font_load
+ .text.gfx_font_open
+                0x000000000040d530       0x4f uspace/lib/libgfxfont.a.p/gfxfont_src_font.c.o
+                0x000000000040d530                gfx_font_open
+ *fill*         0x000000000040d57f        0x1 
+ .text.gfx_font_save
+                0x000000000040d580      0x334 uspace/lib/libgfxfont.a.p/gfxfont_src_font.c.o
+                0x000000000040d580                gfx_font_save
+ *fill*         0x000000000040d8b4        0xc 
+ .text.gfx_glyph_metrics_init
+                0x000000000040d8c0        0xc uspace/lib/libgfxfont.a.p/gfxfont_src_glyph.c.o
+                0x000000000040d8c0                gfx_glyph_metrics_init
+ *fill*         0x000000000040d8cc        0x4 
+ .text.gfx_glyph_create
+                0x000000000040d8d0       0xb8 uspace/lib/libgfxfont.a.p/gfxfont_src_glyph.c.o
+                0x000000000040d8d0                gfx_glyph_create
+ *fill*         0x000000000040d988        0x8 
+ .text.gfx_glyph_destroy
+                0x000000000040d990       0x23 uspace/lib/libgfxfont.a.p/gfxfont_src_glyph.c.o
+                0x000000000040d990                gfx_glyph_destroy
+ *fill*         0x000000000040d9b3        0xd 
+ .text.gfx_glyph_get_metrics
+                0x000000000040d9c0        0xb uspace/lib/libgfxfont.a.p/gfxfont_src_glyph.c.o
+                0x000000000040d9c0                gfx_glyph_get_metrics
+ *fill*         0x000000000040d9cb        0x5 
+ .text.gfx_glyph_set_metrics
+                0x000000000040d9d0        0xd uspace/lib/libgfxfont.a.p/gfxfont_src_glyph.c.o
+                0x000000000040d9d0                gfx_glyph_set_metrics
+ *fill*         0x000000000040d9dd        0x3 
+ .text.gfx_glyph_set_pattern
+                0x000000000040d9e0       0xc1 uspace/lib/libgfxfont.a.p/gfxfont_src_glyph.c.o
+                0x000000000040d9e0                gfx_glyph_set_pattern
+ *fill*         0x000000000040daa1        0xf 
+ .text.gfx_glyph_matches
+                0x000000000040dab0       0x88 uspace/lib/libgfxfont.a.p/gfxfont_src_glyph.c.o
+                0x000000000040dab0                gfx_glyph_matches
+ *fill*         0x000000000040db38        0x8 
+ .text.gfx_glyph_render
+                0x000000000040db40       0x36 uspace/lib/libgfxfont.a.p/gfxfont_src_glyph.c.o
+                0x000000000040db40                gfx_glyph_render
+ *fill*         0x000000000040db76        0xa 
+ .text.gfx_glyph_transfer
+                0x000000000040db80      0x1ed uspace/lib/libgfxfont.a.p/gfxfont_src_glyph.c.o
+                0x000000000040db80                gfx_glyph_transfer
+ *fill*         0x000000000040dd6d        0x3 
+ .text.gfx_glyph_load
+                0x000000000040dd70      0x2f9 uspace/lib/libgfxfont.a.p/gfxfont_src_glyph.c.o
+                0x000000000040dd70                gfx_glyph_load
+ *fill*         0x000000000040e069        0x7 
+ .text.gfx_glyph_save
+                0x000000000040e070      0x182 uspace/lib/libgfxfont.a.p/gfxfont_src_glyph.c.o
+                0x000000000040e070                gfx_glyph_save
+ *fill*         0x000000000040e1f2        0xe 
+ .text.gfx_glyph_bmp_open
+                0x000000000040e200      0x1d3 uspace/lib/libgfxfont.a.p/gfxfont_src_glyph_bmp.c.o
+                0x000000000040e200                gfx_glyph_bmp_open
+ *fill*         0x000000000040e3d3        0xd 
+ .text.gfx_glyph_bmp_close
+                0x000000000040e3e0       0x22 uspace/lib/libgfxfont.a.p/gfxfont_src_glyph_bmp.c.o
+                0x000000000040e3e0                gfx_glyph_bmp_close
+ *fill*         0x000000000040e402        0xe 
+ .text.gfx_glyph_bmp_get_rect
+                0x000000000040e410        0xe uspace/lib/libgfxfont.a.p/gfxfont_src_glyph_bmp.c.o
+                0x000000000040e410                gfx_glyph_bmp_get_rect
+ *fill*         0x000000000040e41e        0x2 
+ .text.gfx_glyph_bmp_find_used_rect
+                0x000000000040e420      0x161 uspace/lib/libgfxfont.a.p/gfxfont_src_glyph_bmp.c.o
+                0x000000000040e420                gfx_glyph_bmp_find_used_rect
+ *fill*         0x000000000040e581        0xf 
+ .text.gfx_glyph_bmp_save
+                0x000000000040e590      0x149 uspace/lib/libgfxfont.a.p/gfxfont_src_glyph_bmp.c.o
+                0x000000000040e590                gfx_glyph_bmp_save
+ *fill*         0x000000000040e6d9        0x7 
+ .text.gfx_glyph_bmp_getpix
+                0x000000000040e6e0       0x61 uspace/lib/libgfxfont.a.p/gfxfont_src_glyph_bmp.c.o
+                0x000000000040e6e0                gfx_glyph_bmp_getpix
+ *fill*         0x000000000040e741        0xf 
+ .text.gfx_glyph_bmp_setpix
+                0x000000000040e750      0x31d uspace/lib/libgfxfont.a.p/gfxfont_src_glyph_bmp.c.o
+                0x000000000040e750                gfx_glyph_bmp_setpix
+ *fill*         0x000000000040ea6d        0x3 
+ .text.gfx_glyph_bmp_clear
+                0x000000000040ea70       0x44 uspace/lib/libgfxfont.a.p/gfxfont_src_glyph_bmp.c.o
+                0x000000000040ea70                gfx_glyph_bmp_clear
+ *fill*         0x000000000040eab4        0xc 
+ .text.gfx_text_fmt_init
+                0x000000000040eac0       0x11 uspace/lib/libgfxfont.a.p/gfxfont_src_text.c.o
+                0x000000000040eac0                gfx_text_fmt_init
+ *fill*         0x000000000040ead1        0xf 
+ .text.gfx_text_width
+                0x000000000040eae0       0x99 uspace/lib/libgfxfont.a.p/gfxfont_src_text.c.o
+                0x000000000040eae0                gfx_text_width
+ *fill*         0x000000000040eb79        0x7 
+ .text.gfx_text_start_pos
+                0x000000000040eb80      0x1a9 uspace/lib/libgfxfont.a.p/gfxfont_src_text.c.o
+                0x000000000040eb80                gfx_text_start_pos
+ *fill*         0x000000000040ed29        0x7 
+ .text.gfx_puttext
+                0x000000000040ed30      0x5d0 uspace/lib/libgfxfont.a.p/gfxfont_src_text.c.o
+                0x000000000040ed30                gfx_puttext
+ .text.gfx_text_cont
+                0x000000000040f300      0x11c uspace/lib/libgfxfont.a.p/gfxfont_src_text.c.o
+                0x000000000040f300                gfx_text_cont
+ *fill*         0x000000000040f41c        0x4 
+ .text.gfx_text_rect
+                0x000000000040f420      0x100 uspace/lib/libgfxfont.a.p/gfxfont_src_text.c.o
+                0x000000000040f420                gfx_text_rect
+ .text.gfx_typeface_create
+                0x000000000040f520       0x41 uspace/lib/libgfxfont.a.p/gfxfont_src_typeface.c.o
+                0x000000000040f520                gfx_typeface_create
+ *fill*         0x000000000040f561        0xf 
+ .text.gfx_typeface_destroy
+                0x000000000040f570       0x8a uspace/lib/libgfxfont.a.p/gfxfont_src_typeface.c.o
+                0x000000000040f570                gfx_typeface_destroy
+ *fill*         0x000000000040f5fa        0x6 
+ .text.gfx_typeface_first_font
+                0x000000000040f600       0x24 uspace/lib/libgfxfont.a.p/gfxfont_src_typeface.c.o
+                0x000000000040f600                gfx_typeface_first_font
+ *fill*         0x000000000040f624        0xc 
+ .text.gfx_typeface_open
+                0x000000000040f630      0x105 uspace/lib/libgfxfont.a.p/gfxfont_src_typeface.c.o
+                0x000000000040f630                gfx_typeface_open
+ *fill*         0x000000000040f735        0xb 
+ .text.gfx_typeface_save
+                0x000000000040f740      0x140 uspace/lib/libgfxfont.a.p/gfxfont_src_typeface.c.o
+                0x000000000040f740                gfx_typeface_save
+ .text.riff_wopen
+                0x000000000040f880       0x66 uspace/lib/libriff.a.p/riff_src_chunk.c.o
+                0x000000000040f880                riff_wopen
+ *fill*         0x000000000040f8e6        0xa 
+ .text.riff_wclose
+                0x000000000040f8f0       0x2a uspace/lib/libriff.a.p/riff_src_chunk.c.o
+                0x000000000040f8f0                riff_wclose
+ *fill*         0x000000000040f91a        0x6 
+ .text.riff_write_uint32
+                0x000000000040f920       0x2c uspace/lib/libriff.a.p/riff_src_chunk.c.o
+                0x000000000040f920                riff_write_uint32
+ *fill*         0x000000000040f94c        0x4 
+ .text.riff_wchunk_start
+                0x000000000040f950       0x90 uspace/lib/libriff.a.p/riff_src_chunk.c.o
+                0x000000000040f950                riff_wchunk_start
+ .text.riff_wchunk_end
+                0x000000000040f9e0       0xea uspace/lib/libriff.a.p/riff_src_chunk.c.o
+                0x000000000040f9e0                riff_wchunk_end
+ *fill*         0x000000000040faca        0x6 
+ .text.riff_write
+                0x000000000040fad0       0x35 uspace/lib/libriff.a.p/riff_src_chunk.c.o
+                0x000000000040fad0                riff_write
+ *fill*         0x000000000040fb05        0xb 
+ .text.riff_rclose
+                0x000000000040fb10       0x2a uspace/lib/libriff.a.p/riff_src_chunk.c.o
+                0x000000000040fb10                riff_rclose
+ *fill*         0x000000000040fb3a        0x6 
+ .text.riff_read_uint32
+                0x000000000040fb40       0x8f uspace/lib/libriff.a.p/riff_src_chunk.c.o
+                0x000000000040fb40                riff_read_uint32
+ *fill*         0x000000000040fbcf        0x1 
+ .text.riff_rchunk_start
+                0x000000000040fbd0      0x10e uspace/lib/libriff.a.p/riff_src_chunk.c.o
+                0x000000000040fbd0                riff_rchunk_start
+ *fill*         0x000000000040fcde        0x2 
+ .text.riff_ropen
+                0x000000000040fce0       0xf0 uspace/lib/libriff.a.p/riff_src_chunk.c.o
+                0x000000000040fce0                riff_ropen
+ .text.riff_rchunk_match
+                0x000000000040fdd0      0x1cf uspace/lib/libriff.a.p/riff_src_chunk.c.o
+                0x000000000040fdd0                riff_rchunk_match
+ *fill*         0x000000000040ff9f        0x1 
+ .text.riff_rchunk_seek
+                0x000000000040ffa0       0x87 uspace/lib/libriff.a.p/riff_src_chunk.c.o
+                0x000000000040ffa0                riff_rchunk_seek
+ *fill*         0x0000000000410027        0x9 
+ .text.riff_rchunk_size
+                0x0000000000410030        0x9 uspace/lib/libriff.a.p/riff_src_chunk.c.o
+                0x0000000000410030                riff_rchunk_size
+ *fill*         0x0000000000410039        0x7 
+ .text.riff_rchunk_end
+                0x0000000000410040       0xa4 uspace/lib/libriff.a.p/riff_src_chunk.c.o
+                0x0000000000410040                riff_rchunk_end
+ *fill*         0x00000000004100e4        0xc 
+ .text.riff_rchunk_list_match
+                0x00000000004100f0      0x269 uspace/lib/libriff.a.p/riff_src_chunk.c.o
+                0x00000000004100f0                riff_rchunk_list_match
+ *fill*         0x0000000000410359        0x7 
+ .text.riff_read
+                0x0000000000410360       0x8a uspace/lib/libriff.a.p/riff_src_chunk.c.o
+                0x0000000000410360                riff_read
+ *fill*         0x00000000004103ea        0x6 
+ .text.mem_gc_update
+                0x00000000004103f0       0x16 uspace/lib/libmemgfx.a.p/memgfx_src_memgc.c.o
+ *fill*         0x0000000000410406        0xa 
+ .text.mem_gc_bitmap_get_alloc
+                0x0000000000410410       0x18 uspace/lib/libmemgfx.a.p/memgfx_src_memgc.c.o
+ *fill*         0x0000000000410428        0x8 
+ .text.mem_gc_cursor_get_pos
+                0x0000000000410430       0x27 uspace/lib/libmemgfx.a.p/memgfx_src_memgc.c.o
+ *fill*         0x0000000000410457        0x9 
+ .text.mem_gc_cursor_set_pos
+                0x0000000000410460       0x27 uspace/lib/libmemgfx.a.p/memgfx_src_memgc.c.o
+ *fill*         0x0000000000410487        0x9 
+ .text.mem_gc_cursor_set_visible
+                0x0000000000410490       0x27 uspace/lib/libmemgfx.a.p/memgfx_src_memgc.c.o
+ *fill*         0x00000000004104b7        0x9 
+ .text.mem_gc_set_clip_rect
+                0x00000000004104c0       0x2c uspace/lib/libmemgfx.a.p/memgfx_src_memgc.c.o
+ *fill*         0x00000000004104ec        0x4 
+ .text.mem_gc_bitmap_render
+                0x00000000004104f0      0x3e9 uspace/lib/libmemgfx.a.p/memgfx_src_memgc.c.o
+ *fill*         0x00000000004108d9        0x7 
+ .text.mem_gc_fill_rect
+                0x00000000004108e0      0x10d uspace/lib/libmemgfx.a.p/memgfx_src_memgc.c.o
+ *fill*         0x00000000004109ed        0x3 
+ .text.mem_gc_bitmap_destroy
+                0x00000000004109f0       0x41 uspace/lib/libmemgfx.a.p/memgfx_src_memgc.c.o
+ *fill*         0x0000000000410a31        0xf 
+ .text.mem_gc_set_color
+                0x0000000000410a40       0x60 uspace/lib/libmemgfx.a.p/memgfx_src_memgc.c.o
+ .text.mem_gc_bitmap_create
+                0x0000000000410aa0      0x161 uspace/lib/libmemgfx.a.p/memgfx_src_memgc.c.o
+ *fill*         0x0000000000410c01        0xf 
+ .text.mem_gc_create
+                0x0000000000410c10       0xce uspace/lib/libmemgfx.a.p/memgfx_src_memgc.c.o
+                0x0000000000410c10                mem_gc_create
+ *fill*         0x0000000000410cde        0x2 
+ .text.mem_gc_delete
+                0x0000000000410ce0       0x27 uspace/lib/libmemgfx.a.p/memgfx_src_memgc.c.o
+                0x0000000000410ce0                mem_gc_delete
+ *fill*         0x0000000000410d07        0x9 
+ .text.mem_gc_retarget
+                0x0000000000410d10       0x26 uspace/lib/libmemgfx.a.p/memgfx_src_memgc.c.o
+                0x0000000000410d10                mem_gc_retarget
+ *fill*         0x0000000000410d36        0xa 
+ .text.mem_gc_get_ctx
+                0x0000000000410d40        0x9 uspace/lib/libmemgfx.a.p/memgfx_src_memgc.c.o
+                0x0000000000410d40                mem_gc_get_ctx
+ *fill*         0x0000000000410d49        0x7 
+ .text.xlate_gc_set_off
+                0x0000000000410d50        0xd uspace/lib/libmemgfx.a.p/memgfx_src_xlategc.c.o
+                0x0000000000410d50                xlate_gc_set_off
+ *fill*         0x0000000000410d5d        0x3 
+ .text.display_cb_conn
+                0x0000000000410d60      0x2b5 uspace/lib/libdisplay.a.p/display_src_display.c.o
+ *fill*         0x0000000000411015        0xb 
+ .text.display_open
+                0x0000000000411020      0x163 uspace/lib/libdisplay.a.p/display_src_display.c.o
+                0x0000000000411020                display_open
+ *fill*         0x0000000000411183        0xd 
+ .text.display_close
+                0x0000000000411190       0x63 uspace/lib/libdisplay.a.p/display_src_display.c.o
+                0x0000000000411190                display_close
+ *fill*         0x00000000004111f3        0xd 
+ .text.display_wnd_params_init
+                0x0000000000411200       0x25 uspace/lib/libdisplay.a.p/display_src_display.c.o
+                0x0000000000411200                display_wnd_params_init
+ *fill*         0x0000000000411225        0xb 
+ .text.display_window_create
+                0x0000000000411230      0x1bd uspace/lib/libdisplay.a.p/display_src_display.c.o
+                0x0000000000411230                display_window_create
+ *fill*         0x00000000004113ed        0x3 
+ .text.display_window_destroy
+                0x00000000004113f0       0x71 uspace/lib/libdisplay.a.p/display_src_display.c.o
+                0x00000000004113f0                display_window_destroy
+ *fill*         0x0000000000411461        0xf 
+ .text.display_window_get_gc
+                0x0000000000411470       0xbc uspace/lib/libdisplay.a.p/display_src_display.c.o
+                0x0000000000411470                display_window_get_gc
+ *fill*         0x000000000041152c        0x4 
+ .text.display_window_move_req
+                0x0000000000411530       0xab uspace/lib/libdisplay.a.p/display_src_display.c.o
+                0x0000000000411530                display_window_move_req
+ *fill*         0x00000000004115db        0x5 
+ .text.display_window_get_pos
+                0x00000000004115e0       0xa1 uspace/lib/libdisplay.a.p/display_src_display.c.o
+                0x00000000004115e0                display_window_get_pos
+ *fill*         0x0000000000411681        0xf 
+ .text.display_window_get_max_rect
+                0x0000000000411690       0xa1 uspace/lib/libdisplay.a.p/display_src_display.c.o
+                0x0000000000411690                display_window_get_max_rect
+ *fill*         0x0000000000411731        0xf 
+ .text.display_window_resize_req
+                0x0000000000411740       0xbd uspace/lib/libdisplay.a.p/display_src_display.c.o
+                0x0000000000411740                display_window_resize_req
+ *fill*         0x00000000004117fd        0x3 
+ .text.display_window_resize
+                0x0000000000411800       0xba uspace/lib/libdisplay.a.p/display_src_display.c.o
+                0x0000000000411800                display_window_resize
+ *fill*         0x00000000004118ba        0x6 
+ .text.display_window_minimize
+                0x00000000004118c0       0x3d uspace/lib/libdisplay.a.p/display_src_display.c.o
+                0x00000000004118c0                display_window_minimize
+ *fill*         0x00000000004118fd        0x3 
+ .text.display_window_maximize
+                0x0000000000411900       0x3d uspace/lib/libdisplay.a.p/display_src_display.c.o
+                0x0000000000411900                display_window_maximize
+ *fill*         0x000000000041193d        0x3 
+ .text.display_window_unmaximize
+                0x0000000000411940       0x3d uspace/lib/libdisplay.a.p/display_src_display.c.o
+                0x0000000000411940                display_window_unmaximize
+ *fill*         0x000000000041197d        0x3 
+ .text.display_window_set_cursor
+                0x0000000000411980       0x4a uspace/lib/libdisplay.a.p/display_src_display.c.o
+                0x0000000000411980                display_window_set_cursor
+ *fill*         0x00000000004119ca        0x6 
+ .text.display_get_info
+                0x00000000004119d0       0x99 uspace/lib/libdisplay.a.p/display_src_display.c.o
+                0x00000000004119d0                display_get_info
+ *fill*         0x0000000000411a69        0x7 
+ .text.ipc_gc_bitmap_get_alloc
+                0x0000000000411a70       0x18 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ *fill*         0x0000000000411a88        0x8 
+ .text.ipc_gc_bitmap_render
+                0x0000000000411a90      0x121 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ *fill*         0x0000000000411bb1        0xf 
+ .text.ipc_gc_bitmap_create
+                0x0000000000411bc0      0x3a9 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ *fill*         0x0000000000411f69        0x7 
+ .text.ipc_gc_update
+                0x0000000000411f70       0x33 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ *fill*         0x0000000000411fa3        0xd 
+ .text.ipc_gc_fill_rect
+                0x0000000000411fb0       0x43 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ *fill*         0x0000000000411ff3        0xd 
+ .text.ipc_gc_set_clip_rect
+                0x0000000000412000       0x6e uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ *fill*         0x000000000041206e        0x2 
+ .text.ipc_gc_set_color
+                0x0000000000412070       0x5f uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ *fill*         0x00000000004120cf        0x1 
+ .text.ipc_gc_bitmap_destroy
+                0x00000000004120d0       0x6b uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ *fill*         0x000000000041213b        0x5 
+ .text.ipc_gc_create
+                0x0000000000412140       0x97 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+                0x0000000000412140                ipc_gc_create
+ *fill*         0x00000000004121d7        0x9 
+ .text.ipc_gc_get_ctx
+                0x00000000004121e0        0x9 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+                0x00000000004121e0                ipc_gc_get_ctx
+ *fill*         0x00000000004121e9        0x7 
+ .text.console_gc_set_color
+                0x00000000004121f0       0x2c uspace/lib/libcongfx.a.p/congfx_src_console.c.o
+ *fill*         0x000000000041221c        0x4 
+ .text.console_gc_update
+                0x0000000000412220        0x8 uspace/lib/libcongfx.a.p/congfx_src_console.c.o
+ *fill*         0x0000000000412228        0x8 
+ .text.console_gc_bitmap_get_alloc
+                0x0000000000412230       0x18 uspace/lib/libcongfx.a.p/congfx_src_console.c.o
+ *fill*         0x0000000000412248        0x8 
+ .text.console_gc_cursor_set_visible
+                0x0000000000412250       0x15 uspace/lib/libcongfx.a.p/congfx_src_console.c.o
+ *fill*         0x0000000000412265        0xb 
+ .text.console_gc_cursor_set_pos
+                0x0000000000412270       0x18 uspace/lib/libcongfx.a.p/congfx_src_console.c.o
+ *fill*         0x0000000000412288        0x8 
+ .text.console_gc_cursor_get_pos
+                0x0000000000412290       0x34 uspace/lib/libcongfx.a.p/congfx_src_console.c.o
+ *fill*         0x00000000004122c4        0xc 
+ .text.console_gc_set_clip_rect
+                0x00000000004122d0       0x2c uspace/lib/libcongfx.a.p/congfx_src_console.c.o
+ *fill*         0x00000000004122fc        0x4 
+ .text.console_gc_bitmap_destroy
+                0x0000000000412300       0x41 uspace/lib/libcongfx.a.p/congfx_src_console.c.o
+ *fill*         0x0000000000412341        0xf 
+ .text.console_gc_bitmap_create
+                0x0000000000412350       0xec uspace/lib/libcongfx.a.p/congfx_src_console.c.o
+ *fill*         0x000000000041243c        0x4 
+ .text.console_gc_bitmap_render
+                0x0000000000412440      0x66f uspace/lib/libcongfx.a.p/congfx_src_console.c.o
+ *fill*         0x0000000000412aaf        0x1 
+ .text.console_gc_fill_rect
+                0x0000000000412ab0      0x149 uspace/lib/libcongfx.a.p/congfx_src_console.c.o
+ *fill*         0x0000000000412bf9        0x7 
+ .text.console_gc_create
+                0x0000000000412c00      0x124 uspace/lib/libcongfx.a.p/congfx_src_console.c.o
+                0x0000000000412c00                console_gc_create
+ *fill*         0x0000000000412d24        0xc 
+ .text.console_gc_delete
+                0x0000000000412d30       0x3f uspace/lib/libcongfx.a.p/congfx_src_console.c.o
+                0x0000000000412d30                console_gc_delete
+ *fill*         0x0000000000412d6f        0x1 
+ .text.console_gc_get_ctx
+                0x0000000000412d70        0x9 uspace/lib/libcongfx.a.p/congfx_src_console.c.o
+                0x0000000000412d70                console_gc_get_ctx
+ *fill*         0x0000000000412d79        0x7 
+ .text.console_init
+                0x0000000000412d80       0x7c uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x0000000000412d80                console_init
+ *fill*         0x0000000000412dfc        0x4 
+ .text.console_done
+                0x0000000000412e00        0xa uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x0000000000412e00                console_done
+ *fill*         0x0000000000412e0a        0x6 
+ .text.console_clear
+                0x0000000000412e10       0x2f uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x0000000000412e10                console_clear
+ *fill*         0x0000000000412e3f        0x1 
+ .text.console_get_size
+                0x0000000000412e40       0x4b uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x0000000000412e40                console_get_size
+ *fill*         0x0000000000412e8b        0x5 
+ .text.console_cursor_visibility
+                0x0000000000412e90       0x31 uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x0000000000412e90                console_cursor_visibility
+ *fill*         0x0000000000412ec1        0xf 
+ .text.console_set_caption
+                0x0000000000412ed0       0xa3 uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x0000000000412ed0                console_set_caption
+ *fill*         0x0000000000412f73        0xd 
+ .text.console_get_pos
+                0x0000000000412f80       0x4b uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x0000000000412f80                console_get_pos
+ *fill*         0x0000000000412fcb        0x5 
+ .text.console_set_pos
+                0x0000000000412fd0       0x44 uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x0000000000412fd0                console_set_pos
+ *fill*         0x0000000000413014        0xc 
+ .text.console_get_event_timeout
+                0x0000000000413020      0x16c uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x0000000000413020                console_get_event_timeout
+ *fill*         0x000000000041318c        0x4 
+ .text.console_map
+                0x0000000000413190       0xea uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x0000000000413190                console_map
+ *fill*         0x000000000041327a        0x6 
+ .text.console_unmap
+                0x0000000000413280       0x37 uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x0000000000413280                console_unmap
+ *fill*         0x00000000004132b7        0x9 
+ .text.console_update
+                0x00000000004132c0       0x5f uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x00000000004132c0                console_update
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000413320      0xc38
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.font_edit_paint.isra.0.str1.1
+                0x0000000000413320      0x421 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+                                         0x49 (size before relaxing)
+ *fill*         0x0000000000413741        0x7 
+ .rodata.font_edit_paint.isra.0.str1.8
+                0x0000000000413748      0x35b uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+                                         0x8b (size before relaxing)
+ .rodata.font_edit_pos_event.str1.1
+                0x0000000000413aa3        0xb uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+ .rodata.font_edit_kbd_event.str1.1
+                0x0000000000413aa3      0x145 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+ *fill*         0x0000000000413aa3        0x5 
+ .rodata.font_edit_kbd_event
+                0x0000000000413aa8      0x180 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+ .rodata.main.str1.1
+                0x0000000000413c28       0xfe uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+ .rodata.main.str1.8
+                0x0000000000413c28       0x58 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+ *fill*         0x0000000000413c28        0x8 
+ .rodata.cst16  0x0000000000413c30       0xd0 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+                                         0x30 (size before relaxing)
+ .rodata.cst8   0x0000000000413d00       0x30 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+                                         0x28 (size before relaxing)
+ .rodata.cst8   0x0000000000413d30        0x8 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .rodata.ui_create.str1.1
+                0x0000000000413d38       0x1b uspace/lib/libui.a.p/ui_src_ui.c.o
+ .rodata.ui_wdecor_create.str1.1
+                0x0000000000413d38        0x6 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ .rodata.ui_wdecor_sysmenu_hdl_paint_text.str1.1
+                0x0000000000413d38        0x6 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ .rodata.cst16  0x0000000000413d38       0x40 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ .rodata.ui_window_place.str1.8
+                0x0000000000413d38       0x7a uspace/lib/libui.a.p/ui_src_window.c.o
+ .rodata.ui_window_place
+                0x0000000000413d38       0x80 uspace/lib/libui.a.p/ui_src_window.c.o
+ .rodata.ui_window_create.str1.1
+                0x0000000000413db8       0x30 uspace/lib/libui.a.p/ui_src_window.c.o
+ .rodata.ui_window_size_change.str1.1
+                0x0000000000413db8       0x18 uspace/lib/libui.a.p/ui_src_window.c.o
+ .rodata.ui_window_get_app_gc.str1.1
+                0x0000000000413db8       0x18 uspace/lib/libui.a.p/ui_src_window.c.o
+ .rodata.ui_window_def_unmaximize.str1.1
+                0x0000000000413db8       0x1d uspace/lib/libui.a.p/ui_src_window.c.o
+ .rodata.ui_menu_popup_kbd
+                0x0000000000413db8      0x170 uspace/lib/libui.a.p/ui_src_menu.c.o
+ .rodata.cst16  0x0000000000413f28       0x20 uspace/lib/libui.a.p/ui_src_menu.c.o
+ .rodata.ui_menu_bar_entry_rect.str1.8
+                0x0000000000413f28       0x2a uspace/lib/libui.a.p/ui_src_menubar.c.o
+ .rodata.ui_menu_bar_entry_rect.str1.1
+                0x0000000000413f28        0x6 uspace/lib/libui.a.p/ui_src_menubar.c.o
+ .rodata.ui_menu_entry_sep_create.str1.1
+                0x0000000000413f28        0x1 uspace/lib/libui.a.p/ui_src_menuentry.c.o
+ .rodata.ui_text_width.str1.1
+                0x0000000000413f28        0x2 uspace/lib/libui.a.p/ui_src_paint.c.o
+ .rodata.str1.1
+                0x0000000000413f28       0x42 uspace/lib/libui.a.p/ui_src_paint.c.o
+ .rodata.cst16  0x0000000000413f28       0x30 uspace/lib/libui.a.p/ui_src_paint.c.o
+ .rodata.cst8   0x0000000000413f28        0x8 uspace/lib/libui.a.p/ui_src_pbutton.c.o
+ .rodata.ui_popup_create.str1.1
+                0x0000000000413f28        0x1 uspace/lib/libui.a.p/ui_src_popup.c.o
+ .rodata.ui_resource_create.str1.1
+                0x0000000000413f28       0x16 uspace/lib/libui.a.p/ui_src_resource.c.o
+ .rodata.gfx_font_splice_at_glyph.str1.8
+                0x0000000000413f28       0x2c uspace/lib/libgfxfont.a.p/gfxfont_src_font.c.o
+ .rodata.gfx_font_splice_at_glyph.str1.1
+                0x0000000000413f28        0xa uspace/lib/libgfxfont.a.p/gfxfont_src_font.c.o
+ .rodata.gfx_font_open.str1.1
+                0x0000000000413f28       0x14 uspace/lib/libgfxfont.a.p/gfxfont_src_font.c.o
+ .rodata.cst16  0x0000000000413f28       0x10 uspace/lib/libgfxfont.a.p/gfxfont_src_font.c.o
+ .rodata.gfx_glyph_transfer.str1.8
+                0x0000000000413f28       0x53 uspace/lib/libgfxfont.a.p/gfxfont_src_glyph.c.o
+ .rodata.gfx_glyph_bmp_open.str1.8
+                0x0000000000413f28       0x31 uspace/lib/libgfxfont.a.p/gfxfont_src_glyph_bmp.c.o
+ .rodata.gfx_glyph_bmp_open.str1.1
+                0x0000000000413f28       0x2a uspace/lib/libgfxfont.a.p/gfxfont_src_glyph_bmp.c.o
+ .rodata.gfx_puttext.str1.1
+                0x0000000000413f28        0x6 uspace/lib/libgfxfont.a.p/gfxfont_src_text.c.o
+ .rodata.riff_wopen.str1.1
+                0x0000000000413f28        0x3 uspace/lib/libriff.a.p/riff_src_chunk.c.o
+ .rodata.riff_ropen.str1.1
+                0x0000000000413f28        0x3 uspace/lib/libriff.a.p/riff_src_chunk.c.o
+ .rodata.mem_gc_bitmap_render.str1.8
+                0x0000000000413f28       0xc5 uspace/lib/libmemgfx.a.p/memgfx_src_memgc.c.o
+ .rodata.mem_gc_bitmap_render.str1.1
+                0x0000000000413f28       0x32 uspace/lib/libmemgfx.a.p/memgfx_src_memgc.c.o
+ .rodata.mem_gc_fill_rect.str1.1
+                0x0000000000413f28       0x28 uspace/lib/libmemgfx.a.p/memgfx_src_memgc.c.o
+ .rodata.mem_gc_fill_rect.str1.8
+                0x0000000000413f28       0x3b uspace/lib/libmemgfx.a.p/memgfx_src_memgc.c.o
+ .rodata.display_cb_conn
+                0x0000000000413f28       0x30 uspace/lib/libdisplay.a.p/display_src_display.c.o
+ .rodata.display_open.str1.1
+                0x0000000000413f58        0xc uspace/lib/libdisplay.a.p/display_src_display.c.o
+ .rodata.display_wnd_params_init.str1.1
+                0x0000000000413f58        0x1 uspace/lib/libdisplay.a.p/display_src_display.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x0000000000413f58      0xb34
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x0000000000413f58      0xb34 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+                0x0000000000413f58                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x0000000000414a90     0x38dc
+ *(.eh_frame)
+ .eh_frame      0x0000000000414a90      0x118 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+ .eh_frame      0x0000000000414ba8       0x28 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000414bd0        0x0 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+ .eh_frame      0x0000000000414bd0       0x20 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000414bf0      0x150 uspace/lib/libui.a.p/ui_src_ui.c.o
+                                        0x2a8 (size before relaxing)
+ .eh_frame      0x0000000000414d40      0x370 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+                                        0x5c0 (size before relaxing)
+ .eh_frame      0x00000000004150b0      0x848 uspace/lib/libui.a.p/ui_src_window.c.o
+                                        0xbc8 (size before relaxing)
+ .eh_frame      0x00000000004158f8       0x30 uspace/lib/libui.a.p/ui_src_clickmatic.c.o
+                                        0x110 (size before relaxing)
+ .eh_frame      0x0000000000415928      0x100 uspace/lib/libui.a.p/ui_src_control.c.o
+                                        0x118 (size before relaxing)
+ .eh_frame      0x0000000000415a28      0x188 uspace/lib/libui.a.p/ui_src_dummygc.c.o
+                                        0x1a0 (size before relaxing)
+ .eh_frame      0x0000000000415bb0      0x2c8 uspace/lib/libui.a.p/ui_src_menu.c.o
+                                        0x3d0 (size before relaxing)
+ .eh_frame      0x0000000000415e78      0x130 uspace/lib/libui.a.p/ui_src_menubar.c.o
+                                        0x460 (size before relaxing)
+ .eh_frame      0x0000000000415fa8      0x110 uspace/lib/libui.a.p/ui_src_menudd.c.o
+                                        0x220 (size before relaxing)
+ .eh_frame      0x00000000004160b8      0x2e0 uspace/lib/libui.a.p/ui_src_menuentry.c.o
+                                        0x3e0 (size before relaxing)
+ .eh_frame      0x0000000000416398      0x2a8 uspace/lib/libui.a.p/ui_src_paint.c.o
+                                        0x468 (size before relaxing)
+ .eh_frame      0x0000000000416640      0x170 uspace/lib/libui.a.p/ui_src_pbutton.c.o
+                                        0x360 (size before relaxing)
+ .eh_frame      0x00000000004167b0      0x148 uspace/lib/libui.a.p/ui_src_popup.c.o
+                                        0x1c0 (size before relaxing)
+ .eh_frame      0x00000000004168f8       0x78 uspace/lib/libui.a.p/ui_src_resource.c.o
+                                        0x130 (size before relaxing)
+ .eh_frame      0x0000000000416970       0x50 uspace/lib/libui.a.p/ui_src_accel.c.o
+                                         0x68 (size before relaxing)
+ .eh_frame      0x00000000004169c0       0xc0 uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+                                         0xd8 (size before relaxing)
+ .eh_frame      0x0000000000416a80       0xb8 uspace/lib/libgfx.a.p/gfx_src_color.c.o
+                                         0xd0 (size before relaxing)
+ .eh_frame      0x0000000000416b38      0x1b0 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+                                        0x270 (size before relaxing)
+ .eh_frame      0x0000000000416ce8       0x50 uspace/lib/libgfx.a.p/gfx_src_context.c.o
+                                         0x68 (size before relaxing)
+ .eh_frame      0x0000000000416d38       0x70 uspace/lib/libgfx.a.p/gfx_src_cursor.c.o
+                                         0x88 (size before relaxing)
+ .eh_frame      0x0000000000416da8       0x60 uspace/lib/libgfx.a.p/gfx_src_render.c.o
+                                         0x98 (size before relaxing)
+ .eh_frame      0x0000000000416e08      0x2b8 uspace/lib/libgfxfont.a.p/gfxfont_src_font.c.o
+                                        0x390 (size before relaxing)
+ .eh_frame      0x00000000004170c0      0x1b8 uspace/lib/libgfxfont.a.p/gfxfont_src_glyph.c.o
+                                        0x268 (size before relaxing)
+ .eh_frame      0x0000000000417278      0x158 uspace/lib/libgfxfont.a.p/gfxfont_src_glyph_bmp.c.o
+                                        0x170 (size before relaxing)
+ .eh_frame      0x00000000004173d0      0x120 uspace/lib/libgfxfont.a.p/gfxfont_src_text.c.o
+                                        0x170 (size before relaxing)
+ .eh_frame      0x00000000004174f0       0xd0 uspace/lib/libgfxfont.a.p/gfxfont_src_typeface.c.o
+                                        0x110 (size before relaxing)
+ .eh_frame      0x00000000004175c0      0x2c0 uspace/lib/libriff.a.p/riff_src_chunk.c.o
+                                        0x2d8 (size before relaxing)
+ .eh_frame      0x0000000000417880      0x230 uspace/lib/libmemgfx.a.p/memgfx_src_memgc.c.o
+                                        0x248 (size before relaxing)
+ .eh_frame      0x0000000000417ab0       0x20 uspace/lib/libmemgfx.a.p/memgfx_src_xlategc.c.o
+                                        0x248 (size before relaxing)
+ .eh_frame      0x0000000000417ad0      0x2f8 uspace/lib/libdisplay.a.p/display_src_display.c.o
+                                        0x370 (size before relaxing)
+ .eh_frame      0x0000000000417dc8      0x190 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+                                        0x1d0 (size before relaxing)
+ .eh_frame      0x0000000000417f58      0x220 uspace/lib/libcongfx.a.p/congfx_src_console.c.o
+                                        0x278 (size before relaxing)
+ .eh_frame      0x0000000000418178      0x1f4 uspace/lib/libconsole.a.p/console_src_console.c.o
+                                        0x318 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x000000000041836c        0x0
+ *(.sframe)
+ .sframe        0x000000000041836c        0x0 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x000000000041936c                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0x000000000041936c        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x000000000041936c        0x0
+                0x000000000041936c                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x000000000041936c                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x000000000041936c        0x0
+                0x000000000041936c                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x000000000041936c                PROVIDE (__init_array_end = .)
+
+.fini_array     0x000000000041936c        0x0
+                0x000000000041936c                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x000000000041936c                PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x000000000041936c        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x000000000041936c        0x0 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+
+.dynamic        0x0000000000419370      0x150
+ *(.dynamic)
+ .dynamic       0x0000000000419370      0x150 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+                0x0000000000419370                _DYNAMIC
+
+.got            0x00000000004194c0        0x0
+ *(.got)
+ .got           0x00000000004194c0        0x0 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+ *(.igot)
+                0x00000000004194c0                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x00000000004194c0      0x238
+ *(.got.plt)
+ .got.plt       0x00000000004194c0      0x238 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+                0x00000000004194c0                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x00000000004196f8        0x0 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+
+.data           0x0000000000419700      0x538
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.font_edit_window_cb
+                0x0000000000419700       0x58 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+ .data.ui_wdecor_btn_close_decor_ops
+                0x0000000000419758        0x8 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ .data.ui_wdecor_btn_close_cb
+                0x0000000000419760       0x18 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ .data.ui_wdecor_btn_max_decor_ops
+                0x0000000000419778        0x8 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ .data.ui_wdecor_btn_max_cb
+                0x0000000000419780       0x18 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ .data.ui_wdecor_btn_min_decor_ops
+                0x0000000000419798        0x8 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ .data.ui_wdecor_btn_min_cb
+                0x00000000004197a0       0x18 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ *fill*         0x00000000004197b8        0x8 
+ .data.ui_window_app_mem_gc_cb
+                0x00000000004197c0       0x28 uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x00000000004197e8       0x18 
+ .data.ui_window_mem_gc_cb
+                0x0000000000419800       0x28 uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x0000000000419828       0x18 
+ .data.wnd_sysmenu_cb
+                0x0000000000419840       0x20 uspace/lib/libui.a.p/ui_src_window.c.o
+ .data.wdecor_cb
+                0x0000000000419860       0x58 uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x00000000004198b8        0x8 
+ .data.dwnd_cb  0x00000000004198c0       0x30 uspace/lib/libui.a.p/ui_src_window.c.o
+ *fill*         0x00000000004198f0       0x10 
+ .data.dummygc_ops
+                0x0000000000419900       0x58 uspace/lib/libui.a.p/ui_src_dummygc.c.o
+                0x0000000000419900                dummygc_ops
+ *fill*         0x0000000000419958        0x8 
+ .data.ui_menu_popup_cb
+                0x0000000000419960       0x20 uspace/lib/libui.a.p/ui_src_menu.c.o
+ .data.double_hbrace_chars
+                0x0000000000419980       0x18 uspace/lib/libui.a.p/ui_src_paint.c.o
+ *fill*         0x0000000000419998        0x8 
+ .data.single_hbrace_chars
+                0x00000000004199a0       0x18 uspace/lib/libui.a.p/ui_src_paint.c.o
+ *fill*         0x00000000004199b8        0x8 
+ .data.double_box_chars
+                0x00000000004199c0       0x48 uspace/lib/libui.a.p/ui_src_paint.c.o
+ *fill*         0x0000000000419a08       0x18 
+ .data.single_box_chars
+                0x0000000000419a20       0x48 uspace/lib/libui.a.p/ui_src_paint.c.o
+ *fill*         0x0000000000419a68       0x18 
+ .data.ui_pbutton_ops
+                0x0000000000419a80       0x28 uspace/lib/libui.a.p/ui_src_pbutton.c.o
+                0x0000000000419a80                ui_pbutton_ops
+ *fill*         0x0000000000419aa8       0x18 
+ .data.ui_popup_window_cb
+                0x0000000000419ac0       0x58 uspace/lib/libui.a.p/ui_src_popup.c.o
+ *fill*         0x0000000000419b18        0x8 
+ .data.mem_gc_ops
+                0x0000000000419b20       0x58 uspace/lib/libmemgfx.a.p/memgfx_src_memgc.c.o
+                0x0000000000419b20                mem_gc_ops
+ *fill*         0x0000000000419b78        0x8 
+ .data.ipc_gc_ops
+                0x0000000000419b80       0x58 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+                0x0000000000419b80                ipc_gc_ops
+ *fill*         0x0000000000419bd8        0x8 
+ .data.console_gc_ops
+                0x0000000000419be0       0x58 uspace/lib/libcongfx.a.p/congfx_src_console.c.o
+                0x0000000000419be0                console_gc_ops
+
+.data1
+ *(.data1)
+                0x0000000000419c38                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x0000000000419c38                . = .
+                0x0000000000419c38                __bss_start = .
+
+.bss            0x0000000000419c40       0x68
+ *(.dynbss)
+ *fill*         0x0000000000419c40        0x0 
+ .dynbss        0x0000000000419c40       0x68 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+                0x0000000000419c40                stdout
+                0x0000000000419c50                stdin
+                0x0000000000419c60                __progsymbols
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ *(COMMON)
+                0x0000000000419ca8                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x0000000000419ca8                . = ALIGN (0x8)
+                0x0000000000419ca8                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x000000000041bca8        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x000000000041bca8                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x000000000041bca8                . = ALIGN (0x8)
+                0x0000000000419ca8                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x000000000041bca8                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/app_fontedit.p/app_fontedit_fontedit.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.a.p/ui_src_ui.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.a.p/ui_src_wdecor.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.a.p/ui_src_window.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.a.p/ui_src_clickmatic.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.a.p/ui_src_control.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.a.p/ui_src_dummygc.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.a.p/ui_src_menu.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.a.p/ui_src_menubar.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.a.p/ui_src_menudd.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.a.p/ui_src_menuentry.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.a.p/ui_src_paint.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.a.p/ui_src_pbutton.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.a.p/ui_src_popup.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.a.p/ui_src_resource.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.a.p/ui_src_accel.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libgfx.a.p/gfx_src_bitmap.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libgfx.a.p/gfx_src_color.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libgfx.a.p/gfx_src_coord.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libgfx.a.p/gfx_src_context.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libgfx.a.p/gfx_src_cursor.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libgfx.a.p/gfx_src_render.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libgfxfont.a.p/gfxfont_src_font.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libgfxfont.a.p/gfxfont_src_glyph.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libgfxfont.a.p/gfxfont_src_glyph_bmp.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libgfxfont.a.p/gfxfont_src_text.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libgfxfont.a.p/gfxfont_src_typeface.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libriff.a.p/riff_src_chunk.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libmemgfx.a.p/memgfx_src_memgc.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libmemgfx.a.p/memgfx_src_xlategc.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdisplay.a.p/display_src_display.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libipcgfx.a.p/ipcgfx_src_client.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libcongfx.a.p/congfx_src_console.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libconsole.a.p/console_src_console.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/app_fontedit elf64-x86-64)

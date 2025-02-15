@@ -1,0 +1,1681 @@
+
+As-needed library included to satisfy reference by file (symbol)
+
+libblock.so.0                 uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o (block_cache_fini)
+libc.so.0                     uspace/lib/libext4.so.0.0.p/ext4_src_directory_index.c.o (memmove)
+libcrypto.so.0                uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o (crc16_ibm)
+libfs.so.0                    uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o (fs_node_initialize)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_bitmap.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_bitmap.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_bitmap.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_block_group.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_block_group.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_block_group.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_directory.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_directory.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_directory.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_directory_index.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_directory_index.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_directory_index.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_hash.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_hash.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_hash.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_ialloc.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_ialloc.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_ialloc.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+LOAD uspace/lib/libext4.so.0.0.p/ext4_src_bitmap.c.o
+LOAD uspace/lib/libext4.so.0.0.p/ext4_src_block_group.c.o
+LOAD uspace/lib/libext4.so.0.0.p/ext4_src_directory.c.o
+LOAD uspace/lib/libext4.so.0.0.p/ext4_src_directory_index.c.o
+LOAD uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+LOAD uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o
+LOAD uspace/lib/libext4.so.0.0.p/ext4_src_hash.c.o
+LOAD uspace/lib/libext4.so.0.0.p/ext4_src_ialloc.c.o
+LOAD uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+LOAD uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+LOAD uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+START GROUP
+LOAD uspace/lib/libblock.so.0.0
+LOAD uspace/lib/libdevice.so.0.0
+LOAD uspace/lib/libc.so.0.0
+LOAD uspace/lib/libcrypto.so.0.0
+LOAD uspace/lib/libfs.so.0.0
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000000120                . = (SEGMENT_START ("text-segment", 0x0) + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000000120      0x8cc
+ *(.hash)
+ .hash          0x0000000000000120      0x8cc uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x00000000000009f0     0x1bf0
+ *(.dynsym)
+ .dynsym        0x00000000000009f0     0x1bf0 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+
+.dynstr         0x00000000000025e0     0x2204
+ *(.dynstr)
+ .dynstr        0x00000000000025e0     0x2204 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+
+.gnu.version    0x00000000000047e4        0x0
+ *(.gnu.version)
+ .gnu.version   0x00000000000047e4        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+
+.gnu.version_d  0x00000000000047e8        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x00000000000047e8        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+
+.gnu.version_r  0x00000000000047e8        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x00000000000047e8        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+
+.rela.dyn       0x00000000000047e8      0x378
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.local.ext4_ops
+                0x00000000000047e8       0xd8 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+ .rela.data.rel.ext4_libfs_ops
+                0x00000000000048c0      0x1c8 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+ .rela.data.rel.ro.local.open_nodes_ops
+                0x0000000000004a88       0x48 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+ .rela.data.rel.local.open_nodes_lock
+                0x0000000000004ad0       0x30 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+ .rela.data.rel.local.instance_list_mutex
+                0x0000000000004b00       0x30 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+ .rela.data.rel.local.instance_list
+                0x0000000000004b30       0x30 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000004b60        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+ .rela.ifunc    0x0000000000004b60        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+
+.rela.plt       0x0000000000004b60     0x1800
+ *(.rela.plt)
+ .rela.plt      0x0000000000004b60     0x1800 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+ *(.rela.iplt)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x0000000000006360     0x1010
+ *(.plt)
+ .plt           0x0000000000006360     0x1010 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+ *(.iplt)
+
+.plt.got        0x0000000000007370        0x0
+ *(.plt.got)
+ .plt.got       0x0000000000007370        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x0000000000007370     0xa3b3
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ .text.unlikely.ext4_filesystem_open
+                0x0000000000007370        0xa uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o
+ .text.unlikely.ext4_index_get
+                0x000000000000737a        0xa uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ .text.unlikely.ext4_is_file
+                0x0000000000007384        0xa uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ .text.unlikely.ext4_is_directory
+                0x000000000000738e        0xa uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ .text.unlikely.ext4_size_get
+                0x0000000000007398        0xa uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ .text.unlikely.ext4_link
+                0x00000000000073a2        0xa uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ .text.unlikely.ext4_has_children
+                0x00000000000073ac        0xa uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ .text.unlikely.ext4_node_put
+                0x00000000000073b6        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ .text.unlikely.ext4_destroy_node
+                0x00000000000073bf        0xa uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ .text.unlikely.ext4_lnkcnt_get
+                0x00000000000073c9        0xa uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ .text.unlikely.ext4_unlink
+                0x00000000000073d3        0xa uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ .text.unlikely.ext4_match
+                0x00000000000073dd        0xa uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ .text.unlikely.ext4_sync
+                0x00000000000073e7        0xa uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ .text.unlikely.ext4_truncate
+                0x00000000000073f1        0xa uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ .text.unlikely.ext4_write
+                0x00000000000073fb        0xa uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ *fill*         0x0000000000007405        0xb 
+ .text.ext4_balloc_free_blocks_internal
+                0x0000000000007410      0x184 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+ *fill*         0x0000000000007594        0xc 
+ .text.ext4_balloc_free_block
+                0x00000000000075a0      0x13e uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+                0x00000000000075a0                ext4_balloc_free_block
+ *fill*         0x00000000000076de        0x2 
+ .text.ext4_balloc_free_blocks
+                0x00000000000076e0       0xa1 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+                0x00000000000076e0                ext4_balloc_free_blocks
+ *fill*         0x0000000000007781        0xf 
+ .text.ext4_balloc_get_first_data_block_in_group
+                0x0000000000007790       0xfb uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+                0x0000000000007790                ext4_balloc_get_first_data_block_in_group
+ *fill*         0x000000000000788b        0x5 
+ .text.ext4_balloc_alloc_block
+                0x0000000000007890      0x579 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+                0x0000000000007890                ext4_balloc_alloc_block
+ *fill*         0x0000000000007e09        0x7 
+ .text.ext4_balloc_try_alloc_block
+                0x0000000000007e10      0x198 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+                0x0000000000007e10                ext4_balloc_try_alloc_block
+ *fill*         0x0000000000007fa8        0x8 
+ .text.ext4_bitmap_free_bit
+                0x0000000000007fb0       0x17 uspace/lib/libext4.so.0.0.p/ext4_src_bitmap.c.o
+                0x0000000000007fb0                ext4_bitmap_free_bit
+ *fill*         0x0000000000007fc7        0x9 
+ .text.ext4_bitmap_free_bits
+                0x0000000000007fd0      0x168 uspace/lib/libext4.so.0.0.p/ext4_src_bitmap.c.o
+                0x0000000000007fd0                ext4_bitmap_free_bits
+ *fill*         0x0000000000008138        0x8 
+ .text.ext4_bitmap_set_bit
+                0x0000000000008140       0x1a uspace/lib/libext4.so.0.0.p/ext4_src_bitmap.c.o
+                0x0000000000008140                ext4_bitmap_set_bit
+ *fill*         0x000000000000815a        0x6 
+ .text.ext4_bitmap_is_free_bit
+                0x0000000000008160       0x18 uspace/lib/libext4.so.0.0.p/ext4_src_bitmap.c.o
+                0x0000000000008160                ext4_bitmap_is_free_bit
+ *fill*         0x0000000000008178        0x8 
+ .text.ext4_bitmap_find_free_byte_and_set_bit
+                0x0000000000008180       0x4f uspace/lib/libext4.so.0.0.p/ext4_src_bitmap.c.o
+                0x0000000000008180                ext4_bitmap_find_free_byte_and_set_bit
+ *fill*         0x00000000000081cf        0x1 
+ .text.ext4_bitmap_find_free_bit_and_set
+                0x00000000000081d0      0x117 uspace/lib/libext4.so.0.0.p/ext4_src_bitmap.c.o
+                0x00000000000081d0                ext4_bitmap_find_free_bit_and_set
+ *fill*         0x00000000000082e7        0x9 
+ .text.ext4_block_group_get_block_bitmap
+                0x00000000000082f0       0x38 uspace/lib/libext4.so.0.0.p/ext4_src_block_group.c.o
+                0x00000000000082f0                ext4_block_group_get_block_bitmap
+ *fill*         0x0000000000008328        0x8 
+ .text.ext4_block_group_set_block_bitmap
+                0x0000000000008330       0x2d uspace/lib/libext4.so.0.0.p/ext4_src_block_group.c.o
+                0x0000000000008330                ext4_block_group_set_block_bitmap
+ *fill*         0x000000000000835d        0x3 
+ .text.ext4_block_group_get_inode_bitmap
+                0x0000000000008360       0x39 uspace/lib/libext4.so.0.0.p/ext4_src_block_group.c.o
+                0x0000000000008360                ext4_block_group_get_inode_bitmap
+ *fill*         0x0000000000008399        0x7 
+ .text.ext4_block_group_set_inode_bitmap
+                0x00000000000083a0       0x2e uspace/lib/libext4.so.0.0.p/ext4_src_block_group.c.o
+                0x00000000000083a0                ext4_block_group_set_inode_bitmap
+ *fill*         0x00000000000083ce        0x2 
+ .text.ext4_block_group_get_inode_table_first_block
+                0x00000000000083d0       0x39 uspace/lib/libext4.so.0.0.p/ext4_src_block_group.c.o
+                0x00000000000083d0                ext4_block_group_get_inode_table_first_block
+ *fill*         0x0000000000008409        0x7 
+ .text.ext4_block_group_set_inode_table_first_block
+                0x0000000000008410       0x2e uspace/lib/libext4.so.0.0.p/ext4_src_block_group.c.o
+                0x0000000000008410                ext4_block_group_set_inode_table_first_block
+ *fill*         0x000000000000843e        0x2 
+ .text.ext4_block_group_get_free_blocks_count
+                0x0000000000008440       0x3a uspace/lib/libext4.so.0.0.p/ext4_src_block_group.c.o
+                0x0000000000008440                ext4_block_group_get_free_blocks_count
+ *fill*         0x000000000000847a        0x6 
+ .text.ext4_block_group_set_free_blocks_count
+                0x0000000000008480       0x2e uspace/lib/libext4.so.0.0.p/ext4_src_block_group.c.o
+                0x0000000000008480                ext4_block_group_set_free_blocks_count
+ *fill*         0x00000000000084ae        0x2 
+ .text.ext4_block_group_get_free_inodes_count
+                0x00000000000084b0       0x3a uspace/lib/libext4.so.0.0.p/ext4_src_block_group.c.o
+                0x00000000000084b0                ext4_block_group_get_free_inodes_count
+ *fill*         0x00000000000084ea        0x6 
+ .text.ext4_block_group_set_free_inodes_count
+                0x00000000000084f0       0x2e uspace/lib/libext4.so.0.0.p/ext4_src_block_group.c.o
+                0x00000000000084f0                ext4_block_group_set_free_inodes_count
+ *fill*         0x000000000000851e        0x2 
+ .text.ext4_block_group_get_used_dirs_count
+                0x0000000000008520       0x3a uspace/lib/libext4.so.0.0.p/ext4_src_block_group.c.o
+                0x0000000000008520                ext4_block_group_get_used_dirs_count
+ *fill*         0x000000000000855a        0x6 
+ .text.ext4_block_group_set_used_dirs_count
+                0x0000000000008560       0x2e uspace/lib/libext4.so.0.0.p/ext4_src_block_group.c.o
+                0x0000000000008560                ext4_block_group_set_used_dirs_count
+ *fill*         0x000000000000858e        0x2 
+ .text.ext4_block_group_get_flags
+                0x0000000000008590        0xa uspace/lib/libext4.so.0.0.p/ext4_src_block_group.c.o
+                0x0000000000008590                ext4_block_group_get_flags
+ *fill*         0x000000000000859a        0x6 
+ .text.ext4_block_group_set_flags
+                0x00000000000085a0        0xa uspace/lib/libext4.so.0.0.p/ext4_src_block_group.c.o
+                0x00000000000085a0                ext4_block_group_set_flags
+ *fill*         0x00000000000085aa        0x6 
+ .text.ext4_block_group_get_itable_unused
+                0x00000000000085b0       0x3a uspace/lib/libext4.so.0.0.p/ext4_src_block_group.c.o
+                0x00000000000085b0                ext4_block_group_get_itable_unused
+ *fill*         0x00000000000085ea        0x6 
+ .text.ext4_block_group_set_itable_unused
+                0x00000000000085f0       0x2e uspace/lib/libext4.so.0.0.p/ext4_src_block_group.c.o
+                0x00000000000085f0                ext4_block_group_set_itable_unused
+ *fill*         0x000000000000861e        0x2 
+ .text.ext4_block_group_get_checksum
+                0x0000000000008620        0xa uspace/lib/libext4.so.0.0.p/ext4_src_block_group.c.o
+                0x0000000000008620                ext4_block_group_get_checksum
+ *fill*         0x000000000000862a        0x6 
+ .text.ext4_block_group_set_checksum
+                0x0000000000008630        0xa uspace/lib/libext4.so.0.0.p/ext4_src_block_group.c.o
+                0x0000000000008630                ext4_block_group_set_checksum
+ *fill*         0x000000000000863a        0x6 
+ .text.ext4_block_group_has_flag
+                0x0000000000008640       0x1e uspace/lib/libext4.so.0.0.p/ext4_src_block_group.c.o
+                0x0000000000008640                ext4_block_group_has_flag
+ *fill*         0x000000000000865e        0x2 
+ .text.ext4_block_group_set_flag
+                0x0000000000008660       0x24 uspace/lib/libext4.so.0.0.p/ext4_src_block_group.c.o
+                0x0000000000008660                ext4_block_group_set_flag
+ *fill*         0x0000000000008684        0xc 
+ .text.ext4_block_group_clear_flag
+                0x0000000000008690       0x26 uspace/lib/libext4.so.0.0.p/ext4_src_block_group.c.o
+                0x0000000000008690                ext4_block_group_clear_flag
+ *fill*         0x00000000000086b6        0xa 
+ .text.ext4_directory_entry_ll_get_inode
+                0x00000000000086c0        0x8 uspace/lib/libext4.so.0.0.p/ext4_src_directory.c.o
+                0x00000000000086c0                ext4_directory_entry_ll_get_inode
+ *fill*         0x00000000000086c8        0x8 
+ .text.ext4_directory_entry_ll_set_inode
+                0x00000000000086d0        0x8 uspace/lib/libext4.so.0.0.p/ext4_src_directory.c.o
+                0x00000000000086d0                ext4_directory_entry_ll_set_inode
+ *fill*         0x00000000000086d8        0x8 
+ .text.ext4_directory_entry_ll_get_entry_length
+                0x00000000000086e0        0xa uspace/lib/libext4.so.0.0.p/ext4_src_directory.c.o
+                0x00000000000086e0                ext4_directory_entry_ll_get_entry_length
+ *fill*         0x00000000000086ea        0x6 
+ .text.ext4_directory_entry_ll_set_entry_length
+                0x00000000000086f0        0xa uspace/lib/libext4.so.0.0.p/ext4_src_directory.c.o
+                0x00000000000086f0                ext4_directory_entry_ll_set_entry_length
+ *fill*         0x00000000000086fa        0x6 
+ .text.ext4_directory_entry_ll_get_name_length
+                0x0000000000008700       0x41 uspace/lib/libext4.so.0.0.p/ext4_src_directory.c.o
+                0x0000000000008700                ext4_directory_entry_ll_get_name_length
+ *fill*         0x0000000000008741        0xf 
+ .text.ext4_directory_iterator_seek.part.0.constprop.0
+                0x0000000000008750      0x14d uspace/lib/libext4.so.0.0.p/ext4_src_directory.c.o
+ *fill*         0x000000000000889d        0x3 
+ .text.ext4_directory_entry_ll_set_name_length
+                0x00000000000088a0       0x54 uspace/lib/libext4.so.0.0.p/ext4_src_directory.c.o
+                0x00000000000088a0                ext4_directory_entry_ll_set_name_length
+ *fill*         0x00000000000088f4        0xc 
+ .text.ext4_directory_entry_ll_get_inode_type
+                0x0000000000008900       0x3d uspace/lib/libext4.so.0.0.p/ext4_src_directory.c.o
+                0x0000000000008900                ext4_directory_entry_ll_get_inode_type
+ *fill*         0x000000000000893d        0x3 
+ .text.ext4_directory_entry_ll_set_inode_type
+                0x0000000000008940       0x49 uspace/lib/libext4.so.0.0.p/ext4_src_directory.c.o
+                0x0000000000008940                ext4_directory_entry_ll_set_inode_type
+ *fill*         0x0000000000008989        0x7 
+ .text.ext4_directory_iterator_init
+                0x0000000000008990       0x7f uspace/lib/libext4.so.0.0.p/ext4_src_directory.c.o
+                0x0000000000008990                ext4_directory_iterator_init
+ *fill*         0x0000000000008a0f        0x1 
+ .text.ext4_directory_iterator_next
+                0x0000000000008a10       0x97 uspace/lib/libext4.so.0.0.p/ext4_src_directory.c.o
+                0x0000000000008a10                ext4_directory_iterator_next
+ *fill*         0x0000000000008aa7        0x9 
+ .text.ext4_directory_iterator_fini
+                0x0000000000008ab0       0x26 uspace/lib/libext4.so.0.0.p/ext4_src_directory.c.o
+                0x0000000000008ab0                ext4_directory_iterator_fini
+ *fill*         0x0000000000008ad6        0xa 
+ .text.ext4_directory_write_entry
+                0x0000000000008ae0       0xcf uspace/lib/libext4.so.0.0.p/ext4_src_directory.c.o
+                0x0000000000008ae0                ext4_directory_write_entry
+ *fill*         0x0000000000008baf        0x1 
+ .text.ext4_directory_try_insert_entry
+                0x0000000000008bb0      0x150 uspace/lib/libext4.so.0.0.p/ext4_src_directory.c.o
+                0x0000000000008bb0                ext4_directory_try_insert_entry
+ .text.ext4_directory_add_entry
+                0x0000000000008d00      0x204 uspace/lib/libext4.so.0.0.p/ext4_src_directory.c.o
+                0x0000000000008d00                ext4_directory_add_entry
+ *fill*         0x0000000000008f04        0xc 
+ .text.ext4_directory_find_in_block
+                0x0000000000008f10       0xcc uspace/lib/libext4.so.0.0.p/ext4_src_directory.c.o
+                0x0000000000008f10                ext4_directory_find_in_block
+ *fill*         0x0000000000008fdc        0x4 
+ .text.ext4_directory_find_entry
+                0x0000000000008fe0      0x18f uspace/lib/libext4.so.0.0.p/ext4_src_directory.c.o
+                0x0000000000008fe0                ext4_directory_find_entry
+ *fill*         0x000000000000916f        0x1 
+ .text.ext4_directory_destroy_result
+                0x0000000000009170       0x16 uspace/lib/libext4.so.0.0.p/ext4_src_directory.c.o
+                0x0000000000009170                ext4_directory_destroy_result
+ *fill*         0x0000000000009186        0xa 
+ .text.ext4_directory_remove_entry
+                0x0000000000009190      0x144 uspace/lib/libext4.so.0.0.p/ext4_src_directory.c.o
+                0x0000000000009190                ext4_directory_remove_entry
+ *fill*         0x00000000000092d4        0xc 
+ .text.ext4_directory_dx_entry_comparator
+                0x00000000000092e0       0x13 uspace/lib/libext4.so.0.0.p/ext4_src_directory_index.c.o
+ *fill*         0x00000000000092f3        0xd 
+ .text.ext4_directory_dx_root_info_get_hash_version
+                0x0000000000009300        0xa uspace/lib/libext4.so.0.0.p/ext4_src_directory_index.c.o
+                0x0000000000009300                ext4_directory_dx_root_info_get_hash_version
+ *fill*         0x000000000000930a        0x6 
+ .text.ext4_directory_dx_root_info_set_hash_version
+                0x0000000000009310        0xa uspace/lib/libext4.so.0.0.p/ext4_src_directory_index.c.o
+                0x0000000000009310                ext4_directory_dx_root_info_set_hash_version
+ *fill*         0x000000000000931a        0x6 
+ .text.ext4_directory_dx_root_info_get_info_length
+                0x0000000000009320        0xa uspace/lib/libext4.so.0.0.p/ext4_src_directory_index.c.o
+                0x0000000000009320                ext4_directory_dx_root_info_get_info_length
+ *fill*         0x000000000000932a        0x6 
+ .text.ext4_directory_dx_root_info_set_info_length
+                0x0000000000009330        0xa uspace/lib/libext4.so.0.0.p/ext4_src_directory_index.c.o
+                0x0000000000009330                ext4_directory_dx_root_info_set_info_length
+ *fill*         0x000000000000933a        0x6 
+ .text.ext4_directory_dx_root_info_get_indirect_levels
+                0x0000000000009340        0xa uspace/lib/libext4.so.0.0.p/ext4_src_directory_index.c.o
+                0x0000000000009340                ext4_directory_dx_root_info_get_indirect_levels
+ *fill*         0x000000000000934a        0x6 
+ .text.ext4_directory_dx_root_info_set_indirect_levels
+                0x0000000000009350        0xa uspace/lib/libext4.so.0.0.p/ext4_src_directory_index.c.o
+                0x0000000000009350                ext4_directory_dx_root_info_set_indirect_levels
+ *fill*         0x000000000000935a        0x6 
+ .text.ext4_directory_dx_countlimit_get_limit
+                0x0000000000009360        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_directory_index.c.o
+                0x0000000000009360                ext4_directory_dx_countlimit_get_limit
+ *fill*         0x0000000000009369        0x7 
+ .text.ext4_directory_hinfo_init.isra.0
+                0x0000000000009370       0xdd uspace/lib/libext4.so.0.0.p/ext4_src_directory_index.c.o
+ *fill*         0x000000000000944d        0x3 
+ .text.ext4_directory_dx_countlimit_set_limit
+                0x0000000000009450        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_directory_index.c.o
+                0x0000000000009450                ext4_directory_dx_countlimit_set_limit
+ *fill*         0x0000000000009459        0x7 
+ .text.ext4_directory_dx_countlimit_get_count
+                0x0000000000009460        0xa uspace/lib/libext4.so.0.0.p/ext4_src_directory_index.c.o
+                0x0000000000009460                ext4_directory_dx_countlimit_get_count
+ *fill*         0x000000000000946a        0x6 
+ .text.ext4_directory_dx_countlimit_set_count
+                0x0000000000009470        0xa uspace/lib/libext4.so.0.0.p/ext4_src_directory_index.c.o
+                0x0000000000009470                ext4_directory_dx_countlimit_set_count
+ *fill*         0x000000000000947a        0x6 
+ .text.ext4_directory_dx_entry_get_hash
+                0x0000000000009480        0x8 uspace/lib/libext4.so.0.0.p/ext4_src_directory_index.c.o
+                0x0000000000009480                ext4_directory_dx_entry_get_hash
+ *fill*         0x0000000000009488        0x8 
+ .text.ext4_directory_dx_entry_set_hash
+                0x0000000000009490        0x8 uspace/lib/libext4.so.0.0.p/ext4_src_directory_index.c.o
+                0x0000000000009490                ext4_directory_dx_entry_set_hash
+ *fill*         0x0000000000009498        0x8 
+ .text.ext4_directory_dx_entry_get_block
+                0x00000000000094a0        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_directory_index.c.o
+                0x00000000000094a0                ext4_directory_dx_entry_get_block
+ *fill*         0x00000000000094a9        0x7 
+ .text.ext4_directory_dx_get_leaf
+                0x00000000000094b0      0x1be uspace/lib/libext4.so.0.0.p/ext4_src_directory_index.c.o
+ *fill*         0x000000000000966e        0x2 
+ .text.ext4_directory_dx_entry_set_block
+                0x0000000000009670        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_directory_index.c.o
+                0x0000000000009670                ext4_directory_dx_entry_set_block
+ *fill*         0x0000000000009679        0x7 
+ .text.ext4_directory_dx_init
+                0x0000000000009680      0x166 uspace/lib/libext4.so.0.0.p/ext4_src_directory_index.c.o
+                0x0000000000009680                ext4_directory_dx_init
+ *fill*         0x00000000000097e6        0xa 
+ .text.ext4_directory_dx_find_entry
+                0x00000000000097f0      0x316 uspace/lib/libext4.so.0.0.p/ext4_src_directory_index.c.o
+                0x00000000000097f0                ext4_directory_dx_find_entry
+ *fill*         0x0000000000009b06        0xa 
+ .text.ext4_directory_dx_add_entry
+                0x0000000000009b10      0xcf7 uspace/lib/libext4.so.0.0.p/ext4_src_directory_index.c.o
+                0x0000000000009b10                ext4_directory_dx_add_entry
+ *fill*         0x000000000000a807        0x9 
+ .text.ext4_extent_get_first_block
+                0x000000000000a810        0x8 uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+                0x000000000000a810                ext4_extent_get_first_block
+ *fill*         0x000000000000a818        0x8 
+ .text.ext4_extent_set_first_block
+                0x000000000000a820        0x8 uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+                0x000000000000a820                ext4_extent_set_first_block
+ *fill*         0x000000000000a828        0x8 
+ .text.ext4_extent_get_block_count
+                0x000000000000a830        0xa uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+                0x000000000000a830                ext4_extent_get_block_count
+ *fill*         0x000000000000a83a        0x6 
+ .text.ext4_extent_set_block_count
+                0x000000000000a840        0xa uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+                0x000000000000a840                ext4_extent_set_block_count
+ *fill*         0x000000000000a84a        0x6 
+ .text.ext4_extent_get_start
+                0x000000000000a850       0x14 uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+                0x000000000000a850                ext4_extent_get_start
+ *fill*         0x000000000000a864        0xc 
+ .text.ext4_extent_set_start
+                0x000000000000a870       0x11 uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+                0x000000000000a870                ext4_extent_set_start
+ *fill*         0x000000000000a881        0xf 
+ .text.ext4_extent_index_get_first_block
+                0x000000000000a890        0x8 uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+                0x000000000000a890                ext4_extent_index_get_first_block
+ *fill*         0x000000000000a898        0x8 
+ .text.ext4_extent_index_set_first_block
+                0x000000000000a8a0        0x8 uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+                0x000000000000a8a0                ext4_extent_index_set_first_block
+ *fill*         0x000000000000a8a8        0x8 
+ .text.ext4_extent_index_get_leaf
+                0x000000000000a8b0       0x14 uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+                0x000000000000a8b0                ext4_extent_index_get_leaf
+ *fill*         0x000000000000a8c4        0xc 
+ .text.ext4_extent_index_set_leaf
+                0x000000000000a8d0       0x11 uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+                0x000000000000a8d0                ext4_extent_index_set_leaf
+ *fill*         0x000000000000a8e1        0xf 
+ .text.ext4_extent_header_get_magic
+                0x000000000000a8f0        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+                0x000000000000a8f0                ext4_extent_header_get_magic
+ *fill*         0x000000000000a8f9        0x7 
+ .text.ext4_extent_header_set_magic
+                0x000000000000a900        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+                0x000000000000a900                ext4_extent_header_set_magic
+ *fill*         0x000000000000a909        0x7 
+ .text.ext4_extent_header_get_entries_count
+                0x000000000000a910        0xa uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+                0x000000000000a910                ext4_extent_header_get_entries_count
+ *fill*         0x000000000000a91a        0x6 
+ .text.ext4_extent_header_set_entries_count
+                0x000000000000a920        0xa uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+                0x000000000000a920                ext4_extent_header_set_entries_count
+ *fill*         0x000000000000a92a        0x6 
+ .text.ext4_extent_header_get_max_entries_count
+                0x000000000000a930        0xa uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+                0x000000000000a930                ext4_extent_header_get_max_entries_count
+ *fill*         0x000000000000a93a        0x6 
+ .text.ext4_extent_header_set_max_entries_count
+                0x000000000000a940        0xa uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+                0x000000000000a940                ext4_extent_header_set_max_entries_count
+ *fill*         0x000000000000a94a        0x6 
+ .text.ext4_extent_header_get_depth
+                0x000000000000a950        0xa uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+                0x000000000000a950                ext4_extent_header_get_depth
+ *fill*         0x000000000000a95a        0x6 
+ .text.ext4_extent_find_extent
+                0x000000000000a960      0x2b5 uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+ *fill*         0x000000000000ac15        0xb 
+ .text.ext4_extent_release_branch
+                0x000000000000ac20      0x123 uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+ *fill*         0x000000000000ad43        0xd 
+ .text.ext4_extent_header_set_depth
+                0x000000000000ad50        0xa uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+                0x000000000000ad50                ext4_extent_header_set_depth
+ *fill*         0x000000000000ad5a        0x6 
+ .text.ext4_extent_header_get_generation
+                0x000000000000ad60        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+                0x000000000000ad60                ext4_extent_header_get_generation
+ *fill*         0x000000000000ad69        0x7 
+ .text.ext4_extent_header_set_generation
+                0x000000000000ad70        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+                0x000000000000ad70                ext4_extent_header_set_generation
+ *fill*         0x000000000000ad79        0x7 
+ .text.ext4_extent_find_block
+                0x000000000000ad80      0x23f uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+                0x000000000000ad80                ext4_extent_find_block
+ *fill*         0x000000000000afbf        0x1 
+ .text.ext4_extent_release_blocks_from
+                0x000000000000afc0      0x2e9 uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+                0x000000000000afc0                ext4_extent_release_blocks_from
+ *fill*         0x000000000000b2a9        0x7 
+ .text.ext4_extent_append_block
+                0x000000000000b2b0      0x78c uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+                0x000000000000b2b0                ext4_extent_append_block
+ *fill*         0x000000000000ba3c        0x4 
+ .text.ext4_filesystem_init
+                0x000000000000ba40      0x14e uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o
+ *fill*         0x000000000000bb8e        0x2 
+ .text.ext4_filesystem_probe
+                0x000000000000bb90       0x9a uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o
+                0x000000000000bb90                ext4_filesystem_probe
+ *fill*         0x000000000000bc2a        0x6 
+ .text.ext4_filesystem_open
+                0x000000000000bc30      0x14c uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o
+                0x000000000000bc30                ext4_filesystem_open
+ *fill*         0x000000000000bd7c        0x4 
+ .text.ext4_filesystem_close
+                0x000000000000bd80       0x4c uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o
+                0x000000000000bd80                ext4_filesystem_close
+ *fill*         0x000000000000bdcc        0x4 
+ .text.ext4_filesystem_blockaddr2_index_in_group
+                0x000000000000bdd0       0x55 uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o
+                0x000000000000bdd0                ext4_filesystem_blockaddr2_index_in_group
+ *fill*         0x000000000000be25        0xb 
+ .text.ext4_filesystem_index_in_group2blockaddr
+                0x000000000000be30       0x4e uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o
+                0x000000000000be30                ext4_filesystem_index_in_group2blockaddr
+ *fill*         0x000000000000be7e        0x2 
+ .text.ext4_filesystem_blockaddr2group
+                0x000000000000be80       0x3e uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o
+                0x000000000000be80                ext4_filesystem_blockaddr2group
+ *fill*         0x000000000000bebe        0x2 
+ .text.ext4_filesystem_bg_get_itable_size
+                0x000000000000bec0       0x93 uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o
+                0x000000000000bec0                ext4_filesystem_bg_get_itable_size
+ *fill*         0x000000000000bf53        0xd 
+ .text.ext4_filesystem_bg_get_backup_blocks
+                0x000000000000bf60       0x15 uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o
+                0x000000000000bf60                ext4_filesystem_bg_get_backup_blocks
+ *fill*         0x000000000000bf75        0xb 
+ .text.ext4_filesystem_get_block_group_ref
+                0x000000000000bf80      0x540 uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o
+                0x000000000000bf80                ext4_filesystem_get_block_group_ref
+ .text.ext4_filesystem_put_block_group_ref
+                0x000000000000c4c0       0xfe uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o
+                0x000000000000c4c0                ext4_filesystem_put_block_group_ref
+ *fill*         0x000000000000c5be        0x2 
+ .text.ext4_filesystem_get_inode_ref
+                0x000000000000c5c0      0x114 uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o
+                0x000000000000c5c0                ext4_filesystem_get_inode_ref
+ *fill*         0x000000000000c6d4        0xc 
+ .text.ext4_filesystem_init_inode
+                0x000000000000c6e0      0x19f uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o
+ *fill*         0x000000000000c87f        0x1 
+ .text.ext4_filesystem_put_inode_ref
+                0x000000000000c880       0x2f uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o
+                0x000000000000c880                ext4_filesystem_put_inode_ref
+ *fill*         0x000000000000c8af        0x1 
+ .text.ext4_filesystem_alloc_inode
+                0x000000000000c8b0       0x77 uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o
+                0x000000000000c8b0                ext4_filesystem_alloc_inode
+ *fill*         0x000000000000c927        0x9 
+ .text.ext4_filesystem_create
+                0x000000000000c930      0x769 uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o
+                0x000000000000c930                ext4_filesystem_create
+ *fill*         0x000000000000d099        0x7 
+ .text.ext4_filesystem_free_inode
+                0x000000000000d0a0      0x340 uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o
+                0x000000000000d0a0                ext4_filesystem_free_inode
+ .text.ext4_filesystem_get_inode_data_block_index
+                0x000000000000d3e0      0x1e4 uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o
+                0x000000000000d3e0                ext4_filesystem_get_inode_data_block_index
+ *fill*         0x000000000000d5c4        0xc 
+ .text.ext4_filesystem_set_inode_data_block_index
+                0x000000000000d5d0      0x2fe uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o
+                0x000000000000d5d0                ext4_filesystem_set_inode_data_block_index
+ *fill*         0x000000000000d8ce        0x2 
+ .text.ext4_filesystem_release_inode_block
+                0x000000000000d8d0      0x208 uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o
+                0x000000000000d8d0                ext4_filesystem_release_inode_block
+ *fill*         0x000000000000dad8        0x8 
+ .text.ext4_filesystem_truncate_inode
+                0x000000000000dae0      0x12e uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o
+                0x000000000000dae0                ext4_filesystem_truncate_inode
+ *fill*         0x000000000000dc0e        0x2 
+ .text.ext4_filesystem_append_inode_block
+                0x000000000000dc10      0x12e uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o
+                0x000000000000dc10                ext4_filesystem_append_inode_block
+ *fill*         0x000000000000dd3e        0x2 
+ .text.ext4_hash_string
+                0x000000000000dd40       0x11 uspace/lib/libext4.so.0.0.p/ext4_src_hash.c.o
+                0x000000000000dd40                ext4_hash_string
+ *fill*         0x000000000000dd51        0xf 
+ .text.ext4_ialloc_free_inode
+                0x000000000000dd60      0x156 uspace/lib/libext4.so.0.0.p/ext4_src_ialloc.c.o
+                0x000000000000dd60                ext4_ialloc_free_inode
+ *fill*         0x000000000000deb6        0xa 
+ .text.ext4_ialloc_alloc_inode
+                0x000000000000dec0      0x2e8 uspace/lib/libext4.so.0.0.p/ext4_src_ialloc.c.o
+                0x000000000000dec0                ext4_ialloc_alloc_inode
+ *fill*         0x000000000000e1a8        0x8 
+ .text.ext4_ialloc_alloc_this_inode
+                0x000000000000e1b0      0x1b6 uspace/lib/libext4.so.0.0.p/ext4_src_ialloc.c.o
+                0x000000000000e1b0                ext4_ialloc_alloc_this_inode
+ *fill*         0x000000000000e366        0xa 
+ .text.ext4_inode_get_mode
+                0x000000000000e370       0x32 uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e370                ext4_inode_get_mode
+ *fill*         0x000000000000e3a2        0xe 
+ .text.ext4_inode_set_mode
+                0x000000000000e3b0       0x27 uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e3b0                ext4_inode_set_mode
+ *fill*         0x000000000000e3d7        0x9 
+ .text.ext4_inode_get_uid
+                0x000000000000e3e0        0xa uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e3e0                ext4_inode_get_uid
+ *fill*         0x000000000000e3ea        0x6 
+ .text.ext4_inode_set_uid
+                0x000000000000e3f0        0xa uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e3f0                ext4_inode_set_uid
+ *fill*         0x000000000000e3fa        0x6 
+ .text.ext4_inode_set_size
+                0x000000000000e400       0x10 uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e400                ext4_inode_set_size
+ .text.ext4_inode_get_access_time
+                0x000000000000e410        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e410                ext4_inode_get_access_time
+ *fill*         0x000000000000e419        0x7 
+ .text.ext4_inode_set_access_time
+                0x000000000000e420        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e420                ext4_inode_set_access_time
+ *fill*         0x000000000000e429        0x7 
+ .text.ext4_inode_get_change_inode_time
+                0x000000000000e430        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e430                ext4_inode_get_change_inode_time
+ *fill*         0x000000000000e439        0x7 
+ .text.ext4_inode_set_change_inode_time
+                0x000000000000e440        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e440                ext4_inode_set_change_inode_time
+ *fill*         0x000000000000e449        0x7 
+ .text.ext4_inode_get_modification_time
+                0x000000000000e450        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e450                ext4_inode_get_modification_time
+ *fill*         0x000000000000e459        0x7 
+ .text.ext4_inode_set_modification_time
+                0x000000000000e460        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e460                ext4_inode_set_modification_time
+ *fill*         0x000000000000e469        0x7 
+ .text.ext4_inode_get_deletion_time
+                0x000000000000e470        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e470                ext4_inode_get_deletion_time
+ *fill*         0x000000000000e479        0x7 
+ .text.ext4_inode_set_deletion_time
+                0x000000000000e480        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e480                ext4_inode_set_deletion_time
+ *fill*         0x000000000000e489        0x7 
+ .text.ext4_inode_get_gid
+                0x000000000000e490        0xa uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e490                ext4_inode_get_gid
+ *fill*         0x000000000000e49a        0x6 
+ .text.ext4_inode_set_gid
+                0x000000000000e4a0        0xa uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e4a0                ext4_inode_set_gid
+ *fill*         0x000000000000e4aa        0x6 
+ .text.ext4_inode_get_links_count
+                0x000000000000e4b0        0xa uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e4b0                ext4_inode_get_links_count
+ *fill*         0x000000000000e4ba        0x6 
+ .text.ext4_inode_set_links_count
+                0x000000000000e4c0        0xa uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e4c0                ext4_inode_set_links_count
+ *fill*         0x000000000000e4ca        0x6 
+ .text.ext4_inode_get_flags
+                0x000000000000e4d0        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e4d0                ext4_inode_get_flags
+ *fill*         0x000000000000e4d9        0x7 
+ .text.ext4_inode_set_flags
+                0x000000000000e4e0        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e4e0                ext4_inode_set_flags
+ *fill*         0x000000000000e4e9        0x7 
+ .text.ext4_inode_get_generation
+                0x000000000000e4f0        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e4f0                ext4_inode_get_generation
+ *fill*         0x000000000000e4f9        0x7 
+ .text.ext4_inode_set_generation
+                0x000000000000e500        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e500                ext4_inode_set_generation
+ *fill*         0x000000000000e509        0x7 
+ .text.ext4_inode_get_file_acl
+                0x000000000000e510       0x38 uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e510                ext4_inode_get_file_acl
+ *fill*         0x000000000000e548        0x8 
+ .text.ext4_inode_set_file_acl
+                0x000000000000e550       0x2d uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e550                ext4_inode_set_file_acl
+ *fill*         0x000000000000e57d        0x3 
+ .text.ext4_inode_get_direct_block
+                0x000000000000e580       0x28 uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e580                ext4_inode_get_direct_block
+ *fill*         0x000000000000e5a8        0x8 
+ .text.ext4_inode_set_direct_block
+                0x000000000000e5b0       0x28 uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e5b0                ext4_inode_set_direct_block
+ *fill*         0x000000000000e5d8        0x8 
+ .text.ext4_inode_get_indirect_block
+                0x000000000000e5e0        0xd uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e5e0                ext4_inode_get_indirect_block
+ *fill*         0x000000000000e5ed        0x3 
+ .text.ext4_inode_set_indirect_block
+                0x000000000000e5f0        0xd uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e5f0                ext4_inode_set_indirect_block
+ *fill*         0x000000000000e5fd        0x3 
+ .text.ext4_inode_is_type
+                0x000000000000e600       0x20 uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e600                ext4_inode_is_type
+ .text.ext4_inode_get_size
+                0x000000000000e620       0x46 uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e620                ext4_inode_get_size
+ *fill*         0x000000000000e666        0xa 
+ .text.ext4_inode_get_extent_header
+                0x000000000000e670        0xa uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e670                ext4_inode_get_extent_header
+ *fill*         0x000000000000e67a        0x6 
+ .text.ext4_inode_has_flag
+                0x000000000000e680       0x1b uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e680                ext4_inode_has_flag
+ *fill*         0x000000000000e69b        0x5 
+ .text.ext4_inode_get_blocks_count
+                0x000000000000e6a0       0x8a uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e6a0                ext4_inode_get_blocks_count
+ *fill*         0x000000000000e72a        0x6 
+ .text.ext4_inode_clear_flag
+                0x000000000000e730       0x23 uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e730                ext4_inode_clear_flag
+ *fill*         0x000000000000e753        0xd 
+ .text.ext4_inode_set_flag
+                0x000000000000e760       0x23 uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e760                ext4_inode_set_flag
+ *fill*         0x000000000000e783        0xd 
+ .text.ext4_inode_set_blocks_count
+                0x000000000000e790       0xcc uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e790                ext4_inode_set_blocks_count
+ *fill*         0x000000000000e85c        0x4 
+ .text.ext4_inode_can_truncate
+                0x000000000000e860       0x61 uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                0x000000000000e860                ext4_inode_can_truncate
+ *fill*         0x000000000000e8c1        0xf 
+ .text.open_nodes_key_hash
+                0x000000000000e8d0       0x21 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *fill*         0x000000000000e8f1        0xf 
+ .text.open_nodes_hash
+                0x000000000000e900       0x2a uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *fill*         0x000000000000e92a        0x6 
+ .text.open_nodes_key_equal
+                0x000000000000e930       0x27 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *fill*         0x000000000000e957        0x9 
+ .text.ext4_node_open
+                0x000000000000e960        0x8 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *fill*         0x000000000000e968        0x8 
+ .text.ext4_index_get
+                0x000000000000e970       0x19 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *fill*         0x000000000000e989        0x7 
+ .text.ext4_service_get
+                0x000000000000e990        0x8 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *fill*         0x000000000000e998        0x8 
+ .text.ext4_close
+                0x000000000000e9a0        0x8 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *fill*         0x000000000000e9a8        0x8 
+ .text.ext4_is_file
+                0x000000000000e9b0       0x2e uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *fill*         0x000000000000e9de        0x2 
+ .text.ext4_is_directory
+                0x000000000000e9e0       0x2e uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *fill*         0x000000000000ea0e        0x2 
+ .text.ext4_size_get
+                0x000000000000ea10       0x29 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *fill*         0x000000000000ea39        0x7 
+ .text.ext4_link
+                0x000000000000ea40      0x1c8 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *fill*         0x000000000000ec08        0x8 
+ .text.ext4_mounted
+                0x000000000000ec10       0xe2 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *fill*         0x000000000000ecf2        0xe 
+ .text.ext4_fsprobe
+                0x000000000000ed00       0x37 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *fill*         0x000000000000ed37        0x9 
+ .text.ext4_has_children
+                0x000000000000ed40      0x105 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *fill*         0x000000000000ee45        0xb 
+ .text.ext4_node_put
+                0x000000000000ee50       0xd4 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+                0x000000000000ee50                ext4_node_put
+ *fill*         0x000000000000ef24        0xc 
+ .text.ext4_destroy_node
+                0x000000000000ef30       0xd7 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *fill*         0x000000000000f007        0x9 
+ .text.ext4_read
+                0x000000000000f010      0x55c uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *fill*         0x000000000000f56c        0x4 
+ .text.ext4_lnkcnt_get
+                0x000000000000f570       0x5f uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *fill*         0x000000000000f5cf        0x1 
+ .text.ext4_unlink
+                0x000000000000f5d0      0x132 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *fill*         0x000000000000f702        0xe 
+ .text.ext4_free_block_count
+                0x000000000000f710       0x86 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *fill*         0x000000000000f796        0xa 
+ .text.ext4_size_block
+                0x000000000000f7a0       0x86 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *fill*         0x000000000000f826        0xa 
+ .text.ext4_total_block_count
+                0x000000000000f830       0x86 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *fill*         0x000000000000f8b6        0xa 
+ .text.ext4_unmounted
+                0x000000000000f8c0      0x126 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *fill*         0x000000000000f9e6        0xa 
+ .text.ext4_create_node
+                0x000000000000f9f0      0x168 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *fill*         0x000000000000fb58        0x8 
+ .text.ext4_global_init
+                0x000000000000fb60       0x25 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+                0x000000000000fb60                ext4_global_init
+ *fill*         0x000000000000fb85        0xb 
+ .text.ext4_global_fini
+                0x000000000000fb90       0x14 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+                0x000000000000fb90                ext4_global_fini
+ *fill*         0x000000000000fba4        0xc 
+ .text.ext4_node_get_core
+                0x000000000000fbb0      0x164 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+                0x000000000000fbb0                ext4_node_get_core
+ *fill*         0x000000000000fd14        0xc 
+ .text.ext4_node_get
+                0x000000000000fd20       0x94 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *fill*         0x000000000000fdb4        0xc 
+ .text.ext4_match
+                0x000000000000fdc0       0xbc uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *fill*         0x000000000000fe7c        0x4 
+ .text.ext4_root_get
+                0x000000000000fe80       0x86 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *fill*         0x000000000000ff06        0xa 
+ .text.ext4_destroy
+                0x000000000000ff10       0x9a uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *fill*         0x000000000000ffaa        0x6 
+ .text.ext4_sync
+                0x000000000000ffb0       0xb2 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *fill*         0x0000000000010062        0xe 
+ .text.ext4_truncate
+                0x0000000000010070       0xbf uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *fill*         0x000000000001012f        0x1 
+ .text.ext4_write
+                0x0000000000010130      0x483 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *fill*         0x00000000000105b3        0xd 
+ .text.ext4_superblock_get_inodes_count
+                0x00000000000105c0        0x8 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x00000000000105c0                ext4_superblock_get_inodes_count
+ *fill*         0x00000000000105c8        0x8 
+ .text.ext4_superblock_set_inodes_count
+                0x00000000000105d0        0x8 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x00000000000105d0                ext4_superblock_set_inodes_count
+ *fill*         0x00000000000105d8        0x8 
+ .text.ext4_superblock_get_blocks_count
+                0x00000000000105e0       0x16 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x00000000000105e0                ext4_superblock_get_blocks_count
+ *fill*         0x00000000000105f6        0xa 
+ .text.ext4_superblock_set_blocks_count
+                0x0000000000010600       0x13 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010600                ext4_superblock_set_blocks_count
+ *fill*         0x0000000000010613        0xd 
+ .text.ext4_superblock_get_reserved_blocks_count
+                0x0000000000010620       0x16 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010620                ext4_superblock_get_reserved_blocks_count
+ *fill*         0x0000000000010636        0xa 
+ .text.ext4_superblock_set_reserved_blocks_count
+                0x0000000000010640       0x13 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010640                ext4_superblock_set_reserved_blocks_count
+ *fill*         0x0000000000010653        0xd 
+ .text.ext4_superblock_get_free_blocks_count
+                0x0000000000010660       0x16 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010660                ext4_superblock_get_free_blocks_count
+ *fill*         0x0000000000010676        0xa 
+ .text.ext4_superblock_set_free_blocks_count
+                0x0000000000010680       0x13 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010680                ext4_superblock_set_free_blocks_count
+ *fill*         0x0000000000010693        0xd 
+ .text.ext4_superblock_get_free_inodes_count
+                0x00000000000106a0        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x00000000000106a0                ext4_superblock_get_free_inodes_count
+ *fill*         0x00000000000106a9        0x7 
+ .text.ext4_superblock_set_free_inodes_count
+                0x00000000000106b0        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x00000000000106b0                ext4_superblock_set_free_inodes_count
+ *fill*         0x00000000000106b9        0x7 
+ .text.ext4_superblock_get_first_data_block
+                0x00000000000106c0        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x00000000000106c0                ext4_superblock_get_first_data_block
+ *fill*         0x00000000000106c9        0x7 
+ .text.ext4_superblock_set_first_data_block
+                0x00000000000106d0        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x00000000000106d0                ext4_superblock_set_first_data_block
+ *fill*         0x00000000000106d9        0x7 
+ .text.ext4_superblock_get_log_block_size
+                0x00000000000106e0        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x00000000000106e0                ext4_superblock_get_log_block_size
+ *fill*         0x00000000000106e9        0x7 
+ .text.ext4_superblock_set_log_block_size
+                0x00000000000106f0        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x00000000000106f0                ext4_superblock_set_log_block_size
+ *fill*         0x00000000000106f9        0x7 
+ .text.ext4_superblock_get_block_size
+                0x0000000000010700       0x16 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010700                ext4_superblock_get_block_size
+ *fill*         0x0000000000010716        0xa 
+ .text.ext4_superblock_set_block_size
+                0x0000000000010720       0x15 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010720                ext4_superblock_set_block_size
+ *fill*         0x0000000000010735        0xb 
+ .text.ext4_superblock_get_log_frag_size
+                0x0000000000010740        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010740                ext4_superblock_get_log_frag_size
+ *fill*         0x0000000000010749        0x7 
+ .text.ext4_superblock_set_log_frag_size
+                0x0000000000010750        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010750                ext4_superblock_set_log_frag_size
+ *fill*         0x0000000000010759        0x7 
+ .text.ext4_superblock_get_frag_size
+                0x0000000000010760       0x16 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010760                ext4_superblock_get_frag_size
+ *fill*         0x0000000000010776        0xa 
+ .text.ext4_superblock_set_frag_size
+                0x0000000000010780       0x15 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010780                ext4_superblock_set_frag_size
+ *fill*         0x0000000000010795        0xb 
+ .text.ext4_superblock_get_blocks_per_group
+                0x00000000000107a0        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x00000000000107a0                ext4_superblock_get_blocks_per_group
+ *fill*         0x00000000000107a9        0x7 
+ .text.ext4_superblock_set_blocks_per_group
+                0x00000000000107b0        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x00000000000107b0                ext4_superblock_set_blocks_per_group
+ *fill*         0x00000000000107b9        0x7 
+ .text.ext4_superblock_get_frags_per_group
+                0x00000000000107c0        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x00000000000107c0                ext4_superblock_get_frags_per_group
+ *fill*         0x00000000000107c9        0x7 
+ .text.ext4_superblock_set_frags_per_group
+                0x00000000000107d0        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x00000000000107d0                ext4_superblock_set_frags_per_group
+ *fill*         0x00000000000107d9        0x7 
+ .text.ext4_superblock_get_inodes_per_group
+                0x00000000000107e0        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x00000000000107e0                ext4_superblock_get_inodes_per_group
+ *fill*         0x00000000000107e9        0x7 
+ .text.ext4_superblock_set_inodes_per_group
+                0x00000000000107f0        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x00000000000107f0                ext4_superblock_set_inodes_per_group
+ *fill*         0x00000000000107f9        0x7 
+ .text.ext4_superblock_get_mount_time
+                0x0000000000010800        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010800                ext4_superblock_get_mount_time
+ *fill*         0x0000000000010809        0x7 
+ .text.ext4_superblock_set_mount_time
+                0x0000000000010810        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010810                ext4_superblock_set_mount_time
+ *fill*         0x0000000000010819        0x7 
+ .text.ext4_superblock_get_write_time
+                0x0000000000010820        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010820                ext4_superblock_get_write_time
+ *fill*         0x0000000000010829        0x7 
+ .text.ext4_superblock_set_write_time
+                0x0000000000010830        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010830                ext4_superblock_set_write_time
+ *fill*         0x0000000000010839        0x7 
+ .text.ext4_superblock_get_mount_count
+                0x0000000000010840        0xa uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010840                ext4_superblock_get_mount_count
+ *fill*         0x000000000001084a        0x6 
+ .text.ext4_superblock_set_mount_count
+                0x0000000000010850        0xa uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010850                ext4_superblock_set_mount_count
+ *fill*         0x000000000001085a        0x6 
+ .text.ext4_superblock_get_max_mount_count
+                0x0000000000010860        0xa uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010860                ext4_superblock_get_max_mount_count
+ *fill*         0x000000000001086a        0x6 
+ .text.ext4_superblock_set_max_mount_count
+                0x0000000000010870        0xa uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010870                ext4_superblock_set_max_mount_count
+ *fill*         0x000000000001087a        0x6 
+ .text.ext4_superblock_get_magic
+                0x0000000000010880        0xa uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010880                ext4_superblock_get_magic
+ *fill*         0x000000000001088a        0x6 
+ .text.ext4_superblock_set_magic
+                0x0000000000010890        0xa uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010890                ext4_superblock_set_magic
+ *fill*         0x000000000001089a        0x6 
+ .text.ext4_superblock_get_state
+                0x00000000000108a0        0xa uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x00000000000108a0                ext4_superblock_get_state
+ *fill*         0x00000000000108aa        0x6 
+ .text.ext4_superblock_set_state
+                0x00000000000108b0        0xa uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x00000000000108b0                ext4_superblock_set_state
+ *fill*         0x00000000000108ba        0x6 
+ .text.ext4_superblock_get_errors
+                0x00000000000108c0        0xa uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x00000000000108c0                ext4_superblock_get_errors
+ *fill*         0x00000000000108ca        0x6 
+ .text.ext4_superblock_set_errors
+                0x00000000000108d0        0xa uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x00000000000108d0                ext4_superblock_set_errors
+ *fill*         0x00000000000108da        0x6 
+ .text.ext4_superblock_get_minor_rev_level
+                0x00000000000108e0        0xa uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x00000000000108e0                ext4_superblock_get_minor_rev_level
+ *fill*         0x00000000000108ea        0x6 
+ .text.ext4_superblock_set_minor_rev_level
+                0x00000000000108f0        0xa uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x00000000000108f0                ext4_superblock_set_minor_rev_level
+ *fill*         0x00000000000108fa        0x6 
+ .text.ext4_superblock_get_last_check_time
+                0x0000000000010900        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010900                ext4_superblock_get_last_check_time
+ *fill*         0x0000000000010909        0x7 
+ .text.ext4_superblock_set_last_check_time
+                0x0000000000010910        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010910                ext4_superblock_set_last_check_time
+ *fill*         0x0000000000010919        0x7 
+ .text.ext4_superblock_get_check_interval
+                0x0000000000010920        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010920                ext4_superblock_get_check_interval
+ *fill*         0x0000000000010929        0x7 
+ .text.ext4_superblock_set_check_interval
+                0x0000000000010930        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010930                ext4_superblock_set_check_interval
+ *fill*         0x0000000000010939        0x7 
+ .text.ext4_superblock_get_creator_os
+                0x0000000000010940        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010940                ext4_superblock_get_creator_os
+ *fill*         0x0000000000010949        0x7 
+ .text.ext4_superblock_set_creator_os
+                0x0000000000010950        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010950                ext4_superblock_set_creator_os
+ *fill*         0x0000000000010959        0x7 
+ .text.ext4_superblock_get_rev_level
+                0x0000000000010960        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010960                ext4_superblock_get_rev_level
+ *fill*         0x0000000000010969        0x7 
+ .text.ext4_superblock_set_rev_level
+                0x0000000000010970        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010970                ext4_superblock_set_rev_level
+ *fill*         0x0000000000010979        0x7 
+ .text.ext4_superblock_get_def_resuid
+                0x0000000000010980        0xa uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010980                ext4_superblock_get_def_resuid
+ *fill*         0x000000000001098a        0x6 
+ .text.ext4_superblock_set_def_resuid
+                0x0000000000010990        0xa uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010990                ext4_superblock_set_def_resuid
+ *fill*         0x000000000001099a        0x6 
+ .text.ext4_superblock_get_def_resgid
+                0x00000000000109a0        0xa uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x00000000000109a0                ext4_superblock_get_def_resgid
+ *fill*         0x00000000000109aa        0x6 
+ .text.ext4_superblock_set_def_resgid
+                0x00000000000109b0        0xa uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x00000000000109b0                ext4_superblock_set_def_resgid
+ *fill*         0x00000000000109ba        0x6 
+ .text.ext4_superblock_get_first_inode
+                0x00000000000109c0       0x25 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x00000000000109c0                ext4_superblock_get_first_inode
+ *fill*         0x00000000000109e5        0xb 
+ .text.ext4_superblock_set_first_inode
+                0x00000000000109f0        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x00000000000109f0                ext4_superblock_set_first_inode
+ *fill*         0x00000000000109f9        0x7 
+ .text.ext4_superblock_get_inode_size
+                0x0000000000010a00       0x26 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010a00                ext4_superblock_get_inode_size
+ *fill*         0x0000000000010a26        0xa 
+ .text.ext4_superblock_set_inode_size
+                0x0000000000010a30        0xa uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010a30                ext4_superblock_set_inode_size
+ *fill*         0x0000000000010a3a        0x6 
+ .text.ext4_superblock_get_block_group_index
+                0x0000000000010a40        0xa uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010a40                ext4_superblock_get_block_group_index
+ *fill*         0x0000000000010a4a        0x6 
+ .text.ext4_superblock_set_block_group_index
+                0x0000000000010a50        0xa uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010a50                ext4_superblock_set_block_group_index
+ *fill*         0x0000000000010a5a        0x6 
+ .text.ext4_superblock_get_features_compatible
+                0x0000000000010a60        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010a60                ext4_superblock_get_features_compatible
+ *fill*         0x0000000000010a69        0x7 
+ .text.ext4_superblock_set_features_compatible
+                0x0000000000010a70        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010a70                ext4_superblock_set_features_compatible
+ *fill*         0x0000000000010a79        0x7 
+ .text.ext4_superblock_get_features_incompatible
+                0x0000000000010a80        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010a80                ext4_superblock_get_features_incompatible
+ *fill*         0x0000000000010a89        0x7 
+ .text.ext4_superblock_set_features_incompatible
+                0x0000000000010a90        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010a90                ext4_superblock_set_features_incompatible
+ *fill*         0x0000000000010a99        0x7 
+ .text.ext4_superblock_get_features_read_only
+                0x0000000000010aa0        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010aa0                ext4_superblock_get_features_read_only
+ *fill*         0x0000000000010aa9        0x7 
+ .text.ext4_superblock_set_features_read_only
+                0x0000000000010ab0        0x9 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010ab0                ext4_superblock_set_features_read_only
+ *fill*         0x0000000000010ab9        0x7 
+ .text.ext4_superblock_get_uuid
+                0x0000000000010ac0        0xe uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010ac0                ext4_superblock_get_uuid
+ *fill*         0x0000000000010ace        0x2 
+ .text.ext4_superblock_set_uuid
+                0x0000000000010ad0       0x14 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010ad0                ext4_superblock_set_uuid
+ *fill*         0x0000000000010ae4        0xc 
+ .text.ext4_superblock_get_volume_name
+                0x0000000000010af0       0x80 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010af0                ext4_superblock_get_volume_name
+ .text.ext4_superblock_set_volume_name
+                0x0000000000010b70      0x107 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010b70                ext4_superblock_set_volume_name
+ *fill*         0x0000000000010c77        0x9 
+ .text.ext4_superblock_get_last_mounted
+                0x0000000000010c80        0xd uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010c80                ext4_superblock_get_last_mounted
+ *fill*         0x0000000000010c8d        0x3 
+ .text.ext4_superblock_set_last_mounted
+                0x0000000000010c90       0x35 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010c90                ext4_superblock_set_last_mounted
+ *fill*         0x0000000000010cc5        0xb 
+ .text.ext4_superblock_get_last_orphan
+                0x0000000000010cd0        0xc uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010cd0                ext4_superblock_get_last_orphan
+ *fill*         0x0000000000010cdc        0x4 
+ .text.ext4_superblock_set_last_orphan
+                0x0000000000010ce0        0xc uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010ce0                ext4_superblock_set_last_orphan
+ *fill*         0x0000000000010cec        0x4 
+ .text.ext4_superblock_get_hash_seed
+                0x0000000000010cf0        0xd uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010cf0                ext4_superblock_get_hash_seed
+ *fill*         0x0000000000010cfd        0x3 
+ .text.ext4_superblock_set_hash_seed
+                0x0000000000010d00       0x11 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010d00                ext4_superblock_set_hash_seed
+ *fill*         0x0000000000010d11        0xf 
+ .text.ext4_superblock_get_default_hash_version
+                0x0000000000010d20        0xd uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010d20                ext4_superblock_get_default_hash_version
+ *fill*         0x0000000000010d2d        0x3 
+ .text.ext4_superblock_set_default_hash_version
+                0x0000000000010d30        0xd uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010d30                ext4_superblock_set_default_hash_version
+ *fill*         0x0000000000010d3d        0x3 
+ .text.ext4_superblock_get_desc_size
+                0x0000000000010d40       0x18 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010d40                ext4_superblock_get_desc_size
+ *fill*         0x0000000000010d58        0x8 
+ .text.ext4_superblock_set_desc_size
+                0x0000000000010d60        0xd uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010d60                ext4_superblock_set_desc_size
+ *fill*         0x0000000000010d6d        0x3 
+ .text.ext4_superblock_get_flags
+                0x0000000000010d70        0xc uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010d70                ext4_superblock_get_flags
+ *fill*         0x0000000000010d7c        0x4 
+ .text.ext4_superblock_set_flags
+                0x0000000000010d80        0xc uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010d80                ext4_superblock_set_flags
+ *fill*         0x0000000000010d8c        0x4 
+ .text.ext4_superblock_has_flag
+                0x0000000000010d90       0x1b uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010d90                ext4_superblock_has_flag
+ *fill*         0x0000000000010dab        0x5 
+ .text.ext4_superblock_has_feature_compatible
+                0x0000000000010db0       0x1b uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010db0                ext4_superblock_has_feature_compatible
+ *fill*         0x0000000000010dcb        0x5 
+ .text.ext4_superblock_has_feature_incompatible
+                0x0000000000010dd0       0x1b uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010dd0                ext4_superblock_has_feature_incompatible
+ *fill*         0x0000000000010deb        0x5 
+ .text.ext4_superblock_has_feature_read_only
+                0x0000000000010df0       0x1b uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010df0                ext4_superblock_has_feature_read_only
+ *fill*         0x0000000000010e0b        0x5 
+ .text.ext4_superblock_read_direct
+                0x0000000000010e10       0x70 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010e10                ext4_superblock_read_direct
+ .text.ext4_superblock_write_direct
+                0x0000000000010e80       0x4b uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010e80                ext4_superblock_write_direct
+ *fill*         0x0000000000010ecb        0x5 
+ .text.ext4_superblock_release
+                0x0000000000010ed0        0xa uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010ed0                ext4_superblock_release
+ *fill*         0x0000000000010eda        0x6 
+ .text.ext4_superblock_check_sanity
+                0x0000000000010ee0       0x94 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010ee0                ext4_superblock_check_sanity
+ *fill*         0x0000000000010f74        0xc 
+ .text.ext4_superblock_get_block_group_count
+                0x0000000000010f80       0x31 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010f80                ext4_superblock_get_block_group_count
+ *fill*         0x0000000000010fb1        0xf 
+ .text.ext4_superblock_get_blocks_in_group
+                0x0000000000010fc0       0x63 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000010fc0                ext4_superblock_get_blocks_in_group
+ *fill*         0x0000000000011023        0xd 
+ .text.ext4_superblock_get_inodes_in_group
+                0x0000000000011030       0x4b uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000011030                ext4_superblock_get_inodes_in_group
+ *fill*         0x000000000001107b        0x5 
+ .text.ext4_superblock_get_backup_groups_sparse2
+                0x0000000000011080       0x16 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000011080                ext4_superblock_get_backup_groups_sparse2
+ *fill*         0x0000000000011096        0xa 
+ .text.ext4_superblock_set_backup_groups_sparse2
+                0x00000000000110a0       0x12 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x00000000000110a0                ext4_superblock_set_backup_groups_sparse2
+ *fill*         0x00000000000110b2        0xe 
+ .text.ext4_superblock_get_reserved_gdt_blocks
+                0x00000000000110c0        0xd uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x00000000000110c0                ext4_superblock_get_reserved_gdt_blocks
+ *fill*         0x00000000000110cd        0x3 
+ .text.ext4_superblock_set_reserved_gdt_blocks
+                0x00000000000110d0        0xd uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x00000000000110d0                ext4_superblock_set_reserved_gdt_blocks
+ *fill*         0x00000000000110dd        0x3 
+ .text.ext4_superblock_get_flex_group_size
+                0x00000000000110e0       0x14 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x00000000000110e0                ext4_superblock_get_flex_group_size
+ *fill*         0x00000000000110f4        0xc 
+ .text.ext4_superblock_get_group_backup_blocks
+                0x0000000000011100      0x1b1 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x0000000000011100                ext4_superblock_get_group_backup_blocks
+ *fill*         0x00000000000112b1        0xf 
+ .text.ext4_superblock_create
+                0x00000000000112c0      0x463 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                0x00000000000112c0                ext4_superblock_create
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000011728      0x351
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.ext4_balloc_free_blocks_internal.str1.8
+                0x0000000000011728      0x27e uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+                                         0x56 (size before relaxing)
+ .rodata.ext4_directory_iterator_next.str1.8
+                0x00000000000119a6       0x2e uspace/lib/libext4.so.0.0.p/ext4_src_directory.c.o
+ .rodata.ext4_directory_iterator_next.str1.1
+                0x00000000000119a6       0x91 uspace/lib/libext4.so.0.0.p/ext4_src_directory.c.o
+                                         0x14 (size before relaxing)
+ .rodata.ext4_directory_write_entry.str1.1
+                0x0000000000011a37       0x18 uspace/lib/libext4.so.0.0.p/ext4_src_directory.c.o
+ .rodata.ext4_directory_remove_entry.str1.8
+                0x0000000000011a37       0x22 uspace/lib/libext4.so.0.0.p/ext4_src_directory.c.o
+ .rodata.ext4_extent_release_blocks_from.str1.8
+                0x0000000000011a37       0x2b uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+ .rodata.ext4_extent_release_blocks_from.str1.1
+                0x0000000000011a37       0x19 uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+ .rodata.ext4_extent_append_block.str1.1
+                0x0000000000011a37       0x11 uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+ .rodata.ext4_filesystem_create.str1.1
+                0x0000000000011a37       0x10 uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o
+ .rodata.ext4_filesystem_release_inode_block.str1.8
+                0x0000000000011a37       0xcf uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o
+ .rodata.ext4_inode_get_direct_block.str1.8
+                0x0000000000011a37       0x54 uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+ .rodata.ext4_link.str1.1
+                0x0000000000011a37        0x5 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ .rodata.ext4_mounted.str1.1
+                0x0000000000011a37        0x8 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ .rodata.ext4_node_put.str1.8
+                0x0000000000011a37       0x4e uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ .rodata.ext4_node_put.str1.1
+                0x0000000000011a37       0x16 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ .rodata.ext4_read.str1.8
+                0x0000000000011a37       0x26 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ .rodata.ext4_unlink.str1.1
+                0x0000000000011a37        0xf uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *fill*         0x0000000000011a37        0x1 
+ .rodata        0x0000000000011a38       0x41 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x0000000000011a7c      0x9b4
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x0000000000011a7c      0x9b4 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+                0x0000000000011a7c                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x0000000000012430     0x2cf8
+ *(.eh_frame)
+ .eh_frame      0x0000000000012430      0x140 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+ .eh_frame      0x0000000000012570       0x28 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000012598        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+ .eh_frame      0x0000000000012598       0xe8 uspace/lib/libext4.so.0.0.p/ext4_src_bitmap.c.o
+                                        0x100 (size before relaxing)
+ .eh_frame      0x0000000000012680      0x300 uspace/lib/libext4.so.0.0.p/ext4_src_block_group.c.o
+                                        0x318 (size before relaxing)
+ .eh_frame      0x0000000000012980      0x358 uspace/lib/libext4.so.0.0.p/ext4_src_directory.c.o
+                                        0x370 (size before relaxing)
+ .eh_frame      0x0000000000012cd8      0x2f0 uspace/lib/libext4.so.0.0.p/ext4_src_directory_index.c.o
+                                        0x308 (size before relaxing)
+ .eh_frame      0x0000000000012fc8      0x380 uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+                                        0x398 (size before relaxing)
+ .eh_frame      0x0000000000013348      0x430 uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o
+                                        0x448 (size before relaxing)
+ .eh_frame      0x0000000000013778       0x20 uspace/lib/libext4.so.0.0.p/ext4_src_hash.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000013798       0x90 uspace/lib/libext4.so.0.0.p/ext4_src_ialloc.c.o
+                                         0xa8 (size before relaxing)
+ .eh_frame      0x0000000000013828      0x4d0 uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+                                        0x4e8 (size before relaxing)
+ .eh_frame      0x0000000000013cf8      0x738 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+                                        0x750 (size before relaxing)
+ .eh_frame      0x0000000000014430      0xcf8 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+                                        0xd10 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x0000000000015128        0x0
+ *(.sframe)
+ .sframe        0x0000000000015128        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x0000000000016128                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array
+ *(.preinit_array)
+
+.init_array
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+
+.fini_array
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x0000000000016140       0x28
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ .data.rel.ro.local.open_nodes_ops
+                0x0000000000016140       0x28 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x0000000000016168        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+
+.dynamic        0x0000000000016168      0x180
+ *(.dynamic)
+ .dynamic       0x0000000000016168      0x180 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+                0x0000000000016168                _DYNAMIC
+
+.got            0x00000000000162e8        0x0
+ *(.got)
+ .got           0x00000000000162e8        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+ *(.igot)
+                0x00000000000162e8                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x00000000000162e8      0x818
+ *(.got.plt)
+ .got.plt       0x00000000000162e8      0x818 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+                0x00000000000162e8                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+
+.data           0x0000000000016b00      0x150
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.rel.local.ext4_ops
+                0x0000000000016b00       0x48 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+                0x0000000000016b00                ext4_ops
+ *fill*         0x0000000000016b48       0x18 
+ .data.rel.ext4_libfs_ops
+                0x0000000000016b60       0x98 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+                0x0000000000016b60                ext4_libfs_ops
+ *fill*         0x0000000000016bf8        0x8 
+ .data.rel.local.open_nodes_lock
+                0x0000000000016c00       0x20 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ .data.rel.local.instance_list_mutex
+                0x0000000000016c20       0x20 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ .data.rel.local.instance_list
+                0x0000000000016c40       0x10 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+
+.data1
+ *(.data1)
+                [!provide]                        PROVIDE (_edata = .)
+                [!provide]                        PROVIDE (edata = .)
+                0x0000000000016c50                . = .
+                [!provide]                        PROVIDE (__bss_start = .)
+
+.bss            0x0000000000016c60       0x38
+ *(.dynbss)
+ .dynbss        0x0000000000016c60        0x0 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss.open_nodes
+                0x0000000000016c60       0x38 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ *(COMMON)
+                0x0000000000016c98                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x0000000000016c98                . = ALIGN (0x8)
+                0x0000000000016c98                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x0000000000018c98        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x0000000000018c98                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000018c98                . = ALIGN (0x8)
+                [!provide]                        PROVIDE (_end = .)
+                [!provide]                        PROVIDE (end = .)
+                0x0000000000018c98                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/lib/libext4.so.0.0.p/ext4_src_balloc.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/lib/libext4.so.0.0.p/ext4_src_bitmap.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libext4.so.0.0.p/ext4_src_block_group.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libext4.so.0.0.p/ext4_src_directory.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libext4.so.0.0.p/ext4_src_directory_index.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libext4.so.0.0.p/ext4_src_extent.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libext4.so.0.0.p/ext4_src_filesystem.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libext4.so.0.0.p/ext4_src_hash.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libext4.so.0.0.p/ext4_src_ialloc.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libext4.so.0.0.p/ext4_src_inode.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libext4.so.0.0.p/ext4_src_ops.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libext4.so.0.0.p/ext4_src_superblock.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/lib/libext4.so.0.0 elf64-x86-64)

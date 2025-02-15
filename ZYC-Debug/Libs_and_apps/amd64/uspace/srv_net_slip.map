@@ -1,0 +1,587 @@
+Archive member included to satisfy reference by file (symbol)
+
+uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                              (--whole-archive)
+uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                              (--whole-archive)
+uspace/lib/libinet.a.p/inet_src_iplink_srv.c.o
+                              uspace/srv_net_slip.p/srv_net_slip_slip.c.o (iplink_srv_init)
+uspace/lib/libdevice.a.p/device_src_io_chardev.c.o
+                              uspace/srv_net_slip.p/srv_net_slip_slip.c.o (chardev_open)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.0                     uspace/srv_net_slip.p/srv_net_slip_slip.c.o (loc_category_get_id)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .text          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_iplink_srv.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_iplink_srv.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_iplink_srv.c.o
+ .text.iplink_ev_change_addr
+                0x0000000000000000       0xa2 uspace/lib/libinet.a.p/inet_src_iplink_srv.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_io_chardev.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_io_chardev.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_io_chardev.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+START GROUP
+LOAD uspace/lib/c/libstartfiles.a
+LOAD uspace/lib/libdrv.a
+LOAD uspace/lib/libinet.a
+LOAD uspace/lib/libc.so.0.0
+LOAD uspace/lib/libpcm.a
+LOAD uspace/lib/libdevice.a
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000400000                PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x0000000000400120                . = (SEGMENT_START ("text-segment", 0x400000) + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000400120      0x148
+ *(.hash)
+ .hash          0x0000000000400120      0x148 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x0000000000400268      0x408
+ *(.dynsym)
+ .dynsym        0x0000000000400268      0x408 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+
+.dynstr         0x0000000000400670      0x2f0
+ *(.dynstr)
+ .dynstr        0x0000000000400670      0x2f0 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+
+.gnu.version    0x0000000000400960        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000400960        0x0 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+
+.gnu.version_d  0x0000000000400960        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000400960        0x0 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+
+.gnu.version_r  0x0000000000400960        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000400960        0x0 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+
+.rela.dyn       0x0000000000400960       0x18
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text.__c_start
+                0x0000000000400960        0x0 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ .rela.rodata.cst8
+                0x0000000000400960        0x0 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x0000000000400960        0x0 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000400960        0x0 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x0000000000400960       0x18 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+
+.rela.plt       0x0000000000400978      0x3d8
+ *(.rela.plt)
+ .rela.plt      0x0000000000400978      0x3d8 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+ .rela.iplt     0x0000000000400d50        0x0 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x0000000000400d50      0x2a0
+ *(.plt)
+ .plt           0x0000000000400d50      0x2a0 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+                0x0000000000400d60                loc_category_get_id
+                0x0000000000400d70                task_retval
+                0x0000000000400d80                loc_service_connect
+                0x0000000000400d90                async_hangup
+                0x0000000000400da0                async_wait_for
+                0x0000000000400db0                log_init
+                0x0000000000400dc0                async_data_write_start
+                0x0000000000400dd0                loc_service_register
+                0x0000000000400de0                async_get_call
+                0x0000000000400df0                async_data_read_finalize
+                0x0000000000400e00                async_send_1
+                0x0000000000400e10                loc_server_unregister
+                0x0000000000400e20                puts
+                0x0000000000400e30                loc_service_get_id
+                0x0000000000400e40                async_answer_0
+                0x0000000000400e50                log_msg
+                0x0000000000400e60                async_exchange_end
+                0x0000000000400e70                calloc
+                0x0000000000400e80                fibril_mutex_unlock
+                0x0000000000400e90                loc_service_unregister
+                0x0000000000400ea0                fibril_create
+                0x0000000000400eb0                loc_service_add_to_cat
+                0x0000000000400ec0                async_data_read_receive
+                0x0000000000400ed0                async_accept_0
+                0x0000000000400ee0                async_data_read_start
+                0x0000000000400ef0                str_error_name
+                0x0000000000400f00                loc_server_register
+                0x0000000000400f10                async_answer_1
+                0x0000000000400f20                async_exchange_begin
+                0x0000000000400f30                async_send_0
+                0x0000000000400f40                async_data_write_finalize
+                0x0000000000400f50                async_data_write_accept
+                0x0000000000400f60                __libc_main
+                0x0000000000400f70                async_manager
+                0x0000000000400f80                async_forget
+                0x0000000000400f90                fibril_add_ready
+                0x0000000000400fa0                async_set_fallback_port_handler
+                0x0000000000400fb0                async_data_write_receive
+                0x0000000000400fc0                async_callback_receive
+                0x0000000000400fd0                free
+                0x0000000000400fe0                fibril_mutex_lock
+ *(.iplt)
+ .iplt          0x0000000000400ff0        0x0 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+
+.plt.got        0x0000000000400ff0        0x0
+ *(.plt.got)
+ .plt.got       0x0000000000400ff0        0x0 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x0000000000400ff0     0x1525
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ .text.startup.main
+                0x0000000000400ff0      0x336 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+                0x0000000000400ff0                main
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ *fill*         0x0000000000401326        0xa 
+ .text.slip_addr_remove
+                0x0000000000401330       0x20 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ .text.slip_addr_add
+                0x0000000000401350       0x20 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ .text.slip_get_mac48
+                0x0000000000401370       0x23 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ *fill*         0x0000000000401393        0xd 
+ .text.slip_get_mtu
+                0x00000000004013a0       0x33 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ *fill*         0x00000000004013d3        0xd 
+ .text.slip_send6
+                0x00000000004013e0       0x23 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ *fill*         0x0000000000401403        0xd 
+ .text.slip_close
+                0x0000000000401410       0x20 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ .text.slip_open
+                0x0000000000401430       0x20 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ .text.slip_client_conn
+                0x0000000000401450       0x36 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ *fill*         0x0000000000401486        0xa 
+ .text.slip_recv_fibril
+                0x0000000000401490      0x22d uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ *fill*         0x00000000004016bd        0x3 
+ .text.slip_send
+                0x00000000004016c0      0x5d3 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ .text          0x0000000000401c93        0xc uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                0x0000000000401c93                _start
+ *fill*         0x0000000000401c9f        0x1 
+ .text.__c_start
+                0x0000000000401ca0       0x8c uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                0x0000000000401ca0                __c_start
+ *fill*         0x0000000000401d2c        0x4 
+ .text.iplink_srv_init
+                0x0000000000401d30       0x39 uspace/lib/libinet.a.p/inet_src_iplink_srv.c.o
+                0x0000000000401d30                iplink_srv_init
+ *fill*         0x0000000000401d69        0x7 
+ .text.iplink_conn
+                0x0000000000401d70      0x4a7 uspace/lib/libinet.a.p/inet_src_iplink_srv.c.o
+                0x0000000000401d70                iplink_conn
+ *fill*         0x0000000000402217        0x9 
+ .text.iplink_ev_recv
+                0x0000000000402220       0xb4 uspace/lib/libinet.a.p/inet_src_iplink_srv.c.o
+                0x0000000000402220                iplink_ev_recv
+ *fill*         0x00000000004022d4        0xc 
+ .text.chardev_open
+                0x00000000004022e0       0x35 uspace/lib/libdevice.a.p/device_src_io_chardev.c.o
+                0x00000000004022e0                chardev_open
+ *fill*         0x0000000000402315        0xb 
+ .text.chardev_close
+                0x0000000000402320        0xa uspace/lib/libdevice.a.p/device_src_io_chardev.c.o
+                0x0000000000402320                chardev_close
+ *fill*         0x000000000040232a        0x6 
+ .text.chardev_read
+                0x0000000000402330       0xc9 uspace/lib/libdevice.a.p/device_src_io_chardev.c.o
+                0x0000000000402330                chardev_read
+ *fill*         0x00000000004023f9        0x7 
+ .text.chardev_write
+                0x0000000000402400      0x115 uspace/lib/libdevice.a.p/device_src_io_chardev.c.o
+                0x0000000000402400                chardev_write
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000402518      0x2e0
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.slip_addr_remove.str1.1
+                0x0000000000402518      0x12d uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+                                         0x13 (size before relaxing)
+ .rodata.slip_addr_add.str1.1
+                0x0000000000402645       0x10 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ .rodata.slip_get_mac48.str1.1
+                0x0000000000402645       0x11 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ .rodata.slip_get_mtu.str1.1
+                0x0000000000402645        0xf uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ .rodata.slip_send6.str1.1
+                0x0000000000402645        0xd uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ .rodata.slip_close.str1.1
+                0x0000000000402645        0xd uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ .rodata.slip_open.str1.1
+                0x0000000000402645        0xc uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ .rodata.slip_client_conn.str1.1
+                0x0000000000402645       0x13 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ .rodata.slip_recv_fibril.str1.1
+                0x0000000000402645       0x2d uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ .rodata.slip_send.str1.1
+                0x0000000000402645       0x22 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ *fill*         0x0000000000402645        0x3 
+ .rodata.main.str1.8
+                0x0000000000402648      0x169 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ .rodata.main.str1.1
+                0x00000000004027b1       0x62 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ *fill*         0x00000000004027b1        0x7 
+ .rodata.cst8   0x00000000004027b8        0x8 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .rodata.iplink_conn
+                0x00000000004027c0       0x38 uspace/lib/libinet.a.p/inet_src_iplink_srv.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x00000000004027f8       0xac
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x00000000004027f8       0xac uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+                0x00000000004027f8                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x00000000004028a8      0x310
+ *(.eh_frame)
+ .eh_frame      0x00000000004028a8      0x198 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ .eh_frame      0x0000000000402a40       0x28 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000402a68        0x0 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ .eh_frame      0x0000000000402a68       0x20 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000402a88       0x88 uspace/lib/libinet.a.p/inet_src_iplink_srv.c.o
+                                         0xd8 (size before relaxing)
+ .eh_frame      0x0000000000402b10       0xa8 uspace/lib/libdevice.a.p/device_src_io_chardev.c.o
+                                         0xc0 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x0000000000402bb8        0x0
+ *(.sframe)
+ .sframe        0x0000000000402bb8        0x0 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x0000000000403000                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0x0000000000403000        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0000000000403000        0x0
+                0x0000000000403000                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x0000000000403000                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x0000000000403000        0x0
+                0x0000000000403000                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x0000000000403000                PROVIDE (__init_array_end = .)
+
+.fini_array     0x0000000000403000        0x0
+                0x0000000000403000                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x0000000000403000                PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x0000000000403000        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x0000000000403000        0x0 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+
+.dynamic        0x0000000000403000      0x150
+ *(.dynamic)
+ .dynamic       0x0000000000403000      0x150 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+                0x0000000000403000                _DYNAMIC
+
+.got            0x0000000000403150        0x0
+ *(.got)
+ .got           0x0000000000403150        0x0 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ *(.igot)
+                0x0000000000403150                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x0000000000403150      0x160
+ *(.got.plt)
+ .got.plt       0x0000000000403150      0x160 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+                0x0000000000403150                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x00000000004032b0        0x0 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+
+.data           0x00000000004032c0       0x48
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.slip_iplink_ops
+                0x00000000004032c0       0x48 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+
+.data1
+ *(.data1)
+                0x0000000000403308                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x0000000000403308                . = .
+                0x0000000000403308                __bss_start = .
+
+.bss            0x0000000000403320      0xca0
+ *(.dynbss)
+ .dynbss        0x0000000000403320       0x48 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+                0x0000000000403320                __progsymbols
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ *fill*         0x0000000000403368       0x18 
+ .bss.recv_final.0
+                0x0000000000403380      0x3ee uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ *fill*         0x000000000040376e        0x2 
+ .bss.slip_recv_read
+                0x0000000000403770        0x8 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ .bss.slip_recv_pending
+                0x0000000000403778        0x8 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ .bss.slip_recv_buf
+                0x0000000000403780      0x3f0 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ .bss.slip_send_pending
+                0x0000000000403b70        0x8 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ *fill*         0x0000000000403b78        0x8 
+ .bss.slip_send_buf
+                0x0000000000403b80      0x3f0 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ *fill*         0x0000000000403f70       0x10 
+ .bss.slip_iplink
+                0x0000000000403f80       0x40 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+ *(COMMON)
+                0x0000000000403fc0                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x0000000000403fc0                . = ALIGN (0x8)
+                0x0000000000403fc0                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x0000000000405fc0        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x0000000000405fc0                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000405fc0                . = ALIGN (0x8)
+                0x0000000000403fc0                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x0000000000405fc0                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/srv_net_slip.p/srv_net_slip_slip.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libinet.a.p/inet_src_iplink_srv.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdevice.a.p/device_src_io_chardev.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/srv_net_slip elf64-x86-64)

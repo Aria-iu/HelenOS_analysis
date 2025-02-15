@@ -1,0 +1,3450 @@
+
+As-needed library included to satisfy reference by file (symbol)
+
+libgfx.so.0                   uspace/lib/libui.so.0.0.p/ui_src_window.c.o (gfx_rect_envelope)
+libc.so.0                     uspace/lib/libui.so.0.0.p/ui_src_ui.c.o (task_retval)
+libgfxfont.so.0               uspace/lib/libui.so.0.0.p/ui_src_entry.c.o (gfx_text_start_pos)
+libmemgfx.so.0                uspace/lib/libui.so.0.0.p/ui_src_window.c.o (mem_gc_retarget)
+libdisplay.so.0               uspace/lib/libui.so.0.0.p/ui_src_ui.c.o (display_open)
+libcongfx.so.0                uspace/lib/libui.so.0.0.p/ui_src_ui.c.o (console_gc_resume)
+libconsole.so.0               uspace/lib/libui.so.0.0.p/ui_src_ui.c.o (console_get_size)
+libclipboard.so.0             uspace/lib/libui.so.0.0.p/ui_src_entry.c.o (clipboard_put_str)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_checkbox.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_checkbox.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_checkbox.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_clickmatic.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_clickmatic.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_clickmatic.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_control.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_control.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_control.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_dummygc.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_dummygc.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_dummygc.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_filedialog.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_filedialog.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_filedialog.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_fixed.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_fixed.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_fixed.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_image.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_image.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_image.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_label.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_label.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_label.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_menu.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_menu.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_menu.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_menubar.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_menubar.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_menubar.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_menudd.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_menudd.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_menudd.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_menuentry.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_menuentry.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_menuentry.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_msgdialog.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_msgdialog.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_msgdialog.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_pbutton.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_pbutton.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_pbutton.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_popup.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_popup.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_popup.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_promptdialog.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_promptdialog.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_promptdialog.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_rbutton.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_rbutton.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_rbutton.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_resource.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_resource.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_resource.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_selectdialog.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_selectdialog.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_selectdialog.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_slider.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_slider.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_slider.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_tabset.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_tabset.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_tabset.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_testctl.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_testctl.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_testctl.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_ui.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_ui.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_ui.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+LOAD uspace/lib/libui.so.0.0.p/ui_src_checkbox.c.o
+LOAD uspace/lib/libui.so.0.0.p/ui_src_clickmatic.c.o
+LOAD uspace/lib/libui.so.0.0.p/ui_src_control.c.o
+LOAD uspace/lib/libui.so.0.0.p/ui_src_dummygc.c.o
+LOAD uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+LOAD uspace/lib/libui.so.0.0.p/ui_src_filedialog.c.o
+LOAD uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+LOAD uspace/lib/libui.so.0.0.p/ui_src_fixed.c.o
+LOAD uspace/lib/libui.so.0.0.p/ui_src_image.c.o
+LOAD uspace/lib/libui.so.0.0.p/ui_src_label.c.o
+LOAD uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+LOAD uspace/lib/libui.so.0.0.p/ui_src_menu.c.o
+LOAD uspace/lib/libui.so.0.0.p/ui_src_menubar.c.o
+LOAD uspace/lib/libui.so.0.0.p/ui_src_menudd.c.o
+LOAD uspace/lib/libui.so.0.0.p/ui_src_menuentry.c.o
+LOAD uspace/lib/libui.so.0.0.p/ui_src_msgdialog.c.o
+LOAD uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+LOAD uspace/lib/libui.so.0.0.p/ui_src_pbutton.c.o
+LOAD uspace/lib/libui.so.0.0.p/ui_src_popup.c.o
+LOAD uspace/lib/libui.so.0.0.p/ui_src_promptdialog.c.o
+LOAD uspace/lib/libui.so.0.0.p/ui_src_rbutton.c.o
+LOAD uspace/lib/libui.so.0.0.p/ui_src_resource.c.o
+LOAD uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+LOAD uspace/lib/libui.so.0.0.p/ui_src_selectdialog.c.o
+LOAD uspace/lib/libui.so.0.0.p/ui_src_slider.c.o
+LOAD uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+LOAD uspace/lib/libui.so.0.0.p/ui_src_tabset.c.o
+LOAD uspace/lib/libui.so.0.0.p/ui_src_testctl.c.o
+LOAD uspace/lib/libui.so.0.0.p/ui_src_ui.c.o
+LOAD uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+LOAD uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+START GROUP
+LOAD uspace/lib/libgfx.so.0.0
+LOAD uspace/lib/libc.so.0.0
+LOAD uspace/lib/libgfxfont.so.0.0
+LOAD uspace/lib/libriff.so.0.0
+LOAD uspace/lib/libmemgfx.so.0.0
+LOAD uspace/lib/libdisplay.so.0.0
+LOAD uspace/lib/libipcgfx.so.0.0
+LOAD uspace/lib/libinput.so.0.0
+LOAD uspace/lib/libcongfx.so.0.0
+LOAD uspace/lib/libconsole.so.0.0
+LOAD uspace/lib/liboutput.so.0.0
+LOAD uspace/lib/libclipboard.so.0.0
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000000120                . = (SEGMENT_START ("text-segment", 0x0) + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000000120     0x1250
+ *(.hash)
+ .hash          0x0000000000000120     0x1250 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x0000000000001370     0x3cd8
+ *(.dynsym)
+ .dynsym        0x0000000000001370     0x3cd8 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+
+.dynstr         0x0000000000005048     0x30cf
+ *(.dynstr)
+ .dynstr        0x0000000000005048     0x30cf uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+
+.gnu.version    0x0000000000008118        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000008118        0x0 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+
+.gnu.version_d  0x0000000000008118        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000008118        0x0 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+
+.gnu.version_r  0x0000000000008118        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000008118        0x0 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+
+.rela.dyn       0x0000000000008118     0x1488
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.local.ui_checkbox_ops
+                0x0000000000008118       0x48 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.dummygc_ops
+                0x0000000000008160       0xc0 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_entry_ops
+                0x0000000000008220       0x60 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_file_dialog_bcancel_cb
+                0x0000000000008280       0x18 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_file_dialog_bok_cb
+                0x0000000000008298       0x18 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_file_dialog_flist_cb
+                0x00000000000082b0       0x30 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_file_dialog_wnd_cb
+                0x00000000000082e0       0x30 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.ui_file_list_list_cb
+                0x0000000000008310       0x48 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_file_list_ctl_ops
+                0x0000000000008358       0x60 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_fixed_ops
+                0x00000000000083b8       0x78 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_image_ops
+                0x0000000000008430       0x48 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_label_ops
+                0x0000000000008478       0x48 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_list_scrollbar_cb
+                0x00000000000084c0       0x78 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_list_ctl_ops
+                0x0000000000008538       0x60 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_menu_popup_cb
+                0x0000000000008598       0x48 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_menu_bar_ops
+                0x00000000000085e0       0x60 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_menu_dd_menu_cb
+                0x0000000000008640       0x60 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_msg_dialog_captions
+                0x00000000000086a0       0x48 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_msg_dialog_btn_cb
+                0x00000000000086e8       0x18 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_msg_dialog_wnd_cb
+                0x0000000000008700       0x30 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.double_hbrace_chars
+                0x0000000000008730       0x48 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.single_hbrace_chars
+                0x0000000000008778       0x48 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.double_box_chars
+                0x00000000000087c0       0xd8 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.single_box_chars
+                0x0000000000008898       0xd8 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_pbutton_ops
+                0x0000000000008970       0x48 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_popup_window_cb
+                0x00000000000089b8       0x48 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_prompt_dialog_bcancel_cb
+                0x0000000000008a00       0x18 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_prompt_dialog_bok_cb
+                0x0000000000008a18       0x18 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_prompt_dialog_wnd_cb
+                0x0000000000008a30       0x30 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_rbutton_ops
+                0x0000000000008a60       0x48 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_scrollbar_clickmatic_page_down_cb
+                0x0000000000008aa8       0x18 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_scrollbar_clickmatic_page_up_cb
+                0x0000000000008ac0       0x18 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_scrollbar_clickmatic_down_cb
+                0x0000000000008ad8       0x18 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_scrollbar_clickmatic_up_cb
+                0x0000000000008af0       0x18 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_scrollbar_ops
+                0x0000000000008b08       0x48 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_scrollbar_down_btn_decor_ops
+                0x0000000000008b50       0x18 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_scrollbar_down_btn_cb
+                0x0000000000008b68       0x30 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_scrollbar_up_btn_decor_ops
+                0x0000000000008b98       0x18 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_scrollbar_up_btn_cb
+                0x0000000000008bb0       0x30 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_select_dialog_list_cb
+                0x0000000000008be0       0x18 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_select_dialog_bcancel_cb
+                0x0000000000008bf8       0x18 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_select_dialog_bok_cb
+                0x0000000000008c10       0x18 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_select_dialog_wnd_cb
+                0x0000000000008c28       0x30 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_slider_ops
+                0x0000000000008c58       0x48 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.unsel_tab_box_chars
+                0x0000000000008ca0       0xd8 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.sel_tab_box_chars
+                0x0000000000008d78       0xd8 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_tab_set_ops
+                0x0000000000008e50       0x60 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_test_ctl_ops
+                0x0000000000008eb0       0x78 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_wdecor_btn_close_decor_ops
+                0x0000000000008f28       0x18 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_wdecor_btn_close_cb
+                0x0000000000008f40       0x18 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_wdecor_btn_max_decor_ops
+                0x0000000000008f58       0x18 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_wdecor_btn_max_cb
+                0x0000000000008f70       0x18 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_wdecor_btn_min_decor_ops
+                0x0000000000008f88       0x18 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_wdecor_btn_min_cb
+                0x0000000000008fa0       0x18 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_window_app_mem_gc_cb
+                0x0000000000008fb8       0x30 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.ui_window_mem_gc_cb
+                0x0000000000008fe8       0x78 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.wnd_sysmenu_cb
+                0x0000000000009060       0x60 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.wdecor_cb
+                0x00000000000090c0      0x108 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .rela.data.rel.local.dwnd_cb
+                0x00000000000091c8       0x90 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000009258      0x348 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+ .rela.ifunc    0x00000000000095a0        0x0 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+
+.rela.plt       0x00000000000095a0     0x3060
+ *(.rela.plt)
+ .rela.plt      0x00000000000095a0     0x3060 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ *(.rela.iplt)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x000000000000c600     0x2050
+ *(.plt)
+ .plt           0x000000000000c600     0x2050 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ *(.iplt)
+
+.plt.got        0x000000000000e650        0x0
+ *(.plt.got)
+ .plt.got       0x000000000000e650        0x0 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x000000000000e650    0x12acb
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text.ui_accel_process
+                0x000000000000e650       0x9d uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+                0x000000000000e650                ui_accel_process
+ *fill*         0x000000000000e6ed        0x3 
+ .text.ui_accel_get
+                0x000000000000e6f0       0x63 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+                0x000000000000e6f0                ui_accel_get
+ *fill*         0x000000000000e753        0xd 
+ .text.ui_checkbox_create
+                0x000000000000e760       0xa0 uspace/lib/libui.so.0.0.p/ui_src_checkbox.c.o
+                0x000000000000e760                ui_checkbox_create
+ .text.ui_checkbox_destroy
+                0x000000000000e800       0x31 uspace/lib/libui.so.0.0.p/ui_src_checkbox.c.o
+                0x000000000000e800                ui_checkbox_destroy
+ *fill*         0x000000000000e831        0xf 
+ .text.ui_checkbox_ctl_destroy
+                0x000000000000e840        0xa uspace/lib/libui.so.0.0.p/ui_src_checkbox.c.o
+ *fill*         0x000000000000e84a        0x6 
+ .text.ui_checkbox_ctl
+                0x000000000000e850        0x9 uspace/lib/libui.so.0.0.p/ui_src_checkbox.c.o
+                0x000000000000e850                ui_checkbox_ctl
+ *fill*         0x000000000000e859        0x7 
+ .text.ui_checkbox_set_cb
+                0x000000000000e860        0xe uspace/lib/libui.so.0.0.p/ui_src_checkbox.c.o
+                0x000000000000e860                ui_checkbox_set_cb
+ *fill*         0x000000000000e86e        0x2 
+ .text.ui_checkbox_set_rect
+                0x000000000000e870        0xe uspace/lib/libui.so.0.0.p/ui_src_checkbox.c.o
+                0x000000000000e870                ui_checkbox_set_rect
+ *fill*         0x000000000000e87e        0x2 
+ .text.ui_checkbox_get_checked
+                0x000000000000e880        0xa uspace/lib/libui.so.0.0.p/ui_src_checkbox.c.o
+                0x000000000000e880                ui_checkbox_get_checked
+ *fill*         0x000000000000e88a        0x6 
+ .text.ui_checkbox_set_checked
+                0x000000000000e890        0xa uspace/lib/libui.so.0.0.p/ui_src_checkbox.c.o
+                0x000000000000e890                ui_checkbox_set_checked
+ *fill*         0x000000000000e89a        0x6 
+ .text.ui_checkbox_paint_gfx
+                0x000000000000e8a0      0x17e uspace/lib/libui.so.0.0.p/ui_src_checkbox.c.o
+                0x000000000000e8a0                ui_checkbox_paint_gfx
+ *fill*         0x000000000000ea1e        0x2 
+ .text.ui_checkbox_paint_text
+                0x000000000000ea20       0xf2 uspace/lib/libui.so.0.0.p/ui_src_checkbox.c.o
+                0x000000000000ea20                ui_checkbox_paint_text
+ *fill*         0x000000000000eb12        0xe 
+ .text.ui_checkbox_paint
+                0x000000000000eb20       0x1e uspace/lib/libui.so.0.0.p/ui_src_checkbox.c.o
+                0x000000000000eb20                ui_checkbox_paint
+ *fill*         0x000000000000eb3e        0x2 
+ .text.ui_checkbox_ctl_paint
+                0x000000000000eb40        0xa uspace/lib/libui.so.0.0.p/ui_src_checkbox.c.o
+ *fill*         0x000000000000eb4a        0x6 
+ .text.ui_checkbox_press
+                0x000000000000eb50       0x1f uspace/lib/libui.so.0.0.p/ui_src_checkbox.c.o
+                0x000000000000eb50                ui_checkbox_press
+ *fill*         0x000000000000eb6f        0x1 
+ .text.ui_checkbox_enter
+                0x000000000000eb70       0x26 uspace/lib/libui.so.0.0.p/ui_src_checkbox.c.o
+                0x000000000000eb70                ui_checkbox_enter
+ *fill*         0x000000000000eb96        0xa 
+ .text.ui_checkbox_leave
+                0x000000000000eba0       0x26 uspace/lib/libui.so.0.0.p/ui_src_checkbox.c.o
+                0x000000000000eba0                ui_checkbox_leave
+ *fill*         0x000000000000ebc6        0xa 
+ .text.ui_checkbox_switched
+                0x000000000000ebd0       0x22 uspace/lib/libui.so.0.0.p/ui_src_checkbox.c.o
+                0x000000000000ebd0                ui_checkbox_switched
+ *fill*         0x000000000000ebf2        0xe 
+ .text.ui_checkbox_release
+                0x000000000000ec00       0x37 uspace/lib/libui.so.0.0.p/ui_src_checkbox.c.o
+                0x000000000000ec00                ui_checkbox_release
+ *fill*         0x000000000000ec37        0x9 
+ .text.ui_checkbox_pos_event
+                0x000000000000ec40       0xae uspace/lib/libui.so.0.0.p/ui_src_checkbox.c.o
+                0x000000000000ec40                ui_checkbox_pos_event
+ *fill*         0x000000000000ecee        0x2 
+ .text.ui_checkbox_ctl_pos_event
+                0x000000000000ecf0        0xa uspace/lib/libui.so.0.0.p/ui_src_checkbox.c.o
+ *fill*         0x000000000000ecfa        0x6 
+ .text.ui_clickmatic_create
+                0x000000000000ed00       0x5f uspace/lib/libui.so.0.0.p/ui_src_clickmatic.c.o
+                0x000000000000ed00                ui_clickmatic_create
+ *fill*         0x000000000000ed5f        0x1 
+ .text.ui_clickmatic_set_cb
+                0x000000000000ed60        0xe uspace/lib/libui.so.0.0.p/ui_src_clickmatic.c.o
+                0x000000000000ed60                ui_clickmatic_set_cb
+ *fill*         0x000000000000ed6e        0x2 
+ .text.ui_clickmatic_destroy
+                0x000000000000ed70       0x31 uspace/lib/libui.so.0.0.p/ui_src_clickmatic.c.o
+                0x000000000000ed70                ui_clickmatic_destroy
+ *fill*         0x000000000000eda1        0xf 
+ .text.ui_clickmatic_release
+                0x000000000000edb0        0xe uspace/lib/libui.so.0.0.p/ui_src_clickmatic.c.o
+                0x000000000000edb0                ui_clickmatic_release
+ *fill*         0x000000000000edbe        0x2 
+ .text.ui_clickmatic_clicked
+                0x000000000000edc0       0x22 uspace/lib/libui.so.0.0.p/ui_src_clickmatic.c.o
+                0x000000000000edc0                ui_clickmatic_clicked
+ *fill*         0x000000000000ede2        0xe 
+ .text.ui_clickmatic_press
+                0x000000000000edf0       0x2e uspace/lib/libui.so.0.0.p/ui_src_clickmatic.c.o
+                0x000000000000edf0                ui_clickmatic_press
+ *fill*         0x000000000000ee1e        0x2 
+ .text.ui_clickmatic_timer_fun
+                0x000000000000ee20       0x41 uspace/lib/libui.so.0.0.p/ui_src_clickmatic.c.o
+ *fill*         0x000000000000ee61        0xf 
+ .text.ui_control_new
+                0x000000000000ee70       0x4a uspace/lib/libui.so.0.0.p/ui_src_control.c.o
+                0x000000000000ee70                ui_control_new
+ *fill*         0x000000000000eeba        0x6 
+ .text.ui_control_delete
+                0x000000000000eec0       0x12 uspace/lib/libui.so.0.0.p/ui_src_control.c.o
+                0x000000000000eec0                ui_control_delete
+ *fill*         0x000000000000eed2        0xe 
+ .text.ui_control_destroy
+                0x000000000000eee0       0x22 uspace/lib/libui.so.0.0.p/ui_src_control.c.o
+                0x000000000000eee0                ui_control_destroy
+ *fill*         0x000000000000ef02        0xe 
+ .text.ui_control_kbd_event
+                0x000000000000ef10       0x27 uspace/lib/libui.so.0.0.p/ui_src_control.c.o
+                0x000000000000ef10                ui_control_kbd_event
+ *fill*         0x000000000000ef37        0x9 
+ .text.ui_control_paint
+                0x000000000000ef40       0x16 uspace/lib/libui.so.0.0.p/ui_src_control.c.o
+                0x000000000000ef40                ui_control_paint
+ *fill*         0x000000000000ef56        0xa 
+ .text.ui_control_pos_event
+                0x000000000000ef60       0x16 uspace/lib/libui.so.0.0.p/ui_src_control.c.o
+                0x000000000000ef60                ui_control_pos_event
+ *fill*         0x000000000000ef76        0xa 
+ .text.ui_control_unfocus
+                0x000000000000ef80       0x22 uspace/lib/libui.so.0.0.p/ui_src_control.c.o
+                0x000000000000ef80                ui_control_unfocus
+ *fill*         0x000000000000efa2        0xe 
+ .text.dummygc_set_clip_rect
+                0x000000000000efb0        0x8 uspace/lib/libui.so.0.0.p/ui_src_dummygc.c.o
+ *fill*         0x000000000000efb8        0x8 
+ .text.dummygc_update
+                0x000000000000efc0        0x8 uspace/lib/libui.so.0.0.p/ui_src_dummygc.c.o
+ *fill*         0x000000000000efc8        0x8 
+ .text.dummygc_bitmap_render
+                0x000000000000efd0       0x38 uspace/lib/libui.so.0.0.p/ui_src_dummygc.c.o
+ *fill*         0x000000000000f008        0x8 
+ .text.dummygc_bitmap_get_alloc
+                0x000000000000f010       0x1f uspace/lib/libui.so.0.0.p/ui_src_dummygc.c.o
+ *fill*         0x000000000000f02f        0x1 
+ .text.dummygc_bitmap_destroy
+                0x000000000000f030       0x3b uspace/lib/libui.so.0.0.p/ui_src_dummygc.c.o
+ *fill*         0x000000000000f06b        0x5 
+ .text.dummygc_bitmap_create
+                0x000000000000f070       0xd6 uspace/lib/libui.so.0.0.p/ui_src_dummygc.c.o
+ *fill*         0x000000000000f146        0xa 
+ .text.dummygc_set_color
+                0x000000000000f150        0x8 uspace/lib/libui.so.0.0.p/ui_src_dummygc.c.o
+ *fill*         0x000000000000f158        0x8 
+ .text.dummygc_fill_rect
+                0x000000000000f160        0x8 uspace/lib/libui.so.0.0.p/ui_src_dummygc.c.o
+ *fill*         0x000000000000f168        0x8 
+ .text.dummygc_create
+                0x000000000000f170       0x6e uspace/lib/libui.so.0.0.p/ui_src_dummygc.c.o
+                0x000000000000f170                dummygc_create
+ *fill*         0x000000000000f1de        0x2 
+ .text.dummygc_destroy
+                0x000000000000f1e0       0x21 uspace/lib/libui.so.0.0.p/ui_src_dummygc.c.o
+                0x000000000000f1e0                dummygc_destroy
+ *fill*         0x000000000000f201        0xf 
+ .text.dummygc_get_ctx
+                0x000000000000f210        0x9 uspace/lib/libui.so.0.0.p/ui_src_dummygc.c.o
+                0x000000000000f210                dummygc_get_ctx
+ *fill*         0x000000000000f219        0x7 
+ .text.ui_entry_create
+                0x000000000000f220       0xa8 uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                0x000000000000f220                ui_entry_create
+ *fill*         0x000000000000f2c8        0x8 
+ .text.ui_entry_destroy
+                0x000000000000f2d0       0x31 uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                0x000000000000f2d0                ui_entry_destroy
+ *fill*         0x000000000000f301        0xf 
+ .text.ui_entry_ctl_destroy
+                0x000000000000f310        0xa uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+ *fill*         0x000000000000f31a        0x6 
+ .text.ui_entry_ctl
+                0x000000000000f320        0x9 uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                0x000000000000f320                ui_entry_ctl
+ *fill*         0x000000000000f329        0x7 
+ .text.ui_entry_set_rect
+                0x000000000000f330        0xe uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                0x000000000000f330                ui_entry_set_rect
+ *fill*         0x000000000000f33e        0x2 
+ .text.ui_entry_set_read_only
+                0x000000000000f340        0xa uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                0x000000000000f340                ui_entry_set_read_only
+ *fill*         0x000000000000f34a        0x6 
+ .text.ui_entry_get_text
+                0x000000000000f350        0xa uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                0x000000000000f350                ui_entry_get_text
+ *fill*         0x000000000000f35a        0x6 
+ .text.ui_entry_copy
+                0x000000000000f360       0x50 uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                0x000000000000f360                ui_entry_copy
+ .text.ui_entry_get_geom
+                0x000000000000f3b0       0xee uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                0x000000000000f3b0                ui_entry_get_geom
+ *fill*         0x000000000000f49e        0x2 
+ .text.ui_entry_paint
+                0x000000000000f4a0      0x401 uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                0x000000000000f4a0                ui_entry_paint
+ *fill*         0x000000000000f8a1        0xf 
+ .text.ui_entry_ctl_paint
+                0x000000000000f8b0        0xa uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+ *fill*         0x000000000000f8ba        0x6 
+ .text.ui_entry_find_pos
+                0x000000000000f8c0       0x6f uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                0x000000000000f8c0                ui_entry_find_pos
+ *fill*         0x000000000000f92f        0x1 
+ .text.ui_entry_activate
+                0x000000000000f930       0x49 uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                0x000000000000f930                ui_entry_activate
+ *fill*         0x000000000000f979        0x7 
+ .text.ui_entry_deactivate
+                0x000000000000f980       0x4c uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                0x000000000000f980                ui_entry_deactivate
+ *fill*         0x000000000000f9cc        0x4 
+ .text.ui_entry_pos_event
+                0x000000000000f9d0      0x174 uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                0x000000000000f9d0                ui_entry_pos_event
+ *fill*         0x000000000000fb44        0xc 
+ .text.ui_entry_ctl_pos_event
+                0x000000000000fb50        0xa uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+ *fill*         0x000000000000fb5a        0x6 
+ .text.ui_entry_scroll_update
+                0x000000000000fb60      0x13f uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                0x000000000000fb60                ui_entry_scroll_update
+ *fill*         0x000000000000fc9f        0x1 
+ .text.ui_entry_set_halign
+                0x000000000000fca0       0x26 uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                0x000000000000fca0                ui_entry_set_halign
+ *fill*         0x000000000000fcc6        0xa 
+ .text.ui_entry_set_text
+                0x000000000000fcd0       0x78 uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                0x000000000000fcd0                ui_entry_set_text
+ *fill*         0x000000000000fd48        0x8 
+ .text.ui_entry_delete_sel
+                0x000000000000fd50       0x7a uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                0x000000000000fd50                ui_entry_delete_sel
+ *fill*         0x000000000000fdca        0x6 
+ .text.ui_entry_cut
+                0x000000000000fdd0       0x1e uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                0x000000000000fdd0                ui_entry_cut
+ *fill*         0x000000000000fdee        0x2 
+ .text.ui_entry_insert_str
+                0x000000000000fdf0       0xe2 uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                0x000000000000fdf0                ui_entry_insert_str
+ *fill*         0x000000000000fed2        0xe 
+ .text.ui_entry_paste
+                0x000000000000fee0       0x34 uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                0x000000000000fee0                ui_entry_paste
+ *fill*         0x000000000000ff14        0xc 
+ .text.ui_entry_key_press_ctrl
+                0x000000000000ff20       0x61 uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                0x000000000000ff20                ui_entry_key_press_ctrl
+ *fill*         0x000000000000ff81        0xf 
+ .text.ui_entry_backspace
+                0x000000000000ff90       0x9a uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                0x000000000000ff90                ui_entry_backspace
+ *fill*         0x000000000001002a        0x6 
+ .text.ui_entry_delete
+                0x0000000000010030       0x7c uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                0x0000000000010030                ui_entry_delete
+ *fill*         0x00000000000100ac        0x4 
+ .text.ui_entry_seek_start
+                0x00000000000100b0       0x36 uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                0x00000000000100b0                ui_entry_seek_start
+ *fill*         0x00000000000100e6        0xa 
+ .text.ui_entry_seek_end
+                0x00000000000100f0       0x37 uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                0x00000000000100f0                ui_entry_seek_end
+ *fill*         0x0000000000010127        0x9 
+ .text.ui_entry_seek_prev_char
+                0x0000000000010130       0x5b uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                0x0000000000010130                ui_entry_seek_prev_char
+ *fill*         0x000000000001018b        0x5 
+ .text.ui_entry_seek_next_char
+                0x0000000000010190       0x5b uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                0x0000000000010190                ui_entry_seek_next_char
+ *fill*         0x00000000000101eb        0x5 
+ .text.ui_entry_key_press_unmod
+                0x00000000000101f0       0xb3 uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                0x00000000000101f0                ui_entry_key_press_unmod
+ *fill*         0x00000000000102a3        0xd 
+ .text.ui_entry_key_press_shift
+                0x00000000000102b0       0x86 uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                0x00000000000102b0                ui_entry_key_press_shift
+ *fill*         0x0000000000010336        0xa 
+ .text.ui_entry_kbd_event
+                0x0000000000010340      0x169 uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                0x0000000000010340                ui_entry_kbd_event
+ *fill*         0x00000000000104a9        0x7 
+ .text.ui_entry_ctl_kbd_event
+                0x00000000000104b0        0xa uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+ *fill*         0x00000000000104ba        0x6 
+ .text.ui_file_dialog_wnd_close
+                0x00000000000104c0       0x22 uspace/lib/libui.so.0.0.p/ui_src_filedialog.c.o
+ *fill*         0x00000000000104e2        0xe 
+ .text.ui_file_dialog_flist_selected
+                0x00000000000104f0       0x15 uspace/lib/libui.so.0.0.p/ui_src_filedialog.c.o
+ *fill*         0x0000000000010505        0xb 
+ .text.ui_file_dialog_bcancel_clicked
+                0x0000000000010510       0x22 uspace/lib/libui.so.0.0.p/ui_src_filedialog.c.o
+ *fill*         0x0000000000010532        0xe 
+ .text.ui_file_dialog_flist_activate_req
+                0x0000000000010540       0x23 uspace/lib/libui.so.0.0.p/ui_src_filedialog.c.o
+ *fill*         0x0000000000010563        0xd 
+ .text.ui_file_dialog_wnd_kbd
+                0x0000000000010570       0x99 uspace/lib/libui.so.0.0.p/ui_src_filedialog.c.o
+ *fill*         0x0000000000010609        0x7 
+ .text.ui_file_dialog_bok_clicked
+                0x0000000000010610       0x41 uspace/lib/libui.so.0.0.p/ui_src_filedialog.c.o
+ *fill*         0x0000000000010651        0xf 
+ .text.ui_file_dialog_params_init
+                0x0000000000010660       0x18 uspace/lib/libui.so.0.0.p/ui_src_filedialog.c.o
+                0x0000000000010660                ui_file_dialog_params_init
+ *fill*         0x0000000000010678        0x8 
+ .text.ui_file_dialog_create
+                0x0000000000010680      0x65b uspace/lib/libui.so.0.0.p/ui_src_filedialog.c.o
+                0x0000000000010680                ui_file_dialog_create
+ *fill*         0x0000000000010cdb        0x5 
+ .text.ui_file_dialog_destroy
+                0x0000000000010ce0       0x31 uspace/lib/libui.so.0.0.p/ui_src_filedialog.c.o
+                0x0000000000010ce0                ui_file_dialog_destroy
+ *fill*         0x0000000000010d11        0xf 
+ .text.ui_file_dialog_set_cb
+                0x0000000000010d20        0xe uspace/lib/libui.so.0.0.p/ui_src_filedialog.c.o
+                0x0000000000010d20                ui_file_dialog_set_cb
+ *fill*         0x0000000000010d2e        0x2 
+ .text.ui_file_list_ctl_pos_event
+                0x0000000000010d30       0x25 uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+ *fill*         0x0000000000010d55        0xb 
+ .text.ui_file_list_ctl_kbd_event
+                0x0000000000010d60       0x25 uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+ *fill*         0x0000000000010d85        0xb 
+ .text.ui_file_list_list_compare
+                0x0000000000010d90       0x41 uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+                0x0000000000010d90                ui_file_list_list_compare
+ *fill*         0x0000000000010dd1        0xf 
+ .text.ui_file_list_create
+                0x0000000000010de0       0xf9 uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+                0x0000000000010de0                ui_file_list_create
+ *fill*         0x0000000000010ed9        0x7 
+ .text.ui_file_list_set_cb
+                0x0000000000010ee0        0xe uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+                0x0000000000010ee0                ui_file_list_set_cb
+ *fill*         0x0000000000010eee        0x2 
+ .text.ui_file_list_ctl
+                0x0000000000010ef0        0x9 uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+                0x0000000000010ef0                ui_file_list_ctl
+ *fill*         0x0000000000010ef9        0x7 
+ .text.ui_file_list_set_rect
+                0x0000000000010f00        0xe uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+                0x0000000000010f00                ui_file_list_set_rect
+ *fill*         0x0000000000010f0e        0x2 
+ .text.ui_file_list_is_active
+                0x0000000000010f10        0xe uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+                0x0000000000010f10                ui_file_list_is_active
+ *fill*         0x0000000000010f1e        0x2 
+ .text.ui_file_list_activate
+                0x0000000000010f20       0x36 uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+                0x0000000000010f20                ui_file_list_activate
+ *fill*         0x0000000000010f56        0xa 
+ .text.ui_file_list_deactivate
+                0x0000000000010f60        0xe uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+                0x0000000000010f60                ui_file_list_deactivate
+ *fill*         0x0000000000010f6e        0x2 
+ .text.ui_file_list_entry_attr_init
+                0x0000000000010f70       0x11 uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+                0x0000000000010f70                ui_file_list_entry_attr_init
+ *fill*         0x0000000000010f81        0xf 
+ .text.ui_file_list_entry_append
+                0x0000000000010f90      0x19a uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+                0x0000000000010f90                ui_file_list_entry_append
+ *fill*         0x000000000001112a        0x6 
+ .text.ui_file_list_entry_destroy
+                0x0000000000011130       0x2b uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+                0x0000000000011130                ui_file_list_entry_destroy
+ *fill*         0x000000000001115b        0x5 
+ .text.ui_file_list_sort
+                0x0000000000011160        0xe uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+                0x0000000000011160                ui_file_list_sort
+ *fill*         0x000000000001116e        0x2 
+ .text.ui_file_list_first
+                0x0000000000011170       0x24 uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+                0x0000000000011170                ui_file_list_first
+ *fill*         0x0000000000011194        0xc 
+ .text.ui_file_list_clear_entries
+                0x00000000000111a0       0x3b uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+                0x00000000000111a0                ui_file_list_clear_entries
+ *fill*         0x00000000000111db        0x5 
+ .text.ui_file_list_destroy
+                0x00000000000111e0       0x2f uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+                0x00000000000111e0                ui_file_list_destroy
+ *fill*         0x000000000001120f        0x1 
+ .text.ui_file_list_ctl_destroy
+                0x0000000000011210        0xa uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+ *fill*         0x000000000001121a        0x6 
+ .text.ui_file_list_last
+                0x0000000000011220       0x24 uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+                0x0000000000011220                ui_file_list_last
+ *fill*         0x0000000000011244        0xc 
+ .text.ui_file_list_next
+                0x0000000000011250       0x24 uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+                0x0000000000011250                ui_file_list_next
+ *fill*         0x0000000000011274        0xc 
+ .text.ui_file_list_read_dir.part.0
+                0x0000000000011280      0x294 uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+ *fill*         0x0000000000011514        0xc 
+ .text.ui_file_list_read_dir
+                0x0000000000011520       0x2f uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+                0x0000000000011520                ui_file_list_read_dir
+ *fill*         0x000000000001154f        0x1 
+ .text.ui_file_list_prev
+                0x0000000000011550       0x24 uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+                0x0000000000011550                ui_file_list_prev
+ *fill*         0x0000000000011574        0xc 
+ .text.ui_file_list_get_cursor
+                0x0000000000011580       0x24 uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+                0x0000000000011580                ui_file_list_get_cursor
+ *fill*         0x00000000000115a4        0xc 
+ .text.ui_file_list_activate_req
+                0x00000000000115b0       0x22 uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+                0x00000000000115b0                ui_file_list_activate_req
+ *fill*         0x00000000000115d2        0xe 
+ .text.ui_file_list_list_activate_req
+                0x00000000000115e0        0xd uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+ *fill*         0x00000000000115ed        0x3 
+ .text.ui_file_list_selected
+                0x00000000000115f0       0x22 uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+                0x00000000000115f0                ui_file_list_selected
+ *fill*         0x0000000000011612        0xe 
+ .text.ui_file_list_open_file
+                0x0000000000011620       0x11 uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+                0x0000000000011620                ui_file_list_open_file
+ *fill*         0x0000000000011631        0xf 
+ .text.ui_file_list_paint
+                0x0000000000011640       0x16 uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+                0x0000000000011640                ui_file_list_paint
+ *fill*         0x0000000000011656        0xa 
+ .text.ui_file_list_ctl_paint
+                0x0000000000011660        0xa uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+ *fill*         0x000000000001166a        0x6 
+ .text.ui_file_list_open_dir
+                0x0000000000011670       0xa4 uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+                0x0000000000011670                ui_file_list_open_dir
+ *fill*         0x0000000000011714        0xc 
+ .text.ui_file_list_open
+                0x0000000000011720       0x26 uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+                0x0000000000011720                ui_file_list_open
+ *fill*         0x0000000000011746        0xa 
+ .text.ui_file_list_list_selected
+                0x0000000000011750        0xd uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+ *fill*         0x000000000001175d        0x3 
+ .text.ui_fixed_create
+                0x0000000000011760       0x7e uspace/lib/libui.so.0.0.p/ui_src_fixed.c.o
+                0x0000000000011760                ui_fixed_create
+ *fill*         0x00000000000117de        0x2 
+ .text.ui_fixed_ctl
+                0x00000000000117e0        0x9 uspace/lib/libui.so.0.0.p/ui_src_fixed.c.o
+                0x00000000000117e0                ui_fixed_ctl
+ *fill*         0x00000000000117e9        0x7 
+ .text.ui_fixed_add
+                0x00000000000117f0       0x56 uspace/lib/libui.so.0.0.p/ui_src_fixed.c.o
+                0x00000000000117f0                ui_fixed_add
+ *fill*         0x0000000000011846        0xa 
+ .text.ui_fixed_remove
+                0x0000000000011850       0x4c uspace/lib/libui.so.0.0.p/ui_src_fixed.c.o
+                0x0000000000011850                ui_fixed_remove
+ *fill*         0x000000000001189c        0x4 
+ .text.ui_fixed_first
+                0x00000000000118a0       0x24 uspace/lib/libui.so.0.0.p/ui_src_fixed.c.o
+                0x00000000000118a0                ui_fixed_first
+ *fill*         0x00000000000118c4        0xc 
+ .text.ui_fixed_destroy
+                0x00000000000118d0       0x61 uspace/lib/libui.so.0.0.p/ui_src_fixed.c.o
+                0x00000000000118d0                ui_fixed_destroy
+ *fill*         0x0000000000011931        0xf 
+ .text.ui_fixed_ctl_destroy
+                0x0000000000011940        0xa uspace/lib/libui.so.0.0.p/ui_src_fixed.c.o
+ *fill*         0x000000000001194a        0x6 
+ .text.ui_fixed_next
+                0x0000000000011950       0x24 uspace/lib/libui.so.0.0.p/ui_src_fixed.c.o
+                0x0000000000011950                ui_fixed_next
+ *fill*         0x0000000000011974        0xc 
+ .text.ui_fixed_paint
+                0x0000000000011980       0x50 uspace/lib/libui.so.0.0.p/ui_src_fixed.c.o
+                0x0000000000011980                ui_fixed_paint
+ .text.ui_fixed_ctl_paint
+                0x00000000000119d0        0xa uspace/lib/libui.so.0.0.p/ui_src_fixed.c.o
+ *fill*         0x00000000000119da        0x6 
+ .text.ui_fixed_kbd_event
+                0x00000000000119e0       0x52 uspace/lib/libui.so.0.0.p/ui_src_fixed.c.o
+                0x00000000000119e0                ui_fixed_kbd_event
+ *fill*         0x0000000000011a32        0xe 
+ .text.ui_fixed_ctl_kbd_event
+                0x0000000000011a40        0xa uspace/lib/libui.so.0.0.p/ui_src_fixed.c.o
+ *fill*         0x0000000000011a4a        0x6 
+ .text.ui_fixed_pos_event
+                0x0000000000011a50       0x52 uspace/lib/libui.so.0.0.p/ui_src_fixed.c.o
+                0x0000000000011a50                ui_fixed_pos_event
+ *fill*         0x0000000000011aa2        0xe 
+ .text.ui_fixed_ctl_pos_event
+                0x0000000000011ab0        0xa uspace/lib/libui.so.0.0.p/ui_src_fixed.c.o
+ *fill*         0x0000000000011aba        0x6 
+ .text.ui_fixed_unfocus
+                0x0000000000011ac0       0x41 uspace/lib/libui.so.0.0.p/ui_src_fixed.c.o
+                0x0000000000011ac0                ui_fixed_unfocus
+ *fill*         0x0000000000011b01        0xf 
+ .text.ui_fixed_ctl_unfocus
+                0x0000000000011b10        0xa uspace/lib/libui.so.0.0.p/ui_src_fixed.c.o
+ *fill*         0x0000000000011b1a        0x6 
+ .text.ui_image_ctl_pos_event
+                0x0000000000011b20        0xb uspace/lib/libui.so.0.0.p/ui_src_image.c.o
+ *fill*         0x0000000000011b2b        0x5 
+ .text.ui_image_create
+                0x0000000000011b30       0x94 uspace/lib/libui.so.0.0.p/ui_src_image.c.o
+                0x0000000000011b30                ui_image_create
+ *fill*         0x0000000000011bc4        0xc 
+ .text.ui_image_destroy
+                0x0000000000011bd0       0x39 uspace/lib/libui.so.0.0.p/ui_src_image.c.o
+                0x0000000000011bd0                ui_image_destroy
+ *fill*         0x0000000000011c09        0x7 
+ .text.ui_image_ctl_destroy
+                0x0000000000011c10        0xa uspace/lib/libui.so.0.0.p/ui_src_image.c.o
+ *fill*         0x0000000000011c1a        0x6 
+ .text.ui_image_ctl
+                0x0000000000011c20        0x9 uspace/lib/libui.so.0.0.p/ui_src_image.c.o
+                0x0000000000011c20                ui_image_ctl
+ *fill*         0x0000000000011c29        0x7 
+ .text.ui_image_set_rect
+                0x0000000000011c30        0xe uspace/lib/libui.so.0.0.p/ui_src_image.c.o
+                0x0000000000011c30                ui_image_set_rect
+ *fill*         0x0000000000011c3e        0x2 
+ .text.ui_image_set_flags
+                0x0000000000011c40        0x9 uspace/lib/libui.so.0.0.p/ui_src_image.c.o
+                0x0000000000011c40                ui_image_set_flags
+ *fill*         0x0000000000011c49        0x7 
+ .text.ui_image_paint
+                0x0000000000011c50       0xfc uspace/lib/libui.so.0.0.p/ui_src_image.c.o
+                0x0000000000011c50                ui_image_paint
+ *fill*         0x0000000000011d4c        0x4 
+ .text.ui_image_ctl_paint
+                0x0000000000011d50        0xa uspace/lib/libui.so.0.0.p/ui_src_image.c.o
+ *fill*         0x0000000000011d5a        0x6 
+ .text.ui_image_set_bmp
+                0x0000000000011d60       0x12 uspace/lib/libui.so.0.0.p/ui_src_image.c.o
+                0x0000000000011d60                ui_image_set_bmp
+ *fill*         0x0000000000011d72        0xe 
+ .text.ui_label_ctl_pos_event
+                0x0000000000011d80        0xb uspace/lib/libui.so.0.0.p/ui_src_label.c.o
+ *fill*         0x0000000000011d8b        0x5 
+ .text.ui_label_create
+                0x0000000000011d90       0xa8 uspace/lib/libui.so.0.0.p/ui_src_label.c.o
+                0x0000000000011d90                ui_label_create
+ *fill*         0x0000000000011e38        0x8 
+ .text.ui_label_destroy
+                0x0000000000011e40       0x31 uspace/lib/libui.so.0.0.p/ui_src_label.c.o
+                0x0000000000011e40                ui_label_destroy
+ *fill*         0x0000000000011e71        0xf 
+ .text.ui_label_ctl_destroy
+                0x0000000000011e80        0xa uspace/lib/libui.so.0.0.p/ui_src_label.c.o
+ *fill*         0x0000000000011e8a        0x6 
+ .text.ui_label_ctl
+                0x0000000000011e90        0x9 uspace/lib/libui.so.0.0.p/ui_src_label.c.o
+                0x0000000000011e90                ui_label_ctl
+ *fill*         0x0000000000011e99        0x7 
+ .text.ui_label_set_rect
+                0x0000000000011ea0        0xe uspace/lib/libui.so.0.0.p/ui_src_label.c.o
+                0x0000000000011ea0                ui_label_set_rect
+ *fill*         0x0000000000011eae        0x2 
+ .text.ui_label_set_halign
+                0x0000000000011eb0        0x9 uspace/lib/libui.so.0.0.p/ui_src_label.c.o
+                0x0000000000011eb0                ui_label_set_halign
+ *fill*         0x0000000000011eb9        0x7 
+ .text.ui_label_set_valign
+                0x0000000000011ec0        0x9 uspace/lib/libui.so.0.0.p/ui_src_label.c.o
+                0x0000000000011ec0                ui_label_set_valign
+ *fill*         0x0000000000011ec9        0x7 
+ .text.ui_label_set_text
+                0x0000000000011ed0       0x3a uspace/lib/libui.so.0.0.p/ui_src_label.c.o
+                0x0000000000011ed0                ui_label_set_text
+ *fill*         0x0000000000011f0a        0x6 
+ .text.ui_label_paint
+                0x0000000000011f10      0x153 uspace/lib/libui.so.0.0.p/ui_src_label.c.o
+                0x0000000000011f10                ui_label_paint
+ *fill*         0x0000000000012063        0xd 
+ .text.ui_label_ctl_paint
+                0x0000000000012070        0xa uspace/lib/libui.so.0.0.p/ui_src_label.c.o
+ *fill*         0x000000000001207a        0x6 
+ .text.ui_list_entry_ptr_cmp
+                0x0000000000012080       0x18 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000012080                ui_list_entry_ptr_cmp
+ *fill*         0x0000000000012098        0x8 
+ .text.ui_list_create
+                0x00000000000120a0       0xda uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x00000000000120a0                ui_list_create
+ *fill*         0x000000000001217a        0x6 
+ .text.ui_list_set_cb
+                0x0000000000012180        0xe uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000012180                ui_list_set_cb
+ *fill*         0x000000000001218e        0x2 
+ .text.ui_list_get_cb_arg
+                0x0000000000012190        0xa uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000012190                ui_list_get_cb_arg
+ *fill*         0x000000000001219a        0x6 
+ .text.ui_list_entry_height
+                0x00000000000121a0       0x39 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x00000000000121a0                ui_list_entry_height
+ *fill*         0x00000000000121d9        0x7 
+ .text.ui_list_ctl
+                0x00000000000121e0        0x9 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x00000000000121e0                ui_list_ctl
+ *fill*         0x00000000000121e9        0x7 
+ .text.ui_list_inside_rect
+                0x00000000000121f0       0x81 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x00000000000121f0                ui_list_inside_rect
+ *fill*         0x0000000000012271        0xf 
+ .text.ui_list_page_size
+                0x0000000000012280       0x33 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000012280                ui_list_page_size
+ *fill*         0x00000000000122b3        0xd 
+ .text.ui_list_entry_paint
+                0x00000000000122c0      0x278 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x00000000000122c0                ui_list_entry_paint
+ *fill*         0x0000000000012538        0x8 
+ .text.ui_list_scrollbar_rect
+                0x0000000000012540       0x81 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000012540                ui_list_scrollbar_rect
+ *fill*         0x00000000000125c1        0xf 
+ .text.ui_list_set_rect
+                0x00000000000125d0       0x37 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x00000000000125d0                ui_list_set_rect
+ *fill*         0x0000000000012607        0x9 
+ .text.ui_list_scrollbar_pos
+                0x0000000000012610       0x5d uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000012610                ui_list_scrollbar_pos
+ *fill*         0x000000000001266d        0x3 
+ .text.ui_list_scrollbar_update
+                0x0000000000012670       0x21 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000012670                ui_list_scrollbar_update
+ *fill*         0x0000000000012691        0xf 
+ .text.ui_list_is_active
+                0x00000000000126a0        0xa uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x00000000000126a0                ui_list_is_active
+ *fill*         0x00000000000126aa        0x6 
+ .text.ui_list_entry_attr_init
+                0x00000000000126b0       0x11 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x00000000000126b0                ui_list_entry_attr_init
+ *fill*         0x00000000000126c1        0xf 
+ .text.ui_list_entry_append
+                0x00000000000126d0       0xdf uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x00000000000126d0                ui_list_entry_append
+ *fill*         0x00000000000127af        0x1 
+ .text.ui_list_entry_destroy
+                0x00000000000127b0       0x6a uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x00000000000127b0                ui_list_entry_destroy
+ *fill*         0x000000000001281a        0x6 
+ .text.ui_list_entry_get_arg
+                0x0000000000012820        0xa uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000012820                ui_list_entry_get_arg
+ *fill*         0x000000000001282a        0x6 
+ .text.ui_list_entry_get_list
+                0x0000000000012830        0x9 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000012830                ui_list_entry_get_list
+ *fill*         0x0000000000012839        0x7 
+ .text.ui_list_entries_cnt
+                0x0000000000012840        0xa uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000012840                ui_list_entries_cnt
+ *fill*         0x000000000001284a        0x6 
+ .text.ui_list_first
+                0x0000000000012850       0x24 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000012850                ui_list_first
+ *fill*         0x0000000000012874        0xc 
+ .text.ui_list_clear_entries
+                0x0000000000012880       0x3b uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000012880                ui_list_clear_entries
+ *fill*         0x00000000000128bb        0x5 
+ .text.ui_list_destroy
+                0x00000000000128c0       0x26 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x00000000000128c0                ui_list_destroy
+ *fill*         0x00000000000128e6        0xa 
+ .text.ui_list_ctl_destroy
+                0x00000000000128f0        0xa uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+ *fill*         0x00000000000128fa        0x6 
+ .text.ui_list_last
+                0x0000000000012900       0x24 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000012900                ui_list_last
+ *fill*         0x0000000000012924        0xc 
+ .text.ui_list_next
+                0x0000000000012930       0x24 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000012930                ui_list_next
+ *fill*         0x0000000000012954        0xc 
+ .text.ui_list_paint
+                0x0000000000012960      0x10a uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000012960                ui_list_paint
+ *fill*         0x0000000000012a6a        0x6 
+ .text.ui_list_ctl_paint
+                0x0000000000012a70        0xa uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+ *fill*         0x0000000000012a7a        0x6 
+ .text.ui_list_activate
+                0x0000000000012a80       0x11 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000012a80                ui_list_activate
+ *fill*         0x0000000000012a91        0xf 
+ .text.ui_list_deactivate
+                0x0000000000012aa0        0xe uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000012aa0                ui_list_deactivate
+ *fill*         0x0000000000012aae        0x2 
+ .text.ui_list_prev
+                0x0000000000012ab0       0x24 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000012ab0                ui_list_prev
+ *fill*         0x0000000000012ad4        0xc 
+ .text.ui_list_page_nth_entry
+                0x0000000000012ae0       0x93 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000012ae0                ui_list_page_nth_entry
+ *fill*         0x0000000000012b73        0xd 
+ .text.ui_list_get_cursor
+                0x0000000000012b80        0xa uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000012b80                ui_list_get_cursor
+ *fill*         0x0000000000012b8a        0x6 
+ .text.ui_list_cursor_move
+                0x0000000000012b90      0x11c uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000012b90                ui_list_cursor_move
+ *fill*         0x0000000000012cac        0x4 
+ .text.ui_list_entry_move_up
+                0x0000000000012cb0       0xdd uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000012cb0                ui_list_entry_move_up
+ *fill*         0x0000000000012d8d        0x3 
+ .text.ui_list_entry_move_down
+                0x0000000000012d90       0xdd uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000012d90                ui_list_entry_move_down
+ *fill*         0x0000000000012e6d        0x3 
+ .text.ui_list_cursor_up
+                0x0000000000012e70       0x3e uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000012e70                ui_list_cursor_up
+ *fill*         0x0000000000012eae        0x2 
+ .text.ui_list_cursor_down
+                0x0000000000012eb0       0x3e uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000012eb0                ui_list_cursor_down
+ *fill*         0x0000000000012eee        0x2 
+ .text.ui_list_cursor_top
+                0x0000000000012ef0       0x23 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000012ef0                ui_list_cursor_top
+ *fill*         0x0000000000012f13        0xd 
+ .text.ui_list_cursor_bottom
+                0x0000000000012f20       0x29 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000012f20                ui_list_cursor_bottom
+ *fill*         0x0000000000012f49        0x7 
+ .text.ui_list_page_up
+                0x0000000000012f50      0x11f uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000012f50                ui_list_page_up
+ *fill*         0x000000000001306f        0x1 
+ .text.ui_list_page_down
+                0x0000000000013070      0x13f uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000013070                ui_list_page_down
+ *fill*         0x00000000000131af        0x1 
+ .text.ui_list_scroll_up
+                0x00000000000131b0       0x6e uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x00000000000131b0                ui_list_scroll_up
+ *fill*         0x000000000001321e        0x2 
+ .text.ui_list_scrollbar_up
+                0x0000000000013220        0xd uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+ *fill*         0x000000000001322d        0x3 
+ .text.ui_list_scroll_down
+                0x0000000000013230       0x90 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000013230                ui_list_scroll_down
+ .text.ui_list_scrollbar_down
+                0x00000000000132c0        0xd uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+ *fill*         0x00000000000132cd        0x3 
+ .text.ui_list_scroll_page_up
+                0x00000000000132d0       0xa1 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x00000000000132d0                ui_list_scroll_page_up
+ *fill*         0x0000000000013371        0xf 
+ .text.ui_list_scrollbar_page_up
+                0x0000000000013380        0xd uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+ *fill*         0x000000000001338d        0x3 
+ .text.ui_list_scroll_page_down
+                0x0000000000013390       0xcf uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000013390                ui_list_scroll_page_down
+ *fill*         0x000000000001345f        0x1 
+ .text.ui_list_scrollbar_page_down
+                0x0000000000013460        0xd uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+ *fill*         0x000000000001346d        0x3 
+ .text.ui_list_scroll_pos
+                0x0000000000013470       0x72 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000013470                ui_list_scroll_pos
+ *fill*         0x00000000000134e2        0xe 
+ .text.ui_list_scrollbar_moved
+                0x00000000000134f0       0x61 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+ *fill*         0x0000000000013551        0xf 
+ .text.ui_list_activate_req
+                0x0000000000013560       0x26 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000013560                ui_list_activate_req
+ *fill*         0x0000000000013586        0xa 
+ .text.ui_list_sort
+                0x0000000000013590      0x14f uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000013590                ui_list_sort
+ *fill*         0x00000000000136df        0x1 
+ .text.ui_list_entry_get_idx
+                0x00000000000136e0       0x4b uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x00000000000136e0                ui_list_entry_get_idx
+ *fill*         0x000000000001372b        0x5 
+ .text.ui_list_entry_delete
+                0x0000000000013730       0xd1 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000013730                ui_list_entry_delete
+ *fill*         0x0000000000013801        0xf 
+ .text.ui_list_entry_set_caption
+                0x0000000000013810       0x52 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000013810                ui_list_entry_set_caption
+ *fill*         0x0000000000013862        0xe 
+ .text.ui_list_set_cursor
+                0x0000000000013870       0x27 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000013870                ui_list_set_cursor
+ *fill*         0x0000000000013897        0x9 
+ .text.ui_list_cursor_center
+                0x00000000000138a0       0xc3 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x00000000000138a0                ui_list_cursor_center
+ *fill*         0x0000000000013963        0xd 
+ .text.ui_list_selected
+                0x0000000000013970       0x22 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000013970                ui_list_selected
+ *fill*         0x0000000000013992        0xe 
+ .text.ui_list_kbd_event
+                0x00000000000139a0       0x7a uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x00000000000139a0                ui_list_kbd_event
+ *fill*         0x0000000000013a1a        0x6 
+ .text.ui_list_ctl_kbd_event
+                0x0000000000013a20        0xa uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+ *fill*         0x0000000000013a2a        0x6 
+ .text.ui_list_pos_event
+                0x0000000000013a30      0x130 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x0000000000013a30                ui_list_pos_event
+ .text.ui_list_ctl_pos_event
+                0x0000000000013b60        0xa uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+ *fill*         0x0000000000013b6a        0x6 
+ .text.ui_menu_create
+                0x0000000000013b70       0x46 uspace/lib/libui.so.0.0.p/ui_src_menu.c.o
+                0x0000000000013b70                ui_menu_create
+ *fill*         0x0000000000013bb6        0xa 
+ .text.ui_menu_destroy
+                0x0000000000013bc0       0x49 uspace/lib/libui.so.0.0.p/ui_src_menu.c.o
+                0x0000000000013bc0                ui_menu_destroy
+ *fill*         0x0000000000013c09        0x7 
+ .text.ui_menu_set_cb
+                0x0000000000013c10        0xe uspace/lib/libui.so.0.0.p/ui_src_menu.c.o
+                0x0000000000013c10                ui_menu_set_cb
+ *fill*         0x0000000000013c1e        0x2 
+ .text.ui_menu_get_geom
+                0x0000000000013c20       0xde uspace/lib/libui.so.0.0.p/ui_src_menu.c.o
+                0x0000000000013c20                ui_menu_get_geom
+ *fill*         0x0000000000013cfe        0x2 
+ .text.ui_menu_get_res
+                0x0000000000013d00        0xe uspace/lib/libui.so.0.0.p/ui_src_menu.c.o
+                0x0000000000013d00                ui_menu_get_res
+ *fill*         0x0000000000013d0e        0x2 
+ .text.ui_menu_close
+                0x0000000000013d10       0x23 uspace/lib/libui.so.0.0.p/ui_src_menu.c.o
+                0x0000000000013d10                ui_menu_close
+ *fill*         0x0000000000013d33        0xd 
+ .text.ui_menu_is_open
+                0x0000000000013d40        0xe uspace/lib/libui.so.0.0.p/ui_src_menu.c.o
+                0x0000000000013d40                ui_menu_is_open
+ *fill*         0x0000000000013d4e        0x2 
+ .text.ui_menu_paint_bg_gfx
+                0x0000000000013d50       0x8e uspace/lib/libui.so.0.0.p/ui_src_menu.c.o
+                0x0000000000013d50                ui_menu_paint_bg_gfx
+ *fill*         0x0000000000013dde        0x2 
+ .text.ui_menu_paint_bg_text
+                0x0000000000013de0       0x8f uspace/lib/libui.so.0.0.p/ui_src_menu.c.o
+                0x0000000000013de0                ui_menu_paint_bg_text
+ *fill*         0x0000000000013e6f        0x1 
+ .text.ui_menu_paint
+                0x0000000000013e70       0xb6 uspace/lib/libui.so.0.0.p/ui_src_menu.c.o
+                0x0000000000013e70                ui_menu_paint
+ *fill*         0x0000000000013f26        0xa 
+ .text.ui_menu_open
+                0x0000000000013f30       0xc9 uspace/lib/libui.so.0.0.p/ui_src_menu.c.o
+                0x0000000000013f30                ui_menu_open
+ *fill*         0x0000000000013ff9        0x7 
+ .text.ui_menu_up
+                0x0000000000014000       0xb0 uspace/lib/libui.so.0.0.p/ui_src_menu.c.o
+                0x0000000000014000                ui_menu_up
+ .text.ui_menu_down
+                0x00000000000140b0       0xb0 uspace/lib/libui.so.0.0.p/ui_src_menu.c.o
+                0x00000000000140b0                ui_menu_down
+ .text.ui_menu_left
+                0x0000000000014160       0x22 uspace/lib/libui.so.0.0.p/ui_src_menu.c.o
+                0x0000000000014160                ui_menu_left
+ *fill*         0x0000000000014182        0xe 
+ .text.ui_menu_right
+                0x0000000000014190       0x22 uspace/lib/libui.so.0.0.p/ui_src_menu.c.o
+                0x0000000000014190                ui_menu_right
+ *fill*         0x00000000000141b2        0xe 
+ .text.ui_menu_close_req
+                0x00000000000141c0       0x22 uspace/lib/libui.so.0.0.p/ui_src_menu.c.o
+                0x00000000000141c0                ui_menu_close_req
+ *fill*         0x00000000000141e2        0xe 
+ .text.ui_menu_popup_close
+                0x00000000000141f0        0xd uspace/lib/libui.so.0.0.p/ui_src_menu.c.o
+ *fill*         0x00000000000141fd        0x3 
+ .text.ui_menu_pos_event
+                0x0000000000014200       0xd6 uspace/lib/libui.so.0.0.p/ui_src_menu.c.o
+                0x0000000000014200                ui_menu_pos_event
+ *fill*         0x00000000000142d6        0xa 
+ .text.ui_menu_popup_pos
+                0x00000000000142e0       0x3e uspace/lib/libui.so.0.0.p/ui_src_menu.c.o
+ *fill*         0x000000000001431e        0x2 
+ .text.ui_menu_press_accel
+                0x0000000000014320       0x2a uspace/lib/libui.so.0.0.p/ui_src_menu.c.o
+                0x0000000000014320                ui_menu_press_accel
+ *fill*         0x000000000001434a        0x6 
+ .text.ui_menu_kbd_event
+                0x0000000000014350      0x138 uspace/lib/libui.so.0.0.p/ui_src_menu.c.o
+                0x0000000000014350                ui_menu_kbd_event
+ *fill*         0x0000000000014488        0x8 
+ .text.ui_menu_popup_kbd
+                0x0000000000014490       0x29 uspace/lib/libui.so.0.0.p/ui_src_menu.c.o
+ *fill*         0x00000000000144b9        0x7 
+ .text.ui_menu_get_idev_id
+                0x00000000000144c0        0xa uspace/lib/libui.so.0.0.p/ui_src_menu.c.o
+                0x00000000000144c0                ui_menu_get_idev_id
+ *fill*         0x00000000000144ca        0x6 
+ .text.ui_menu_bar_create
+                0x00000000000144d0       0xb2 uspace/lib/libui.so.0.0.p/ui_src_menubar.c.o
+                0x00000000000144d0                ui_menu_bar_create
+ *fill*         0x0000000000014582        0xe 
+ .text.ui_menu_bar_destroy
+                0x0000000000014590       0x61 uspace/lib/libui.so.0.0.p/ui_src_menubar.c.o
+                0x0000000000014590                ui_menu_bar_destroy
+ *fill*         0x00000000000145f1        0xf 
+ .text.ui_menu_bar_ctl_destroy
+                0x0000000000014600        0xa uspace/lib/libui.so.0.0.p/ui_src_menubar.c.o
+ *fill*         0x000000000001460a        0x6 
+ .text.ui_menu_bar_set_cb
+                0x0000000000014610        0xe uspace/lib/libui.so.0.0.p/ui_src_menubar.c.o
+                0x0000000000014610                ui_menu_bar_set_cb
+ *fill*         0x000000000001461e        0x2 
+ .text.ui_menu_bar_ctl
+                0x0000000000014620        0x9 uspace/lib/libui.so.0.0.p/ui_src_menubar.c.o
+                0x0000000000014620                ui_menu_bar_ctl
+ *fill*         0x0000000000014629        0x7 
+ .text.ui_menu_bar_set_rect
+                0x0000000000014630        0xe uspace/lib/libui.so.0.0.p/ui_src_menubar.c.o
+                0x0000000000014630                ui_menu_bar_set_rect
+ *fill*         0x000000000001463e        0x2 
+ .text.ui_menu_bar_paint
+                0x0000000000014640      0x1ff uspace/lib/libui.so.0.0.p/ui_src_menubar.c.o
+                0x0000000000014640                ui_menu_bar_paint
+ *fill*         0x000000000001483f        0x1 
+ .text.ui_menu_bar_ctl_paint
+                0x0000000000014840        0xa uspace/lib/libui.so.0.0.p/ui_src_menubar.c.o
+ *fill*         0x000000000001484a        0x6 
+ .text.ui_menu_bar_select_sysmenu
+                0x0000000000014850       0x56 uspace/lib/libui.so.0.0.p/ui_src_menubar.c.o
+                0x0000000000014850                ui_menu_bar_select_sysmenu
+ *fill*         0x00000000000148a6        0xa 
+ .text.ui_menu_bar_entry_rect
+                0x00000000000148b0       0xe1 uspace/lib/libui.so.0.0.p/ui_src_menubar.c.o
+                0x00000000000148b0                ui_menu_bar_entry_rect
+ *fill*         0x0000000000014991        0xf 
+ .text.ui_menu_bar_select
+                0x00000000000149a0      0x10c uspace/lib/libui.so.0.0.p/ui_src_menubar.c.o
+                0x00000000000149a0                ui_menu_bar_select
+ *fill*         0x0000000000014aac        0x4 
+ .text.ui_menu_bar_select_first
+                0x0000000000014ab0       0x35 uspace/lib/libui.so.0.0.p/ui_src_menubar.c.o
+                0x0000000000014ab0                ui_menu_bar_select_first
+ *fill*         0x0000000000014ae5        0xb 
+ .text.ui_menu_bar_select_last
+                0x0000000000014af0       0x35 uspace/lib/libui.so.0.0.p/ui_src_menubar.c.o
+                0x0000000000014af0                ui_menu_bar_select_last
+ *fill*         0x0000000000014b25        0xb 
+ .text.ui_menu_bar_left
+                0x0000000000014b30      0x110 uspace/lib/libui.so.0.0.p/ui_src_menubar.c.o
+                0x0000000000014b30                ui_menu_bar_left
+ .text.ui_menu_bar_right
+                0x0000000000014c40      0x110 uspace/lib/libui.so.0.0.p/ui_src_menubar.c.o
+                0x0000000000014c40                ui_menu_bar_right
+ .text.ui_menu_bar_press_accel
+                0x0000000000014d50       0x8f uspace/lib/libui.so.0.0.p/ui_src_menubar.c.o
+                0x0000000000014d50                ui_menu_bar_press_accel
+ *fill*         0x0000000000014ddf        0x1 
+ .text.ui_menu_bar_pos_event
+                0x0000000000014de0      0x12c uspace/lib/libui.so.0.0.p/ui_src_menubar.c.o
+                0x0000000000014de0                ui_menu_bar_pos_event
+ *fill*         0x0000000000014f0c        0x4 
+ .text.ui_menu_bar_ctl_pos_event
+                0x0000000000014f10        0xa uspace/lib/libui.so.0.0.p/ui_src_menubar.c.o
+ *fill*         0x0000000000014f1a        0x6 
+ .text.ui_menu_bar_activate
+                0x0000000000014f20       0x63 uspace/lib/libui.so.0.0.p/ui_src_menubar.c.o
+                0x0000000000014f20                ui_menu_bar_activate
+ *fill*         0x0000000000014f83        0xd 
+ .text.ui_menu_bar_deactivate
+                0x0000000000014f90       0x46 uspace/lib/libui.so.0.0.p/ui_src_menubar.c.o
+                0x0000000000014f90                ui_menu_bar_deactivate
+ *fill*         0x0000000000014fd6        0xa 
+ .text.ui_menu_bar_key_press_unmod
+                0x0000000000014fe0      0x10c uspace/lib/libui.so.0.0.p/ui_src_menubar.c.o
+                0x0000000000014fe0                ui_menu_bar_key_press_unmod
+ *fill*         0x00000000000150ec        0x4 
+ .text.ui_menu_bar_kbd_event
+                0x00000000000150f0       0x65 uspace/lib/libui.so.0.0.p/ui_src_menubar.c.o
+                0x00000000000150f0                ui_menu_bar_kbd_event
+ *fill*         0x0000000000015155        0xb 
+ .text.ui_menu_bar_ctl_kbd_event
+                0x0000000000015160        0xa uspace/lib/libui.so.0.0.p/ui_src_menubar.c.o
+ *fill*         0x000000000001516a        0x6 
+ .text.ui_menu_dd_press_accel
+                0x0000000000015170       0x15 uspace/lib/libui.so.0.0.p/ui_src_menudd.c.o
+ *fill*         0x0000000000015185        0xb 
+ .text.ui_menu_dd_close_req
+                0x0000000000015190        0xd uspace/lib/libui.so.0.0.p/ui_src_menudd.c.o
+ *fill*         0x000000000001519d        0x3 
+ .text.ui_menu_dd_right
+                0x00000000000151a0       0x13 uspace/lib/libui.so.0.0.p/ui_src_menudd.c.o
+ *fill*         0x00000000000151b3        0xd 
+ .text.ui_menu_dd_left
+                0x00000000000151c0       0x13 uspace/lib/libui.so.0.0.p/ui_src_menudd.c.o
+ *fill*         0x00000000000151d3        0xd 
+ .text.ui_menu_dd_create
+                0x00000000000151e0       0xf0 uspace/lib/libui.so.0.0.p/ui_src_menudd.c.o
+                0x00000000000151e0                ui_menu_dd_create
+ .text.ui_menu_dd_destroy
+                0x00000000000152d0       0x51 uspace/lib/libui.so.0.0.p/ui_src_menudd.c.o
+                0x00000000000152d0                ui_menu_dd_destroy
+ *fill*         0x0000000000015321        0xf 
+ .text.ui_menu_dd_first
+                0x0000000000015330       0x24 uspace/lib/libui.so.0.0.p/ui_src_menudd.c.o
+                0x0000000000015330                ui_menu_dd_first
+ *fill*         0x0000000000015354        0xc 
+ .text.ui_menu_dd_next
+                0x0000000000015360       0x24 uspace/lib/libui.so.0.0.p/ui_src_menudd.c.o
+                0x0000000000015360                ui_menu_dd_next
+ *fill*         0x0000000000015384        0xc 
+ .text.ui_menu_dd_last
+                0x0000000000015390       0x24 uspace/lib/libui.so.0.0.p/ui_src_menudd.c.o
+                0x0000000000015390                ui_menu_dd_last
+ *fill*         0x00000000000153b4        0xc 
+ .text.ui_menu_dd_prev
+                0x00000000000153c0       0x24 uspace/lib/libui.so.0.0.p/ui_src_menudd.c.o
+                0x00000000000153c0                ui_menu_dd_prev
+ *fill*         0x00000000000153e4        0xc 
+ .text.ui_menu_dd_caption
+                0x00000000000153f0        0xa uspace/lib/libui.so.0.0.p/ui_src_menudd.c.o
+                0x00000000000153f0                ui_menu_dd_caption
+ *fill*         0x00000000000153fa        0x6 
+ .text.ui_menu_dd_get_accel
+                0x0000000000015400        0xe uspace/lib/libui.so.0.0.p/ui_src_menudd.c.o
+                0x0000000000015400                ui_menu_dd_get_accel
+ *fill*         0x000000000001540e        0x2 
+ .text.ui_menu_dd_open
+                0x0000000000015410        0xe uspace/lib/libui.so.0.0.p/ui_src_menudd.c.o
+                0x0000000000015410                ui_menu_dd_open
+ *fill*         0x000000000001541e        0x2 
+ .text.ui_menu_dd_close
+                0x0000000000015420        0xe uspace/lib/libui.so.0.0.p/ui_src_menudd.c.o
+                0x0000000000015420                ui_menu_dd_close
+ *fill*         0x000000000001542e        0x2 
+ .text.ui_menu_dd_is_open
+                0x0000000000015430        0xe uspace/lib/libui.so.0.0.p/ui_src_menudd.c.o
+                0x0000000000015430                ui_menu_dd_is_open
+ *fill*         0x000000000001543e        0x2 
+ .text.ui_menu_entry_set_cb
+                0x0000000000015440        0xe uspace/lib/libui.so.0.0.p/ui_src_menuentry.c.o
+                0x0000000000015440                ui_menu_entry_set_cb
+ *fill*         0x000000000001544e        0x2 
+ .text.ui_menu_entry_set_disabled
+                0x0000000000015450        0xa uspace/lib/libui.so.0.0.p/ui_src_menuentry.c.o
+                0x0000000000015450                ui_menu_entry_set_disabled
+ *fill*         0x000000000001545a        0x6 
+ .text.ui_menu_entry_is_disabled
+                0x0000000000015460        0xa uspace/lib/libui.so.0.0.p/ui_src_menuentry.c.o
+                0x0000000000015460                ui_menu_entry_is_disabled
+ *fill*         0x000000000001546a        0x6 
+ .text.ui_menu_entry_first
+                0x0000000000015470       0x24 uspace/lib/libui.so.0.0.p/ui_src_menuentry.c.o
+                0x0000000000015470                ui_menu_entry_first
+ *fill*         0x0000000000015494        0xc 
+ .text.ui_menu_entry_last
+                0x00000000000154a0       0x24 uspace/lib/libui.so.0.0.p/ui_src_menuentry.c.o
+                0x00000000000154a0                ui_menu_entry_last
+ *fill*         0x00000000000154c4        0xc 
+ .text.ui_menu_entry_next
+                0x00000000000154d0       0x24 uspace/lib/libui.so.0.0.p/ui_src_menuentry.c.o
+                0x00000000000154d0                ui_menu_entry_next
+ *fill*         0x00000000000154f4        0xc 
+ .text.ui_menu_entry_prev
+                0x0000000000015500       0x24 uspace/lib/libui.so.0.0.p/ui_src_menuentry.c.o
+                0x0000000000015500                ui_menu_entry_prev
+ *fill*         0x0000000000015524        0xc 
+ .text.ui_menu_entry_column_widths
+                0x0000000000015530       0x4d uspace/lib/libui.so.0.0.p/ui_src_menuentry.c.o
+                0x0000000000015530                ui_menu_entry_column_widths
+ *fill*         0x000000000001557d        0x3 
+ .text.ui_menu_entry_calc_width
+                0x0000000000015580       0x4d uspace/lib/libui.so.0.0.p/ui_src_menuentry.c.o
+                0x0000000000015580                ui_menu_entry_calc_width
+ *fill*         0x00000000000155cd        0x3 
+ .text.ui_menu_entry_height
+                0x00000000000155d0       0x64 uspace/lib/libui.so.0.0.p/ui_src_menuentry.c.o
+                0x00000000000155d0                ui_menu_entry_height
+ *fill*         0x0000000000015634        0xc 
+ .text.ui_menu_entry_create
+                0x0000000000015640      0x10c uspace/lib/libui.so.0.0.p/ui_src_menuentry.c.o
+                0x0000000000015640                ui_menu_entry_create
+ *fill*         0x000000000001574c        0x4 
+ .text.ui_menu_entry_sep_create
+                0x0000000000015750       0x5f uspace/lib/libui.so.0.0.p/ui_src_menuentry.c.o
+                0x0000000000015750                ui_menu_entry_sep_create
+ *fill*         0x00000000000157af        0x1 
+ .text.ui_menu_entry_destroy
+                0x00000000000157b0       0x79 uspace/lib/libui.so.0.0.p/ui_src_menuentry.c.o
+                0x00000000000157b0                ui_menu_entry_destroy
+ *fill*         0x0000000000015829        0x7 
+ .text.ui_menu_entry_get_accel
+                0x0000000000015830        0xe uspace/lib/libui.so.0.0.p/ui_src_menuentry.c.o
+                0x0000000000015830                ui_menu_entry_get_accel
+ *fill*         0x000000000001583e        0x2 
+ .text.ui_menu_entry_selectable
+                0x0000000000015840        0xd uspace/lib/libui.so.0.0.p/ui_src_menuentry.c.o
+                0x0000000000015840                ui_menu_entry_selectable
+ *fill*         0x000000000001584d        0x3 
+ .text.ui_menu_entry_cb
+                0x0000000000015850       0x1a uspace/lib/libui.so.0.0.p/ui_src_menuentry.c.o
+                0x0000000000015850                ui_menu_entry_cb
+ *fill*         0x000000000001586a        0x6 
+ .text.ui_menu_entry_activate
+                0x0000000000015870       0x21 uspace/lib/libui.so.0.0.p/ui_src_menuentry.c.o
+                0x0000000000015870                ui_menu_entry_activate
+ *fill*         0x0000000000015891        0xf 
+ .text.ui_menu_entry_release
+                0x00000000000158a0       0x26 uspace/lib/libui.so.0.0.p/ui_src_menuentry.c.o
+                0x00000000000158a0                ui_menu_entry_release
+ *fill*         0x00000000000158c6        0xa 
+ .text.ui_menu_entry_get_geom
+                0x00000000000158d0       0xa7 uspace/lib/libui.so.0.0.p/ui_src_menuentry.c.o
+                0x00000000000158d0                ui_menu_entry_get_geom
+ *fill*         0x0000000000015977        0x9 
+ .text.ui_menu_entry_paint
+                0x0000000000015980      0x1a0 uspace/lib/libui.so.0.0.p/ui_src_menuentry.c.o
+                0x0000000000015980                ui_menu_entry_paint
+ .text.ui_menu_entry_press
+                0x0000000000015b20       0x27 uspace/lib/libui.so.0.0.p/ui_src_menuentry.c.o
+                0x0000000000015b20                ui_menu_entry_press
+ *fill*         0x0000000000015b47        0x9 
+ .text.ui_menu_entry_enter
+                0x0000000000015b50       0x26 uspace/lib/libui.so.0.0.p/ui_src_menuentry.c.o
+                0x0000000000015b50                ui_menu_entry_enter
+ *fill*         0x0000000000015b76        0xa 
+ .text.ui_menu_entry_leave
+                0x0000000000015b80       0x26 uspace/lib/libui.so.0.0.p/ui_src_menuentry.c.o
+                0x0000000000015b80                ui_menu_entry_leave
+ *fill*         0x0000000000015ba6        0xa 
+ .text.ui_menu_entry_pos_event
+                0x0000000000015bb0       0xc9 uspace/lib/libui.so.0.0.p/ui_src_menuentry.c.o
+                0x0000000000015bb0                ui_menu_entry_pos_event
+ *fill*         0x0000000000015c79        0x7 
+ .text.ui_msg_dialog_wnd_close
+                0x0000000000015c80       0x22 uspace/lib/libui.so.0.0.p/ui_src_msgdialog.c.o
+ *fill*         0x0000000000015ca2        0xe 
+ .text.ui_msg_dialog_btn_clicked
+                0x0000000000015cb0       0x62 uspace/lib/libui.so.0.0.p/ui_src_msgdialog.c.o
+ *fill*         0x0000000000015d12        0xe 
+ .text.ui_msg_dialog_wnd_kbd
+                0x0000000000015d20       0x89 uspace/lib/libui.so.0.0.p/ui_src_msgdialog.c.o
+ *fill*         0x0000000000015da9        0x7 
+ .text.ui_msg_dialog_params_init
+                0x0000000000015db0       0x15 uspace/lib/libui.so.0.0.p/ui_src_msgdialog.c.o
+                0x0000000000015db0                ui_msg_dialog_params_init
+ *fill*         0x0000000000015dc5        0xb 
+ .text.ui_msg_dialog_create
+                0x0000000000015dd0      0x4ad uspace/lib/libui.so.0.0.p/ui_src_msgdialog.c.o
+                0x0000000000015dd0                ui_msg_dialog_create
+ *fill*         0x000000000001627d        0x3 
+ .text.ui_msg_dialog_destroy
+                0x0000000000016280       0x31 uspace/lib/libui.so.0.0.p/ui_src_msgdialog.c.o
+                0x0000000000016280                ui_msg_dialog_destroy
+ *fill*         0x00000000000162b1        0xf 
+ .text.ui_msg_dialog_set_cb
+                0x00000000000162c0        0xe uspace/lib/libui.so.0.0.p/ui_src_msgdialog.c.o
+                0x00000000000162c0                ui_msg_dialog_set_cb
+ *fill*         0x00000000000162ce        0x2 
+ .text.ui_paint_get_bevel_inside
+                0x00000000000162d0       0x2a uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+                0x00000000000162d0                ui_paint_get_bevel_inside
+ *fill*         0x00000000000162fa        0x6 
+ .text.ui_paint_bevel
+                0x0000000000016300      0x20b uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+                0x0000000000016300                ui_paint_bevel
+ *fill*         0x000000000001650b        0x5 
+ .text.ui_paint_inset_frame
+                0x0000000000016510       0x67 uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+                0x0000000000016510                ui_paint_inset_frame
+ *fill*         0x0000000000016577        0x9 
+ .text.ui_paint_get_inset_frame_inside
+                0x0000000000016580       0x15 uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+                0x0000000000016580                ui_paint_get_inset_frame_inside
+ *fill*         0x0000000000016595        0xb 
+ .text.ui_paint_outset_frame
+                0x00000000000165a0       0x67 uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+                0x00000000000165a0                ui_paint_outset_frame
+ *fill*         0x0000000000016607        0x9 
+ .text.ui_paint_filled_circle
+                0x0000000000016610      0xa7a uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+                0x0000000000016610                ui_paint_filled_circle
+ *fill*         0x000000000001708a        0x6 
+ .text.ui_paint_up_triangle
+                0x0000000000017090       0xbc uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+                0x0000000000017090                ui_paint_up_triangle
+ *fill*         0x000000000001714c        0x4 
+ .text.ui_paint_down_triangle
+                0x0000000000017150       0xb4 uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+                0x0000000000017150                ui_paint_down_triangle
+ *fill*         0x0000000000017204        0xc 
+ .text.ui_paint_left_triangle
+                0x0000000000017210       0xbc uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+                0x0000000000017210                ui_paint_left_triangle
+ *fill*         0x00000000000172cc        0x4 
+ .text.ui_paint_right_triangle
+                0x00000000000172d0       0xb4 uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+                0x00000000000172d0                ui_paint_right_triangle
+ *fill*         0x0000000000017384        0xc 
+ .text.ui_paint_cross
+                0x0000000000017390      0x1b7 uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+                0x0000000000017390                ui_paint_cross
+ *fill*         0x0000000000017547        0x9 
+ .text.ui_paint_minicon
+                0x0000000000017550       0x86 uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+                0x0000000000017550                ui_paint_minicon
+ *fill*         0x00000000000175d6        0xa 
+ .text.ui_paint_maxicon
+                0x00000000000175e0       0xd4 uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+                0x00000000000175e0                ui_paint_maxicon
+ *fill*         0x00000000000176b4        0xc 
+ .text.ui_paint_unmaxicon
+                0x00000000000176c0       0x99 uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+                0x00000000000176c0                ui_paint_unmaxicon
+ *fill*         0x0000000000017759        0x7 
+ .text.ui_paint_text_box_custom
+                0x0000000000017760      0x2c1 uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+                0x0000000000017760                ui_paint_text_box_custom
+ *fill*         0x0000000000017a21        0xf 
+ .text.ui_paint_text_box
+                0x0000000000017a30       0x3d uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+                0x0000000000017a30                ui_paint_text_box
+ *fill*         0x0000000000017a6d        0x3 
+ .text.ui_paint_text_hbrace
+                0x0000000000017a70      0x1c4 uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+                0x0000000000017a70                ui_paint_text_hbrace
+ *fill*         0x0000000000017c34        0xc 
+ .text.ui_paint_text_rect
+                0x0000000000017c40      0x167 uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+                0x0000000000017c40                ui_paint_text_rect
+ *fill*         0x0000000000017da7        0x9 
+ .text.ui_text_fmt_init
+                0x0000000000017db0       0x19 uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+                0x0000000000017db0                ui_text_fmt_init
+ *fill*         0x0000000000017dc9        0x7 
+ .text.ui_text_width
+                0x0000000000017dd0       0x80 uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+                0x0000000000017dd0                ui_text_width
+ .text.ui_paint_text
+                0x0000000000017e50      0x109 uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+                0x0000000000017e50                ui_paint_text
+ *fill*         0x0000000000017f59        0x7 
+ .text.ui_pbutton_create
+                0x0000000000017f60       0xa0 uspace/lib/libui.so.0.0.p/ui_src_pbutton.c.o
+                0x0000000000017f60                ui_pbutton_create
+ .text.ui_pbutton_destroy
+                0x0000000000018000       0x31 uspace/lib/libui.so.0.0.p/ui_src_pbutton.c.o
+                0x0000000000018000                ui_pbutton_destroy
+ *fill*         0x0000000000018031        0xf 
+ .text.ui_pbutton_ctl_destroy
+                0x0000000000018040        0xa uspace/lib/libui.so.0.0.p/ui_src_pbutton.c.o
+ *fill*         0x000000000001804a        0x6 
+ .text.ui_pbutton_ctl
+                0x0000000000018050        0x9 uspace/lib/libui.so.0.0.p/ui_src_pbutton.c.o
+                0x0000000000018050                ui_pbutton_ctl
+ *fill*         0x0000000000018059        0x7 
+ .text.ui_pbutton_set_cb
+                0x0000000000018060        0xe uspace/lib/libui.so.0.0.p/ui_src_pbutton.c.o
+                0x0000000000018060                ui_pbutton_set_cb
+ *fill*         0x000000000001806e        0x2 
+ .text.ui_pbutton_set_decor_ops
+                0x0000000000018070        0xe uspace/lib/libui.so.0.0.p/ui_src_pbutton.c.o
+                0x0000000000018070                ui_pbutton_set_decor_ops
+ *fill*         0x000000000001807e        0x2 
+ .text.ui_pbutton_set_flags
+                0x0000000000018080        0x9 uspace/lib/libui.so.0.0.p/ui_src_pbutton.c.o
+                0x0000000000018080                ui_pbutton_set_flags
+ *fill*         0x0000000000018089        0x7 
+ .text.ui_pbutton_set_rect
+                0x0000000000018090        0xe uspace/lib/libui.so.0.0.p/ui_src_pbutton.c.o
+                0x0000000000018090                ui_pbutton_set_rect
+ *fill*         0x000000000001809e        0x2 
+ .text.ui_pbutton_set_default
+                0x00000000000180a0        0xa uspace/lib/libui.so.0.0.p/ui_src_pbutton.c.o
+                0x00000000000180a0                ui_pbutton_set_default
+ *fill*         0x00000000000180aa        0x6 
+ .text.ui_pbutton_get_light
+                0x00000000000180b0        0xa uspace/lib/libui.so.0.0.p/ui_src_pbutton.c.o
+                0x00000000000180b0                ui_pbutton_get_light
+ *fill*         0x00000000000180ba        0x6 
+ .text.ui_pbutton_set_light
+                0x00000000000180c0        0xa uspace/lib/libui.so.0.0.p/ui_src_pbutton.c.o
+                0x00000000000180c0                ui_pbutton_set_light
+ *fill*         0x00000000000180ca        0x6 
+ .text.ui_pbutton_set_caption
+                0x00000000000180d0       0x3a uspace/lib/libui.so.0.0.p/ui_src_pbutton.c.o
+                0x00000000000180d0                ui_pbutton_set_caption
+ *fill*         0x000000000001810a        0x6 
+ .text.ui_pbutton_paint
+                0x0000000000018110      0x4e0 uspace/lib/libui.so.0.0.p/ui_src_pbutton.c.o
+                0x0000000000018110                ui_pbutton_paint
+ .text.ui_pbutton_ctl_paint
+                0x00000000000185f0        0xa uspace/lib/libui.so.0.0.p/ui_src_pbutton.c.o
+ *fill*         0x00000000000185fa        0x6 
+ .text.ui_pbutton_enter
+                0x0000000000018600       0x26 uspace/lib/libui.so.0.0.p/ui_src_pbutton.c.o
+                0x0000000000018600                ui_pbutton_enter
+ *fill*         0x0000000000018626        0xa 
+ .text.ui_pbutton_leave
+                0x0000000000018630       0x26 uspace/lib/libui.so.0.0.p/ui_src_pbutton.c.o
+                0x0000000000018630                ui_pbutton_leave
+ *fill*         0x0000000000018656        0xa 
+ .text.ui_pbutton_clicked
+                0x0000000000018660       0x22 uspace/lib/libui.so.0.0.p/ui_src_pbutton.c.o
+                0x0000000000018660                ui_pbutton_clicked
+ *fill*         0x0000000000018682        0xe 
+ .text.ui_pbutton_down
+                0x0000000000018690       0x22 uspace/lib/libui.so.0.0.p/ui_src_pbutton.c.o
+                0x0000000000018690                ui_pbutton_down
+ *fill*         0x00000000000186b2        0xe 
+ .text.ui_pbutton_press
+                0x00000000000186c0       0x37 uspace/lib/libui.so.0.0.p/ui_src_pbutton.c.o
+                0x00000000000186c0                ui_pbutton_press
+ *fill*         0x00000000000186f7        0x9 
+ .text.ui_pbutton_up
+                0x0000000000018700       0x22 uspace/lib/libui.so.0.0.p/ui_src_pbutton.c.o
+                0x0000000000018700                ui_pbutton_up
+ *fill*         0x0000000000018722        0xe 
+ .text.ui_pbutton_release
+                0x0000000000018730       0x4d uspace/lib/libui.so.0.0.p/ui_src_pbutton.c.o
+                0x0000000000018730                ui_pbutton_release
+ *fill*         0x000000000001877d        0x3 
+ .text.ui_pbutton_pos_event
+                0x0000000000018780       0xae uspace/lib/libui.so.0.0.p/ui_src_pbutton.c.o
+                0x0000000000018780                ui_pbutton_pos_event
+ *fill*         0x000000000001882e        0x2 
+ .text.ui_pbutton_ctl_pos_event
+                0x0000000000018830        0xa uspace/lib/libui.so.0.0.p/ui_src_pbutton.c.o
+ *fill*         0x000000000001883a        0x6 
+ .text.ui_popup_window_close
+                0x0000000000018840       0x22 uspace/lib/libui.so.0.0.p/ui_src_popup.c.o
+ *fill*         0x0000000000018862        0xe 
+ .text.ui_popup_window_kbd
+                0x0000000000018870       0x32 uspace/lib/libui.so.0.0.p/ui_src_popup.c.o
+ *fill*         0x00000000000188a2        0xe 
+ .text.ui_popup_window_pos
+                0x00000000000188b0       0x32 uspace/lib/libui.so.0.0.p/ui_src_popup.c.o
+ *fill*         0x00000000000188e2        0xe 
+ .text.ui_popup_params_init
+                0x00000000000188f0       0x19 uspace/lib/libui.so.0.0.p/ui_src_popup.c.o
+                0x00000000000188f0                ui_popup_params_init
+ *fill*         0x0000000000018909        0x7 
+ .text.ui_popup_create
+                0x0000000000018910      0x147 uspace/lib/libui.so.0.0.p/ui_src_popup.c.o
+                0x0000000000018910                ui_popup_create
+ *fill*         0x0000000000018a57        0x9 
+ .text.ui_popup_destroy
+                0x0000000000018a60       0x31 uspace/lib/libui.so.0.0.p/ui_src_popup.c.o
+                0x0000000000018a60                ui_popup_destroy
+ *fill*         0x0000000000018a91        0xf 
+ .text.ui_popup_add
+                0x0000000000018aa0        0xe uspace/lib/libui.so.0.0.p/ui_src_popup.c.o
+                0x0000000000018aa0                ui_popup_add
+ *fill*         0x0000000000018aae        0x2 
+ .text.ui_popup_remove
+                0x0000000000018ab0        0xe uspace/lib/libui.so.0.0.p/ui_src_popup.c.o
+                0x0000000000018ab0                ui_popup_remove
+ *fill*         0x0000000000018abe        0x2 
+ .text.ui_popup_set_cb
+                0x0000000000018ac0        0xe uspace/lib/libui.so.0.0.p/ui_src_popup.c.o
+                0x0000000000018ac0                ui_popup_set_cb
+ *fill*         0x0000000000018ace        0x2 
+ .text.ui_popup_get_res
+                0x0000000000018ad0        0xe uspace/lib/libui.so.0.0.p/ui_src_popup.c.o
+                0x0000000000018ad0                ui_popup_get_res
+ *fill*         0x0000000000018ade        0x2 
+ .text.ui_popup_get_gc
+                0x0000000000018ae0        0xe uspace/lib/libui.so.0.0.p/ui_src_popup.c.o
+                0x0000000000018ae0                ui_popup_get_gc
+ *fill*         0x0000000000018aee        0x2 
+ .text.ui_popup_get_idev_id
+                0x0000000000018af0        0xa uspace/lib/libui.so.0.0.p/ui_src_popup.c.o
+                0x0000000000018af0                ui_popup_get_idev_id
+ *fill*         0x0000000000018afa        0x6 
+ .text.ui_prompt_dialog_wnd_close
+                0x0000000000018b00       0x22 uspace/lib/libui.so.0.0.p/ui_src_promptdialog.c.o
+ *fill*         0x0000000000018b22        0xe 
+ .text.ui_prompt_dialog_bcancel_clicked
+                0x0000000000018b30       0x22 uspace/lib/libui.so.0.0.p/ui_src_promptdialog.c.o
+ *fill*         0x0000000000018b52        0xe 
+ .text.ui_prompt_dialog_bok_clicked
+                0x0000000000018b60       0x41 uspace/lib/libui.so.0.0.p/ui_src_promptdialog.c.o
+ *fill*         0x0000000000018ba1        0xf 
+ .text.ui_prompt_dialog_wnd_kbd
+                0x0000000000018bb0       0x90 uspace/lib/libui.so.0.0.p/ui_src_promptdialog.c.o
+ .text.ui_prompt_dialog_params_init
+                0x0000000000018c40       0x18 uspace/lib/libui.so.0.0.p/ui_src_promptdialog.c.o
+                0x0000000000018c40                ui_prompt_dialog_params_init
+ *fill*         0x0000000000018c58        0x8 
+ .text.ui_prompt_dialog_create
+                0x0000000000018c60      0x4d9 uspace/lib/libui.so.0.0.p/ui_src_promptdialog.c.o
+                0x0000000000018c60                ui_prompt_dialog_create
+ *fill*         0x0000000000019139        0x7 
+ .text.ui_prompt_dialog_destroy
+                0x0000000000019140       0x31 uspace/lib/libui.so.0.0.p/ui_src_promptdialog.c.o
+                0x0000000000019140                ui_prompt_dialog_destroy
+ *fill*         0x0000000000019171        0xf 
+ .text.ui_prompt_dialog_set_cb
+                0x0000000000019180        0xe uspace/lib/libui.so.0.0.p/ui_src_promptdialog.c.o
+                0x0000000000019180                ui_prompt_dialog_set_cb
+ *fill*         0x000000000001918e        0x2 
+ .text.ui_rbutton_group_create
+                0x0000000000019190       0x35 uspace/lib/libui.so.0.0.p/ui_src_rbutton.c.o
+                0x0000000000019190                ui_rbutton_group_create
+ *fill*         0x00000000000191c5        0xb 
+ .text.ui_rbutton_group_destroy
+                0x00000000000191d0       0x12 uspace/lib/libui.so.0.0.p/ui_src_rbutton.c.o
+                0x00000000000191d0                ui_rbutton_group_destroy
+ *fill*         0x00000000000191e2        0xe 
+ .text.ui_rbutton_create
+                0x00000000000191f0       0xb8 uspace/lib/libui.so.0.0.p/ui_src_rbutton.c.o
+                0x00000000000191f0                ui_rbutton_create
+ *fill*         0x00000000000192a8        0x8 
+ .text.ui_rbutton_destroy
+                0x00000000000192b0       0x31 uspace/lib/libui.so.0.0.p/ui_src_rbutton.c.o
+                0x00000000000192b0                ui_rbutton_destroy
+ *fill*         0x00000000000192e1        0xf 
+ .text.ui_rbutton_ctl_destroy
+                0x00000000000192f0        0xa uspace/lib/libui.so.0.0.p/ui_src_rbutton.c.o
+ *fill*         0x00000000000192fa        0x6 
+ .text.ui_rbutton_ctl
+                0x0000000000019300        0x9 uspace/lib/libui.so.0.0.p/ui_src_rbutton.c.o
+                0x0000000000019300                ui_rbutton_ctl
+ *fill*         0x0000000000019309        0x7 
+ .text.ui_rbutton_group_set_cb
+                0x0000000000019310        0xe uspace/lib/libui.so.0.0.p/ui_src_rbutton.c.o
+                0x0000000000019310                ui_rbutton_group_set_cb
+ *fill*         0x000000000001931e        0x2 
+ .text.ui_rbutton_set_rect
+                0x0000000000019320        0xe uspace/lib/libui.so.0.0.p/ui_src_rbutton.c.o
+                0x0000000000019320                ui_rbutton_set_rect
+ *fill*         0x000000000001932e        0x2 
+ .text.ui_rbutton_paint_gfx
+                0x0000000000019330      0x266 uspace/lib/libui.so.0.0.p/ui_src_rbutton.c.o
+                0x0000000000019330                ui_rbutton_paint_gfx
+ *fill*         0x0000000000019596        0xa 
+ .text.ui_rbutton_paint_text
+                0x00000000000195a0       0xf8 uspace/lib/libui.so.0.0.p/ui_src_rbutton.c.o
+                0x00000000000195a0                ui_rbutton_paint_text
+ *fill*         0x0000000000019698        0x8 
+ .text.ui_rbutton_paint
+                0x00000000000196a0       0x26 uspace/lib/libui.so.0.0.p/ui_src_rbutton.c.o
+                0x00000000000196a0                ui_rbutton_paint
+ *fill*         0x00000000000196c6        0xa 
+ .text.ui_rbutton_ctl_paint
+                0x00000000000196d0        0xa uspace/lib/libui.so.0.0.p/ui_src_rbutton.c.o
+ *fill*         0x00000000000196da        0x6 
+ .text.ui_rbutton_press
+                0x00000000000196e0       0x1f uspace/lib/libui.so.0.0.p/ui_src_rbutton.c.o
+                0x00000000000196e0                ui_rbutton_press
+ *fill*         0x00000000000196ff        0x1 
+ .text.ui_rbutton_enter
+                0x0000000000019700       0x26 uspace/lib/libui.so.0.0.p/ui_src_rbutton.c.o
+                0x0000000000019700                ui_rbutton_enter
+ *fill*         0x0000000000019726        0xa 
+ .text.ui_rbutton_leave
+                0x0000000000019730       0x26 uspace/lib/libui.so.0.0.p/ui_src_rbutton.c.o
+                0x0000000000019730                ui_rbutton_leave
+ *fill*         0x0000000000019756        0xa 
+ .text.ui_rbutton_selected
+                0x0000000000019760       0x32 uspace/lib/libui.so.0.0.p/ui_src_rbutton.c.o
+                0x0000000000019760                ui_rbutton_selected
+ *fill*         0x0000000000019792        0xe 
+ .text.ui_rbutton_select
+                0x00000000000197a0       0x4d uspace/lib/libui.so.0.0.p/ui_src_rbutton.c.o
+                0x00000000000197a0                ui_rbutton_select
+ *fill*         0x00000000000197ed        0x3 
+ .text.ui_rbutton_release
+                0x00000000000197f0       0x26 uspace/lib/libui.so.0.0.p/ui_src_rbutton.c.o
+                0x00000000000197f0                ui_rbutton_release
+ *fill*         0x0000000000019816        0xa 
+ .text.ui_rbutton_pos_event
+                0x0000000000019820       0xae uspace/lib/libui.so.0.0.p/ui_src_rbutton.c.o
+                0x0000000000019820                ui_rbutton_pos_event
+ *fill*         0x00000000000198ce        0x2 
+ .text.ui_rbutton_ctl_pos_event
+                0x00000000000198d0        0xa uspace/lib/libui.so.0.0.p/ui_src_rbutton.c.o
+ *fill*         0x00000000000198da        0x6 
+ .text.ui_resource_create
+                0x00000000000198e0      0xe2c uspace/lib/libui.so.0.0.p/ui_src_resource.c.o
+                0x00000000000198e0                ui_resource_create
+ *fill*         0x000000000001a70c        0x4 
+ .text.ui_resource_destroy
+                0x000000000001a710      0x151 uspace/lib/libui.so.0.0.p/ui_src_resource.c.o
+                0x000000000001a710                ui_resource_destroy
+ *fill*         0x000000000001a861        0xf 
+ .text.ui_resource_set_expose_cb
+                0x000000000001a870       0x14 uspace/lib/libui.so.0.0.p/ui_src_resource.c.o
+                0x000000000001a870                ui_resource_set_expose_cb
+ *fill*         0x000000000001a884        0xc 
+ .text.ui_resource_expose
+                0x000000000001a890       0x22 uspace/lib/libui.so.0.0.p/ui_src_resource.c.o
+                0x000000000001a890                ui_resource_expose
+ *fill*         0x000000000001a8b2        0xe 
+ .text.ui_resource_get_font
+                0x000000000001a8c0        0xa uspace/lib/libui.so.0.0.p/ui_src_resource.c.o
+                0x000000000001a8c0                ui_resource_get_font
+ *fill*         0x000000000001a8ca        0x6 
+ .text.ui_resource_is_textmode
+                0x000000000001a8d0        0xa uspace/lib/libui.so.0.0.p/ui_src_resource.c.o
+                0x000000000001a8d0                ui_resource_is_textmode
+ *fill*         0x000000000001a8da        0x6 
+ .text.ui_resource_get_wnd_face_color
+                0x000000000001a8e0        0xa uspace/lib/libui.so.0.0.p/ui_src_resource.c.o
+                0x000000000001a8e0                ui_resource_get_wnd_face_color
+ *fill*         0x000000000001a8ea        0x6 
+ .text.ui_resource_get_wnd_text_color
+                0x000000000001a8f0        0xa uspace/lib/libui.so.0.0.p/ui_src_resource.c.o
+                0x000000000001a8f0                ui_resource_get_wnd_text_color
+ *fill*         0x000000000001a8fa        0x6 
+ .text.ui_scrollbar_up_btn_up
+                0x000000000001a900       0x2e uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+ *fill*         0x000000000001a92e        0x2 
+ .text.ui_scrollbar_down_btn_down
+                0x000000000001a930       0x34 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+ *fill*         0x000000000001a964        0xc 
+ .text.ui_scrollbar_up_btn_down
+                0x000000000001a970       0x34 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+ *fill*         0x000000000001a9a4        0xc 
+ .text.ui_scrollbar_up_btn_decor_paint
+                0x000000000001a9b0       0x6b uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+ *fill*         0x000000000001aa1b        0x5 
+ .text.ui_scrollbar_down_btn_decor_paint
+                0x000000000001aa20       0x6b uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+ *fill*         0x000000000001aa8b        0x5 
+ .text.ui_scrollbar_down_btn_up
+                0x000000000001aa90       0x2e uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+ *fill*         0x000000000001aabe        0x2 
+ .text.ui_scrollbar_destroy
+                0x000000000001aac0       0x41 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+                0x000000000001aac0                ui_scrollbar_destroy
+ *fill*         0x000000000001ab01        0xf 
+ .text.ui_scrollbar_create
+                0x000000000001ab10      0x1d6 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+                0x000000000001ab10                ui_scrollbar_create
+ *fill*         0x000000000001ace6        0xa 
+ .text.ui_scrollbar_ctl_destroy
+                0x000000000001acf0        0xa uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+ *fill*         0x000000000001acfa        0x6 
+ .text.ui_scrollbar_ctl
+                0x000000000001ad00        0x9 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+                0x000000000001ad00                ui_scrollbar_ctl
+ *fill*         0x000000000001ad09        0x7 
+ .text.ui_scrollbar_set_cb
+                0x000000000001ad10        0xe uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+                0x000000000001ad10                ui_scrollbar_set_cb
+ *fill*         0x000000000001ad1e        0x2 
+ .text.ui_scrollbar_trough_length
+                0x000000000001ad20       0x4e uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+                0x000000000001ad20                ui_scrollbar_trough_length
+ *fill*         0x000000000001ad6e        0x2 
+ .text.ui_scrollbar_move_length
+                0x000000000001ad70       0x1a uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+                0x000000000001ad70                ui_scrollbar_move_length
+ *fill*         0x000000000001ad8a        0x6 
+ .text.ui_scrollbar_get_pos
+                0x000000000001ad90        0x9 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+                0x000000000001ad90                ui_scrollbar_get_pos
+ *fill*         0x000000000001ad99        0x7 
+ .text.ui_scrollbar_get_geom
+                0x000000000001ada0      0x1aa uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+                0x000000000001ada0                ui_scrollbar_get_geom
+ *fill*         0x000000000001af4a        0x6 
+ .text.ui_scrollbar_set_rect
+                0x000000000001af50       0x44 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+                0x000000000001af50                ui_scrollbar_set_rect
+ *fill*         0x000000000001af94        0xc 
+ .text.ui_scrollbar_paint_gfx
+                0x000000000001afa0      0x2aa uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+                0x000000000001afa0                ui_scrollbar_paint_gfx
+ *fill*         0x000000000001b24a        0x6 
+ .text.ui_scrollbar_paint_text
+                0x000000000001b250       0x94 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+                0x000000000001b250                ui_scrollbar_paint_text
+ *fill*         0x000000000001b2e4        0xc 
+ .text.ui_scrollbar_paint
+                0x000000000001b2f0       0x3a uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+                0x000000000001b2f0                ui_scrollbar_paint
+ *fill*         0x000000000001b32a        0x6 
+ .text.ui_scrollbar_ctl_paint
+                0x000000000001b330        0xa uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+ *fill*         0x000000000001b33a        0x6 
+ .text.ui_scrollbar_set_thumb_length
+                0x000000000001b340       0x67 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+                0x000000000001b340                ui_scrollbar_set_thumb_length
+ *fill*         0x000000000001b3a7        0x9 
+ .text.ui_scrollbar_thumb_press
+                0x000000000001b3b0       0x27 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+                0x000000000001b3b0                ui_scrollbar_thumb_press
+ *fill*         0x000000000001b3d7        0x9 
+ .text.ui_scrollbar_upper_trough_press
+                0x000000000001b3e0       0x3d uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+                0x000000000001b3e0                ui_scrollbar_upper_trough_press
+ *fill*         0x000000000001b41d        0x3 
+ .text.ui_scrollbar_lower_trough_press
+                0x000000000001b420       0x3d uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+                0x000000000001b420                ui_scrollbar_lower_trough_press
+ *fill*         0x000000000001b45d        0x3 
+ .text.ui_scrollbar_troughs_update
+                0x000000000001b460       0xc7 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+                0x000000000001b460                ui_scrollbar_troughs_update
+ *fill*         0x000000000001b527        0x9 
+ .text.ui_scrollbar_set_pos
+                0x000000000001b530       0x4e uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+                0x000000000001b530                ui_scrollbar_set_pos
+ *fill*         0x000000000001b57e        0x2 
+ .text.ui_scrollbar_up
+                0x000000000001b580       0x22 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+                0x000000000001b580                ui_scrollbar_up
+ *fill*         0x000000000001b5a2        0xe 
+ .text.ui_scrollbar_cm_up
+                0x000000000001b5b0       0x19 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+ *fill*         0x000000000001b5c9        0x7 
+ .text.ui_scrollbar_down
+                0x000000000001b5d0       0x22 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+                0x000000000001b5d0                ui_scrollbar_down
+ *fill*         0x000000000001b5f2        0xe 
+ .text.ui_scrollbar_cm_down
+                0x000000000001b600       0x19 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+ *fill*         0x000000000001b619        0x7 
+ .text.ui_scrollbar_page_up
+                0x000000000001b620       0x22 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+                0x000000000001b620                ui_scrollbar_page_up
+ *fill*         0x000000000001b642        0xe 
+ .text.ui_scrollbar_cm_page_up
+                0x000000000001b650       0x19 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+ *fill*         0x000000000001b669        0x7 
+ .text.ui_scrollbar_page_down
+                0x000000000001b670       0x22 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+                0x000000000001b670                ui_scrollbar_page_down
+ *fill*         0x000000000001b692        0xe 
+ .text.ui_scrollbar_cm_page_down
+                0x000000000001b6a0       0x19 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+ *fill*         0x000000000001b6b9        0x7 
+ .text.ui_scrollbar_moved
+                0x000000000001b6c0       0x22 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+                0x000000000001b6c0                ui_scrollbar_moved
+ *fill*         0x000000000001b6e2        0xe 
+ .text.ui_scrollbar_update
+                0x000000000001b6f0       0x59 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+                0x000000000001b6f0                ui_scrollbar_update
+ *fill*         0x000000000001b749        0x7 
+ .text.ui_scrollbar_release
+                0x000000000001b750       0x66 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+                0x000000000001b750                ui_scrollbar_release
+ *fill*         0x000000000001b7b6        0xa 
+ .text.ui_scrollbar_pos_event
+                0x000000000001b7c0      0x112 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+                0x000000000001b7c0                ui_scrollbar_pos_event
+ *fill*         0x000000000001b8d2        0xe 
+ .text.ui_scrollbar_ctl_pos_event
+                0x000000000001b8e0        0xa uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+ *fill*         0x000000000001b8ea        0x6 
+ .text.ui_select_dialog_wnd_close
+                0x000000000001b8f0       0x22 uspace/lib/libui.so.0.0.p/ui_src_selectdialog.c.o
+ *fill*         0x000000000001b912        0xe 
+ .text.ui_select_dialog_bcancel_clicked
+                0x000000000001b920       0x22 uspace/lib/libui.so.0.0.p/ui_src_selectdialog.c.o
+ *fill*         0x000000000001b942        0xe 
+ .text.ui_select_dialog_list_selected
+                0x000000000001b950       0x46 uspace/lib/libui.so.0.0.p/ui_src_selectdialog.c.o
+ *fill*         0x000000000001b996        0xa 
+ .text.ui_select_dialog_bok_clicked
+                0x000000000001b9a0       0x51 uspace/lib/libui.so.0.0.p/ui_src_selectdialog.c.o
+ *fill*         0x000000000001b9f1        0xf 
+ .text.ui_select_dialog_wnd_kbd
+                0x000000000001ba00       0x98 uspace/lib/libui.so.0.0.p/ui_src_selectdialog.c.o
+ *fill*         0x000000000001ba98        0x8 
+ .text.ui_select_dialog_params_init
+                0x000000000001baa0        0xd uspace/lib/libui.so.0.0.p/ui_src_selectdialog.c.o
+                0x000000000001baa0                ui_select_dialog_params_init
+ *fill*         0x000000000001baad        0x3 
+ .text.ui_select_dialog_create
+                0x000000000001bab0      0x4b1 uspace/lib/libui.so.0.0.p/ui_src_selectdialog.c.o
+                0x000000000001bab0                ui_select_dialog_create
+ *fill*         0x000000000001bf61        0xf 
+ .text.ui_select_dialog_destroy
+                0x000000000001bf70       0x31 uspace/lib/libui.so.0.0.p/ui_src_selectdialog.c.o
+                0x000000000001bf70                ui_select_dialog_destroy
+ *fill*         0x000000000001bfa1        0xf 
+ .text.ui_select_dialog_set_cb
+                0x000000000001bfb0        0xe uspace/lib/libui.so.0.0.p/ui_src_selectdialog.c.o
+                0x000000000001bfb0                ui_select_dialog_set_cb
+ *fill*         0x000000000001bfbe        0x2 
+ .text.ui_select_dialog_append
+                0x000000000001bfc0       0x10 uspace/lib/libui.so.0.0.p/ui_src_selectdialog.c.o
+                0x000000000001bfc0                ui_select_dialog_append
+ .text.ui_select_dialog_paint
+                0x000000000001bfd0        0xd uspace/lib/libui.so.0.0.p/ui_src_selectdialog.c.o
+                0x000000000001bfd0                ui_select_dialog_paint
+ *fill*         0x000000000001bfdd        0x3 
+ .text.ui_select_dialog_list
+                0x000000000001bfe0        0xa uspace/lib/libui.so.0.0.p/ui_src_selectdialog.c.o
+                0x000000000001bfe0                ui_select_dialog_list
+ *fill*         0x000000000001bfea        0x6 
+ .text.ui_slider_create
+                0x000000000001bff0       0x78 uspace/lib/libui.so.0.0.p/ui_src_slider.c.o
+                0x000000000001bff0                ui_slider_create
+ *fill*         0x000000000001c068        0x8 
+ .text.ui_slider_destroy
+                0x000000000001c070       0x31 uspace/lib/libui.so.0.0.p/ui_src_slider.c.o
+                0x000000000001c070                ui_slider_destroy
+ *fill*         0x000000000001c0a1        0xf 
+ .text.ui_slider_ctl_destroy
+                0x000000000001c0b0        0xa uspace/lib/libui.so.0.0.p/ui_src_slider.c.o
+ *fill*         0x000000000001c0ba        0x6 
+ .text.ui_slider_ctl
+                0x000000000001c0c0        0x9 uspace/lib/libui.so.0.0.p/ui_src_slider.c.o
+                0x000000000001c0c0                ui_slider_ctl
+ *fill*         0x000000000001c0c9        0x7 
+ .text.ui_slider_set_cb
+                0x000000000001c0d0        0xe uspace/lib/libui.so.0.0.p/ui_src_slider.c.o
+                0x000000000001c0d0                ui_slider_set_cb
+ *fill*         0x000000000001c0de        0x2 
+ .text.ui_slider_set_rect
+                0x000000000001c0e0        0xe uspace/lib/libui.so.0.0.p/ui_src_slider.c.o
+                0x000000000001c0e0                ui_slider_set_rect
+ *fill*         0x000000000001c0ee        0x2 
+ .text.ui_slider_length
+                0x000000000001c0f0       0x36 uspace/lib/libui.so.0.0.p/ui_src_slider.c.o
+                0x000000000001c0f0                ui_slider_length
+ *fill*         0x000000000001c126        0xa 
+ .text.ui_slider_paint_gfx
+                0x000000000001c130      0x258 uspace/lib/libui.so.0.0.p/ui_src_slider.c.o
+                0x000000000001c130                ui_slider_paint_gfx
+ *fill*         0x000000000001c388        0x8 
+ .text.ui_slider_paint_text
+                0x000000000001c390      0x13a uspace/lib/libui.so.0.0.p/ui_src_slider.c.o
+                0x000000000001c390                ui_slider_paint_text
+ *fill*         0x000000000001c4ca        0x6 
+ .text.ui_slider_paint
+                0x000000000001c4d0       0x1e uspace/lib/libui.so.0.0.p/ui_src_slider.c.o
+                0x000000000001c4d0                ui_slider_paint
+ *fill*         0x000000000001c4ee        0x2 
+ .text.ui_slider_ctl_paint
+                0x000000000001c4f0        0xa uspace/lib/libui.so.0.0.p/ui_src_slider.c.o
+ *fill*         0x000000000001c4fa        0x6 
+ .text.ui_slider_btn_clear
+                0x000000000001c500       0x71 uspace/lib/libui.so.0.0.p/ui_src_slider.c.o
+                0x000000000001c500                ui_slider_btn_clear
+ *fill*         0x000000000001c571        0xf 
+ .text.ui_slider_press
+                0x000000000001c580       0x27 uspace/lib/libui.so.0.0.p/ui_src_slider.c.o
+                0x000000000001c580                ui_slider_press
+ *fill*         0x000000000001c5a7        0x9 
+ .text.ui_slider_moved
+                0x000000000001c5b0       0x22 uspace/lib/libui.so.0.0.p/ui_src_slider.c.o
+                0x000000000001c5b0                ui_slider_moved
+ *fill*         0x000000000001c5d2        0xe 
+ .text.ui_slider_update
+                0x000000000001c5e0       0x6b uspace/lib/libui.so.0.0.p/ui_src_slider.c.o
+                0x000000000001c5e0                ui_slider_update
+ *fill*         0x000000000001c64b        0x5 
+ .text.ui_slider_release
+                0x000000000001c650       0x2b uspace/lib/libui.so.0.0.p/ui_src_slider.c.o
+                0x000000000001c650                ui_slider_release
+ *fill*         0x000000000001c67b        0x5 
+ .text.ui_slider_pos_event
+                0x000000000001c680       0xc8 uspace/lib/libui.so.0.0.p/ui_src_slider.c.o
+                0x000000000001c680                ui_slider_pos_event
+ *fill*         0x000000000001c748        0x8 
+ .text.ui_slider_ctl_pos_event
+                0x000000000001c750        0xa uspace/lib/libui.so.0.0.p/ui_src_slider.c.o
+ *fill*         0x000000000001c75a        0x6 
+ .text.ui_tab_destroy
+                0x000000000001c760       0x51 uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+                0x000000000001c760                ui_tab_destroy
+ *fill*         0x000000000001c7b1        0xf 
+ .text.ui_tab_first
+                0x000000000001c7c0       0x24 uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+                0x000000000001c7c0                ui_tab_first
+ *fill*         0x000000000001c7e4        0xc 
+ .text.ui_tab_next
+                0x000000000001c7f0       0x24 uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+                0x000000000001c7f0                ui_tab_next
+ *fill*         0x000000000001c814        0xc 
+ .text.ui_tab_last
+                0x000000000001c820       0x24 uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+                0x000000000001c820                ui_tab_last
+ *fill*         0x000000000001c844        0xc 
+ .text.ui_tab_prev
+                0x000000000001c850       0x24 uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+                0x000000000001c850                ui_tab_prev
+ *fill*         0x000000000001c874        0xc 
+ .text.ui_tab_is_selected
+                0x000000000001c880       0x10 uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+                0x000000000001c880                ui_tab_is_selected
+ .text.ui_tab_add
+                0x000000000001c890       0x2b uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+                0x000000000001c890                ui_tab_add
+ *fill*         0x000000000001c8bb        0x5 
+ .text.ui_tab_remove
+                0x000000000001c8c0       0x50 uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+                0x000000000001c8c0                ui_tab_remove
+ .text.ui_tab_handle_width
+                0x000000000001c910       0x31 uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+                0x000000000001c910                ui_tab_handle_width
+ *fill*         0x000000000001c941        0xf 
+ .text.ui_tab_create
+                0x000000000001c950       0xd6 uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+                0x000000000001c950                ui_tab_create
+ *fill*         0x000000000001ca26        0xa 
+ .text.ui_tab_handle_height
+                0x000000000001ca30       0x43 uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+                0x000000000001ca30                ui_tab_handle_height
+ *fill*         0x000000000001ca73        0xd 
+ .text.ui_tab_get_geom
+                0x000000000001ca80      0x10f uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+                0x000000000001ca80                ui_tab_get_geom
+ *fill*         0x000000000001cb8f        0x1 
+ .text.ui_tab_get_res
+                0x000000000001cb90        0xd uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+                0x000000000001cb90                ui_tab_get_res
+ *fill*         0x000000000001cb9d        0x3 
+ .text.ui_tab_paint_handle_frame
+                0x000000000001cba0      0x227 uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+                0x000000000001cba0                ui_tab_paint_handle_frame
+ *fill*         0x000000000001cdc7        0x9 
+ .text.ui_tab_paint_body_frame
+                0x000000000001cdd0       0xa4 uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+                0x000000000001cdd0                ui_tab_paint_body_frame
+ *fill*         0x000000000001ce74        0xc 
+ .text.ui_tab_paint_frame
+                0x000000000001ce80      0x11b uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+                0x000000000001ce80                ui_tab_paint_frame
+ *fill*         0x000000000001cf9b        0x5 
+ .text.ui_tab_paint
+                0x000000000001cfa0       0xbb uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+                0x000000000001cfa0                ui_tab_paint
+ *fill*         0x000000000001d05b        0x5 
+ .text.ui_tab_pos_event
+                0x000000000001d060       0xa3 uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+                0x000000000001d060                ui_tab_pos_event
+ *fill*         0x000000000001d103        0xd 
+ .text.ui_tab_kbd_event
+                0x000000000001d110       0x3c uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+                0x000000000001d110                ui_tab_kbd_event
+ *fill*         0x000000000001d14c        0x4 
+ .text.ui_tab_set_create
+                0x000000000001d150       0x88 uspace/lib/libui.so.0.0.p/ui_src_tabset.c.o
+                0x000000000001d150                ui_tab_set_create
+ *fill*         0x000000000001d1d8        0x8 
+ .text.ui_tab_set_destroy
+                0x000000000001d1e0       0x49 uspace/lib/libui.so.0.0.p/ui_src_tabset.c.o
+                0x000000000001d1e0                ui_tab_set_destroy
+ *fill*         0x000000000001d229        0x7 
+ .text.ui_tab_set_ctl_destroy
+                0x000000000001d230        0xa uspace/lib/libui.so.0.0.p/ui_src_tabset.c.o
+ *fill*         0x000000000001d23a        0x6 
+ .text.ui_tab_set_ctl
+                0x000000000001d240        0x9 uspace/lib/libui.so.0.0.p/ui_src_tabset.c.o
+                0x000000000001d240                ui_tab_set_ctl
+ *fill*         0x000000000001d249        0x7 
+ .text.ui_tab_set_set_rect
+                0x000000000001d250        0xe uspace/lib/libui.so.0.0.p/ui_src_tabset.c.o
+                0x000000000001d250                ui_tab_set_set_rect
+ *fill*         0x000000000001d25e        0x2 
+ .text.ui_tab_set_paint
+                0x000000000001d260       0x6d uspace/lib/libui.so.0.0.p/ui_src_tabset.c.o
+                0x000000000001d260                ui_tab_set_paint
+ *fill*         0x000000000001d2cd        0x3 
+ .text.ui_tab_set_ctl_paint
+                0x000000000001d2d0        0xa uspace/lib/libui.so.0.0.p/ui_src_tabset.c.o
+ *fill*         0x000000000001d2da        0x6 
+ .text.ui_tab_set_select
+                0x000000000001d2e0        0xe uspace/lib/libui.so.0.0.p/ui_src_tabset.c.o
+                0x000000000001d2e0                ui_tab_set_select
+ *fill*         0x000000000001d2ee        0x2 
+ .text.ui_tab_set_kbd_event
+                0x000000000001d2f0       0x52 uspace/lib/libui.so.0.0.p/ui_src_tabset.c.o
+                0x000000000001d2f0                ui_tab_set_kbd_event
+ *fill*         0x000000000001d342        0xe 
+ .text.ui_tab_set_ctl_kbd_event
+                0x000000000001d350        0xa uspace/lib/libui.so.0.0.p/ui_src_tabset.c.o
+ *fill*         0x000000000001d35a        0x6 
+ .text.ui_tab_set_pos_event
+                0x000000000001d360       0x52 uspace/lib/libui.so.0.0.p/ui_src_tabset.c.o
+                0x000000000001d360                ui_tab_set_pos_event
+ *fill*         0x000000000001d3b2        0xe 
+ .text.ui_tab_set_ctl_pos_event
+                0x000000000001d3c0        0xa uspace/lib/libui.so.0.0.p/ui_src_tabset.c.o
+ *fill*         0x000000000001d3ca        0x6 
+ .text.test_ctl_paint
+                0x000000000001d3d0       0x11 uspace/lib/libui.so.0.0.p/ui_src_testctl.c.o
+ *fill*         0x000000000001d3e1        0xf 
+ .text.test_ctl_kbd_event
+                0x000000000001d3f0       0x20 uspace/lib/libui.so.0.0.p/ui_src_testctl.c.o
+ .text.test_ctl_pos_event
+                0x000000000001d410       0x29 uspace/lib/libui.so.0.0.p/ui_src_testctl.c.o
+ *fill*         0x000000000001d439        0x7 
+ .text.test_ctl_unfocus
+                0x000000000001d440       0x11 uspace/lib/libui.so.0.0.p/ui_src_testctl.c.o
+ *fill*         0x000000000001d451        0xf 
+ .text.ui_test_ctl_create
+                0x000000000001d460       0x78 uspace/lib/libui.so.0.0.p/ui_src_testctl.c.o
+                0x000000000001d460                ui_test_ctl_create
+ *fill*         0x000000000001d4d8        0x8 
+ .text.ui_test_ctl_destroy
+                0x000000000001d4e0       0x31 uspace/lib/libui.so.0.0.p/ui_src_testctl.c.o
+                0x000000000001d4e0                ui_test_ctl_destroy
+ *fill*         0x000000000001d511        0xf 
+ .text.test_ctl_destroy
+                0x000000000001d520       0x12 uspace/lib/libui.so.0.0.p/ui_src_testctl.c.o
+ *fill*         0x000000000001d532        0xe 
+ .text.ui_test_ctl_ctl
+                0x000000000001d540        0x9 uspace/lib/libui.so.0.0.p/ui_src_testctl.c.o
+                0x000000000001d540                ui_test_ctl_ctl
+ *fill*         0x000000000001d549        0x7 
+ .text.ui_create_cons
+                0x000000000001d550       0xa0 uspace/lib/libui.so.0.0.p/ui_src_ui.c.o
+                0x000000000001d550                ui_create_cons
+ .text.ui_create_disp
+                0x000000000001d5f0       0xa0 uspace/lib/libui.so.0.0.p/ui_src_ui.c.o
+                0x000000000001d5f0                ui_create_disp
+ .text.ui_destroy
+                0x000000000001d690       0x61 uspace/lib/libui.so.0.0.p/ui_src_ui.c.o
+                0x000000000001d690                ui_destroy
+ *fill*         0x000000000001d6f1        0xf 
+ .text.ui_paint
+                0x000000000001d700       0xd0 uspace/lib/libui.so.0.0.p/ui_src_ui.c.o
+                0x000000000001d700                ui_paint
+ .text.ui_create
+                0x000000000001d7d0      0x399 uspace/lib/libui.so.0.0.p/ui_src_ui.c.o
+                0x000000000001d7d0                ui_create
+ *fill*         0x000000000001db69        0x7 
+ .text.ui_suspend
+                0x000000000001db70       0x64 uspace/lib/libui.so.0.0.p/ui_src_ui.c.o
+                0x000000000001db70                ui_suspend
+ *fill*         0x000000000001dbd4        0xc 
+ .text.ui_resume
+                0x000000000001dbe0      0x128 uspace/lib/libui.so.0.0.p/ui_src_ui.c.o
+                0x000000000001dbe0                ui_resume
+ *fill*         0x000000000001dd08        0x8 
+ .text.ui_is_suspended
+                0x000000000001dd10        0xa uspace/lib/libui.so.0.0.p/ui_src_ui.c.o
+                0x000000000001dd10                ui_is_suspended
+ *fill*         0x000000000001dd1a        0x6 
+ .text.ui_lock  0x000000000001dd20        0xe uspace/lib/libui.so.0.0.p/ui_src_ui.c.o
+                0x000000000001dd20                ui_lock
+ *fill*         0x000000000001dd2e        0x2 
+ .text.ui_unlock
+                0x000000000001dd30        0xe uspace/lib/libui.so.0.0.p/ui_src_ui.c.o
+                0x000000000001dd30                ui_unlock
+ *fill*         0x000000000001dd3e        0x2 
+ .text.ui_run   0x000000000001dd40      0x159 uspace/lib/libui.so.0.0.p/ui_src_ui.c.o
+                0x000000000001dd40                ui_run
+ *fill*         0x000000000001de99        0x7 
+ .text.ui_quit  0x000000000001dea0        0xa uspace/lib/libui.so.0.0.p/ui_src_ui.c.o
+                0x000000000001dea0                ui_quit
+ *fill*         0x000000000001deaa        0x6 
+ .text.ui_is_textmode
+                0x000000000001deb0        0xd uspace/lib/libui.so.0.0.p/ui_src_ui.c.o
+                0x000000000001deb0                ui_is_textmode
+ *fill*         0x000000000001debd        0x3 
+ .text.ui_is_fullscreen
+                0x000000000001dec0        0xe uspace/lib/libui.so.0.0.p/ui_src_ui.c.o
+                0x000000000001dec0                ui_is_fullscreen
+ *fill*         0x000000000001dece        0x2 
+ .text.ui_get_rect
+                0x000000000001ded0       0x77 uspace/lib/libui.so.0.0.p/ui_src_ui.c.o
+                0x000000000001ded0                ui_get_rect
+ *fill*         0x000000000001df47        0x9 
+ .text.ui_get_clickmatic
+                0x000000000001df50        0xa uspace/lib/libui.so.0.0.p/ui_src_ui.c.o
+                0x000000000001df50                ui_get_clickmatic
+ *fill*         0x000000000001df5a        0x6 
+ .text.ui_wdecor_btn_min_paint
+                0x000000000001df60       0x1d uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+ *fill*         0x000000000001df7d        0x3 
+ .text.ui_wdecor_btn_max_paint
+                0x000000000001df80       0x40 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+ .text.ui_wdecor_btn_close_paint
+                0x000000000001dfc0       0x63 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+ *fill*         0x000000000001e023        0xd 
+ .text.ui_wdecor_destroy
+                0x000000000001e030       0x49 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+                0x000000000001e030                ui_wdecor_destroy
+ *fill*         0x000000000001e079        0x7 
+ .text.ui_wdecor_create
+                0x000000000001e080      0x192 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+                0x000000000001e080                ui_wdecor_create
+ *fill*         0x000000000001e212        0xe 
+ .text.ui_wdecor_set_cb
+                0x000000000001e220        0xe uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+                0x000000000001e220                ui_wdecor_set_cb
+ *fill*         0x000000000001e22e        0x2 
+ .text.ui_wdecor_set_active
+                0x000000000001e230        0xa uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+                0x000000000001e230                ui_wdecor_set_active
+ *fill*         0x000000000001e23a        0x6 
+ .text.ui_wdecor_set_maximized
+                0x000000000001e240        0xa uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+                0x000000000001e240                ui_wdecor_set_maximized
+ *fill*         0x000000000001e24a        0x6 
+ .text.ui_wdecor_sysmenu_hdl_paint_gfx
+                0x000000000001e250       0xe0 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+                0x000000000001e250                ui_wdecor_sysmenu_hdl_paint_gfx
+ .text.ui_wdecor_sysmenu_hdl_paint_text
+                0x000000000001e330       0x99 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+                0x000000000001e330                ui_wdecor_sysmenu_hdl_paint_text
+ *fill*         0x000000000001e3c9        0x7 
+ .text.ui_wdecor_sysmenu_hdl_paint
+                0x000000000001e3d0       0x1e uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+                0x000000000001e3d0                ui_wdecor_sysmenu_hdl_paint
+ *fill*         0x000000000001e3ee        0x2 
+ .text.ui_wdecor_sysmenu_open
+                0x000000000001e3f0       0x22 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+                0x000000000001e3f0                ui_wdecor_sysmenu_open
+ *fill*         0x000000000001e412        0xe 
+ .text.ui_wdecor_sysmenu_left
+                0x000000000001e420       0x22 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+                0x000000000001e420                ui_wdecor_sysmenu_left
+ *fill*         0x000000000001e442        0xe 
+ .text.ui_wdecor_sysmenu_right
+                0x000000000001e450       0x22 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+                0x000000000001e450                ui_wdecor_sysmenu_right
+ *fill*         0x000000000001e472        0xe 
+ .text.ui_wdecor_sysmenu_accel
+                0x000000000001e480       0x2a uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+                0x000000000001e480                ui_wdecor_sysmenu_accel
+ *fill*         0x000000000001e4aa        0x6 
+ .text.ui_wdecor_minimize
+                0x000000000001e4b0       0x22 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+                0x000000000001e4b0                ui_wdecor_minimize
+ *fill*         0x000000000001e4d2        0xe 
+ .text.ui_wdecor_btn_min_clicked
+                0x000000000001e4e0        0xd uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+ *fill*         0x000000000001e4ed        0x3 
+ .text.ui_wdecor_maximize
+                0x000000000001e4f0       0x22 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+                0x000000000001e4f0                ui_wdecor_maximize
+ *fill*         0x000000000001e512        0xe 
+ .text.ui_wdecor_unmaximize
+                0x000000000001e520       0x22 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+                0x000000000001e520                ui_wdecor_unmaximize
+ *fill*         0x000000000001e542        0xe 
+ .text.ui_wdecor_btn_max_clicked
+                0x000000000001e550       0x1e uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+ *fill*         0x000000000001e56e        0x2 
+ .text.ui_wdecor_close
+                0x000000000001e570       0x22 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+                0x000000000001e570                ui_wdecor_close
+ *fill*         0x000000000001e592        0xe 
+ .text.ui_wdecor_btn_close_clicked
+                0x000000000001e5a0        0xd uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+ *fill*         0x000000000001e5ad        0x3 
+ .text.ui_wdecor_move
+                0x000000000001e5b0       0x2a uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+                0x000000000001e5b0                ui_wdecor_move
+ *fill*         0x000000000001e5da        0x6 
+ .text.ui_wdecor_resize
+                0x000000000001e5e0       0x2a uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+                0x000000000001e5e0                ui_wdecor_resize
+ *fill*         0x000000000001e60a        0x6 
+ .text.ui_wdecor_set_cursor
+                0x000000000001e610       0x22 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+                0x000000000001e610                ui_wdecor_set_cursor
+ *fill*         0x000000000001e632        0xe 
+ .text.ui_wdecor_get_geom
+                0x000000000001e640      0x399 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+                0x000000000001e640                ui_wdecor_get_geom
+ *fill*         0x000000000001e9d9        0x7 
+ .text.ui_wdecor_set_rect
+                0x000000000001e9e0       0x5f uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+                0x000000000001e9e0                ui_wdecor_set_rect
+ *fill*         0x000000000001ea3f        0x1 
+ .text.ui_wdecor_sysmenu_hdl_set_active
+                0x000000000001ea40       0x3c uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+                0x000000000001ea40                ui_wdecor_sysmenu_hdl_set_active
+ *fill*         0x000000000001ea7c        0x4 
+ .text.ui_wdecor_paint
+                0x000000000001ea80      0x319 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+                0x000000000001ea80                ui_wdecor_paint
+ *fill*         0x000000000001ed99        0x7 
+ .text.ui_wdecor_set_caption
+                0x000000000001eda0       0x4a uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+                0x000000000001eda0                ui_wdecor_set_caption
+ *fill*         0x000000000001edea        0x6 
+ .text.ui_wdecor_rect_from_app
+                0x000000000001edf0       0x7a uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+                0x000000000001edf0                ui_wdecor_rect_from_app
+ *fill*         0x000000000001ee6a        0x6 
+ .text.ui_wdecor_app_from_rect
+                0x000000000001ee70       0x2b uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+                0x000000000001ee70                ui_wdecor_app_from_rect
+ *fill*         0x000000000001ee9b        0x5 
+ .text.ui_wdecor_get_rsztype
+                0x000000000001eea0      0x123 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+                0x000000000001eea0                ui_wdecor_get_rsztype
+ *fill*         0x000000000001efc3        0xd 
+ .text.ui_wdecor_cursor_from_rsztype
+                0x000000000001efd0       0x7f uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+                0x000000000001efd0                ui_wdecor_cursor_from_rsztype
+ *fill*         0x000000000001f04f        0x1 
+ .text.ui_wdecor_kbd_event
+                0x000000000001f050       0xe0 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+                0x000000000001f050                ui_wdecor_kbd_event
+ .text.ui_wdecor_frame_pos_event
+                0x000000000001f130       0x88 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+                0x000000000001f130                ui_wdecor_frame_pos_event
+ *fill*         0x000000000001f1b8        0x8 
+ .text.ui_wdecor_pos_event
+                0x000000000001f1c0      0x141 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+                0x000000000001f1c0                ui_wdecor_pos_event
+ *fill*         0x000000000001f301        0xf 
+ .text.wnd_sysmenu_press_accel
+                0x000000000001f310        0x6 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x000000000001f316        0xa 
+ .text.ui_window_app_update
+                0x000000000001f320        0x6 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x000000000001f326        0xa 
+ .text.wd_resize
+                0x000000000001f330       0x22 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x000000000001f352        0xe 
+ .text.wd_move  0x000000000001f360       0x22 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x000000000001f382        0xe 
+ .text.wnd_sysmenu_close_req
+                0x000000000001f390       0x27 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x000000000001f3b7        0x9 
+ .text.ui_window_cursor_set_visible
+                0x000000000001f3c0       0x12 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x000000000001f3d2        0xe 
+ .text.ui_window_cursor_set_pos
+                0x000000000001f3e0       0x29 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x000000000001f409        0x7 
+ .text.ui_window_cursor_get_pos
+                0x000000000001f410       0x3f uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x000000000001f44f        0x1 
+ .text.ui_window_update
+                0x000000000001f450       0x50 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ .text.ui_window_invalidate
+                0x000000000001f4a0       0x2e uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x000000000001f4ce        0x2 
+ .text.ui_window_place
+                0x000000000001f4d0      0x253 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x000000000001f723        0xd 
+ .text.wd_sysmenu_accel
+                0x000000000001f730       0x61 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x000000000001f791        0xf 
+ .text.wd_sysmenu_right
+                0x000000000001f7a0       0x51 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x000000000001f7f1        0xf 
+ .text.wnd_sysmenu_right
+                0x000000000001f800       0x59 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x000000000001f859        0x7 
+ .text.wd_sysmenu_left
+                0x000000000001f860       0x51 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x000000000001f8b1        0xf 
+ .text.wnd_sysmenu_left
+                0x000000000001f8c0       0x59 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x000000000001f919        0x7 
+ .text.ui_wnd_params_init
+                0x000000000001f920       0x28 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x000000000001f920                ui_wnd_params_init
+ *fill*         0x000000000001f948        0x8 
+ .text.ui_window_add
+                0x000000000001f950       0x31 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x000000000001f950                ui_window_add
+ *fill*         0x000000000001f981        0xf 
+ .text.ui_window_remove
+                0x000000000001f990       0x56 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x000000000001f990                ui_window_remove
+ *fill*         0x000000000001f9e6        0xa 
+ .text.ui_window_get_active
+                0x000000000001f9f0       0x24 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x000000000001f9f0                ui_window_get_active
+ *fill*         0x000000000001fa14        0xc 
+ .text.ui_window_size_change
+                0x000000000001fa20      0x2ad uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x000000000001fa20                ui_window_size_change
+ *fill*         0x000000000001fccd        0x3 
+ .text.ui_window_resize
+                0x000000000001fcd0        0xc uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x000000000001fcd0                ui_window_resize
+ *fill*         0x000000000001fcdc        0x4 
+ .text.ui_window_set_cb
+                0x000000000001fce0        0xe uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x000000000001fce0                ui_window_set_cb
+ *fill*         0x000000000001fcee        0x2 
+ .text.ui_window_set_caption
+                0x000000000001fcf0       0x5e uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x000000000001fcf0                ui_window_set_caption
+ *fill*         0x000000000001fd4e        0x2 
+ .text.ui_window_get_ui
+                0x000000000001fd50        0x9 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x000000000001fd50                ui_window_get_ui
+ *fill*         0x000000000001fd59        0x7 
+ .text.ui_window_get_res
+                0x000000000001fd60        0xd uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x000000000001fd60                ui_window_get_res
+ *fill*         0x000000000001fd6d        0x3 
+ .text.ui_window_get_gc
+                0x000000000001fd70        0xa uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x000000000001fd70                ui_window_get_gc
+ *fill*         0x000000000001fd7a        0x6 
+ .text.ui_window_get_pos
+                0x000000000001fd80       0x2b uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x000000000001fd80                ui_window_get_pos
+ *fill*         0x000000000001fdab        0x5 
+ .text.ui_window_get_app_rect
+                0x000000000001fdb0       0x30 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x000000000001fdb0                ui_window_get_app_rect
+ .text.ui_window_get_app_gc
+                0x000000000001fde0      0x121 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x000000000001fde0                ui_window_get_app_gc
+ *fill*         0x000000000001ff01        0xf 
+ .text.ui_window_app_invalidate
+                0x000000000001ff10       0x4b uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x000000000001ff5b        0x5 
+ .text.wnd_dcursor_from_cursor
+                0x000000000001ff60       0x16 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x000000000001ff60                wnd_dcursor_from_cursor
+ *fill*         0x000000000001ff76        0xa 
+ .text.wd_set_cursor
+                0x000000000001ff80       0x41 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x000000000001ffc1        0xf 
+ .text.ui_window_set_ctl_cursor
+                0x000000000001ffd0       0x36 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x000000000001ffd0                ui_window_set_ctl_cursor
+ *fill*         0x0000000000020006        0xa 
+ .text.ui_window_send_close
+                0x0000000000020010       0x22 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x0000000000020010                ui_window_send_close
+ *fill*         0x0000000000020032        0xe 
+ .text.wd_close
+                0x0000000000020040        0xd uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x000000000002004d        0x3 
+ .text.dwnd_close_event
+                0x0000000000020050       0x29 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x0000000000020079        0x7 
+ .text.wnd_sysmenu_eclose
+                0x0000000000020080        0xd uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x000000000002008d        0x3 
+ .text.ui_window_send_focus
+                0x0000000000020090       0x22 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x0000000000020090                ui_window_send_focus
+ *fill*         0x00000000000200b2        0xe 
+ .text.dwnd_focus_event
+                0x00000000000200c0       0x5d uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x000000000002011d        0x3 
+ .text.ui_window_destroy
+                0x0000000000020120      0x131 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x0000000000020120                ui_window_destroy
+ *fill*         0x0000000000020251        0xf 
+ .text.ui_window_def_sysmenu
+                0x0000000000020260       0x6f uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x0000000000020260                ui_window_def_sysmenu
+ *fill*         0x00000000000202cf        0x1 
+ .text.ui_window_send_sysmenu
+                0x00000000000202d0       0x26 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x00000000000202d0                ui_window_send_sysmenu
+ *fill*         0x00000000000202f6        0xa 
+ .text.wd_sysmenu_open
+                0x0000000000020300       0x10 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ .text.ui_window_def_minimize
+                0x0000000000020310       0x1c uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x0000000000020310                ui_window_def_minimize
+ *fill*         0x000000000002032c        0x4 
+ .text.ui_window_send_minimize
+                0x0000000000020330       0x26 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x0000000000020330                ui_window_send_minimize
+ *fill*         0x0000000000020356        0xa 
+ .text.wd_minimize
+                0x0000000000020360        0xd uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x000000000002036d        0x3 
+ .text.wnd_sysmenu_eminimize
+                0x0000000000020370        0xd uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x000000000002037d        0x3 
+ .text.ui_window_def_kbd
+                0x0000000000020380       0x43 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x0000000000020380                ui_window_def_kbd
+ *fill*         0x00000000000203c3        0xd 
+ .text.ui_window_send_kbd
+                0x00000000000203d0       0x26 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x00000000000203d0                ui_window_send_kbd
+ *fill*         0x00000000000203f6        0xa 
+ .text.dwnd_kbd_event
+                0x0000000000020400       0x3b uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x000000000002043b        0x5 
+ .text.ui_window_def_paint
+                0x0000000000020440       0x88 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x0000000000020440                ui_window_def_paint
+ *fill*         0x00000000000204c8        0x8 
+ .text.ui_window_send_paint
+                0x00000000000204d0       0x26 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x00000000000204d0                ui_window_send_paint
+ *fill*         0x00000000000204f6        0xa 
+ .text.ui_window_paint
+                0x0000000000020500        0xa uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x0000000000020500                ui_window_paint
+ *fill*         0x000000000002050a        0x6 
+ .text.ui_window_expose_cb
+                0x0000000000020510        0xa uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x000000000002051a        0x6 
+ .text.ui_window_def_maximize
+                0x0000000000020520       0xd4 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x0000000000020520                ui_window_def_maximize
+ *fill*         0x00000000000205f4        0xc 
+ .text.ui_window_send_maximize
+                0x0000000000020600       0x26 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x0000000000020600                ui_window_send_maximize
+ *fill*         0x0000000000020626        0xa 
+ .text.wd_maximize
+                0x0000000000020630        0xd uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x000000000002063d        0x3 
+ .text.wnd_sysmenu_emaximize
+                0x0000000000020640        0xd uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x000000000002064d        0x3 
+ .text.ui_window_def_unmaximize
+                0x0000000000020650       0x85 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x0000000000020650                ui_window_def_unmaximize
+ *fill*         0x00000000000206d5        0xb 
+ .text.ui_window_send_unmaximize
+                0x00000000000206e0       0x26 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x00000000000206e0                ui_window_send_unmaximize
+ *fill*         0x0000000000020706        0xa 
+ .text.wd_unmaximize
+                0x0000000000020710        0xd uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x000000000002071d        0x3 
+ .text.wnd_sysmenu_erestore
+                0x0000000000020720        0xd uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x000000000002072d        0x3 
+ .text.ui_window_def_pos
+                0x0000000000020730       0x22 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x0000000000020730                ui_window_def_pos
+ *fill*         0x0000000000020752        0xe 
+ .text.ui_window_send_pos
+                0x0000000000020760       0x26 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x0000000000020760                ui_window_send_pos
+ *fill*         0x0000000000020786        0xa 
+ .text.dwnd_pos_event
+                0x0000000000020790       0x61 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x00000000000207f1        0xf 
+ .text.ui_window_def_unfocus
+                0x0000000000020800       0x22 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x0000000000020800                ui_window_def_unfocus
+ *fill*         0x0000000000020822        0xe 
+ .text.ui_window_send_unfocus
+                0x0000000000020830       0x26 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x0000000000020830                ui_window_send_unfocus
+ *fill*         0x0000000000020856        0xa 
+ .text.ui_window_create
+                0x0000000000020860      0x7a6 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x0000000000020860                ui_window_create
+ *fill*         0x0000000000021006        0xa 
+ .text.dwnd_unfocus_event
+                0x0000000000021010       0x65 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x0000000000021075        0xb 
+ .text.ui_window_def_resize
+                0x0000000000021080        0xa uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x0000000000021080                ui_window_def_resize
+ *fill*         0x000000000002108a        0x6 
+ .text.ui_window_send_resize
+                0x0000000000021090       0x26 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                0x0000000000021090                ui_window_send_resize
+ *fill*         0x00000000000210b6        0xa 
+ .text.dwnd_resize_event
+                0x00000000000210c0       0x5b uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000021120      0x9e0
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.ui_checkbox_paint_text.str1.1
+                0x0000000000021120      0x26d uspace/lib/libui.so.0.0.p/ui_src_checkbox.c.o
+                                          0x8 (size before relaxing)
+ *fill*         0x000000000002138d        0x3 
+ .rodata.cst8   0x0000000000021390       0x30 uspace/lib/libui.so.0.0.p/ui_src_checkbox.c.o
+                                         0x10 (size before relaxing)
+ .rodata.ui_entry_insert_str.str1.1
+                0x00000000000213c0        0x7 uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+ .rodata.ui_entry_key_press_ctrl.str1.8
+                0x00000000000213c0      0x2c1 uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                                         0x28 (size before relaxing)
+ .rodata.ui_entry_key_press_ctrl.str1.1
+                0x0000000000021681       0x19 uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+ *fill*         0x0000000000021681        0x3 
+ .rodata.ui_entry_key_press_unmod
+                0x0000000000021684       0x70 uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+ *fill*         0x00000000000216f4        0xc 
+ .rodata.cst16  0x0000000000021700      0x220 uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                                         0x20 (size before relaxing)
+ .rodata.ui_file_dialog_params_init.str1.1
+                0x0000000000021920        0x1 uspace/lib/libui.so.0.0.p/ui_src_filedialog.c.o
+ .rodata.ui_file_dialog_create.str1.1
+                0x0000000000021920       0x1e uspace/lib/libui.so.0.0.p/ui_src_filedialog.c.o
+ .rodata.cst16  0x0000000000021920       0xc0 uspace/lib/libui.so.0.0.p/ui_src_filedialog.c.o
+ .rodata.ui_file_list_entry_append.str1.1
+                0x0000000000021920        0x5 uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+ .rodata.ui_file_list_read_dir.part.0.str1.1
+                0x0000000000021920        0x7 uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+ .rodata.ui_file_list_open_dir.str1.8
+                0x0000000000021920       0x2b uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+ .rodata.ui_file_list_open_dir.str1.1
+                0x0000000000021920        0xd uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+ .rodata.ui_fixed_remove.str1.8
+                0x0000000000021920       0x28 uspace/lib/libui.so.0.0.p/ui_src_fixed.c.o
+ .rodata.ui_fixed_remove.str1.1
+                0x0000000000021920       0x15 uspace/lib/libui.so.0.0.p/ui_src_fixed.c.o
+ .rodata.cst16  0x0000000000021920       0x10 uspace/lib/libui.so.0.0.p/ui_src_image.c.o
+ .rodata.ui_list_page_nth_entry.str1.8
+                0x0000000000021920       0x27 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+ .rodata.ui_list_page_nth_entry.str1.1
+                0x0000000000021920       0x1d uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+ .rodata.ui_list_cursor_move.str1.1
+                0x0000000000021920        0xa uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+ .rodata.ui_list_scroll_up.str1.1
+                0x0000000000021920       0x13 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+ .rodata.ui_list_scroll_pos.str1.1
+                0x0000000000021920        0xe uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+ .rodata.ui_list_sort.str1.1
+                0x0000000000021920       0x16 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+ .rodata.ui_list_kbd_event
+                0x0000000000021920       0xb4 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+ .rodata.cst8   0x00000000000219d4       0x10 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+ .rodata.ui_menu_kbd_event
+                0x00000000000219d4       0xb8 uspace/lib/libui.so.0.0.p/ui_src_menu.c.o
+ .rodata.ui_menu_bar_entry_rect.str1.8
+                0x0000000000021a8c       0x2a uspace/lib/libui.so.0.0.p/ui_src_menubar.c.o
+ .rodata.ui_menu_bar_entry_rect.str1.1
+                0x0000000000021a8c        0x6 uspace/lib/libui.so.0.0.p/ui_src_menubar.c.o
+ .rodata.ui_menu_entry_sep_create.str1.1
+                0x0000000000021a8c        0x1 uspace/lib/libui.so.0.0.p/ui_src_menuentry.c.o
+ .rodata.ui_msg_dialog_create.str1.8
+                0x0000000000021a8c       0x6e uspace/lib/libui.so.0.0.p/ui_src_msgdialog.c.o
+ .rodata.str1.1
+                0x0000000000021a8c        0xa uspace/lib/libui.so.0.0.p/ui_src_msgdialog.c.o
+ .rodata.cst16  0x0000000000021a8c       0x20 uspace/lib/libui.so.0.0.p/ui_src_msgdialog.c.o
+ .rodata.ui_text_width.str1.1
+                0x0000000000021a8c        0x2 uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+ .rodata.str1.1
+                0x0000000000021a8c       0x42 uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+ .rodata.cst16  0x0000000000021a8c       0x10 uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+ .rodata.cst8   0x0000000000021a8c        0x8 uspace/lib/libui.so.0.0.p/ui_src_pbutton.c.o
+ .rodata.ui_popup_create.str1.1
+                0x0000000000021a8c        0x1 uspace/lib/libui.so.0.0.p/ui_src_popup.c.o
+ .rodata.ui_prompt_dialog_params_init.str1.1
+                0x0000000000021a8c        0x1 uspace/lib/libui.so.0.0.p/ui_src_promptdialog.c.o
+ .rodata.ui_prompt_dialog_create.str1.1
+                0x0000000000021a8c        0xa uspace/lib/libui.so.0.0.p/ui_src_promptdialog.c.o
+ .rodata.cst16  0x0000000000021a8c       0x80 uspace/lib/libui.so.0.0.p/ui_src_promptdialog.c.o
+ .rodata.ui_rbutton_paint_text.str1.1
+                0x0000000000021a8c        0xa uspace/lib/libui.so.0.0.p/ui_src_rbutton.c.o
+ .rodata.cst8   0x0000000000021a8c        0x8 uspace/lib/libui.so.0.0.p/ui_src_rbutton.c.o
+ .rodata.ui_resource_create.str1.1
+                0x0000000000021a8c       0x16 uspace/lib/libui.so.0.0.p/ui_src_resource.c.o
+ .rodata.ui_scrollbar_create.str1.1
+                0x0000000000021a8c       0x18 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+ .rodata.ui_scrollbar_paint_text.str1.1
+                0x0000000000021a8c        0x8 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+ .rodata.cst16  0x0000000000021a8c       0x10 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+ .rodata.ui_select_dialog_create.str1.1
+                0x0000000000021a8c        0xa uspace/lib/libui.so.0.0.p/ui_src_selectdialog.c.o
+ .rodata.cst16  0x0000000000021a8c       0x80 uspace/lib/libui.so.0.0.p/ui_src_selectdialog.c.o
+ .rodata.ui_slider_paint_text.str1.1
+                0x0000000000021a8c        0x8 uspace/lib/libui.so.0.0.p/ui_src_slider.c.o
+ .rodata.cst16  0x0000000000021a8c       0x20 uspace/lib/libui.so.0.0.p/ui_src_slider.c.o
+ .rodata.ui_tab_add.str1.8
+                0x0000000000021a8c       0x26 uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+ .rodata.ui_tab_add.str1.1
+                0x0000000000021a8c       0x15 uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+ .rodata.ui_tab_remove.str1.1
+                0x0000000000021a8c       0x18 uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+ .rodata.ui_tab_remove.str1.8
+                0x0000000000021a8c       0x23 uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+ .rodata.str1.1
+                0x0000000000021a8c       0x1e uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+ .rodata.cst16  0x0000000000021a8c       0x10 uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+ .rodata.ui_create.str1.1
+                0x0000000000021a8c       0x1b uspace/lib/libui.so.0.0.p/ui_src_ui.c.o
+ .rodata.ui_suspend.str1.8
+                0x0000000000021a8c       0x25 uspace/lib/libui.so.0.0.p/ui_src_ui.c.o
+ .rodata.ui_suspend.str1.1
+                0x0000000000021a8c        0xf uspace/lib/libui.so.0.0.p/ui_src_ui.c.o
+ .rodata.ui_resume.str1.1
+                0x0000000000021a8c        0xe uspace/lib/libui.so.0.0.p/ui_src_ui.c.o
+ .rodata.ui_resume.str1.8
+                0x0000000000021a8c       0x27 uspace/lib/libui.so.0.0.p/ui_src_ui.c.o
+ .rodata.ui_wdecor_create.str1.1
+                0x0000000000021a8c        0x6 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+ .rodata.ui_wdecor_sysmenu_hdl_paint_text.str1.1
+                0x0000000000021a8c        0x6 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+ .rodata.ui_wdecor_cursor_from_rsztype.str1.8
+                0x0000000000021a8c       0x29 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+ .rodata.ui_wdecor_cursor_from_rsztype.str1.1
+                0x0000000000021a8c        0x6 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+ .rodata.ui_wdecor_cursor_from_rsztype
+                0x0000000000021a8c       0x34 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+ .rodata.cst16  0x0000000000021ac0       0x40 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+ .rodata.ui_window_place.str1.8
+                0x0000000000021ac0       0x7a uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ .rodata.ui_window_place
+                0x0000000000021ac0       0x40 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ .rodata.ui_window_add.str1.1
+                0x0000000000021b00       0x18 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ .rodata.ui_window_remove.str1.1
+                0x0000000000021b00       0x1b uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ .rodata.ui_window_remove.str1.8
+                0x0000000000021b00       0x29 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ .rodata.ui_window_size_change.str1.1
+                0x0000000000021b00       0x18 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ .rodata.ui_window_get_app_gc.str1.1
+                0x0000000000021b00       0x18 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ .rodata.ui_window_destroy.str1.1
+                0x0000000000021b00        0x1 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ .rodata.ui_window_def_unmaximize.str1.1
+                0x0000000000021b00       0x1d uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ .rodata.ui_window_create.str1.1
+                0x0000000000021b00       0x2f uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x0000000000021b00     0x1424
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x0000000000021b00     0x1424 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+                0x0000000000021b00                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x0000000000022f28     0x6080
+ *(.eh_frame)
+ .eh_frame      0x0000000000022f28       0x68 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .eh_frame      0x0000000000022f90       0x28 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000022fb8        0x0 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ .eh_frame      0x0000000000022fb8      0x2a8 uspace/lib/libui.so.0.0.p/ui_src_checkbox.c.o
+                                        0x2c0 (size before relaxing)
+ .eh_frame      0x0000000000023260       0xf8 uspace/lib/libui.so.0.0.p/ui_src_clickmatic.c.o
+                                        0x110 (size before relaxing)
+ .eh_frame      0x0000000000023358      0x100 uspace/lib/libui.so.0.0.p/ui_src_control.c.o
+                                        0x118 (size before relaxing)
+ .eh_frame      0x0000000000023458      0x188 uspace/lib/libui.so.0.0.p/ui_src_dummygc.c.o
+                                        0x1a0 (size before relaxing)
+ .eh_frame      0x00000000000235e0      0x598 uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                                        0x5b0 (size before relaxing)
+ .eh_frame      0x0000000000023b78      0x178 uspace/lib/libui.so.0.0.p/ui_src_filedialog.c.o
+                                        0x190 (size before relaxing)
+ .eh_frame      0x0000000000023cf0      0x4b0 uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+                                        0x4c8 (size before relaxing)
+ .eh_frame      0x00000000000241a0      0x248 uspace/lib/libui.so.0.0.p/ui_src_fixed.c.o
+                                        0x260 (size before relaxing)
+ .eh_frame      0x00000000000243e8      0x170 uspace/lib/libui.so.0.0.p/ui_src_image.c.o
+                                        0x188 (size before relaxing)
+ .eh_frame      0x0000000000024558      0x190 uspace/lib/libui.so.0.0.p/ui_src_label.c.o
+                                        0x1a8 (size before relaxing)
+ .eh_frame      0x00000000000246e8      0x9d0 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                                        0x9e8 (size before relaxing)
+ .eh_frame      0x00000000000250b8      0x3a0 uspace/lib/libui.so.0.0.p/ui_src_menu.c.o
+                                        0x3b8 (size before relaxing)
+ .eh_frame      0x0000000000025458      0x3e0 uspace/lib/libui.so.0.0.p/ui_src_menubar.c.o
+                                        0x3f8 (size before relaxing)
+ .eh_frame      0x0000000000025838      0x208 uspace/lib/libui.so.0.0.p/ui_src_menudd.c.o
+                                        0x220 (size before relaxing)
+ .eh_frame      0x0000000000025a40      0x398 uspace/lib/libui.so.0.0.p/ui_src_menuentry.c.o
+                                        0x3b0 (size before relaxing)
+ .eh_frame      0x0000000000025dd8      0x128 uspace/lib/libui.so.0.0.p/ui_src_msgdialog.c.o
+                                        0x140 (size before relaxing)
+ .eh_frame      0x0000000000025f00      0x3e0 uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+                                        0x3f8 (size before relaxing)
+ .eh_frame      0x00000000000262e0      0x338 uspace/lib/libui.so.0.0.p/ui_src_pbutton.c.o
+                                        0x350 (size before relaxing)
+ .eh_frame      0x0000000000026618      0x1a8 uspace/lib/libui.so.0.0.p/ui_src_popup.c.o
+                                        0x1c0 (size before relaxing)
+ .eh_frame      0x00000000000267c0      0x130 uspace/lib/libui.so.0.0.p/ui_src_promptdialog.c.o
+                                        0x148 (size before relaxing)
+ .eh_frame      0x00000000000268f0      0x2e0 uspace/lib/libui.so.0.0.p/ui_src_rbutton.c.o
+                                        0x2f8 (size before relaxing)
+ .eh_frame      0x0000000000026bd0      0x118 uspace/lib/libui.so.0.0.p/ui_src_resource.c.o
+                                        0x130 (size before relaxing)
+ .eh_frame      0x0000000000026ce8      0x5e0 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+                                        0x5f8 (size before relaxing)
+ .eh_frame      0x00000000000272c8      0x1b8 uspace/lib/libui.so.0.0.p/ui_src_selectdialog.c.o
+                                        0x1d0 (size before relaxing)
+ .eh_frame      0x0000000000027480      0x290 uspace/lib/libui.so.0.0.p/ui_src_slider.c.o
+                                        0x2a8 (size before relaxing)
+ .eh_frame      0x0000000000027710      0x2e8 uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+                                        0x300 (size before relaxing)
+ .eh_frame      0x00000000000279f8      0x1c0 uspace/lib/libui.so.0.0.p/ui_src_tabset.c.o
+                                        0x1d8 (size before relaxing)
+ .eh_frame      0x0000000000027bb8      0x118 uspace/lib/libui.so.0.0.p/ui_src_testctl.c.o
+                                        0x130 (size before relaxing)
+ .eh_frame      0x0000000000027cd0      0x290 uspace/lib/libui.so.0.0.p/ui_src_ui.c.o
+                                        0x2a8 (size before relaxing)
+ .eh_frame      0x0000000000027f60      0x590 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+                                        0x5a8 (size before relaxing)
+ .eh_frame      0x00000000000284f0      0xab8 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+                                        0xad0 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x0000000000028fa8        0x0
+ *(.sframe)
+ .sframe        0x0000000000028fa8        0x0 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x0000000000029000                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array
+ *(.preinit_array)
+
+.init_array
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+
+.fini_array
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x0000000000029000        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x0000000000029000        0x0 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+
+.dynamic        0x0000000000029000      0x1c0
+ *(.dynamic)
+ .dynamic       0x0000000000029000      0x1c0 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+                0x0000000000029000                _DYNAMIC
+
+.got            0x00000000000291c0      0x118
+ *(.got)
+ .got           0x00000000000291c0      0x118 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ *(.igot)
+                0x00000000000292d8                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x00000000000292d8     0x1038
+ *(.got.plt)
+ .got.plt       0x00000000000292d8     0x1038 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+                0x00000000000292d8                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+
+.data           0x000000000002a320      0xb50
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.rel.local.ui_checkbox_ops
+                0x000000000002a320       0x28 uspace/lib/libui.so.0.0.p/ui_src_checkbox.c.o
+                0x000000000002a320                ui_checkbox_ops
+ *fill*         0x000000000002a348       0x18 
+ .data.rel.local.dummygc_ops
+                0x000000000002a360       0x58 uspace/lib/libui.so.0.0.p/ui_src_dummygc.c.o
+                0x000000000002a360                dummygc_ops
+ *fill*         0x000000000002a3b8        0x8 
+ .data.rel.local.ui_entry_ops
+                0x000000000002a3c0       0x28 uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+                0x000000000002a3c0                ui_entry_ops
+ *fill*         0x000000000002a3e8        0x8 
+ .data.rel.local.ui_file_dialog_bcancel_cb
+                0x000000000002a3f0       0x18 uspace/lib/libui.so.0.0.p/ui_src_filedialog.c.o
+                0x000000000002a3f0                ui_file_dialog_bcancel_cb
+ *fill*         0x000000000002a408        0x8 
+ .data.rel.local.ui_file_dialog_bok_cb
+                0x000000000002a410       0x18 uspace/lib/libui.so.0.0.p/ui_src_filedialog.c.o
+                0x000000000002a410                ui_file_dialog_bok_cb
+ *fill*         0x000000000002a428        0x8 
+ .data.rel.local.ui_file_dialog_flist_cb
+                0x000000000002a430       0x10 uspace/lib/libui.so.0.0.p/ui_src_filedialog.c.o
+                0x000000000002a430                ui_file_dialog_flist_cb
+ .data.rel.local.ui_file_dialog_wnd_cb
+                0x000000000002a440       0x58 uspace/lib/libui.so.0.0.p/ui_src_filedialog.c.o
+                0x000000000002a440                ui_file_dialog_wnd_cb
+ *fill*         0x000000000002a498        0x8 
+ .data.rel.ui_file_list_list_cb
+                0x000000000002a4a0       0x18 uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+                0x000000000002a4a0                ui_file_list_list_cb
+ *fill*         0x000000000002a4b8        0x8 
+ .data.rel.local.ui_file_list_ctl_ops
+                0x000000000002a4c0       0x28 uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+                0x000000000002a4c0                ui_file_list_ctl_ops
+ *fill*         0x000000000002a4e8       0x18 
+ .data.rel.local.ui_fixed_ops
+                0x000000000002a500       0x28 uspace/lib/libui.so.0.0.p/ui_src_fixed.c.o
+                0x000000000002a500                ui_fixed_ops
+ *fill*         0x000000000002a528       0x18 
+ .data.rel.local.ui_image_ops
+                0x000000000002a540       0x28 uspace/lib/libui.so.0.0.p/ui_src_image.c.o
+                0x000000000002a540                ui_image_ops
+ *fill*         0x000000000002a568       0x18 
+ .data.rel.local.ui_label_ops
+                0x000000000002a580       0x28 uspace/lib/libui.so.0.0.p/ui_src_label.c.o
+                0x000000000002a580                ui_label_ops
+ *fill*         0x000000000002a5a8       0x18 
+ .data.rel.local.ui_list_scrollbar_cb
+                0x000000000002a5c0       0x28 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+ *fill*         0x000000000002a5e8       0x18 
+ .data.rel.local.ui_list_ctl_ops
+                0x000000000002a600       0x28 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+                0x000000000002a600                ui_list_ctl_ops
+ *fill*         0x000000000002a628       0x18 
+ .data.rel.local.ui_menu_popup_cb
+                0x000000000002a640       0x20 uspace/lib/libui.so.0.0.p/ui_src_menu.c.o
+ .data.rel.local.ui_menu_bar_ops
+                0x000000000002a660       0x28 uspace/lib/libui.so.0.0.p/ui_src_menubar.c.o
+                0x000000000002a660                ui_menu_bar_ops
+ *fill*         0x000000000002a688       0x18 
+ .data.rel.local.ui_menu_dd_menu_cb
+                0x000000000002a6a0       0x20 uspace/lib/libui.so.0.0.p/ui_src_menudd.c.o
+ .data.rel.local.ui_msg_dialog_captions
+                0x000000000002a6c0       0x30 uspace/lib/libui.so.0.0.p/ui_src_msgdialog.c.o
+ .data.rel.local.ui_msg_dialog_btn_cb
+                0x000000000002a6f0       0x18 uspace/lib/libui.so.0.0.p/ui_src_msgdialog.c.o
+                0x000000000002a6f0                ui_msg_dialog_btn_cb
+ *fill*         0x000000000002a708       0x18 
+ .data.rel.local.ui_msg_dialog_wnd_cb
+                0x000000000002a720       0x58 uspace/lib/libui.so.0.0.p/ui_src_msgdialog.c.o
+                0x000000000002a720                ui_msg_dialog_wnd_cb
+ *fill*         0x000000000002a778        0x8 
+ .data.rel.local.double_hbrace_chars
+                0x000000000002a780       0x18 uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+ *fill*         0x000000000002a798        0x8 
+ .data.rel.local.single_hbrace_chars
+                0x000000000002a7a0       0x18 uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+ *fill*         0x000000000002a7b8        0x8 
+ .data.rel.local.double_box_chars
+                0x000000000002a7c0       0x48 uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+ *fill*         0x000000000002a808       0x18 
+ .data.rel.local.single_box_chars
+                0x000000000002a820       0x48 uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+ *fill*         0x000000000002a868       0x18 
+ .data.rel.local.ui_pbutton_ops
+                0x000000000002a880       0x28 uspace/lib/libui.so.0.0.p/ui_src_pbutton.c.o
+                0x000000000002a880                ui_pbutton_ops
+ *fill*         0x000000000002a8a8       0x18 
+ .data.rel.local.ui_popup_window_cb
+                0x000000000002a8c0       0x58 uspace/lib/libui.so.0.0.p/ui_src_popup.c.o
+ *fill*         0x000000000002a918        0x8 
+ .data.rel.local.ui_prompt_dialog_bcancel_cb
+                0x000000000002a920       0x18 uspace/lib/libui.so.0.0.p/ui_src_promptdialog.c.o
+                0x000000000002a920                ui_prompt_dialog_bcancel_cb
+ *fill*         0x000000000002a938        0x8 
+ .data.rel.local.ui_prompt_dialog_bok_cb
+                0x000000000002a940       0x18 uspace/lib/libui.so.0.0.p/ui_src_promptdialog.c.o
+                0x000000000002a940                ui_prompt_dialog_bok_cb
+ *fill*         0x000000000002a958        0x8 
+ .data.rel.local.ui_prompt_dialog_wnd_cb
+                0x000000000002a960       0x58 uspace/lib/libui.so.0.0.p/ui_src_promptdialog.c.o
+                0x000000000002a960                ui_prompt_dialog_wnd_cb
+ *fill*         0x000000000002a9b8        0x8 
+ .data.rel.local.ui_rbutton_ops
+                0x000000000002a9c0       0x28 uspace/lib/libui.so.0.0.p/ui_src_rbutton.c.o
+                0x000000000002a9c0                ui_rbutton_ops
+ .data.rel.local.ui_scrollbar_clickmatic_page_down_cb
+                0x000000000002a9e8        0x8 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+                0x000000000002a9e8                ui_scrollbar_clickmatic_page_down_cb
+ .data.rel.local.ui_scrollbar_clickmatic_page_up_cb
+                0x000000000002a9f0        0x8 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+                0x000000000002a9f0                ui_scrollbar_clickmatic_page_up_cb
+ .data.rel.local.ui_scrollbar_clickmatic_down_cb
+                0x000000000002a9f8        0x8 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+                0x000000000002a9f8                ui_scrollbar_clickmatic_down_cb
+ .data.rel.local.ui_scrollbar_clickmatic_up_cb
+                0x000000000002aa00        0x8 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+                0x000000000002aa00                ui_scrollbar_clickmatic_up_cb
+ *fill*         0x000000000002aa08       0x18 
+ .data.rel.local.ui_scrollbar_ops
+                0x000000000002aa20       0x28 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+ .data.rel.local.ui_scrollbar_down_btn_decor_ops
+                0x000000000002aa48        0x8 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+ .data.rel.local.ui_scrollbar_down_btn_cb
+                0x000000000002aa50       0x18 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+ .data.rel.local.ui_scrollbar_up_btn_decor_ops
+                0x000000000002aa68        0x8 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+ .data.rel.local.ui_scrollbar_up_btn_cb
+                0x000000000002aa70       0x18 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+ *fill*         0x000000000002aa88        0x8 
+ .data.rel.local.ui_select_dialog_list_cb
+                0x000000000002aa90       0x18 uspace/lib/libui.so.0.0.p/ui_src_selectdialog.c.o
+                0x000000000002aa90                ui_select_dialog_list_cb
+ *fill*         0x000000000002aaa8        0x8 
+ .data.rel.local.ui_select_dialog_bcancel_cb
+                0x000000000002aab0       0x18 uspace/lib/libui.so.0.0.p/ui_src_selectdialog.c.o
+                0x000000000002aab0                ui_select_dialog_bcancel_cb
+ *fill*         0x000000000002aac8        0x8 
+ .data.rel.local.ui_select_dialog_bok_cb
+                0x000000000002aad0       0x18 uspace/lib/libui.so.0.0.p/ui_src_selectdialog.c.o
+                0x000000000002aad0                ui_select_dialog_bok_cb
+ *fill*         0x000000000002aae8       0x18 
+ .data.rel.local.ui_select_dialog_wnd_cb
+                0x000000000002ab00       0x58 uspace/lib/libui.so.0.0.p/ui_src_selectdialog.c.o
+                0x000000000002ab00                ui_select_dialog_wnd_cb
+ *fill*         0x000000000002ab58        0x8 
+ .data.rel.local.ui_slider_ops
+                0x000000000002ab60       0x28 uspace/lib/libui.so.0.0.p/ui_src_slider.c.o
+                0x000000000002ab60                ui_slider_ops
+ *fill*         0x000000000002ab88       0x18 
+ .data.rel.local.unsel_tab_box_chars
+                0x000000000002aba0       0x48 uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+ *fill*         0x000000000002abe8       0x18 
+ .data.rel.local.sel_tab_box_chars
+                0x000000000002ac00       0x48 uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+ *fill*         0x000000000002ac48       0x18 
+ .data.rel.local.ui_tab_set_ops
+                0x000000000002ac60       0x28 uspace/lib/libui.so.0.0.p/ui_src_tabset.c.o
+                0x000000000002ac60                ui_tab_set_ops
+ *fill*         0x000000000002ac88       0x18 
+ .data.rel.local.ui_test_ctl_ops
+                0x000000000002aca0       0x28 uspace/lib/libui.so.0.0.p/ui_src_testctl.c.o
+                0x000000000002aca0                ui_test_ctl_ops
+ .data.rel.local.ui_wdecor_btn_close_decor_ops
+                0x000000000002acc8        0x8 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+ .data.rel.local.ui_wdecor_btn_close_cb
+                0x000000000002acd0       0x18 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+ .data.rel.local.ui_wdecor_btn_max_decor_ops
+                0x000000000002ace8        0x8 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+ .data.rel.local.ui_wdecor_btn_max_cb
+                0x000000000002acf0       0x18 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+ .data.rel.local.ui_wdecor_btn_min_decor_ops
+                0x000000000002ad08        0x8 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+ .data.rel.local.ui_wdecor_btn_min_cb
+                0x000000000002ad10       0x18 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+ *fill*         0x000000000002ad28       0x18 
+ .data.rel.local.ui_window_app_mem_gc_cb
+                0x000000000002ad40       0x28 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x000000000002ad68       0x18 
+ .data.rel.local.ui_window_mem_gc_cb
+                0x000000000002ad80       0x28 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x000000000002ada8       0x18 
+ .data.rel.local.wnd_sysmenu_cb
+                0x000000000002adc0       0x20 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ .data.rel.local.wdecor_cb
+                0x000000000002ade0       0x58 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+ *fill*         0x000000000002ae38        0x8 
+ .data.rel.local.dwnd_cb
+                0x000000000002ae40       0x30 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+
+.data1
+ *(.data1)
+                [!provide]                        PROVIDE (_edata = .)
+                [!provide]                        PROVIDE (edata = .)
+                0x000000000002ae70                . = .
+                [!provide]                        PROVIDE (__bss_start = .)
+
+.bss            0x000000000002ae70        0x0
+ *(.dynbss)
+ .dynbss        0x000000000002ae70        0x0 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ *(COMMON)
+                0x000000000002ae70                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x000000000002ae70                . = ALIGN (0x8)
+                0x000000000002ae70                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x000000000002ce70        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x000000000002ce70                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x000000000002ce70                . = ALIGN (0x8)
+                [!provide]                        PROVIDE (_end = .)
+                [!provide]                        PROVIDE (end = .)
+                0x000000000002ce70                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/lib/libui.so.0.0.p/ui_src_accel.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.so.0.0.p/ui_src_checkbox.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.so.0.0.p/ui_src_clickmatic.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.so.0.0.p/ui_src_control.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.so.0.0.p/ui_src_dummygc.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.so.0.0.p/ui_src_entry.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.so.0.0.p/ui_src_filedialog.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.so.0.0.p/ui_src_filelist.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.so.0.0.p/ui_src_fixed.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.so.0.0.p/ui_src_image.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.so.0.0.p/ui_src_label.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.so.0.0.p/ui_src_list.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.so.0.0.p/ui_src_menu.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.so.0.0.p/ui_src_menubar.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.so.0.0.p/ui_src_menudd.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.so.0.0.p/ui_src_menuentry.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.so.0.0.p/ui_src_msgdialog.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.so.0.0.p/ui_src_paint.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.so.0.0.p/ui_src_pbutton.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.so.0.0.p/ui_src_popup.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.so.0.0.p/ui_src_promptdialog.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.so.0.0.p/ui_src_rbutton.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.so.0.0.p/ui_src_resource.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.so.0.0.p/ui_src_scrollbar.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.so.0.0.p/ui_src_selectdialog.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.so.0.0.p/ui_src_slider.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.so.0.0.p/ui_src_tab.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.so.0.0.p/ui_src_tabset.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.so.0.0.p/ui_src_testctl.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.so.0.0.p/ui_src_ui.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.so.0.0.p/ui_src_wdecor.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libui.so.0.0.p/ui_src_window.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/lib/libui.so.0.0 elf64-x86-64)

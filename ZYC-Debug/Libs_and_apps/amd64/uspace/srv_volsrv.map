@@ -1,0 +1,1104 @@
+Archive member included to satisfy reference by file (symbol)
+
+uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                              (--whole-archive)
+uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                              (--whole-archive)
+uspace/lib/libblock.a.p/block_block.c.o
+                              uspace/srv_volsrv.p/srv_volsrv_empty.c.o (block_init)
+uspace/lib/libdevice.a.p/device_src_bd.c.o
+                              uspace/lib/libblock.a.p/block_block.c.o (bd_open)
+uspace/lib/libdevice.a.p/device_src_vol.c.o
+                              uspace/srv_volsrv.p/srv_volsrv_part.c.o (vol_mountp_validate)
+uspace/lib/liblabel.a.p/label_src_empty.c.o
+                              uspace/srv_volsrv.p/srv_volsrv_empty.c.o (label_bd_is_empty)
+uspace/lib/libsif.a.p/sif_src_sif.c.o
+                              uspace/srv_volsrv.p/srv_volsrv_volume.c.o (sif_new)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.0                     uspace/srv_volsrv.p/srv_volsrv_part.c.o (loc_category_get_id)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_volsrv.p/srv_volsrv_mkfs.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_volsrv.p/srv_volsrv_mkfs.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_volsrv.p/srv_volsrv_mkfs.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_volsrv.p/srv_volsrv_volsrv.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_volsrv.p/srv_volsrv_volsrv.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_volsrv.p/srv_volsrv_volsrv.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_volsrv.p/srv_volsrv_volume.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_volsrv.p/srv_volsrv_volume.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_volsrv.p/srv_volsrv_volume.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .text          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libblock.a.p/block_block.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libblock.a.p/block_block.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libblock.a.p/block_block.c.o
+ .text.cache_key_hash
+                0x0000000000000000        0x9 uspace/lib/libblock.a.p/block_block.c.o
+ .text.cache_hash
+                0x0000000000000000        0xa uspace/lib/libblock.a.p/block_block.c.o
+ .text.cache_key_equal
+                0x0000000000000000       0x10 uspace/lib/libblock.a.p/block_block.c.o
+ .text.read_blocks.part.0
+                0x0000000000000000       0x18 uspace/lib/libblock.a.p/block_block.c.o
+ .text.write_blocks.part.0
+                0x0000000000000000       0x18 uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_bb_read
+                0x0000000000000000      0x120 uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_bb_get
+                0x0000000000000000       0x7e uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_cache_init
+                0x0000000000000000      0x16c uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.block_put.str1.1
+                0x0000000000000000       0x21 uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.block_put.str1.8
+                0x0000000000000000       0x53 uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_put
+                0x0000000000000000      0x2f0 uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.block_get.str1.1
+                0x0000000000000000       0x1f uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_get
+                0x0000000000000000      0x528 uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_seqread
+                0x0000000000000000      0x1be uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_sync_cache
+                0x0000000000000000       0x86 uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_read_bytes_direct
+                0x0000000000000000      0x1e8 uspace/lib/libblock.a.p/block_block.c.o
+ .text.block_read_toc
+                0x0000000000000000       0x9e uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.cache_ops
+                0x0000000000000000       0x28 uspace/lib/libblock.a.p/block_block.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_bd.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_bd.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_bd.c.o
+ .text.bd_read_toc
+                0x0000000000000000       0x9a uspace/lib/libdevice.a.p/device_src_bd.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_vol.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_vol.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_vol.c.o
+ .text.vol_get_ids_internal.constprop.0
+                0x0000000000000000      0x1b4 uspace/lib/libdevice.a.p/device_src_vol.c.o
+ .rodata.vol_create.str1.1
+                0x0000000000000000        0x7 uspace/lib/libdevice.a.p/device_src_vol.c.o
+ .text.vol_create
+                0x0000000000000000       0x9e uspace/lib/libdevice.a.p/device_src_vol.c.o
+ .text.vol_destroy
+                0x0000000000000000       0x31 uspace/lib/libdevice.a.p/device_src_vol.c.o
+ .text.vol_get_parts
+                0x0000000000000000       0x15 uspace/lib/libdevice.a.p/device_src_vol.c.o
+ .text.vol_part_add
+                0x0000000000000000       0x38 uspace/lib/libdevice.a.p/device_src_vol.c.o
+ .text.vol_part_info
+                0x0000000000000000       0x98 uspace/lib/libdevice.a.p/device_src_vol.c.o
+ .text.vol_part_eject
+                0x0000000000000000       0x38 uspace/lib/libdevice.a.p/device_src_vol.c.o
+ .text.vol_part_empty
+                0x0000000000000000       0x38 uspace/lib/libdevice.a.p/device_src_vol.c.o
+ .text.vol_part_insert
+                0x0000000000000000       0x38 uspace/lib/libdevice.a.p/device_src_vol.c.o
+ .text.vol_part_insert_by_path
+                0x0000000000000000       0x9e uspace/lib/libdevice.a.p/device_src_vol.c.o
+ .text.vol_part_get_lsupp
+                0x0000000000000000       0x9a uspace/lib/libdevice.a.p/device_src_vol.c.o
+ .text.vol_part_mkfs
+                0x0000000000000000      0x105 uspace/lib/libdevice.a.p/device_src_vol.c.o
+ .text.vol_part_set_mountp
+                0x0000000000000000       0x9e uspace/lib/libdevice.a.p/device_src_vol.c.o
+ .text.vol_fstype_format
+                0x0000000000000000       0x43 uspace/lib/libdevice.a.p/device_src_vol.c.o
+ .rodata.vol_pcnt_fs_format.str1.1
+                0x0000000000000000       0x18 uspace/lib/libdevice.a.p/device_src_vol.c.o
+ .rodata.vol_pcnt_fs_format.str1.8
+                0x0000000000000000       0x2a uspace/lib/libdevice.a.p/device_src_vol.c.o
+ .text.vol_pcnt_fs_format
+                0x0000000000000000       0x7f uspace/lib/libdevice.a.p/device_src_vol.c.o
+ .text.vol_get_volumes
+                0x0000000000000000       0x15 uspace/lib/libdevice.a.p/device_src_vol.c.o
+ .text.vol_info
+                0x0000000000000000       0x98 uspace/lib/libdevice.a.p/device_src_vol.c.o
+ .rodata.str1.1
+                0x0000000000000000       0x1e uspace/lib/libdevice.a.p/device_src_vol.c.o
+ .rodata.CSWTCH.34
+                0x0000000000000000       0x28 uspace/lib/libdevice.a.p/device_src_vol.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/liblabel.a.p/label_src_empty.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/liblabel.a.p/label_src_empty.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/liblabel.a.p/label_src_empty.c.o
+ .text.label_part_empty
+                0x0000000000000000      0x158 uspace/lib/liblabel.a.p/label_src_empty.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libsif.a.p/sif_src_sif.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libsif.a.p/sif_src_sif.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libsif.a.p/sif_src_sif.c.o
+ .text.sif_node_prepend_child
+                0x0000000000000000       0xaf uspace/lib/libsif.a.p/sif_src_sif.c.o
+ .text.sif_node_insert_before
+                0x0000000000000000       0xbf uspace/lib/libsif.a.p/sif_src_sif.c.o
+ .text.sif_node_insert_after
+                0x0000000000000000       0xbf uspace/lib/libsif.a.p/sif_src_sif.c.o
+ .text.sif_node_destroy
+                0x0000000000000000       0x2b uspace/lib/libsif.a.p/sif_src_sif.c.o
+ .text.sif_node_unset_attr
+                0x0000000000000000       0x72 uspace/lib/libsif.a.p/sif_src_sif.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+LOAD uspace/srv_volsrv.p/srv_volsrv_mkfs.c.o
+LOAD uspace/srv_volsrv.p/srv_volsrv_part.c.o
+LOAD uspace/srv_volsrv.p/srv_volsrv_volsrv.c.o
+LOAD uspace/srv_volsrv.p/srv_volsrv_volume.c.o
+START GROUP
+LOAD uspace/lib/c/libstartfiles.a
+LOAD uspace/lib/libblock.a
+LOAD uspace/lib/libdevice.a
+LOAD uspace/lib/libc.so.0.0
+LOAD uspace/lib/liblabel.a
+LOAD uspace/lib/libsif.a
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000400000                PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x0000000000400120                . = (SEGMENT_START ("text-segment", 0x400000) + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000400120      0x264
+ *(.hash)
+ .hash          0x0000000000400120      0x264 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x0000000000400388      0x7e0
+ *(.dynsym)
+ .dynsym        0x0000000000400388      0x7e0 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+
+.dynstr         0x0000000000400b68      0x49f
+ *(.dynstr)
+ .dynstr        0x0000000000400b68      0x49f uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+
+.gnu.version    0x0000000000401008        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000401008        0x0 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+
+.gnu.version_d  0x0000000000401008        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000401008        0x0 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+
+.gnu.version_r  0x0000000000401008        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000401008        0x0 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+
+.rela.dyn       0x0000000000401008       0x18
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text.__c_start
+                0x0000000000401008        0x0 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ .rela.rodata.cst8
+                0x0000000000401008        0x0 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x0000000000401008        0x0 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000401008        0x0 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x0000000000401008       0x18 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+
+.rela.plt       0x0000000000401020      0x7b0
+ *(.rela.plt)
+ .rela.plt      0x0000000000401020      0x7b0 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+ .rela.iplt     0x00000000004017d0        0x0 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x00000000004017d0      0x530
+ *(.plt)
+ .plt           0x00000000004017d0      0x530 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+                0x00000000004017e0                loc_category_get_id
+                0x00000000004017f0                task_retval
+                0x0000000000401800                loc_service_connect
+                0x0000000000401810                printf
+                0x0000000000401820                async_hangup
+                0x0000000000401830                odict_first
+                0x0000000000401840                ungetc
+                0x0000000000401850                async_req_0_2
+                0x0000000000401860                str_casecmp
+                0x0000000000401870                async_wait_for
+                0x0000000000401880                log_init
+                0x0000000000401890                async_data_write_start
+                0x00000000004018a0                task_wait
+                0x00000000004018b0                loc_service_register
+                0x00000000004018c0                async_get_call
+                0x00000000004018d0                fibril_mutex_is_locked
+                0x00000000004018e0                vfs_unmount_path
+                0x00000000004018f0                async_data_read_finalize
+                0x0000000000401900                str_str
+                0x0000000000401910                loc_server_unregister
+                0x0000000000401920                vfs_stat_path
+                0x0000000000401930                puts
+                0x0000000000401940                malloc
+                0x0000000000401950                odict_insert
+                0x0000000000401960                isspace
+                0x0000000000401970                async_answer_0
+                0x0000000000401980                fflush
+                0x0000000000401990                vfs_unlink_path
+                0x00000000004019a0                odict_find_eq
+                0x00000000004019b0                log_msg
+                0x00000000004019c0                stacktrace_print
+                0x00000000004019d0                odict_remove
+                0x00000000004019e0                async_exchange_end
+                0x00000000004019f0                loc_service_get_name
+                0x0000000000401a00                calloc
+                0x0000000000401a10                vfs_mount_path
+                0x0000000000401a20                loc_register_cat_change_cb
+                0x0000000000401a30                async_send_3
+                0x0000000000401a40                odict_next
+                0x0000000000401a50                task_spawn
+                0x0000000000401a60                fibril_mutex_unlock
+                0x0000000000401a70                str_dup
+                0x0000000000401a80                async_req_0_1
+                0x0000000000401a90                realloc
+                0x0000000000401aa0                vfs_link_path
+                0x0000000000401ab0                isalpha
+                0x0000000000401ac0                async_create_callback_port
+                0x0000000000401ad0                str_cmp
+                0x0000000000401ae0                hash_table_remove_item
+                0x0000000000401af0                fopen
+                0x0000000000401b00                __helenos_assert_abort
+                0x0000000000401b10                memset
+                0x0000000000401b20                async_data_read_receive
+                0x0000000000401b30                odict_initialize
+                0x0000000000401b40                async_accept_0
+                0x0000000000401b50                async_data_read_start
+                0x0000000000401b60                fclose
+                0x0000000000401b70                isalnum
+                0x0000000000401b80                str_cpy
+                0x0000000000401b90                str_error_name
+                0x0000000000401ba0                fgetc
+                0x0000000000401bb0                asprintf
+                0x0000000000401bc0                loc_server_register
+                0x0000000000401bd0                loc_category_get_svcs
+                0x0000000000401be0                str_size
+                0x0000000000401bf0                fputc
+                0x0000000000401c00                list_count
+                0x0000000000401c10                async_answer_1
+                0x0000000000401c20                async_exchange_begin
+                0x0000000000401c30                str_error
+                0x0000000000401c40                async_data_write_accept
+                0x0000000000401c50                __libc_main
+                0x0000000000401c60                async_manager
+                0x0000000000401c70                async_forget
+                0x0000000000401c80                odlink_used
+                0x0000000000401c90                async_req_3_0
+                0x0000000000401ca0                vfs_fsprobe
+                0x0000000000401cb0                fputs
+                0x0000000000401cc0                async_set_fallback_port_handler
+                0x0000000000401cd0                hash_table_destroy
+                0x0000000000401ce0                free
+                0x0000000000401cf0                fibril_mutex_lock
+ *(.iplt)
+ .iplt          0x0000000000401d00        0x0 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+
+.plt.got        0x0000000000401d00        0x0
+ *(.plt.got)
+ .plt.got       0x0000000000401d00        0x0 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x0000000000401d00     0x5018
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ .text.startup.main
+                0x0000000000401d00      0x144 uspace/srv_volsrv.p/srv_volsrv_volsrv.c.o
+                0x0000000000401d00                main
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ *fill*         0x0000000000401e44        0xc 
+ .text.empty_write
+                0x0000000000401e50        0xd uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+ *fill*         0x0000000000401e5d        0x3 
+ .text.empty_read
+                0x0000000000401e60        0xd uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+ *fill*         0x0000000000401e6d        0x3 
+ .text.empty_get_nblocks
+                0x0000000000401e70        0xd uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+ *fill*         0x0000000000401e7d        0x3 
+ .text.empty_get_bsize
+                0x0000000000401e80        0xd uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+ *fill*         0x0000000000401e8d        0x3 
+ .text.volsrv_part_is_empty
+                0x0000000000401e90       0x89 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+                0x0000000000401e90                volsrv_part_is_empty
+ *fill*         0x0000000000401f19        0x7 
+ .text.volsrv_part_empty
+                0x0000000000401f20       0x89 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+                0x0000000000401f20                volsrv_part_empty
+ *fill*         0x0000000000401fa9        0x7 
+ .text.cmd_runl
+                0x0000000000401fb0      0x2a4 uspace/srv_volsrv.p/srv_volsrv_mkfs.c.o
+ *fill*         0x0000000000402254        0xc 
+ .text.volsrv_part_mkfs
+                0x0000000000402260       0xa6 uspace/srv_volsrv.p/srv_volsrv_mkfs.c.o
+                0x0000000000402260                volsrv_part_mkfs
+ *fill*         0x0000000000402306        0xa 
+ .text.volsrv_part_get_lsupp
+                0x0000000000402310       0x18 uspace/srv_volsrv.p/srv_volsrv_mkfs.c.o
+                0x0000000000402310                volsrv_part_get_lsupp
+ *fill*         0x0000000000402328        0x8 
+ .text.vol_part_determine_mount_path
+                0x0000000000402330      0x1c2 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ *fill*         0x00000000004024f2        0xe 
+ .text.refcount_up.part.0
+                0x0000000000402500       0x18 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ *fill*         0x0000000000402518        0x8 
+ .text.vol_part_probe.part.0
+                0x0000000000402520      0x169 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ *fill*         0x0000000000402689        0x7 
+ .text.vol_part_mount
+                0x0000000000402690      0x2f1 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ *fill*         0x0000000000402981        0xf 
+ .text.vol_parts_create
+                0x0000000000402990       0x5f uspace/srv_volsrv.p/srv_volsrv_part.c.o
+                0x0000000000402990                vol_parts_create
+ *fill*         0x00000000004029ef        0x1 
+ .text.vol_parts_destroy
+                0x00000000004029f0       0x31 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+                0x00000000004029f0                vol_parts_destroy
+ *fill*         0x0000000000402a21        0xf 
+ .text.vol_part_get_ids
+                0x0000000000402a30       0xbc uspace/srv_volsrv.p/srv_volsrv_part.c.o
+                0x0000000000402a30                vol_part_get_ids
+ *fill*         0x0000000000402aec        0x4 
+ .text.vol_part_find_by_id_ref
+                0x0000000000402af0       0xa0 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+                0x0000000000402af0                vol_part_find_by_id_ref
+ .text.vol_part_find_by_path_ref
+                0x0000000000402b90       0xff uspace/srv_volsrv.p/srv_volsrv_part.c.o
+                0x0000000000402b90                vol_part_find_by_path_ref
+ *fill*         0x0000000000402c8f        0x1 
+ .text.vol_part_del_ref
+                0x0000000000402c90       0xa8 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+                0x0000000000402c90                vol_part_del_ref
+ *fill*         0x0000000000402d38        0x8 
+ .text.vol_part_add_locked
+                0x0000000000402d40      0x274 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ *fill*         0x0000000000402fb4        0xc 
+ .text.vol_part_add_part
+                0x0000000000402fc0       0x30 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+                0x0000000000402fc0                vol_part_add_part
+ .text.vol_part_check_new
+                0x0000000000402ff0      0x338 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ *fill*         0x0000000000403328        0x8 
+ .text.vol_part_discovery_start
+                0x0000000000403330       0x5b uspace/srv_volsrv.p/srv_volsrv_part.c.o
+                0x0000000000403330                vol_part_discovery_start
+ *fill*         0x000000000040338b        0x5 
+ .text.vol_part_cat_change_cb
+                0x0000000000403390        0xa uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ *fill*         0x000000000040339a        0x6 
+ .text.vol_part_eject_part
+                0x00000000004033a0       0xd4 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+                0x00000000004033a0                vol_part_eject_part
+ *fill*         0x0000000000403474        0xc 
+ .text.vol_part_empty_part
+                0x0000000000403480       0x71 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+                0x0000000000403480                vol_part_empty_part
+ *fill*         0x00000000004034f1        0xf 
+ .text.vol_part_insert_part
+                0x0000000000403500       0xb0 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+                0x0000000000403500                vol_part_insert_part
+ .text.vol_part_mkfs_part
+                0x00000000004035b0      0x16e uspace/srv_volsrv.p/srv_volsrv_part.c.o
+                0x00000000004035b0                vol_part_mkfs_part
+ *fill*         0x000000000040371e        0x2 
+ .text.vol_part_set_mountp_part
+                0x0000000000403720       0x94 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+                0x0000000000403720                vol_part_set_mountp_part
+ *fill*         0x00000000004037b4        0xc 
+ .text.vol_part_get_info
+                0x00000000004037c0       0x62 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+                0x00000000004037c0                vol_part_get_info
+ *fill*         0x0000000000403822        0xe 
+ .text.vol_part_info_srv
+                0x0000000000403830      0x176 uspace/srv_volsrv.p/srv_volsrv_volsrv.c.o
+ *fill*         0x00000000004039a6        0xa 
+ .text.vol_info_srv
+                0x00000000004039b0      0x1be uspace/srv_volsrv.p/srv_volsrv_volsrv.c.o
+ *fill*         0x0000000000403b6e        0x2 
+ .text.vol_client_conn
+                0x0000000000403b70      0x7dd uspace/srv_volsrv.p/srv_volsrv_volsrv.c.o
+ *fill*         0x000000000040434d        0x3 
+ .text.refcount_up.part.0
+                0x0000000000404350       0x18 uspace/srv_volsrv.p/srv_volsrv_volume.c.o
+ *fill*         0x0000000000404368        0x8 
+ .text.vol_volume_new
+                0x0000000000404370       0xc9 uspace/srv_volsrv.p/srv_volsrv_volume.c.o
+ *fill*         0x0000000000404439        0x7 
+ .text.vol_volumes_load
+                0x0000000000404440      0x1d8 uspace/srv_volsrv.p/srv_volsrv_volume.c.o
+ *fill*         0x0000000000404618        0x8 
+ .text.vol_volumes_create
+                0x0000000000404620      0x1a9 uspace/srv_volsrv.p/srv_volsrv_volume.c.o
+                0x0000000000404620                vol_volumes_create
+ *fill*         0x00000000004047c9        0x7 
+ .text.vol_volumes_sync
+                0x00000000004047d0      0x11e uspace/srv_volsrv.p/srv_volsrv_volume.c.o
+                0x00000000004047d0                vol_volumes_sync
+ *fill*         0x00000000004048ee        0x2 
+ .text.vol_volumes_merge_to
+                0x00000000004048f0       0xf0 uspace/srv_volsrv.p/srv_volsrv_volume.c.o
+                0x00000000004048f0                vol_volumes_merge_to
+ .text.vol_volumes_destroy
+                0x00000000004049e0       0xb5 uspace/srv_volsrv.p/srv_volsrv_volume.c.o
+                0x00000000004049e0                vol_volumes_destroy
+ *fill*         0x0000000000404a95        0xb 
+ .text.vol_volume_lookup_ref
+                0x0000000000404aa0      0x1a4 uspace/srv_volsrv.p/srv_volsrv_volume.c.o
+                0x0000000000404aa0                vol_volume_lookup_ref
+ *fill*         0x0000000000404c44        0xc 
+ .text.vol_volume_find_by_id_ref
+                0x0000000000404c50      0x108 uspace/srv_volsrv.p/srv_volsrv_volume.c.o
+                0x0000000000404c50                vol_volume_find_by_id_ref
+ *fill*         0x0000000000404d58        0x8 
+ .text.vol_volume_del_ref
+                0x0000000000404d60       0xb6 uspace/srv_volsrv.p/srv_volsrv_volume.c.o
+                0x0000000000404d60                vol_volume_del_ref
+ *fill*         0x0000000000404e16        0xa 
+ .text.vol_volume_set_mountp
+                0x0000000000404e20       0x9a uspace/srv_volsrv.p/srv_volsrv_volume.c.o
+                0x0000000000404e20                vol_volume_set_mountp
+ *fill*         0x0000000000404eba        0x6 
+ .text.vol_get_ids
+                0x0000000000404ec0      0x107 uspace/srv_volsrv.p/srv_volsrv_volume.c.o
+                0x0000000000404ec0                vol_get_ids
+ *fill*         0x0000000000404fc7        0x9 
+ .text.vol_volume_get_info
+                0x0000000000404fd0       0x40 uspace/srv_volsrv.p/srv_volsrv_volume.c.o
+                0x0000000000404fd0                vol_volume_get_info
+ .text          0x0000000000405010        0xc uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                0x0000000000405010                _start
+ *fill*         0x000000000040501c        0x4 
+ .text.__c_start
+                0x0000000000405020       0x8c uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                0x0000000000405020                __c_start
+ *fill*         0x00000000004050ac        0x4 
+ .text.block_init
+                0x00000000004050b0      0x180 uspace/lib/libblock.a.p/block_block.c.o
+                0x00000000004050b0                block_init
+ .text.block_cache_fini
+                0x0000000000405230      0x18d uspace/lib/libblock.a.p/block_block.c.o
+                0x0000000000405230                block_cache_fini
+ *fill*         0x00000000004053bd        0x3 
+ .text.block_fini
+                0x00000000004053c0       0xee uspace/lib/libblock.a.p/block_block.c.o
+                0x00000000004053c0                block_fini
+ *fill*         0x00000000004054ae        0x2 
+ .text.block_read_direct
+                0x00000000004054b0       0xda uspace/lib/libblock.a.p/block_block.c.o
+                0x00000000004054b0                block_read_direct
+ *fill*         0x000000000040558a        0x6 
+ .text.block_write_direct
+                0x0000000000405590       0xda uspace/lib/libblock.a.p/block_block.c.o
+                0x0000000000405590                block_write_direct
+ *fill*         0x000000000040566a        0x6 
+ .text.block_get_bsize
+                0x0000000000405670       0x86 uspace/lib/libblock.a.p/block_block.c.o
+                0x0000000000405670                block_get_bsize
+ *fill*         0x00000000004056f6        0xa 
+ .text.block_get_nblocks
+                0x0000000000405700       0x86 uspace/lib/libblock.a.p/block_block.c.o
+                0x0000000000405700                block_get_nblocks
+ *fill*         0x0000000000405786        0xa 
+ .text.bd_cb_conn
+                0x0000000000405790       0x3b uspace/lib/libdevice.a.p/device_src_bd.c.o
+ *fill*         0x00000000004057cb        0x5 
+ .text.bd_open  0x00000000004057d0       0xa8 uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x00000000004057d0                bd_open
+ *fill*         0x0000000000405878        0x8 
+ .text.bd_close
+                0x0000000000405880        0xa uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x0000000000405880                bd_close
+ *fill*         0x000000000040588a        0x6 
+ .text.bd_read_blocks
+                0x0000000000405890       0x9a uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x0000000000405890                bd_read_blocks
+ *fill*         0x000000000040592a        0x6 
+ .text.bd_write_blocks
+                0x0000000000405930       0x9a uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x0000000000405930                bd_write_blocks
+ *fill*         0x00000000004059ca        0x6 
+ .text.bd_sync_cache
+                0x00000000004059d0       0x4e uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x00000000004059d0                bd_sync_cache
+ *fill*         0x0000000000405a1e        0x2 
+ .text.bd_get_block_size
+                0x0000000000405a20       0x4f uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x0000000000405a20                bd_get_block_size
+ *fill*         0x0000000000405a6f        0x1 
+ .text.bd_get_num_blocks
+                0x0000000000405a70       0x5d uspace/lib/libdevice.a.p/device_src_bd.c.o
+                0x0000000000405a70                bd_get_num_blocks
+ *fill*         0x0000000000405acd        0x3 
+ .text.vol_mountp_validate
+                0x0000000000405ad0       0x88 uspace/lib/libdevice.a.p/device_src_vol.c.o
+                0x0000000000405ad0                vol_mountp_validate
+ *fill*         0x0000000000405b58        0x8 
+ .text.label_bd_is_empty
+                0x0000000000405b60      0x1f2 uspace/lib/liblabel.a.p/label_src_empty.c.o
+                0x0000000000405b60                label_bd_is_empty
+ *fill*         0x0000000000405d52        0xe 
+ .text.label_bd_empty
+                0x0000000000405d60      0x1a5 uspace/lib/liblabel.a.p/label_src_empty.c.o
+                0x0000000000405d60                label_bd_empty
+ *fill*         0x0000000000405f05        0xb 
+ .text.sif_attr_getkey
+                0x0000000000405f10        0xa uspace/lib/libsif.a.p/sif_src_sif.c.o
+ *fill*         0x0000000000405f1a        0x6 
+ .text.sif_attr_cmp
+                0x0000000000405f20        0xa uspace/lib/libsif.a.p/sif_src_sif.c.o
+ *fill*         0x0000000000405f2a        0x6 
+ .text.sif_import_name
+                0x0000000000405f30      0x102 uspace/lib/libsif.a.p/sif_src_sif.c.o
+ *fill*         0x0000000000406032        0xe 
+ .text.sif_export_node
+                0x0000000000406040      0x1fd uspace/lib/libsif.a.p/sif_src_sif.c.o
+ *fill*         0x000000000040623d        0x3 
+ .text.sif_attr_delete.part.0
+                0x0000000000406240       0x18 uspace/lib/libsif.a.p/sif_src_sif.c.o
+ *fill*         0x0000000000406258        0x8 
+ .text.sif_node_delete
+                0x0000000000406260      0x155 uspace/lib/libsif.a.p/sif_src_sif.c.o
+ *fill*         0x00000000004063b5        0xb 
+ .text.sif_import_node
+                0x00000000004063c0      0x45d uspace/lib/libsif.a.p/sif_src_sif.c.o
+ *fill*         0x000000000040681d        0x3 
+ .text.sif_new  0x0000000000406820       0xb0 uspace/lib/libsif.a.p/sif_src_sif.c.o
+                0x0000000000406820                sif_new
+ .text.sif_load
+                0x00000000004068d0      0x15b uspace/lib/libsif.a.p/sif_src_sif.c.o
+                0x00000000004068d0                sif_load
+ *fill*         0x0000000000406a2b        0x5 
+ .text.sif_delete
+                0x0000000000406a30       0x22 uspace/lib/libsif.a.p/sif_src_sif.c.o
+                0x0000000000406a30                sif_delete
+ *fill*         0x0000000000406a52        0xe 
+ .text.sif_get_root
+                0x0000000000406a60        0xa uspace/lib/libsif.a.p/sif_src_sif.c.o
+                0x0000000000406a60                sif_get_root
+ *fill*         0x0000000000406a6a        0x6 
+ .text.sif_node_first_child
+                0x0000000000406a70       0x24 uspace/lib/libsif.a.p/sif_src_sif.c.o
+                0x0000000000406a70                sif_node_first_child
+ *fill*         0x0000000000406a94        0xc 
+ .text.sif_node_next_child
+                0x0000000000406aa0       0x24 uspace/lib/libsif.a.p/sif_src_sif.c.o
+                0x0000000000406aa0                sif_node_next_child
+ *fill*         0x0000000000406ac4        0xc 
+ .text.sif_node_get_type
+                0x0000000000406ad0        0xa uspace/lib/libsif.a.p/sif_src_sif.c.o
+                0x0000000000406ad0                sif_node_get_type
+ *fill*         0x0000000000406ada        0x6 
+ .text.sif_node_get_attr
+                0x0000000000406ae0       0x1a uspace/lib/libsif.a.p/sif_src_sif.c.o
+                0x0000000000406ae0                sif_node_get_attr
+ *fill*         0x0000000000406afa        0x6 
+ .text.sif_save
+                0x0000000000406b00       0x6e uspace/lib/libsif.a.p/sif_src_sif.c.o
+                0x0000000000406b00                sif_save
+ *fill*         0x0000000000406b6e        0x2 
+ .text.sif_node_append_child
+                0x0000000000406b70       0xaf uspace/lib/libsif.a.p/sif_src_sif.c.o
+                0x0000000000406b70                sif_node_append_child
+ *fill*         0x0000000000406c1f        0x1 
+ .text.sif_node_set_attr
+                0x0000000000406c20       0xf8 uspace/lib/libsif.a.p/sif_src_sif.c.o
+                0x0000000000406c20                sif_node_set_attr
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000406d20      0xda8
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.volsrv_part_is_empty.str1.8
+                0x0000000000406d20      0x7e9 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+                                         0x27 (size before relaxing)
+ .rodata.cmd_runl.str1.1
+                0x0000000000407509      0x526 uspace/srv_volsrv.p/srv_volsrv_mkfs.c.o
+                                         0x31 (size before relaxing)
+ .rodata.cmd_runl.str1.8
+                0x0000000000407a2f       0x7b uspace/srv_volsrv.p/srv_volsrv_mkfs.c.o
+ .rodata.volsrv_part_mkfs.str1.1
+                0x0000000000407a2f        0x8 uspace/srv_volsrv.p/srv_volsrv_mkfs.c.o
+ .rodata.str1.1
+                0x0000000000407a2f       0x2f uspace/srv_volsrv.p/srv_volsrv_mkfs.c.o
+ *fill*         0x0000000000407a2f       0x11 
+ .rodata.CSWTCH.11
+                0x0000000000407a40       0x20 uspace/srv_volsrv.p/srv_volsrv_mkfs.c.o
+ .rodata.vol_part_determine_mount_path.str1.1
+                0x0000000000407a60       0x7e uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ .rodata.refcount_up.part.0.str1.8
+                0x0000000000407a60       0x2e uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ .rodata.refcount_up.part.0.str1.1
+                0x0000000000407a60        0x9 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ .rodata.vol_part_probe.part.0.str1.1
+                0x0000000000407a60       0x16 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ .rodata.vol_part_probe.part.0.str1.8
+                0x0000000000407a60       0x62 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ .rodata.vol_part_mount.str1.8
+                0x0000000000407a60      0x128 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ .rodata.vol_part_mount.str1.1
+                0x0000000000407a60       0x4e uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ .rodata.vol_parts_destroy.str1.1
+                0x0000000000407a60       0x1a uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ .rodata.vol_part_find_by_id_ref.str1.8
+                0x0000000000407a60       0x25 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ .rodata.vol_part_del_ref.str1.1
+                0x0000000000407a60       0x1f uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ .rodata.vol_part_add_locked.str1.1
+                0x0000000000407a60       0x72 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ .rodata.vol_part_add_locked.str1.8
+                0x0000000000407a60       0x63 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ .rodata.vol_part_check_new.str1.1
+                0x0000000000407a60       0x80 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ .rodata.vol_part_check_new.str1.8
+                0x0000000000407a60       0x52 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ .rodata.vol_part_discovery_start.str1.8
+                0x0000000000407a60       0x39 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ .rodata.vol_part_eject_part.str1.1
+                0x0000000000407a60       0x16 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ .rodata.vol_part_eject_part.str1.8
+                0x0000000000407a60       0x74 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ .rodata.vol_part_empty_part.str1.1
+                0x0000000000407a60       0x16 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ .rodata.vol_part_empty_part.str1.8
+                0x0000000000407a60       0x22 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ .rodata.vol_part_insert_part.str1.1
+                0x0000000000407a60       0x17 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ .rodata.vol_part_mkfs_part.str1.1
+                0x0000000000407a60       0x15 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ .rodata.vol_part_mkfs_part.str1.8
+                0x0000000000407a60       0x21 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ .rodata.str1.1
+                0x0000000000407a60       0x1a uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ .rodata.vol_part_info_srv.str1.1
+                0x0000000000407a60       0x17 uspace/srv_volsrv.p/srv_volsrv_volsrv.c.o
+ .rodata.vol_info_srv.str1.1
+                0x0000000000407a60       0x12 uspace/srv_volsrv.p/srv_volsrv_volsrv.c.o
+ .rodata.vol_info_srv.str1.8
+                0x0000000000407a60       0x4a uspace/srv_volsrv.p/srv_volsrv_volsrv.c.o
+ .rodata.vol_client_conn.str1.1
+                0x0000000000407a60       0xf6 uspace/srv_volsrv.p/srv_volsrv_volsrv.c.o
+ .rodata.vol_client_conn.str1.8
+                0x0000000000407a60       0x45 uspace/srv_volsrv.p/srv_volsrv_volsrv.c.o
+ .rodata.vol_client_conn
+                0x0000000000407a60       0x60 uspace/srv_volsrv.p/srv_volsrv_volsrv.c.o
+ .rodata.main.str1.1
+                0x0000000000407ac0       0x26 uspace/srv_volsrv.p/srv_volsrv_volsrv.c.o
+ .rodata.main.str1.8
+                0x0000000000407ac0       0x88 uspace/srv_volsrv.p/srv_volsrv_volsrv.c.o
+ .rodata.str1.1
+                0x0000000000407ac0       0x23 uspace/srv_volsrv.p/srv_volsrv_volsrv.c.o
+ .rodata.refcount_up.part.0.str1.8
+                0x0000000000407ac0       0x2e uspace/srv_volsrv.p/srv_volsrv_volume.c.o
+ .rodata.refcount_up.part.0.str1.1
+                0x0000000000407ac0        0x9 uspace/srv_volsrv.p/srv_volsrv_volume.c.o
+ .rodata.vol_volume_new.str1.8
+                0x0000000000407ac0       0x33 uspace/srv_volsrv.p/srv_volsrv_volume.c.o
+ .rodata.vol_volume_new.str1.1
+                0x0000000000407ac0       0x13 uspace/srv_volsrv.p/srv_volsrv_volume.c.o
+ .rodata.vol_volumes_load.str1.1
+                0x0000000000407ac0       0x2e uspace/srv_volsrv.p/srv_volsrv_volume.c.o
+ .rodata.vol_volumes_load.str1.8
+                0x0000000000407ac0       0x57 uspace/srv_volsrv.p/srv_volsrv_volume.c.o
+ .rodata.vol_volumes_create.str1.1
+                0x0000000000407ac0        0x8 uspace/srv_volsrv.p/srv_volsrv_volume.c.o
+ .rodata.vol_volume_find_by_id_ref.str1.8
+                0x0000000000407ac0       0x84 uspace/srv_volsrv.p/srv_volsrv_volume.c.o
+ .rodata.vol_volume_del_ref.str1.1
+                0x0000000000407ac0        0xa uspace/srv_volsrv.p/srv_volsrv_volume.c.o
+ .rodata.cst8   0x0000000000407ac0        0x8 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .rodata.read_blocks.part.0.str1.8
+                0x0000000000407ac8       0x27 uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.read_blocks.part.0.str1.1
+                0x0000000000407ac8        0x7 uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.block_bb_read.str1.8
+                0x0000000000407ac8       0x4a uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.block_cache_fini.str1.8
+                0x0000000000407ac8       0x48 uspace/lib/libblock.a.p/block_block.c.o
+ .rodata.vol_mountp_validate.str1.1
+                0x0000000000407ac8       0x14 uspace/lib/libdevice.a.p/device_src_vol.c.o
+ .rodata.label_bd_is_empty.str1.1
+                0x0000000000407ac8       0x49 uspace/lib/liblabel.a.p/label_src_empty.c.o
+ .rodata.label_bd_is_empty.str1.8
+                0x0000000000407ac8       0x20 uspace/lib/liblabel.a.p/label_src_empty.c.o
+ .rodata.sif_export_node.str1.1
+                0x0000000000407ac8       0x12 uspace/lib/libsif.a.p/sif_src_sif.c.o
+ .rodata.sif_attr_delete.part.0.str1.8
+                0x0000000000407ac8       0x27 uspace/lib/libsif.a.p/sif_src_sif.c.o
+ .rodata.sif_attr_delete.part.0.str1.1
+                0x0000000000407ac8       0x1c uspace/lib/libsif.a.p/sif_src_sif.c.o
+ .rodata.sif_node_delete.str1.8
+                0x0000000000407ac8       0x51 uspace/lib/libsif.a.p/sif_src_sif.c.o
+ .rodata.sif_node_delete.str1.1
+                0x0000000000407ac8       0x1b uspace/lib/libsif.a.p/sif_src_sif.c.o
+ .rodata.sif_import_node.str1.1
+                0x0000000000407ac8        0x8 uspace/lib/libsif.a.p/sif_src_sif.c.o
+ .rodata.sif_new.str1.1
+                0x0000000000407ac8        0x4 uspace/lib/libsif.a.p/sif_src_sif.c.o
+ .rodata.sif_load.str1.1
+                0x0000000000407ac8        0x2 uspace/lib/libsif.a.p/sif_src_sif.c.o
+ .rodata.sif_save.str1.1
+                0x0000000000407ac8        0x2 uspace/lib/libsif.a.p/sif_src_sif.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x0000000000407ac8      0x2b4
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x0000000000407ac8      0x2b4 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+                0x0000000000407ac8                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x0000000000407d80      0xe58
+ *(.eh_frame)
+ .eh_frame      0x0000000000407d80       0xe8 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+ .eh_frame      0x0000000000407e68       0x28 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000407e90        0x0 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+ .eh_frame      0x0000000000407e90       0x90 uspace/srv_volsrv.p/srv_volsrv_mkfs.c.o
+                                         0xa8 (size before relaxing)
+ .eh_frame      0x0000000000407f20      0x390 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+                                        0x3a8 (size before relaxing)
+ .eh_frame      0x00000000004082b0       0xb0 uspace/srv_volsrv.p/srv_volsrv_volsrv.c.o
+                                         0xc8 (size before relaxing)
+ .eh_frame      0x0000000000408360      0x268 uspace/srv_volsrv.p/srv_volsrv_volume.c.o
+                                        0x280 (size before relaxing)
+ .eh_frame      0x00000000004085c8       0x20 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x00000000004085e8      0x140 uspace/lib/libblock.a.p/block_block.c.o
+                                        0x3c0 (size before relaxing)
+ .eh_frame      0x0000000000408728      0x150 uspace/lib/libdevice.a.p/device_src_bd.c.o
+                                        0x198 (size before relaxing)
+ .eh_frame      0x0000000000408878       0x28 uspace/lib/libdevice.a.p/device_src_vol.c.o
+                                        0x310 (size before relaxing)
+ .eh_frame      0x00000000004088a0       0x60 uspace/lib/liblabel.a.p/label_src_empty.c.o
+                                         0xa8 (size before relaxing)
+ .eh_frame      0x0000000000408900      0x2d8 uspace/lib/libsif.a.p/sif_src_sif.c.o
+                                        0x3d0 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x0000000000408bd8        0x0
+ *(.sframe)
+ .sframe        0x0000000000408bd8        0x0 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x0000000000409000                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0x0000000000409000        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0000000000409000        0x0
+                0x0000000000409000                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x0000000000409000                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x0000000000409000        0x0
+                0x0000000000409000                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x0000000000409000                PROVIDE (__init_array_end = .)
+
+.fini_array     0x0000000000409000        0x0
+                0x0000000000409000                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x0000000000409000                PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x0000000000409000        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x0000000000409000        0x0 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+
+.dynamic        0x0000000000409000      0x150
+ *(.dynamic)
+ .dynamic       0x0000000000409000      0x150 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+                0x0000000000409000                _DYNAMIC
+
+.got            0x0000000000409150        0x0
+ *(.got)
+ .got           0x0000000000409150        0x0 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+ *(.igot)
+                0x0000000000409150                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x0000000000409150      0x2a8
+ *(.got.plt)
+ .got.plt       0x0000000000409150      0x2a8 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+                0x0000000000409150                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x00000000004093f8        0x0 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+
+.data           0x0000000000409400       0xc0
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.empty_bd_ops
+                0x0000000000409400       0x20 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+ .data.fstab    0x0000000000409420       0x60 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ .data.vol_cfg_file
+                0x0000000000409480        0x8 uspace/srv_volsrv.p/srv_volsrv_volsrv.c.o
+                0x0000000000409480                vol_cfg_file
+ .data.vol_icfg_file
+                0x0000000000409488        0x8 uspace/srv_volsrv.p/srv_volsrv_volsrv.c.o
+                0x0000000000409488                vol_icfg_file
+ .data.dcl      0x0000000000409490       0x10 uspace/lib/libblock.a.p/block_block.c.o
+ .data.dcl_lock
+                0x00000000004094a0       0x20 uspace/lib/libblock.a.p/block_block.c.o
+
+.data1
+ *(.data1)
+                0x00000000004094c0                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x00000000004094c0                . = .
+                0x00000000004094c0                __bss_start = .
+
+.bss            0x00000000004094c0       0x48
+ *(.dynbss)
+ .dynbss        0x00000000004094c0       0x48 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+                0x00000000004094c0                __progsymbols
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ *(COMMON)
+                0x0000000000409508                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x0000000000409508                . = ALIGN (0x8)
+                0x0000000000409508                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x000000000040b508        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x000000000040b508                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x000000000040b508                . = ALIGN (0x8)
+                0x0000000000409508                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x000000000040b508                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/srv_volsrv.p/srv_volsrv_empty.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/srv_volsrv.p/srv_volsrv_mkfs.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_volsrv.p/srv_volsrv_part.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_volsrv.p/srv_volsrv_volsrv.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_volsrv.p/srv_volsrv_volume.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libblock.a.p/block_block.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdevice.a.p/device_src_bd.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdevice.a.p/device_src_vol.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/liblabel.a.p/label_src_empty.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libsif.a.p/sif_src_sif.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/srv_volsrv elf64-x86-64)

@@ -1,0 +1,1388 @@
+Archive member included to satisfy reference by file (symbol)
+
+uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                              (--whole-archive)
+uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                              (--whole-archive)
+uspace/lib/libnettl.a.p/nettl_src_amap.c.o
+                              uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o (amap_create)
+uspace/lib/libnettl.a.p/nettl_src_portrng.c.o
+                              uspace/lib/libnettl.a.p/nettl_src_amap.c.o (portrng_create)
+uspace/lib/libinet.a.p/inet_src_addr.c.o
+                              uspace/srv_net_tcp.p/srv_net_tcp_pdu.c.o (host2addr128_t_be)
+uspace/lib/libinet.a.p/inet_src_endpoint.c.o
+                              uspace/srv_net_tcp.p/srv_net_tcp_rqueue.c.o (inet_ep2_init)
+uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+                              uspace/lib/libinet.a.p/inet_src_addr.c.o (eth_addr_encode)
+uspace/lib/libinet.a.p/inet_src_inet.c.o
+                              uspace/srv_net_tcp.p/srv_net_tcp_inet.c.o (inet_init)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.0                     uspace/srv_net_tcp.p/srv_net_tcp_tcp.c.o (task_retval)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ .rodata.tcp_conns_fini.str1.1
+                0x0000000000000000       0x17 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ .text.tcp_conns_fini
+                0x0000000000000000       0x3e uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_inet.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_inet.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_inet.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_iqueue.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_iqueue.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_iqueue.c.o
+ .rodata.tcp_iqueue_remove_seg.str1.1
+                0x0000000000000000       0x1e uspace/srv_net_tcp.p/srv_net_tcp_iqueue.c.o
+ .rodata.tcp_iqueue_remove_seg.str1.8
+                0x0000000000000000       0x9e uspace/srv_net_tcp.p/srv_net_tcp_iqueue.c.o
+ .text.tcp_iqueue_remove_seg
+                0x0000000000000000       0xe2 uspace/srv_net_tcp.p/srv_net_tcp_iqueue.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_ncsim.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_ncsim.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_ncsim.c.o
+ .rodata.tcp_ncsim_bounce_seg.str1.1
+                0x0000000000000000       0x17 uspace/srv_net_tcp.p/srv_net_tcp_ncsim.c.o
+ .text.tcp_ncsim_bounce_seg
+                0x0000000000000000       0x4a uspace/srv_net_tcp.p/srv_net_tcp_ncsim.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_pdu.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_pdu.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_pdu.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_rqueue.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_rqueue.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_rqueue.c.o
+ .text.tcp_rqueue_fini
+                0x0000000000000000       0xcb uspace/srv_net_tcp.p/srv_net_tcp_rqueue.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_segment.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_segment.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_segment.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_seq_no.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_seq_no.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_seq_no.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_test.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_test.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_test.c.o
+ .rodata.tcp_test.str1.1
+                0x0000000000000000        0xb uspace/srv_net_tcp.p/srv_net_tcp_test.c.o
+ .text.tcp_test
+                0x0000000000000000       0x19 uspace/srv_net_tcp.p/srv_net_tcp_test.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_tqueue.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_tqueue.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_tqueue.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_ucall.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_ucall.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_ucall.c.o
+ .rodata.tcp_uc_status.str1.1
+                0x0000000000000000       0x10 uspace/srv_net_tcp.p/srv_net_tcp_ucall.c.o
+ .text.tcp_uc_status
+                0x0000000000000000       0x34 uspace/srv_net_tcp.p/srv_net_tcp_ucall.c.o
+ .rodata.tcp_to_user.str1.1
+                0x0000000000000000        0xe uspace/srv_net_tcp.p/srv_net_tcp_ucall.c.o
+ .text.tcp_to_user
+                0x0000000000000000       0x1d uspace/srv_net_tcp.p/srv_net_tcp_ucall.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_service.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_service.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_service.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_tcp.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_tcp.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_tcp.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .text          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libnettl.a.p/nettl_src_amap.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libnettl.a.p/nettl_src_amap.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libnettl.a.p/nettl_src_amap.c.o
+ .rodata.amap_destroy.str1.1
+                0x0000000000000000       0x57 uspace/lib/libnettl.a.p/nettl_src_amap.c.o
+ .text.amap_destroy
+                0x0000000000000000       0x87 uspace/lib/libnettl.a.p/nettl_src_amap.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libnettl.a.p/nettl_src_portrng.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libnettl.a.p/nettl_src_portrng.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libnettl.a.p/nettl_src_portrng.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_parse_v4
+                0x0000000000000000       0xf0 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_parse_v6
+                0x0000000000000000      0x378 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.addr128  0x0000000000000000        0xd uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.addr128_compare
+                0x0000000000000000       0x1d uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.eth_addr_solicited_node
+                0x0000000000000000       0x51 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.addr128_t_be2host
+                0x0000000000000000        0xd uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr
+                0x0000000000000000       0x29 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr
+                0x0000000000000000       0x2d uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr6
+                0x0000000000000000       0x5c uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr6
+                0x0000000000000000       0x62 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_addr
+                0x0000000000000000       0x13 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_naddr
+                0x0000000000000000       0x17 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_any
+                0x0000000000000000       0x14 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_any
+                0x0000000000000000       0x18 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_compare
+                0x0000000000000000       0x4f uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_compare_mask
+                0x0000000000000000       0xe6 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_parse
+                0x0000000000000000       0x5c uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_parse
+                0x0000000000000000       0x84 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.inet_naddr_format.str1.1
+                0x0000000000000000        0x8 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_format
+                0x0000000000000000       0xe0 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_get
+                0x0000000000000000       0x54 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_set
+                0x0000000000000000        0xf uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_set
+                0x0000000000000000       0x13 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_set6
+                0x0000000000000000       0x14 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_set6
+                0x0000000000000000       0x18 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.inet_addr_any_addr6
+                0x0000000000000000       0x14 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .data.inet_eth_addr_solicited_node
+                0x0000000000000000        0x8 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.addr32_broadcast_all_hosts
+                0x0000000000000000        0x4 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_endpoint.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_endpoint.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_endpoint.c.o
+ .text.inet_ep_init
+                0x0000000000000000       0x15 uspace/lib/libinet.a.p/inet_src_endpoint.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .text.eth_addr_encode
+                0x0000000000000000       0x47 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .text.eth_addr_decode
+                0x0000000000000000       0x43 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .text.eth_addr_compare
+                0x0000000000000000       0x19 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .rodata.eth_addr_format.str1.1
+                0x0000000000000000        0xb uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .text.eth_addr_format
+                0x0000000000000000       0x6f uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .rodata.eth_addr_broadcast
+                0x0000000000000000        0x8 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_inet.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_inet.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_inet.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+LOAD uspace/srv_net_tcp.p/srv_net_tcp_inet.c.o
+LOAD uspace/srv_net_tcp.p/srv_net_tcp_iqueue.c.o
+LOAD uspace/srv_net_tcp.p/srv_net_tcp_ncsim.c.o
+LOAD uspace/srv_net_tcp.p/srv_net_tcp_pdu.c.o
+LOAD uspace/srv_net_tcp.p/srv_net_tcp_rqueue.c.o
+LOAD uspace/srv_net_tcp.p/srv_net_tcp_segment.c.o
+LOAD uspace/srv_net_tcp.p/srv_net_tcp_seq_no.c.o
+LOAD uspace/srv_net_tcp.p/srv_net_tcp_test.c.o
+LOAD uspace/srv_net_tcp.p/srv_net_tcp_tqueue.c.o
+LOAD uspace/srv_net_tcp.p/srv_net_tcp_ucall.c.o
+LOAD uspace/srv_net_tcp.p/srv_net_tcp_service.c.o
+LOAD uspace/srv_net_tcp.p/srv_net_tcp_tcp.c.o
+START GROUP
+LOAD uspace/lib/c/libstartfiles.a
+LOAD uspace/lib/libnettl.a
+LOAD uspace/lib/libinet.a
+LOAD uspace/lib/libc.so.0.0
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000400000                PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x0000000000400120                . = (SEGMENT_START ("text-segment", 0x400000) + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000400120      0x198
+ *(.hash)
+ .hash          0x0000000000400120      0x198 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x00000000004002b8      0x5e8
+ *(.dynsym)
+ .dynsym        0x00000000004002b8      0x5e8 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+
+.dynstr         0x00000000004008a0      0x446
+ *(.dynstr)
+ .dynstr        0x00000000004008a0      0x446 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+
+.gnu.version    0x0000000000400ce6        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000400ce6        0x0 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+
+.gnu.version_d  0x0000000000400ce8        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000400ce8        0x0 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+
+.gnu.version_r  0x0000000000400ce8        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000400ce8        0x0 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+
+.rela.dyn       0x0000000000400ce8       0x18
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text.__c_start
+                0x0000000000400ce8        0x0 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ .rela.rodata.cst8
+                0x0000000000400ce8        0x0 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x0000000000400ce8        0x0 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000400ce8        0x0 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x0000000000400ce8       0x18 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+
+.rela.plt       0x0000000000400d00      0x5b8
+ *(.rela.plt)
+ .rela.plt      0x0000000000400d00      0x5b8 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+ .rela.iplt     0x00000000004012b8        0x0 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x00000000004012c0      0x3e0
+ *(.plt)
+ .plt           0x00000000004012c0      0x3e0 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+                0x00000000004012d0                task_retval
+                0x00000000004012e0                loc_service_connect
+                0x00000000004012f0                async_hangup
+                0x0000000000401300                async_send_2
+                0x0000000000401310                async_wait_for
+                0x0000000000401320                memmove
+                0x0000000000401330                snprintf
+                0x0000000000401340                log_init
+                0x0000000000401350                async_data_write_start
+                0x0000000000401360                loc_service_register
+                0x0000000000401370                async_get_call
+                0x0000000000401380                fibril_mutex_is_locked
+                0x0000000000401390                async_data_read_finalize
+                0x00000000004013a0                async_send_1
+                0x00000000004013b0                memcpy
+                0x00000000004013c0                loc_server_unregister
+                0x00000000004013d0                puts
+                0x00000000004013e0                malloc
+                0x00000000004013f0                async_req_1_0
+                0x0000000000401400                loc_service_get_id
+                0x0000000000401410                async_answer_0
+                0x0000000000401420                fibril_condvar_wait
+                0x0000000000401430                log_msg
+                0x0000000000401440                fibril_timer_set_locked
+                0x0000000000401450                fibril_timer_destroy
+                0x0000000000401460                async_exchange_end
+                0x0000000000401470                calloc
+                0x0000000000401480                fibril_condvar_wait_timeout
+                0x0000000000401490                fibril_condvar_initialize
+                0x00000000004014a0                fibril_condvar_broadcast
+                0x00000000004014b0                async_send_4
+                0x00000000004014c0                fibril_mutex_unlock
+                0x00000000004014d0                fibril_create
+                0x00000000004014e0                prodcons_initialize
+                0x00000000004014f0                async_create_callback_port
+                0x0000000000401500                prodcons_consume
+                0x0000000000401510                __helenos_assert_abort
+                0x0000000000401520                async_data_read_receive
+                0x0000000000401530                async_accept_0
+                0x0000000000401540                async_data_read_start
+                0x0000000000401550                str_error_name
+                0x0000000000401560                asprintf
+                0x0000000000401570                loc_server_register
+                0x0000000000401580                list_count
+                0x0000000000401590                async_answer_1
+                0x00000000004015a0                async_exchange_begin
+                0x00000000004015b0                async_send_0
+                0x00000000004015c0                async_data_write_finalize
+                0x00000000004015d0                async_data_write_accept
+                0x00000000004015e0                __libc_main
+                0x00000000004015f0                prodcons_produce
+                0x0000000000401600                async_manager
+                0x0000000000401610                async_forget
+                0x0000000000401620                fibril_add_ready
+                0x0000000000401630                fibril_timer_create
+                0x0000000000401640                async_set_fallback_port_handler
+                0x0000000000401650                async_data_write_receive
+                0x0000000000401660                fibril_timer_clear_locked
+                0x0000000000401670                async_callback_receive
+                0x0000000000401680                free
+                0x0000000000401690                fibril_mutex_lock
+ *(.iplt)
+ .iplt          0x00000000004016a0        0x0 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+
+.plt.got        0x00000000004016a0        0x0
+ *(.plt.got)
+ .plt.got       0x00000000004016a0        0x0 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x00000000004016a0     0x7e94
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ .text.startup.main
+                0x00000000004016a0       0xdb uspace/srv_net_tcp.p/srv_net_tcp_tcp.c.o
+                0x00000000004016a0                main
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ *fill*         0x000000000040177b        0x5 
+ .text.tcp_transmit_segment
+                0x0000000000401780      0x171 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ *fill*         0x00000000004018f1        0xf 
+ .text.tcp_conn_seg_proc_ack_est
+                0x0000000000401900      0x15d uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ *fill*         0x0000000000401a5d        0x3 
+ .text.refcount_up.part.0
+                0x0000000000401a60       0x18 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ *fill*         0x0000000000401a78        0x8 
+ .text.tcp_conns_init
+                0x0000000000401a80       0x2d uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+                0x0000000000401a80                tcp_conns_init
+ *fill*         0x0000000000401aad        0x3 
+ .text.tcp_conn_new
+                0x0000000000401ab0      0x22a uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+                0x0000000000401ab0                tcp_conn_new
+ *fill*         0x0000000000401cda        0x6 
+ .text.tcp_conn_addref
+                0x0000000000401ce0       0x46 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+                0x0000000000401ce0                tcp_conn_addref
+ *fill*         0x0000000000401d26        0xa 
+ .text.tcp_conn_delref
+                0x0000000000401d30      0x144 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+                0x0000000000401d30                tcp_conn_delref
+ *fill*         0x0000000000401e74        0xc 
+ .text.tcp_conn_state_set
+                0x0000000000401e80      0x126 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ *fill*         0x0000000000401fa6        0xa 
+ .text.tw_timeout_func
+                0x0000000000401fb0       0xc4 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ *fill*         0x0000000000402074        0xc 
+ .text.tcp_conn_lock
+                0x0000000000402080        0xe uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+                0x0000000000402080                tcp_conn_lock
+ *fill*         0x000000000040208e        0x2 
+ .text.tcp_conn_unlock
+                0x0000000000402090        0xe uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+                0x0000000000402090                tcp_conn_unlock
+ *fill*         0x000000000040209e        0x2 
+ .text.tcp_conn_delete
+                0x00000000004020a0       0x63 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+                0x00000000004020a0                tcp_conn_delete
+ *fill*         0x0000000000402103        0xd 
+ .text.tcp_conn_add
+                0x0000000000402110       0xf3 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+                0x0000000000402110                tcp_conn_add
+ *fill*         0x0000000000402203        0xd 
+ .text.tcp_conn_sync
+                0x0000000000402210      0x10b uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+                0x0000000000402210                tcp_conn_sync
+ *fill*         0x000000000040231b        0x5 
+ .text.tcp_conn_fin_sent
+                0x0000000000402320       0xb9 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+                0x0000000000402320                tcp_conn_fin_sent
+ *fill*         0x00000000004023d9        0x7 
+ .text.tcp_conn_find_ref
+                0x00000000004023e0       0xe2 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+                0x00000000004023e0                tcp_conn_find_ref
+ *fill*         0x00000000004024c2        0xe 
+ .text.tcp_conn_reset
+                0x00000000004024d0       0xee uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+                0x00000000004024d0                tcp_conn_reset
+ *fill*         0x00000000004025be        0x2 
+ .text.tcp_conn_got_syn
+                0x00000000004025c0       0x5d uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+                0x00000000004025c0                tcp_conn_got_syn
+ *fill*         0x000000000040261d        0x3 
+ .text.tcp_conn_segment_arrived
+                0x0000000000402620      0xf93 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+                0x0000000000402620                tcp_conn_segment_arrived
+ *fill*         0x00000000004035b3        0xd 
+ .text.tcp_unexpected_segment
+                0x00000000004035c0       0x6d uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+                0x00000000004035c0                tcp_unexpected_segment
+ *fill*         0x000000000040362d        0x3 
+ .text.tcp_ep2_flipped
+                0x0000000000403630       0x28 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+                0x0000000000403630                tcp_ep2_flipped
+ *fill*         0x0000000000403658        0x8 
+ .text.tcp_inet_ev_recv
+                0x0000000000403660      0x202 uspace/srv_net_tcp.p/srv_net_tcp_inet.c.o
+ *fill*         0x0000000000403862        0xe 
+ .text.tcp_transmit_pdu
+                0x0000000000403870       0xed uspace/srv_net_tcp.p/srv_net_tcp_inet.c.o
+                0x0000000000403870                tcp_transmit_pdu
+ *fill*         0x000000000040395d        0x3 
+ .text.tcp_inet_init
+                0x0000000000403960       0x57 uspace/srv_net_tcp.p/srv_net_tcp_inet.c.o
+                0x0000000000403960                tcp_inet_init
+ *fill*         0x00000000004039b7        0x9 
+ .text.tcp_iqueue_init
+                0x00000000004039c0       0x15 uspace/srv_net_tcp.p/srv_net_tcp_iqueue.c.o
+                0x00000000004039c0                tcp_iqueue_init
+ *fill*         0x00000000004039d5        0xb 
+ .text.tcp_iqueue_insert_seg
+                0x00000000004039e0      0x10e uspace/srv_net_tcp.p/srv_net_tcp_iqueue.c.o
+                0x00000000004039e0                tcp_iqueue_insert_seg
+ *fill*         0x0000000000403aee        0x2 
+ .text.tcp_iqueue_get_ready_seg
+                0x0000000000403af0      0x19b uspace/srv_net_tcp.p/srv_net_tcp_iqueue.c.o
+                0x0000000000403af0                tcp_iqueue_get_ready_seg
+ *fill*         0x0000000000403c8b        0x5 
+ .text.tcp_ncsim_fibril
+                0x0000000000403c90      0x13b uspace/srv_net_tcp.p/srv_net_tcp_ncsim.c.o
+ *fill*         0x0000000000403dcb        0x5 
+ .text.tcp_ncsim_init
+                0x0000000000403dd0       0x4e uspace/srv_net_tcp.p/srv_net_tcp_ncsim.c.o
+                0x0000000000403dd0                tcp_ncsim_init
+ *fill*         0x0000000000403e1e        0x2 
+ .text.tcp_ncsim_fibril_start
+                0x0000000000403e20       0x59 uspace/srv_net_tcp.p/srv_net_tcp_ncsim.c.o
+                0x0000000000403e20                tcp_ncsim_fibril_start
+ *fill*         0x0000000000403e79        0x7 
+ .text.tcp_pdu_create
+                0x0000000000403e80       0xb9 uspace/srv_net_tcp.p/srv_net_tcp_pdu.c.o
+                0x0000000000403e80                tcp_pdu_create
+ *fill*         0x0000000000403f39        0x7 
+ .text.tcp_pdu_delete
+                0x0000000000403f40       0x2b uspace/srv_net_tcp.p/srv_net_tcp_pdu.c.o
+                0x0000000000403f40                tcp_pdu_delete
+ *fill*         0x0000000000403f6b        0x5 
+ .text.tcp_pdu_decode
+                0x0000000000403f70      0x10e uspace/srv_net_tcp.p/srv_net_tcp_pdu.c.o
+                0x0000000000403f70                tcp_pdu_decode
+ *fill*         0x000000000040407e        0x2 
+ .text.tcp_pdu_encode
+                0x0000000000404080      0x3d0 uspace/srv_net_tcp.p/srv_net_tcp_pdu.c.o
+                0x0000000000404080                tcp_pdu_encode
+ .text.tcp_rqueue_fibril
+                0x0000000000404450       0xa0 uspace/srv_net_tcp.p/srv_net_tcp_rqueue.c.o
+ .text.tcp_rqueue_init
+                0x00000000004044f0       0x5c uspace/srv_net_tcp.p/srv_net_tcp_rqueue.c.o
+                0x00000000004044f0                tcp_rqueue_init
+ *fill*         0x000000000040454c        0x4 
+ .text.tcp_rqueue_insert_seg
+                0x0000000000404550       0x96 uspace/srv_net_tcp.p/srv_net_tcp_rqueue.c.o
+                0x0000000000404550                tcp_rqueue_insert_seg
+ *fill*         0x00000000004045e6        0xa 
+ .text.tcp_rqueue_fibril_start
+                0x00000000004045f0       0x59 uspace/srv_net_tcp.p/srv_net_tcp_rqueue.c.o
+                0x00000000004045f0                tcp_rqueue_fibril_start
+ *fill*         0x0000000000404649        0x7 
+ .text.tcp_segment_delete
+                0x0000000000404650       0x22 uspace/srv_net_tcp.p/srv_net_tcp_segment.c.o
+                0x0000000000404650                tcp_segment_delete
+ *fill*         0x0000000000404672        0xe 
+ .text.tcp_segment_dup
+                0x0000000000404680       0x9c uspace/srv_net_tcp.p/srv_net_tcp_segment.c.o
+                0x0000000000404680                tcp_segment_dup
+ *fill*         0x000000000040471c        0x4 
+ .text.tcp_segment_make_ctrl
+                0x0000000000404720       0x37 uspace/srv_net_tcp.p/srv_net_tcp_segment.c.o
+                0x0000000000404720                tcp_segment_make_ctrl
+ *fill*         0x0000000000404757        0x9 
+ .text.tcp_segment_make_rst
+                0x0000000000404760       0x52 uspace/srv_net_tcp.p/srv_net_tcp_segment.c.o
+                0x0000000000404760                tcp_segment_make_rst
+ *fill*         0x00000000004047b2        0xe 
+ .text.tcp_segment_make_data
+                0x00000000004047c0       0x7c uspace/srv_net_tcp.p/srv_net_tcp_segment.c.o
+                0x00000000004047c0                tcp_segment_make_data
+ *fill*         0x000000000040483c        0x4 
+ .text.tcp_segment_trim
+                0x0000000000404840      0x125 uspace/srv_net_tcp.p/srv_net_tcp_segment.c.o
+                0x0000000000404840                tcp_segment_trim
+ *fill*         0x0000000000404965        0xb 
+ .text.tcp_segment_text_copy
+                0x0000000000404970       0x52 uspace/srv_net_tcp.p/srv_net_tcp_segment.c.o
+                0x0000000000404970                tcp_segment_text_copy
+ *fill*         0x00000000004049c2        0xe 
+ .text.tcp_segment_text_size
+                0x00000000004049d0       0x1f uspace/srv_net_tcp.p/srv_net_tcp_segment.c.o
+                0x00000000004049d0                tcp_segment_text_size
+ *fill*         0x00000000004049ef        0x1 
+ .text.tcp_segment_dump
+                0x00000000004049f0       0xca uspace/srv_net_tcp.p/srv_net_tcp_segment.c.o
+                0x00000000004049f0                tcp_segment_dump
+ *fill*         0x0000000000404aba        0x6 
+ .text.seq_no_ack_acceptable
+                0x0000000000404ac0       0x28 uspace/srv_net_tcp.p/srv_net_tcp_seq_no.c.o
+                0x0000000000404ac0                seq_no_ack_acceptable
+ *fill*         0x0000000000404ae8        0x8 
+ .text.seq_no_ack_duplicate
+                0x0000000000404af0       0x11 uspace/srv_net_tcp.p/srv_net_tcp_seq_no.c.o
+                0x0000000000404af0                seq_no_ack_duplicate
+ *fill*         0x0000000000404b01        0xf 
+ .text.seq_no_in_rcv_wnd
+                0x0000000000404b10       0x31 uspace/srv_net_tcp.p/srv_net_tcp_seq_no.c.o
+                0x0000000000404b10                seq_no_in_rcv_wnd
+ *fill*         0x0000000000404b41        0xf 
+ .text.seq_no_new_wnd_update
+                0x0000000000404b50      0x173 uspace/srv_net_tcp.p/srv_net_tcp_seq_no.c.o
+                0x0000000000404b50                seq_no_new_wnd_update
+ *fill*         0x0000000000404cc3        0xd 
+ .text.seq_no_segment_ready
+                0x0000000000404cd0       0xfa uspace/srv_net_tcp.p/srv_net_tcp_seq_no.c.o
+                0x0000000000404cd0                seq_no_segment_ready
+ *fill*         0x0000000000404dca        0x6 
+ .text.seq_no_segment_acked
+                0x0000000000404dd0       0x3b uspace/srv_net_tcp.p/srv_net_tcp_seq_no.c.o
+                0x0000000000404dd0                seq_no_segment_acked
+ *fill*         0x0000000000404e0b        0x5 
+ .text.seq_no_syn_acked
+                0x0000000000404e10       0x2e uspace/srv_net_tcp.p/srv_net_tcp_seq_no.c.o
+                0x0000000000404e10                seq_no_syn_acked
+ *fill*         0x0000000000404e3e        0x2 
+ .text.seq_no_segment_acceptable
+                0x0000000000404e40       0xd6 uspace/srv_net_tcp.p/srv_net_tcp_seq_no.c.o
+                0x0000000000404e40                seq_no_segment_acceptable
+ *fill*         0x0000000000404f16        0xa 
+ .text.seq_no_control_len
+                0x0000000000404f20       0x14 uspace/srv_net_tcp.p/srv_net_tcp_seq_no.c.o
+                0x0000000000404f20                seq_no_control_len
+ *fill*         0x0000000000404f34        0xc 
+ .text.seq_no_seg_trim_calc
+                0x0000000000404f40      0x1b2 uspace/srv_net_tcp.p/srv_net_tcp_seq_no.c.o
+                0x0000000000404f40                seq_no_seg_trim_calc
+ *fill*         0x00000000004050f2        0xe 
+ .text.seq_no_seg_cmp
+                0x0000000000405100      0x2b8 uspace/srv_net_tcp.p/srv_net_tcp_seq_no.c.o
+                0x0000000000405100                seq_no_seg_cmp
+ *fill*         0x00000000004053b8        0x8 
+ .text.tcp_conn_transmit_segment
+                0x00000000004053c0       0xb2 uspace/srv_net_tcp.p/srv_net_tcp_tqueue.c.o
+ *fill*         0x0000000000405472        0xe 
+ .text.retransmit_timeout_func
+                0x0000000000405480      0x12a uspace/srv_net_tcp.p/srv_net_tcp_tqueue.c.o
+ *fill*         0x00000000004055aa        0x6 
+ .text.tcp_tqueue_timer_clear.part.0
+                0x00000000004055b0       0x18 uspace/srv_net_tcp.p/srv_net_tcp_tqueue.c.o
+ *fill*         0x00000000004055c8        0x8 
+ .text.tcp_tqueue_seg
+                0x00000000004055d0      0x21a uspace/srv_net_tcp.p/srv_net_tcp_tqueue.c.o
+ *fill*         0x00000000004057ea        0x6 
+ .text.tcp_tqueue_init
+                0x00000000004057f0       0x4a uspace/srv_net_tcp.p/srv_net_tcp_tqueue.c.o
+                0x00000000004057f0                tcp_tqueue_init
+ *fill*         0x000000000040583a        0x6 
+ .text.tcp_tqueue_clear
+                0x0000000000405840       0x77 uspace/srv_net_tcp.p/srv_net_tcp_tqueue.c.o
+                0x0000000000405840                tcp_tqueue_clear
+ *fill*         0x00000000004058b7        0x9 
+ .text.tcp_tqueue_fini
+                0x00000000004058c0       0x85 uspace/srv_net_tcp.p/srv_net_tcp_tqueue.c.o
+                0x00000000004058c0                tcp_tqueue_fini
+ *fill*         0x0000000000405945        0xb 
+ .text.tcp_tqueue_ctrl_seg
+                0x0000000000405950       0x6e uspace/srv_net_tcp.p/srv_net_tcp_tqueue.c.o
+                0x0000000000405950                tcp_tqueue_ctrl_seg
+ *fill*         0x00000000004059be        0x2 
+ .text.tcp_tqueue_new_data
+                0x00000000004059c0      0x1b6 uspace/srv_net_tcp.p/srv_net_tcp_tqueue.c.o
+                0x00000000004059c0                tcp_tqueue_new_data
+ *fill*         0x0000000000405b76        0xa 
+ .text.tcp_tqueue_ack_received
+                0x0000000000405b80      0x29f uspace/srv_net_tcp.p/srv_net_tcp_tqueue.c.o
+                0x0000000000405b80                tcp_tqueue_ack_received
+ *fill*         0x0000000000405e1f        0x1 
+ .text.tcp_uc_open
+                0x0000000000405e20      0x236 uspace/srv_net_tcp.p/srv_net_tcp_ucall.c.o
+                0x0000000000405e20                tcp_uc_open
+ *fill*         0x0000000000406056        0xa 
+ .text.tcp_uc_send
+                0x0000000000406060      0x17c uspace/srv_net_tcp.p/srv_net_tcp_ucall.c.o
+                0x0000000000406060                tcp_uc_send
+ *fill*         0x00000000004061dc        0x4 
+ .text.tcp_uc_receive
+                0x00000000004061e0      0x17f uspace/srv_net_tcp.p/srv_net_tcp_ucall.c.o
+                0x00000000004061e0                tcp_uc_receive
+ *fill*         0x000000000040635f        0x1 
+ .text.tcp_uc_close
+                0x0000000000406360      0x11a uspace/srv_net_tcp.p/srv_net_tcp_ucall.c.o
+                0x0000000000406360                tcp_uc_close
+ *fill*         0x000000000040647a        0x6 
+ .text.tcp_uc_abort
+                0x0000000000406480       0x41 uspace/srv_net_tcp.p/srv_net_tcp_ucall.c.o
+                0x0000000000406480                tcp_uc_abort
+ *fill*         0x00000000004064c1        0xf 
+ .text.tcp_uc_delete
+                0x00000000004064d0       0x31 uspace/srv_net_tcp.p/srv_net_tcp_ucall.c.o
+                0x00000000004064d0                tcp_uc_delete
+ *fill*         0x0000000000406501        0xf 
+ .text.tcp_uc_set_cb
+                0x0000000000406510       0x4a uspace/srv_net_tcp.p/srv_net_tcp_ucall.c.o
+                0x0000000000406510                tcp_uc_set_cb
+ *fill*         0x000000000040655a        0x6 
+ .text.tcp_uc_get_userptr
+                0x0000000000406560        0xa uspace/srv_net_tcp.p/srv_net_tcp_ucall.c.o
+                0x0000000000406560                tcp_uc_get_userptr
+ *fill*         0x000000000040656a        0x6 
+ .text.tcp_as_segment_arrived
+                0x0000000000406570       0x95 uspace/srv_net_tcp.p/srv_net_tcp_ucall.c.o
+                0x0000000000406570                tcp_as_segment_arrived
+ *fill*         0x0000000000406605        0xb 
+ .text.tcp_service_recv_data
+                0x0000000000406610       0x96 uspace/srv_net_tcp.p/srv_net_tcp_service.c.o
+ *fill*         0x00000000004066a6        0xa 
+ .text.tcp_service_cstate_change
+                0x00000000004066b0      0x172 uspace/srv_net_tcp.p/srv_net_tcp_service.c.o
+ *fill*         0x0000000000406822        0xe 
+ .text.tcp_conn_recv_impl
+                0x0000000000406830      0x12c uspace/srv_net_tcp.p/srv_net_tcp_service.c.o
+ *fill*         0x000000000040695c        0x4 
+ .text.tcp_client_conn
+                0x0000000000406960      0xcaf uspace/srv_net_tcp.p/srv_net_tcp_service.c.o
+ *fill*         0x000000000040760f        0x1 
+ .text.tcp_service_lst_cstate_change
+                0x0000000000407610      0x1bf uspace/srv_net_tcp.p/srv_net_tcp_service.c.o
+ *fill*         0x00000000004077cf        0x1 
+ .text.tcp_service_init
+                0x00000000004077d0       0x83 uspace/srv_net_tcp.p/srv_net_tcp_service.c.o
+                0x00000000004077d0                tcp_service_init
+ .text          0x0000000000407853        0xc uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                0x0000000000407853                _start
+ *fill*         0x000000000040785f        0x1 
+ .text.__c_start
+                0x0000000000407860       0x8c uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                0x0000000000407860                __c_start
+ *fill*         0x00000000004078ec        0x4 
+ .text.amap_repla_find
+                0x00000000004078f0      0x13e uspace/lib/libnettl.a.p/nettl_src_amap.c.o
+ *fill*         0x0000000000407a2e        0x2 
+ .text.amap_create
+                0x0000000000407a30       0xab uspace/lib/libnettl.a.p/nettl_src_amap.c.o
+                0x0000000000407a30                amap_create
+ *fill*         0x0000000000407adb        0x5 
+ .text.amap_insert
+                0x0000000000407ae0      0x664 uspace/lib/libnettl.a.p/nettl_src_amap.c.o
+                0x0000000000407ae0                amap_insert
+ *fill*         0x0000000000408144        0xc 
+ .text.amap_remove
+                0x0000000000408150      0x2f7 uspace/lib/libnettl.a.p/nettl_src_amap.c.o
+                0x0000000000408150                amap_remove
+ *fill*         0x0000000000408447        0x9 
+ .text.amap_find_match
+                0x0000000000408450      0x1c9 uspace/lib/libnettl.a.p/nettl_src_amap.c.o
+                0x0000000000408450                amap_find_match
+ *fill*         0x0000000000408619        0x7 
+ .text.portrng_create
+                0x0000000000408620       0x6e uspace/lib/libnettl.a.p/nettl_src_portrng.c.o
+                0x0000000000408620                portrng_create
+ *fill*         0x000000000040868e        0x2 
+ .text.portrng_destroy
+                0x0000000000408690       0x4b uspace/lib/libnettl.a.p/nettl_src_portrng.c.o
+                0x0000000000408690                portrng_destroy
+ *fill*         0x00000000004086db        0x5 
+ .text.portrng_alloc
+                0x00000000004086e0      0x1ec uspace/lib/libnettl.a.p/nettl_src_portrng.c.o
+                0x00000000004086e0                portrng_alloc
+ *fill*         0x00000000004088cc        0x4 
+ .text.portrng_find_port
+                0x00000000004088d0       0x37 uspace/lib/libnettl.a.p/nettl_src_portrng.c.o
+                0x00000000004088d0                portrng_find_port
+ *fill*         0x0000000000408907        0x9 
+ .text.portrng_free_port
+                0x0000000000408910      0x10c uspace/lib/libnettl.a.p/nettl_src_portrng.c.o
+                0x0000000000408910                portrng_free_port
+ *fill*         0x0000000000408a1c        0x4 
+ .text.portrng_empty
+                0x0000000000408a20       0x31 uspace/lib/libnettl.a.p/nettl_src_portrng.c.o
+                0x0000000000408a20                portrng_empty
+ *fill*         0x0000000000408a51        0xf 
+ .text.inet_addr_format_v6
+                0x0000000000408a60      0x3bb uspace/lib/libinet.a.p/inet_src_addr.c.o
+ *fill*         0x0000000000408e1b        0x5 
+ .text.host2addr128_t_be
+                0x0000000000408e20        0xd uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000408e20                host2addr128_t_be
+ *fill*         0x0000000000408e2d        0x3 
+ .text.inet_addr_compare
+                0x0000000000408e30       0x4f uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000408e30                inet_addr_compare
+ *fill*         0x0000000000408e7f        0x1 
+ .text.inet_addr_is_any
+                0x0000000000408e80       0x3c uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000408e80                inet_addr_is_any
+ *fill*         0x0000000000408ebc        0x4 
+ .text.inet_addr_format
+                0x0000000000408ec0       0x78 uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000408ec0                inet_addr_format
+ *fill*         0x0000000000408f38        0x8 
+ .text.inet_addr_get
+                0x0000000000408f40       0x4d uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000408f40                inet_addr_get
+ *fill*         0x0000000000408f8d        0x3 
+ .text.inet_ep2_init
+                0x0000000000408f90       0x1d uspace/lib/libinet.a.p/inet_src_endpoint.c.o
+                0x0000000000408f90                inet_ep2_init
+ *fill*         0x0000000000408fad        0x3 
+ .text.inet_cb_conn
+                0x0000000000408fb0      0x1b1 uspace/lib/libinet.a.p/inet_src_inet.c.o
+ *fill*         0x0000000000409161        0xf 
+ .text.inet_init
+                0x0000000000409170      0x1c2 uspace/lib/libinet.a.p/inet_src_inet.c.o
+                0x0000000000409170                inet_init
+ *fill*         0x0000000000409332        0xe 
+ .text.inet_send
+                0x0000000000409340      0x12f uspace/lib/libinet.a.p/inet_src_inet.c.o
+                0x0000000000409340                inet_send
+ *fill*         0x000000000040946f        0x1 
+ .text.inet_get_srcaddr
+                0x0000000000409470       0xc4 uspace/lib/libinet.a.p/inet_src_inet.c.o
+                0x0000000000409470                inet_get_srcaddr
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000409540     0x2310
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.tcp_transmit_segment.str1.8
+                0x0000000000409540     0x11b1 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+                                         0x4c (size before relaxing)
+ .rodata.tcp_transmit_segment.str1.1
+                0x000000000040a6f1      0xfce uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+                                         0x17 (size before relaxing)
+ .rodata.tcp_conn_seg_proc_ack_est.str1.8
+                0x000000000040b6bf       0xc1 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ .rodata.tcp_conn_seg_proc_ack_est.str1.1
+                0x000000000040b6bf       0x2c uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ .rodata.refcount_up.part.0.str1.8
+                0x000000000040b6bf       0x2e uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ .rodata.refcount_up.part.0.str1.1
+                0x000000000040b6bf        0x9 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ .rodata.tcp_conns_init.str1.8
+                0x000000000040b6bf       0x28 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ .rodata.tcp_conns_init.str1.1
+                0x000000000040b6bf        0xd uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ .rodata.tcp_conn_addref.str1.1
+                0x000000000040b6bf       0x18 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ .rodata.tcp_conn_delref.str1.1
+                0x000000000040b6bf       0x4e uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ .rodata.tcp_conn_state_set.str1.1
+                0x000000000040b6bf       0x2e uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ .rodata.tcp_conn_state_set.str1.8
+                0x000000000040b6bf       0x4a uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ .rodata.tw_timeout_func.str1.1
+                0x000000000040b6bf       0x60 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ .rodata.tcp_conn_delete.str1.1
+                0x000000000040b6bf       0x2f uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ .rodata.tcp_conn_add.str1.1
+                0x000000000040b6bf       0x16 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ .rodata.tcp_conn_sync.str1.8
+                0x000000000040b6bf       0x24 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ .rodata.tcp_conn_fin_sent.str1.1
+                0x000000000040b6bf       0x52 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ .rodata.tcp_conn_find_ref.str1.1
+                0x000000000040b6bf       0x23 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ .rodata.tcp_conn_find_ref.str1.8
+                0x000000000040b6bf       0x1f uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ .rodata.tcp_conn_reset.str1.1
+                0x000000000040b6bf       0x33 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ .rodata.tcp_conn_reset.str1.8
+                0x000000000040b6bf       0x20 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ .rodata.tcp_conn_got_syn.str1.1
+                0x000000000040b6bf        0x9 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ .rodata.tcp_conn_segment_arrived.str1.8
+                0x000000000040b6bf      0x38b uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ .rodata.tcp_conn_segment_arrived.str1.1
+                0x000000000040b6bf      0x2fb uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ *fill*         0x000000000040b6bf        0x1 
+ .rodata.tcp_conn_segment_arrived
+                0x000000000040b6c0      0x108 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ *fill*         0x000000000040b7c8        0x8 
+ .rodata.cst16  0x000000000040b7d0       0x10 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ .rodata.cst8   0x000000000040b7e0       0x10 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ .rodata.tcp_inet_ev_recv.str1.1
+                0x000000000040b7f0       0x44 uspace/srv_net_tcp.p/srv_net_tcp_inet.c.o
+ .rodata.tcp_inet_ev_recv.str1.8
+                0x000000000040b7f0       0xf8 uspace/srv_net_tcp.p/srv_net_tcp_inet.c.o
+ .rodata.tcp_transmit_pdu.str1.8
+                0x000000000040b7f0       0x27 uspace/srv_net_tcp.p/srv_net_tcp_inet.c.o
+ .rodata.tcp_transmit_pdu.str1.1
+                0x000000000040b7f0       0x18 uspace/srv_net_tcp.p/srv_net_tcp_inet.c.o
+ .rodata.tcp_inet_init.str1.1
+                0x000000000040b7f0       0x10 uspace/srv_net_tcp.p/srv_net_tcp_inet.c.o
+ .rodata.tcp_inet_init.str1.8
+                0x000000000040b7f0       0x27 uspace/srv_net_tcp.p/srv_net_tcp_inet.c.o
+ .rodata.tcp_iqueue_insert_seg.str1.1
+                0x000000000040b7f0       0x2f uspace/srv_net_tcp.p/srv_net_tcp_iqueue.c.o
+ .rodata.tcp_iqueue_get_ready_seg.str1.1
+                0x000000000040b7f0       0x3f uspace/srv_net_tcp.p/srv_net_tcp_iqueue.c.o
+ .rodata.tcp_iqueue_get_ready_seg.str1.8
+                0x000000000040b7f0       0x93 uspace/srv_net_tcp.p/srv_net_tcp_iqueue.c.o
+ .rodata.tcp_ncsim_fibril.str1.1
+                0x000000000040b7f0       0x33 uspace/srv_net_tcp.p/srv_net_tcp_ncsim.c.o
+ .rodata.tcp_ncsim_fibril_start.str1.1
+                0x000000000040b7f0       0x37 uspace/srv_net_tcp.p/srv_net_tcp_ncsim.c.o
+ .rodata.tcp_pdu_encode.str1.8
+                0x000000000040b7f0       0x27 uspace/srv_net_tcp.p/srv_net_tcp_pdu.c.o
+ .rodata.tcp_pdu_encode.str1.1
+                0x000000000040b7f0       0x1a uspace/srv_net_tcp.p/srv_net_tcp_pdu.c.o
+ .rodata.tcp_rqueue_fibril.str1.1
+                0x000000000040b7f0       0x30 uspace/srv_net_tcp.p/srv_net_tcp_rqueue.c.o
+ .rodata.tcp_rqueue_fini.str1.1
+                0x000000000040b7f0       0x2f uspace/srv_net_tcp.p/srv_net_tcp_rqueue.c.o
+ .rodata.tcp_rqueue_fibril_start.str1.1
+                0x000000000040b7f0       0x1a uspace/srv_net_tcp.p/srv_net_tcp_rqueue.c.o
+ .rodata.tcp_rqueue_fibril_start.str1.8
+                0x000000000040b7f0       0x1f uspace/srv_net_tcp.p/srv_net_tcp_rqueue.c.o
+ .rodata.tcp_segment_trim.str1.8
+                0x000000000040b7f0       0x2b uspace/srv_net_tcp.p/srv_net_tcp_segment.c.o
+ .rodata.tcp_segment_trim.str1.1
+                0x000000000040b7f0       0x30 uspace/srv_net_tcp.p/srv_net_tcp_segment.c.o
+ .rodata.tcp_segment_text_copy.str1.8
+                0x000000000040b7f0       0x23 uspace/srv_net_tcp.p/srv_net_tcp_segment.c.o
+ .rodata.tcp_segment_dump.str1.1
+                0x000000000040b7f0       0x56 uspace/srv_net_tcp.p/srv_net_tcp_segment.c.o
+ .rodata.seq_no_new_wnd_update.str1.8
+                0x000000000040b7f0       0x55 uspace/srv_net_tcp.p/srv_net_tcp_seq_no.c.o
+ .rodata.seq_no_segment_acked.str1.1
+                0x000000000040b7f0        0xd uspace/srv_net_tcp.p/srv_net_tcp_seq_no.c.o
+ .rodata.seq_no_seg_cmp.str1.8
+                0x000000000040b7f0       0x4c uspace/srv_net_tcp.p/srv_net_tcp_seq_no.c.o
+ .rodata.seq_no_seg_cmp.str1.1
+                0x000000000040b7f0       0x13 uspace/srv_net_tcp.p/srv_net_tcp_seq_no.c.o
+ .rodata.tcp_conn_transmit_segment.str1.8
+                0x000000000040b7f0       0x51 uspace/srv_net_tcp.p/srv_net_tcp_tqueue.c.o
+ .rodata.tcp_conn_transmit_segment.str1.1
+                0x000000000040b7f0       0x17 uspace/srv_net_tcp.p/srv_net_tcp_tqueue.c.o
+ .rodata.retransmit_timeout_func.str1.8
+                0x000000000040b7f0       0x70 uspace/srv_net_tcp.p/srv_net_tcp_tqueue.c.o
+ .rodata.retransmit_timeout_func.str1.1
+                0x000000000040b7f0       0x4b uspace/srv_net_tcp.p/srv_net_tcp_tqueue.c.o
+ .rodata.tcp_tqueue_timer_clear.part.0.str1.8
+                0x000000000040b7f0       0x54 uspace/srv_net_tcp.p/srv_net_tcp_tqueue.c.o
+ .rodata.tcp_tqueue_seg.str1.1
+                0x000000000040b7f0       0x1b uspace/srv_net_tcp.p/srv_net_tcp_tqueue.c.o
+ .rodata.tcp_tqueue_seg.str1.8
+                0x000000000040b7f0       0x9b uspace/srv_net_tcp.p/srv_net_tcp_tqueue.c.o
+ .rodata.tcp_tqueue_ctrl_seg.str1.1
+                0x000000000040b7f0       0x1c uspace/srv_net_tcp.p/srv_net_tcp_tqueue.c.o
+ .rodata.tcp_tqueue_new_data.str1.1
+                0x000000000040b7f0       0x4a uspace/srv_net_tcp.p/srv_net_tcp_tqueue.c.o
+ .rodata.tcp_tqueue_new_data.str1.8
+                0x000000000040b7f0       0x3a uspace/srv_net_tcp.p/srv_net_tcp_tqueue.c.o
+ .rodata.tcp_tqueue_ack_received.str1.8
+                0x000000000040b7f0       0x41 uspace/srv_net_tcp.p/srv_net_tcp_tqueue.c.o
+ .rodata.tcp_tqueue_ack_received.str1.1
+                0x000000000040b7f0       0x13 uspace/srv_net_tcp.p/srv_net_tcp_tqueue.c.o
+ .rodata.tcp_uc_open.str1.1
+                0x000000000040b7f0       0x66 uspace/srv_net_tcp.p/srv_net_tcp_ucall.c.o
+ .rodata.tcp_uc_open.str1.8
+                0x000000000040b7f0       0xa9 uspace/srv_net_tcp.p/srv_net_tcp_ucall.c.o
+ .rodata.tcp_uc_send.str1.1
+                0x000000000040b7f0       0x2e uspace/srv_net_tcp.p/srv_net_tcp_ucall.c.o
+ .rodata.tcp_uc_receive.str1.1
+                0x000000000040b7f0       0x15 uspace/srv_net_tcp.p/srv_net_tcp_ucall.c.o
+ .rodata.tcp_uc_receive.str1.8
+                0x000000000040b7f0       0x2b uspace/srv_net_tcp.p/srv_net_tcp_ucall.c.o
+ .rodata.tcp_uc_close.str1.1
+                0x000000000040b7f0       0x46 uspace/srv_net_tcp.p/srv_net_tcp_ucall.c.o
+ .rodata.tcp_uc_close.str1.8
+                0x000000000040b7f0       0x3f uspace/srv_net_tcp.p/srv_net_tcp_ucall.c.o
+ .rodata.tcp_uc_abort.str1.1
+                0x000000000040b7f0        0xf uspace/srv_net_tcp.p/srv_net_tcp_ucall.c.o
+ .rodata.tcp_uc_delete.str1.1
+                0x000000000040b7f0       0x10 uspace/srv_net_tcp.p/srv_net_tcp_ucall.c.o
+ .rodata.tcp_uc_set_cb.str1.1
+                0x000000000040b7f0       0x1a uspace/srv_net_tcp.p/srv_net_tcp_ucall.c.o
+ .rodata.tcp_as_segment_arrived.str1.8
+                0x000000000040b7f0       0x27 uspace/srv_net_tcp.p/srv_net_tcp_ucall.c.o
+ .rodata.tcp_as_segment_arrived.str1.1
+                0x000000000040b7f0       0x15 uspace/srv_net_tcp.p/srv_net_tcp_ucall.c.o
+ .rodata.tcp_service_recv_data.str1.1
+                0x000000000040b7f0       0x22 uspace/srv_net_tcp.p/srv_net_tcp_service.c.o
+ .rodata.tcp_service_cstate_change.str1.1
+                0x000000000040b7f0       0x43 uspace/srv_net_tcp.p/srv_net_tcp_service.c.o
+ .rodata.tcp_service_cstate_change.str1.8
+                0x000000000040b7f0       0x71 uspace/srv_net_tcp.p/srv_net_tcp_service.c.o
+ .rodata.tcp_conn_recv_impl.str1.1
+                0x000000000040b7f0       0x51 uspace/srv_net_tcp.p/srv_net_tcp_service.c.o
+ .rodata.tcp_conn_recv_impl.str1.8
+                0x000000000040b7f0       0x26 uspace/srv_net_tcp.p/srv_net_tcp_service.c.o
+ .rodata.tcp_client_conn.str1.1
+                0x000000000040b7f0      0x1d4 uspace/srv_net_tcp.p/srv_net_tcp_service.c.o
+ .rodata.tcp_client_conn.str1.8
+                0x000000000040b7f0      0x174 uspace/srv_net_tcp.p/srv_net_tcp_service.c.o
+ .rodata.tcp_client_conn
+                0x000000000040b7f0       0x58 uspace/srv_net_tcp.p/srv_net_tcp_service.c.o
+ .rodata.tcp_service_lst_cstate_change.str1.8
+                0x000000000040b848       0x20 uspace/srv_net_tcp.p/srv_net_tcp_service.c.o
+ .rodata.tcp_service_lst_cstate_change.str1.1
+                0x000000000040b848       0x12 uspace/srv_net_tcp.p/srv_net_tcp_service.c.o
+ .rodata.tcp_service_init.str1.1
+                0x000000000040b848       0x43 uspace/srv_net_tcp.p/srv_net_tcp_service.c.o
+ .rodata.main.str1.8
+                0x000000000040b848       0xa0 uspace/srv_net_tcp.p/srv_net_tcp_tcp.c.o
+ .rodata.main.str1.1
+                0x000000000040b848       0x55 uspace/srv_net_tcp.p/srv_net_tcp_tcp.c.o
+ .rodata.cst8   0x000000000040b848        0x8 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .rodata.amap_repla_find.str1.8
+                0x000000000040b850       0x5a uspace/lib/libnettl.a.p/nettl_src_amap.c.o
+ .rodata.amap_create.str1.1
+                0x000000000040b850       0x1b uspace/lib/libnettl.a.p/nettl_src_amap.c.o
+ .rodata.amap_create.str1.8
+                0x000000000040b850       0x2a uspace/lib/libnettl.a.p/nettl_src_amap.c.o
+ .rodata.amap_insert.str1.1
+                0x000000000040b850       0x5f uspace/lib/libnettl.a.p/nettl_src_amap.c.o
+ .rodata.amap_insert.str1.8
+                0x000000000040b850       0xe8 uspace/lib/libnettl.a.p/nettl_src_amap.c.o
+ .rodata.amap_remove.str1.1
+                0x000000000040b850       0x65 uspace/lib/libnettl.a.p/nettl_src_amap.c.o
+ .rodata.amap_remove.str1.8
+                0x000000000040b850       0x48 uspace/lib/libnettl.a.p/nettl_src_amap.c.o
+ .rodata.amap_find_match.str1.1
+                0x000000000040b850       0x8a uspace/lib/libnettl.a.p/nettl_src_amap.c.o
+ .rodata.portrng_create.str1.1
+                0x000000000040b850       0x30 uspace/lib/libnettl.a.p/nettl_src_portrng.c.o
+ .rodata.portrng_destroy.str1.1
+                0x000000000040b850       0x28 uspace/lib/libnettl.a.p/nettl_src_portrng.c.o
+ .rodata.portrng_destroy.str1.8
+                0x000000000040b850       0x2d uspace/lib/libnettl.a.p/nettl_src_portrng.c.o
+ .rodata.portrng_alloc.str1.1
+                0x000000000040b850       0x6c uspace/lib/libnettl.a.p/nettl_src_portrng.c.o
+ .rodata.portrng_alloc.str1.8
+                0x000000000040b850       0x20 uspace/lib/libnettl.a.p/nettl_src_portrng.c.o
+ .rodata.portrng_free_port.str1.1
+                0x000000000040b850       0x82 uspace/lib/libnettl.a.p/nettl_src_portrng.c.o
+ .rodata.portrng_free_port.str1.8
+                0x000000000040b850       0x22 uspace/lib/libnettl.a.p/nettl_src_portrng.c.o
+ .rodata.portrng_empty.str1.1
+                0x000000000040b850       0x10 uspace/lib/libnettl.a.p/nettl_src_portrng.c.o
+ .rodata.inet_addr_format_v6.str1.1
+                0x000000000040b850        0xb uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.inet_addr_format.str1.1
+                0x000000000040b850       0x11 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.inet_addr_get.str1.8
+                0x000000000040b850       0x29 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.inet_addr_get.str1.1
+                0x000000000040b850        0x6 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.inet_init.str1.8
+                0x000000000040b850       0x29 uspace/lib/libinet.a.p/inet_src_inet.c.o
+ .rodata.inet_init.str1.1
+                0x000000000040b850       0x42 uspace/lib/libinet.a.p/inet_src_inet.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x000000000040b850      0x36c
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x000000000040b850      0x36c uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+                0x000000000040b850                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x000000000040bbc0     0x1238
+ *(.eh_frame)
+ .eh_frame      0x000000000040bbc0      0x388 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+                                        0x3a8 (size before relaxing)
+ .eh_frame      0x000000000040bf48       0x28 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x000000000040bf70        0x0 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ .eh_frame      0x000000000040bf70       0x88 uspace/srv_net_tcp.p/srv_net_tcp_inet.c.o
+                                         0xa0 (size before relaxing)
+ .eh_frame      0x000000000040bff8       0x90 uspace/srv_net_tcp.p/srv_net_tcp_iqueue.c.o
+                                         0xd0 (size before relaxing)
+ .eh_frame      0x000000000040c088       0x60 uspace/srv_net_tcp.p/srv_net_tcp_ncsim.c.o
+                                         0xa0 (size before relaxing)
+ .eh_frame      0x000000000040c0e8       0xb0 uspace/srv_net_tcp.p/srv_net_tcp_pdu.c.o
+                                         0xc8 (size before relaxing)
+ .eh_frame      0x000000000040c198       0x98 uspace/srv_net_tcp.p/srv_net_tcp_rqueue.c.o
+                                         0xd8 (size before relaxing)
+ .eh_frame      0x000000000040c230      0x178 uspace/srv_net_tcp.p/srv_net_tcp_segment.c.o
+                                        0x190 (size before relaxing)
+ .eh_frame      0x000000000040c3a8      0x1b8 uspace/srv_net_tcp.p/srv_net_tcp_seq_no.c.o
+                                        0x1d0 (size before relaxing)
+ .eh_frame      0x000000000040c560        0x0 uspace/srv_net_tcp.p/srv_net_tcp_test.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x000000000040c560      0x1b0 uspace/srv_net_tcp.p/srv_net_tcp_tqueue.c.o
+                                        0x1c8 (size before relaxing)
+ .eh_frame      0x000000000040c710      0x198 uspace/srv_net_tcp.p/srv_net_tcp_ucall.c.o
+                                        0x1f0 (size before relaxing)
+ .eh_frame      0x000000000040c8a8      0x130 uspace/srv_net_tcp.p/srv_net_tcp_service.c.o
+                                        0x148 (size before relaxing)
+ .eh_frame      0x000000000040c9d8       0x28 uspace/srv_net_tcp.p/srv_net_tcp_tcp.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x000000000040ca00       0x20 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x000000000040ca20      0x108 uspace/lib/libnettl.a.p/nettl_src_amap.c.o
+                                        0x140 (size before relaxing)
+ .eh_frame      0x000000000040cb28       0xf0 uspace/lib/libnettl.a.p/nettl_src_portrng.c.o
+                                        0x108 (size before relaxing)
+ .eh_frame      0x000000000040cc18       0xf0 uspace/lib/libinet.a.p/inet_src_addr.c.o
+                                        0x478 (size before relaxing)
+ .eh_frame      0x000000000040cd08       0x20 uspace/lib/libinet.a.p/inet_src_endpoint.c.o
+                                         0x58 (size before relaxing)
+ .eh_frame      0x000000000040cd28        0x0 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+                                         0xa0 (size before relaxing)
+ .eh_frame      0x000000000040cd28       0xd0 uspace/lib/libinet.a.p/inet_src_inet.c.o
+                                         0xe8 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x000000000040cdf8        0x0
+ *(.sframe)
+ .sframe        0x000000000040cdf8        0x0 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x000000000040d000                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0x000000000040d000        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x000000000040d000        0x0
+                0x000000000040d000                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x000000000040d000                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x000000000040d000        0x0
+                0x000000000040d000                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x000000000040d000                PROVIDE (__init_array_end = .)
+
+.fini_array     0x000000000040d000        0x0
+                0x000000000040d000                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x000000000040d000                PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x000000000040d000        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x000000000040d000        0x0 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+
+.dynamic        0x000000000040d000      0x150
+ *(.dynamic)
+ .dynamic       0x000000000040d000      0x150 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+                0x000000000040d000                _DYNAMIC
+
+.got            0x000000000040d150        0x0
+ *(.got)
+ .got           0x000000000040d150        0x0 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ *(.igot)
+                0x000000000040d150                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x000000000040d150      0x200
+ *(.got.plt)
+ .got.plt       0x000000000040d150      0x200 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+                0x000000000040d150                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x000000000040d350        0x0 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+
+.data           0x000000000040d360       0xa8
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.tcp_conn_tqueue_cb
+                0x000000000040d360        0x8 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ *fill*         0x000000000040d368       0x18 
+ .data.amap_lock
+                0x000000000040d380       0x20 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ .data.conn_list_lock
+                0x000000000040d3a0       0x20 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ .data.conn_list
+                0x000000000040d3c0       0x10 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ .data.tcp_inet_ev_ops
+                0x000000000040d3d0        0x8 uspace/srv_net_tcp.p/srv_net_tcp_inet.c.o
+ *fill*         0x000000000040d3d8        0x8 
+ .data.tcp_service_lst_cb
+                0x000000000040d3e0       0x10 uspace/srv_net_tcp.p/srv_net_tcp_service.c.o
+ .data.tcp_service_cb
+                0x000000000040d3f0       0x10 uspace/srv_net_tcp.p/srv_net_tcp_service.c.o
+ .data.tcp_rqueue_cb
+                0x000000000040d400        0x8 uspace/srv_net_tcp.p/srv_net_tcp_tcp.c.o
+
+.data1
+ *(.data1)
+                0x000000000040d408                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x000000000040d408                . = .
+                0x000000000040d408                __bss_start = .
+
+.bss            0x000000000040d420      0x178
+ *(.dynbss)
+ .dynbss        0x000000000040d420       0x48 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+                0x000000000040d420                __progsymbols
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss.tcp_conn_lb
+                0x000000000040d468        0x4 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+                0x000000000040d468                tcp_conn_lb
+ *fill*         0x000000000040d46c        0x4 
+ .bss.amap      0x000000000040d470        0x8 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+ *fill*         0x000000000040d478        0x8 
+ .bss.sim_queue_cv
+                0x000000000040d480       0x10 uspace/srv_net_tcp.p/srv_net_tcp_ncsim.c.o
+ *fill*         0x000000000040d490       0x10 
+ .bss.sim_queue_lock
+                0x000000000040d4a0       0x20 uspace/srv_net_tcp.p/srv_net_tcp_ncsim.c.o
+ .bss.sim_queue
+                0x000000000040d4c0       0x10 uspace/srv_net_tcp.p/srv_net_tcp_ncsim.c.o
+ .bss.rqueue_cb
+                0x000000000040d4d0        0x8 uspace/srv_net_tcp.p/srv_net_tcp_rqueue.c.o
+ *fill*         0x000000000040d4d8        0x8 
+ .bss.cv        0x000000000040d4e0       0x10 uspace/srv_net_tcp.p/srv_net_tcp_rqueue.c.o
+ *fill*         0x000000000040d4f0       0x10 
+ .bss.lock      0x000000000040d500       0x20 uspace/srv_net_tcp.p/srv_net_tcp_rqueue.c.o
+ .bss.fibril_active
+                0x000000000040d520        0x1 uspace/srv_net_tcp.p/srv_net_tcp_rqueue.c.o
+ *fill*         0x000000000040d521       0x1f 
+ .bss.rqueue    0x000000000040d540       0x40 uspace/srv_net_tcp.p/srv_net_tcp_rqueue.c.o
+ .bss.inet_protocol
+                0x000000000040d580        0x1 uspace/lib/libinet.a.p/inet_src_inet.c.o
+ *fill*         0x000000000040d581        0x7 
+ .bss.inet_ev_ops
+                0x000000000040d588        0x8 uspace/lib/libinet.a.p/inet_src_inet.c.o
+ .bss.inet_sess
+                0x000000000040d590        0x8 uspace/lib/libinet.a.p/inet_src_inet.c.o
+ *(COMMON)
+                0x000000000040d598                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x000000000040d598                . = ALIGN (0x8)
+                0x000000000040d598                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x000000000040f598        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x000000000040f598                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x000000000040f598                . = ALIGN (0x8)
+                0x000000000040d598                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x000000000040f598                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/srv_net_tcp.p/srv_net_tcp_conn.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/srv_net_tcp.p/srv_net_tcp_inet.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_net_tcp.p/srv_net_tcp_iqueue.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_net_tcp.p/srv_net_tcp_ncsim.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_net_tcp.p/srv_net_tcp_pdu.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_net_tcp.p/srv_net_tcp_rqueue.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_net_tcp.p/srv_net_tcp_segment.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_net_tcp.p/srv_net_tcp_seq_no.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_net_tcp.p/srv_net_tcp_test.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_net_tcp.p/srv_net_tcp_tqueue.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_net_tcp.p/srv_net_tcp_ucall.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_net_tcp.p/srv_net_tcp_service.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_net_tcp.p/srv_net_tcp_tcp.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libnettl.a.p/nettl_src_amap.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libnettl.a.p/nettl_src_portrng.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libinet.a.p/inet_src_endpoint.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libinet.a.p/inet_src_inet.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/srv_net_tcp elf64-x86-64)

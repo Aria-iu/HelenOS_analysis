@@ -1,0 +1,590 @@
+Archive member included to satisfy reference by file (symbol)
+
+uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                              (--whole-archive)
+uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                              (--whole-archive)
+uspace/lib/libdevice.a.p/device_src_devman.c.o
+                              uspace/app_pci.p/app_pci_pci.c.o (devman_fun_get_driver_name)
+uspace/lib/libdevice.a.p/device_src_pci.c.o
+                              uspace/app_pci.p/app_pci_pci.c.o (pci_open)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.0                     uspace/app_pci.p/app_pci_pci.c.o (putchar)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/app_pci.p/app_pci_pci.c.o
+ .data          0x0000000000000000        0x0 uspace/app_pci.p/app_pci_pci.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_pci.p/app_pci_pci.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .text          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_get_handles_internal
+                0x0000000000000000      0x1a2 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_exchange_begin
+                0x0000000000000000       0xbc uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_exchange_end
+                0x0000000000000000        0xa uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_driver_register
+                0x0000000000000000      0x10f uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_add_function
+                0x0000000000000000      0x1b6 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_add_device_to_category
+                0x0000000000000000       0xa1 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_device_connect
+                0x0000000000000000       0x26 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_remove_function
+                0x0000000000000000       0x3a uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_drv_fun_online
+                0x0000000000000000       0x96 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_drv_fun_offline
+                0x0000000000000000       0x96 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_parent_device_connect
+                0x0000000000000000       0x26 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_fun_get_handle
+                0x0000000000000000      0x15c uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_fun_get_path
+                0x0000000000000000       0xf2 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_fun_get_match_id
+                0x0000000000000000      0x108 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_fun_get_name
+                0x0000000000000000       0xf2 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_fun_online
+                0x0000000000000000       0x96 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_fun_offline
+                0x0000000000000000       0x96 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_fun_get_child
+                0x0000000000000000       0xb4 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_dev_get_functions
+                0x0000000000000000       0x18 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_dev_get_parent
+                0x0000000000000000       0xb4 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_fun_sid_to_handle
+                0x0000000000000000       0xb4 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_get_drivers
+                0x0000000000000000       0x17 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_driver_get_devices
+                0x0000000000000000       0x18 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_driver_get_handle
+                0x0000000000000000      0x142 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_driver_get_match_id
+                0x0000000000000000      0x108 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_driver_get_name
+                0x0000000000000000       0xf2 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_driver_get_state
+                0x0000000000000000       0xbc uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_driver_load
+                0x0000000000000000       0x96 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_driver_unload
+                0x0000000000000000       0x96 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_pci.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_pci.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_pci.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/app_pci.p/app_pci_pci.c.o
+START GROUP
+LOAD uspace/lib/c/libstartfiles.a
+LOAD uspace/lib/libdevice.a
+LOAD uspace/lib/libc.so.0.0
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000400000                PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x0000000000400120                . = (SEGMENT_START ("text-segment", 0x400000) + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000400120       0xd8
+ *(.hash)
+ .hash          0x0000000000400120       0xd8 uspace/app_pci.p/app_pci_pci.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x00000000004001f8      0x348
+ *(.dynsym)
+ .dynsym        0x00000000004001f8      0x348 uspace/app_pci.p/app_pci_pci.c.o
+
+.dynstr         0x0000000000400540      0x1fe
+ *(.dynstr)
+ .dynstr        0x0000000000400540      0x1fe uspace/app_pci.p/app_pci_pci.c.o
+
+.gnu.version    0x000000000040073e        0x0
+ *(.gnu.version)
+ .gnu.version   0x000000000040073e        0x0 uspace/app_pci.p/app_pci_pci.c.o
+
+.gnu.version_d  0x0000000000400740        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000400740        0x0 uspace/app_pci.p/app_pci_pci.c.o
+
+.gnu.version_r  0x0000000000400740        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000400740        0x0 uspace/app_pci.p/app_pci_pci.c.o
+
+.rela.dyn       0x0000000000400740       0x30
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text.pci_list_bridge_id
+                0x0000000000400740        0x0 uspace/app_pci.p/app_pci_pci.c.o
+ .rela.text.__c_start
+                0x0000000000400740        0x0 uspace/app_pci.p/app_pci_pci.c.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ .rela.rodata.cst8
+                0x0000000000400740        0x0 uspace/app_pci.p/app_pci_pci.c.o
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x0000000000400740        0x0 uspace/app_pci.p/app_pci_pci.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000400740        0x0 uspace/app_pci.p/app_pci_pci.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x0000000000400740       0x30 uspace/app_pci.p/app_pci_pci.c.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+
+.rela.plt       0x0000000000400770      0x300
+ *(.rela.plt)
+ .rela.plt      0x0000000000400770      0x300 uspace/app_pci.p/app_pci_pci.c.o
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+ .rela.iplt     0x0000000000400a70        0x0 uspace/app_pci.p/app_pci_pci.c.o
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x0000000000400a70      0x210
+ *(.plt)
+ .plt           0x0000000000400a70      0x210 uspace/app_pci.p/app_pci_pci.c.o
+                0x0000000000400a80                putchar
+                0x0000000000400a90                loc_category_get_id
+                0x0000000000400aa0                loc_service_connect
+                0x0000000000400ab0                printf
+                0x0000000000400ac0                async_hangup
+                0x0000000000400ad0                async_send_2
+                0x0000000000400ae0                async_wait_for
+                0x0000000000400af0                table_destroy
+                0x0000000000400b00                table_header_row
+                0x0000000000400b10                service_connect_blocking
+                0x0000000000400b20                table_create
+                0x0000000000400b30                async_send_1
+                0x0000000000400b40                puts
+                0x0000000000400b50                malloc
+                0x0000000000400b60                loc_service_get_id
+                0x0000000000400b70                async_data_read
+                0x0000000000400b80                async_exchange_end
+                0x0000000000400b90                loc_service_get_name
+                0x0000000000400ba0                calloc
+                0x0000000000400bb0                fibril_mutex_unlock
+                0x0000000000400bc0                realloc
+                0x0000000000400bd0                str_cmp
+                0x0000000000400be0                __helenos_assert_abort
+                0x0000000000400bf0                async_data_read_start
+                0x0000000000400c00                table_print_out
+                0x0000000000400c10                loc_category_get_svcs
+                0x0000000000400c20                async_exchange_begin
+                0x0000000000400c30                __libc_main
+                0x0000000000400c40                async_forget
+                0x0000000000400c50                table_printf
+                0x0000000000400c60                free
+                0x0000000000400c70                fibril_mutex_lock
+ *(.iplt)
+ .iplt          0x0000000000400c80        0x0 uspace/app_pci.p/app_pci_pci.c.o
+
+.plt.got        0x0000000000400c80        0x0
+ *(.plt.got)
+ .plt.got       0x0000000000400c80        0x0 uspace/app_pci.p/app_pci_pci.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x0000000000400c80      0xab8
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ .text.startup.main
+                0x0000000000400c80      0x173 uspace/app_pci.p/app_pci_pci.c.o
+                0x0000000000400c80                main
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ *fill*         0x0000000000400df3        0xd 
+ .text.pci_list_bridge_id
+                0x0000000000400e00      0x2a3 uspace/app_pci.p/app_pci_pci.c.o
+ .text          0x00000000004010a3        0xc uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                0x00000000004010a3                _start
+ *fill*         0x00000000004010af        0x1 
+ .text.__c_start
+                0x00000000004010b0       0x8c uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                0x00000000004010b0                __c_start
+ *fill*         0x000000000040113c        0x4 
+ .text.devman_exchange_begin_blocking
+                0x0000000000401140      0x1ec uspace/lib/libdevice.a.p/device_src_devman.c.o
+                0x0000000000401140                devman_exchange_begin_blocking
+ *fill*         0x000000000040132c        0x4 
+ .text.devman_fun_get_driver_name
+                0x0000000000401330       0xf2 uspace/lib/libdevice.a.p/device_src_devman.c.o
+                0x0000000000401330                devman_fun_get_driver_name
+ *fill*         0x0000000000401422        0xe 
+ .text.pci_open
+                0x0000000000401430       0x7d uspace/lib/libdevice.a.p/device_src_pci.c.o
+                0x0000000000401430                pci_open
+ *fill*         0x00000000004014ad        0x3 
+ .text.pci_close
+                0x00000000004014b0       0x31 uspace/lib/libdevice.a.p/device_src_pci.c.o
+                0x00000000004014b0                pci_close
+ *fill*         0x00000000004014e1        0xf 
+ .text.pci_get_devices
+                0x00000000004014f0      0x1a4 uspace/lib/libdevice.a.p/device_src_pci.c.o
+                0x00000000004014f0                pci_get_devices
+ *fill*         0x0000000000401694        0xc 
+ .text.pci_dev_get_info
+                0x00000000004016a0       0x98 uspace/lib/libdevice.a.p/device_src_pci.c.o
+                0x00000000004016a0                pci_dev_get_info
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000401738      0x270
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.pci_list_bridge_id.str1.1
+                0x0000000000401738       0xe3 uspace/app_pci.p/app_pci_pci.c.o
+                                         0x8c (size before relaxing)
+ *fill*         0x000000000040181b        0x5 
+ .rodata.pci_list_bridge_id.str1.8
+                0x0000000000401820      0x17d uspace/app_pci.p/app_pci_pci.c.o
+                                         0x8d (size before relaxing)
+ .rodata.main.str1.1
+                0x000000000040199d       0x3e uspace/app_pci.p/app_pci_pci.c.o
+ .rodata.main.str1.8
+                0x000000000040199d       0xbc uspace/app_pci.p/app_pci_pci.c.o
+ *fill*         0x000000000040199d        0x3 
+ .rodata.cst8   0x00000000004019a0        0x8 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .rodata.devman_fun_get_path.str1.8
+                0x00000000004019a8       0x2d uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .rodata.devman_fun_get_path.str1.1
+                0x00000000004019a8       0x19 uspace/lib/libdevice.a.p/device_src_devman.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x00000000004019a8       0x5c
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x00000000004019a8       0x5c uspace/app_pci.p/app_pci_pci.c.o
+                0x00000000004019a8                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x0000000000401a08      0x1d4
+ *(.eh_frame)
+ .eh_frame      0x0000000000401a08       0x70 uspace/app_pci.p/app_pci_pci.c.o
+ .eh_frame      0x0000000000401a78       0x28 uspace/app_pci.p/app_pci_pci.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000401aa0        0x0 uspace/app_pci.p/app_pci_pci.c.o
+ .eh_frame      0x0000000000401aa0       0x20 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000401ac0       0x68 uspace/lib/libdevice.a.p/device_src_devman.c.o
+                                        0x598 (size before relaxing)
+ .eh_frame      0x0000000000401b28       0xb4 uspace/lib/libdevice.a.p/device_src_pci.c.o
+                                         0xd0 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x0000000000401bdc        0x0
+ *(.sframe)
+ .sframe        0x0000000000401bdc        0x0 uspace/app_pci.p/app_pci_pci.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x0000000000402bdc                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0x0000000000402bdc        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0000000000402bdc        0x0
+                0x0000000000402bdc                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x0000000000402bdc                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x0000000000402bdc        0x0
+                0x0000000000402bdc                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x0000000000402bdc                PROVIDE (__init_array_end = .)
+
+.fini_array     0x0000000000402bdc        0x0
+                0x0000000000402bdc                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x0000000000402bdc                PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x0000000000402bdc        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x0000000000402bdc        0x0 uspace/app_pci.p/app_pci_pci.c.o
+
+.dynamic        0x0000000000402be0      0x150
+ *(.dynamic)
+ .dynamic       0x0000000000402be0      0x150 uspace/app_pci.p/app_pci_pci.c.o
+                0x0000000000402be0                _DYNAMIC
+
+.got            0x0000000000402d30        0x0
+ *(.got)
+ .got           0x0000000000402d30        0x0 uspace/app_pci.p/app_pci_pci.c.o
+ *(.igot)
+                0x0000000000402d30                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x0000000000402d30      0x118
+ *(.got.plt)
+ .got.plt       0x0000000000402d30      0x118 uspace/app_pci.p/app_pci_pci.c.o
+                0x0000000000402d30                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x0000000000402e48        0x0 uspace/app_pci.p/app_pci_pci.c.o
+
+.data           0x0000000000402e60       0x80
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.devman_client_mutex
+                0x0000000000402e60       0x20 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .data.devman_driver_mutex
+                0x0000000000402e80       0x20 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .data.devman_client_block_mutex
+                0x0000000000402ea0       0x20 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .data.devman_driver_block_mutex
+                0x0000000000402ec0       0x20 uspace/lib/libdevice.a.p/device_src_devman.c.o
+
+.data1
+ *(.data1)
+                0x0000000000402ee0                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x0000000000402ee0                . = .
+                0x0000000000402ee0                __bss_start = .
+
+.bss            0x0000000000402ee0       0x88
+ *(.dynbss)
+ .dynbss        0x0000000000402ee0       0x68 uspace/app_pci.p/app_pci_pci.c.o
+                0x0000000000402ee0                stdout
+                0x0000000000402f00                __progsymbols
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss.devman_client_sess
+                0x0000000000402f48        0x8 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .bss.devman_driver_sess
+                0x0000000000402f50        0x8 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .bss.devman_client_block_sess
+                0x0000000000402f58        0x8 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .bss.devman_driver_block_sess
+                0x0000000000402f60        0x8 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ *(COMMON)
+                0x0000000000402f68                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x0000000000402f68                . = ALIGN (0x8)
+                0x0000000000402f68                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x0000000000404f68        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x0000000000404f68                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000404f68                . = ALIGN (0x8)
+                0x0000000000402f68                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x0000000000404f68                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/app_pci.p/app_pci_pci.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdevice.a.p/device_src_pci.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/app_pci elf64-x86-64)

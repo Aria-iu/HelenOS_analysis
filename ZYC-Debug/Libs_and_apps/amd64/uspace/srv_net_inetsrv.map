@@ -1,0 +1,1344 @@
+Archive member included to satisfy reference by file (symbol)
+
+uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                              (--whole-archive)
+uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                              (--whole-archive)
+uspace/lib/libinet.a.p/inet_src_addr.c.o
+                              uspace/srv_net_inetsrv.p/srv_net_inetsrv_ndp.c.o (addr128)
+uspace/lib/libinet.a.p/inet_src_dhcp.c.o
+                              uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o (dhcp_init)
+uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+                              uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o (eth_addr_encode)
+uspace/lib/libinet.a.p/inet_src_iplink.c.o
+                              uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o (iplink_open)
+uspace/lib/libsif.a.p/sif_src_sif.c.o
+                              uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetcfg.c.o (sif_new)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.0                     uspace/lib/libinet.a.p/inet_src_iplink.c.o (loc_exchange_end)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_icmp.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_icmp.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_icmp.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_icmpv6.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_icmpv6.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_icmpv6.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetsrv.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetsrv.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetsrv.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetcfg.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetcfg.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetcfg.c.o
+ .text.inet_cfg_close
+                0x0000000000000000        0xa uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetcfg.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetping.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetping.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetping.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_ndp.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_ndp.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_ndp.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_ntrans.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_ntrans.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_ntrans.c.o
+ .text.ntrans_remove
+                0x0000000000000000       0xa4 uspace/srv_net_inetsrv.p/srv_net_inetsrv_ntrans.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_pdu.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_pdu.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_pdu.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_reass.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_reass.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_reass.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_sroute.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_sroute.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_sroute.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .text          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr
+                0x0000000000000000       0x29 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr6
+                0x0000000000000000       0x5c uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_naddr
+                0x0000000000000000       0x17 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_is_any
+                0x0000000000000000       0x3c uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_set
+                0x0000000000000000       0x13 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.inet_addr_any_addr6
+                0x0000000000000000       0x14 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.addr32_broadcast_all_hosts
+                0x0000000000000000        0x4 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_dhcp.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_dhcp.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_dhcp.c.o
+ .text.dhcp_link_remove
+                0x0000000000000000       0x3c uspace/lib/libinet.a.p/inet_src_dhcp.c.o
+ .text.dhcp_discover
+                0x0000000000000000       0x3c uspace/lib/libinet.a.p/inet_src_dhcp.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .text.eth_addr_compare
+                0x0000000000000000       0x19 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .rodata.eth_addr_broadcast
+                0x0000000000000000        0x8 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_iplink.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_iplink.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_iplink.c.o
+ .text.iplink_set_mac48
+                0x0000000000000000       0x8e uspace/lib/libinet.a.p/inet_src_iplink.c.o
+ .text.iplink_addr_remove
+                0x0000000000000000       0x8e uspace/lib/libinet.a.p/inet_src_iplink.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libsif.a.p/sif_src_sif.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libsif.a.p/sif_src_sif.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libsif.a.p/sif_src_sif.c.o
+ .text.sif_node_prepend_child
+                0x0000000000000000       0xaf uspace/lib/libsif.a.p/sif_src_sif.c.o
+ .text.sif_node_insert_before
+                0x0000000000000000       0xbf uspace/lib/libsif.a.p/sif_src_sif.c.o
+ .text.sif_node_insert_after
+                0x0000000000000000       0xbf uspace/lib/libsif.a.p/sif_src_sif.c.o
+ .text.sif_node_destroy
+                0x0000000000000000       0x2b uspace/lib/libsif.a.p/sif_src_sif.c.o
+ .text.sif_node_unset_attr
+                0x0000000000000000       0x72 uspace/lib/libsif.a.p/sif_src_sif.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+LOAD uspace/srv_net_inetsrv.p/srv_net_inetsrv_icmp.c.o
+LOAD uspace/srv_net_inetsrv.p/srv_net_inetsrv_icmpv6.c.o
+LOAD uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetsrv.c.o
+LOAD uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+LOAD uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetcfg.c.o
+LOAD uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetping.c.o
+LOAD uspace/srv_net_inetsrv.p/srv_net_inetsrv_ndp.c.o
+LOAD uspace/srv_net_inetsrv.p/srv_net_inetsrv_ntrans.c.o
+LOAD uspace/srv_net_inetsrv.p/srv_net_inetsrv_pdu.c.o
+LOAD uspace/srv_net_inetsrv.p/srv_net_inetsrv_reass.c.o
+LOAD uspace/srv_net_inetsrv.p/srv_net_inetsrv_sroute.c.o
+START GROUP
+LOAD uspace/lib/c/libstartfiles.a
+LOAD uspace/lib/libinet.a
+LOAD uspace/lib/libc.so.0.0
+LOAD uspace/lib/libsif.a
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000400000                PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x0000000000400120                . = (SEGMENT_START ("text-segment", 0x400000) + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000400120      0x260
+ *(.hash)
+ .hash          0x0000000000400120      0x260 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x0000000000400380      0x7c8
+ *(.dynsym)
+ .dynsym        0x0000000000400380      0x7c8 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+
+.dynstr         0x0000000000400b48      0x4ba
+ *(.dynstr)
+ .dynstr        0x0000000000400b48      0x4ba uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+
+.gnu.version    0x0000000000401002        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000401002        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+
+.gnu.version_d  0x0000000000401008        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000401008        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+
+.gnu.version_r  0x0000000000401008        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000401008        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+
+.rela.dyn       0x0000000000401008       0x18
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text.__c_start
+                0x0000000000401008        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ .rela.rodata.cst8
+                0x0000000000401008        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x0000000000401008        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000401008        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x0000000000401008       0x18 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+
+.rela.plt       0x0000000000401020      0x798
+ *(.rela.plt)
+ .rela.plt      0x0000000000401020      0x798 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+ .rela.iplt     0x00000000004017b8        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x00000000004017c0      0x520
+ *(.plt)
+ .plt           0x00000000004017c0      0x520 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+                0x00000000004017d0                loc_exchange_end
+                0x00000000004017e0                loc_category_get_id
+                0x00000000004017f0                task_retval
+                0x0000000000401800                loc_service_connect
+                0x0000000000401810                async_hangup
+                0x0000000000401820                odict_first
+                0x0000000000401830                async_send_2
+                0x0000000000401840                ungetc
+                0x0000000000401850                async_wait_for
+                0x0000000000401860                snprintf
+                0x0000000000401870                log_init
+                0x0000000000401880                async_data_write_start
+                0x0000000000401890                loc_service_register
+                0x00000000004018a0                async_get_call
+                0x00000000004018b0                fibril_mutex_is_locked
+                0x00000000004018c0                async_data_read_finalize
+                0x00000000004018d0                async_send_1
+                0x00000000004018e0                memcpy
+                0x00000000004018f0                loc_server_unregister
+                0x0000000000401900                puts
+                0x0000000000401910                malloc
+                0x0000000000401920                async_req_1_0
+                0x0000000000401930                strtoul
+                0x0000000000401940                odict_insert
+                0x0000000000401950                loc_service_get_id
+                0x0000000000401960                isspace
+                0x0000000000401970                async_answer_0
+                0x0000000000401980                fflush
+                0x0000000000401990                odict_find_eq
+                0x00000000004019a0                log_msg
+                0x00000000004019b0                odict_remove
+                0x00000000004019c0                async_exchange_end
+                0x00000000004019d0                loc_service_get_name
+                0x00000000004019e0                calloc
+                0x00000000004019f0                fibril_condvar_wait_timeout
+                0x0000000000401a00                loc_register_cat_change_cb
+                0x0000000000401a10                fibril_condvar_broadcast
+                0x0000000000401a20                odict_next
+                0x0000000000401a30                str_uint8_t
+                0x0000000000401a40                fibril_mutex_unlock
+                0x0000000000401a50                str_dup
+                0x0000000000401a60                async_req_0_1
+                0x0000000000401a70                realloc
+                0x0000000000401a80                isalpha
+                0x0000000000401a90                async_create_callback_port
+                0x0000000000401aa0                str_cmp
+                0x0000000000401ab0                fopen
+                0x0000000000401ac0                __helenos_assert_abort
+                0x0000000000401ad0                async_data_read_receive
+                0x0000000000401ae0                odict_initialize
+                0x0000000000401af0                async_accept_0
+                0x0000000000401b00                async_data_read_start
+                0x0000000000401b10                fclose
+                0x0000000000401b20                isalnum
+                0x0000000000401b30                str_error_name
+                0x0000000000401b40                fgetc
+                0x0000000000401b50                asprintf
+                0x0000000000401b60                loc_server_register
+                0x0000000000401b70                loc_category_get_svcs
+                0x0000000000401b80                str_size
+                0x0000000000401b90                fputc
+                0x0000000000401ba0                list_count
+                0x0000000000401bb0                str_length
+                0x0000000000401bc0                str_lcmp
+                0x0000000000401bd0                async_answer_1
+                0x0000000000401be0                async_exchange_begin
+                0x0000000000401bf0                async_send_0
+                0x0000000000401c00                str_error
+                0x0000000000401c10                str_uint16_t
+                0x0000000000401c20                async_create_port
+                0x0000000000401c30                async_data_write_finalize
+                0x0000000000401c40                async_data_write_accept
+                0x0000000000401c50                __libc_main
+                0x0000000000401c60                async_manager
+                0x0000000000401c70                async_forget
+                0x0000000000401c80                odlink_used
+                0x0000000000401c90                fputs
+                0x0000000000401ca0                async_data_write_receive
+                0x0000000000401cb0                async_callback_receive
+                0x0000000000401cc0                free
+                0x0000000000401cd0                fibril_mutex_lock
+ *(.iplt)
+ .iplt          0x0000000000401ce0        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+
+.plt.got        0x0000000000401ce0        0x0
+ *(.plt.got)
+ .plt.got       0x0000000000401ce0        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x0000000000401ce0     0x87c8
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ .text.startup.main
+                0x0000000000401ce0      0x14e uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetsrv.c.o
+                0x0000000000401ce0                main
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ *fill*         0x0000000000401e2e        0x2 
+ .text.inet_addrobj_find_by_name_locked
+                0x0000000000401e30       0xec uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+ *fill*         0x0000000000401f1c        0x4 
+ .text.inet_addrobj_new
+                0x0000000000401f20       0x6a uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+                0x0000000000401f20                inet_addrobj_new
+ *fill*         0x0000000000401f8a        0x6 
+ .text.inet_addrobj_delete
+                0x0000000000401f90       0x27 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+                0x0000000000401f90                inet_addrobj_delete
+ *fill*         0x0000000000401fb7        0x9 
+ .text.inet_addrobj_add
+                0x0000000000401fc0       0x75 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+                0x0000000000401fc0                inet_addrobj_add
+ *fill*         0x0000000000402035        0xb 
+ .text.inet_addrobj_remove
+                0x0000000000402040       0x44 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+                0x0000000000402040                inet_addrobj_remove
+ *fill*         0x0000000000402084        0xc 
+ .text.inet_addrobj_find
+                0x0000000000402090       0xf3 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+                0x0000000000402090                inet_addrobj_find
+ *fill*         0x0000000000402183        0xd 
+ .text.inet_addrobj_find_by_name
+                0x0000000000402190       0x56 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+                0x0000000000402190                inet_addrobj_find_by_name
+ *fill*         0x00000000004021e6        0xa 
+ .text.inet_addrobj_get_by_id
+                0x00000000004021f0       0x84 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+                0x00000000004021f0                inet_addrobj_get_by_id
+ *fill*         0x0000000000402274        0xc 
+ .text.inet_addrobj_cnt_by_link
+                0x0000000000402280       0x78 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+                0x0000000000402280                inet_addrobj_cnt_by_link
+ *fill*         0x00000000004022f8        0x8 
+ .text.inet_addrobj_send_dgram
+                0x0000000000402300      0x128 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+                0x0000000000402300                inet_addrobj_send_dgram
+ *fill*         0x0000000000402428        0x8 
+ .text.inet_addrobj_get_id_list
+                0x0000000000402430       0x97 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+                0x0000000000402430                inet_addrobj_get_id_list
+ *fill*         0x00000000004024c7        0x9 
+ .text.inet_addrobjs_load
+                0x00000000004024d0      0x27e uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+                0x00000000004024d0                inet_addrobjs_load
+ *fill*         0x000000000040274e        0x2 
+ .text.inet_addrobjs_save
+                0x0000000000402750      0x1dd uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+                0x0000000000402750                inet_addrobjs_save
+ *fill*         0x000000000040292d        0x3 
+ .text.icmp_recv
+                0x0000000000402930      0x1c6 uspace/srv_net_inetsrv.p/srv_net_inetsrv_icmp.c.o
+                0x0000000000402930                icmp_recv
+ *fill*         0x0000000000402af6        0xa 
+ .text.icmp_ping_send
+                0x0000000000402b00       0xf2 uspace/srv_net_inetsrv.p/srv_net_inetsrv_icmp.c.o
+                0x0000000000402b00                icmp_ping_send
+ *fill*         0x0000000000402bf2        0xe 
+ .text.icmpv6_recv
+                0x0000000000402c00      0x298 uspace/srv_net_inetsrv.p/srv_net_inetsrv_icmpv6.c.o
+                0x0000000000402c00                icmpv6_recv
+ *fill*         0x0000000000402e98        0x8 
+ .text.icmpv6_ping_send
+                0x0000000000402ea0      0x180 uspace/srv_net_inetsrv.p/srv_net_inetsrv_icmpv6.c.o
+                0x0000000000402ea0                icmpv6_ping_send
+ .text.inet_route_packet
+                0x0000000000403020      0x176 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetsrv.c.o
+                0x0000000000403020                inet_route_packet
+ *fill*         0x0000000000403196        0xa 
+ .text.inet_get_srcaddr
+                0x00000000004031a0       0x8f uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetsrv.c.o
+                0x00000000004031a0                inet_get_srcaddr
+ *fill*         0x000000000040322f        0x1 
+ .text.inet_default_conn
+                0x0000000000403230      0x494 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetsrv.c.o
+ *fill*         0x00000000004036c4        0xc 
+ .text.inet_ev_recv
+                0x00000000004036d0      0x12f uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetsrv.c.o
+                0x00000000004036d0                inet_ev_recv
+ *fill*         0x00000000004037ff        0x1 
+ .text.inet_recv_dgram_local
+                0x0000000000403800       0xf0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetsrv.c.o
+                0x0000000000403800                inet_recv_dgram_local
+ .text.inet_recv_packet
+                0x00000000004038f0       0xda uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetsrv.c.o
+                0x00000000004038f0                inet_recv_packet
+ *fill*         0x00000000004039ca        0x6 
+ .text.inet_iplink_change_addr
+                0x00000000004039d0       0x8e uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+ *fill*         0x0000000000403a5e        0x2 
+ .text.inet_iplink_recv
+                0x0000000000403a60      0x158 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+ *fill*         0x0000000000403bb8        0x8 
+ .text.inet_link_open_locked
+                0x0000000000403bc0      0x4f2 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+ *fill*         0x00000000004040b2        0xe 
+ .text.inet_link_open
+                0x00000000004040c0       0x32 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+                0x00000000004040c0                inet_link_open
+ *fill*         0x00000000004040f2        0xe 
+ .text.inet_link_send_dgram
+                0x0000000000404100      0x17d uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+                0x0000000000404100                inet_link_send_dgram
+ *fill*         0x000000000040427d        0x3 
+ .text.inet_link_send_dgram6
+                0x0000000000404280      0x177 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+                0x0000000000404280                inet_link_send_dgram6
+ *fill*         0x00000000004043f7        0x9 
+ .text.inet_link_get_by_id
+                0x0000000000404400       0x78 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+                0x0000000000404400                inet_link_get_by_id
+ *fill*         0x0000000000404478        0x8 
+ .text.inet_link_get_by_svc_name
+                0x0000000000404480       0x88 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+                0x0000000000404480                inet_link_get_by_svc_name
+ *fill*         0x0000000000404508        0x8 
+ .text.inet_link_get_id_list
+                0x0000000000404510       0x97 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+                0x0000000000404510                inet_link_get_id_list
+ *fill*         0x00000000004045a7        0x9 
+ .text.inet_link_autoconf_link
+                0x00000000004045b0       0xbc uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+                0x00000000004045b0                inet_link_autoconf_link
+ *fill*         0x000000000040466c        0x4 
+ .text.inet_link_check_new
+                0x0000000000404670      0x20e uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+ *fill*         0x000000000040487e        0x2 
+ .text.inet_link_discovery_start
+                0x0000000000404880       0x54 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+                0x0000000000404880                inet_link_discovery_start
+ *fill*         0x00000000004048d4        0xc 
+ .text.inet_link_cat_change_cb
+                0x00000000004048e0        0xa uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+ *fill*         0x00000000004048ea        0x6 
+ .text.inet_link_autoconf
+                0x00000000004048f0      0x310 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+                0x00000000004048f0                inet_link_autoconf
+ .text.inet_cfg_open
+                0x0000000000404c00      0x152 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetcfg.c.o
+                0x0000000000404c00                inet_cfg_open
+ *fill*         0x0000000000404d52        0xe 
+ .text.inet_cfg_sync
+                0x0000000000404d60       0xf8 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetcfg.c.o
+                0x0000000000404d60                inet_cfg_sync
+ *fill*         0x0000000000404e58        0x8 
+ .text.inet_cfg_conn
+                0x0000000000404e60      0xefd uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetcfg.c.o
+                0x0000000000404e60                inet_cfg_conn
+ *fill*         0x0000000000405d5d        0x3 
+ .text.inetping_recv
+                0x0000000000405d60      0x177 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetping.c.o
+                0x0000000000405d60                inetping_recv
+ *fill*         0x0000000000405ed7        0x9 
+ .text.inetping_conn
+                0x0000000000405ee0      0x40e uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetping.c.o
+                0x0000000000405ee0                inetping_conn
+ *fill*         0x00000000004062ee        0x2 
+ .text.ndp_received
+                0x00000000004062f0      0x1be uspace/srv_net_inetsrv.p/srv_net_inetsrv_ndp.c.o
+                0x00000000004062f0                ndp_received
+ *fill*         0x00000000004064ae        0x2 
+ .text.ndp_translate
+                0x00000000004064b0      0x139 uspace/srv_net_inetsrv.p/srv_net_inetsrv_ndp.c.o
+                0x00000000004064b0                ndp_translate
+ *fill*         0x00000000004065e9        0x7 
+ .text.ntrans_add
+                0x00000000004065f0       0xe9 uspace/srv_net_inetsrv.p/srv_net_inetsrv_ntrans.c.o
+                0x00000000004065f0                ntrans_add
+ *fill*         0x00000000004066d9        0x7 
+ .text.ntrans_lookup
+                0x00000000004066e0       0x92 uspace/srv_net_inetsrv.p/srv_net_inetsrv_ntrans.c.o
+                0x00000000004066e0                ntrans_lookup
+ *fill*         0x0000000000406772        0xe 
+ .text.ntrans_wait_timeout
+                0x0000000000406780       0x3c uspace/srv_net_inetsrv.p/srv_net_inetsrv_ntrans.c.o
+                0x0000000000406780                ntrans_wait_timeout
+ *fill*         0x00000000004067bc        0x4 
+ .text.inet_checksum_calc
+                0x00000000004067c0       0x6b uspace/srv_net_inetsrv.p/srv_net_inetsrv_pdu.c.o
+                0x00000000004067c0                inet_checksum_calc
+ *fill*         0x000000000040682b        0x5 
+ .text.inet_pdu_encode
+                0x0000000000406830      0x265 uspace/srv_net_inetsrv.p/srv_net_inetsrv_pdu.c.o
+                0x0000000000406830                inet_pdu_encode
+ *fill*         0x0000000000406a95        0xb 
+ .text.inet_pdu_encode6
+                0x0000000000406aa0      0x232 uspace/srv_net_inetsrv.p/srv_net_inetsrv_pdu.c.o
+                0x0000000000406aa0                inet_pdu_encode6
+ *fill*         0x0000000000406cd2        0xe 
+ .text.inet_pdu_decode
+                0x0000000000406ce0      0x1fc uspace/srv_net_inetsrv.p/srv_net_inetsrv_pdu.c.o
+                0x0000000000406ce0                inet_pdu_decode
+ *fill*         0x0000000000406edc        0x4 
+ .text.inet_pdu_decode6
+                0x0000000000406ee0      0x1fc uspace/srv_net_inetsrv.p/srv_net_inetsrv_pdu.c.o
+                0x0000000000406ee0                inet_pdu_decode6
+ *fill*         0x00000000004070dc        0x4 
+ .text.ndp_pdu_encode
+                0x00000000004070e0      0x1bc uspace/srv_net_inetsrv.p/srv_net_inetsrv_pdu.c.o
+                0x00000000004070e0                ndp_pdu_encode
+ *fill*         0x000000000040729c        0x4 
+ .text.ndp_pdu_decode
+                0x00000000004072a0       0x5f uspace/srv_net_inetsrv.p/srv_net_inetsrv_pdu.c.o
+                0x00000000004072a0                ndp_pdu_decode
+ *fill*         0x00000000004072ff        0x1 
+ .text.inet_reass_queue_packet
+                0x0000000000407300      0x539 uspace/srv_net_inetsrv.p/srv_net_inetsrv_reass.c.o
+                0x0000000000407300                inet_reass_queue_packet
+ *fill*         0x0000000000407839        0x7 
+ .text.inet_sroute_new
+                0x0000000000407840       0x6a uspace/srv_net_inetsrv.p/srv_net_inetsrv_sroute.c.o
+                0x0000000000407840                inet_sroute_new
+ *fill*         0x00000000004078aa        0x6 
+ .text.inet_sroute_delete
+                0x00000000004078b0       0x27 uspace/srv_net_inetsrv.p/srv_net_inetsrv_sroute.c.o
+                0x00000000004078b0                inet_sroute_delete
+ *fill*         0x00000000004078d7        0x9 
+ .text.inet_sroute_add
+                0x00000000004078e0       0x42 uspace/srv_net_inetsrv.p/srv_net_inetsrv_sroute.c.o
+                0x00000000004078e0                inet_sroute_add
+ *fill*         0x0000000000407922        0xe 
+ .text.inet_sroute_remove
+                0x0000000000407930       0x44 uspace/srv_net_inetsrv.p/srv_net_inetsrv_sroute.c.o
+                0x0000000000407930                inet_sroute_remove
+ *fill*         0x0000000000407974        0xc 
+ .text.inet_sroute_find
+                0x0000000000407980      0x10d uspace/srv_net_inetsrv.p/srv_net_inetsrv_sroute.c.o
+                0x0000000000407980                inet_sroute_find
+ *fill*         0x0000000000407a8d        0x3 
+ .text.inet_sroute_find_by_name
+                0x0000000000407a90       0xc4 uspace/srv_net_inetsrv.p/srv_net_inetsrv_sroute.c.o
+                0x0000000000407a90                inet_sroute_find_by_name
+ *fill*         0x0000000000407b54        0xc 
+ .text.inet_sroute_get_by_id
+                0x0000000000407b60       0x84 uspace/srv_net_inetsrv.p/srv_net_inetsrv_sroute.c.o
+                0x0000000000407b60                inet_sroute_get_by_id
+ *fill*         0x0000000000407be4        0xc 
+ .text.inet_sroute_get_id_list
+                0x0000000000407bf0       0x97 uspace/srv_net_inetsrv.p/srv_net_inetsrv_sroute.c.o
+                0x0000000000407bf0                inet_sroute_get_id_list
+ *fill*         0x0000000000407c87        0x9 
+ .text.inet_sroutes_load
+                0x0000000000407c90      0x21e uspace/srv_net_inetsrv.p/srv_net_inetsrv_sroute.c.o
+                0x0000000000407c90                inet_sroutes_load
+ *fill*         0x0000000000407eae        0x2 
+ .text.inet_sroutes_save
+                0x0000000000407eb0      0x1ed uspace/srv_net_inetsrv.p/srv_net_inetsrv_sroute.c.o
+                0x0000000000407eb0                inet_sroutes_save
+ .text          0x000000000040809d        0xc uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                0x000000000040809d                _start
+ *fill*         0x00000000004080a9        0x7 
+ .text.__c_start
+                0x00000000004080b0       0x8c uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                0x00000000004080b0                __c_start
+ *fill*         0x000000000040813c        0x4 
+ .text.inet_addr_parse_v4
+                0x0000000000408140       0xf0 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_parse_v6
+                0x0000000000408230      0x378 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ *fill*         0x00000000004085a8        0x8 
+ .text.inet_addr_format_v6
+                0x00000000004085b0      0x3bb uspace/lib/libinet.a.p/inet_src_addr.c.o
+ *fill*         0x000000000040896b        0x5 
+ .text.addr128  0x0000000000408970        0xd uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000408970                addr128
+ *fill*         0x000000000040897d        0x3 
+ .text.addr128_compare
+                0x0000000000408980       0x1d uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000408980                addr128_compare
+ *fill*         0x000000000040899d        0x3 
+ .text.eth_addr_solicited_node
+                0x00000000004089a0       0x51 uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x00000000004089a0                eth_addr_solicited_node
+ *fill*         0x00000000004089f1        0xf 
+ .text.host2addr128_t_be
+                0x0000000000408a00        0xd uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000408a00                host2addr128_t_be
+ *fill*         0x0000000000408a0d        0x3 
+ .text.addr128_t_be2host
+                0x0000000000408a10        0xd uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000408a10                addr128_t_be2host
+ *fill*         0x0000000000408a1d        0x3 
+ .text.inet_naddr
+                0x0000000000408a20       0x2d uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000408a20                inet_naddr
+ *fill*         0x0000000000408a4d        0x3 
+ .text.inet_naddr6
+                0x0000000000408a50       0x62 uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000408a50                inet_naddr6
+ *fill*         0x0000000000408ab2        0xe 
+ .text.inet_naddr_addr
+                0x0000000000408ac0       0x13 uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000408ac0                inet_naddr_addr
+ *fill*         0x0000000000408ad3        0xd 
+ .text.inet_addr_any
+                0x0000000000408ae0       0x14 uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000408ae0                inet_addr_any
+ *fill*         0x0000000000408af4        0xc 
+ .text.inet_naddr_any
+                0x0000000000408b00       0x18 uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000408b00                inet_naddr_any
+ *fill*         0x0000000000408b18        0x8 
+ .text.inet_addr_compare
+                0x0000000000408b20       0x4f uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000408b20                inet_addr_compare
+ *fill*         0x0000000000408b6f        0x1 
+ .text.inet_naddr_compare
+                0x0000000000408b70       0x4f uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000408b70                inet_naddr_compare
+ *fill*         0x0000000000408bbf        0x1 
+ .text.inet_naddr_compare_mask
+                0x0000000000408bc0       0xe6 uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000408bc0                inet_naddr_compare_mask
+ *fill*         0x0000000000408ca6        0xa 
+ .text.inet_addr_parse
+                0x0000000000408cb0       0x5c uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000408cb0                inet_addr_parse
+ *fill*         0x0000000000408d0c        0x4 
+ .text.inet_naddr_parse
+                0x0000000000408d10       0x84 uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000408d10                inet_naddr_parse
+ *fill*         0x0000000000408d94        0xc 
+ .text.inet_addr_format
+                0x0000000000408da0       0x78 uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000408da0                inet_addr_format
+ *fill*         0x0000000000408e18        0x8 
+ .text.inet_naddr_format
+                0x0000000000408e20       0xe0 uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000408e20                inet_naddr_format
+ .text.inet_addr_get
+                0x0000000000408f00       0x4d uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000408f00                inet_addr_get
+ *fill*         0x0000000000408f4d        0x3 
+ .text.inet_naddr_get
+                0x0000000000408f50       0x54 uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000408f50                inet_naddr_get
+ *fill*         0x0000000000408fa4        0xc 
+ .text.inet_addr_set
+                0x0000000000408fb0        0xf uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000408fb0                inet_addr_set
+ *fill*         0x0000000000408fbf        0x1 
+ .text.inet_addr_set6
+                0x0000000000408fc0       0x14 uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000408fc0                inet_addr_set6
+ *fill*         0x0000000000408fd4        0xc 
+ .text.inet_naddr_set6
+                0x0000000000408fe0       0x18 uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000408fe0                inet_naddr_set6
+ *fill*         0x0000000000408ff8        0x8 
+ .text.dhcp_init
+                0x0000000000409000       0x71 uspace/lib/libinet.a.p/inet_src_dhcp.c.o
+                0x0000000000409000                dhcp_init
+ *fill*         0x0000000000409071        0xf 
+ .text.dhcp_link_add
+                0x0000000000409080       0x3c uspace/lib/libinet.a.p/inet_src_dhcp.c.o
+                0x0000000000409080                dhcp_link_add
+ *fill*         0x00000000004090bc        0x4 
+ .text.eth_addr_encode
+                0x00000000004090c0       0x47 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+                0x00000000004090c0                eth_addr_encode
+ *fill*         0x0000000000409107        0x9 
+ .text.eth_addr_decode
+                0x0000000000409110       0x43 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+                0x0000000000409110                eth_addr_decode
+ *fill*         0x0000000000409153        0xd 
+ .text.eth_addr_format
+                0x0000000000409160       0x6f uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+                0x0000000000409160                eth_addr_format
+ *fill*         0x00000000004091cf        0x1 
+ .text.iplink_cb_conn
+                0x00000000004091d0      0x114 uspace/lib/libinet.a.p/inet_src_iplink.c.o
+ *fill*         0x00000000004092e4        0xc 
+ .text.iplink_open
+                0x00000000004092f0       0xaa uspace/lib/libinet.a.p/inet_src_iplink.c.o
+                0x00000000004092f0                iplink_open
+ *fill*         0x000000000040939a        0x6 
+ .text.iplink_close
+                0x00000000004093a0        0xa uspace/lib/libinet.a.p/inet_src_iplink.c.o
+                0x00000000004093a0                iplink_close
+ *fill*         0x00000000004093aa        0x6 
+ .text.iplink_send
+                0x00000000004093b0       0x8d uspace/lib/libinet.a.p/inet_src_iplink.c.o
+                0x00000000004093b0                iplink_send
+ *fill*         0x000000000040943d        0x3 
+ .text.iplink_send6
+                0x0000000000409440       0xd1 uspace/lib/libinet.a.p/inet_src_iplink.c.o
+                0x0000000000409440                iplink_send6
+ *fill*         0x0000000000409511        0xf 
+ .text.iplink_get_mtu
+                0x0000000000409520       0x4f uspace/lib/libinet.a.p/inet_src_iplink.c.o
+                0x0000000000409520                iplink_get_mtu
+ *fill*         0x000000000040956f        0x1 
+ .text.iplink_get_mac48
+                0x0000000000409570       0x8e uspace/lib/libinet.a.p/inet_src_iplink.c.o
+                0x0000000000409570                iplink_get_mac48
+ *fill*         0x00000000004095fe        0x2 
+ .text.iplink_addr_add
+                0x0000000000409600       0x8e uspace/lib/libinet.a.p/inet_src_iplink.c.o
+                0x0000000000409600                iplink_addr_add
+ *fill*         0x000000000040968e        0x2 
+ .text.iplink_get_userptr
+                0x0000000000409690        0xa uspace/lib/libinet.a.p/inet_src_iplink.c.o
+                0x0000000000409690                iplink_get_userptr
+ *fill*         0x000000000040969a        0x6 
+ .text.sif_attr_getkey
+                0x00000000004096a0        0xa uspace/lib/libsif.a.p/sif_src_sif.c.o
+ *fill*         0x00000000004096aa        0x6 
+ .text.sif_attr_cmp
+                0x00000000004096b0        0xa uspace/lib/libsif.a.p/sif_src_sif.c.o
+ *fill*         0x00000000004096ba        0x6 
+ .text.sif_import_name
+                0x00000000004096c0      0x102 uspace/lib/libsif.a.p/sif_src_sif.c.o
+ *fill*         0x00000000004097c2        0xe 
+ .text.sif_export_node
+                0x00000000004097d0      0x1fd uspace/lib/libsif.a.p/sif_src_sif.c.o
+ *fill*         0x00000000004099cd        0x3 
+ .text.sif_attr_delete.part.0
+                0x00000000004099d0       0x18 uspace/lib/libsif.a.p/sif_src_sif.c.o
+ *fill*         0x00000000004099e8        0x8 
+ .text.sif_node_delete
+                0x00000000004099f0      0x155 uspace/lib/libsif.a.p/sif_src_sif.c.o
+ *fill*         0x0000000000409b45        0xb 
+ .text.sif_import_node
+                0x0000000000409b50      0x45d uspace/lib/libsif.a.p/sif_src_sif.c.o
+ *fill*         0x0000000000409fad        0x3 
+ .text.sif_new  0x0000000000409fb0       0xb0 uspace/lib/libsif.a.p/sif_src_sif.c.o
+                0x0000000000409fb0                sif_new
+ .text.sif_load
+                0x000000000040a060      0x15b uspace/lib/libsif.a.p/sif_src_sif.c.o
+                0x000000000040a060                sif_load
+ *fill*         0x000000000040a1bb        0x5 
+ .text.sif_delete
+                0x000000000040a1c0       0x22 uspace/lib/libsif.a.p/sif_src_sif.c.o
+                0x000000000040a1c0                sif_delete
+ *fill*         0x000000000040a1e2        0xe 
+ .text.sif_get_root
+                0x000000000040a1f0        0xa uspace/lib/libsif.a.p/sif_src_sif.c.o
+                0x000000000040a1f0                sif_get_root
+ *fill*         0x000000000040a1fa        0x6 
+ .text.sif_node_first_child
+                0x000000000040a200       0x24 uspace/lib/libsif.a.p/sif_src_sif.c.o
+                0x000000000040a200                sif_node_first_child
+ *fill*         0x000000000040a224        0xc 
+ .text.sif_node_next_child
+                0x000000000040a230       0x24 uspace/lib/libsif.a.p/sif_src_sif.c.o
+                0x000000000040a230                sif_node_next_child
+ *fill*         0x000000000040a254        0xc 
+ .text.sif_node_get_type
+                0x000000000040a260        0xa uspace/lib/libsif.a.p/sif_src_sif.c.o
+                0x000000000040a260                sif_node_get_type
+ *fill*         0x000000000040a26a        0x6 
+ .text.sif_node_get_attr
+                0x000000000040a270       0x1a uspace/lib/libsif.a.p/sif_src_sif.c.o
+                0x000000000040a270                sif_node_get_attr
+ *fill*         0x000000000040a28a        0x6 
+ .text.sif_save
+                0x000000000040a290       0x6e uspace/lib/libsif.a.p/sif_src_sif.c.o
+                0x000000000040a290                sif_save
+ *fill*         0x000000000040a2fe        0x2 
+ .text.sif_node_append_child
+                0x000000000040a300       0xaf uspace/lib/libsif.a.p/sif_src_sif.c.o
+                0x000000000040a300                sif_node_append_child
+ *fill*         0x000000000040a3af        0x1 
+ .text.sif_node_set_attr
+                0x000000000040a3b0       0xf8 uspace/lib/libsif.a.p/sif_src_sif.c.o
+                0x000000000040a3b0                sif_node_set_attr
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x000000000040a4b0     0x1438
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.inet_addrobj_find_by_name_locked.str1.8
+                0x000000000040a4b0      0xa01 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+                                         0xe4 (size before relaxing)
+ .rodata.inet_addrobj_new.str1.8
+                0x000000000040aeb1       0x31 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+ .rodata.inet_addrobj_find.str1.1
+                0x000000000040aeb1      0x9ad uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+                                         0x39 (size before relaxing)
+ .rodata.inet_addrobj_find_by_name.str1.8
+                0x000000000040b85e       0x26 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+ .rodata.inet_addrobj_get_by_id.str1.1
+                0x000000000040b85e       0x1c uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+ .rodata.inet_addrobj_cnt_by_link.str1.1
+                0x000000000040b85e       0x1b uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+ .rodata.inet_addrobj_send_dgram.str1.1
+                0x000000000040b85e        0x6 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+ .rodata.inet_addrobjs_load.str1.1
+                0x000000000040b85e       0x43 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+ .rodata.inet_addrobjs_load.str1.8
+                0x000000000040b85e       0x3c uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+ .rodata.inet_addrobjs_save.str1.1
+                0x000000000040b85e       0x33 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+ .rodata.icmp_recv.str1.1
+                0x000000000040b85e       0x3c uspace/srv_net_inetsrv.p/srv_net_inetsrv_icmp.c.o
+ .rodata.icmpv6_recv.str1.1
+                0x000000000040b85e       0x42 uspace/srv_net_inetsrv.p/srv_net_inetsrv_icmpv6.c.o
+ .rodata.icmpv6_ping_send.str1.8
+                0x000000000040b85e       0x2e uspace/srv_net_inetsrv.p/srv_net_inetsrv_icmpv6.c.o
+ .rodata.icmpv6_ping_send.str1.1
+                0x000000000040b85e       0x35 uspace/srv_net_inetsrv.p/srv_net_inetsrv_icmpv6.c.o
+ .rodata.inet_route_packet.str1.1
+                0x000000000040b85e       0x30 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetsrv.c.o
+ .rodata.inet_route_packet.str1.8
+                0x000000000040b85e       0x24 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetsrv.c.o
+ .rodata.inet_default_conn.str1.1
+                0x000000000040b85e       0x6e uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetsrv.c.o
+ .rodata.inet_ev_recv.str1.1
+                0x000000000040b85e       0x19 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetsrv.c.o
+ .rodata.inet_recv_dgram_local.str1.1
+                0x000000000040b85e       0x18 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetsrv.c.o
+ .rodata.inet_recv_dgram_local.str1.8
+                0x000000000040b85e       0x24 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetsrv.c.o
+ .rodata.main.str1.8
+                0x000000000040b85e       0xb8 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetsrv.c.o
+ .rodata.main.str1.1
+                0x000000000040b85e       0x30 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetsrv.c.o
+ .rodata.inet_iplink_change_addr.str1.8
+                0x000000000040b85e       0x27 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+ .rodata.inet_iplink_recv.str1.1
+                0x000000000040b85e       0x8c uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+ .rodata.inet_link_open_locked.str1.8
+                0x000000000040b85e      0x126 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+ .rodata.inet_link_open_locked.str1.1
+                0x000000000040b85e       0xe8 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+ .rodata.inet_link_autoconf_link.str1.1
+                0x000000000040b85e       0x20 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+ .rodata.inet_link_autoconf_link.str1.8
+                0x000000000040b85e       0xa8 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+ .rodata.inet_link_check_new.str1.1
+                0x000000000040b85e       0x32 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+ .rodata.inet_link_check_new.str1.8
+                0x000000000040b85e       0x49 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+ .rodata.inet_link_discovery_start.str1.8
+                0x000000000040b85e       0x37 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+ .rodata.inet_link_autoconf.str1.8
+                0x000000000040b85e       0xd1 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+ .rodata.inet_link_autoconf.str1.1
+                0x000000000040b85e        0xd uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+ *fill*         0x000000000040b85e        0x2 
+ .rodata.cst16  0x000000000040b860       0x10 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+ .rodata.inet_cfg_open.str1.1
+                0x000000000040b870       0x2a uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetcfg.c.o
+ .rodata.inet_cfg_open.str1.8
+                0x000000000040b870       0x31 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetcfg.c.o
+ .rodata.inet_cfg_sync.str1.1
+                0x000000000040b870       0x28 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetcfg.c.o
+ .rodata.inet_cfg_conn.str1.1
+                0x000000000040b870      0x24c uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetcfg.c.o
+ .rodata.inet_cfg_conn.str1.8
+                0x000000000040b870       0xcf uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetcfg.c.o
+ .rodata.inet_cfg_conn
+                0x000000000040b870       0x70 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetcfg.c.o
+ .rodata.inetping_recv.str1.1
+                0x000000000040b8e0       0x1e uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetping.c.o
+ .rodata.inetping_conn.str1.1
+                0x000000000040b8e0       0x3f uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetping.c.o
+ .rodata.ndp_received.str1.1
+                0x000000000040b8e0       0x2b uspace/srv_net_inetsrv.p/srv_net_inetsrv_ndp.c.o
+ .rodata.inet_pdu_encode.str1.8
+                0x000000000040b8e0       0x56 uspace/srv_net_inetsrv.p/srv_net_inetsrv_pdu.c.o
+ .rodata.inet_pdu_encode.str1.1
+                0x000000000040b8e0       0x1b uspace/srv_net_inetsrv.p/srv_net_inetsrv_pdu.c.o
+ .rodata.inet_pdu_encode6.str1.1
+                0x000000000040b8e0       0x18 uspace/srv_net_inetsrv.p/srv_net_inetsrv_pdu.c.o
+ .rodata.inet_pdu_decode.str1.1
+                0x000000000040b8e0       0x64 uspace/srv_net_inetsrv.p/srv_net_inetsrv_pdu.c.o
+ .rodata.inet_pdu_decode.str1.8
+                0x000000000040b8e0       0x24 uspace/srv_net_inetsrv.p/srv_net_inetsrv_pdu.c.o
+ .rodata.inet_pdu_decode6.str1.1
+                0x000000000040b8e0       0x25 uspace/srv_net_inetsrv.p/srv_net_inetsrv_pdu.c.o
+ .rodata.inet_pdu_decode6.str1.8
+                0x000000000040b8e0       0x26 uspace/srv_net_inetsrv.p/srv_net_inetsrv_pdu.c.o
+ .rodata.inet_reass_queue_packet.str1.1
+                0x000000000040b8e0       0x6e uspace/srv_net_inetsrv.p/srv_net_inetsrv_reass.c.o
+ .rodata.inet_reass_queue_packet.str1.8
+                0x000000000040b8e0       0x83 uspace/srv_net_inetsrv.p/srv_net_inetsrv_reass.c.o
+ .rodata.inet_sroute_new.str1.8
+                0x000000000040b8e0       0x36 uspace/srv_net_inetsrv.p/srv_net_inetsrv_sroute.c.o
+ .rodata.inet_sroute_find.str1.1
+                0x000000000040b8e0       0x1c uspace/srv_net_inetsrv.p/srv_net_inetsrv_sroute.c.o
+ .rodata.inet_sroute_find.str1.8
+                0x000000000040b8e0       0x25 uspace/srv_net_inetsrv.p/srv_net_inetsrv_sroute.c.o
+ .rodata.inet_sroute_find_by_name.str1.8
+                0x000000000040b8e0       0x6c uspace/srv_net_inetsrv.p/srv_net_inetsrv_sroute.c.o
+ .rodata.inet_sroute_get_by_id.str1.1
+                0x000000000040b8e0       0x1b uspace/srv_net_inetsrv.p/srv_net_inetsrv_sroute.c.o
+ .rodata.inet_sroutes_load.str1.1
+                0x000000000040b8e0       0x1a uspace/srv_net_inetsrv.p/srv_net_inetsrv_sroute.c.o
+ .rodata.inet_sroutes_save.str1.1
+                0x000000000040b8e0       0x31 uspace/srv_net_inetsrv.p/srv_net_inetsrv_sroute.c.o
+ .rodata.cst8   0x000000000040b8e0        0x8 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .rodata.inet_addr_format_v6.str1.1
+                0x000000000040b8e8        0xb uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.inet_addr_format.str1.1
+                0x000000000040b8e8       0x11 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.inet_naddr_format.str1.1
+                0x000000000040b8e8        0x8 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.inet_addr_get.str1.8
+                0x000000000040b8e8       0x29 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.inet_addr_get.str1.1
+                0x000000000040b8e8        0x6 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.dhcp_init.str1.8
+                0x000000000040b8e8       0x29 uspace/lib/libinet.a.p/inet_src_dhcp.c.o
+ .rodata.dhcp_init.str1.1
+                0x000000000040b8e8       0x1b uspace/lib/libinet.a.p/inet_src_dhcp.c.o
+ .rodata.eth_addr_format.str1.1
+                0x000000000040b8e8        0xb uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .rodata.sif_export_node.str1.1
+                0x000000000040b8e8       0x12 uspace/lib/libsif.a.p/sif_src_sif.c.o
+ .rodata.sif_attr_delete.part.0.str1.8
+                0x000000000040b8e8       0x27 uspace/lib/libsif.a.p/sif_src_sif.c.o
+ .rodata.sif_attr_delete.part.0.str1.1
+                0x000000000040b8e8       0x1c uspace/lib/libsif.a.p/sif_src_sif.c.o
+ .rodata.sif_node_delete.str1.8
+                0x000000000040b8e8       0x51 uspace/lib/libsif.a.p/sif_src_sif.c.o
+ .rodata.sif_node_delete.str1.1
+                0x000000000040b8e8       0x1b uspace/lib/libsif.a.p/sif_src_sif.c.o
+ .rodata.sif_import_node.str1.1
+                0x000000000040b8e8        0x8 uspace/lib/libsif.a.p/sif_src_sif.c.o
+ .rodata.sif_new.str1.1
+                0x000000000040b8e8        0x4 uspace/lib/libsif.a.p/sif_src_sif.c.o
+ .rodata.sif_load.str1.1
+                0x000000000040b8e8        0x2 uspace/lib/libsif.a.p/sif_src_sif.c.o
+ .rodata.sif_save.str1.1
+                0x000000000040b8e8        0x2 uspace/lib/libsif.a.p/sif_src_sif.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x000000000040b8e8      0x3f4
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x000000000040b8e8      0x3f4 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+                0x000000000040b8e8                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x000000000040bce0     0x1510
+ *(.eh_frame)
+ .eh_frame      0x000000000040bce0      0x258 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+ .eh_frame      0x000000000040bf38       0x28 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x000000000040bf60        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+ .eh_frame      0x000000000040bf60       0x70 uspace/srv_net_inetsrv.p/srv_net_inetsrv_icmp.c.o
+                                         0x88 (size before relaxing)
+ .eh_frame      0x000000000040bfd0       0x68 uspace/srv_net_inetsrv.p/srv_net_inetsrv_icmpv6.c.o
+                                         0x80 (size before relaxing)
+ .eh_frame      0x000000000040c038      0x150 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetsrv.c.o
+                                        0x168 (size before relaxing)
+ .eh_frame      0x000000000040c188      0x270 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+                                        0x288 (size before relaxing)
+ .eh_frame      0x000000000040c3f8       0x80 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetcfg.c.o
+                                         0xb8 (size before relaxing)
+ .eh_frame      0x000000000040c478       0x68 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetping.c.o
+                                         0x80 (size before relaxing)
+ .eh_frame      0x000000000040c4e0       0x70 uspace/srv_net_inetsrv.p/srv_net_inetsrv_ndp.c.o
+                                         0x88 (size before relaxing)
+ .eh_frame      0x000000000040c550       0x80 uspace/srv_net_inetsrv.p/srv_net_inetsrv_ntrans.c.o
+                                         0xc0 (size before relaxing)
+ .eh_frame      0x000000000040c5d0      0x160 uspace/srv_net_inetsrv.p/srv_net_inetsrv_pdu.c.o
+                                        0x178 (size before relaxing)
+ .eh_frame      0x000000000040c730       0x30 uspace/srv_net_inetsrv.p/srv_net_inetsrv_reass.c.o
+                                         0x48 (size before relaxing)
+ .eh_frame      0x000000000040c760      0x1a0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_sroute.c.o
+                                        0x1b8 (size before relaxing)
+ .eh_frame      0x000000000040c900       0x20 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x000000000040c920      0x3c0 uspace/lib/libinet.a.p/inet_src_addr.c.o
+                                        0x478 (size before relaxing)
+ .eh_frame      0x000000000040cce0       0x50 uspace/lib/libinet.a.p/inet_src_dhcp.c.o
+                                         0xb0 (size before relaxing)
+ .eh_frame      0x000000000040cd30       0x68 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+                                         0xa0 (size before relaxing)
+ .eh_frame      0x000000000040cd98      0x180 uspace/lib/libinet.a.p/inet_src_iplink.c.o
+                                        0x1f8 (size before relaxing)
+ .eh_frame      0x000000000040cf18      0x2d8 uspace/lib/libsif.a.p/sif_src_sif.c.o
+                                        0x3d0 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x000000000040d1f0        0x0
+ *(.sframe)
+ .sframe        0x000000000040d1f0        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x000000000040e1f0                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0x000000000040e1f0        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x000000000040e1f0        0x0
+                0x000000000040e1f0                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x000000000040e1f0                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x000000000040e1f0        0x0
+                0x000000000040e1f0                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x000000000040e1f0                PROVIDE (__init_array_end = .)
+
+.fini_array     0x000000000040e1f0        0x0
+                0x000000000040e1f0                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x000000000040e1f0                PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x000000000040e1f0        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x000000000040e1f0        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+
+.dynamic        0x000000000040e1f0      0x150
+ *(.dynamic)
+ .dynamic       0x000000000040e1f0      0x150 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+                0x000000000040e1f0                _DYNAMIC
+
+.got            0x000000000040e340        0x0
+ *(.got)
+ .got           0x000000000040e340        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+ *(.igot)
+                0x000000000040e340                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x000000000040e340      0x2a0
+ *(.got.plt)
+ .got.plt       0x000000000040e340      0x2a0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+                0x000000000040e340                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x000000000040e5e0        0x0 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+
+.data           0x000000000040e5e0      0x248
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.addr_list
+                0x000000000040e5e0       0x10 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+ *fill*         0x000000000040e5f0       0x10 
+ .data.addr_list_lock
+                0x000000000040e600       0x20 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+ .data.client_list
+                0x000000000040e620       0x10 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetsrv.c.o
+ *fill*         0x000000000040e630       0x10 
+ .data.client_list_lock
+                0x000000000040e640       0x20 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetsrv.c.o
+ .data.multicast_all_nodes
+                0x000000000040e660       0x14 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetsrv.c.o
+ *fill*         0x000000000040e674        0xc 
+ .data.broadcast4_all_hosts
+                0x000000000040e680       0x14 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetsrv.c.o
+ *fill*         0x000000000040e694        0xc 
+ .data.solicited_node_mask
+                0x000000000040e6a0       0x18 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetsrv.c.o
+ *fill*         0x000000000040e6b8        0x8 
+ .data.inet_links_lock
+                0x000000000040e6c0       0x20 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+ .data.inet_links
+                0x000000000040e6e0       0x10 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+ .data.inet_iplink_ev_ops
+                0x000000000040e6f0       0x10 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+ .data.ip_ident_lock
+                0x000000000040e700       0x20 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+ .data.first_link6
+                0x000000000040e720        0x1 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+ .data.first_link
+                0x000000000040e721        0x1 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+ *fill*         0x000000000040e722        0xe 
+ .data.client_list
+                0x000000000040e730       0x10 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetping.c.o
+ .data.client_list_lock
+                0x000000000040e740       0x20 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetping.c.o
+ .data.solicited_node_ip
+                0x000000000040e760       0x10 uspace/srv_net_inetsrv.p/srv_net_inetsrv_ndp.c.o
+ .data.ntrans_cv
+                0x000000000040e770       0x10 uspace/srv_net_inetsrv.p/srv_net_inetsrv_ntrans.c.o
+ .data.ntrans_list
+                0x000000000040e780       0x10 uspace/srv_net_inetsrv.p/srv_net_inetsrv_ntrans.c.o
+ *fill*         0x000000000040e790       0x10 
+ .data.ntrans_list_lock
+                0x000000000040e7a0       0x20 uspace/srv_net_inetsrv.p/srv_net_inetsrv_ntrans.c.o
+ .data.reass_dgram_map_lock
+                0x000000000040e7c0       0x20 uspace/srv_net_inetsrv.p/srv_net_inetsrv_reass.c.o
+ .data.reass_dgram_map
+                0x000000000040e7e0       0x10 uspace/srv_net_inetsrv.p/srv_net_inetsrv_reass.c.o
+ .data.sroute_list
+                0x000000000040e7f0       0x10 uspace/srv_net_inetsrv.p/srv_net_inetsrv_sroute.c.o
+ .data.sroute_list_lock
+                0x000000000040e800       0x20 uspace/srv_net_inetsrv.p/srv_net_inetsrv_sroute.c.o
+ .data.inet_eth_addr_solicited_node
+                0x000000000040e820        0x8 uspace/lib/libinet.a.p/inet_src_addr.c.o
+
+.data1
+ *(.data1)
+                0x000000000040e828                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x000000000040e828                . = .
+                0x000000000040e828                __bss_start = .
+
+.bss            0x000000000040e840       0x70
+ *(.dynbss)
+ *fill*         0x000000000040e840        0x0 
+ .dynbss        0x000000000040e840       0x48 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+                0x000000000040e840                __progsymbols
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss.addr_id   0x000000000040e888        0x8 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+ .bss.cfg       0x000000000040e890        0x8 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetsrv.c.o
+                0x000000000040e890                cfg
+ .bss.ip_ident  0x000000000040e898        0x2 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+ .bss.inetping_ident
+                0x000000000040e89a        0x2 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetping.c.o
+ *fill*         0x000000000040e89c        0x4 
+ .bss.sroute_id
+                0x000000000040e8a0        0x8 uspace/srv_net_inetsrv.p/srv_net_inetsrv_sroute.c.o
+ .bss.dhcp_sess
+                0x000000000040e8a8        0x8 uspace/lib/libinet.a.p/inet_src_dhcp.c.o
+ *(COMMON)
+                0x000000000040e8b0                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x000000000040e8b0                . = ALIGN (0x8)
+                0x000000000040e8b0                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x00000000004108b0        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x00000000004108b0                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x00000000004108b0                . = ALIGN (0x8)
+                0x000000000040e8b0                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x00000000004108b0                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/srv_net_inetsrv.p/srv_net_inetsrv_addrobj.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/srv_net_inetsrv.p/srv_net_inetsrv_icmp.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_net_inetsrv.p/srv_net_inetsrv_icmpv6.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetsrv.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inet_link.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetcfg.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_net_inetsrv.p/srv_net_inetsrv_inetping.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_net_inetsrv.p/srv_net_inetsrv_ndp.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_net_inetsrv.p/srv_net_inetsrv_ntrans.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_net_inetsrv.p/srv_net_inetsrv_pdu.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_net_inetsrv.p/srv_net_inetsrv_reass.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_net_inetsrv.p/srv_net_inetsrv_sroute.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libinet.a.p/inet_src_dhcp.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libinet.a.p/inet_src_iplink.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libsif.a.p/sif_src_sif.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/srv_net_inetsrv elf64-x86-64)

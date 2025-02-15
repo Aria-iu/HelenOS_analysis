@@ -36,21 +36,28 @@
  * to a special structure that resides in libc.
  */
 
+// 程序的预初始化函数数组
 extern init_array_entry_t __preinit_array_start[] __attribute__((weak));
 extern init_array_entry_t __preinit_array_end[] __attribute__((weak));
+// 程序的初始化函数数组
 extern init_array_entry_t __init_array_start[] __attribute__((weak));
 extern init_array_entry_t __init_array_end[] __attribute__((weak));
+// 程序的析构函数数组
 extern fini_array_entry_t __fini_array_start[] __attribute__((weak));
 extern fini_array_entry_t __fini_array_end[] __attribute__((weak));
+// 程序的入口点
 extern int main(int, char *[]);
+// 程序的起始地址和结束地址
 extern unsigned char __executable_start[];
 extern unsigned char _end[];
 
 /* __c_start is only called from _start in assembly. */
 void __c_start(void *);
 
+// 启动函数，它初始化 __progsymbols 结构体，并调用 __libc_main
 void __c_start(void *pcb)
 {
+  	// 全局变量，定义在 libc.h 中，用于存储程序的符号信息
 	__progsymbols = (progsymbols_t) {
 		.main = main,
 		.elfstart = __executable_start,
@@ -62,6 +69,6 @@ void __c_start(void *pcb)
 		.fini_array = __fini_array_start,
 		.fini_array_len = __fini_array_end - __fini_array_start,
 	};
-
+	//  C 标准库的主入口函数，负责进一步初始化运行时环境并调用 main 函数。
 	__libc_main(pcb);
 }

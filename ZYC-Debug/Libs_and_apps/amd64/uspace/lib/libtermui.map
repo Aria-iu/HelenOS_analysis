@@ -1,0 +1,582 @@
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.0                     uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o (memcpy)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+LOAD uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+START GROUP
+LOAD uspace/lib/libc.so.0.0
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000000120                . = (SEGMENT_START ("text-segment", 0x0) + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000000120       0xdc
+ *(.hash)
+ .hash          0x0000000000000120       0xdc uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x0000000000000200      0x360
+ *(.dynsym)
+ .dynsym        0x0000000000000200      0x360 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+
+.dynstr         0x0000000000000560      0x27b
+ *(.dynstr)
+ .dynstr        0x0000000000000560      0x27b uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+
+.gnu.version    0x00000000000007dc        0x0
+ *(.gnu.version)
+ .gnu.version   0x00000000000007dc        0x0 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+
+.gnu.version_d  0x00000000000007e0        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x00000000000007e0        0x0 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+
+.gnu.version_r  0x00000000000007e0        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x00000000000007e0        0x0 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+
+.rela.dyn       0x00000000000007e0       0x18
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x00000000000007e0       0x18 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+ .rela.ifunc    0x00000000000007f8        0x0 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+
+.rela.plt       0x00000000000007f8       0xd8
+ *(.rela.plt)
+ .rela.plt      0x00000000000007f8       0xd8 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+ *(.rela.iplt)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x00000000000008d0       0xa0
+ *(.plt)
+ .plt           0x00000000000008d0       0xa0 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+ *(.iplt)
+
+.plt.got        0x0000000000000970        0x0
+ *(.plt.got)
+ .plt.got       0x0000000000000970        0x0 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x0000000000000970     0x4580
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text._termui_evict_row
+                0x0000000000000970      0x21a uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+ *fill*         0x0000000000000b8a        0x6 
+ .text._advance_line
+                0x0000000000000b90       0xad uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+ *fill*         0x0000000000000c3d        0x3 
+ .text._cursor_on.part.0
+                0x0000000000000c40       0xab uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+ *fill*         0x0000000000000ceb        0x5 
+ .text.termui_set_style
+                0x0000000000000cf0        0xd uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                0x0000000000000cf0                termui_set_style
+ *fill*         0x0000000000000cfd        0x3 
+ .text.termui_get_active_row
+                0x0000000000000d00       0x5b uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                0x0000000000000d00                termui_get_active_row
+ *fill*         0x0000000000000d5b        0x5 
+ .text.termui_put_lf
+                0x0000000000000d60      0x173 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                0x0000000000000d60                termui_put_lf
+ *fill*         0x0000000000000ed3        0xd 
+ .text.termui_put_cr
+                0x0000000000000ee0       0xfb uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                0x0000000000000ee0                termui_put_cr
+ *fill*         0x0000000000000fdb        0x5 
+ .text.termui_put_crlf
+                0x0000000000000fe0      0x1a3 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                0x0000000000000fe0                termui_put_crlf
+ *fill*         0x0000000000001183        0xd 
+ .text.termui_put_tab
+                0x0000000000001190      0x111 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                0x0000000000001190                termui_put_tab
+ *fill*         0x00000000000012a1        0xf 
+ .text.termui_put_backspace
+                0x00000000000012b0      0x120 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                0x00000000000012b0                termui_put_backspace
+ .text.termui_put_glyph
+                0x00000000000013d0      0x3a5 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                0x00000000000013d0                termui_put_glyph
+ *fill*         0x0000000000001775        0xb 
+ .text.termui_color_from_rgb
+                0x0000000000001780       0x28 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                0x0000000000001780                termui_color_from_rgb
+ *fill*         0x00000000000017a8        0x8 
+ .text.termui_color_to_rgb
+                0x00000000000017b0       0xa1 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                0x00000000000017b0                termui_color_to_rgb
+ *fill*         0x0000000000001851        0xf 
+ .text.termui_get_cols
+                0x0000000000001860        0x8 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                0x0000000000001860                termui_get_cols
+ *fill*         0x0000000000001868        0x8 
+ .text.termui_get_rows
+                0x0000000000001870        0x9 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                0x0000000000001870                termui_get_rows
+ *fill*         0x0000000000001879        0x7 
+ .text.termui_get_pos
+                0x0000000000001880       0x10 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                0x0000000000001880                termui_get_pos
+ .text.termui_set_pos
+                0x0000000000001890      0x10b uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                0x0000000000001890                termui_set_pos
+ *fill*         0x000000000000199b        0x5 
+ .text.termui_clear_screen
+                0x00000000000019a0      0x1ad uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                0x00000000000019a0                termui_clear_screen
+ *fill*         0x0000000000001b4d        0x3 
+ .text.termui_wipe_screen
+                0x0000000000001b50      0x14f uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                0x0000000000001b50                termui_wipe_screen
+ *fill*         0x0000000000001c9f        0x1 
+ .text.termui_set_scroll_cb
+                0x0000000000001ca0       0x14 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                0x0000000000001ca0                termui_set_scroll_cb
+ *fill*         0x0000000000001cb4        0xc 
+ .text.termui_set_update_cb
+                0x0000000000001cc0       0x14 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                0x0000000000001cc0                termui_set_update_cb
+ *fill*         0x0000000000001cd4        0xc 
+ .text.termui_set_refresh_cb
+                0x0000000000001ce0       0x14 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                0x0000000000001ce0                termui_set_refresh_cb
+ *fill*         0x0000000000001cf4        0xc 
+ .text.termui_force_viewport_update
+                0x0000000000001d00      0x14b uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                0x0000000000001d00                termui_force_viewport_update
+ *fill*         0x0000000000001e4b        0x5 
+ .text.termui_scrollback_is_active
+                0x0000000000001e50        0xe uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                0x0000000000001e50                termui_scrollback_is_active
+ *fill*         0x0000000000001e5e        0x2 
+ .text.termui_create
+                0x0000000000001e60       0xd3 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                0x0000000000001e60                termui_create
+ *fill*         0x0000000000001f33        0xd 
+ .text.termui_destroy
+                0x0000000000001f40       0x22 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                0x0000000000001f40                termui_destroy
+ *fill*         0x0000000000001f62        0xe 
+ .text.termui_history_scroll
+                0x0000000000001f70       0x3e uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                0x0000000000001f70                termui_history_scroll
+ *fill*         0x0000000000001fae        0x2 
+ .text.termui_set_cursor_visibility
+                0x0000000000001fb0       0xd1 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                0x0000000000001fb0                termui_set_cursor_visibility
+ *fill*         0x0000000000002081        0xf 
+ .text.termui_get_cursor_visibility
+                0x0000000000002090        0xa uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                0x0000000000002090                termui_get_cursor_visibility
+ *fill*         0x000000000000209a        0x6 
+ .text.termui_resize
+                0x00000000000020a0      0x8c8 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                0x00000000000020a0                termui_resize
+ *fill*         0x0000000000002968        0x8 
+ .text._current_line.part.0
+                0x0000000000002970       0x1c uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+ *fill*         0x000000000000298c        0x4 
+ .text._line_buffer_try_extend
+                0x0000000000002990       0xd5 uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+ *fill*         0x0000000000002a65        0xb 
+ .text._evict_oldest_line
+                0x0000000000002a70      0x761 uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+ *fill*         0x00000000000031d1        0xf 
+ .text._alloc_line
+                0x00000000000031e0      0x2f6 uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+ *fill*         0x00000000000034d6        0xa 
+ .text._scrollback_active
+                0x00000000000034e0       0x79 uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+                0x00000000000034e0                _scrollback_active
+ *fill*         0x0000000000003559        0x7 
+ .text._history_scroll
+                0x0000000000003560      0xcad uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+                0x0000000000003560                _history_scroll
+ *fill*         0x000000000000420d        0x3 
+ .text._history_reflow
+                0x0000000000004210      0x132 uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+                0x0000000000004210                _history_reflow
+ *fill*         0x0000000000004342        0xe 
+ .text._history_viewport_rows
+                0x0000000000004350      0x1aa uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+                0x0000000000004350                _history_viewport_rows
+ *fill*         0x00000000000044fa        0x6 
+ .text._history_iter_rows
+                0x0000000000004500      0x5a9 uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+                0x0000000000004500                _history_iter_rows
+ *fill*         0x0000000000004aa9        0x7 
+ .text._history_append_row
+                0x0000000000004ab0      0x440 uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+                0x0000000000004ab0                _history_append_row
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000004f00      0x8e0
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata._termui_evict_row.str1.8
+                0x0000000000004f00      0x4c1 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                                         0x51 (size before relaxing)
+ .rodata._advance_line.str1.1
+                0x00000000000053c1      0x200 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                                         0x1b (size before relaxing)
+ .rodata.termui_get_active_row.str1.1
+                0x00000000000055c1       0x1c uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+ .rodata.termui_color_to_rgb.str1.1
+                0x00000000000055c1       0x12 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+ .rodata.termui_color_to_rgb.str1.8
+                0x00000000000055c1       0x27 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+ .rodata.termui_force_viewport_update.str1.1
+                0x00000000000055c1       0x2e uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+ .rodata.termui_force_viewport_update.str1.8
+                0x00000000000055c1       0x21 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+ *fill*         0x00000000000055c1        0xf 
+ .rodata.cst16  0x00000000000055d0       0x10 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+ .rodata._current_line.part.0.str1.8
+                0x00000000000055e0       0x2e uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+ .rodata._current_line.part.0.str1.1
+                0x00000000000055e0       0x15 uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+ .rodata._line_buffer_try_extend.str1.1
+                0x00000000000055e0       0x34 uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+ .rodata._line_buffer_try_extend.str1.8
+                0x00000000000055e0       0x26 uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+ .rodata._evict_oldest_line.str1.8
+                0x00000000000055e0      0x187 uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+ .rodata._evict_oldest_line.str1.1
+                0x00000000000055e0       0x74 uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+ .rodata._alloc_line.str1.8
+                0x00000000000055e0       0x36 uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+ .rodata._alloc_line.str1.1
+                0x00000000000055e0       0x38 uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+ .rodata._scrollback_active.str1.8
+                0x00000000000055e0       0x2d uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+ .rodata._history_scroll.str1.1
+                0x00000000000055e0       0x35 uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+ .rodata._history_reflow.str1.8
+                0x00000000000055e0       0x31 uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+ .rodata._history_reflow.str1.1
+                0x00000000000055e0       0x1d uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+ .rodata._history_iter_rows.str1.8
+                0x00000000000055e0       0xe9 uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+ .rodata._history_iter_rows.str1.1
+                0x00000000000055e0       0x2b uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+ .rodata._history_append_row.str1.1
+                0x00000000000055e0       0x33 uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+ .rodata._history_append_row.str1.8
+                0x00000000000055e0       0xa1 uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+ .rodata._blank_cells
+                0x00000000000055e0      0x200 uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x00000000000057e0      0x154
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x00000000000057e0      0x154 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                0x00000000000057e0                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x0000000000005938      0x710
+ *(.eh_frame)
+ .eh_frame      0x0000000000005938      0x508 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+ .eh_frame      0x0000000000005e40       0x28 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000005e68        0x0 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+ .eh_frame      0x0000000000005e68      0x1e0 uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+                                        0x1f8 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x0000000000006048        0x0
+ *(.sframe)
+ .sframe        0x0000000000006048        0x0 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x0000000000007048                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array
+ *(.preinit_array)
+
+.init_array
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+
+.fini_array
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x0000000000007048        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x0000000000007048        0x0 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+
+.dynamic        0x0000000000007048      0x150
+ *(.dynamic)
+ .dynamic       0x0000000000007048      0x150 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                0x0000000000007048                _DYNAMIC
+
+.got            0x0000000000007198        0x8
+ *(.got)
+ .got           0x0000000000007198        0x8 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+ *(.igot)
+                0x00000000000071a0                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x00000000000071a0       0x60
+ *(.got.plt)
+ .got.plt       0x00000000000071a0       0x60 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                0x00000000000071a0                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+
+.data
+ *(.data .data.* .gnu.linkonce.d.*)
+
+.data1
+ *(.data1)
+                [!provide]                        PROVIDE (_edata = .)
+                [!provide]                        PROVIDE (edata = .)
+                0x0000000000007200                . = .
+                [!provide]                        PROVIDE (__bss_start = .)
+
+.bss            0x0000000000007200        0x0
+ *(.dynbss)
+ .dynbss        0x0000000000007200        0x0 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ *(COMMON)
+                0x0000000000007200                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x0000000000007200                . = ALIGN (0x8)
+                0x0000000000007200                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x0000000000009200        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x0000000000009200                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000009200                . = ALIGN (0x8)
+                [!provide]                        PROVIDE (_end = .)
+                [!provide]                        PROVIDE (end = .)
+                0x0000000000009200                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/lib/libtermui.so.0.0.p/termui_src_termui.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/lib/libtermui.so.0.0.p/termui_src_history.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/lib/libtermui.so.0.0 elf64-x86-64)

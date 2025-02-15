@@ -1,0 +1,462 @@
+
+As-needed library included to satisfy reference by file (symbol)
+
+libinet.so.0                  uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o (inet_get_srcaddr)
+libc.so.0                     uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o (log_msg)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libnettl.so.0.0.p/nettl_src_portrng.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libnettl.so.0.0.p/nettl_src_portrng.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libnettl.so.0.0.p/nettl_src_portrng.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+LOAD uspace/lib/libnettl.so.0.0.p/nettl_src_portrng.c.o
+START GROUP
+LOAD uspace/lib/libinet.so.0.0
+LOAD uspace/lib/libc.so.0.0
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000000120                . = (SEGMENT_START ("text-segment", 0x0) + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000000120       0x9c
+ *(.hash)
+ .hash          0x0000000000000120       0x9c uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x00000000000001c0      0x1e0
+ *(.dynsym)
+ .dynsym        0x00000000000001c0      0x1e0 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+
+.dynstr         0x00000000000003a0      0x13f
+ *(.dynstr)
+ .dynstr        0x00000000000003a0      0x13f uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+
+.gnu.version    0x00000000000004e0        0x0
+ *(.gnu.version)
+ .gnu.version   0x00000000000004e0        0x0 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+
+.gnu.version_d  0x00000000000004e0        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x00000000000004e0        0x0 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+
+.gnu.version_r  0x00000000000004e0        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x00000000000004e0        0x0 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+
+.rela.dyn       0x00000000000004e0        0x0
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x00000000000004e0        0x0 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+ .rela.ifunc    0x00000000000004e0        0x0 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+
+.rela.plt       0x00000000000004e0      0x150
+ *(.rela.plt)
+ .rela.plt      0x00000000000004e0      0x150 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+ *(.rela.iplt)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x0000000000000630       0xf0
+ *(.plt)
+ .plt           0x0000000000000630       0xf0 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+ *(.iplt)
+
+.plt.got        0x0000000000000720        0x0
+ *(.plt.got)
+ .plt.got       0x0000000000000720        0x0 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x0000000000000720     0x12a3
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text.amap_repla_find
+                0x0000000000000720      0x166 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+ *fill*         0x0000000000000886        0xa 
+ .text.amap_create
+                0x0000000000000890       0xaf uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+                0x0000000000000890                amap_create
+ *fill*         0x000000000000093f        0x1 
+ .text.amap_destroy
+                0x0000000000000940       0x95 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+                0x0000000000000940                amap_destroy
+ *fill*         0x00000000000009d5        0xb 
+ .text.amap_insert
+                0x00000000000009e0      0x680 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+                0x00000000000009e0                amap_insert
+ .text.amap_remove
+                0x0000000000001060      0x309 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+                0x0000000000001060                amap_remove
+ *fill*         0x0000000000001369        0x7 
+ .text.amap_find_match
+                0x0000000000001370      0x1d3 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+                0x0000000000001370                amap_find_match
+ *fill*         0x0000000000001543        0xd 
+ .text.portrng_create
+                0x0000000000001550       0x72 uspace/lib/libnettl.so.0.0.p/nettl_src_portrng.c.o
+                0x0000000000001550                portrng_create
+ *fill*         0x00000000000015c2        0xe 
+ .text.portrng_destroy
+                0x00000000000015d0       0x51 uspace/lib/libnettl.so.0.0.p/nettl_src_portrng.c.o
+                0x00000000000015d0                portrng_destroy
+ *fill*         0x0000000000001621        0xf 
+ .text.portrng_alloc
+                0x0000000000001630      0x1f0 uspace/lib/libnettl.so.0.0.p/nettl_src_portrng.c.o
+                0x0000000000001630                portrng_alloc
+ .text.portrng_find_port
+                0x0000000000001820       0x37 uspace/lib/libnettl.so.0.0.p/nettl_src_portrng.c.o
+                0x0000000000001820                portrng_find_port
+ *fill*         0x0000000000001857        0x9 
+ .text.portrng_free_port
+                0x0000000000001860      0x122 uspace/lib/libnettl.so.0.0.p/nettl_src_portrng.c.o
+                0x0000000000001860                portrng_free_port
+ *fill*         0x0000000000001982        0xe 
+ .text.portrng_empty
+                0x0000000000001990       0x33 uspace/lib/libnettl.so.0.0.p/nettl_src_portrng.c.o
+                0x0000000000001990                portrng_empty
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x00000000000019c8      0x548
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.amap_repla_find.str1.8
+                0x00000000000019c8      0x232 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+                                         0x5a (size before relaxing)
+ .rodata.amap_create.str1.1
+                0x0000000000001bfa      0x316 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+                                         0x1b (size before relaxing)
+ .rodata.amap_create.str1.8
+                0x0000000000001f10       0x2a uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+ .rodata.amap_destroy.str1.1
+                0x0000000000001f10       0x57 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+ .rodata.amap_insert.str1.1
+                0x0000000000001f10       0x5f uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+ .rodata.amap_insert.str1.8
+                0x0000000000001f10       0xe8 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+ .rodata.amap_remove.str1.1
+                0x0000000000001f10       0x65 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+ .rodata.amap_remove.str1.8
+                0x0000000000001f10       0x48 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+ .rodata.amap_find_match.str1.1
+                0x0000000000001f10       0x8a uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+ .rodata.portrng_create.str1.1
+                0x0000000000001f10       0x30 uspace/lib/libnettl.so.0.0.p/nettl_src_portrng.c.o
+ .rodata.portrng_destroy.str1.1
+                0x0000000000001f10       0x28 uspace/lib/libnettl.so.0.0.p/nettl_src_portrng.c.o
+ .rodata.portrng_destroy.str1.8
+                0x0000000000001f10       0x2d uspace/lib/libnettl.so.0.0.p/nettl_src_portrng.c.o
+ .rodata.portrng_alloc.str1.1
+                0x0000000000001f10       0x6c uspace/lib/libnettl.so.0.0.p/nettl_src_portrng.c.o
+ .rodata.portrng_alloc.str1.8
+                0x0000000000001f10       0x20 uspace/lib/libnettl.so.0.0.p/nettl_src_portrng.c.o
+ .rodata.portrng_free_port.str1.1
+                0x0000000000001f10       0x82 uspace/lib/libnettl.so.0.0.p/nettl_src_portrng.c.o
+ .rodata.portrng_free_port.str1.8
+                0x0000000000001f10       0x22 uspace/lib/libnettl.so.0.0.p/nettl_src_portrng.c.o
+ .rodata.portrng_empty.str1.1
+                0x0000000000001f10       0x10 uspace/lib/libnettl.so.0.0.p/nettl_src_portrng.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x0000000000001f10       0x74
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x0000000000001f10       0x74 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+                0x0000000000001f10                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x0000000000001f88      0x260
+ *(.eh_frame)
+ .eh_frame      0x0000000000001f88      0x148 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+ .eh_frame      0x00000000000020d0       0x28 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x00000000000020f8        0x0 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+ .eh_frame      0x00000000000020f8       0xf0 uspace/lib/libnettl.so.0.0.p/nettl_src_portrng.c.o
+                                        0x108 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x00000000000021e8        0x0
+ *(.sframe)
+ .sframe        0x00000000000021e8        0x0 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x00000000000031e8                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array
+ *(.preinit_array)
+
+.init_array
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+
+.fini_array
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x00000000000031e8        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x00000000000031e8        0x0 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+
+.dynamic        0x00000000000031e8      0x130
+ *(.dynamic)
+ .dynamic       0x00000000000031e8      0x130 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+                0x00000000000031e8                _DYNAMIC
+
+.got            0x0000000000003318        0x0
+ *(.got)
+ .got           0x0000000000003318        0x0 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+ *(.igot)
+                0x0000000000003318                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x0000000000003318       0x88
+ *(.got.plt)
+ .got.plt       0x0000000000003318       0x88 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+                0x0000000000003318                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+
+.data
+ *(.data .data.* .gnu.linkonce.d.*)
+
+.data1
+ *(.data1)
+                [!provide]                        PROVIDE (_edata = .)
+                [!provide]                        PROVIDE (edata = .)
+                0x00000000000033a0                . = .
+                [!provide]                        PROVIDE (__bss_start = .)
+
+.bss            0x00000000000033a0        0x0
+ *(.dynbss)
+ .dynbss        0x00000000000033a0        0x0 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ *(COMMON)
+                0x00000000000033a0                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x00000000000033a0                . = ALIGN (0x8)
+                0x00000000000033a0                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x00000000000053a0        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x00000000000053a0                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x00000000000053a0                . = ALIGN (0x8)
+                [!provide]                        PROVIDE (_end = .)
+                [!provide]                        PROVIDE (end = .)
+                0x00000000000053a0                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/lib/libnettl.so.0.0.p/nettl_src_amap.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/lib/libnettl.so.0.0.p/nettl_src_portrng.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/lib/libnettl.so.0.0 elf64-x86-64)

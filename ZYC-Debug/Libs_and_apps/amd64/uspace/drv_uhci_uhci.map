@@ -1,0 +1,2816 @@
+Archive member included to satisfy reference by file (symbol)
+
+uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                              (--whole-archive)
+uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                              (--whole-archive)
+uspace/lib/libusbhost.a.p/usbhost_src_endpoint.c.o
+                              uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o (endpoint_init)
+uspace/lib/libusbhost.a.p/usbhost_src_hcd.c.o
+                              uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_main.c.o (hc_driver_main)
+uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+                              uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o (bus_init)
+uspace/lib/libusbhost.a.p/usbhost_src_usb2_bus.c.o
+                              uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o (usb2_bus_device_enumerate)
+uspace/lib/libusbhost.a.p/usbhost_src_bandwidth.c.o
+                              uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o (bandwidth_accounting_usb11)
+uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o
+                              uspace/lib/libusbhost.a.p/usbhost_src_usb2_bus.c.o (hc_get_ep0_max_packet_size)
+uspace/lib/libusbhost.a.p/usbhost_src_usb_transfer_batch.c.o
+                              uspace/lib/libusbhost.a.p/usbhost_src_endpoint.c.o (usb_transfer_batch_create)
+uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+                              uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o (hcd_ddf_fun_create)
+uspace/lib/libusb.a.p/usb_src_class.c.o
+                              uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o (usb_str_class)
+uspace/lib/libusb.a.p/usb_src_debug.c.o
+                              uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hw_struct_transfer_descriptor.c.o (usb_debug_str_buffer)
+uspace/lib/libusb.a.p/usb_src_dma_buffer.c.o
+                              uspace/lib/libusbhost.a.p/usbhost_src_usb_transfer_batch.c.o (dma_buffer_alloc_policy)
+uspace/lib/libusb.a.p/usb_src_usb.c.o
+                              uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_batch.c.o (usb_str_transfer_type)
+uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+                              uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o (ddf_dev_data_alloc)
+uspace/lib/libdrv.a.p/drv_generic_dev_iface.c.o
+                              uspace/lib/libdrv.a.p/drv_generic_driver.c.o (get_remote_iface)
+uspace/lib/libdrv.a.p/drv_generic_interrupt.c.o
+                              uspace/lib/libusbhost.a.p/usbhost_src_hcd.c.o (register_interrupt_handler)
+uspace/lib/libdrv.a.p/drv_generic_logbuf.c.o
+                              uspace/lib/libusb.a.p/usb_src_debug.c.o (ddf_dump_buffer)
+uspace/lib/libdrv.a.p/drv_generic_remote_audio_mixer.c.o
+                              uspace/lib/libdrv.a.p/drv_generic_dev_iface.c.o (remote_audio_mixer_iface)
+uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+                              uspace/lib/libdrv.a.p/drv_generic_dev_iface.c.o (remote_audio_pcm_iface)
+uspace/lib/libdrv.a.p/drv_generic_remote_hw_res.c.o
+                              uspace/lib/libdrv.a.p/drv_generic_dev_iface.c.o (remote_hw_res_iface)
+uspace/lib/libdrv.a.p/drv_generic_remote_pio_window.c.o
+                              uspace/lib/libdrv.a.p/drv_generic_dev_iface.c.o (remote_pio_window_iface)
+uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+                              uspace/lib/libdrv.a.p/drv_generic_dev_iface.c.o (remote_nic_iface)
+uspace/lib/libdrv.a.p/drv_generic_remote_ieee80211.c.o
+                              uspace/lib/libdrv.a.p/drv_generic_dev_iface.c.o (remote_ieee80211_iface)
+uspace/lib/libdrv.a.p/drv_generic_remote_usb.c.o
+                              uspace/lib/libdrv.a.p/drv_generic_dev_iface.c.o (remote_usb_iface)
+uspace/lib/libdrv.a.p/drv_generic_remote_pci.c.o
+                              uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_main.c.o (pci_config_space_write_16)
+uspace/lib/libdrv.a.p/drv_generic_remote_usbdiag.c.o
+                              uspace/lib/libdrv.a.p/drv_generic_dev_iface.c.o (remote_usbdiag_iface)
+uspace/lib/libdrv.a.p/drv_generic_remote_usbhc.c.o
+                              uspace/lib/libdrv.a.p/drv_generic_dev_iface.c.o (remote_usbhc_iface)
+uspace/lib/libdrv.a.p/drv_generic_remote_usbhid.c.o
+                              uspace/lib/libdrv.a.p/drv_generic_dev_iface.c.o (remote_usbhid_iface)
+uspace/lib/libdrv.a.p/drv_generic_remote_clock_dev.c.o
+                              uspace/lib/libdrv.a.p/drv_generic_dev_iface.c.o (remote_clock_dev_iface)
+uspace/lib/libdrv.a.p/drv_generic_remote_led_dev.c.o
+                              uspace/lib/libdrv.a.p/drv_generic_dev_iface.c.o (remote_led_dev_iface)
+uspace/lib/libdrv.a.p/drv_generic_remote_battery_dev.c.o
+                              uspace/lib/libdrv.a.p/drv_generic_dev_iface.c.o (remote_battery_dev_iface)
+uspace/lib/libdrv.a.p/drv_generic_remote_ahci.c.o
+                              uspace/lib/libdrv.a.p/drv_generic_dev_iface.c.o (remote_ahci_iface)
+uspace/lib/libdrv.a.p/drv_generic_log.c.o
+                              uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o (ddf_msg)
+uspace/lib/libinet.a.p/inet_src_dhcp.c.o
+                              uspace/lib/libdrv.a.p/drv_generic_remote_ieee80211.c.o (dhcp_discover)
+uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+                              uspace/lib/libdrv.a.p/drv_generic_remote_ieee80211.c.o (eth_addr_decode)
+uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+                              uspace/lib/libdrv.a.p/drv_generic_remote_ieee80211.c.o (inetcfg_addr_delete)
+uspace/lib/libdevice.a.p/device_src_devman.c.o
+                              uspace/lib/libdrv.a.p/drv_generic_driver.c.o (devman_driver_register)
+uspace/lib/libusbvirt.a.p/usbvirt_src_stdreq.c.o
+                              uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_rh.c.o (req_nop)
+uspace/lib/libusbvirt.a.p/usbvirt_src_virthub_base.c.o
+                              uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_rh.c.o (virthub_get_data)
+uspace/lib/libusbvirt.a.p/usbvirt_src_virthub_descriptors.c.o
+                              uspace/lib/libusbvirt.a.p/usbvirt_src_virthub_base.c.o (virthub_interface_descriptor_ex)
+uspace/lib/libusbvirt.a.p/usbvirt_src_transfer.c.o
+                              uspace/lib/libusbvirt.a.p/usbvirt_src_virthub_base.c.o (usbvirt_control_write)
+uspace/lib/libusbvirt.a.p/usbvirt_src_ctrltransfer.c.o
+                              uspace/lib/libusbvirt.a.p/usbvirt_src_transfer.c.o (process_control_transfer)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.0                     uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o (loc_category_get_id)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ .data          0x0000000000000000        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ .bss           0x0000000000000000        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ .text          0x0000000000000000        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_main.c.o
+ .data          0x0000000000000000        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_main.c.o
+ .bss           0x0000000000000000        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_main.c.o
+ .text          0x0000000000000000        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_transfer_list.c.o
+ .data          0x0000000000000000        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_transfer_list.c.o
+ .bss           0x0000000000000000        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_transfer_list.c.o
+ .text          0x0000000000000000        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_batch.c.o
+ .data          0x0000000000000000        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_batch.c.o
+ .bss           0x0000000000000000        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_batch.c.o
+ .text          0x0000000000000000        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_rh.c.o
+ .data          0x0000000000000000        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_rh.c.o
+ .bss           0x0000000000000000        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_rh.c.o
+ .text          0x0000000000000000        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hw_struct_transfer_descriptor.c.o
+ .data          0x0000000000000000        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hw_struct_transfer_descriptor.c.o
+ .bss           0x0000000000000000        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hw_struct_transfer_descriptor.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .text          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libusbhost.a.p/usbhost_src_endpoint.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libusbhost.a.p/usbhost_src_endpoint.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libusbhost.a.p/usbhost_src_endpoint.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libusbhost.a.p/usbhost_src_hcd.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libusbhost.a.p/usbhost_src_hcd.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libusbhost.a.p/usbhost_src_hcd.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libusbhost.a.p/usbhost_src_usb2_bus.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libusbhost.a.p/usbhost_src_usb2_bus.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libusbhost.a.p/usbhost_src_usb2_bus.c.o
+ .rodata.usb2_default_target
+                0x0000000000000000        0x8 uspace/lib/libusbhost.a.p/usbhost_src_usb2_bus.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libusbhost.a.p/usbhost_src_bandwidth.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libusbhost.a.p/usbhost_src_bandwidth.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libusbhost.a.p/usbhost_src_bandwidth.c.o
+ .text.bandwidth_count_usb2
+                0x0000000000000000      0x12d uspace/lib/libusbhost.a.p/usbhost_src_bandwidth.c.o
+ .rodata.bandwidth_accounting_usb2
+                0x0000000000000000       0x10 uspace/lib/libusbhost.a.p/usbhost_src_bandwidth.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o
+ .text.joinable_fibril_worker
+                0x0000000000000000       0x39 uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o
+ .text.hc_get_ep0_initial_mps
+                0x0000000000000000       0x25 uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o
+ .text.hc_get_device_desc
+                0x0000000000000000       0x80 uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o
+ .rodata.hc_get_hub_desc.str1.8
+                0x0000000000000000       0x27 uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o
+ .rodata.hc_get_hub_desc.str1.1
+                0x0000000000000000       0x13 uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o
+ .text.hc_get_hub_desc
+                0x0000000000000000       0xa2 uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o
+ .rodata.joinable_fibril_create.str1.1
+                0x0000000000000000        0x9 uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o
+ .text.joinable_fibril_create
+                0x0000000000000000       0xb4 uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o
+ .rodata.joinable_fibril_start.str1.1
+                0x0000000000000000       0x10 uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o
+ .text.joinable_fibril_start
+                0x0000000000000000       0x44 uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o
+ .text.joinable_fibril_join
+                0x0000000000000000       0x6f uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o
+ .text.joinable_fibril_recreate
+                0x0000000000000000       0x47 uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o
+ .text.joinable_fibril_destroy
+                0x0000000000000000       0x61 uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libusbhost.a.p/usbhost_src_usb_transfer_batch.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libusbhost.a.p/usbhost_src_usb_transfer_batch.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libusbhost.a.p/usbhost_src_usb_transfer_batch.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libusb.a.p/usb_src_class.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libusb.a.p/usb_src_class.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libusb.a.p/usb_src_class.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libusb.a.p/usb_src_debug.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libusb.a.p/usb_src_debug.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libusb.a.p/usb_src_debug.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libusb.a.p/usb_src_dma_buffer.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libusb.a.p/usb_src_dma_buffer.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libusb.a.p/usb_src_dma_buffer.c.o
+ .text.dma_policy_create
+                0x0000000000000000       0x4e uspace/lib/libusb.a.p/usb_src_dma_buffer.c.o
+ .text.dma_buffer_phys
+                0x0000000000000000       0x6a uspace/lib/libusb.a.p/usb_src_dma_buffer.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libusb.a.p/usb_src_usb.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libusb.a.p/usb_src_usb.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libusb.a.p/usb_src_usb.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ .text.ddf_dev_get_handle
+                0x0000000000000000        0x9 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ .rodata.ddf_fun_set_conn_handler.str1.1
+                0x0000000000000000       0x11 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ .text.ddf_fun_set_conn_handler
+                0x0000000000000000       0x24 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_dev_iface.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_dev_iface.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_dev_iface.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_interrupt.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_interrupt.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_interrupt.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_logbuf.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_logbuf.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_logbuf.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_audio_mixer.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_audio_mixer.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_audio_mixer.c.o
+ .text.audio_mixer_get_info
+                0x0000000000000000       0xe6 uspace/lib/libdrv.a.p/drv_generic_remote_audio_mixer.c.o
+ .text.audio_mixer_get_item_info
+                0x0000000000000000       0xe6 uspace/lib/libdrv.a.p/drv_generic_remote_audio_mixer.c.o
+ .text.audio_mixer_set_item_level
+                0x0000000000000000       0x27 uspace/lib/libdrv.a.p/drv_generic_remote_audio_mixer.c.o
+ .text.audio_mixer_get_item_level
+                0x0000000000000000       0x46 uspace/lib/libdrv.a.p/drv_generic_remote_audio_mixer.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .rodata.audio_pcm_cap_str.str1.1
+                0x0000000000000000        0xc uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .text.audio_pcm_cap_str
+                0x0000000000000000       0x1a uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .rodata.audio_pcm_event_str.str1.1
+                0x0000000000000000        0xe uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .text.audio_pcm_event_str
+                0x0000000000000000       0x1d uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .rodata.audio_pcm_open_default.str1.1
+                0x0000000000000000        0xa uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .text.audio_pcm_open_default
+                0x0000000000000000       0xa3 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .text.audio_pcm_open
+                0x0000000000000000       0x2b uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .text.audio_pcm_open_service
+                0x0000000000000000       0x14 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .text.audio_pcm_close
+                0x0000000000000000       0x12 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .text.audio_pcm_get_info_str
+                0x0000000000000000       0xc2 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .text.audio_pcm_query_cap
+                0x0000000000000000       0x48 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .text.audio_pcm_get_buffer_pos
+                0x0000000000000000       0x82 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .text.audio_pcm_test_format
+                0x0000000000000000      0x188 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .text.audio_pcm_register_event_callback
+                0x0000000000000000       0x94 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .text.audio_pcm_unregister_event_callback
+                0x0000000000000000       0x34 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .text.audio_pcm_get_buffer
+                0x0000000000000000       0xbd uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .text.audio_pcm_release_buffer
+                0x0000000000000000       0x34 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .rodata.audio_pcm_start_playback_fragment.str1.8
+                0x0000000000000000       0x58 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .text.audio_pcm_start_playback_fragment
+                0x0000000000000000       0x93 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .text.audio_pcm_last_playback_fragment
+                0x0000000000000000       0x36 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .text.audio_pcm_start_playback
+                0x0000000000000000       0x84 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .text.audio_pcm_stop_playback_immediate
+                0x0000000000000000       0x39 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .text.audio_pcm_stop_playback
+                0x0000000000000000       0x36 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .text.audio_pcm_start_capture_fragment
+                0x0000000000000000       0x93 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .text.audio_pcm_start_capture
+                0x0000000000000000       0x84 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .text.audio_pcm_last_capture_fragment
+                0x0000000000000000       0x36 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .text.audio_pcm_stop_capture_immediate
+                0x0000000000000000       0x39 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .text.audio_pcm_stop_capture
+                0x0000000000000000       0x36 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .bss.pcm_id.0  0x0000000000000000        0x8 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .bss.resolved.1
+                0x0000000000000000        0x1 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .rodata.str1.1
+                0x0000000000000000       0xe5 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .rodata.events.2
+                0x0000000000000000     0x2030 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .rodata.caps.3
+                0x0000000000000000       0x38 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_hw_res.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_hw_res.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_hw_res.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_pio_window.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_pio_window.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_pio_window.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_send_frame
+                0x0000000000000000       0x9b uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_callback_create
+                0x0000000000000000       0xb1 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .rodata.nic_get_state.str1.1
+                0x0000000000000000        0x6 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_get_state
+                0x0000000000000000       0x66 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_set_state
+                0x0000000000000000       0x36 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .rodata.nic_get_address.str1.1
+                0x0000000000000000        0x8 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_get_address
+                0x0000000000000000       0x86 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_set_address
+                0x0000000000000000       0x86 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .rodata.nic_get_stats.str1.1
+                0x0000000000000000        0x6 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_get_stats
+                0x0000000000000000       0x70 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .rodata.nic_get_device_info.str1.1
+                0x0000000000000000        0xc uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_get_device_info
+                0x0000000000000000       0x86 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .rodata.nic_get_cable_state.str1.1
+                0x0000000000000000        0xc uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_get_cable_state
+                0x0000000000000000       0x66 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_get_operation_mode
+                0x0000000000000000       0x83 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_set_operation_mode
+                0x0000000000000000       0x4b uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_autoneg_enable
+                0x0000000000000000       0x36 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_autoneg_disable
+                0x0000000000000000       0x34 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_autoneg_probe
+                0x0000000000000000       0x9f uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_autoneg_restart
+                0x0000000000000000       0x34 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_get_pause
+                0x0000000000000000       0x84 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_set_pause
+                0x0000000000000000       0x4c uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .rodata.nic_unicast_get_mode.str1.1
+                0x0000000000000000        0x5 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_unicast_get_mode
+                0x0000000000000000       0xcb uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_unicast_set_mode
+                0x0000000000000000       0xeb uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_multicast_get_mode
+                0x0000000000000000       0xcb uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_multicast_set_mode
+                0x0000000000000000       0xeb uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_broadcast_get_mode
+                0x0000000000000000       0x66 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_broadcast_set_mode
+                0x0000000000000000       0x36 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_defective_get_mode
+                0x0000000000000000       0x66 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_defective_set_mode
+                0x0000000000000000       0x36 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_blocked_sources_get
+                0x0000000000000000       0x97 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_blocked_sources_set
+                0x0000000000000000       0xd7 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .rodata.nic_vlan_get_mask.str1.1
+                0x0000000000000000        0x5 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_vlan_get_mask
+                0x0000000000000000       0x70 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_vlan_set_mask
+                0x0000000000000000       0x9c uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_vlan_set_tag
+                0x0000000000000000       0x4d uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .rodata.nic_wol_virtue_add.str1.1
+                0x0000000000000000        0x3 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_wol_virtue_add
+                0x0000000000000000       0xff uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_wol_virtue_remove
+                0x0000000000000000       0x36 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_wol_virtue_probe
+                0x0000000000000000       0xb8 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_wol_virtue_list
+                0x0000000000000000       0xcc uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .rodata.nic_wol_virtue_get_caps.str1.1
+                0x0000000000000000        0x6 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_wol_virtue_get_caps
+                0x0000000000000000       0x6a uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .rodata.nic_wol_load_info.str1.1
+                0x0000000000000000        0xd uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_wol_load_info
+                0x0000000000000000       0xc7 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .rodata.nic_offload_probe.str1.1
+                0x0000000000000000       0x11 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_offload_probe
+                0x0000000000000000       0x92 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_offload_set
+                0x0000000000000000       0x48 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_poll_get_mode
+                0x0000000000000000       0x8f uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_poll_set_mode
+                0x0000000000000000       0xae uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.nic_poll_now
+                0x0000000000000000       0x34 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_ieee80211.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_ieee80211.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_ieee80211.c.o
+ .rodata.ieee80211_get_scan_results.str1.1
+                0x0000000000000000        0x8 uspace/lib/libdrv.a.p/drv_generic_remote_ieee80211.c.o
+ .text.ieee80211_get_scan_results
+                0x0000000000000000       0x88 uspace/lib/libdrv.a.p/drv_generic_remote_ieee80211.c.o
+ .rodata.ieee80211_connect.str1.1
+                0x0000000000000000        0xc uspace/lib/libdrv.a.p/drv_generic_remote_ieee80211.c.o
+ .text.ieee80211_connect
+                0x0000000000000000      0x18c uspace/lib/libdrv.a.p/drv_generic_remote_ieee80211.c.o
+ .rodata.ieee80211_disconnect.str1.1
+                0x0000000000000000        0x5 uspace/lib/libdrv.a.p/drv_generic_remote_ieee80211.c.o
+ .text.ieee80211_disconnect
+                0x0000000000000000      0x1d1 uspace/lib/libdrv.a.p/drv_generic_remote_ieee80211.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_usb.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_usb.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_usb.c.o
+ .text.usb_dev_connect
+                0x0000000000000000        0xf uspace/lib/libdrv.a.p/drv_generic_remote_usb.c.o
+ .text.usb_dev_connect_to_self
+                0x0000000000000000       0x17 uspace/lib/libdrv.a.p/drv_generic_remote_usb.c.o
+ .text.usb_dev_disconnect
+                0x0000000000000000       0x12 uspace/lib/libdrv.a.p/drv_generic_remote_usb.c.o
+ .text.usb_get_my_description
+                0x0000000000000000       0x76 uspace/lib/libdrv.a.p/drv_generic_remote_usb.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_pci.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_pci.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_pci.c.o
+ .text.pci_config_space_read_8
+                0x0000000000000000       0x56 uspace/lib/libdrv.a.p/drv_generic_remote_pci.c.o
+ .text.pci_config_space_read_16
+                0x0000000000000000       0x5a uspace/lib/libdrv.a.p/drv_generic_remote_pci.c.o
+ .text.pci_config_space_read_32
+                0x0000000000000000       0x59 uspace/lib/libdrv.a.p/drv_generic_remote_pci.c.o
+ .text.pci_config_space_write_8
+                0x0000000000000000       0x49 uspace/lib/libdrv.a.p/drv_generic_remote_pci.c.o
+ .text.pci_config_space_write_32
+                0x0000000000000000       0x48 uspace/lib/libdrv.a.p/drv_generic_remote_pci.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_usbdiag.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_usbdiag.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_usbdiag.c.o
+ .text.usbdiag_connect
+                0x0000000000000000        0xf uspace/lib/libdrv.a.p/drv_generic_remote_usbdiag.c.o
+ .text.usbdiag_disconnect
+                0x0000000000000000       0x12 uspace/lib/libdrv.a.p/drv_generic_remote_usbdiag.c.o
+ .text.usbdiag_test_in
+                0x0000000000000000       0xc6 uspace/lib/libdrv.a.p/drv_generic_remote_usbdiag.c.o
+ .text.usbdiag_test_out
+                0x0000000000000000       0xc6 uspace/lib/libdrv.a.p/drv_generic_remote_usbdiag.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_usbhc.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_usbhc.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_usbhc.c.o
+ .text.usbhc_reserve_default_address
+                0x0000000000000000       0x27 uspace/lib/libdrv.a.p/drv_generic_remote_usbhc.c.o
+ .text.usbhc_release_default_address
+                0x0000000000000000       0x27 uspace/lib/libdrv.a.p/drv_generic_remote_usbhc.c.o
+ .text.usbhc_device_enumerate
+                0x0000000000000000       0x27 uspace/lib/libdrv.a.p/drv_generic_remote_usbhc.c.o
+ .text.usbhc_device_remove
+                0x0000000000000000       0x27 uspace/lib/libdrv.a.p/drv_generic_remote_usbhc.c.o
+ .text.usbhc_register_endpoint
+                0x0000000000000000       0xf6 uspace/lib/libdrv.a.p/drv_generic_remote_usbhc.c.o
+ .text.usbhc_unregister_endpoint
+                0x0000000000000000       0x96 uspace/lib/libdrv.a.p/drv_generic_remote_usbhc.c.o
+ .text.usbhc_transfer
+                0x0000000000000000       0xfa uspace/lib/libdrv.a.p/drv_generic_remote_usbhc.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_usbhid.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_usbhid.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_usbhid.c.o
+ .text.usbhid_dev_get_event_length
+                0x0000000000000000       0x72 uspace/lib/libdrv.a.p/drv_generic_remote_usbhid.c.o
+ .text.usbhid_dev_get_event
+                0x0000000000000000      0x1a2 uspace/lib/libdrv.a.p/drv_generic_remote_usbhid.c.o
+ .text.usbhid_dev_get_report_descriptor_length
+                0x0000000000000000       0x72 uspace/lib/libdrv.a.p/drv_generic_remote_usbhid.c.o
+ .text.usbhid_dev_get_report_descriptor
+                0x0000000000000000      0x13a uspace/lib/libdrv.a.p/drv_generic_remote_usbhid.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_clock_dev.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_clock_dev.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_clock_dev.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_led_dev.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_led_dev.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_led_dev.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_battery_dev.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_battery_dev.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_battery_dev.c.o
+ .text.battery_status_get
+                0x0000000000000000       0x4e uspace/lib/libdrv.a.p/drv_generic_remote_battery_dev.c.o
+ .text.battery_charge_level_get
+                0x0000000000000000       0x51 uspace/lib/libdrv.a.p/drv_generic_remote_battery_dev.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_ahci.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_ahci.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_remote_ahci.c.o
+ .rodata.ahci_get_sess.str1.1
+                0x0000000000000000        0x6 uspace/lib/libdrv.a.p/drv_generic_remote_ahci.c.o
+ .text.ahci_get_sess
+                0x0000000000000000       0xa1 uspace/lib/libdrv.a.p/drv_generic_remote_ahci.c.o
+ .text.ahci_get_sata_device_name
+                0x0000000000000000       0x7a uspace/lib/libdrv.a.p/drv_generic_remote_ahci.c.o
+ .text.ahci_get_num_blocks
+                0x0000000000000000       0x84 uspace/lib/libdrv.a.p/drv_generic_remote_ahci.c.o
+ .text.ahci_get_block_size
+                0x0000000000000000       0x74 uspace/lib/libdrv.a.p/drv_generic_remote_ahci.c.o
+ .text.ahci_read_blocks
+                0x0000000000000000       0x9a uspace/lib/libdrv.a.p/drv_generic_remote_ahci.c.o
+ .text.ahci_write_blocks
+                0x0000000000000000       0x9a uspace/lib/libdrv.a.p/drv_generic_remote_ahci.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_log.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_log.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdrv.a.p/drv_generic_log.c.o
+ .text.ddf_log_init
+                0x0000000000000000        0xa uspace/lib/libdrv.a.p/drv_generic_log.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_dhcp.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_dhcp.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_dhcp.c.o
+ .rodata.dhcp_init.str1.8
+                0x0000000000000000       0x29 uspace/lib/libinet.a.p/inet_src_dhcp.c.o
+ .rodata.dhcp_init.str1.1
+                0x0000000000000000       0x1b uspace/lib/libinet.a.p/inet_src_dhcp.c.o
+ .text.dhcp_init
+                0x0000000000000000       0x71 uspace/lib/libinet.a.p/inet_src_dhcp.c.o
+ .text.dhcp_link_add
+                0x0000000000000000       0x3c uspace/lib/libinet.a.p/inet_src_dhcp.c.o
+ .text.dhcp_link_remove
+                0x0000000000000000       0x3c uspace/lib/libinet.a.p/inet_src_dhcp.c.o
+ .text.dhcp_discover
+                0x0000000000000000       0x3c uspace/lib/libinet.a.p/inet_src_dhcp.c.o
+ .bss.dhcp_sess
+                0x0000000000000000        0x8 uspace/lib/libinet.a.p/inet_src_dhcp.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .text.eth_addr_encode
+                0x0000000000000000       0x47 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .text.eth_addr_decode
+                0x0000000000000000       0x43 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .text.eth_addr_compare
+                0x0000000000000000       0x19 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .rodata.eth_addr_format.str1.1
+                0x0000000000000000        0xb uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .text.eth_addr_format
+                0x0000000000000000       0x6f uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .rodata.eth_addr_broadcast
+                0x0000000000000000        0x8 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .text.inetcfg_get_ids_internal.constprop.0
+                0x0000000000000000      0x198 uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .rodata.inetcfg_init.str1.8
+                0x0000000000000000       0x2c uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .rodata.inetcfg_init.str1.1
+                0x0000000000000000       0x1e uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .text.inetcfg_init
+                0x0000000000000000       0x71 uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .text.inetcfg_addr_create_static
+                0x0000000000000000       0xd4 uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .text.inetcfg_addr_delete
+                0x0000000000000000       0x3c uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .rodata.inetcfg_addr_get.str1.1
+                0x0000000000000000       0x1c uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .text.inetcfg_addr_get
+                0x0000000000000000      0x15c uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .text.inetcfg_addr_get_id
+                0x0000000000000000       0xb3 uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .text.inetcfg_get_addr_list
+                0x0000000000000000       0x15 uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .text.inetcfg_get_link_list
+                0x0000000000000000       0x15 uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .text.inetcfg_get_sroute_list
+                0x0000000000000000       0x15 uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .text.inetcfg_link_add
+                0x0000000000000000       0x3c uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .text.inetcfg_link_get
+                0x0000000000000000      0x11c uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .text.inetcfg_link_remove
+                0x0000000000000000       0x3c uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .text.inetcfg_sroute_create
+                0x0000000000000000      0x11a uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .text.inetcfg_sroute_delete
+                0x0000000000000000       0x3c uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .text.inetcfg_sroute_get
+                0x0000000000000000      0x1a4 uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .text.inetcfg_sroute_get_id
+                0x0000000000000000       0xab uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .bss.inetcfg_sess
+                0x0000000000000000        0x8 uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_get_handles_internal
+                0x0000000000000000      0x1a2 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_exchange_begin
+                0x0000000000000000       0xbc uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_exchange_end
+                0x0000000000000000        0xa uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_device_connect
+                0x0000000000000000       0x26 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_fun_get_handle
+                0x0000000000000000      0x15c uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .rodata.devman_fun_get_path.str1.8
+                0x0000000000000000       0x2d uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .rodata.devman_fun_get_path.str1.1
+                0x0000000000000000       0x19 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_fun_get_path
+                0x0000000000000000       0xf2 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_fun_get_match_id
+                0x0000000000000000      0x108 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_fun_get_name
+                0x0000000000000000       0xf2 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_fun_get_driver_name
+                0x0000000000000000       0xf2 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_fun_online
+                0x0000000000000000       0x96 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_fun_offline
+                0x0000000000000000       0x96 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_fun_get_child
+                0x0000000000000000       0xb4 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_dev_get_functions
+                0x0000000000000000       0x18 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_dev_get_parent
+                0x0000000000000000       0xb4 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_fun_sid_to_handle
+                0x0000000000000000       0xb4 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_get_drivers
+                0x0000000000000000       0x17 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_driver_get_devices
+                0x0000000000000000       0x18 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_driver_get_handle
+                0x0000000000000000      0x142 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_driver_get_match_id
+                0x0000000000000000      0x108 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_driver_get_name
+                0x0000000000000000       0xf2 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_driver_get_state
+                0x0000000000000000       0xbc uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_driver_load
+                0x0000000000000000       0x96 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text.devman_driver_unload
+                0x0000000000000000       0x96 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libusbvirt.a.p/usbvirt_src_stdreq.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libusbvirt.a.p/usbvirt_src_stdreq.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libusbvirt.a.p/usbvirt_src_stdreq.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libusbvirt.a.p/usbvirt_src_virthub_base.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libusbvirt.a.p/usbvirt_src_virthub_base.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libusbvirt.a.p/usbvirt_src_virthub_base.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libusbvirt.a.p/usbvirt_src_virthub_descriptors.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libusbvirt.a.p/usbvirt_src_virthub_descriptors.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libusbvirt.a.p/usbvirt_src_virthub_descriptors.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libusbvirt.a.p/usbvirt_src_transfer.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libusbvirt.a.p/usbvirt_src_transfer.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libusbvirt.a.p/usbvirt_src_transfer.c.o
+ .text.usbvirt_data_out
+                0x0000000000000000       0x47 uspace/lib/libusbvirt.a.p/usbvirt_src_transfer.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libusbvirt.a.p/usbvirt_src_ctrltransfer.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libusbvirt.a.p/usbvirt_src_ctrltransfer.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libusbvirt.a.p/usbvirt_src_ctrltransfer.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+LOAD uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_main.c.o
+LOAD uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_transfer_list.c.o
+LOAD uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_batch.c.o
+LOAD uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_rh.c.o
+LOAD uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hw_struct_transfer_descriptor.c.o
+START GROUP
+LOAD uspace/lib/c/libstartfiles.a
+LOAD uspace/lib/libusbhost.a
+LOAD uspace/lib/libusb.a
+LOAD uspace/lib/libdrv.a
+LOAD uspace/lib/libinet.a
+LOAD uspace/lib/libc.so.0.0
+LOAD uspace/lib/libpcm.a
+LOAD uspace/lib/libdevice.a
+LOAD uspace/lib/libusbvirt.a
+LOAD uspace/lib/libusbdev.a
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000400000                PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x0000000000400158                . = (SEGMENT_START ("text-segment", 0x400000) + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000400158      0x280
+ *(.hash)
+ .hash          0x0000000000400158      0x280 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x00000000004003d8      0x888
+ *(.dynsym)
+ .dynsym        0x00000000004003d8      0x888 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+
+.dynstr         0x0000000000400c60      0x5ea
+ *(.dynstr)
+ .dynstr        0x0000000000400c60      0x5ea uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+
+.gnu.version    0x000000000040124a        0x0
+ *(.gnu.version)
+ .gnu.version   0x000000000040124a        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+
+.gnu.version_d  0x0000000000401250        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000401250        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+
+.gnu.version_r  0x0000000000401250        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000401250        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+
+.rela.dyn       0x0000000000401250       0x18
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text.__c_start
+                0x0000000000401250        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ .rela.rodata.cst8
+                0x0000000000401250        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x0000000000401250        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000401250        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x0000000000401250       0x18 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+
+.rela.plt       0x0000000000401268      0x858
+ *(.rela.plt)
+ .rela.plt      0x0000000000401268      0x858 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+ .rela.iplt     0x0000000000401ac0        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x0000000000401ac0      0x5a0
+ *(.plt)
+ .plt           0x0000000000401ac0      0x5a0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+                0x0000000000401ad0                task_retval
+                0x0000000000401ae0                printf
+                0x0000000000401af0                async_hangup
+                0x0000000000401b00                async_send_2
+                0x0000000000401b10                hw_res_enable_interrupt
+                0x0000000000401b20                fibril_rwlock_read_unlock
+                0x0000000000401b30                async_wait_for
+                0x0000000000401b40                snprintf
+                0x0000000000401b50                log_init
+                0x0000000000401b60                async_data_write_start
+                0x0000000000401b70                async_get_call
+                0x0000000000401b80                fibril_mutex_is_locked
+                0x0000000000401b90                service_connect_blocking
+                0x0000000000401ba0                async_data_read_finalize
+                0x0000000000401bb0                async_irq_unsubscribe
+                0x0000000000401bc0                async_send_1
+                0x0000000000401bd0                memcpy
+                0x0000000000401be0                pio_enable_range
+                0x0000000000401bf0                puts
+                0x0000000000401c00                malloc
+                0x0000000000401c10                async_req_1_0
+                0x0000000000401c20                async_share_out_receive
+                0x0000000000401c30                fibril_condvar_signal
+                0x0000000000401c40                async_irq_subscribe
+                0x0000000000401c50                as_area_destroy
+                0x0000000000401c60                str_append
+                0x0000000000401c70                async_answer_0
+                0x0000000000401c80                fibril_condvar_wait
+                0x0000000000401c90                log_msg
+                0x0000000000401ca0                logctl_set_log_level
+                0x0000000000401cb0                log_msgv
+                0x0000000000401cc0                async_exchange_end
+                0x0000000000401cd0                calloc
+                0x0000000000401ce0                pio_write_16
+                0x0000000000401cf0                dmamem_unmap_anonymous
+                0x0000000000401d00                fibril_condvar_wait_timeout
+                0x0000000000401d10                fibril_condvar_initialize
+                0x0000000000401d20                pio_write_8
+                0x0000000000401d30                async_share_out_finalize
+                0x0000000000401d40                fibril_condvar_broadcast
+                0x0000000000401d50                async_send_3
+                0x0000000000401d60                async_answer_2
+                0x0000000000401d70                async_connect_to_me
+                0x0000000000401d80                fibril_mutex_unlock
+                0x0000000000401d90                async_callback_receive_start
+                0x0000000000401da0                str_dup
+                0x0000000000401db0                async_answer_4
+                0x0000000000401dc0                fibril_create
+                0x0000000000401dd0                dmamem_map
+                0x0000000000401de0                pio_write_32
+                0x0000000000401df0                as_get_physical_mapping
+                0x0000000000401e00                udelay
+                0x0000000000401e10                async_answer_5
+                0x0000000000401e20                dmamem_unmap
+                0x0000000000401e30                pio_read_16
+                0x0000000000401e40                fibril_rwlock_write_unlock
+                0x0000000000401e50                __helenos_assert_abort
+                0x0000000000401e60                memset
+                0x0000000000401e70                async_data_read_receive
+                0x0000000000401e80                async_accept_0
+                0x0000000000401e90                dmamem_map_anonymous
+                0x0000000000401ea0                async_share_in_receive
+                0x0000000000401eb0                str_cpy
+                0x0000000000401ec0                asprintf
+                0x0000000000401ed0                fibril_usleep
+                0x0000000000401ee0                str_size
+                0x0000000000401ef0                list_count
+                0x0000000000401f00                async_answer_1
+                0x0000000000401f10                async_exchange_begin
+                0x0000000000401f20                str_error
+                0x0000000000401f30                async_share_in_finalize
+                0x0000000000401f40                async_answer_3
+                0x0000000000401f50                async_create_port
+                0x0000000000401f60                fibril_rwlock_write_lock
+                0x0000000000401f70                async_data_write_finalize
+                0x0000000000401f80                async_data_write_accept
+                0x0000000000401f90                __libc_main
+                0x0000000000401fa0                exit
+                0x0000000000401fb0                async_manager
+                0x0000000000401fc0                async_forget
+                0x0000000000401fd0                hw_res_get_list_parsed
+                0x0000000000401fe0                fibril_add_ready
+                0x0000000000401ff0                async_req_3_0
+                0x0000000000402000                fibril_rwlock_read_lock
+                0x0000000000402010                service_connect
+                0x0000000000402020                async_set_fallback_port_handler
+                0x0000000000402030                async_data_write_receive
+                0x0000000000402040                free
+                0x0000000000402050                fibril_mutex_lock
+ *(.iplt)
+ .iplt          0x0000000000402060        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+
+.plt.got        0x0000000000402060        0x0
+ *(.plt.got)
+ .plt.got       0x0000000000402060        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x0000000000402060     0xe62c
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ .text.unlikely.usb_transfer_batch_create
+                0x0000000000402060        0xa uspace/lib/libusbhost.a.p/usbhost_src_usb_transfer_batch.c.o
+ .text.unlikely.usb_transfer_batch_destroy
+                0x000000000040206a        0xa uspace/lib/libusbhost.a.p/usbhost_src_usb_transfer_batch.c.o
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *fill*         0x0000000000402074        0xc 
+ .text.startup.main
+                0x0000000000402080       0x32 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_main.c.o
+                0x0000000000402080                main
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ *fill*         0x00000000004020b2        0xe 
+ .text.create_transfer_batch
+                0x00000000004020c0        0xb uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ *fill*         0x00000000004020cb        0x5 
+ .text.endpoint_create
+                0x00000000004020d0       0x46 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ *fill*         0x0000000000402116        0xa 
+ .text.hc_init_hw
+                0x0000000000402120      0x111 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ *fill*         0x0000000000402231        0xf 
+ .text.destroy_transfer_batch
+                0x0000000000402240       0x22 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ *fill*         0x0000000000402262        0xe 
+ .text.bus_to_hc.part.0
+                0x0000000000402270       0x18 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ *fill*         0x0000000000402288        0x8 
+ .text.device_gone
+                0x0000000000402290       0x21 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ *fill*         0x00000000004022b1        0xf 
+ .text.device_enumerate
+                0x00000000004022c0       0x21 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ *fill*         0x00000000004022e1        0xf 
+ .text.hc_interrupt
+                0x00000000004022f0      0x124 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ *fill*         0x0000000000402414        0xc 
+ .text.hc_status
+                0x0000000000402420       0x7d uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ *fill*         0x000000000040249d        0x3 
+ .text.endpoint_register
+                0x00000000004024a0       0x84 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ *fill*         0x0000000000402524        0xc 
+ .text.endpoint_unregister
+                0x0000000000402530      0x124 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ *fill*         0x0000000000402654        0xc 
+ .text.hc_schedule
+                0x0000000000402660      0x115 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ *fill*         0x0000000000402775        0xb 
+ .text.hc_gen_irq_code
+                0x0000000000402780      0x1e2 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+                0x0000000000402780                hc_gen_irq_code
+ *fill*         0x0000000000402962        0xe 
+ .text.hc_add   0x0000000000402970      0x471 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+                0x0000000000402970                hc_add
+ *fill*         0x0000000000402de1        0xf 
+ .text.hc_start
+                0x0000000000402df0       0x48 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+                0x0000000000402df0                hc_start
+ *fill*         0x0000000000402e38        0x8 
+ .text.hc_setup_roothub
+                0x0000000000402e40        0xf uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+                0x0000000000402e40                hc_setup_roothub
+ *fill*         0x0000000000402e4f        0x1 
+ .text.hc_gone  0x0000000000402e50       0x23 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+                0x0000000000402e50                hc_gone
+ *fill*         0x0000000000402e73        0xd 
+ .text.disable_legacy
+                0x0000000000402e80       0x4b uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_main.c.o
+ *fill*         0x0000000000402ecb        0x5 
+ .text.uhci_reset_toggle
+                0x0000000000402ed0        0xa uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_transfer_list.c.o
+ *fill*         0x0000000000402eda        0x6 
+ .text.transfer_list_init
+                0x0000000000402ee0      0x17b uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_transfer_list.c.o
+                0x0000000000402ee0                transfer_list_init
+ *fill*         0x000000000040305b        0x5 
+ .text.transfer_list_fini
+                0x0000000000403060       0x26 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_transfer_list.c.o
+                0x0000000000403060                transfer_list_fini
+ *fill*         0x0000000000403086        0xa 
+ .text.transfer_list_set_next
+                0x0000000000403090       0x92 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_transfer_list.c.o
+                0x0000000000403090                transfer_list_set_next
+ *fill*         0x0000000000403122        0xe 
+ .text.transfer_list_add_batch
+                0x0000000000403130      0x210 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_transfer_list.c.o
+                0x0000000000403130                transfer_list_add_batch
+ .text.transfer_list_remove_batch
+                0x0000000000403340      0x26b uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_transfer_list.c.o
+                0x0000000000403340                transfer_list_remove_batch
+ *fill*         0x00000000004035ab        0x5 
+ .text.transfer_list_check_finished
+                0x00000000004035b0       0xba uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_transfer_list.c.o
+                0x00000000004035b0                transfer_list_check_finished
+ *fill*         0x000000000040366a        0x6 
+ .text.transfer_list_abort_all
+                0x0000000000403670       0x5d uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_transfer_list.c.o
+                0x0000000000403670                transfer_list_abort_all
+ *fill*         0x00000000004036cd        0x3 
+ .text.batch_control
+                0x00000000004036d0      0x23f uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_batch.c.o
+ *fill*         0x000000000040390f        0x1 
+ .text.batch_data
+                0x0000000000403910      0x245 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_batch.c.o
+ *fill*         0x0000000000403b55        0xb 
+ .text.uhci_transfer_batch_destroy
+                0x0000000000403b60       0x3e uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_batch.c.o
+                0x0000000000403b60                uhci_transfer_batch_destroy
+ *fill*         0x0000000000403b9e        0x2 
+ .text.uhci_transfer_batch_create
+                0x0000000000403ba0       0x56 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_batch.c.o
+                0x0000000000403ba0                uhci_transfer_batch_create
+ *fill*         0x0000000000403bf6        0xa 
+ .text.uhci_transfer_batch_prepare
+                0x0000000000403c00      0x27c uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_batch.c.o
+                0x0000000000403c00                uhci_transfer_batch_prepare
+ *fill*         0x0000000000403e7c        0x4 
+ .text.uhci_transfer_batch_check_completed
+                0x0000000000403e80      0x29c uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_batch.c.o
+                0x0000000000403e80                uhci_transfer_batch_check_completed
+ *fill*         0x000000000040411c        0x4 
+ .text.req_status_change_handler
+                0x0000000000404120      0x1b1 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_rh.c.o
+ *fill*         0x00000000004042d1        0xf 
+ .text.req_clear_port_feature
+                0x00000000004042e0      0x302 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_rh.c.o
+ *fill*         0x00000000004045e2        0xe 
+ .text.req_set_port_feature
+                0x00000000004045f0      0x2e6 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_rh.c.o
+ *fill*         0x00000000004048d6        0xa 
+ .text.req_get_port_status
+                0x00000000004048e0      0x152 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_rh.c.o
+ *fill*         0x0000000000404a32        0xe 
+ .text.req_get_port_state
+                0x0000000000404a40       0xf2 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_rh.c.o
+ *fill*         0x0000000000404b32        0xe 
+ .text.uhci_rh_init
+                0x0000000000404b40       0x5c uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_rh.c.o
+                0x0000000000404b40                uhci_rh_init
+ *fill*         0x0000000000404b9c        0x4 
+ .text.uhci_rh_schedule
+                0x0000000000404ba0       0xb2 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_rh.c.o
+                0x0000000000404ba0                uhci_rh_schedule
+ *fill*         0x0000000000404c52        0xe 
+ .text.td_status
+                0x0000000000404c60       0x7d uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hw_struct_transfer_descriptor.c.o
+                0x0000000000404c60                td_status
+ *fill*         0x0000000000404cdd        0x3 
+ .text.td_print_status
+                0x0000000000404ce0      0x156 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hw_struct_transfer_descriptor.c.o
+                0x0000000000404ce0                td_print_status
+ *fill*         0x0000000000404e36        0xa 
+ .text.td_init  0x0000000000404e40      0x22a uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hw_struct_transfer_descriptor.c.o
+                0x0000000000404e40                td_init
+ .text          0x000000000040506a        0xc uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                0x000000000040506a                _start
+ *fill*         0x0000000000405076        0xa 
+ .text.__c_start
+                0x0000000000405080       0x8c uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                0x0000000000405080                __c_start
+ *fill*         0x000000000040510c        0x4 
+ .text.endpoint_init
+                0x0000000000405110       0xdf uspace/lib/libusbhost.a.p/usbhost_src_endpoint.c.o
+                0x0000000000405110                endpoint_init
+ *fill*         0x00000000004051ef        0x1 
+ .text.endpoint_add_ref
+                0x00000000004051f0       0x27 uspace/lib/libusbhost.a.p/usbhost_src_endpoint.c.o
+                0x00000000004051f0                endpoint_add_ref
+ *fill*         0x0000000000405217        0x9 
+ .text.endpoint_del_ref
+                0x0000000000405220       0x91 uspace/lib/libusbhost.a.p/usbhost_src_endpoint.c.o
+                0x0000000000405220                endpoint_del_ref
+ *fill*         0x00000000004052b1        0xf 
+ .text.endpoint_set_online
+                0x00000000004052c0        0xe uspace/lib/libusbhost.a.p/usbhost_src_endpoint.c.o
+                0x00000000004052c0                endpoint_set_online
+ *fill*         0x00000000004052ce        0x2 
+ .text.endpoint_set_offline_locked
+                0x00000000004052d0       0x58 uspace/lib/libusbhost.a.p/usbhost_src_endpoint.c.o
+                0x00000000004052d0                endpoint_set_offline_locked
+ *fill*         0x0000000000405328        0x8 
+ .text.endpoint_wait_timeout_locked
+                0x0000000000405330       0x6d uspace/lib/libusbhost.a.p/usbhost_src_endpoint.c.o
+                0x0000000000405330                endpoint_wait_timeout_locked
+ *fill*         0x000000000040539d        0x3 
+ .text.endpoint_activate_locked
+                0x00000000004053a0       0xf4 uspace/lib/libusbhost.a.p/usbhost_src_endpoint.c.o
+                0x00000000004053a0                endpoint_activate_locked
+ *fill*         0x0000000000405494        0xc 
+ .text.endpoint_deactivate_locked
+                0x00000000004054a0       0x5c uspace/lib/libusbhost.a.p/usbhost_src_endpoint.c.o
+                0x00000000004054a0                endpoint_deactivate_locked
+ *fill*         0x00000000004054fc        0x4 
+ .text.endpoint_send_batch
+                0x0000000000405500      0x2ca uspace/lib/libusbhost.a.p/usbhost_src_endpoint.c.o
+                0x0000000000405500                endpoint_send_batch
+ *fill*         0x00000000004057ca        0x6 
+ .text.irq_handler
+                0x00000000004057d0       0x17 uspace/lib/libusbhost.a.p/usbhost_src_hcd.c.o
+ *fill*         0x00000000004057e7        0x9 
+ .text.hc_dev_remove
+                0x00000000004057f0       0x5f uspace/lib/libusbhost.a.p/usbhost_src_hcd.c.o
+                0x00000000004057f0                hc_dev_remove
+ *fill*         0x000000000040584f        0x1 
+ .text.hc_dev_gone
+                0x0000000000405850       0x56 uspace/lib/libusbhost.a.p/usbhost_src_hcd.c.o
+                0x0000000000405850                hc_dev_gone
+ *fill*         0x00000000004058a6        0xa 
+ .text.interrupt_polling
+                0x00000000004058b0       0x8f uspace/lib/libusbhost.a.p/usbhost_src_hcd.c.o
+ *fill*         0x000000000040593f        0x1 
+ .text.hc_fun_online
+                0x0000000000405940       0x6c uspace/lib/libusbhost.a.p/usbhost_src_hcd.c.o
+                0x0000000000405940                hc_fun_online
+ *fill*         0x00000000004059ac        0x4 
+ .text.hc_fun_offline
+                0x00000000004059b0       0x6c uspace/lib/libusbhost.a.p/usbhost_src_hcd.c.o
+                0x00000000004059b0                hc_fun_offline
+ *fill*         0x0000000000405a1c        0x4 
+ .text.hc_dev_add
+                0x0000000000405a20      0x52b uspace/lib/libusbhost.a.p/usbhost_src_hcd.c.o
+                0x0000000000405a20                hc_dev_add
+ *fill*         0x0000000000405f4b        0x5 
+ .text.hc_driver_main
+                0x0000000000405f50       0x29 uspace/lib/libusbhost.a.p/usbhost_src_hcd.c.o
+                0x0000000000405f50                hc_driver_main
+ *fill*         0x0000000000405f79        0x7 
+ .text.sync_transfer_complete
+                0x0000000000405f80       0x4e uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+ *fill*         0x0000000000405fce        0x2 
+ .text.bus_init
+                0x0000000000405fd0       0x6f uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+                0x0000000000405fd0                bus_init
+ *fill*         0x000000000040603f        0x1 
+ .text.bus_device_init
+                0x0000000000406040       0x81 uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+                0x0000000000406040                bus_device_init
+ *fill*         0x00000000004060c1        0xf 
+ .text.bus_device_set_default_name
+                0x00000000004060d0       0x87 uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+                0x00000000004060d0                bus_device_set_default_name
+ *fill*         0x0000000000406157        0x9 
+ .text.bus_device_enumerate
+                0x0000000000406160       0xef uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+                0x0000000000406160                bus_device_enumerate
+ *fill*         0x000000000040624f        0x1 
+ .text.bus_device_online
+                0x0000000000406250      0x152 uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+                0x0000000000406250                bus_device_online
+ *fill*         0x00000000004063a2        0xe 
+ .text.bus_endpoint_add
+                0x00000000004063b0      0x275 uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+                0x00000000004063b0                bus_endpoint_add
+ *fill*         0x0000000000406625        0xb 
+ .text.bus_find_endpoint
+                0x0000000000406630       0xa1 uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+                0x0000000000406630                bus_find_endpoint
+ *fill*         0x00000000004066d1        0xf 
+ .text.bus_endpoint_remove
+                0x00000000004066e0      0x14c uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+                0x00000000004066e0                bus_endpoint_remove
+ *fill*         0x000000000040682c        0x4 
+ .text.device_clean_ep_children
+                0x0000000000406830      0x254 uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+ *fill*         0x0000000000406a84        0xc 
+ .text.bus_device_gone
+                0x0000000000406a90      0x153 uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+                0x0000000000406a90                bus_device_gone
+ *fill*         0x0000000000406be3        0xd 
+ .text.bus_device_offline
+                0x0000000000406bf0       0xd7 uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+                0x0000000000406bf0                bus_device_offline
+ *fill*         0x0000000000406cc7        0x9 
+ .text.bus_reserve_default_address
+                0x0000000000406cd0       0x73 uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+                0x0000000000406cd0                bus_reserve_default_address
+ *fill*         0x0000000000406d43        0xd 
+ .text.bus_release_default_address
+                0x0000000000406d50       0x78 uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+                0x0000000000406d50                bus_release_default_address
+ *fill*         0x0000000000406dc8        0x8 
+ .text.bus_issue_transfer
+                0x0000000000406dd0      0x238 uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+                0x0000000000406dd0                bus_issue_transfer
+ *fill*         0x0000000000407008        0x8 
+ .text.bus_device_send_batch_sync
+                0x0000000000407010      0x1a9 uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+                0x0000000000407010                bus_device_send_batch_sync
+ *fill*         0x00000000004071b9        0x7 
+ .text.usb2_bus_device_enumerate
+                0x00000000004071c0      0x320 uspace/lib/libusbhost.a.p/usbhost_src_usb2_bus.c.o
+                0x00000000004071c0                usb2_bus_device_enumerate
+ .text.usb2_bus_device_gone
+                0x00000000004074e0        0xe uspace/lib/libusbhost.a.p/usbhost_src_usb2_bus.c.o
+                0x00000000004074e0                usb2_bus_device_gone
+ *fill*         0x00000000004074ee        0x2 
+ .text.usb2_bus_endpoint_register
+                0x00000000004074f0       0x7e uspace/lib/libusbhost.a.p/usbhost_src_usb2_bus.c.o
+                0x00000000004074f0                usb2_bus_endpoint_register
+ *fill*         0x000000000040756e        0x2 
+ .text.usb2_bus_endpoint_unregister
+                0x0000000000407570       0x58 uspace/lib/libusbhost.a.p/usbhost_src_usb2_bus.c.o
+                0x0000000000407570                usb2_bus_endpoint_unregister
+ *fill*         0x00000000004075c8        0x8 
+ .text.usb2_bus_helper_init
+                0x00000000004075d0       0x55 uspace/lib/libusbhost.a.p/usbhost_src_usb2_bus.c.o
+                0x00000000004075d0                usb2_bus_helper_init
+ *fill*         0x0000000000407625        0xb 
+ .text.bandwidth_count_usb11
+                0x0000000000407630       0xa6 uspace/lib/libusbhost.a.p/usbhost_src_bandwidth.c.o
+ *fill*         0x00000000004076d6        0xa 
+ .text.hc_get_ep0_max_packet_size
+                0x00000000004076e0      0x174 uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o
+                0x00000000004076e0                hc_get_ep0_max_packet_size
+ *fill*         0x0000000000407854        0xc 
+ .text.hc_device_explore
+                0x0000000000407860      0x10b uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o
+                0x0000000000407860                hc_device_explore
+ *fill*         0x000000000040796b        0x5 
+ .text.hc_setup_virtual_root_hub
+                0x0000000000407970       0xf8 uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o
+                0x0000000000407970                hc_setup_virtual_root_hub
+ *fill*         0x0000000000407a68        0x8 
+ .text.hc_reset_toggles
+                0x0000000000407a70      0x11a uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o
+                0x0000000000407a70                hc_reset_toggles
+ *fill*         0x0000000000407b8a        0x6 
+ .text.usb_transfer_batch_create
+                0x0000000000407b90       0x78 uspace/lib/libusbhost.a.p/usbhost_src_usb_transfer_batch.c.o
+                0x0000000000407b90                usb_transfer_batch_create
+ *fill*         0x0000000000407c08        0x8 
+ .text.usb_transfer_batch_init
+                0x0000000000407c10       0x38 uspace/lib/libusbhost.a.p/usbhost_src_usb_transfer_batch.c.o
+                0x0000000000407c10                usb_transfer_batch_init
+ *fill*         0x0000000000407c48        0x8 
+ .text.usb_transfer_batch_destroy
+                0x0000000000407c50      0x18f uspace/lib/libusbhost.a.p/usbhost_src_usb_transfer_batch.c.o
+                0x0000000000407c50                usb_transfer_batch_destroy
+ *fill*         0x0000000000407ddf        0x1 
+ .text.usb_transfer_batch_bounce_required
+                0x0000000000407de0       0x60 uspace/lib/libusbhost.a.p/usbhost_src_usb_transfer_batch.c.o
+                0x0000000000407de0                usb_transfer_batch_bounce_required
+ .text.usb_transfer_batch_bounce
+                0x0000000000407e40       0xc3 uspace/lib/libusbhost.a.p/usbhost_src_usb_transfer_batch.c.o
+                0x0000000000407e40                usb_transfer_batch_bounce
+ *fill*         0x0000000000407f03        0xd 
+ .text.usb_transfer_batch_finish
+                0x0000000000407f10      0x16e uspace/lib/libusbhost.a.p/usbhost_src_usb_transfer_batch.c.o
+                0x0000000000407f10                usb_transfer_batch_finish
+ *fill*         0x000000000040807e        0x2 
+ .text.transfer
+                0x0000000000408080      0x143 uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+ *fill*         0x00000000004081c3        0xd 
+ .text.unregister_endpoint
+                0x00000000004081d0       0xd6 uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+ *fill*         0x00000000004082a6        0xa 
+ .text.register_endpoint
+                0x00000000004082b0       0xf5 uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+ *fill*         0x00000000004083a5        0xb 
+ .text.device_remove
+                0x00000000004083b0      0x15e uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+ *fill*         0x000000000040850e        0x2 
+ .text.default_address_reservation
+                0x0000000000408510      0x117 uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+ *fill*         0x0000000000408627        0x9 
+ .text.get_device_description
+                0x0000000000408630       0x91 uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+ *fill*         0x00000000004086c1        0xf 
+ .text.clean_match_ids
+                0x00000000004086d0       0x55 uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+ *fill*         0x0000000000408725        0xb 
+ .text.device_enumerate
+                0x0000000000408730      0x251 uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+ *fill*         0x0000000000408981        0xf 
+ .text.hcd_ddf_fun_create
+                0x0000000000408990       0x7c uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+                0x0000000000408990                hcd_ddf_fun_create
+ *fill*         0x0000000000408a0c        0x4 
+ .text.hcd_ddf_fun_destroy
+                0x0000000000408a10       0x40 uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+                0x0000000000408a10                hcd_ddf_fun_destroy
+ .text.hcd_ddf_setup_match_ids
+                0x0000000000408a50      0x411 uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+                0x0000000000408a50                hcd_ddf_setup_match_ids
+ *fill*         0x0000000000408e61        0xf 
+ .text.hcd_ddf_setup_hc
+                0x0000000000408e70      0x154 uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+                0x0000000000408e70                hcd_ddf_setup_hc
+ *fill*         0x0000000000408fc4        0xc 
+ .text.hcd_ddf_clean_hc
+                0x0000000000408fd0       0x2e uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+                0x0000000000408fd0                hcd_ddf_clean_hc
+ *fill*         0x0000000000408ffe        0x2 
+ .text.hcd_ddf_enable_interrupt
+                0x0000000000409000       0x3b uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+                0x0000000000409000                hcd_ddf_enable_interrupt
+ *fill*         0x000000000040903b        0x5 
+ .text.hcd_ddf_get_registers
+                0x0000000000409040       0x9b uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+                0x0000000000409040                hcd_ddf_get_registers
+ *fill*         0x00000000004090db        0x5 
+ .text.usb_str_class
+                0x00000000004090e0      0x157 uspace/lib/libusb.a.p/usb_src_class.c.o
+                0x00000000004090e0                usb_str_class
+ *fill*         0x0000000000409237        0x9 
+ .text.usb_debug_str_buffer
+                0x0000000000409240       0xa5 uspace/lib/libusb.a.p/usb_src_debug.c.o
+                0x0000000000409240                usb_debug_str_buffer
+ *fill*         0x00000000004092e5        0xb 
+ .text.dma_buffer_alloc_policy
+                0x00000000004092f0       0xc7 uspace/lib/libusb.a.p/usb_src_dma_buffer.c.o
+                0x00000000004092f0                dma_buffer_alloc_policy
+ *fill*         0x00000000004093b7        0x9 
+ .text.dma_buffer_alloc
+                0x00000000004093c0       0xb3 uspace/lib/libusb.a.p/usb_src_dma_buffer.c.o
+                0x00000000004093c0                dma_buffer_alloc
+ *fill*         0x0000000000409473        0xd 
+ .text.dma_buffer_free
+                0x0000000000409480       0x2e uspace/lib/libusb.a.p/usb_src_dma_buffer.c.o
+                0x0000000000409480                dma_buffer_free
+ *fill*         0x00000000004094ae        0x2 
+ .text.dma_buffer_lock
+                0x00000000004094b0       0x69 uspace/lib/libusb.a.p/usb_src_dma_buffer.c.o
+                0x00000000004094b0                dma_buffer_lock
+ *fill*         0x0000000000409519        0x7 
+ .text.dma_buffer_unlock
+                0x0000000000409520       0x2e uspace/lib/libusb.a.p/usb_src_dma_buffer.c.o
+                0x0000000000409520                dma_buffer_unlock
+ *fill*         0x000000000040954e        0x2 
+ .text.dma_buffer_acquire
+                0x0000000000409550       0x25 uspace/lib/libusb.a.p/usb_src_dma_buffer.c.o
+                0x0000000000409550                dma_buffer_acquire
+ *fill*         0x0000000000409575        0xb 
+ .text.dma_buffer_release
+                0x0000000000409580       0x25 uspace/lib/libusb.a.p/usb_src_dma_buffer.c.o
+                0x0000000000409580                dma_buffer_release
+ *fill*         0x00000000004095a5        0xb 
+ .text.usb_str_transfer_type
+                0x00000000004095b0       0x1a uspace/lib/libusb.a.p/usb_src_usb.c.o
+                0x00000000004095b0                usb_str_transfer_type
+ *fill*         0x00000000004095ca        0x6 
+ .text.usb_str_transfer_type_short
+                0x00000000004095d0       0x1a uspace/lib/libusb.a.p/usb_src_usb.c.o
+                0x00000000004095d0                usb_str_transfer_type_short
+ *fill*         0x00000000004095ea        0x6 
+ .text.usb_str_direction
+                0x00000000004095f0       0x1a uspace/lib/libusb.a.p/usb_src_usb.c.o
+                0x00000000004095f0                usb_str_direction
+ *fill*         0x000000000040960a        0x6 
+ .text.usb_str_speed
+                0x0000000000409610       0x1a uspace/lib/libusb.a.p/usb_src_usb.c.o
+                0x0000000000409610                usb_str_speed
+ *fill*         0x000000000040962a        0x6 
+ .text.refcount_up.part.0
+                0x0000000000409630       0x18 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ *fill*         0x0000000000409648        0x8 
+ .text.driver_get_function.part.0
+                0x0000000000409650       0x18 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ *fill*         0x0000000000409668        0x8 
+ .text.dev_del_ref
+                0x0000000000409670       0x92 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ *fill*         0x0000000000409702        0xe 
+ .text.fun_del_ref
+                0x0000000000409710      0x110 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ .text.driver_connection_gen.isra.0
+                0x0000000000409820      0x2f2 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ *fill*         0x0000000000409b12        0xe 
+ .text.driver_connection_driver
+                0x0000000000409b20        0xa uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ *fill*         0x0000000000409b2a        0x6 
+ .text.driver_connection_client
+                0x0000000000409b30        0xa uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ *fill*         0x0000000000409b3a        0x6 
+ .text.driver_connection_devman
+                0x0000000000409b40      0x5e5 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ *fill*         0x000000000040a125        0xb 
+ .text.ddf_dev_data_alloc
+                0x000000000040a130       0x40 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+                0x000000000040a130                ddf_dev_data_alloc
+ .text.ddf_dev_data_get
+                0x000000000040a170        0xa uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+                0x000000000040a170                ddf_dev_data_get
+ *fill*         0x000000000040a17a        0x6 
+ .text.ddf_dev_get_name
+                0x000000000040a180        0xa uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+                0x000000000040a180                ddf_dev_get_name
+ *fill*         0x000000000040a18a        0x6 
+ .text.ddf_dev_parent_sess_get
+                0x000000000040a190       0x33 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+                0x000000000040a190                ddf_dev_parent_sess_get
+ *fill*         0x000000000040a1c3        0xd 
+ .text.ddf_fun_set_name
+                0x000000000040a1d0       0x42 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+                0x000000000040a1d0                ddf_fun_set_name
+ *fill*         0x000000000040a212        0xe 
+ .text.ddf_fun_get_dev
+                0x000000000040a220        0xa uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+                0x000000000040a220                ddf_fun_get_dev
+ *fill*         0x000000000040a22a        0x6 
+ .text.ddf_fun_get_handle
+                0x000000000040a230        0xa uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+                0x000000000040a230                ddf_fun_get_handle
+ *fill*         0x000000000040a23a        0x6 
+ .text.ddf_fun_create
+                0x000000000040a240       0xb2 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+                0x000000000040a240                ddf_fun_create
+ *fill*         0x000000000040a2f2        0xe 
+ .text.ddf_fun_data_alloc
+                0x000000000040a300       0x59 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+                0x000000000040a300                ddf_fun_data_alloc
+ *fill*         0x000000000040a359        0x7 
+ .text.ddf_fun_data_get
+                0x000000000040a360        0xa uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+                0x000000000040a360                ddf_fun_data_get
+ *fill*         0x000000000040a36a        0x6 
+ .text.ddf_fun_get_name
+                0x000000000040a370        0xa uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+                0x000000000040a370                ddf_fun_get_name
+ *fill*         0x000000000040a37a        0x6 
+ .text.ddf_fun_destroy
+                0x000000000040a380       0x22 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+                0x000000000040a380                ddf_fun_destroy
+ *fill*         0x000000000040a3a2        0xe 
+ .text.ddf_fun_bind
+                0x000000000040a3b0      0x109 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+                0x000000000040a3b0                ddf_fun_bind
+ *fill*         0x000000000040a4b9        0x7 
+ .text.ddf_fun_unbind
+                0x000000000040a4c0       0x84 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+                0x000000000040a4c0                ddf_fun_unbind
+ *fill*         0x000000000040a544        0xc 
+ .text.ddf_fun_online
+                0x000000000040a550       0x26 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+                0x000000000040a550                ddf_fun_online
+ *fill*         0x000000000040a576        0xa 
+ .text.ddf_fun_offline
+                0x000000000040a580       0x26 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+                0x000000000040a580                ddf_fun_offline
+ *fill*         0x000000000040a5a6        0xa 
+ .text.ddf_fun_add_match_id
+                0x000000000040a5b0       0xb7 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+                0x000000000040a5b0                ddf_fun_add_match_id
+ *fill*         0x000000000040a667        0x9 
+ .text.ddf_fun_set_ops
+                0x000000000040a670       0x24 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+                0x000000000040a670                ddf_fun_set_ops
+ *fill*         0x000000000040a694        0xc 
+ .text.ddf_fun_add_to_category
+                0x000000000040a6a0       0x41 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+                0x000000000040a6a0                ddf_fun_add_to_category
+ *fill*         0x000000000040a6e1        0xf 
+ .text.ddf_driver_main
+                0x000000000040a6f0       0xfd uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+                0x000000000040a6f0                ddf_driver_main
+ *fill*         0x000000000040a7ed        0x3 
+ .text.get_remote_iface
+                0x000000000040a7f0       0x29 uspace/lib/libdrv.a.p/drv_generic_dev_iface.c.o
+                0x000000000040a7f0                get_remote_iface
+ *fill*         0x000000000040a819        0x7 
+ .text.get_remote_method
+                0x000000000040a820       0x1c uspace/lib/libdrv.a.p/drv_generic_dev_iface.c.o
+                0x000000000040a820                get_remote_method
+ *fill*         0x000000000040a83c        0x4 
+ .text.is_valid_iface_idx
+                0x000000000040a840        0xc uspace/lib/libdrv.a.p/drv_generic_dev_iface.c.o
+                0x000000000040a840                is_valid_iface_idx
+ *fill*         0x000000000040a84c        0x4 
+ .text.register_interrupt_handler
+                0x000000000040a850       0x18 uspace/lib/libdrv.a.p/drv_generic_interrupt.c.o
+                0x000000000040a850                register_interrupt_handler
+ *fill*         0x000000000040a868        0x8 
+ .text.unregister_interrupt_handler
+                0x000000000040a870        0xd uspace/lib/libdrv.a.p/drv_generic_interrupt.c.o
+                0x000000000040a870                unregister_interrupt_handler
+ *fill*         0x000000000040a87d        0x3 
+ .text.ddf_dump_buffer
+                0x000000000040a880      0x3a5 uspace/lib/libdrv.a.p/drv_generic_logbuf.c.o
+                0x000000000040a880                ddf_dump_buffer
+ *fill*         0x000000000040ac25        0xb 
+ .text.remote_audio_mixer_get_item_info
+                0x000000000040ac30      0x138 uspace/lib/libdrv.a.p/drv_generic_remote_audio_mixer.c.o
+ *fill*         0x000000000040ad68        0x8 
+ .text.remote_audio_mixer_get_info
+                0x000000000040ad70      0x138 uspace/lib/libdrv.a.p/drv_generic_remote_audio_mixer.c.o
+ *fill*         0x000000000040aea8        0x8 
+ .text.remote_audio_mixer_set_item_level
+                0x000000000040aeb0       0x42 uspace/lib/libdrv.a.p/drv_generic_remote_audio_mixer.c.o
+ *fill*         0x000000000040aef2        0xe 
+ .text.remote_audio_mixer_get_item_level
+                0x000000000040af00       0x52 uspace/lib/libdrv.a.p/drv_generic_remote_audio_mixer.c.o
+ *fill*         0x000000000040af52        0xe 
+ .text.remote_audio_pcm_stop_capture
+                0x000000000040af60       0x36 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ *fill*         0x000000000040af96        0xa 
+ .text.remote_audio_pcm_start_capture
+                0x000000000040afa0       0x3f uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ *fill*         0x000000000040afdf        0x1 
+ .text.remote_audio_pcm_stop_playback
+                0x000000000040afe0       0x36 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ *fill*         0x000000000040b016        0xa 
+ .text.remote_audio_pcm_start_playback
+                0x000000000040b020       0x43 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ *fill*         0x000000000040b063        0xd 
+ .text.remote_audio_pcm_release_buffer
+                0x000000000040b070       0x2b uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ *fill*         0x000000000040b09b        0x5 
+ .text.remote_audio_pcm_get_buffer_pos
+                0x000000000040b0a0       0x55 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ *fill*         0x000000000040b0f5        0xb 
+ .text.remote_audio_pcm_get_buffer
+                0x000000000040b100      0x1ac uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ *fill*         0x000000000040b2ac        0x4 
+ .text.remote_audio_pcm_test_format
+                0x000000000040b2b0       0x5e uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ *fill*         0x000000000040b30e        0x2 
+ .text.remote_audio_pcm_events_register
+                0x000000000040b310       0xe1 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ *fill*         0x000000000040b3f1        0xf 
+ .text.remote_audio_pcm_get_info_str
+                0x000000000040b400      0x100 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .text.remote_audio_pcm_events_unregister
+                0x000000000040b500       0x5f uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ *fill*         0x000000000040b55f        0x1 
+ .text.remote_audio_pcm_query_caps
+                0x000000000040b560       0x42 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ *fill*         0x000000000040b5a2        0xe 
+ .text.remote_hw_res_get_resource_list
+                0x000000000040b5b0       0x85 uspace/lib/libdrv.a.p/drv_generic_remote_hw_res.c.o
+ *fill*         0x000000000040b635        0xb 
+ .text.remote_hw_res_dma_channel_setup
+                0x000000000040b640       0x52 uspace/lib/libdrv.a.p/drv_generic_remote_hw_res.c.o
+ *fill*         0x000000000040b692        0xe 
+ .text.remote_hw_res_get_flags
+                0x000000000040b6a0       0x4a uspace/lib/libdrv.a.p/drv_generic_remote_hw_res.c.o
+ *fill*         0x000000000040b6ea        0x6 
+ .text.remote_hw_res_dma_channel_remain
+                0x000000000040b6f0       0x52 uspace/lib/libdrv.a.p/drv_generic_remote_hw_res.c.o
+ *fill*         0x000000000040b742        0xe 
+ .text.remote_hw_res_clear_interrupt
+                0x000000000040b750       0x42 uspace/lib/libdrv.a.p/drv_generic_remote_hw_res.c.o
+ *fill*         0x000000000040b792        0xe 
+ .text.remote_hw_res_enable_interrupt
+                0x000000000040b7a0       0x42 uspace/lib/libdrv.a.p/drv_generic_remote_hw_res.c.o
+ *fill*         0x000000000040b7e2        0xe 
+ .text.remote_hw_res_disable_interrupt
+                0x000000000040b7f0       0x42 uspace/lib/libdrv.a.p/drv_generic_remote_hw_res.c.o
+ *fill*         0x000000000040b832        0xe 
+ .text.remote_pio_window_get
+                0x000000000040b840       0x85 uspace/lib/libdrv.a.p/drv_generic_remote_pio_window.c.o
+ *fill*         0x000000000040b8c5        0xb 
+ .text.remote_nic_poll_set_mode
+                0x000000000040b8d0      0x120 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.remote_nic_vlan_set_mask
+                0x000000000040b9f0      0x12b uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040bb1b        0x5 
+ .text.remote_nic_set_address
+                0x000000000040bb20      0x112 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040bc32        0xe 
+ .text.remote_nic_poll_get_mode
+                0x000000000040bc40      0x11d uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040bd5d        0x3 
+ .text.remote_nic_vlan_get_mask
+                0x000000000040bd60       0xea uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040be4a        0x6 
+ .text.remote_nic_get_device_info
+                0x000000000040be50      0x11b uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040bf6b        0x5 
+ .text.remote_nic_get_stats
+                0x000000000040bf70      0x113 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040c083        0xd 
+ .text.remote_nic_get_address
+                0x000000000040c090       0xd0 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .text.remote_nic_wol_load_info
+                0x000000000040c160      0x17e uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040c2de        0x2 
+ .text.remote_nic_wol_virtue_list
+                0x000000000040c2e0      0x1c2 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040c4a2        0xe 
+ .text.remote_nic_wol_virtue_probe
+                0x000000000040c4b0      0x1c2 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040c672        0xe 
+ .text.remote_nic_wol_virtue_add
+                0x000000000040c680      0x1d1 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040c851        0xf 
+ .text.remote_nic_blocked_sources_set
+                0x000000000040c860      0x186 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040c9e6        0xa 
+ .text.remote_nic_blocked_sources_get
+                0x000000000040c9f0      0x1ac uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040cb9c        0x4 
+ .text.remote_nic_multicast_set_mode
+                0x000000000040cba0      0x1b6 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040cd56        0xa 
+ .text.remote_nic_multicast_get_mode
+                0x000000000040cd60      0x209 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040cf69        0x7 
+ .text.remote_nic_unicast_set_mode
+                0x000000000040cf70      0x1b6 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040d126        0xa 
+ .text.remote_nic_unicast_get_mode
+                0x000000000040d130      0x209 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040d339        0x7 
+ .text.remote_nic_vlan_set_tag
+                0x000000000040d340       0x5a uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040d39a        0x6 
+ .text.remote_nic_set_state
+                0x000000000040d3a0       0x3d uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040d3dd        0x3 
+ .text.remote_nic_callback_create
+                0x000000000040d3e0       0x3a uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040d41a        0x6 
+ .text.remote_nic_wol_virtue_get_caps
+                0x000000000040d420       0x52 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040d472        0xe 
+ .text.remote_nic_defective_get_mode
+                0x000000000040d480       0x52 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040d4d2        0xe 
+ .text.remote_nic_broadcast_get_mode
+                0x000000000040d4e0       0x52 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040d532        0xe 
+ .text.remote_nic_get_cable_state
+                0x000000000040d540       0x4a uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040d58a        0x6 
+ .text.remote_nic_get_state
+                0x000000000040d590       0x49 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040d5d9        0x7 
+ .text.remote_nic_offload_probe
+                0x000000000040d5e0       0x62 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040d642        0xe 
+ .text.remote_nic_get_pause
+                0x000000000040d650       0x52 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040d6a2        0xe 
+ .text.remote_nic_get_operation_mode
+                0x000000000040d6b0       0x6a uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040d71a        0x6 
+ .text.remote_nic_autoneg_probe
+                0x000000000040d720       0x7a uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040d79a        0x6 
+ .text.remote_nic_send_frame
+                0x000000000040d7a0       0x94 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040d834        0xc 
+ .text.remote_nic_autoneg_restart
+                0x000000000040d840       0x42 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040d882        0xe 
+ .text.remote_nic_autoneg_disable
+                0x000000000040d890       0x42 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040d8d2        0xe 
+ .text.remote_nic_poll_now
+                0x000000000040d8e0       0x42 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040d922        0xe 
+ .text.remote_nic_wol_virtue_remove
+                0x000000000040d930       0x42 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040d972        0xe 
+ .text.remote_nic_broadcast_set_mode
+                0x000000000040d980       0x42 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040d9c2        0xe 
+ .text.remote_nic_autoneg_enable
+                0x000000000040d9d0       0x42 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040da12        0xe 
+ .text.remote_nic_defective_set_mode
+                0x000000000040da20       0x42 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040da62        0xe 
+ .text.remote_nic_offload_set
+                0x000000000040da70       0x42 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040dab2        0xe 
+ .text.remote_nic_set_pause
+                0x000000000040dac0       0x4a uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040db0a        0x6 
+ .text.remote_nic_set_operation_mode
+                0x000000000040db10       0x42 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x000000000040db52        0xe 
+ .text.remote_ieee80211_connect
+                0x000000000040db60       0xfd uspace/lib/libdrv.a.p/drv_generic_remote_ieee80211.c.o
+ *fill*         0x000000000040dc5d        0x3 
+ .text.remote_ieee80211_get_scan_results
+                0x000000000040dc60      0x120 uspace/lib/libdrv.a.p/drv_generic_remote_ieee80211.c.o
+ .text.remote_ieee80211_disconnect
+                0x000000000040dd80       0x3a uspace/lib/libdrv.a.p/drv_generic_remote_ieee80211.c.o
+ *fill*         0x000000000040ddba        0x6 
+ .text.remote_usb_get_my_description
+                0x000000000040ddc0       0x72 uspace/lib/libdrv.a.p/drv_generic_remote_usb.c.o
+ *fill*         0x000000000040de32        0xe 
+ .text.remote_config_space_write_32
+                0x000000000040de40       0x76 uspace/lib/libdrv.a.p/drv_generic_remote_pci.c.o
+ *fill*         0x000000000040deb6        0xa 
+ .text.remote_config_space_write_16
+                0x000000000040dec0       0x76 uspace/lib/libdrv.a.p/drv_generic_remote_pci.c.o
+ *fill*         0x000000000040df36        0xa 
+ .text.remote_config_space_write_8
+                0x000000000040df40       0x76 uspace/lib/libdrv.a.p/drv_generic_remote_pci.c.o
+ *fill*         0x000000000040dfb6        0xa 
+ .text.remote_config_space_read_32
+                0x000000000040dfc0       0x76 uspace/lib/libdrv.a.p/drv_generic_remote_pci.c.o
+ *fill*         0x000000000040e036        0xa 
+ .text.remote_config_space_read_16
+                0x000000000040e040       0x76 uspace/lib/libdrv.a.p/drv_generic_remote_pci.c.o
+ *fill*         0x000000000040e0b6        0xa 
+ .text.remote_config_space_read_8
+                0x000000000040e0c0       0x76 uspace/lib/libdrv.a.p/drv_generic_remote_pci.c.o
+ *fill*         0x000000000040e136        0xa 
+ .text.pci_config_space_write_16
+                0x000000000040e140       0x49 uspace/lib/libdrv.a.p/drv_generic_remote_pci.c.o
+                0x000000000040e140                pci_config_space_write_16
+ *fill*         0x000000000040e189        0x7 
+ .text.remote_usbdiag_test_out
+                0x000000000040e190      0x12a uspace/lib/libdrv.a.p/drv_generic_remote_usbdiag.c.o
+ *fill*         0x000000000040e2ba        0x6 
+ .text.remote_usbdiag_test_in
+                0x000000000040e2c0      0x12a uspace/lib/libdrv.a.p/drv_generic_remote_usbdiag.c.o
+ *fill*         0x000000000040e3ea        0x6 
+ .text.remote_usbhc_unregister_endpoint
+                0x000000000040e3f0      0x116 uspace/lib/libdrv.a.p/drv_generic_remote_usbhc.c.o
+ *fill*         0x000000000040e506        0xa 
+ .text.remote_usbhc_transfer
+                0x000000000040e510      0x2d7 uspace/lib/libdrv.a.p/drv_generic_remote_usbhc.c.o
+ *fill*         0x000000000040e7e7        0x9 
+ .text.remote_usbhc_register_endpoint
+                0x000000000040e7f0      0x146 uspace/lib/libdrv.a.p/drv_generic_remote_usbhc.c.o
+ *fill*         0x000000000040e936        0xa 
+ .text.remote_usbhc_device_enumerate
+                0x000000000040e940       0x42 uspace/lib/libdrv.a.p/drv_generic_remote_usbhc.c.o
+ *fill*         0x000000000040e982        0xe 
+ .text.remote_usbhc_device_remove
+                0x000000000040e990       0x42 uspace/lib/libdrv.a.p/drv_generic_remote_usbhc.c.o
+ *fill*         0x000000000040e9d2        0xe 
+ .text.remote_usbhc_default_address_reservation
+                0x000000000040e9e0       0x42 uspace/lib/libdrv.a.p/drv_generic_remote_usbhc.c.o
+ *fill*         0x000000000040ea22        0xe 
+ .text.transfer_finished
+                0x000000000040ea30       0x35 uspace/lib/libdrv.a.p/drv_generic_remote_usbhc.c.o
+ *fill*         0x000000000040ea65        0xb 
+ .text.remote_usbhid_get_report_descriptor
+                0x000000000040ea70      0x17d uspace/lib/libdrv.a.p/drv_generic_remote_usbhid.c.o
+ *fill*         0x000000000040ebed        0x3 
+ .text.remote_usbhid_get_event
+                0x000000000040ebf0      0x197 uspace/lib/libdrv.a.p/drv_generic_remote_usbhid.c.o
+ *fill*         0x000000000040ed87        0x9 
+ .text.remote_usbhid_get_report_descriptor_length
+                0x000000000040ed90       0x42 uspace/lib/libdrv.a.p/drv_generic_remote_usbhid.c.o
+ *fill*         0x000000000040edd2        0xe 
+ .text.remote_usbhid_get_event_length
+                0x000000000040ede0       0x69 uspace/lib/libdrv.a.p/drv_generic_remote_usbhid.c.o
+ *fill*         0x000000000040ee49        0x7 
+ .text.remote_clock_time_set
+                0x000000000040ee50       0xb9 uspace/lib/libdrv.a.p/drv_generic_remote_clock_dev.c.o
+ *fill*         0x000000000040ef09        0x7 
+ .text.remote_clock_time_get
+                0x000000000040ef10       0xe5 uspace/lib/libdrv.a.p/drv_generic_remote_clock_dev.c.o
+ *fill*         0x000000000040eff5        0xb 
+ .text.remote_led_color_set
+                0x000000000040f000       0x42 uspace/lib/libdrv.a.p/drv_generic_remote_led_dev.c.o
+ *fill*         0x000000000040f042        0xe 
+ .text.remote_battery_charge_level_get
+                0x000000000040f050       0x62 uspace/lib/libdrv.a.p/drv_generic_remote_battery_dev.c.o
+ *fill*         0x000000000040f0b2        0xe 
+ .text.remote_battery_status_get
+                0x000000000040f0c0       0x62 uspace/lib/libdrv.a.p/drv_generic_remote_battery_dev.c.o
+ *fill*         0x000000000040f122        0xe 
+ .text.remote_ahci_get_sata_device_name
+                0x000000000040f130       0xbf uspace/lib/libdrv.a.p/drv_generic_remote_ahci.c.o
+ *fill*         0x000000000040f1ef        0x1 
+ .text.remote_ahci_read_blocks
+                0x000000000040f1f0       0x9a uspace/lib/libdrv.a.p/drv_generic_remote_ahci.c.o
+ *fill*         0x000000000040f28a        0x6 
+ .text.remote_ahci_get_num_blocks
+                0x000000000040f290       0x62 uspace/lib/libdrv.a.p/drv_generic_remote_ahci.c.o
+ *fill*         0x000000000040f2f2        0xe 
+ .text.remote_ahci_write_blocks
+                0x000000000040f300       0x9a uspace/lib/libdrv.a.p/drv_generic_remote_ahci.c.o
+ *fill*         0x000000000040f39a        0x6 
+ .text.remote_ahci_get_block_size
+                0x000000000040f3a0       0x62 uspace/lib/libdrv.a.p/drv_generic_remote_ahci.c.o
+ *fill*         0x000000000040f402        0xe 
+ .text.ddf_msg  0x000000000040f410       0x92 uspace/lib/libdrv.a.p/drv_generic_log.c.o
+                0x000000000040f410                ddf_msg
+ *fill*         0x000000000040f4a2        0xe 
+ .text.devman_exchange_begin_blocking
+                0x000000000040f4b0      0x1ec uspace/lib/libdevice.a.p/device_src_devman.c.o
+                0x000000000040f4b0                devman_exchange_begin_blocking
+ *fill*         0x000000000040f69c        0x4 
+ .text.devman_driver_register
+                0x000000000040f6a0      0x10f uspace/lib/libdevice.a.p/device_src_devman.c.o
+                0x000000000040f6a0                devman_driver_register
+ *fill*         0x000000000040f7af        0x1 
+ .text.devman_add_function
+                0x000000000040f7b0      0x1b6 uspace/lib/libdevice.a.p/device_src_devman.c.o
+                0x000000000040f7b0                devman_add_function
+ *fill*         0x000000000040f966        0xa 
+ .text.devman_add_device_to_category
+                0x000000000040f970       0xa1 uspace/lib/libdevice.a.p/device_src_devman.c.o
+                0x000000000040f970                devman_add_device_to_category
+ *fill*         0x000000000040fa11        0xf 
+ .text.devman_remove_function
+                0x000000000040fa20       0x3a uspace/lib/libdevice.a.p/device_src_devman.c.o
+                0x000000000040fa20                devman_remove_function
+ *fill*         0x000000000040fa5a        0x6 
+ .text.devman_drv_fun_online
+                0x000000000040fa60       0x96 uspace/lib/libdevice.a.p/device_src_devman.c.o
+                0x000000000040fa60                devman_drv_fun_online
+ *fill*         0x000000000040faf6        0xa 
+ .text.devman_drv_fun_offline
+                0x000000000040fb00       0x96 uspace/lib/libdevice.a.p/device_src_devman.c.o
+                0x000000000040fb00                devman_drv_fun_offline
+ *fill*         0x000000000040fb96        0xa 
+ .text.devman_parent_device_connect
+                0x000000000040fba0       0x26 uspace/lib/libdevice.a.p/device_src_devman.c.o
+                0x000000000040fba0                devman_parent_device_connect
+ *fill*         0x000000000040fbc6        0xa 
+ .text.req_set_address
+                0x000000000040fbd0       0x27 uspace/lib/libusbvirt.a.p/usbvirt_src_stdreq.c.o
+ *fill*         0x000000000040fbf7        0x9 
+ .text.req_set_configuration
+                0x000000000040fc00       0x66 uspace/lib/libusbvirt.a.p/usbvirt_src_stdreq.c.o
+ *fill*         0x000000000040fc66        0xa 
+ .text.req_get_iface_ep_status
+                0x000000000040fc70       0x20 uspace/lib/libusbvirt.a.p/usbvirt_src_stdreq.c.o
+ .text.req_get_descriptor
+                0x000000000040fc90      0x252 uspace/lib/libusbvirt.a.p/usbvirt_src_stdreq.c.o
+ *fill*         0x000000000040fee2        0xe 
+ .text.req_get_dev_status
+                0x000000000040fef0       0x29 uspace/lib/libusbvirt.a.p/usbvirt_src_stdreq.c.o
+ *fill*         0x000000000040ff19        0x7 
+ .text.usbvirt_control_reply_helper
+                0x000000000040ff20       0x37 uspace/lib/libusbvirt.a.p/usbvirt_src_stdreq.c.o
+                0x000000000040ff20                usbvirt_control_reply_helper
+ *fill*         0x000000000040ff57        0x9 
+ .text.req_nop  0x000000000040ff60        0x8 uspace/lib/libusbvirt.a.p/usbvirt_src_stdreq.c.o
+                0x000000000040ff60                req_nop
+ *fill*         0x000000000040ff68        0x8 
+ .text.virthub_get_data
+                0x000000000040ff70       0x43 uspace/lib/libusbvirt.a.p/usbvirt_src_virthub_base.c.o
+                0x000000000040ff70                virthub_get_data
+ *fill*         0x000000000040ffb3        0xd 
+ .text.virthub_base_init
+                0x000000000040ffc0      0x167 uspace/lib/libusbvirt.a.p/usbvirt_src_virthub_base.c.o
+                0x000000000040ffc0                virthub_base_init
+ *fill*         0x0000000000410127        0x9 
+ .text.virthub_base_get_address
+                0x0000000000410130       0x25 uspace/lib/libusbvirt.a.p/usbvirt_src_virthub_base.c.o
+                0x0000000000410130                virthub_base_get_address
+ *fill*         0x0000000000410155        0xb 
+ .text.virthub_base_request
+                0x0000000000410160       0xde uspace/lib/libusbvirt.a.p/usbvirt_src_virthub_base.c.o
+                0x0000000000410160                virthub_base_request
+ *fill*         0x000000000041023e        0x2 
+ .text.virthub_base_get_hub_descriptor
+                0x0000000000410240       0x6b uspace/lib/libusbvirt.a.p/usbvirt_src_virthub_base.c.o
+                0x0000000000410240                virthub_base_get_hub_descriptor
+ *fill*         0x00000000004102ab        0x5 
+ .text.virthub_base_get_null_status
+                0x00000000004102b0       0x39 uspace/lib/libusbvirt.a.p/usbvirt_src_virthub_base.c.o
+                0x00000000004102b0                virthub_base_get_null_status
+ *fill*         0x00000000004102e9        0x7 
+ .text.usbvirt_control_write
+                0x00000000004102f0      0x106 uspace/lib/libusbvirt.a.p/usbvirt_src_transfer.c.o
+                0x00000000004102f0                usbvirt_control_write
+ *fill*         0x00000000004103f6        0xa 
+ .text.usbvirt_control_read
+                0x0000000000410400      0x119 uspace/lib/libusbvirt.a.p/usbvirt_src_transfer.c.o
+                0x0000000000410400                usbvirt_control_read
+ *fill*         0x0000000000410519        0x7 
+ .text.usbvirt_data_in
+                0x0000000000410520       0x6b uspace/lib/libusbvirt.a.p/usbvirt_src_transfer.c.o
+                0x0000000000410520                usbvirt_data_in
+ *fill*         0x000000000041058b        0x5 
+ .text.process_control_transfer
+                0x0000000000410590       0xfc uspace/lib/libusbvirt.a.p/usbvirt_src_ctrltransfer.c.o
+                0x0000000000410590                process_control_transfer
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x00000000004106a0     0x38b2
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.hc_init_hw.str1.8
+                0x00000000004106a0     0x22ec uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+                                         0x2b (size before relaxing)
+ .rodata.hc_init_hw.str1.1
+                0x000000000041298c      0xa01 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+                                         0x25 (size before relaxing)
+ .rodata.destroy_transfer_batch.str1.8
+                0x000000000041338d       0x33 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ .rodata.destroy_transfer_batch.str1.1
+                0x000000000041338d        0x2 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ .rodata.bus_to_hc.part.0.str1.8
+                0x000000000041338d       0x2b uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ .rodata.bus_to_hc.part.0.str1.1
+                0x000000000041338d        0x4 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ .rodata.hc_interrupt.str1.1
+                0x000000000041338d       0x2a uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ .rodata.hc_interrupt.str1.8
+                0x000000000041338d       0x22 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ .rodata.hc_status.str1.1
+                0x000000000041338d        0x7 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ .rodata.hc_gen_irq_code.str1.1
+                0x000000000041338d        0xc uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ .rodata.hc_gen_irq_code.str1.8
+                0x000000000041338d       0x23 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ .rodata.hc_add.str1.1
+                0x000000000041338d       0x6b uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ .rodata.hc_add.str1.8
+                0x000000000041338d       0xd3 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ .rodata.hc_start.str1.1
+                0x000000000041338d        0x5 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ *fill*         0x000000000041338d       0x13 
+ .rodata.uhci_bus_ops
+                0x00000000004133a0       0x68 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ *fill*         0x0000000000413408       0x18 
+ .rodata.uhci_irq_commands
+                0x0000000000413420       0xc8 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ *fill*         0x00000000004134e8        0x8 
+ .rodata.cst16  0x00000000004134f0       0x10 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ .rodata.disable_legacy.str1.8
+                0x0000000000413500       0x2d uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_main.c.o
+ .rodata.disable_legacy.str1.1
+                0x0000000000413500        0x4 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_main.c.o
+ .rodata.main.str1.1
+                0x0000000000413500       0x20 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_main.c.o
+ .rodata.uhci_driver
+                0x0000000000413500       0x50 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_main.c.o
+ .rodata.transfer_list_init.str1.8
+                0x0000000000413550       0xc5 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_transfer_list.c.o
+ .rodata.transfer_list_init.str1.1
+                0x0000000000413550        0x9 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_transfer_list.c.o
+ .rodata.transfer_list_set_next.str1.1
+                0x0000000000413550       0x1a uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_transfer_list.c.o
+ .rodata.transfer_list_add_batch.str1.1
+                0x0000000000413550       0x2a uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_transfer_list.c.o
+ .rodata.transfer_list_add_batch.str1.8
+                0x0000000000413550       0x9a uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_transfer_list.c.o
+ .rodata.transfer_list_remove_batch.str1.1
+                0x0000000000413550       0x1f uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_transfer_list.c.o
+ .rodata.transfer_list_remove_batch.str1.8
+                0x0000000000413550      0x113 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_transfer_list.c.o
+ .rodata.transfer_list_check_finished.str1.8
+                0x0000000000413550       0x2d uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_transfer_list.c.o
+ .rodata.batch_control.str1.8
+                0x0000000000413550       0xd6 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_batch.c.o
+ .rodata.batch_control.str1.1
+                0x0000000000413550       0x64 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_batch.c.o
+ .rodata.batch_data.str1.8
+                0x0000000000413550       0x36 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_batch.c.o
+ .rodata.uhci_transfer_batch_create.str1.8
+                0x0000000000413550       0x1f uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_batch.c.o
+ .rodata.uhci_transfer_batch_prepare.str1.8
+                0x0000000000413550       0xfa uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_batch.c.o
+ .rodata.uhci_transfer_batch_check_completed.str1.8
+                0x0000000000413550       0xd7 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_batch.c.o
+ .rodata.uhci_transfer_batch_check_completed.str1.1
+                0x0000000000413550       0x12 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_batch.c.o
+ .rodata.status_stage_pids.0
+                0x0000000000413550        0x8 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_batch.c.o
+ .rodata.direction_pids
+                0x0000000000413558        0x8 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_batch.c.o
+ .rodata.batch_setup
+                0x0000000000413560       0x20 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_batch.c.o
+ .rodata.req_status_change_handler.str1.1
+                0x0000000000413580        0xc uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_rh.c.o
+ .rodata.req_status_change_handler.str1.8
+                0x0000000000413580       0x6a uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_rh.c.o
+ .rodata.req_clear_port_feature.str1.8
+                0x0000000000413580      0x213 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_rh.c.o
+ .rodata.req_clear_port_feature.str1.1
+                0x0000000000413580       0x1b uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_rh.c.o
+ .rodata.req_clear_port_feature
+                0x0000000000413580       0xa8 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_rh.c.o
+ .rodata.req_set_port_feature.str1.8
+                0x0000000000413628      0x162 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_rh.c.o
+ .rodata.req_set_port_feature.str1.1
+                0x0000000000413628       0x1c uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_rh.c.o
+ .rodata.req_get_port_status.str1.8
+                0x0000000000413628       0x29 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_rh.c.o
+ .rodata.req_get_port_state.str1.8
+                0x0000000000413628       0x26 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_rh.c.o
+ .rodata.uhci_rh_init.str1.1
+                0x0000000000413628        0x9 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_rh.c.o
+ .rodata.uhci_rh_schedule.str1.1
+                0x0000000000413628        0x6 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_rh.c.o
+ .rodata.str1.1
+                0x0000000000413628       0x84 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_rh.c.o
+ *fill*         0x0000000000413628       0x18 
+ .rodata.control_transfer_handlers
+                0x0000000000413640      0x120 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_rh.c.o
+ .rodata.hub_descriptor
+                0x0000000000413760        0x9 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_rh.c.o
+ .rodata.td_status.str1.8
+                0x0000000000413769       0x46 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hw_struct_transfer_descriptor.c.o
+ .rodata.td_status.str1.1
+                0x0000000000413769        0x9 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hw_struct_transfer_descriptor.c.o
+ .rodata.td_print_status.str1.1
+                0x0000000000413769       0x77 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hw_struct_transfer_descriptor.c.o
+ .rodata.td_print_status.str1.8
+                0x0000000000413769       0x35 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hw_struct_transfer_descriptor.c.o
+ .rodata.td_init.str1.1
+                0x0000000000413769       0x1d uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hw_struct_transfer_descriptor.c.o
+ .rodata.td_init.str1.8
+                0x0000000000413769       0xa1 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hw_struct_transfer_descriptor.c.o
+ *fill*         0x0000000000413769        0x7 
+ .rodata.cst8   0x0000000000413770        0x8 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .rodata.endpoint_init.str1.8
+                0x0000000000413778       0x30 uspace/lib/libusbhost.a.p/usbhost_src_endpoint.c.o
+ .rodata.endpoint_init.str1.1
+                0x0000000000413778        0x4 uspace/lib/libusbhost.a.p/usbhost_src_endpoint.c.o
+ .rodata.endpoint_add_ref.str1.8
+                0x0000000000413778       0x2e uspace/lib/libusbhost.a.p/usbhost_src_endpoint.c.o
+ .rodata.endpoint_add_ref.str1.1
+                0x0000000000413778        0x9 uspace/lib/libusbhost.a.p/usbhost_src_endpoint.c.o
+ .rodata.endpoint_del_ref.str1.1
+                0x0000000000413778       0x23 uspace/lib/libusbhost.a.p/usbhost_src_endpoint.c.o
+ .rodata.endpoint_set_offline_locked.str1.1
+                0x0000000000413778        0x3 uspace/lib/libusbhost.a.p/usbhost_src_endpoint.c.o
+ .rodata.endpoint_set_offline_locked.str1.8
+                0x0000000000413778       0x22 uspace/lib/libusbhost.a.p/usbhost_src_endpoint.c.o
+ .rodata.endpoint_activate_locked.str1.1
+                0x0000000000413778       0x20 uspace/lib/libusbhost.a.p/usbhost_src_endpoint.c.o
+ .rodata.endpoint_send_batch.str1.1
+                0x0000000000413778       0x28 uspace/lib/libusbhost.a.p/usbhost_src_endpoint.c.o
+ .rodata.endpoint_send_batch.str1.8
+                0x0000000000413778       0xc8 uspace/lib/libusbhost.a.p/usbhost_src_endpoint.c.o
+ .rodata.interrupt_polling.str1.8
+                0x0000000000413778       0x2b uspace/lib/libusbhost.a.p/usbhost_src_hcd.c.o
+ .rodata.interrupt_polling.str1.1
+                0x0000000000413778        0x4 uspace/lib/libusbhost.a.p/usbhost_src_hcd.c.o
+ .rodata.hc_fun_online.str1.1
+                0x0000000000413778        0x8 uspace/lib/libusbhost.a.p/usbhost_src_hcd.c.o
+ .rodata.hc_fun_online.str1.8
+                0x0000000000413778       0x2c uspace/lib/libusbhost.a.p/usbhost_src_hcd.c.o
+ .rodata.hc_fun_offline.str1.8
+                0x0000000000413778       0x2b uspace/lib/libusbhost.a.p/usbhost_src_hcd.c.o
+ .rodata.hc_dev_add.str1.1
+                0x0000000000413778       0x6f uspace/lib/libusbhost.a.p/usbhost_src_hcd.c.o
+ .rodata.hc_dev_add.str1.8
+                0x0000000000413778      0x1ba uspace/lib/libusbhost.a.p/usbhost_src_hcd.c.o
+ .rodata.sync_transfer_complete.str1.8
+                0x0000000000413778       0x2b uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+ .rodata.sync_transfer_complete.str1.1
+                0x0000000000413778        0x2 uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+ .rodata.bus_init.str1.1
+                0x0000000000413778        0x4 uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+ .rodata.bus_init.str1.8
+                0x0000000000413778       0x20 uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+ .rodata.bus_device_set_default_name.str1.1
+                0x0000000000413778       0x17 uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+ .rodata.bus_device_online.str1.8
+                0x0000000000413778       0x7f uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+ .rodata.bus_endpoint_add.str1.1
+                0x0000000000413778        0x7 uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+ .rodata.bus_endpoint_add.str1.8
+                0x0000000000413778       0xe4 uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+ .rodata.bus_endpoint_remove.str1.1
+                0x0000000000413778        0xe uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+ .rodata.bus_endpoint_remove.str1.8
+                0x0000000000413778       0x26 uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+ .rodata.device_clean_ep_children.str1.8
+                0x0000000000413778       0xe9 uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+ .rodata.device_clean_ep_children.str1.1
+                0x0000000000413778       0x1a uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+ .rodata.bus_device_gone.str1.1
+                0x0000000000413778       0x1a uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+ .rodata.bus_device_gone.str1.8
+                0x0000000000413778       0x25 uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+ .rodata.bus_device_offline.str1.1
+                0x0000000000413778        0xa uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+ .rodata.bus_device_offline.str1.8
+                0x0000000000413778       0x20 uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+ .rodata.bus_release_default_address.str1.8
+                0x0000000000413778       0x4a uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+ .rodata.bus_issue_transfer.str1.1
+                0x0000000000413778       0x2b uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+ .rodata.bus_issue_transfer.str1.8
+                0x0000000000413778      0x14f uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+ .rodata.usb2_bus_device_enumerate.str1.8
+                0x0000000000413778      0x201 uspace/lib/libusbhost.a.p/usbhost_src_usb2_bus.c.o
+ .rodata.usb2_bus_device_enumerate.str1.1
+                0x0000000000413778        0xc uspace/lib/libusbhost.a.p/usbhost_src_usb2_bus.c.o
+ .rodata.usb2_bus_endpoint_register.str1.8
+                0x0000000000413778       0x5b uspace/lib/libusbhost.a.p/usbhost_src_usb2_bus.c.o
+ .rodata.usb2_bus_endpoint_register.str1.1
+                0x0000000000413778        0x3 uspace/lib/libusbhost.a.p/usbhost_src_usb2_bus.c.o
+ .rodata.usb2_bus_endpoint_unregister.str1.1
+                0x0000000000413778        0x7 uspace/lib/libusbhost.a.p/usbhost_src_usb2_bus.c.o
+ .rodata.usb2_bus_helper_init.str1.1
+                0x0000000000413778        0xe uspace/lib/libusbhost.a.p/usbhost_src_usb2_bus.c.o
+ .rodata.bandwidth_count_usb11.str1.8
+                0x0000000000413778       0x57 uspace/lib/libusbhost.a.p/usbhost_src_bandwidth.c.o
+ .rodata.bandwidth_count_usb11.str1.1
+                0x0000000000413778        0xe uspace/lib/libusbhost.a.p/usbhost_src_bandwidth.c.o
+ *fill*         0x0000000000413778        0x8 
+ .rodata.bandwidth_accounting_usb11
+                0x0000000000413780       0x10 uspace/lib/libusbhost.a.p/usbhost_src_bandwidth.c.o
+                0x0000000000413780                bandwidth_accounting_usb11
+ .rodata.hc_get_ep0_max_packet_size.str1.8
+                0x0000000000413790       0xf3 uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o
+ .rodata.hc_get_ep0_max_packet_size.str1.1
+                0x0000000000413790        0x4 uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o
+ .rodata.hc_get_device_desc.str1.8
+                0x0000000000413790       0x2f uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o
+ .rodata.hc_get_device_desc.str1.1
+                0x0000000000413790       0x17 uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o
+ .rodata.hc_device_explore.str1.8
+                0x0000000000413790       0x5a uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o
+ .rodata.hc_setup_virtual_root_hub.str1.1
+                0x0000000000413790        0xc uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o
+ .rodata.hc_setup_virtual_root_hub.str1.8
+                0x0000000000413790       0x78 uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o
+ .rodata.hc_reset_toggles.str1.8
+                0x0000000000413790       0x33 uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o
+ .rodata.mps_fixed.0
+                0x0000000000413790        0x8 uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o
+ .rodata.usb_transfer_batch_create.str1.8
+                0x0000000000413798       0x3a uspace/lib/libusbhost.a.p/usbhost_src_usb_transfer_batch.c.o
+ .rodata.usb_transfer_batch_create.str1.1
+                0x0000000000413798        0x3 uspace/lib/libusbhost.a.p/usbhost_src_usb_transfer_batch.c.o
+ .rodata.usb_transfer_batch_destroy.str1.1
+                0x0000000000413798       0x10 uspace/lib/libusbhost.a.p/usbhost_src_usb_transfer_batch.c.o
+ .rodata.usb_transfer_batch_destroy.str1.8
+                0x0000000000413798       0x5e uspace/lib/libusbhost.a.p/usbhost_src_usb_transfer_batch.c.o
+ .rodata.usb_transfer_batch_bounce.str1.1
+                0x0000000000413798       0x13 uspace/lib/libusbhost.a.p/usbhost_src_usb_transfer_batch.c.o
+ .rodata.usb_transfer_batch_bounce.str1.8
+                0x0000000000413798       0x4a uspace/lib/libusbhost.a.p/usbhost_src_usb_transfer_batch.c.o
+ .rodata.usb_transfer_batch_finish.str1.8
+                0x0000000000413798       0x50 uspace/lib/libusbhost.a.p/usbhost_src_usb_transfer_batch.c.o
+ .rodata.transfer.str1.1
+                0x0000000000413798       0x13 uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+ .rodata.transfer.str1.8
+                0x0000000000413798       0x33 uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+ .rodata.unregister_endpoint.str1.1
+                0x0000000000413798        0xd uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+ .rodata.device_remove.str1.1
+                0x0000000000413798       0x38 uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+ .rodata.device_remove.str1.8
+                0x0000000000413798       0x5e uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+ .rodata.default_address_reservation.str1.1
+                0x0000000000413798       0x31 uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+ .rodata.device_enumerate.str1.1
+                0x0000000000413798        0xc uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+ .rodata.device_enumerate.str1.8
+                0x0000000000413798       0xb4 uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+ .rodata.hcd_ddf_setup_match_ids.str1.8
+                0x0000000000413798       0x6f uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+ .rodata.hcd_ddf_setup_match_ids.str1.1
+                0x0000000000413798       0x1c uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+ .rodata.hcd_ddf_setup_hc.str1.1
+                0x0000000000413798       0x4b uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+ .rodata.hcd_ddf_setup_hc.str1.8
+                0x0000000000413798       0x4b uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+ .rodata.usb_str_class.str1.1
+                0x0000000000413798       0xb5 uspace/lib/libusb.a.p/usb_src_class.c.o
+ .rodata.usb_str_class
+                0x0000000000413798      0x1a0 uspace/lib/libusb.a.p/usb_src_class.c.o
+ .rodata.dma_policy_create.str1.8
+                0x0000000000413938       0x83 uspace/lib/libusb.a.p/usb_src_dma_buffer.c.o
+ .rodata.dma_buffer_alloc_policy.str1.1
+                0x0000000000413938        0x3 uspace/lib/libusb.a.p/usb_src_dma_buffer.c.o
+ .rodata.dma_buffer_lock.str1.1
+                0x0000000000413938        0x5 uspace/lib/libusb.a.p/usb_src_dma_buffer.c.o
+ .rodata.usb_str_transfer_type.str1.1
+                0x0000000000413938        0x8 uspace/lib/libusb.a.p/usb_src_usb.c.o
+ .rodata.usb_str_transfer_type_short.str1.1
+                0x0000000000413938        0x5 uspace/lib/libusb.a.p/usb_src_usb.c.o
+ .rodata.str1.1
+                0x0000000000413938       0x51 uspace/lib/libusb.a.p/usb_src_usb.c.o
+ *fill*         0x0000000000413938        0x8 
+ .rodata.str_direction
+                0x0000000000413940       0x18 uspace/lib/libusb.a.p/usb_src_usb.c.o
+ *fill*         0x0000000000413958        0x8 
+ .rodata.str_transfer_type_short
+                0x0000000000413960       0x20 uspace/lib/libusb.a.p/usb_src_usb.c.o
+ .rodata.str_transfer_type
+                0x0000000000413980       0x20 uspace/lib/libusb.a.p/usb_src_usb.c.o
+ .rodata.str_speed
+                0x00000000004139a0       0x20 uspace/lib/libusb.a.p/usb_src_usb.c.o
+ .rodata.refcount_up.part.0.str1.8
+                0x00000000004139c0       0x2e uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ .rodata.refcount_up.part.0.str1.1
+                0x00000000004139c0        0x9 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ .rodata.driver_get_function.part.0.str1.8
+                0x00000000004139c0       0x59 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ .rodata.dev_del_ref.str1.1
+                0x00000000004139c0        0xa uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ .rodata.driver_connection_gen.isra.0.str1.8
+                0x00000000004139c0      0x12c uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ .rodata.driver_connection_gen.isra.0.str1.1
+                0x00000000004139c0       0x2a uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ .rodata.driver_connection_devman.str1.8
+                0x00000000004139c0       0x47 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ .rodata.driver_connection_devman
+                0x00000000004139c0       0x30 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ .rodata.ddf_dev_data_alloc.str1.1
+                0x00000000004139f0       0x19 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ .rodata.ddf_fun_set_name.str1.1
+                0x00000000004139f0       0x12 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ .rodata.ddf_fun_data_alloc.str1.1
+                0x00000000004139f0       0x2d uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ .rodata.ddf_fun_bind.str1.1
+                0x00000000004139f0       0x23 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ .rodata.ddf_fun_unbind.str1.1
+                0x00000000004139f0       0x13 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ .rodata.ddf_fun_add_match_id.str1.1
+                0x00000000004139f0       0x18 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ .rodata.ddf_fun_set_ops.str1.1
+                0x00000000004139f0       0x1a uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ .rodata.ddf_fun_add_to_category.str1.1
+                0x00000000004139f0       0x1a uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ .rodata.ddf_driver_main.str1.1
+                0x00000000004139f0       0x17 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ .rodata.ddf_driver_main.str1.8
+                0x00000000004139f0       0xb4 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ .rodata.get_remote_iface.str1.8
+                0x00000000004139f0       0x31 uspace/lib/libdrv.a.p/drv_generic_dev_iface.c.o
+ .rodata.get_remote_iface.str1.1
+                0x00000000004139f0       0x18 uspace/lib/libdrv.a.p/drv_generic_dev_iface.c.o
+ *fill*         0x00000000004139f0       0x10 
+ .rodata.remote_ifaces
+                0x0000000000413a00       0x80 uspace/lib/libdrv.a.p/drv_generic_dev_iface.c.o
+ .rodata.ddf_dump_buffer.str1.1
+                0x0000000000413a80       0x3b uspace/lib/libdrv.a.p/drv_generic_logbuf.c.o
+ .rodata.remote_audio_mixer_iface
+                0x0000000000413a80       0x10 uspace/lib/libdrv.a.p/drv_generic_remote_audio_mixer.c.o
+                0x0000000000413a80                remote_audio_mixer_iface
+ *fill*         0x0000000000413a90       0x10 
+ .rodata.remote_audio_mixer_iface_ops
+                0x0000000000413aa0       0x20 uspace/lib/libdrv.a.p/drv_generic_remote_audio_mixer.c.o
+ .rodata.remote_audio_pcm_get_buffer.str1.1
+                0x0000000000413ac0       0x82 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .rodata.remote_audio_pcm_get_buffer.str1.8
+                0x0000000000413ac0       0x45 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .rodata.remote_audio_pcm_events_register.str1.8
+                0x0000000000413ac0       0x20 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .rodata.remote_audio_pcm_events_register.str1.1
+                0x0000000000413ac0       0x1e uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .rodata.remote_audio_pcm_iface
+                0x0000000000413ac0       0x10 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+                0x0000000000413ac0                remote_audio_pcm_iface
+ *fill*         0x0000000000413ad0       0x10 
+ .rodata.remote_audio_pcm_iface_ops
+                0x0000000000413ae0       0x60 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .rodata.remote_hw_res_iface
+                0x0000000000413b40       0x10 uspace/lib/libdrv.a.p/drv_generic_remote_hw_res.c.o
+                0x0000000000413b40                remote_hw_res_iface
+ *fill*         0x0000000000413b50       0x10 
+ .rodata.remote_hw_res_iface_ops
+                0x0000000000413b60       0x38 uspace/lib/libdrv.a.p/drv_generic_remote_hw_res.c.o
+ *fill*         0x0000000000413b98        0x8 
+ .rodata.remote_pio_window_iface
+                0x0000000000413ba0       0x10 uspace/lib/libdrv.a.p/drv_generic_remote_pio_window.c.o
+                0x0000000000413ba0                remote_pio_window_iface
+ .rodata.remote_pio_window_iface_ops
+                0x0000000000413bb0        0x8 uspace/lib/libdrv.a.p/drv_generic_remote_pio_window.c.o
+ .rodata.remote_nic_get_address.str1.8
+                0x0000000000413bb8       0x32 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .rodata.remote_nic_get_address.str1.1
+                0x0000000000413bb8       0x17 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .rodata.remote_nic_set_state.str1.1
+                0x0000000000413bb8       0x15 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .rodata.remote_nic_callback_create.str1.1
+                0x0000000000413bb8       0x1b uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .rodata.remote_nic_get_state.str1.1
+                0x0000000000413bb8       0x15 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .rodata.remote_nic_send_frame.str1.1
+                0x0000000000413bb8       0x16 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ *fill*         0x0000000000413bb8        0x8 
+ .rodata.remote_nic_iface
+                0x0000000000413bc0       0x10 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+                0x0000000000413bc0                remote_nic_iface
+ *fill*         0x0000000000413bd0       0x10 
+ .rodata.remote_nic_iface_ops
+                0x0000000000413be0      0x148 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .rodata.remote_ieee80211_connect.str1.8
+                0x0000000000413d28       0x38 uspace/lib/libdrv.a.p/drv_generic_remote_ieee80211.c.o
+ .rodata.remote_ieee80211_connect.str1.1
+                0x0000000000413d28       0x19 uspace/lib/libdrv.a.p/drv_generic_remote_ieee80211.c.o
+ .rodata.remote_ieee80211_get_scan_results.str1.8
+                0x0000000000413d28       0x22 uspace/lib/libdrv.a.p/drv_generic_remote_ieee80211.c.o
+ .rodata.remote_ieee80211_disconnect.str1.1
+                0x0000000000413d28       0x1c uspace/lib/libdrv.a.p/drv_generic_remote_ieee80211.c.o
+ *fill*         0x0000000000413d28        0x8 
+ .rodata.remote_ieee80211_iface
+                0x0000000000413d30       0x10 uspace/lib/libdrv.a.p/drv_generic_remote_ieee80211.c.o
+                0x0000000000413d30                remote_ieee80211_iface
+ .rodata.remote_ieee80211_iface_ops
+                0x0000000000413d40       0x18 uspace/lib/libdrv.a.p/drv_generic_remote_ieee80211.c.o
+ *fill*         0x0000000000413d58        0x8 
+ .rodata.remote_usb_iface
+                0x0000000000413d60       0x10 uspace/lib/libdrv.a.p/drv_generic_remote_usb.c.o
+                0x0000000000413d60                remote_usb_iface
+ .rodata.remote_usb_iface_ops
+                0x0000000000413d70        0x8 uspace/lib/libdrv.a.p/drv_generic_remote_usb.c.o
+ .rodata.remote_config_space_write_32.str1.8
+                0x0000000000413d78       0x32 uspace/lib/libdrv.a.p/drv_generic_remote_pci.c.o
+ .rodata.remote_config_space_write_32.str1.1
+                0x0000000000413d78        0x6 uspace/lib/libdrv.a.p/drv_generic_remote_pci.c.o
+ *fill*         0x0000000000413d78        0x8 
+ .rodata.remote_pci_iface
+                0x0000000000413d80       0x10 uspace/lib/libdrv.a.p/drv_generic_remote_pci.c.o
+                0x0000000000413d80                remote_pci_iface
+ *fill*         0x0000000000413d90       0x10 
+ .rodata.remote_pci_iface_ops
+                0x0000000000413da0       0x30 uspace/lib/libdrv.a.p/drv_generic_remote_pci.c.o
+ .rodata.remote_usbdiag_iface
+                0x0000000000413dd0       0x10 uspace/lib/libdrv.a.p/drv_generic_remote_usbdiag.c.o
+                0x0000000000413dd0                remote_usbdiag_iface
+ .rodata.remote_usbdiag_iface_ops
+                0x0000000000413de0       0x10 uspace/lib/libdrv.a.p/drv_generic_remote_usbdiag.c.o
+ .rodata.remote_usbhc_unregister_endpoint.str1.8
+                0x0000000000413df0       0x34 uspace/lib/libdrv.a.p/drv_generic_remote_usbhc.c.o
+ .rodata.remote_usbhc_unregister_endpoint.str1.1
+                0x0000000000413df0        0xf uspace/lib/libdrv.a.p/drv_generic_remote_usbhc.c.o
+ .rodata.remote_usbhc_iface
+                0x0000000000413df0       0x10 uspace/lib/libdrv.a.p/drv_generic_remote_usbhc.c.o
+                0x0000000000413df0                remote_usbhc_iface
+ .rodata.remote_usbhc_iface_ops
+                0x0000000000413e00       0x30 uspace/lib/libdrv.a.p/drv_generic_remote_usbhc.c.o
+ .rodata.remote_usbhid_get_event_length.str1.8
+                0x0000000000413e30       0x21 uspace/lib/libdrv.a.p/drv_generic_remote_usbhid.c.o
+ .rodata.remote_usbhid_get_event_length.str1.1
+                0x0000000000413e30       0x1a uspace/lib/libdrv.a.p/drv_generic_remote_usbhid.c.o
+ .rodata.remote_usbhid_iface
+                0x0000000000413e30       0x10 uspace/lib/libdrv.a.p/drv_generic_remote_usbhid.c.o
+                0x0000000000413e30                remote_usbhid_iface
+ .rodata.remote_usbhid_iface_ops
+                0x0000000000413e40       0x20 uspace/lib/libdrv.a.p/drv_generic_remote_usbhid.c.o
+ .rodata.remote_clock_dev_iface
+                0x0000000000413e60       0x10 uspace/lib/libdrv.a.p/drv_generic_remote_clock_dev.c.o
+                0x0000000000413e60                remote_clock_dev_iface
+ .rodata.remote_clock_dev_iface_ops
+                0x0000000000413e70       0x10 uspace/lib/libdrv.a.p/drv_generic_remote_clock_dev.c.o
+ .rodata.remote_led_dev_iface
+                0x0000000000413e80       0x10 uspace/lib/libdrv.a.p/drv_generic_remote_led_dev.c.o
+                0x0000000000413e80                remote_led_dev_iface
+ .rodata.remote_led_dev_iface_ops
+                0x0000000000413e90        0x8 uspace/lib/libdrv.a.p/drv_generic_remote_led_dev.c.o
+ *fill*         0x0000000000413e98        0x8 
+ .rodata.remote_battery_dev_iface
+                0x0000000000413ea0       0x10 uspace/lib/libdrv.a.p/drv_generic_remote_battery_dev.c.o
+                0x0000000000413ea0                remote_battery_dev_iface
+ .rodata.remote_battery_dev_iface_ops
+                0x0000000000413eb0       0x10 uspace/lib/libdrv.a.p/drv_generic_remote_battery_dev.c.o
+ .rodata.remote_ahci_iface
+                0x0000000000413ec0       0x10 uspace/lib/libdrv.a.p/drv_generic_remote_ahci.c.o
+                0x0000000000413ec0                remote_ahci_iface
+ *fill*         0x0000000000413ed0       0x10 
+ .rodata.remote_ahci_iface_ops
+                0x0000000000413ee0       0x28 uspace/lib/libdrv.a.p/drv_generic_remote_ahci.c.o
+ .rodata.str1.1
+                0x0000000000413f08       0x62 uspace/lib/libusbvirt.a.p/usbvirt_src_stdreq.c.o
+ .rodata.virthub_get_data.str1.8
+                0x0000000000413f08       0x34 uspace/lib/libusbvirt.a.p/usbvirt_src_virthub_base.c.o
+ .rodata.virthub_get_data.str1.1
+                0x0000000000413f08        0x9 uspace/lib/libusbvirt.a.p/usbvirt_src_virthub_base.c.o
+ .rodata.virthub_base_init.str1.1
+                0x0000000000413f08       0x17 uspace/lib/libusbvirt.a.p/usbvirt_src_virthub_base.c.o
+ .rodata.virthub_base_request.str1.1
+                0x0000000000413f08       0x10 uspace/lib/libusbvirt.a.p/usbvirt_src_virthub_base.c.o
+ *fill*         0x0000000000413f08        0x8 
+ .rodata.virthub_interface_descriptor_ex
+                0x0000000000413f10       0x10 uspace/lib/libusbvirt.a.p/usbvirt_src_virthub_descriptors.c.o
+                0x0000000000413f10                virthub_interface_descriptor_ex
+ .rodata.virthub_configuration_descriptor_without_hub_size
+                0x0000000000413f20        0x9 uspace/lib/libusbvirt.a.p/usbvirt_src_virthub_descriptors.c.o
+                0x0000000000413f20                virthub_configuration_descriptor_without_hub_size
+ .rodata.virthub_endpoint_descriptor
+                0x0000000000413f29        0x7 uspace/lib/libusbvirt.a.p/usbvirt_src_virthub_descriptors.c.o
+                0x0000000000413f29                virthub_endpoint_descriptor
+ .rodata.virthub_interface_descriptor
+                0x0000000000413f30        0x9 uspace/lib/libusbvirt.a.p/usbvirt_src_virthub_descriptors.c.o
+                0x0000000000413f30                virthub_interface_descriptor
+ *fill*         0x0000000000413f39        0x7 
+ .rodata.virthub_device_descriptor
+                0x0000000000413f40       0x12 uspace/lib/libusbvirt.a.p/usbvirt_src_virthub_descriptors.c.o
+                0x0000000000413f40                virthub_device_descriptor
+ .rodata.usbvirt_control_write.str1.1
+                0x0000000000413f52       0x10 uspace/lib/libusbvirt.a.p/usbvirt_src_transfer.c.o
+ .rodata.usbvirt_control_write.str1.8
+                0x0000000000413f52       0x58 uspace/lib/libusbvirt.a.p/usbvirt_src_transfer.c.o
+ .rodata.process_control_transfer.str1.8
+                0x0000000000413f52       0x34 uspace/lib/libusbvirt.a.p/usbvirt_src_ctrltransfer.c.o
+ .rodata.process_control_transfer.str1.1
+                0x0000000000413f52       0x23 uspace/lib/libusbvirt.a.p/usbvirt_src_ctrltransfer.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x0000000000413f54      0x8e4
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x0000000000413f54      0x8e4 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+                0x0000000000413f54                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x0000000000414838     0x30d4
+ *(.eh_frame)
+ .eh_frame      0x0000000000414838      0x2c0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ .eh_frame      0x0000000000414af8       0x28 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000414b20        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ .eh_frame      0x0000000000414b20       0x48 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_main.c.o
+                                         0x60 (size before relaxing)
+ .eh_frame      0x0000000000414b68      0x150 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_transfer_list.c.o
+                                        0x168 (size before relaxing)
+ .eh_frame      0x0000000000414cb8      0x118 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_batch.c.o
+                                        0x130 (size before relaxing)
+ .eh_frame      0x0000000000414dd0      0x1b0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_rh.c.o
+                                        0x1c8 (size before relaxing)
+ .eh_frame      0x0000000000414f80       0x88 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hw_struct_transfer_descriptor.c.o
+                                         0xa0 (size before relaxing)
+ .eh_frame      0x0000000000415008       0x20 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000415028      0x178 uspace/lib/libusbhost.a.p/usbhost_src_endpoint.c.o
+                                        0x190 (size before relaxing)
+ .eh_frame      0x00000000004151a0      0x138 uspace/lib/libusbhost.a.p/usbhost_src_hcd.c.o
+                                        0x150 (size before relaxing)
+ .eh_frame      0x00000000004152d8      0x2d0 uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+                                        0x2e8 (size before relaxing)
+ .eh_frame      0x00000000004155a8       0xc0 uspace/lib/libusbhost.a.p/usbhost_src_usb2_bus.c.o
+                                         0xd8 (size before relaxing)
+ .eh_frame      0x0000000000415668       0x38 uspace/lib/libusbhost.a.p/usbhost_src_bandwidth.c.o
+                                         0x80 (size before relaxing)
+ .eh_frame      0x00000000004156a0      0x100 uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o
+                                        0x278 (size before relaxing)
+ .eh_frame      0x00000000004157a0      0x130 uspace/lib/libusbhost.a.p/usbhost_src_usb_transfer_batch.c.o
+                                        0x148 (size before relaxing)
+ .eh_frame      0x00000000004158d0      0x298 uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+                                        0x2b0 (size before relaxing)
+ .eh_frame      0x0000000000415b68       0xa8 uspace/lib/libusb.a.p/usb_src_class.c.o
+                                         0xc0 (size before relaxing)
+ .eh_frame      0x0000000000415c10       0x28 uspace/lib/libusb.a.p/usb_src_debug.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000415c38      0x100 uspace/lib/libusb.a.p/usb_src_dma_buffer.c.o
+                                        0x160 (size before relaxing)
+ .eh_frame      0x0000000000415d38       0x80 uspace/lib/libusb.a.p/usb_src_usb.c.o
+                                         0x98 (size before relaxing)
+ .eh_frame      0x0000000000415db8      0x410 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+                                        0x460 (size before relaxing)
+ .eh_frame      0x00000000004161c8       0x60 uspace/lib/libdrv.a.p/drv_generic_dev_iface.c.o
+                                         0x78 (size before relaxing)
+ .eh_frame      0x0000000000416228       0x40 uspace/lib/libdrv.a.p/drv_generic_interrupt.c.o
+                                         0x58 (size before relaxing)
+ .eh_frame      0x0000000000416268       0x40 uspace/lib/libdrv.a.p/drv_generic_logbuf.c.o
+                                         0x58 (size before relaxing)
+ .eh_frame      0x00000000004162a8       0xd0 uspace/lib/libdrv.a.p/drv_generic_remote_audio_mixer.c.o
+                                        0x188 (size before relaxing)
+ .eh_frame      0x0000000000416378      0x1e8 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+                                        0x5c0 (size before relaxing)
+ .eh_frame      0x0000000000416560      0x128 uspace/lib/libdrv.a.p/drv_generic_remote_hw_res.c.o
+                                        0x140 (size before relaxing)
+ .eh_frame      0x0000000000416688       0x38 uspace/lib/libdrv.a.p/drv_generic_remote_pio_window.c.o
+                                         0x50 (size before relaxing)
+ .eh_frame      0x00000000004166c0      0x7a8 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+                                        0xe88 (size before relaxing)
+ .eh_frame      0x0000000000416e68       0x90 uspace/lib/libdrv.a.p/drv_generic_remote_ieee80211.c.o
+                                        0x128 (size before relaxing)
+ .eh_frame      0x0000000000416ef8       0x30 uspace/lib/libdrv.a.p/drv_generic_remote_usb.c.o
+                                         0xd0 (size before relaxing)
+ .eh_frame      0x0000000000416f28      0x160 uspace/lib/libdrv.a.p/drv_generic_remote_pci.c.o
+                                        0x240 (size before relaxing)
+ .eh_frame      0x0000000000417088       0x68 uspace/lib/libdrv.a.p/drv_generic_remote_usbdiag.c.o
+                                        0x138 (size before relaxing)
+ .eh_frame      0x00000000004170f0      0x140 uspace/lib/libdrv.a.p/drv_generic_remote_usbhc.c.o
+                                        0x298 (size before relaxing)
+ .eh_frame      0x0000000000417230       0xd0 uspace/lib/libdrv.a.p/drv_generic_remote_usbhid.c.o
+                                        0x1c0 (size before relaxing)
+ .eh_frame      0x0000000000417300       0x70 uspace/lib/libdrv.a.p/drv_generic_remote_clock_dev.c.o
+                                         0x88 (size before relaxing)
+ .eh_frame      0x0000000000417370       0x28 uspace/lib/libdrv.a.p/drv_generic_remote_led_dev.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000417398       0x60 uspace/lib/libdrv.a.p/drv_generic_remote_battery_dev.c.o
+                                         0xc8 (size before relaxing)
+ .eh_frame      0x00000000004173f8       0xf0 uspace/lib/libdrv.a.p/drv_generic_remote_ahci.c.o
+                                        0x228 (size before relaxing)
+ .eh_frame      0x00000000004174e8       0x20 uspace/lib/libdrv.a.p/drv_generic_log.c.o
+                                         0x58 (size before relaxing)
+ .eh_frame      0x0000000000417508        0x0 uspace/lib/libinet.a.p/inet_src_dhcp.c.o
+                                         0xb0 (size before relaxing)
+ .eh_frame      0x0000000000417508        0x0 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+                                         0xa0 (size before relaxing)
+ .eh_frame      0x0000000000417508        0x0 uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+                                        0x2b0 (size before relaxing)
+ .eh_frame      0x0000000000417508      0x168 uspace/lib/libdevice.a.p/device_src_devman.c.o
+                                        0x598 (size before relaxing)
+ .eh_frame      0x0000000000417670      0x100 uspace/lib/libusbvirt.a.p/usbvirt_src_stdreq.c.o
+                                        0x118 (size before relaxing)
+ .eh_frame      0x0000000000417770       0xe8 uspace/lib/libusbvirt.a.p/usbvirt_src_virthub_base.c.o
+                                        0x100 (size before relaxing)
+ .eh_frame      0x0000000000417858       0x80 uspace/lib/libusbvirt.a.p/usbvirt_src_transfer.c.o
+                                         0xc8 (size before relaxing)
+ .eh_frame      0x00000000004178d8       0x34 uspace/lib/libusbvirt.a.p/usbvirt_src_ctrltransfer.c.o
+                                         0x50 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x000000000041790c        0x0
+ *(.sframe)
+ .sframe        0x000000000041790c        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x0000000000418000                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0x0000000000418000        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss           0x0000000000418000      0x1e4
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ .tbss.buffer_dump_index
+                0x0000000000418000        0x4 uspace/lib/libusb.a.p/usb_src_debug.c.o
+ .tbss.buffer_dump
+                0x0000000000418004      0x1e0 uspace/lib/libusb.a.p/usb_src_debug.c.o
+ *(.tcommon)
+
+.preinit_array  0x0000000000418000        0x0
+                0x0000000000418000                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x0000000000418000                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x0000000000418000        0x0
+                0x0000000000418000                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x0000000000418000                PROVIDE (__init_array_end = .)
+
+.fini_array     0x0000000000418000        0x0
+                0x0000000000418000                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x0000000000418000                PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x0000000000418000        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x0000000000418000        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+
+.dynamic        0x0000000000418000      0x150
+ *(.dynamic)
+ .dynamic       0x0000000000418000      0x150 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+                0x0000000000418000                _DYNAMIC
+
+.got            0x0000000000418150        0x0
+ *(.got)
+ .got           0x0000000000418150        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+ *(.igot)
+                0x0000000000418150                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x0000000000418150      0x2e0
+ *(.got.plt)
+ .got.plt       0x0000000000418150      0x2e0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+                0x0000000000418150                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x0000000000418430        0x0 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+
+.data           0x0000000000418440      0x408
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.ops      0x0000000000418440      0x110 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_rh.c.o
+ *fill*         0x0000000000418550       0x10 
+ .data.hc_driver_ops
+                0x0000000000418560       0x28 uspace/lib/libusbhost.a.p/usbhost_src_hcd.c.o
+ *fill*         0x0000000000418588       0x18 
+ .data.usb_ops  0x00000000004185a0       0x98 uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+ *fill*         0x0000000000418638        0x8 
+ .data.usbhc_iface
+                0x0000000000418640       0x30 uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+ .data.usb_iface
+                0x0000000000418670        0x8 uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+ *fill*         0x0000000000418678        0x8 
+ .data.stopping_lock
+                0x0000000000418680       0x20 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+                0x0000000000418680                stopping_lock
+ .data.functions_mutex
+                0x00000000004186a0       0x20 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+                0x00000000004186a0                functions_mutex
+ .data.functions
+                0x00000000004186c0       0x10 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+                0x00000000004186c0                functions
+ *fill*         0x00000000004186d0       0x10 
+ .data.devices_mutex
+                0x00000000004186e0       0x20 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+                0x00000000004186e0                devices_mutex
+ .data.devices  0x0000000000418700       0x10 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+                0x0000000000418700                devices
+ *fill*         0x0000000000418710       0x10 
+ .data.devman_client_mutex
+                0x0000000000418720       0x20 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .data.devman_driver_mutex
+                0x0000000000418740       0x20 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .data.devman_client_block_mutex
+                0x0000000000418760       0x20 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .data.devman_driver_block_mutex
+                0x0000000000418780       0x20 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .data.library_handlers
+                0x00000000004187a0       0xa8 uspace/lib/libusbvirt.a.p/usbvirt_src_stdreq.c.o
+                0x00000000004187a0                library_handlers
+
+.data1
+ *(.data1)
+                0x0000000000418848                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x0000000000418848                . = .
+                0x0000000000418848                __bss_start = .
+
+.bss            0x0000000000418860       0x90
+ *(.dynbss)
+ *fill*         0x0000000000418860        0x0 
+ .dynbss        0x0000000000418860       0x48 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+                0x0000000000418860                __progsymbols
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss.hc_driver
+                0x00000000004188a8        0x8 uspace/lib/libusbhost.a.p/usbhost_src_hcd.c.o
+ .bss.phys_mapping_cache
+                0x00000000004188b0       0x10 uspace/lib/libusb.a.p/usb_src_dma_buffer.c.o
+ .bss.stopping  0x00000000004188c0        0x1 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ *fill*         0x00000000004188c1        0x7 
+ .bss.driver    0x00000000004188c8        0x8 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ .bss.devman_client_sess
+                0x00000000004188d0        0x8 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .bss.devman_driver_sess
+                0x00000000004188d8        0x8 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .bss.devman_client_block_sess
+                0x00000000004188e0        0x8 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .bss.devman_driver_block_sess
+                0x00000000004188e8        0x8 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ *(COMMON)
+                0x00000000004188f0                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x00000000004188f0                . = ALIGN (0x8)
+                0x00000000004188f0                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x000000000041a8f0        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x000000000041a8f0                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x000000000041a8f0                . = ALIGN (0x8)
+                0x00000000004188f0                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x000000000041a8f0                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hc.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_main.c.o
+ .comment       0x0000000000000012       0x13 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_transfer_list.c.o
+ .comment       0x0000000000000012       0x13 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_batch.c.o
+ .comment       0x0000000000000012       0x13 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_uhci_rh.c.o
+ .comment       0x0000000000000012       0x13 uspace/drv_uhci_uhci.p/drv_bus_usb_uhci_hw_struct_transfer_descriptor.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libusbhost.a.p/usbhost_src_endpoint.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libusbhost.a.p/usbhost_src_hcd.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libusbhost.a.p/usbhost_src_bus.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libusbhost.a.p/usbhost_src_usb2_bus.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libusbhost.a.p/usbhost_src_bandwidth.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libusbhost.a.p/usbhost_src_utility.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libusbhost.a.p/usbhost_src_usb_transfer_batch.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libusbhost.a.p/usbhost_src_ddf_helpers.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libusb.a.p/usb_src_class.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libusb.a.p/usb_src_debug.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libusb.a.p/usb_src_dma_buffer.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libusb.a.p/usb_src_usb.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdrv.a.p/drv_generic_driver.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdrv.a.p/drv_generic_dev_iface.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdrv.a.p/drv_generic_interrupt.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdrv.a.p/drv_generic_logbuf.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdrv.a.p/drv_generic_remote_audio_mixer.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdrv.a.p/drv_generic_remote_audio_pcm.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdrv.a.p/drv_generic_remote_hw_res.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdrv.a.p/drv_generic_remote_pio_window.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdrv.a.p/drv_generic_remote_nic.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdrv.a.p/drv_generic_remote_ieee80211.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdrv.a.p/drv_generic_remote_usb.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdrv.a.p/drv_generic_remote_pci.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdrv.a.p/drv_generic_remote_usbdiag.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdrv.a.p/drv_generic_remote_usbhc.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdrv.a.p/drv_generic_remote_usbhid.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdrv.a.p/drv_generic_remote_clock_dev.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdrv.a.p/drv_generic_remote_led_dev.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdrv.a.p/drv_generic_remote_battery_dev.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdrv.a.p/drv_generic_remote_ahci.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdrv.a.p/drv_generic_log.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libinet.a.p/inet_src_dhcp.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libinet.a.p/inet_src_inetcfg.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libdevice.a.p/device_src_devman.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libusbvirt.a.p/usbvirt_src_stdreq.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libusbvirt.a.p/usbvirt_src_virthub_base.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libusbvirt.a.p/usbvirt_src_virthub_descriptors.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libusbvirt.a.p/usbvirt_src_transfer.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libusbvirt.a.p/usbvirt_src_ctrltransfer.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/drv_uhci_uhci elf64-x86-64)

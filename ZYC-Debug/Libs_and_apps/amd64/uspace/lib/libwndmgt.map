@@ -1,0 +1,430 @@
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.0                     uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o (loc_service_connect)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt_srv.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt_srv.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt_srv.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+LOAD uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt_srv.c.o
+START GROUP
+LOAD uspace/lib/libc.so.0.0
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000000120                . = (SEGMENT_START ("text-segment", 0x0) + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000000120      0x140
+ *(.hash)
+ .hash          0x0000000000000120      0x140 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x0000000000000260      0x3d8
+ *(.dynsym)
+ .dynsym        0x0000000000000260      0x3d8 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+
+.dynstr         0x0000000000000638      0x2ee
+ *(.dynstr)
+ .dynstr        0x0000000000000638      0x2ee uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+
+.gnu.version    0x0000000000000926        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000000926        0x0 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+
+.gnu.version_d  0x0000000000000928        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000000928        0x0 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+
+.gnu.version_r  0x0000000000000928        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000000928        0x0 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+
+.rela.dyn       0x0000000000000928        0x0
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000000928        0x0 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+ .rela.ifunc    0x0000000000000928        0x0 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+
+.rela.plt       0x0000000000000928      0x2e8
+ *(.rela.plt)
+ .rela.plt      0x0000000000000928      0x2e8 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+ *(.rela.iplt)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x0000000000000c10      0x200
+ *(.plt)
+ .plt           0x0000000000000c10      0x200 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+ *(.iplt)
+
+.plt.got        0x0000000000000e10        0x0
+ *(.plt.got)
+ .plt.got       0x0000000000000e10        0x0 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x0000000000000e10      0xcde
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text.wndmgt_cb_conn
+                0x0000000000000e10      0x1e1 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+ *fill*         0x0000000000000ff1        0xf 
+ .text.wndmgt_open
+                0x0000000000001000      0x163 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+                0x0000000000001000                wndmgt_open
+ *fill*         0x0000000000001163        0xd 
+ .text.wndmgt_close
+                0x0000000000001170       0x63 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+                0x0000000000001170                wndmgt_close
+ *fill*         0x00000000000011d3        0xd 
+ .text.wndmgt_get_window_list
+                0x00000000000011e0      0x146 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+                0x00000000000011e0                wndmgt_get_window_list
+ *fill*         0x0000000000001326        0xa 
+ .text.wndmgt_free_window_list
+                0x0000000000001330       0x22 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+                0x0000000000001330                wndmgt_free_window_list
+ *fill*         0x0000000000001352        0xe 
+ .text.wndmgt_get_window_info
+                0x0000000000001360      0x156 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+                0x0000000000001360                wndmgt_get_window_info
+ *fill*         0x00000000000014b6        0xa 
+ .text.wndmgt_free_window_info
+                0x00000000000014c0       0x21 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+                0x00000000000014c0                wndmgt_free_window_info
+ *fill*         0x00000000000014e1        0xf 
+ .text.wndmgt_activate_window
+                0x00000000000014f0       0x4a uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+                0x00000000000014f0                wndmgt_activate_window
+ *fill*         0x000000000000153a        0x6 
+ .text.wndmgt_close_window
+                0x0000000000001540       0x38 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+                0x0000000000001540                wndmgt_close_window
+ *fill*         0x0000000000001578        0x8 
+ .text.wndmgt_conn
+                0x0000000000001580      0x51b uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt_srv.c.o
+                0x0000000000001580                wndmgt_conn
+ *fill*         0x0000000000001a9b        0x5 
+ .text.wndmgt_srv_initialize
+                0x0000000000001aa0       0x15 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt_srv.c.o
+                0x0000000000001aa0                wndmgt_srv_initialize
+ *fill*         0x0000000000001ab5        0xb 
+ .text.wndmgt_srv_ev_pending
+                0x0000000000001ac0       0x2e uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt_srv.c.o
+                0x0000000000001ac0                wndmgt_srv_ev_pending
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000001af0       0x24
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.wndmgt_open.str1.1
+                0x0000000000001af0        0xc uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+ .rodata.wndmgt_conn
+                0x0000000000001afc       0x18 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt_srv.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x0000000000001b14       0x74
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x0000000000001b14       0x74 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+                0x0000000000001b14                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x0000000000001b88      0x228
+ *(.eh_frame)
+ .eh_frame      0x0000000000001b88      0x190 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+ .eh_frame      0x0000000000001d18       0x28 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000001d40        0x0 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+ .eh_frame      0x0000000000001d40       0x70 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt_srv.c.o
+                                         0x88 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x0000000000001db0        0x0
+ *(.sframe)
+ .sframe        0x0000000000001db0        0x0 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x0000000000002db0                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array
+ *(.preinit_array)
+
+.init_array
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+
+.fini_array
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x0000000000002db0        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x0000000000002db0        0x0 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+
+.dynamic        0x0000000000002db0      0x120
+ *(.dynamic)
+ .dynamic       0x0000000000002db0      0x120 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+                0x0000000000002db0                _DYNAMIC
+
+.got            0x0000000000002ed0        0x0
+ *(.got)
+ .got           0x0000000000002ed0        0x0 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+ *(.igot)
+                0x0000000000002ed0                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x0000000000002ed0      0x110
+ *(.got.plt)
+ .got.plt       0x0000000000002ed0      0x110 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+                0x0000000000002ed0                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+
+.data
+ *(.data .data.* .gnu.linkonce.d.*)
+
+.data1
+ *(.data1)
+                [!provide]                        PROVIDE (_edata = .)
+                [!provide]                        PROVIDE (edata = .)
+                0x0000000000002fe0                . = .
+                [!provide]                        PROVIDE (__bss_start = .)
+
+.bss            0x0000000000002fe0        0x0
+ *(.dynbss)
+ .dynbss        0x0000000000002fe0        0x0 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ *(COMMON)
+                0x0000000000002fe0                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x0000000000002fe0                . = ALIGN (0x8)
+                0x0000000000002fe0                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x0000000000004fe0        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x0000000000004fe0                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000004fe0                . = ALIGN (0x8)
+                [!provide]                        PROVIDE (_end = .)
+                [!provide]                        PROVIDE (end = .)
+                0x0000000000004fe0                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/lib/libwndmgt.so.0.0.p/wndmgt_src_wndmgt_srv.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/lib/libwndmgt.so.0.0 elf64-x86-64)

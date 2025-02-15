@@ -1,0 +1,839 @@
+Archive member included to satisfy reference by file (symbol)
+
+uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                              (--whole-archive)
+uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                              (--whole-archive)
+uspace/lib/libinet.a.p/inet_src_endpoint.c.o
+                              uspace/app_netecho.p/app_netecho_comm.c.o (inet_ep2_init)
+uspace/lib/libinet.a.p/inet_src_hostport.c.o
+                              uspace/app_netecho.p/app_netecho_comm.c.o (inet_hostport_plookup_one)
+uspace/lib/libinet.a.p/inet_src_udp.c.o
+                              uspace/app_netecho.p/app_netecho_comm.c.o (udp_create)
+uspace/lib/libinet.a.p/inet_src_addr.c.o
+                              uspace/lib/libinet.a.p/inet_src_hostport.c.o (inet_addr_parse)
+uspace/lib/libinet.a.p/inet_src_dnsr.c.o
+                              uspace/lib/libinet.a.p/inet_src_hostport.c.o (dnsr_name2host)
+uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+                              uspace/lib/libinet.a.p/inet_src_addr.c.o (eth_addr_encode)
+uspace/lib/libinet.a.p/inet_src_hostname.c.o
+                              uspace/lib/libinet.a.p/inet_src_hostport.c.o (inet_hostname_parse)
+uspace/lib/libconsole.a.p/console_src_console.c.o
+                              uspace/app_netecho.p/app_netecho_netecho.c.o (console_init)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.0                     uspace/app_netecho.p/app_netecho_netecho.c.o (putchar)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/app_netecho.p/app_netecho_comm.c.o
+ .data          0x0000000000000000        0x0 uspace/app_netecho.p/app_netecho_comm.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_netecho.p/app_netecho_comm.c.o
+ .text          0x0000000000000000        0x0 uspace/app_netecho.p/app_netecho_netecho.c.o
+ .data          0x0000000000000000        0x0 uspace/app_netecho.p/app_netecho_netecho.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_netecho.p/app_netecho_netecho.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .text          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_endpoint.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_endpoint.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_endpoint.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_hostport.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_hostport.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_hostport.c.o
+ .rodata.inet_hostport_format.str1.1
+                0x0000000000000000       0x18 uspace/lib/libinet.a.p/inet_src_hostport.c.o
+ .text.inet_hostport_format
+                0x0000000000000000       0xf9 uspace/lib/libinet.a.p/inet_src_hostport.c.o
+ .text.inet_hostport_destroy
+                0x0000000000000000       0x41 uspace/lib/libinet.a.p/inet_src_hostport.c.o
+ .text.inet_hostport_lookup_one
+                0x0000000000000000       0xa3 uspace/lib/libinet.a.p/inet_src_hostport.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_udp.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_udp.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_udp.c.o
+ .text.udp_assoc_set_nolocal
+                0x0000000000000000       0x3d uspace/lib/libinet.a.p/inet_src_udp.c.o
+ .text.udp_assoc_userptr
+                0x0000000000000000        0xa uspace/lib/libinet.a.p/inet_src_udp.c.o
+ .text.udp_rmsg_remote_ep
+                0x0000000000000000       0x16 uspace/lib/libinet.a.p/inet_src_udp.c.o
+ .text.udp_rerr_type
+                0x0000000000000000        0x8 uspace/lib/libinet.a.p/inet_src_udp.c.o
+ .text.udp_rerr_code
+                0x0000000000000000        0x8 uspace/lib/libinet.a.p/inet_src_udp.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.inet_addr_format_v6.str1.1
+                0x0000000000000000        0xb uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_format_v6
+                0x0000000000000000      0x3bb uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.addr128  0x0000000000000000        0xd uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.addr128_compare
+                0x0000000000000000       0x1d uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.eth_addr_solicited_node
+                0x0000000000000000       0x51 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.host2addr128_t_be
+                0x0000000000000000        0xd uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.addr128_t_be2host
+                0x0000000000000000        0xd uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr
+                0x0000000000000000       0x29 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr
+                0x0000000000000000       0x2d uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr6
+                0x0000000000000000       0x5c uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr6
+                0x0000000000000000       0x62 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_addr
+                0x0000000000000000       0x13 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_naddr
+                0x0000000000000000       0x17 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_any
+                0x0000000000000000       0x14 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_any
+                0x0000000000000000       0x18 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_compare
+                0x0000000000000000       0x4f uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_is_any
+                0x0000000000000000       0x3c uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_compare
+                0x0000000000000000       0x4f uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_compare_mask
+                0x0000000000000000       0xe6 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_parse
+                0x0000000000000000       0x84 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.inet_addr_format.str1.1
+                0x0000000000000000       0x11 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_format
+                0x0000000000000000       0x78 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.inet_naddr_format.str1.1
+                0x0000000000000000        0x8 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_format
+                0x0000000000000000       0xe0 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.inet_addr_get.str1.8
+                0x0000000000000000       0x29 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.inet_addr_get.str1.1
+                0x0000000000000000        0x6 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_get
+                0x0000000000000000       0x4d uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_get
+                0x0000000000000000       0x54 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_set
+                0x0000000000000000        0xf uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_set
+                0x0000000000000000       0x13 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_set6
+                0x0000000000000000       0x14 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_set6
+                0x0000000000000000       0x18 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.inet_addr_any_addr6
+                0x0000000000000000       0x14 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .data.inet_eth_addr_solicited_node
+                0x0000000000000000        0x8 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.addr32_broadcast_all_hosts
+                0x0000000000000000        0x4 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_dnsr.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_dnsr.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_dnsr.c.o
+ .text.dnsr_get_srvaddr
+                0x0000000000000000       0xf5 uspace/lib/libinet.a.p/inet_src_dnsr.c.o
+ .text.dnsr_set_srvaddr
+                0x0000000000000000       0xf5 uspace/lib/libinet.a.p/inet_src_dnsr.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .text.eth_addr_encode
+                0x0000000000000000       0x47 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .text.eth_addr_decode
+                0x0000000000000000       0x43 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .text.eth_addr_compare
+                0x0000000000000000       0x19 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .rodata.eth_addr_format.str1.1
+                0x0000000000000000        0xb uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .text.eth_addr_format
+                0x0000000000000000       0x6f uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .rodata.eth_addr_broadcast
+                0x0000000000000000        0x8 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_hostname.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_hostname.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_hostname.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_done
+                0x0000000000000000        0xa uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_kcon
+                0x0000000000000000        0xa uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_flush
+                0x0000000000000000        0xe uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_clear
+                0x0000000000000000       0x2f uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_get_size
+                0x0000000000000000       0x4b uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_set_style
+                0x0000000000000000       0x31 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_set_color
+                0x0000000000000000       0x47 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_set_rgb_color
+                0x0000000000000000       0x42 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_cursor_visibility
+                0x0000000000000000       0x31 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_set_caption
+                0x0000000000000000       0xa3 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_get_color_cap
+                0x0000000000000000       0x39 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_get_pos
+                0x0000000000000000       0x4b uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_set_pos
+                0x0000000000000000       0x44 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_get_event_timeout
+                0x0000000000000000      0x16c uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_map
+                0x0000000000000000       0xea uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_unmap
+                0x0000000000000000       0x37 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_update
+                0x0000000000000000       0x5f uspace/lib/libconsole.a.p/console_src_console.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/app_netecho.p/app_netecho_comm.c.o
+LOAD uspace/app_netecho.p/app_netecho_netecho.c.o
+START GROUP
+LOAD uspace/lib/c/libstartfiles.a
+LOAD uspace/lib/libinet.a
+LOAD uspace/lib/libc.so.0.0
+LOAD uspace/lib/libconsole.a
+LOAD uspace/lib/libinput.a
+LOAD uspace/lib/liboutput.a
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000400000                PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x0000000000400120                . = (SEGMENT_START ("text-segment", 0x400000) + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000400120      0x154
+ *(.hash)
+ .hash          0x0000000000400120      0x154 uspace/app_netecho.p/app_netecho_comm.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x0000000000400278      0x450
+ *(.dynsym)
+ .dynsym        0x0000000000400278      0x450 uspace/app_netecho.p/app_netecho_comm.c.o
+
+.dynstr         0x00000000004006c8      0x27f
+ *(.dynstr)
+ .dynstr        0x00000000004006c8      0x27f uspace/app_netecho.p/app_netecho_comm.c.o
+
+.gnu.version    0x0000000000400948        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000400948        0x0 uspace/app_netecho.p/app_netecho_comm.c.o
+
+.gnu.version_d  0x0000000000400948        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000400948        0x0 uspace/app_netecho.p/app_netecho_comm.c.o
+
+.gnu.version_r  0x0000000000400948        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000400948        0x0 uspace/app_netecho.p/app_netecho_comm.c.o
+
+.rela.dyn       0x0000000000400948       0x48
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text.startup.main
+                0x0000000000400948        0x0 uspace/app_netecho.p/app_netecho_comm.c.o
+ .rela.text.__c_start
+                0x0000000000400948        0x0 uspace/app_netecho.p/app_netecho_comm.c.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ .rela.rodata.cst8
+                0x0000000000400948        0x0 uspace/app_netecho.p/app_netecho_comm.c.o
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x0000000000400948        0x0 uspace/app_netecho.p/app_netecho_comm.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000400948        0x0 uspace/app_netecho.p/app_netecho_comm.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x0000000000400948       0x48 uspace/app_netecho.p/app_netecho_comm.c.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+
+.rela.plt       0x0000000000400990      0x3f0
+ *(.rela.plt)
+ .rela.plt      0x0000000000400990      0x3f0 uspace/app_netecho.p/app_netecho_comm.c.o
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+ .rela.iplt     0x0000000000400d80        0x0 uspace/app_netecho.p/app_netecho_comm.c.o
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x0000000000400d80      0x2b0
+ *(.plt)
+ .plt           0x0000000000400d80      0x2b0 uspace/app_netecho.p/app_netecho_comm.c.o
+                0x0000000000400d90                putchar
+                0x0000000000400da0                vfs_fsession
+                0x0000000000400db0                loc_service_connect
+                0x0000000000400dc0                printf
+                0x0000000000400dd0                async_hangup
+                0x0000000000400de0                async_wait_for
+                0x0000000000400df0                async_data_write_start
+                0x0000000000400e00                async_get_call
+                0x0000000000400e10                str_ndup
+                0x0000000000400e20                async_send_1
+                0x0000000000400e30                puts
+                0x0000000000400e40                malloc
+                0x0000000000400e50                async_req_1_0
+                0x0000000000400e60                strtoul
+                0x0000000000400e70                loc_service_get_id
+                0x0000000000400e80                async_answer_0
+                0x0000000000400e90                fibril_condvar_wait
+                0x0000000000400ea0                async_data_read
+                0x0000000000400eb0                strtol
+                0x0000000000400ec0                async_exchange_end
+                0x0000000000400ed0                calloc
+                0x0000000000400ee0                fibril_condvar_initialize
+                0x0000000000400ef0                fibril_condvar_broadcast
+                0x0000000000400f00                str_uint8_t
+                0x0000000000400f10                fibril_mutex_unlock
+                0x0000000000400f20                str_dup
+                0x0000000000400f30                isalpha
+                0x0000000000400f40                async_create_callback_port
+                0x0000000000400f50                str_cmp
+                0x0000000000400f60                __helenos_assert_abort
+                0x0000000000400f70                async_data_read_start
+                0x0000000000400f80                isalnum
+                0x0000000000400f90                str_size
+                0x0000000000400fa0                async_exchange_begin
+                0x0000000000400fb0                async_send_0
+                0x0000000000400fc0                str_uint16_t
+                0x0000000000400fd0                __libc_main
+                0x0000000000400fe0                async_forget
+                0x0000000000400ff0                async_req_0_0
+                0x0000000000401000                chr_encode
+                0x0000000000401010                free
+                0x0000000000401020                fibril_mutex_lock
+ *(.iplt)
+ .iplt          0x0000000000401030        0x0 uspace/app_netecho.p/app_netecho_comm.c.o
+
+.plt.got        0x0000000000401030        0x0
+ *(.plt.got)
+ .plt.got       0x0000000000401030        0x0 uspace/app_netecho.p/app_netecho_comm.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x0000000000401030     0x1add
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ .text.startup.main
+                0x0000000000401030      0x18d uspace/app_netecho.p/app_netecho_netecho.c.o
+                0x0000000000401030                main
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ *fill*         0x00000000004011bd        0x3 
+ .text.comm_udp_link_state
+                0x00000000004011c0       0x2e uspace/app_netecho.p/app_netecho_comm.c.o
+ *fill*         0x00000000004011ee        0x2 
+ .text.comm_udp_recv_err
+                0x00000000004011f0        0xf uspace/app_netecho.p/app_netecho_comm.c.o
+ *fill*         0x00000000004011ff        0x1 
+ .text.comm_udp_recv_msg
+                0x0000000000401200       0x89 uspace/app_netecho.p/app_netecho_comm.c.o
+ *fill*         0x0000000000401289        0x7 
+ .text.comm_open_listen
+                0x0000000000401290       0xb5 uspace/app_netecho.p/app_netecho_comm.c.o
+                0x0000000000401290                comm_open_listen
+ *fill*         0x0000000000401345        0xb 
+ .text.comm_open_talkto
+                0x0000000000401350       0xae uspace/app_netecho.p/app_netecho_comm.c.o
+                0x0000000000401350                comm_open_talkto
+ *fill*         0x00000000004013fe        0x2 
+ .text.comm_close
+                0x0000000000401400       0x51 uspace/app_netecho.p/app_netecho_comm.c.o
+                0x0000000000401400                comm_close
+ *fill*         0x0000000000401451        0xf 
+ .text.comm_send
+                0x0000000000401460       0x21 uspace/app_netecho.p/app_netecho_comm.c.o
+                0x0000000000401460                comm_send
+ *fill*         0x0000000000401481        0xf 
+ .text.print_syntax
+                0x0000000000401490       0x31 uspace/app_netecho.p/app_netecho_netecho.c.o
+ *fill*         0x00000000004014c1        0xf 
+ .text.send_char
+                0x00000000004014d0       0x44 uspace/app_netecho.p/app_netecho_netecho.c.o
+ *fill*         0x0000000000401514        0xc 
+ .text.netecho_received
+                0x0000000000401520       0x47 uspace/app_netecho.p/app_netecho_netecho.c.o
+                0x0000000000401520                netecho_received
+ .text          0x0000000000401567        0xc uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                0x0000000000401567                _start
+ *fill*         0x0000000000401573        0xd 
+ .text.__c_start
+                0x0000000000401580       0x8c uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                0x0000000000401580                __c_start
+ *fill*         0x000000000040160c        0x4 
+ .text.inet_ep_init
+                0x0000000000401610       0x15 uspace/lib/libinet.a.p/inet_src_endpoint.c.o
+                0x0000000000401610                inet_ep_init
+ *fill*         0x0000000000401625        0xb 
+ .text.inet_ep2_init
+                0x0000000000401630       0x1d uspace/lib/libinet.a.p/inet_src_endpoint.c.o
+                0x0000000000401630                inet_ep2_init
+ *fill*         0x000000000040164d        0x3 
+ .text.inet_hostport_parse
+                0x0000000000401650      0x1b4 uspace/lib/libinet.a.p/inet_src_hostport.c.o
+                0x0000000000401650                inet_hostport_parse
+ *fill*         0x0000000000401804        0xc 
+ .text.inet_hostport_plookup_one
+                0x0000000000401810      0x1a7 uspace/lib/libinet.a.p/inet_src_hostport.c.o
+                0x0000000000401810                inet_hostport_plookup_one
+ *fill*         0x00000000004019b7        0x9 
+ .text.udp_cb_conn
+                0x00000000004019c0      0x1b9 uspace/lib/libinet.a.p/inet_src_udp.c.o
+ *fill*         0x0000000000401b79        0x7 
+ .text.udp_create
+                0x0000000000401b80      0x13e uspace/lib/libinet.a.p/inet_src_udp.c.o
+                0x0000000000401b80                udp_create
+ *fill*         0x0000000000401cbe        0x2 
+ .text.udp_destroy
+                0x0000000000401cc0       0x69 uspace/lib/libinet.a.p/inet_src_udp.c.o
+                0x0000000000401cc0                udp_destroy
+ *fill*         0x0000000000401d29        0x7 
+ .text.udp_assoc_create
+                0x0000000000401d30      0x14a uspace/lib/libinet.a.p/inet_src_udp.c.o
+                0x0000000000401d30                udp_assoc_create
+ *fill*         0x0000000000401e7a        0x6 
+ .text.udp_assoc_destroy
+                0x0000000000401e80       0x69 uspace/lib/libinet.a.p/inet_src_udp.c.o
+                0x0000000000401e80                udp_assoc_destroy
+ *fill*         0x0000000000401ee9        0x7 
+ .text.udp_assoc_send_msg
+                0x0000000000401ef0      0x102 uspace/lib/libinet.a.p/inet_src_udp.c.o
+                0x0000000000401ef0                udp_assoc_send_msg
+ *fill*         0x0000000000401ff2        0xe 
+ .text.udp_rmsg_size
+                0x0000000000402000        0xa uspace/lib/libinet.a.p/inet_src_udp.c.o
+                0x0000000000402000                udp_rmsg_size
+ *fill*         0x000000000040200a        0x6 
+ .text.udp_rmsg_read
+                0x0000000000402010       0xa0 uspace/lib/libinet.a.p/inet_src_udp.c.o
+                0x0000000000402010                udp_rmsg_read
+ .text.inet_addr_parse_v4
+                0x00000000004020b0       0xf0 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_parse_v6
+                0x00000000004021a0      0x378 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ *fill*         0x0000000000402518        0x8 
+ .text.inet_addr_parse
+                0x0000000000402520       0x5c uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000402520                inet_addr_parse
+ *fill*         0x000000000040257c        0x4 
+ .text.dnsr_name2host
+                0x0000000000402580      0x26f uspace/lib/libinet.a.p/inet_src_dnsr.c.o
+                0x0000000000402580                dnsr_name2host
+ *fill*         0x00000000004027ef        0x1 
+ .text.dnsr_hostinfo_destroy
+                0x00000000004027f0       0x31 uspace/lib/libinet.a.p/inet_src_dnsr.c.o
+                0x00000000004027f0                dnsr_hostinfo_destroy
+ *fill*         0x0000000000402821        0xf 
+ .text.inet_hostname_parse
+                0x0000000000402830       0xe6 uspace/lib/libinet.a.p/inet_src_hostname.c.o
+                0x0000000000402830                inet_hostname_parse
+ *fill*         0x0000000000402916        0xa 
+ .text.console_init
+                0x0000000000402920       0x7c uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x0000000000402920                console_init
+ *fill*         0x000000000040299c        0x4 
+ .text.console_get_event
+                0x00000000004029a0      0x16d uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x00000000004029a0                console_get_event
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000402b10      0x258
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.comm_udp_link_state.str1.1
+                0x0000000000402b10      0x143 uspace/app_netecho.p/app_netecho_comm.c.o
+                                         0x20 (size before relaxing)
+ .rodata.comm_udp_recv_err.str1.1
+                0x0000000000402c53       0x18 uspace/app_netecho.p/app_netecho_comm.c.o
+ .rodata.comm_udp_recv_msg.str1.1
+                0x0000000000402c53       0x17 uspace/app_netecho.p/app_netecho_comm.c.o
+ .rodata.comm_open_listen.str1.1
+                0x0000000000402c53       0x2e uspace/app_netecho.p/app_netecho_comm.c.o
+ .rodata.comm_open_talkto.str1.1
+                0x0000000000402c53       0x2a uspace/app_netecho.p/app_netecho_comm.c.o
+ .rodata.print_syntax.str1.1
+                0x0000000000402c53       0x1f uspace/app_netecho.p/app_netecho_netecho.c.o
+ *fill*         0x0000000000402c53        0x5 
+ .rodata.print_syntax.str1.8
+                0x0000000000402c58      0x107 uspace/app_netecho.p/app_netecho_netecho.c.o
+                                         0x31 (size before relaxing)
+ .rodata.send_char.str1.1
+                0x0000000000402d5f       0x16 uspace/app_netecho.p/app_netecho_netecho.c.o
+ .rodata.netecho_received.str1.1
+                0x0000000000402d5f       0x16 uspace/app_netecho.p/app_netecho_netecho.c.o
+ .rodata.main.str1.1
+                0x0000000000402d5f        0x6 uspace/app_netecho.p/app_netecho_netecho.c.o
+ .rodata.main.str1.8
+                0x0000000000402d5f       0x4d uspace/app_netecho.p/app_netecho_netecho.c.o
+ *fill*         0x0000000000402d5f        0x1 
+ .rodata.cst8   0x0000000000402d60        0x8 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .rodata.inet_hostport_format.str1.8
+                0x0000000000402d68       0x2d uspace/lib/libinet.a.p/inet_src_hostport.c.o
+ .rodata.inet_hostport_plookup_one.str1.1
+                0x0000000000402d68       0x3a uspace/lib/libinet.a.p/inet_src_hostport.c.o
+ .rodata.udp_create.str1.1
+                0x0000000000402d68        0x8 uspace/lib/libinet.a.p/inet_src_udp.c.o
+ .rodata.dnsr_name2host.str1.1
+                0x0000000000402d68        0x9 uspace/lib/libinet.a.p/inet_src_dnsr.c.o
+ .rodata.dnsr_name2host.str1.8
+                0x0000000000402d68       0x4f uspace/lib/libinet.a.p/inet_src_dnsr.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x0000000000402d68      0x114
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x0000000000402d68      0x114 uspace/app_netecho.p/app_netecho_comm.c.o
+                0x0000000000402d68                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x0000000000402e80      0x598
+ *(.eh_frame)
+ .eh_frame      0x0000000000402e80      0x128 uspace/app_netecho.p/app_netecho_comm.c.o
+ .eh_frame      0x0000000000402fa8       0x28 uspace/app_netecho.p/app_netecho_comm.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000402fd0        0x0 uspace/app_netecho.p/app_netecho_comm.c.o
+ .eh_frame      0x0000000000402fd0       0x90 uspace/app_netecho.p/app_netecho_netecho.c.o
+                                         0xa8 (size before relaxing)
+ .eh_frame      0x0000000000403060       0x20 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000403080       0x40 uspace/lib/libinet.a.p/inet_src_endpoint.c.o
+                                         0x58 (size before relaxing)
+ .eh_frame      0x00000000004030c0       0x68 uspace/lib/libinet.a.p/inet_src_hostport.c.o
+                                        0x100 (size before relaxing)
+ .eh_frame      0x0000000000403128      0x170 uspace/lib/libinet.a.p/inet_src_udp.c.o
+                                        0x230 (size before relaxing)
+ .eh_frame      0x0000000000403298       0x90 uspace/lib/libinet.a.p/inet_src_addr.c.o
+                                        0x478 (size before relaxing)
+ .eh_frame      0x0000000000403328       0x58 uspace/lib/libinet.a.p/inet_src_dnsr.c.o
+                                         0xd0 (size before relaxing)
+ .eh_frame      0x0000000000403380        0x0 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+                                         0xa0 (size before relaxing)
+ .eh_frame      0x0000000000403380       0x38 uspace/lib/libinet.a.p/inet_src_hostname.c.o
+                                         0x50 (size before relaxing)
+ .eh_frame      0x00000000004033b8       0x60 uspace/lib/libconsole.a.p/console_src_console.c.o
+                                        0x318 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x0000000000403418        0x0
+ *(.sframe)
+ .sframe        0x0000000000403418        0x0 uspace/app_netecho.p/app_netecho_comm.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x0000000000404418                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0x0000000000404418        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0000000000404418        0x0
+                0x0000000000404418                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x0000000000404418                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x0000000000404418        0x0
+                0x0000000000404418                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x0000000000404418                PROVIDE (__init_array_end = .)
+
+.fini_array     0x0000000000404418        0x0
+                0x0000000000404418                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x0000000000404418                PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x0000000000404418        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x0000000000404418        0x0 uspace/app_netecho.p/app_netecho_comm.c.o
+
+.dynamic        0x0000000000404418      0x150
+ *(.dynamic)
+ .dynamic       0x0000000000404418      0x150 uspace/app_netecho.p/app_netecho_comm.c.o
+                0x0000000000404418                _DYNAMIC
+
+.got            0x0000000000404568        0x0
+ *(.got)
+ .got           0x0000000000404568        0x0 uspace/app_netecho.p/app_netecho_comm.c.o
+ *(.igot)
+                0x0000000000404568                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x0000000000404568      0x168
+ *(.got.plt)
+ .got.plt       0x0000000000404568      0x168 uspace/app_netecho.p/app_netecho_comm.c.o
+                0x0000000000404568                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x00000000004046d0        0x0 uspace/app_netecho.p/app_netecho_comm.c.o
+
+.data           0x00000000004046e0       0x40
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.comm_udp_cb
+                0x00000000004046e0       0x18 uspace/app_netecho.p/app_netecho_comm.c.o
+ *fill*         0x00000000004046f8        0x8 
+ .data.dnsr_sess_mutex
+                0x0000000000404700       0x20 uspace/lib/libinet.a.p/inet_src_dnsr.c.o
+
+.data1
+ *(.data1)
+                0x0000000000404720                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x0000000000404720                . = .
+                0x0000000000404720                __bss_start = .
+
+.bss            0x0000000000404720      0x4a8
+ *(.dynbss)
+ .dynbss        0x0000000000404720       0x68 uspace/app_netecho.p/app_netecho_comm.c.o
+                0x0000000000404720                stdout
+                0x0000000000404730                stdin
+                0x0000000000404740                __progsymbols
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ *fill*         0x0000000000404788       0x18 
+ .bss.recv_buf  0x00000000004047a0      0x400 uspace/app_netecho.p/app_netecho_comm.c.o
+ .bss.assoc     0x0000000000404ba0        0x8 uspace/app_netecho.p/app_netecho_comm.c.o
+ .bss.udp       0x0000000000404ba8        0x8 uspace/app_netecho.p/app_netecho_comm.c.o
+ .bss.done      0x0000000000404bb0        0x1 uspace/app_netecho.p/app_netecho_netecho.c.o
+ *fill*         0x0000000000404bb1        0x7 
+ .bss.con       0x0000000000404bb8        0x8 uspace/app_netecho.p/app_netecho_netecho.c.o
+ .bss.dnsr_sess
+                0x0000000000404bc0        0x8 uspace/lib/libinet.a.p/inet_src_dnsr.c.o
+ *(COMMON)
+                0x0000000000404bc8                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x0000000000404bc8                . = ALIGN (0x8)
+                0x0000000000404bc8                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x0000000000406bc8        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x0000000000406bc8                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000406bc8                . = ALIGN (0x8)
+                0x0000000000404bc8                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x0000000000406bc8                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/app_netecho.p/app_netecho_comm.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/app_netecho.p/app_netecho_netecho.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libinet.a.p/inet_src_endpoint.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libinet.a.p/inet_src_hostport.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libinet.a.p/inet_src_udp.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libinet.a.p/inet_src_dnsr.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libinet.a.p/inet_src_hostname.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libconsole.a.p/console_src_console.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/app_netecho elf64-x86-64)

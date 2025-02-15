@@ -1,0 +1,899 @@
+
+As-needed library included to satisfy reference by file (symbol)
+
+libusb.so.0                   uspace/lib/libusbhost.so.0.0.p/usbhost_src_endpoint.c.o (dma_buffer_acquire)
+libdrv.so.0                   uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o (ddf_fun_create)
+libc.so.0                     uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o (hw_res_enable_interrupt)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_endpoint.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_endpoint.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_endpoint.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_hcd.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_hcd.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_hcd.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb2_bus.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb2_bus.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb2_bus.c.o
+ .rodata.usb2_default_target
+                0x0000000000000000        0x8 uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb2_bus.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bandwidth.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bandwidth.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bandwidth.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_utility.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_utility.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_utility.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb_transfer_batch.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb_transfer_batch.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb_transfer_batch.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+LOAD uspace/lib/libusbhost.so.0.0.p/usbhost_src_endpoint.c.o
+LOAD uspace/lib/libusbhost.so.0.0.p/usbhost_src_hcd.c.o
+LOAD uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+LOAD uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb2_bus.c.o
+LOAD uspace/lib/libusbhost.so.0.0.p/usbhost_src_bandwidth.c.o
+LOAD uspace/lib/libusbhost.so.0.0.p/usbhost_src_utility.c.o
+LOAD uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb_transfer_batch.c.o
+START GROUP
+LOAD uspace/lib/libusb.so.0.0
+LOAD uspace/lib/libdrv.so.0.0
+LOAD uspace/lib/libinet.so.0.0
+LOAD uspace/lib/libc.so.0.0
+LOAD uspace/lib/libpcm.so.0.0
+LOAD uspace/lib/libdevice.so.0.0
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000000120                . = (SEGMENT_START ("text-segment", 0x0) + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000000120      0x360
+ *(.hash)
+ .hash          0x0000000000000120      0x360 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x0000000000000480      0xaf8
+ *(.dynsym)
+ .dynsym        0x0000000000000480      0xaf8 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+
+.dynstr         0x0000000000000f78      0x8b2
+ *(.dynstr)
+ .dynstr        0x0000000000000f78      0x8b2 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+
+.gnu.version    0x000000000000182a        0x0
+ *(.gnu.version)
+ .gnu.version   0x000000000000182a        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+
+.gnu.version_d  0x0000000000001830        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000001830        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+
+.gnu.version_r  0x0000000000001830        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000001830        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+
+.rela.dyn       0x0000000000001830      0x180
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.local.usb_ops
+                0x0000000000001830       0x30 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ .rela.data.rel.local.usbhc_iface
+                0x0000000000001860       0x90 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ .rela.data.rel.local.usb_iface
+                0x00000000000018f0       0x18 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ .rela.data.rel.hc_driver_ops
+                0x0000000000001908       0x78 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ .rela.data.rel.ro.local.bandwidth_accounting_usb2
+                0x0000000000001980       0x18 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ .rela.data.rel.ro.local.bandwidth_accounting_usb11
+                0x0000000000001998       0x18 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x00000000000019b0        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+ .rela.ifunc    0x00000000000019b0        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+
+.rela.plt       0x00000000000019b0      0x870
+ *(.rela.plt)
+ .rela.plt      0x00000000000019b0      0x870 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ *(.rela.iplt)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x0000000000002220      0x5b0
+ *(.plt)
+ .plt           0x0000000000002220      0x5b0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ *(.iplt)
+
+.plt.got        0x00000000000027d0        0x0
+ *(.plt.got)
+ .plt.got       0x00000000000027d0        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x00000000000027d0     0x45f6
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ .text.unlikely.usb_transfer_batch_create
+                0x00000000000027d0        0xa uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb_transfer_batch.c.o
+ .text.unlikely.usb_transfer_batch_destroy
+                0x00000000000027da        0xa uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb_transfer_batch.c.o
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ *fill*         0x00000000000027e4        0xc 
+ .text.transfer
+                0x00000000000027f0      0x153 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ *fill*         0x0000000000002943        0xd 
+ .text.unregister_endpoint
+                0x0000000000002950       0xe6 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ *fill*         0x0000000000002a36        0xa 
+ .text.register_endpoint
+                0x0000000000002a40      0x105 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ *fill*         0x0000000000002b45        0xb 
+ .text.device_remove
+                0x0000000000002b50      0x174 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ *fill*         0x0000000000002cc4        0xc 
+ .text.default_address_reservation
+                0x0000000000002cd0      0x12a uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ *fill*         0x0000000000002dfa        0x6 
+ .text.get_device_description
+                0x0000000000002e00       0x99 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ *fill*         0x0000000000002e99        0x7 
+ .text.clean_match_ids
+                0x0000000000002ea0       0x55 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ *fill*         0x0000000000002ef5        0xb 
+ .text.hcd_ddf_fun_create
+                0x0000000000002f00       0x7c uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+                0x0000000000002f00                hcd_ddf_fun_create
+ *fill*         0x0000000000002f7c        0x4 
+ .text.hcd_ddf_fun_destroy
+                0x0000000000002f80       0x48 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+                0x0000000000002f80                hcd_ddf_fun_destroy
+ *fill*         0x0000000000002fc8        0x8 
+ .text.device_enumerate
+                0x0000000000002fd0      0x1fd uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ *fill*         0x00000000000031cd        0x3 
+ .text.hcd_ddf_setup_match_ids
+                0x00000000000031d0      0x425 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+                0x00000000000031d0                hcd_ddf_setup_match_ids
+ *fill*         0x00000000000035f5        0xb 
+ .text.hcd_ddf_setup_hc
+                0x0000000000003600      0x15a uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+                0x0000000000003600                hcd_ddf_setup_hc
+ *fill*         0x000000000000375a        0x6 
+ .text.hcd_ddf_clean_hc
+                0x0000000000003760       0x2e uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+                0x0000000000003760                hcd_ddf_clean_hc
+ *fill*         0x000000000000378e        0x2 
+ .text.hcd_ddf_enable_interrupt
+                0x0000000000003790       0x3b uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+                0x0000000000003790                hcd_ddf_enable_interrupt
+ *fill*         0x00000000000037cb        0x5 
+ .text.hcd_ddf_get_registers
+                0x00000000000037d0       0x9b uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+                0x00000000000037d0                hcd_ddf_get_registers
+ *fill*         0x000000000000386b        0x5 
+ .text.endpoint_init
+                0x0000000000003870       0xe3 uspace/lib/libusbhost.so.0.0.p/usbhost_src_endpoint.c.o
+                0x0000000000003870                endpoint_init
+ *fill*         0x0000000000003953        0xd 
+ .text.endpoint_add_ref
+                0x0000000000003960       0x2b uspace/lib/libusbhost.so.0.0.p/usbhost_src_endpoint.c.o
+                0x0000000000003960                endpoint_add_ref
+ *fill*         0x000000000000398b        0x5 
+ .text.endpoint_del_ref
+                0x0000000000003990       0x9d uspace/lib/libusbhost.so.0.0.p/usbhost_src_endpoint.c.o
+                0x0000000000003990                endpoint_del_ref
+ *fill*         0x0000000000003a2d        0x3 
+ .text.endpoint_set_online
+                0x0000000000003a30        0xe uspace/lib/libusbhost.so.0.0.p/usbhost_src_endpoint.c.o
+                0x0000000000003a30                endpoint_set_online
+ *fill*         0x0000000000003a3e        0x2 
+ .text.endpoint_set_offline_locked
+                0x0000000000003a40       0x60 uspace/lib/libusbhost.so.0.0.p/usbhost_src_endpoint.c.o
+                0x0000000000003a40                endpoint_set_offline_locked
+ .text.endpoint_wait_timeout_locked
+                0x0000000000003aa0       0x75 uspace/lib/libusbhost.so.0.0.p/usbhost_src_endpoint.c.o
+                0x0000000000003aa0                endpoint_wait_timeout_locked
+ *fill*         0x0000000000003b15        0xb 
+ .text.endpoint_activate_locked
+                0x0000000000003b20      0x108 uspace/lib/libusbhost.so.0.0.p/usbhost_src_endpoint.c.o
+                0x0000000000003b20                endpoint_activate_locked
+ *fill*         0x0000000000003c28        0x8 
+ .text.endpoint_deactivate_locked
+                0x0000000000003c30       0x64 uspace/lib/libusbhost.so.0.0.p/usbhost_src_endpoint.c.o
+                0x0000000000003c30                endpoint_deactivate_locked
+ *fill*         0x0000000000003c94        0xc 
+ .text.endpoint_send_batch
+                0x0000000000003ca0      0x2da uspace/lib/libusbhost.so.0.0.p/usbhost_src_endpoint.c.o
+                0x0000000000003ca0                endpoint_send_batch
+ *fill*         0x0000000000003f7a        0x6 
+ .text.irq_handler
+                0x0000000000003f80       0x17 uspace/lib/libusbhost.so.0.0.p/usbhost_src_hcd.c.o
+ *fill*         0x0000000000003f97        0x9 
+ .text.hc_dev_remove
+                0x0000000000003fa0       0x5f uspace/lib/libusbhost.so.0.0.p/usbhost_src_hcd.c.o
+                0x0000000000003fa0                hc_dev_remove
+ *fill*         0x0000000000003fff        0x1 
+ .text.hc_dev_gone
+                0x0000000000004000       0x56 uspace/lib/libusbhost.so.0.0.p/usbhost_src_hcd.c.o
+                0x0000000000004000                hc_dev_gone
+ *fill*         0x0000000000004056        0xa 
+ .text.interrupt_polling
+                0x0000000000004060       0x9e uspace/lib/libusbhost.so.0.0.p/usbhost_src_hcd.c.o
+ *fill*         0x00000000000040fe        0x2 
+ .text.hc_fun_online
+                0x0000000000004100       0x76 uspace/lib/libusbhost.so.0.0.p/usbhost_src_hcd.c.o
+                0x0000000000004100                hc_fun_online
+ *fill*         0x0000000000004176        0xa 
+ .text.hc_fun_offline
+                0x0000000000004180       0x76 uspace/lib/libusbhost.so.0.0.p/usbhost_src_hcd.c.o
+                0x0000000000004180                hc_fun_offline
+ *fill*         0x00000000000041f6        0xa 
+ .text.hc_dev_add
+                0x0000000000004200      0x54d uspace/lib/libusbhost.so.0.0.p/usbhost_src_hcd.c.o
+                0x0000000000004200                hc_dev_add
+ *fill*         0x000000000000474d        0x3 
+ .text.hc_driver_main
+                0x0000000000004750       0x2c uspace/lib/libusbhost.so.0.0.p/usbhost_src_hcd.c.o
+                0x0000000000004750                hc_driver_main
+ *fill*         0x000000000000477c        0x4 
+ .text.sync_transfer_complete
+                0x0000000000004780       0x52 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+ *fill*         0x00000000000047d2        0xe 
+ .text.bus_init
+                0x00000000000047e0       0x77 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+                0x00000000000047e0                bus_init
+ *fill*         0x0000000000004857        0x9 
+ .text.bus_device_init
+                0x0000000000004860       0x85 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+                0x0000000000004860                bus_device_init
+ *fill*         0x00000000000048e5        0xb 
+ .text.bus_device_set_default_name
+                0x00000000000048f0       0x98 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+                0x00000000000048f0                bus_device_set_default_name
+ *fill*         0x0000000000004988        0x8 
+ .text.bus_device_enumerate
+                0x0000000000004990       0xf3 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+                0x0000000000004990                bus_device_enumerate
+ *fill*         0x0000000000004a83        0xd 
+ .text.bus_device_online
+                0x0000000000004a90      0x160 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+                0x0000000000004a90                bus_device_online
+ .text.bus_endpoint_add
+                0x0000000000004bf0      0x27d uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+                0x0000000000004bf0                bus_endpoint_add
+ *fill*         0x0000000000004e6d        0x3 
+ .text.bus_find_endpoint
+                0x0000000000004e70       0xa5 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+                0x0000000000004e70                bus_find_endpoint
+ *fill*         0x0000000000004f15        0xb 
+ .text.bus_endpoint_remove
+                0x0000000000004f20      0x15c uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+                0x0000000000004f20                bus_endpoint_remove
+ *fill*         0x000000000000507c        0x4 
+ .text.device_clean_ep_children
+                0x0000000000005080      0x266 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+ *fill*         0x00000000000052e6        0xa 
+ .text.bus_device_gone
+                0x00000000000052f0      0x15d uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+                0x00000000000052f0                bus_device_gone
+ *fill*         0x000000000000544d        0x3 
+ .text.bus_device_offline
+                0x0000000000005450       0xdf uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+                0x0000000000005450                bus_device_offline
+ *fill*         0x000000000000552f        0x1 
+ .text.bus_reserve_default_address
+                0x0000000000005530       0x77 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+                0x0000000000005530                bus_reserve_default_address
+ *fill*         0x00000000000055a7        0x9 
+ .text.bus_release_default_address
+                0x00000000000055b0       0x7c uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+                0x00000000000055b0                bus_release_default_address
+ *fill*         0x000000000000562c        0x4 
+ .text.bus_issue_transfer
+                0x0000000000005630      0x213 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+                0x0000000000005630                bus_issue_transfer
+ *fill*         0x0000000000005843        0xd 
+ .text.bus_device_send_batch_sync
+                0x0000000000005850      0x1a9 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+                0x0000000000005850                bus_device_send_batch_sync
+ *fill*         0x00000000000059f9        0x7 
+ .text.usb2_bus_device_enumerate
+                0x0000000000005a00      0x348 uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb2_bus.c.o
+                0x0000000000005a00                usb2_bus_device_enumerate
+ *fill*         0x0000000000005d48        0x8 
+ .text.usb2_bus_device_gone
+                0x0000000000005d50        0xe uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb2_bus.c.o
+                0x0000000000005d50                usb2_bus_device_gone
+ *fill*         0x0000000000005d5e        0x2 
+ .text.usb2_bus_endpoint_register
+                0x0000000000005d60       0x86 uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb2_bus.c.o
+                0x0000000000005d60                usb2_bus_endpoint_register
+ *fill*         0x0000000000005de6        0xa 
+ .text.usb2_bus_endpoint_unregister
+                0x0000000000005df0       0x60 uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb2_bus.c.o
+                0x0000000000005df0                usb2_bus_endpoint_unregister
+ .text.usb2_bus_helper_init
+                0x0000000000005e50       0x5d uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb2_bus.c.o
+                0x0000000000005e50                usb2_bus_helper_init
+ *fill*         0x0000000000005ead        0x3 
+ .text.bandwidth_count_usb11
+                0x0000000000005eb0       0xb2 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bandwidth.c.o
+ *fill*         0x0000000000005f62        0xe 
+ .text.bandwidth_count_usb2
+                0x0000000000005f70      0x135 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bandwidth.c.o
+ *fill*         0x00000000000060a5        0xb 
+ .text.joinable_fibril_worker
+                0x00000000000060b0       0x39 uspace/lib/libusbhost.so.0.0.p/usbhost_src_utility.c.o
+ *fill*         0x00000000000060e9        0x7 
+ .text.hc_get_ep0_initial_mps
+                0x00000000000060f0       0x28 uspace/lib/libusbhost.so.0.0.p/usbhost_src_utility.c.o
+                0x00000000000060f0                hc_get_ep0_initial_mps
+ *fill*         0x0000000000006118        0x8 
+ .text.hc_get_ep0_max_packet_size
+                0x0000000000006120      0x154 uspace/lib/libusbhost.so.0.0.p/usbhost_src_utility.c.o
+                0x0000000000006120                hc_get_ep0_max_packet_size
+ *fill*         0x0000000000006274        0xc 
+ .text.hc_get_device_desc
+                0x0000000000006280       0x85 uspace/lib/libusbhost.so.0.0.p/usbhost_src_utility.c.o
+                0x0000000000006280                hc_get_device_desc
+ *fill*         0x0000000000006305        0xb 
+ .text.hc_get_hub_desc
+                0x0000000000006310       0xa7 uspace/lib/libusbhost.so.0.0.p/usbhost_src_utility.c.o
+                0x0000000000006310                hc_get_hub_desc
+ *fill*         0x00000000000063b7        0x9 
+ .text.hc_device_explore
+                0x00000000000063c0       0xc6 uspace/lib/libusbhost.so.0.0.p/usbhost_src_utility.c.o
+                0x00000000000063c0                hc_device_explore
+ *fill*         0x0000000000006486        0xa 
+ .text.hc_setup_virtual_root_hub
+                0x0000000000006490      0x10e uspace/lib/libusbhost.so.0.0.p/usbhost_src_utility.c.o
+                0x0000000000006490                hc_setup_virtual_root_hub
+ *fill*         0x000000000000659e        0x2 
+ .text.hc_reset_toggles
+                0x00000000000065a0      0x11c uspace/lib/libusbhost.so.0.0.p/usbhost_src_utility.c.o
+                0x00000000000065a0                hc_reset_toggles
+ *fill*         0x00000000000066bc        0x4 
+ .text.joinable_fibril_start
+                0x00000000000066c0       0x4c uspace/lib/libusbhost.so.0.0.p/usbhost_src_utility.c.o
+                0x00000000000066c0                joinable_fibril_start
+ *fill*         0x000000000000670c        0x4 
+ .text.joinable_fibril_join
+                0x0000000000006710       0x73 uspace/lib/libusbhost.so.0.0.p/usbhost_src_utility.c.o
+                0x0000000000006710                joinable_fibril_join
+ *fill*         0x0000000000006783        0xd 
+ .text.joinable_fibril_recreate
+                0x0000000000006790       0x4d uspace/lib/libusbhost.so.0.0.p/usbhost_src_utility.c.o
+                0x0000000000006790                joinable_fibril_recreate
+ *fill*         0x00000000000067dd        0x3 
+ .text.joinable_fibril_create
+                0x00000000000067e0       0x85 uspace/lib/libusbhost.so.0.0.p/usbhost_src_utility.c.o
+                0x00000000000067e0                joinable_fibril_create
+ *fill*         0x0000000000006865        0xb 
+ .text.joinable_fibril_destroy
+                0x0000000000006870       0x29 uspace/lib/libusbhost.so.0.0.p/usbhost_src_utility.c.o
+                0x0000000000006870                joinable_fibril_destroy
+ *fill*         0x0000000000006899        0x7 
+ .text.usb_transfer_batch_init
+                0x00000000000068a0       0x3c uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb_transfer_batch.c.o
+                0x00000000000068a0                usb_transfer_batch_init
+ *fill*         0x00000000000068dc        0x4 
+ .text.usb_transfer_batch_create
+                0x00000000000068e0       0x7a uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb_transfer_batch.c.o
+                0x00000000000068e0                usb_transfer_batch_create
+ *fill*         0x000000000000695a        0x6 
+ .text.usb_transfer_batch_destroy
+                0x0000000000006960      0x199 uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb_transfer_batch.c.o
+                0x0000000000006960                usb_transfer_batch_destroy
+ *fill*         0x0000000000006af9        0x7 
+ .text.usb_transfer_batch_bounce_required
+                0x0000000000006b00       0x60 uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb_transfer_batch.c.o
+                0x0000000000006b00                usb_transfer_batch_bounce_required
+ .text.usb_transfer_batch_bounce
+                0x0000000000006b60       0xd3 uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb_transfer_batch.c.o
+                0x0000000000006b60                usb_transfer_batch_bounce
+ *fill*         0x0000000000006c33        0xd 
+ .text.usb_transfer_batch_finish
+                0x0000000000006c40      0x186 uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb_transfer_batch.c.o
+                0x0000000000006c40                usb_transfer_batch_finish
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000006dc8     0x13a0
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.transfer.str1.1
+                0x0000000000006dc8      0x2c6 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+                                         0x13 (size before relaxing)
+ *fill*         0x000000000000708e        0x2 
+ .rodata.transfer.str1.8
+                0x0000000000007090     0x10d0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+                                         0x33 (size before relaxing)
+ .rodata.unregister_endpoint.str1.1
+                0x0000000000008160        0xd uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ .rodata.device_remove.str1.1
+                0x0000000000008160       0x38 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ .rodata.device_remove.str1.8
+                0x0000000000008160       0x5e uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ .rodata.default_address_reservation.str1.1
+                0x0000000000008160       0x31 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ .rodata.hcd_ddf_fun_destroy.str1.1
+                0x0000000000008160        0x9 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ .rodata.device_enumerate.str1.1
+                0x0000000000008160        0x3 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ .rodata.device_enumerate.str1.8
+                0x0000000000008160       0xb4 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ .rodata.hcd_ddf_setup_match_ids.str1.8
+                0x0000000000008160       0x6f uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ .rodata.hcd_ddf_setup_match_ids.str1.1
+                0x0000000000008160       0x1c uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ .rodata.hcd_ddf_setup_hc.str1.1
+                0x0000000000008160       0x4b uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ .rodata.hcd_ddf_setup_hc.str1.8
+                0x0000000000008160       0x4b uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ .rodata.endpoint_init.str1.8
+                0x0000000000008160       0x30 uspace/lib/libusbhost.so.0.0.p/usbhost_src_endpoint.c.o
+ .rodata.endpoint_init.str1.1
+                0x0000000000008160        0x4 uspace/lib/libusbhost.so.0.0.p/usbhost_src_endpoint.c.o
+ .rodata.endpoint_add_ref.str1.8
+                0x0000000000008160       0x2e uspace/lib/libusbhost.so.0.0.p/usbhost_src_endpoint.c.o
+ .rodata.endpoint_add_ref.str1.1
+                0x0000000000008160        0x9 uspace/lib/libusbhost.so.0.0.p/usbhost_src_endpoint.c.o
+ .rodata.endpoint_del_ref.str1.1
+                0x0000000000008160       0x23 uspace/lib/libusbhost.so.0.0.p/usbhost_src_endpoint.c.o
+ .rodata.endpoint_set_offline_locked.str1.1
+                0x0000000000008160        0x3 uspace/lib/libusbhost.so.0.0.p/usbhost_src_endpoint.c.o
+ .rodata.endpoint_set_offline_locked.str1.8
+                0x0000000000008160       0x22 uspace/lib/libusbhost.so.0.0.p/usbhost_src_endpoint.c.o
+ .rodata.endpoint_activate_locked.str1.1
+                0x0000000000008160       0x20 uspace/lib/libusbhost.so.0.0.p/usbhost_src_endpoint.c.o
+ .rodata.endpoint_send_batch.str1.1
+                0x0000000000008160       0x28 uspace/lib/libusbhost.so.0.0.p/usbhost_src_endpoint.c.o
+ .rodata.endpoint_send_batch.str1.8
+                0x0000000000008160       0xc8 uspace/lib/libusbhost.so.0.0.p/usbhost_src_endpoint.c.o
+ .rodata.interrupt_polling.str1.8
+                0x0000000000008160       0x2b uspace/lib/libusbhost.so.0.0.p/usbhost_src_hcd.c.o
+ .rodata.interrupt_polling.str1.1
+                0x0000000000008160        0x4 uspace/lib/libusbhost.so.0.0.p/usbhost_src_hcd.c.o
+ .rodata.hc_fun_online.str1.1
+                0x0000000000008160        0x8 uspace/lib/libusbhost.so.0.0.p/usbhost_src_hcd.c.o
+ .rodata.hc_fun_online.str1.8
+                0x0000000000008160       0x2c uspace/lib/libusbhost.so.0.0.p/usbhost_src_hcd.c.o
+ .rodata.hc_fun_offline.str1.8
+                0x0000000000008160       0x2b uspace/lib/libusbhost.so.0.0.p/usbhost_src_hcd.c.o
+ .rodata.hc_dev_add.str1.1
+                0x0000000000008160       0x6f uspace/lib/libusbhost.so.0.0.p/usbhost_src_hcd.c.o
+ .rodata.hc_dev_add.str1.8
+                0x0000000000008160      0x1ba uspace/lib/libusbhost.so.0.0.p/usbhost_src_hcd.c.o
+ .rodata.sync_transfer_complete.str1.8
+                0x0000000000008160       0x2b uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+ .rodata.sync_transfer_complete.str1.1
+                0x0000000000008160        0x2 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+ .rodata.bus_init.str1.1
+                0x0000000000008160        0x4 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+ .rodata.bus_init.str1.8
+                0x0000000000008160       0x20 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+ .rodata.bus_device_set_default_name.str1.1
+                0x0000000000008160       0x17 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+ .rodata.bus_device_online.str1.8
+                0x0000000000008160       0x7f uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+ .rodata.bus_endpoint_add.str1.1
+                0x0000000000008160        0x7 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+ .rodata.bus_endpoint_add.str1.8
+                0x0000000000008160       0xe4 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+ .rodata.bus_endpoint_remove.str1.1
+                0x0000000000008160        0xe uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+ .rodata.bus_endpoint_remove.str1.8
+                0x0000000000008160       0x26 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+ .rodata.device_clean_ep_children.str1.8
+                0x0000000000008160       0xe9 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+ .rodata.device_clean_ep_children.str1.1
+                0x0000000000008160       0x1a uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+ .rodata.bus_device_gone.str1.1
+                0x0000000000008160       0x1a uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+ .rodata.bus_device_gone.str1.8
+                0x0000000000008160       0x25 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+ .rodata.bus_device_offline.str1.1
+                0x0000000000008160        0xa uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+ .rodata.bus_device_offline.str1.8
+                0x0000000000008160       0x20 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+ .rodata.bus_release_default_address.str1.8
+                0x0000000000008160       0x4a uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+ .rodata.bus_issue_transfer.str1.1
+                0x0000000000008160       0x2b uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+ .rodata.bus_issue_transfer.str1.8
+                0x0000000000008160      0x14f uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+ .rodata.usb2_bus_device_enumerate.str1.8
+                0x0000000000008160      0x201 uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb2_bus.c.o
+ .rodata.usb2_bus_device_enumerate.str1.1
+                0x0000000000008160        0xc uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb2_bus.c.o
+ .rodata.usb2_bus_endpoint_register.str1.8
+                0x0000000000008160       0x5b uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb2_bus.c.o
+ .rodata.usb2_bus_endpoint_register.str1.1
+                0x0000000000008160        0x3 uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb2_bus.c.o
+ .rodata.usb2_bus_endpoint_unregister.str1.1
+                0x0000000000008160        0x7 uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb2_bus.c.o
+ .rodata.usb2_bus_helper_init.str1.1
+                0x0000000000008160        0xe uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb2_bus.c.o
+ .rodata.bandwidth_count_usb11.str1.8
+                0x0000000000008160       0x57 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bandwidth.c.o
+ .rodata.bandwidth_count_usb11.str1.1
+                0x0000000000008160        0xe uspace/lib/libusbhost.so.0.0.p/usbhost_src_bandwidth.c.o
+ .rodata.hc_get_ep0_max_packet_size.str1.8
+                0x0000000000008160       0xf3 uspace/lib/libusbhost.so.0.0.p/usbhost_src_utility.c.o
+ .rodata.hc_get_ep0_max_packet_size.str1.1
+                0x0000000000008160        0x4 uspace/lib/libusbhost.so.0.0.p/usbhost_src_utility.c.o
+ .rodata.hc_get_device_desc.str1.8
+                0x0000000000008160       0x2f uspace/lib/libusbhost.so.0.0.p/usbhost_src_utility.c.o
+ .rodata.hc_get_device_desc.str1.1
+                0x0000000000008160       0x17 uspace/lib/libusbhost.so.0.0.p/usbhost_src_utility.c.o
+ .rodata.hc_get_hub_desc.str1.8
+                0x0000000000008160       0x27 uspace/lib/libusbhost.so.0.0.p/usbhost_src_utility.c.o
+ .rodata.hc_get_hub_desc.str1.1
+                0x0000000000008160       0x13 uspace/lib/libusbhost.so.0.0.p/usbhost_src_utility.c.o
+ .rodata.hc_device_explore.str1.8
+                0x0000000000008160       0x5a uspace/lib/libusbhost.so.0.0.p/usbhost_src_utility.c.o
+ .rodata.hc_setup_virtual_root_hub.str1.1
+                0x0000000000008160        0xc uspace/lib/libusbhost.so.0.0.p/usbhost_src_utility.c.o
+ .rodata.hc_setup_virtual_root_hub.str1.8
+                0x0000000000008160       0x78 uspace/lib/libusbhost.so.0.0.p/usbhost_src_utility.c.o
+ .rodata.hc_reset_toggles.str1.8
+                0x0000000000008160       0x33 uspace/lib/libusbhost.so.0.0.p/usbhost_src_utility.c.o
+ .rodata.joinable_fibril_start.str1.1
+                0x0000000000008160       0x10 uspace/lib/libusbhost.so.0.0.p/usbhost_src_utility.c.o
+ .rodata.joinable_fibril_recreate.str1.1
+                0x0000000000008160        0x9 uspace/lib/libusbhost.so.0.0.p/usbhost_src_utility.c.o
+ .rodata.mps_fixed.0
+                0x0000000000008160        0x8 uspace/lib/libusbhost.so.0.0.p/usbhost_src_utility.c.o
+ .rodata.usb_transfer_batch_init.str1.8
+                0x0000000000008168       0x3a uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb_transfer_batch.c.o
+ .rodata.usb_transfer_batch_init.str1.1
+                0x0000000000008168        0x3 uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb_transfer_batch.c.o
+ .rodata.usb_transfer_batch_destroy.str1.1
+                0x0000000000008168       0x10 uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb_transfer_batch.c.o
+ .rodata.usb_transfer_batch_destroy.str1.8
+                0x0000000000008168       0x5e uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb_transfer_batch.c.o
+ .rodata.usb_transfer_batch_bounce.str1.1
+                0x0000000000008168       0x13 uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb_transfer_batch.c.o
+ .rodata.usb_transfer_batch_bounce.str1.8
+                0x0000000000008168       0x4a uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb_transfer_batch.c.o
+ .rodata.usb_transfer_batch_finish.str1.8
+                0x0000000000008168       0x50 uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb_transfer_batch.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x0000000000008168      0x274
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x0000000000008168      0x274 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+                0x0000000000008168                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x00000000000083e0      0xcf8
+ *(.eh_frame)
+ .eh_frame      0x00000000000083e0      0x2a8 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ .eh_frame      0x0000000000008688       0x28 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x00000000000086b0        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ .eh_frame      0x00000000000086b0      0x178 uspace/lib/libusbhost.so.0.0.p/usbhost_src_endpoint.c.o
+                                        0x190 (size before relaxing)
+ .eh_frame      0x0000000000008828      0x138 uspace/lib/libusbhost.so.0.0.p/usbhost_src_hcd.c.o
+                                        0x150 (size before relaxing)
+ .eh_frame      0x0000000000008960      0x2d0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+                                        0x2e8 (size before relaxing)
+ .eh_frame      0x0000000000008c30       0xc0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb2_bus.c.o
+                                         0xd8 (size before relaxing)
+ .eh_frame      0x0000000000008cf0       0x68 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bandwidth.c.o
+                                         0x80 (size before relaxing)
+ .eh_frame      0x0000000000008d58      0x250 uspace/lib/libusbhost.so.0.0.p/usbhost_src_utility.c.o
+                                        0x268 (size before relaxing)
+ .eh_frame      0x0000000000008fa8      0x130 uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb_transfer_batch.c.o
+                                        0x148 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x00000000000090d8        0x0
+ *(.sframe)
+ .sframe        0x00000000000090d8        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x000000000000a0d8                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array
+ *(.preinit_array)
+
+.init_array
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+
+.fini_array
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x000000000000a0e0       0x20
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ .data.rel.ro.local.bandwidth_accounting_usb2
+                0x000000000000a0e0       0x10 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bandwidth.c.o
+                0x000000000000a0e0                bandwidth_accounting_usb2
+ .data.rel.ro.local.bandwidth_accounting_usb11
+                0x000000000000a0f0       0x10 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bandwidth.c.o
+                0x000000000000a0f0                bandwidth_accounting_usb11
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x000000000000a100        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+
+.dynamic        0x000000000000a100      0x170
+ *(.dynamic)
+ .dynamic       0x000000000000a100      0x170 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+                0x000000000000a100                _DYNAMIC
+
+.got            0x000000000000a270        0x0
+ *(.got)
+ .got           0x000000000000a270        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ *(.igot)
+                0x000000000000a270                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x000000000000a270      0x2e8
+ *(.got.plt)
+ .got.plt       0x000000000000a270      0x2e8 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+                0x000000000000a270                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+
+.data           0x000000000000a560      0x108
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.rel.local.usb_ops
+                0x000000000000a560       0x98 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ *fill*         0x000000000000a5f8        0x8 
+ .data.rel.local.usbhc_iface
+                0x000000000000a600       0x30 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ .data.rel.local.usb_iface
+                0x000000000000a630        0x8 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ *fill*         0x000000000000a638        0x8 
+ .data.rel.hc_driver_ops
+                0x000000000000a640       0x28 uspace/lib/libusbhost.so.0.0.p/usbhost_src_hcd.c.o
+
+.data1
+ *(.data1)
+                [!provide]                        PROVIDE (_edata = .)
+                [!provide]                        PROVIDE (edata = .)
+                0x000000000000a668                . = .
+                [!provide]                        PROVIDE (__bss_start = .)
+
+.bss            0x000000000000a668        0x8
+ *(.dynbss)
+ .dynbss        0x000000000000a668        0x0 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss.hc_driver
+                0x000000000000a668        0x8 uspace/lib/libusbhost.so.0.0.p/usbhost_src_hcd.c.o
+ *(COMMON)
+                0x000000000000a670                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x000000000000a670                . = ALIGN (0x8)
+                0x000000000000a670                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x000000000000c670        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x000000000000c670                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x000000000000c670                . = ALIGN (0x8)
+                [!provide]                        PROVIDE (_end = .)
+                [!provide]                        PROVIDE (end = .)
+                0x000000000000c670                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/lib/libusbhost.so.0.0.p/usbhost_src_ddf_helpers.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/lib/libusbhost.so.0.0.p/usbhost_src_endpoint.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libusbhost.so.0.0.p/usbhost_src_hcd.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bus.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb2_bus.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libusbhost.so.0.0.p/usbhost_src_bandwidth.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libusbhost.so.0.0.p/usbhost_src_utility.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libusbhost.so.0.0.p/usbhost_src_usb_transfer_batch.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/lib/libusbhost.so.0.0 elf64-x86-64)

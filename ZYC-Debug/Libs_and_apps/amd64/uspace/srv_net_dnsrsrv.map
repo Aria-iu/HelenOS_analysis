@@ -1,0 +1,798 @@
+Archive member included to satisfy reference by file (symbol)
+
+uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                              (--whole-archive)
+uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                              (--whole-archive)
+uspace/lib/libinet.a.p/inet_src_addr.c.o
+                              uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o (addr128_t_be2host)
+uspace/lib/libinet.a.p/inet_src_endpoint.c.o
+                              uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_transport.c.o (inet_ep_init)
+uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+                              uspace/lib/libinet.a.p/inet_src_addr.c.o (eth_addr_encode)
+uspace/lib/libinet.a.p/inet_src_udp.c.o
+                              uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_transport.c.o (udp_create)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.0                     uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dnsrsrv.c.o (task_retval)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dnsrsrv.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dnsrsrv.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dnsrsrv.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_query.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_query.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_query.c.o
+ .text          0x0000000000000000        0x0 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_transport.c.o
+ .data          0x0000000000000000        0x0 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_transport.c.o
+ .bss           0x0000000000000000        0x0 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_transport.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .text          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_parse_v4
+                0x0000000000000000       0xf0 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_parse_v6
+                0x0000000000000000      0x378 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.inet_addr_format_v6.str1.1
+                0x0000000000000000        0xb uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_format_v6
+                0x0000000000000000      0x3bb uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.addr128  0x0000000000000000        0xd uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.addr128_compare
+                0x0000000000000000       0x1d uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.eth_addr_solicited_node
+                0x0000000000000000       0x51 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.host2addr128_t_be
+                0x0000000000000000        0xd uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr
+                0x0000000000000000       0x29 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr
+                0x0000000000000000       0x2d uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr6
+                0x0000000000000000       0x5c uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr6
+                0x0000000000000000       0x62 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_addr
+                0x0000000000000000       0x13 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_naddr
+                0x0000000000000000       0x17 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_any
+                0x0000000000000000       0x14 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_any
+                0x0000000000000000       0x18 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_compare
+                0x0000000000000000       0x4f uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_is_any
+                0x0000000000000000       0x3c uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_compare
+                0x0000000000000000       0x4f uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_compare_mask
+                0x0000000000000000       0xe6 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_parse
+                0x0000000000000000       0x5c uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_parse
+                0x0000000000000000       0x84 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.inet_addr_format.str1.1
+                0x0000000000000000       0x11 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_format
+                0x0000000000000000       0x78 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.inet_naddr_format.str1.1
+                0x0000000000000000        0x8 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_format
+                0x0000000000000000       0xe0 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.inet_addr_get.str1.8
+                0x0000000000000000       0x29 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.inet_addr_get.str1.1
+                0x0000000000000000        0x6 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_addr_get
+                0x0000000000000000       0x4d uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_get
+                0x0000000000000000       0x54 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_set
+                0x0000000000000000       0x13 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text.inet_naddr_set6
+                0x0000000000000000       0x18 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.inet_addr_any_addr6
+                0x0000000000000000       0x14 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .data.inet_eth_addr_solicited_node
+                0x0000000000000000        0x8 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .rodata.addr32_broadcast_all_hosts
+                0x0000000000000000        0x4 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_endpoint.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_endpoint.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_endpoint.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .text.eth_addr_encode
+                0x0000000000000000       0x47 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .text.eth_addr_decode
+                0x0000000000000000       0x43 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .text.eth_addr_compare
+                0x0000000000000000       0x19 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .rodata.eth_addr_format.str1.1
+                0x0000000000000000        0xb uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .text.eth_addr_format
+                0x0000000000000000       0x6f uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .rodata.eth_addr_broadcast
+                0x0000000000000000        0x8 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_udp.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_udp.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libinet.a.p/inet_src_udp.c.o
+ .text.udp_assoc_set_nolocal
+                0x0000000000000000       0x3d uspace/lib/libinet.a.p/inet_src_udp.c.o
+ .text.udp_assoc_userptr
+                0x0000000000000000        0xa uspace/lib/libinet.a.p/inet_src_udp.c.o
+ .text.udp_rerr_type
+                0x0000000000000000        0x8 uspace/lib/libinet.a.p/inet_src_udp.c.o
+ .text.udp_rerr_code
+                0x0000000000000000        0x8 uspace/lib/libinet.a.p/inet_src_udp.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+LOAD uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dnsrsrv.c.o
+LOAD uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_query.c.o
+LOAD uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_transport.c.o
+START GROUP
+LOAD uspace/lib/c/libstartfiles.a
+LOAD uspace/lib/libinet.a
+LOAD uspace/lib/libc.so.0.0
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000400000                PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x0000000000400120                . = (SEGMENT_START ("text-segment", 0x400000) + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000400120      0x178
+ *(.hash)
+ .hash          0x0000000000400120      0x178 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x0000000000400298      0x528
+ *(.dynsym)
+ .dynsym        0x0000000000400298      0x528 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+
+.dynstr         0x00000000004007c0      0x380
+ *(.dynstr)
+ .dynstr        0x00000000004007c0      0x380 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+
+.gnu.version    0x0000000000400b40        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000400b40        0x0 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+
+.gnu.version_d  0x0000000000400b40        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000400b40        0x0 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+
+.gnu.version_r  0x0000000000400b40        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000400b40        0x0 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+
+.rela.dyn       0x0000000000400b40       0x18
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text.__c_start
+                0x0000000000400b40        0x0 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ .rela.rodata.cst8
+                0x0000000000400b40        0x0 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x0000000000400b40        0x0 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000400b40        0x0 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x0000000000400b40       0x18 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+
+.rela.plt       0x0000000000400b58      0x4f8
+ *(.rela.plt)
+ .rela.plt      0x0000000000400b58      0x4f8 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+ .rela.iplt     0x0000000000401050        0x0 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x0000000000401050      0x360
+ *(.plt)
+ .plt           0x0000000000401050      0x360 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+                0x0000000000401060                task_retval
+                0x0000000000401070                loc_service_connect
+                0x0000000000401080                printf
+                0x0000000000401090                async_hangup
+                0x00000000004010a0                async_wait_for
+                0x00000000004010b0                log_init
+                0x00000000004010c0                async_data_write_start
+                0x00000000004010d0                loc_service_register
+                0x00000000004010e0                async_get_call
+                0x00000000004010f0                fibril_mutex_is_locked
+                0x0000000000401100                str_decode
+                0x0000000000401110                async_data_read_finalize
+                0x0000000000401120                async_send_1
+                0x0000000000401130                memcpy
+                0x0000000000401140                loc_server_unregister
+                0x0000000000401150                puts
+                0x0000000000401160                malloc
+                0x0000000000401170                async_req_1_0
+                0x0000000000401180                loc_service_get_id
+                0x0000000000401190                async_answer_0
+                0x00000000004011a0                fibril_condvar_wait
+                0x00000000004011b0                log_msg
+                0x00000000004011c0                async_exchange_end
+                0x00000000004011d0                calloc
+                0x00000000004011e0                fibril_condvar_wait_timeout
+                0x00000000004011f0                fibril_condvar_initialize
+                0x0000000000401200                fibril_condvar_broadcast
+                0x0000000000401210                fibril_mutex_unlock
+                0x0000000000401220                str_dup
+                0x0000000000401230                realloc
+                0x0000000000401240                async_create_callback_port
+                0x0000000000401250                str_cmp
+                0x0000000000401260                __helenos_assert_abort
+                0x0000000000401270                async_data_read_receive
+                0x0000000000401280                async_accept_0
+                0x0000000000401290                async_data_read_start
+                0x00000000004012a0                str_cpy
+                0x00000000004012b0                loc_server_register
+                0x00000000004012c0                str_size
+                0x00000000004012d0                list_count
+                0x00000000004012e0                async_exchange_begin
+                0x00000000004012f0                async_send_0
+                0x0000000000401300                str_error
+                0x0000000000401310                async_data_write_finalize
+                0x0000000000401320                async_data_write_accept
+                0x0000000000401330                __libc_main
+                0x0000000000401340                async_manager
+                0x0000000000401350                async_forget
+                0x0000000000401360                async_req_0_0
+                0x0000000000401370                async_set_fallback_port_handler
+                0x0000000000401380                async_data_write_receive
+                0x0000000000401390                free
+                0x00000000004013a0                fibril_mutex_lock
+ *(.iplt)
+ .iplt          0x00000000004013b0        0x0 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+
+.plt.got        0x00000000004013b0        0x0
+ *(.plt.got)
+ .plt.got       0x00000000004013b0        0x0 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x00000000004013b0     0x2736
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ .text.startup.main
+                0x00000000004013b0       0xff uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dnsrsrv.c.o
+                0x00000000004013b0                main
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ *fill*         0x00000000004014af        0x1 
+ .text.dns_name_encode
+                0x00000000004014b0      0x147 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+ *fill*         0x00000000004015f7        0x9 
+ .text.dns_name_decode
+                0x0000000000401600      0x314 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+                0x0000000000401600                dns_name_decode
+ *fill*         0x0000000000401914        0xc 
+ .text.dns_uint32_t_decode
+                0x0000000000401920       0x23 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+                0x0000000000401920                dns_uint32_t_decode
+ *fill*         0x0000000000401943        0xd 
+ .text.dns_addr128_t_decode
+                0x0000000000401950       0x26 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+                0x0000000000401950                dns_addr128_t_decode
+ *fill*         0x0000000000401976        0xa 
+ .text.dns_message_encode
+                0x0000000000401980      0x288 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+                0x0000000000401980                dns_message_encode
+ *fill*         0x0000000000401c08        0x8 
+ .text.dns_message_new
+                0x0000000000401c10       0x5e uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+                0x0000000000401c10                dns_message_new
+ *fill*         0x0000000000401c6e        0x2 
+ .text.dns_message_destroy
+                0x0000000000401c70      0x15f uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+                0x0000000000401c70                dns_message_destroy
+ *fill*         0x0000000000401dcf        0x1 
+ .text.dns_message_decode
+                0x0000000000401dd0      0x5b4 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+                0x0000000000401dd0                dns_message_decode
+ *fill*         0x0000000000402384        0xc 
+ .text.dnsr_client_conn
+                0x0000000000402390      0x328 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dnsrsrv.c.o
+ *fill*         0x00000000004026b8        0x8 
+ .text.dns_name_query
+                0x00000000004026c0      0x600 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_query.c.o
+ .text.dns_name2host
+                0x0000000000402cc0       0xc8 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_query.c.o
+                0x0000000000402cc0                dns_name2host
+ *fill*         0x0000000000402d88        0x8 
+ .text.dns_hostinfo_destroy
+                0x0000000000402d90       0x21 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_query.c.o
+                0x0000000000402d90                dns_hostinfo_destroy
+ *fill*         0x0000000000402db1        0xf 
+ .text.transport_link_state
+                0x0000000000402dc0       0x1d uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_transport.c.o
+ *fill*         0x0000000000402ddd        0x3 
+ .text.transport_recv_err
+                0x0000000000402de0       0x1d uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_transport.c.o
+ *fill*         0x0000000000402dfd        0x3 
+ .text.transport_recv_msg
+                0x0000000000402e00      0x1c3 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_transport.c.o
+ *fill*         0x0000000000402fc3        0xd 
+ .text.transport_init
+                0x0000000000402fd0       0x7f uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_transport.c.o
+                0x0000000000402fd0                transport_init
+ *fill*         0x000000000040304f        0x1 
+ .text.transport_fini
+                0x0000000000403050       0x1d uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_transport.c.o
+                0x0000000000403050                transport_fini
+ *fill*         0x000000000040306d        0x3 
+ .text.dns_request
+                0x0000000000403070      0x251 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_transport.c.o
+                0x0000000000403070                dns_request
+ .text          0x00000000004032c1        0xc uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                0x00000000004032c1                _start
+ *fill*         0x00000000004032cd        0x3 
+ .text.__c_start
+                0x00000000004032d0       0x8c uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                0x00000000004032d0                __c_start
+ *fill*         0x000000000040335c        0x4 
+ .text.addr128_t_be2host
+                0x0000000000403360        0xd uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000403360                addr128_t_be2host
+ *fill*         0x000000000040336d        0x3 
+ .text.inet_addr_set
+                0x0000000000403370        0xf uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000403370                inet_addr_set
+ *fill*         0x000000000040337f        0x1 
+ .text.inet_addr_set6
+                0x0000000000403380       0x14 uspace/lib/libinet.a.p/inet_src_addr.c.o
+                0x0000000000403380                inet_addr_set6
+ *fill*         0x0000000000403394        0xc 
+ .text.inet_ep_init
+                0x00000000004033a0       0x15 uspace/lib/libinet.a.p/inet_src_endpoint.c.o
+                0x00000000004033a0                inet_ep_init
+ *fill*         0x00000000004033b5        0xb 
+ .text.inet_ep2_init
+                0x00000000004033c0       0x1d uspace/lib/libinet.a.p/inet_src_endpoint.c.o
+                0x00000000004033c0                inet_ep2_init
+ *fill*         0x00000000004033dd        0x3 
+ .text.udp_cb_conn
+                0x00000000004033e0      0x1b9 uspace/lib/libinet.a.p/inet_src_udp.c.o
+ *fill*         0x0000000000403599        0x7 
+ .text.udp_create
+                0x00000000004035a0      0x13e uspace/lib/libinet.a.p/inet_src_udp.c.o
+                0x00000000004035a0                udp_create
+ *fill*         0x00000000004036de        0x2 
+ .text.udp_destroy
+                0x00000000004036e0       0x69 uspace/lib/libinet.a.p/inet_src_udp.c.o
+                0x00000000004036e0                udp_destroy
+ *fill*         0x0000000000403749        0x7 
+ .text.udp_assoc_create
+                0x0000000000403750      0x14a uspace/lib/libinet.a.p/inet_src_udp.c.o
+                0x0000000000403750                udp_assoc_create
+ *fill*         0x000000000040389a        0x6 
+ .text.udp_assoc_destroy
+                0x00000000004038a0       0x69 uspace/lib/libinet.a.p/inet_src_udp.c.o
+                0x00000000004038a0                udp_assoc_destroy
+ *fill*         0x0000000000403909        0x7 
+ .text.udp_assoc_send_msg
+                0x0000000000403910      0x102 uspace/lib/libinet.a.p/inet_src_udp.c.o
+                0x0000000000403910                udp_assoc_send_msg
+ *fill*         0x0000000000403a12        0xe 
+ .text.udp_rmsg_size
+                0x0000000000403a20        0xa uspace/lib/libinet.a.p/inet_src_udp.c.o
+                0x0000000000403a20                udp_rmsg_size
+ *fill*         0x0000000000403a2a        0x6 
+ .text.udp_rmsg_read
+                0x0000000000403a30       0xa0 uspace/lib/libinet.a.p/inet_src_udp.c.o
+                0x0000000000403a30                udp_rmsg_read
+ .text.udp_rmsg_remote_ep
+                0x0000000000403ad0       0x16 uspace/lib/libinet.a.p/inet_src_udp.c.o
+                0x0000000000403ad0                udp_rmsg_remote_ep
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000403ae8      0x5f0
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.dns_name_encode.str1.1
+                0x0000000000403ae8      0x320 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+                                         0x2f (size before relaxing)
+ .rodata.dns_name_decode.str1.1
+                0x0000000000403e08       0x23 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+ .rodata.dns_name_decode.str1.8
+                0x0000000000403e08      0x2c8 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+                                         0x52 (size before relaxing)
+ .rodata.dns_uint32_t_decode.str1.1
+                0x00000000004040d0        0xe uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+ .rodata.dns_addr128_t_decode.str1.1
+                0x00000000004040d0        0xf uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+ .rodata.dns_message_encode.str1.1
+                0x00000000004040d0       0x28 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+ .rodata.dns_message_decode.str1.8
+                0x00000000004040d0       0xc4 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+ .rodata.dns_message_decode.str1.1
+                0x00000000004040d0       0xdf uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+ .rodata.dnsr_client_conn.str1.1
+                0x00000000004040d0       0x3a uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dnsrsrv.c.o
+ .rodata.main.str1.1
+                0x00000000004040d0       0x38 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dnsrsrv.c.o
+ .rodata.main.str1.8
+                0x00000000004040d0       0xa8 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dnsrsrv.c.o
+ .rodata.dns_name_query.str1.8
+                0x00000000004040d0       0x79 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_query.c.o
+ .rodata.dns_name_query.str1.1
+                0x00000000004040d0       0x7b uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_query.c.o
+ .rodata.transport_link_state.str1.1
+                0x00000000004040d0       0x12 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_transport.c.o
+ .rodata.transport_recv_err.str1.1
+                0x00000000004040d0       0x14 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_transport.c.o
+ .rodata.transport_recv_msg.str1.1
+                0x00000000004040d0       0x3c uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_transport.c.o
+ .rodata.transport_recv_msg.str1.8
+                0x00000000004040d0       0x5b uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_transport.c.o
+ .rodata.transport_init.str1.1
+                0x00000000004040d0       0x1d uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_transport.c.o
+ .rodata.dns_request.str1.8
+                0x00000000004040d0       0x20 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_transport.c.o
+ .rodata.dns_request.str1.1
+                0x00000000004040d0       0x38 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_transport.c.o
+ .rodata.cst8   0x00000000004040d0        0x8 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .rodata.udp_create.str1.1
+                0x00000000004040d8        0x8 uspace/lib/libinet.a.p/inet_src_udp.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x00000000004040d8      0x124
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x00000000004040d8      0x124 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+                0x00000000004040d8                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x0000000000404200      0x5a0
+ *(.eh_frame)
+ .eh_frame      0x0000000000404200      0x168 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+ .eh_frame      0x0000000000404368       0x28 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000404390        0x0 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+ .eh_frame      0x0000000000404390       0x50 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dnsrsrv.c.o
+                                         0x68 (size before relaxing)
+ .eh_frame      0x00000000004043e0       0x88 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_query.c.o
+                                         0xa0 (size before relaxing)
+ .eh_frame      0x0000000000404468       0xe8 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_transport.c.o
+                                        0x100 (size before relaxing)
+ .eh_frame      0x0000000000404550       0x20 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000404570       0x60 uspace/lib/libinet.a.p/inet_src_addr.c.o
+                                        0x478 (size before relaxing)
+ .eh_frame      0x00000000004045d0       0x40 uspace/lib/libinet.a.p/inet_src_endpoint.c.o
+                                         0x58 (size before relaxing)
+ .eh_frame      0x0000000000404610        0x0 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+                                         0xa0 (size before relaxing)
+ .eh_frame      0x0000000000404610      0x190 uspace/lib/libinet.a.p/inet_src_udp.c.o
+                                        0x230 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x00000000004047a0        0x0
+ *(.sframe)
+ .sframe        0x00000000004047a0        0x0 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x00000000004057a0                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0x00000000004057a0        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x00000000004057a0        0x0
+                0x00000000004057a0                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x00000000004057a0                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x00000000004057a0        0x0
+                0x00000000004057a0                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x00000000004057a0                PROVIDE (__init_array_end = .)
+
+.fini_array     0x00000000004057a0        0x0
+                0x00000000004057a0                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x00000000004057a0                PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x00000000004057a0        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x00000000004057a0        0x0 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+
+.dynamic        0x00000000004057a0      0x150
+ *(.dynamic)
+ .dynamic       0x00000000004057a0      0x150 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+                0x00000000004057a0                _DYNAMIC
+
+.got            0x00000000004058f0        0x0
+ *(.got)
+ .got           0x00000000004058f0        0x0 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+ *(.igot)
+                0x00000000004058f0                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x00000000004058f0      0x1c0
+ *(.got.plt)
+ .got.plt       0x00000000004058f0      0x1c0 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+                0x00000000004058f0                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x0000000000405ab0        0x0 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+
+.data           0x0000000000405ac0       0x50
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.transport_cb
+                0x0000000000405ac0       0x18 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_transport.c.o
+ *fill*         0x0000000000405ad8        0x8 
+ .data.treq_lock
+                0x0000000000405ae0       0x20 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_transport.c.o
+ .data.treq_list
+                0x0000000000405b00       0x10 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_transport.c.o
+
+.data1
+ *(.data1)
+                0x0000000000405b10                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x0000000000405b10                . = .
+                0x0000000000405b10                __bss_start = .
+
+.bss            0x0000000000405b20     0x1078
+ *(.dynbss)
+ .dynbss        0x0000000000405b20       0x48 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+                0x0000000000405b20                __progsymbols
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss.msg_id    0x0000000000405b68        0x2 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_query.c.o
+ *fill*         0x0000000000405b6a        0x6 
+ .bss.transport_assoc
+                0x0000000000405b70        0x8 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_transport.c.o
+ .bss.transport_udp
+                0x0000000000405b78        0x8 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_transport.c.o
+ .bss.recv_buf  0x0000000000405b80     0x1000 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_transport.c.o
+ .bss.dns_server_addr
+                0x0000000000406b80       0x14 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_transport.c.o
+                0x0000000000406b80                dns_server_addr
+ *(COMMON)
+                0x0000000000406b98                . = ALIGN ((. != 0x0)?0x8:0x1)
+ *fill*         0x0000000000406b94        0x4 
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x0000000000406b98                . = ALIGN (0x8)
+                0x0000000000406b98                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x0000000000408b98        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x0000000000408b98                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000408b98                . = ALIGN (0x8)
+                0x0000000000406b98                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x0000000000408b98                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dns_msg.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_dnsrsrv.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_query.c.o
+ .comment       0x0000000000000012       0x13 uspace/srv_net_dnsrsrv.p/srv_net_dnsrsrv_transport.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libinet.a.p/inet_src_addr.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libinet.a.p/inet_src_endpoint.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libinet.a.p/inet_src_eth_addr.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libinet.a.p/inet_src_udp.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/srv_net_dnsrsrv elf64-x86-64)

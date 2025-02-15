@@ -1,0 +1,106 @@
+{
+  "host": {
+    "c": {
+      "id": "gcc",
+      "exelist": [
+        "/home/zyc/.local/share/HelenOS/cross/bin/amd64-helenos-gcc"
+      ],
+      "linker_exelist": [
+        "/home/zyc/.local/share/HelenOS/cross/bin/amd64-helenos-gcc"
+      ],
+      "file_suffixes": [
+        "c"
+      ],
+      "default_suffix": "c",
+      "version": "13.2.0",
+      "full_version": "amd64-helenos-gcc (GCC) 13.2.0",
+      "linker_id": "ld.bfd"
+    },
+    "cpp": {
+      "id": "gcc",
+      "exelist": [
+        "/home/zyc/.local/share/HelenOS/cross/bin/amd64-helenos-g++"
+      ],
+      "linker_exelist": [
+        "/home/zyc/.local/share/HelenOS/cross/bin/amd64-helenos-g++"
+      ],
+      "file_suffixes": [
+        "cpp",
+        "cppm",
+        "cc",
+        "cp",
+        "cxx",
+        "c++",
+        "hh",
+        "hp",
+        "hpp",
+        "ipp",
+        "hxx",
+        "h++",
+        "ino",
+        "ixx",
+        "CPP",
+        "C",
+        "HPP",
+        "H"
+      ],
+      "default_suffix": "cpp",
+      "version": "13.2.0",
+      "full_version": "amd64-helenos-g++ (GCC) 13.2.0",
+      "linker_id": "ld.bfd"
+    }
+  },
+  "build": {
+    "c": {
+      "id": "gcc",
+      "exelist": [
+        "ccache",
+        "cc"
+      ],
+      "linker_exelist": [
+        "cc"
+      ],
+      "file_suffixes": [
+        "c"
+      ],
+      "default_suffix": "c",
+      "version": "11.4.0",
+      "full_version": "cc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0",
+      "linker_id": "ld.bfd"
+    },
+    "cpp": {
+      "id": "gcc",
+      "exelist": [
+        "ccache",
+        "c++"
+      ],
+      "linker_exelist": [
+        "c++"
+      ],
+      "file_suffixes": [
+        "cpp",
+        "cppm",
+        "cc",
+        "cp",
+        "cxx",
+        "c++",
+        "hh",
+        "hp",
+        "hpp",
+        "ipp",
+        "hxx",
+        "h++",
+        "ino",
+        "ixx",
+        "CPP",
+        "C",
+        "HPP",
+        "H"
+      ],
+      "default_suffix": "cpp",
+      "version": "11.4.0",
+      "full_version": "c++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0",
+      "linker_id": "ld.bfd"
+    }
+  }
+}

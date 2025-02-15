@@ -1,0 +1,769 @@
+Archive member included to satisfy reference by file (symbol)
+
+uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                              (--whole-archive)
+uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                              (--whole-archive)
+uspace/lib/libconsole.a.p/console_src_console.c.o
+                              uspace/app_trace.p/app_trace_trace.c.o (console_init)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.0                     uspace/app_trace.p/app_trace_trace.c.o (putchar)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/app_trace.p/app_trace_trace.c.o
+ .data          0x0000000000000000        0x0 uspace/app_trace.p/app_trace_trace.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_trace.p/app_trace_trace.c.o
+ .text.thread_trace_start
+                0x0000000000000000       0x4f uspace/app_trace.p/app_trace_trace.c.o
+ .bss.thread_ipc_req
+                0x0000000000000000     0x1600 uspace/app_trace.p/app_trace_trace.c.o
+ .text          0x0000000000000000        0x0 uspace/app_trace.p/app_trace_syscalls.c.o
+ .data          0x0000000000000000        0x0 uspace/app_trace.p/app_trace_syscalls.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_trace.p/app_trace_syscalls.c.o
+ .text          0x0000000000000000        0x0 uspace/app_trace.p/app_trace_ipcp.c.o
+ .data          0x0000000000000000        0x0 uspace/app_trace.p/app_trace_ipcp.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_trace.p/app_trace_ipcp.c.o
+ .text.ipcp_connection_set
+                0x0000000000000000       0x31 uspace/app_trace.p/app_trace_ipcp.c.o
+ .text.ipcp_connection_clear
+                0x0000000000000000       0x2a uspace/app_trace.p/app_trace_ipcp.c.o
+ .rodata.ipcp_hangup.str1.1
+                0x0000000000000000       0x18 uspace/app_trace.p/app_trace_ipcp.c.o
+ .text.ipcp_hangup
+                0x0000000000000000       0x5f uspace/app_trace.p/app_trace_ipcp.c.o
+ .text          0x0000000000000000        0x0 uspace/app_trace.p/app_trace_ipc_desc.c.o
+ .data          0x0000000000000000        0x0 uspace/app_trace.p/app_trace_ipc_desc.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_trace.p/app_trace_ipc_desc.c.o
+ .text          0x0000000000000000        0x0 uspace/app_trace.p/app_trace_proto.c.o
+ .data          0x0000000000000000        0x0 uspace/app_trace.p/app_trace_proto.c.o
+ .bss           0x0000000000000000        0x0 uspace/app_trace.p/app_trace_proto.c.o
+ .text.proto_cleanup
+                0x0000000000000000        0xf uspace/app_trace.p/app_trace_proto.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+ .text          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_done
+                0x0000000000000000        0xa uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_kcon
+                0x0000000000000000        0xa uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_flush
+                0x0000000000000000        0xe uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_clear
+                0x0000000000000000       0x2f uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_get_size
+                0x0000000000000000       0x4b uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_set_style
+                0x0000000000000000       0x31 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_set_color
+                0x0000000000000000       0x47 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_set_rgb_color
+                0x0000000000000000       0x42 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_cursor_visibility
+                0x0000000000000000       0x31 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_set_caption
+                0x0000000000000000       0xa3 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_get_color_cap
+                0x0000000000000000       0x39 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_get_pos
+                0x0000000000000000       0x4b uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_set_pos
+                0x0000000000000000       0x44 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_get_event_timeout
+                0x0000000000000000      0x16c uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_map
+                0x0000000000000000       0xea uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_unmap
+                0x0000000000000000       0x37 uspace/lib/libconsole.a.p/console_src_console.c.o
+ .text.console_update
+                0x0000000000000000       0x5f uspace/lib/libconsole.a.p/console_src_console.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/app_trace.p/app_trace_trace.c.o
+LOAD uspace/app_trace.p/app_trace_syscalls.c.o
+LOAD uspace/app_trace.p/app_trace_ipcp.c.o
+LOAD uspace/app_trace.p/app_trace_ipc_desc.c.o
+LOAD uspace/app_trace.p/app_trace_proto.c.o
+START GROUP
+LOAD uspace/lib/c/libstartfiles.a
+LOAD uspace/lib/libconsole.a
+LOAD uspace/lib/libinput.a
+LOAD uspace/lib/libc.so.0.0
+LOAD uspace/lib/liboutput.a
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000400000                PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x0000000000400120                . = (SEGMENT_START ("text-segment", 0x400000) + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000400120      0x154
+ *(.hash)
+ .hash          0x0000000000400120      0x154 uspace/app_trace.p/app_trace_trace.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x0000000000400278      0x450
+ *(.dynsym)
+ .dynsym        0x0000000000400278      0x450 uspace/app_trace.p/app_trace_trace.c.o
+
+.dynstr         0x00000000004006c8      0x297
+ *(.dynstr)
+ .dynstr        0x00000000004006c8      0x297 uspace/app_trace.p/app_trace_trace.c.o
+
+.gnu.version    0x0000000000400960        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000400960        0x0 uspace/app_trace.p/app_trace_trace.c.o
+
+.gnu.version_d  0x0000000000400960        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000400960        0x0 uspace/app_trace.p/app_trace_trace.c.o
+
+.gnu.version_r  0x0000000000400960        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000400960        0x0 uspace/app_trace.p/app_trace_trace.c.o
+
+.rela.dyn       0x0000000000400960       0x48
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text.cev_fibril
+                0x0000000000400960        0x0 uspace/app_trace.p/app_trace_trace.c.o
+ .rela.text.__c_start
+                0x0000000000400960        0x0 uspace/app_trace.p/app_trace_trace.c.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ .rela.rodata.cst8
+                0x0000000000400960        0x0 uspace/app_trace.p/app_trace_trace.c.o
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x0000000000400960        0x0 uspace/app_trace.p/app_trace_trace.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000400960        0x0 uspace/app_trace.p/app_trace_trace.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x0000000000400960       0x48 uspace/app_trace.p/app_trace_trace.c.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+
+.rela.plt       0x00000000004009a8      0x3f0
+ *(.rela.plt)
+ .rela.plt      0x00000000004009a8      0x3f0 uspace/app_trace.p/app_trace_trace.c.o
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+ .rela.iplt     0x0000000000400d98        0x0 uspace/app_trace.p/app_trace_trace.c.o
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x0000000000400da0      0x2b0
+ *(.plt)
+ .plt           0x0000000000400da0      0x2b0 uspace/app_trace.p/app_trace_trace.c.o
+                0x0000000000400db0                putchar
+                0x0000000000400dc0                vfs_fsession
+                0x0000000000400dd0                printf
+                0x0000000000400de0                async_hangup
+                0x0000000000400df0                async_wait_for
+                0x0000000000400e00                hash_table_create
+                0x0000000000400e10                hash_table_insert
+                0x0000000000400e20                task_wait
+                0x0000000000400e30                udebug_end
+                0x0000000000400e40                memcpy
+                0x0000000000400e50                puts
+                0x0000000000400e60                malloc
+                0x0000000000400e70                udebug_begin
+                0x0000000000400e80                fibril_condvar_wait
+                0x0000000000400e90                strtol
+                0x0000000000400ea0                async_exchange_end
+                0x0000000000400eb0                fibril_condvar_initialize
+                0x0000000000400ec0                fibril_condvar_broadcast
+                0x0000000000400ed0                udebug_set_evmask
+                0x0000000000400ee0                udebug_args_read
+                0x0000000000400ef0                fibril_mutex_unlock
+                0x0000000000400f00                udebug_thread_read
+                0x0000000000400f10                fibril_create
+                0x0000000000400f20                task_spawnv_debug
+                0x0000000000400f30                udebug_stop
+                0x0000000000400f40                hash_table_remove
+                0x0000000000400f50                __helenos_assert_abort
+                0x0000000000400f60                str_error_name
+                0x0000000000400f70                udebug_mem_read
+                0x0000000000400f80                async_exchange_begin
+                0x0000000000400f90                async_send_0
+                0x0000000000400fa0                str_error
+                0x0000000000400fb0                hash_table_find
+                0x0000000000400fc0                __libc_main
+                0x0000000000400fd0                exit
+                0x0000000000400fe0                fibril_add_ready
+                0x0000000000400ff0                async_connect_kbox
+                0x0000000000401000                udebug_go
+                0x0000000000401010                task_setup_wait
+                0x0000000000401020                hash_table_destroy
+                0x0000000000401030                free
+                0x0000000000401040                fibril_mutex_lock
+ *(.iplt)
+ .iplt          0x0000000000401050        0x0 uspace/app_trace.p/app_trace_trace.c.o
+
+.plt.got        0x0000000000401050        0x0
+ *(.plt.got)
+ .plt.got       0x0000000000401050        0x0 uspace/app_trace.p/app_trace_trace.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x0000000000401050     0x1d5d
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ .text.startup.main
+                0x0000000000401050      0x987 uspace/app_trace.p/app_trace_trace.c.o
+                0x0000000000401050                main
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ *fill*         0x00000000004019d7        0x9 
+ .text.print_syntax
+                0x00000000004019e0       0x87 uspace/app_trace.p/app_trace_trace.c.o
+ *fill*         0x0000000000401a67        0x9 
+ .text.cev_fibril
+                0x0000000000401a70       0xbd uspace/app_trace.p/app_trace_trace.c.o
+ *fill*         0x0000000000401b2d        0x3 
+ .text.val_print
+                0x0000000000401b30      0x158 uspace/app_trace.p/app_trace_trace.c.o
+                0x0000000000401b30                val_print
+ *fill*         0x0000000000401c88        0x8 
+ .text.trace_loop
+                0x0000000000401c90      0x4ec uspace/app_trace.p/app_trace_trace.c.o
+ *fill*         0x000000000040217c        0x4 
+ .text.pending_call_key_hash
+                0x0000000000402180        0x9 uspace/app_trace.p/app_trace_ipcp.c.o
+ *fill*         0x0000000000402189        0x7 
+ .text.pending_call_hash
+                0x0000000000402190        0xa uspace/app_trace.p/app_trace_ipcp.c.o
+ *fill*         0x000000000040219a        0x6 
+ .text.pending_call_key_equal
+                0x00000000004021a0       0x10 uspace/app_trace.p/app_trace_ipcp.c.o
+ .text.ipcp_init
+                0x00000000004021b0       0xcf uspace/app_trace.p/app_trace_ipcp.c.o
+                0x00000000004021b0                ipcp_init
+ *fill*         0x000000000040227f        0x1 
+ .text.ipcp_cleanup
+                0x0000000000402280       0x1b uspace/app_trace.p/app_trace_ipcp.c.o
+                0x0000000000402280                ipcp_cleanup
+ *fill*         0x000000000040229b        0x5 
+ .text.ipcp_call_out
+                0x00000000004022a0      0x2af uspace/app_trace.p/app_trace_ipcp.c.o
+                0x00000000004022a0                ipcp_call_out
+ *fill*         0x000000000040254f        0x1 
+ .text.ipcp_call_in
+                0x0000000000402550      0x36b uspace/app_trace.p/app_trace_ipcp.c.o
+                0x0000000000402550                ipcp_call_in
+ *fill*         0x00000000004028bb        0x5 
+ .text.srv_proto_key_hash
+                0x00000000004028c0        0x9 uspace/app_trace.p/app_trace_proto.c.o
+ *fill*         0x00000000004028c9        0x7 
+ .text.srv_proto_hash
+                0x00000000004028d0        0xa uspace/app_trace.p/app_trace_proto.c.o
+ *fill*         0x00000000004028da        0x6 
+ .text.srv_proto_key_equal
+                0x00000000004028e0        0xe uspace/app_trace.p/app_trace_proto.c.o
+ *fill*         0x00000000004028ee        0x2 
+ .text.method_oper_hash
+                0x00000000004028f0        0xa uspace/app_trace.p/app_trace_proto.c.o
+ *fill*         0x00000000004028fa        0x6 
+ .text.method_oper_key_equal
+                0x0000000000402900        0xe uspace/app_trace.p/app_trace_proto.c.o
+ *fill*         0x000000000040290e        0x2 
+ .text.method_oper_key_hash
+                0x0000000000402910        0x9 uspace/app_trace.p/app_trace_proto.c.o
+ *fill*         0x0000000000402919        0x7 
+ .text.proto_init
+                0x0000000000402920       0x31 uspace/app_trace.p/app_trace_proto.c.o
+                0x0000000000402920                proto_init
+ *fill*         0x0000000000402951        0xf 
+ .text.proto_register
+                0x0000000000402960       0x30 uspace/app_trace.p/app_trace_proto.c.o
+                0x0000000000402960                proto_register
+ .text.proto_get_by_srv
+                0x0000000000402990       0x24 uspace/app_trace.p/app_trace_proto.c.o
+                0x0000000000402990                proto_get_by_srv
+ *fill*         0x00000000004029b4        0xc 
+ .text.proto_new
+                0x00000000004029c0       0x4c uspace/app_trace.p/app_trace_proto.c.o
+                0x00000000004029c0                proto_new
+ *fill*         0x0000000000402a0c        0x4 
+ .text.proto_delete
+                0x0000000000402a10        0xa uspace/app_trace.p/app_trace_proto.c.o
+                0x0000000000402a10                proto_delete
+ *fill*         0x0000000000402a1a        0x6 
+ .text.proto_add_oper
+                0x0000000000402a20       0x3e uspace/app_trace.p/app_trace_proto.c.o
+                0x0000000000402a20                proto_add_oper
+ *fill*         0x0000000000402a5e        0x2 
+ .text.proto_get_oper
+                0x0000000000402a60       0x23 uspace/app_trace.p/app_trace_proto.c.o
+                0x0000000000402a60                proto_get_oper
+ *fill*         0x0000000000402a83        0xd 
+ .text.oper_new
+                0x0000000000402a90       0x85 uspace/app_trace.p/app_trace_proto.c.o
+                0x0000000000402a90                oper_new
+ .text          0x0000000000402b15        0xc uspace/lib/c/libstartfiles.a.p/arch_amd64_src_crt0.S.o
+                0x0000000000402b15                _start
+ *fill*         0x0000000000402b21        0xf 
+ .text.__c_start
+                0x0000000000402b30       0x8c uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                0x0000000000402b30                __c_start
+ *fill*         0x0000000000402bbc        0x4 
+ .text.console_init
+                0x0000000000402bc0       0x7c uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x0000000000402bc0                console_init
+ *fill*         0x0000000000402c3c        0x4 
+ .text.console_get_event
+                0x0000000000402c40      0x16d uspace/lib/libconsole.a.p/console_src_console.c.o
+                0x0000000000402c40                console_get_event
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000402dc0     0x1050
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.print_syntax.str1.1
+                0x0000000000402dc0      0x74e uspace/app_trace.p/app_trace_trace.c.o
+                                         0x93 (size before relaxing)
+ *fill*         0x000000000040350e        0x2 
+ .rodata.print_syntax.str1.8
+                0x0000000000403510      0x40f uspace/app_trace.p/app_trace_trace.c.o
+                                         0x7f (size before relaxing)
+ .rodata.val_print.str1.1
+                0x000000000040391f       0x42 uspace/app_trace.p/app_trace_trace.c.o
+ *fill*         0x000000000040391f        0x1 
+ .rodata.val_print
+                0x0000000000403920       0x70 uspace/app_trace.p/app_trace_trace.c.o
+ .rodata.trace_loop.str1.1
+                0x0000000000403990       0xa0 uspace/app_trace.p/app_trace_trace.c.o
+ .rodata.trace_loop.str1.8
+                0x0000000000403990       0x90 uspace/app_trace.p/app_trace_trace.c.o
+ .rodata.trace_loop
+                0x0000000000403990       0x38 uspace/app_trace.p/app_trace_trace.c.o
+ .rodata.main.str1.1
+                0x00000000004039c8      0x21f uspace/app_trace.p/app_trace_trace.c.o
+ .rodata.main.str1.8
+                0x00000000004039c8      0x1e0 uspace/app_trace.p/app_trace_trace.c.o
+ *fill*         0x00000000004039c8        0x8 
+ .rodata.cst16  0x00000000004039d0       0x10 uspace/app_trace.p/app_trace_trace.c.o
+ .rodata.syscall_desc_len
+                0x00000000004039e0        0x8 uspace/app_trace.p/app_trace_syscalls.c.o
+                0x00000000004039e0                syscall_desc_len
+ .rodata.str1.1
+                0x00000000004039e8      0x325 uspace/app_trace.p/app_trace_syscalls.c.o
+ *fill*         0x00000000004039e8       0x18 
+ .rodata.syscall_desc
+                0x0000000000403a00      0x350 uspace/app_trace.p/app_trace_syscalls.c.o
+                0x0000000000403a00                syscall_desc
+ .rodata.ipcp_init.str1.1
+                0x0000000000403d50       0x12 uspace/app_trace.p/app_trace_ipcp.c.o
+ .rodata.ipcp_init.str1.8
+                0x0000000000403d50       0x26 uspace/app_trace.p/app_trace_ipcp.c.o
+ .rodata.ipcp_call_out.str1.8
+                0x0000000000403d50       0x52 uspace/app_trace.p/app_trace_ipcp.c.o
+ .rodata.ipcp_call_out.str1.1
+                0x0000000000403d50       0x1e uspace/app_trace.p/app_trace_ipcp.c.o
+ .rodata.ipcp_call_in.str1.1
+                0x0000000000403d50       0x1f uspace/app_trace.p/app_trace_ipcp.c.o
+ .rodata.ipcp_call_in.str1.8
+                0x0000000000403d50       0x71 uspace/app_trace.p/app_trace_ipcp.c.o
+ *fill*         0x0000000000403d50       0x10 
+ .rodata.pending_call_ops
+                0x0000000000403d60       0x28 uspace/app_trace.p/app_trace_ipcp.c.o
+ .rodata.cst16  0x0000000000403d88       0x10 uspace/app_trace.p/app_trace_ipcp.c.o
+ .rodata.str1.1
+                0x0000000000403d88       0x57 uspace/app_trace.p/app_trace_ipc_desc.c.o
+ .rodata.proto_init.str1.8
+                0x0000000000403d88       0x27 uspace/app_trace.p/app_trace_proto.c.o
+ .rodata.proto_init.str1.1
+                0x0000000000403d88        0x3 uspace/app_trace.p/app_trace_proto.c.o
+ *fill*         0x0000000000403d88       0x18 
+ .rodata.method_oper_ops
+                0x0000000000403da0       0x28 uspace/app_trace.p/app_trace_proto.c.o
+ *fill*         0x0000000000403dc8       0x18 
+ .rodata.srv_proto_ops
+                0x0000000000403de0       0x28 uspace/app_trace.p/app_trace_proto.c.o
+ .rodata.cst8   0x0000000000403e08        0x8 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x0000000000403e10       0xfc
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x0000000000403e10       0xfc uspace/app_trace.p/app_trace_trace.c.o
+                0x0000000000403e10                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x0000000000403f10      0x4c0
+ *(.eh_frame)
+ .eh_frame      0x0000000000403f10      0x118 uspace/app_trace.p/app_trace_trace.c.o
+                                        0x140 (size before relaxing)
+ .eh_frame      0x0000000000404028       0x28 uspace/app_trace.p/app_trace_trace.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000404050        0x0 uspace/app_trace.p/app_trace_trace.c.o
+ .eh_frame      0x0000000000404050      0x118 uspace/app_trace.p/app_trace_ipcp.c.o
+                                        0x198 (size before relaxing)
+ .eh_frame      0x0000000000404168      0x1e8 uspace/app_trace.p/app_trace_proto.c.o
+                                        0x220 (size before relaxing)
+ .eh_frame      0x0000000000404350       0x20 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000404370       0x60 uspace/lib/libconsole.a.p/console_src_console.c.o
+                                        0x318 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x00000000004043d0        0x0
+ *(.sframe)
+ .sframe        0x00000000004043d0        0x0 uspace/app_trace.p/app_trace_trace.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x0000000000405000                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0x0000000000405000        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0000000000405000        0x0
+                0x0000000000405000                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x0000000000405000                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x0000000000405000        0x0
+                0x0000000000405000                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x0000000000405000                PROVIDE (__init_array_end = .)
+
+.fini_array     0x0000000000405000        0x0
+                0x0000000000405000                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x0000000000405000                PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x0000000000405000        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x0000000000405000        0x0 uspace/app_trace.p/app_trace_trace.c.o
+
+.dynamic        0x0000000000405000      0x150
+ *(.dynamic)
+ .dynamic       0x0000000000405000      0x150 uspace/app_trace.p/app_trace_trace.c.o
+                0x0000000000405000                _DYNAMIC
+
+.got            0x0000000000405150        0x0
+ *(.got)
+ .got           0x0000000000405150        0x0 uspace/app_trace.p/app_trace_trace.c.o
+ *(.igot)
+                0x0000000000405150                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x0000000000405150      0x168
+ *(.got.plt)
+ .got.plt       0x0000000000405150      0x168 uspace/app_trace.p/app_trace_trace.c.o
+                0x0000000000405150                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x00000000004052b8        0x0 uspace/app_trace.p/app_trace_trace.c.o
+
+.data           0x00000000004052c0       0xa0
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.ipc_methods_len
+                0x00000000004052c0        0x8 uspace/app_trace.p/app_trace_ipc_desc.c.o
+                0x00000000004052c0                ipc_methods_len
+ *fill*         0x00000000004052c8       0x18 
+ .data.ipc_methods
+                0x00000000004052e0       0x80 uspace/app_trace.p/app_trace_ipc_desc.c.o
+                0x00000000004052e0                ipc_methods
+
+.data1
+ *(.data1)
+                0x0000000000405360                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x0000000000405360                . = .
+                0x0000000000405360                __bss_start = .
+
+.bss            0x0000000000405360      0x918
+ *(.dynbss)
+ .dynbss        0x0000000000405360       0x68 uspace/app_trace.p/app_trace_trace.c.o
+                0x0000000000405360                stdout
+                0x0000000000405370                stdin
+                0x0000000000405380                __progsymbols
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss.display_mask
+                0x00000000004053c8        0x4 uspace/app_trace.p/app_trace_trace.c.o
+                0x00000000004053c8                display_mask
+ .bss.task_wait_for
+                0x00000000004053cc        0x1 uspace/app_trace.p/app_trace_trace.c.o
+ *fill*         0x00000000004053cd       0x13 
+ .bss.task_w    0x00000000004053e0       0x60 uspace/app_trace.p/app_trace_trace.c.o
+ .bss.task_id   0x0000000000405440        0x8 uspace/app_trace.p/app_trace_trace.c.o
+ .bss.cmd_args  0x0000000000405448        0x8 uspace/app_trace.p/app_trace_trace.c.o
+ .bss.cmd_path  0x0000000000405450        0x8 uspace/app_trace.p/app_trace_trace.c.o
+ *fill*         0x0000000000405458        0x8 
+ .bss.cev       0x0000000000405460       0x18 uspace/app_trace.p/app_trace_trace.c.o
+ .bss.cev_valid
+                0x0000000000405478        0x1 uspace/app_trace.p/app_trace_trace.c.o
+ *fill*         0x0000000000405479        0x7 
+ .bss.state_lock
+                0x0000000000405480       0x20 uspace/app_trace.p/app_trace_trace.c.o
+ .bss.state_cv  0x00000000004054a0       0x10 uspace/app_trace.p/app_trace_trace.c.o
+ .bss.paused    0x00000000004054b0        0x1 uspace/app_trace.p/app_trace_trace.c.o
+ *fill*         0x00000000004054b1        0x7 
+ .bss.thash     0x00000000004054b8        0x8 uspace/app_trace.p/app_trace_trace.c.o
+                0x00000000004054b8                thash
+ .bss.abort_trace
+                0x00000000004054c0        0x1 uspace/app_trace.p/app_trace_trace.c.o
+                0x00000000004054c0                abort_trace
+ *fill*         0x00000000004054c1        0x7 
+ .bss.sess      0x00000000004054c8        0x8 uspace/app_trace.p/app_trace_trace.c.o
+                0x00000000004054c8                sess
+ .bss.next_thread_id
+                0x00000000004054d0        0x4 uspace/app_trace.p/app_trace_trace.c.o
+                0x00000000004054d0                next_thread_id
+ .bss.n_threads
+                0x00000000004054d4        0x4 uspace/app_trace.p/app_trace_trace.c.o
+                0x00000000004054d4                n_threads
+ *fill*         0x00000000004054d8        0x8 
+ .bss.thread_hash_buf
+                0x00000000004054e0      0x200 uspace/app_trace.p/app_trace_trace.c.o
+                0x00000000004054e0                thread_hash_buf
+ .bss.proto_unknown
+                0x00000000004056e0        0x8 uspace/app_trace.p/app_trace_ipcp.c.o
+                0x00000000004056e0                proto_unknown
+ .bss.proto_system
+                0x00000000004056e8        0x8 uspace/app_trace.p/app_trace_ipcp.c.o
+                0x00000000004056e8                proto_system
+ *fill*         0x00000000004056f0       0x10 
+ .bss.pending_calls
+                0x0000000000405700       0x38 uspace/app_trace.p/app_trace_ipcp.c.o
+ *fill*         0x0000000000405738        0x8 
+ .bss.have_conn
+                0x0000000000405740      0x100 uspace/app_trace.p/app_trace_ipcp.c.o
+                0x0000000000405740                have_conn
+ .bss.connections
+                0x0000000000405840      0x400 uspace/app_trace.p/app_trace_ipcp.c.o
+                0x0000000000405840                connections
+ .bss.srv_proto
+                0x0000000000405c40       0x38 uspace/app_trace.p/app_trace_proto.c.o
+ *(COMMON)
+                0x0000000000405c78                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x0000000000405c78                . = ALIGN (0x8)
+                0x0000000000405c78                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x0000000000407c78        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x0000000000407c78                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000407c78                . = ALIGN (0x8)
+                0x0000000000405c78                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x0000000000407c78                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/app_trace.p/app_trace_trace.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/app_trace.p/app_trace_syscalls.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_trace.p/app_trace_ipcp.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_trace.p/app_trace_ipc_desc.c.o
+ .comment       0x0000000000000012       0x13 uspace/app_trace.p/app_trace_proto.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/c/libstartfiles.a.p/generic_crt_crt1.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libconsole.a.p/console_src_console.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/app_trace elf64-x86-64)

@@ -1,0 +1,925 @@
+
+As-needed library included to satisfy reference by file (symbol)
+
+libdrv.so.0                   uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o (ddf_dev_data_alloc)
+libc.so.0                     uspace/lib/libnic.so.0.0.p/nic_src_nic_addr_db.c.o (hash_table_clear)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libnic.so.0.0.p/nic_src_nic_ev.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libnic.so.0.0.p/nic_src_nic_ev.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libnic.so.0.0.p/nic_src_nic_ev.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libnic.so.0.0.p/nic_src_nic_addr_db.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libnic.so.0.0.p/nic_src_nic_addr_db.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libnic.so.0.0.p/nic_src_nic_addr_db.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libnic.so.0.0.p/nic_src_nic_rx_control.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libnic.so.0.0.p/nic_src_nic_rx_control.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libnic.so.0.0.p/nic_src_nic_rx_control.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libnic.so.0.0.p/nic_src_nic_wol_virtues.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libnic.so.0.0.p/nic_src_nic_wol_virtues.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libnic.so.0.0.p/nic_src_nic_wol_virtues.c.o
+ .text          0x0000000000000000        0x0 uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+ .data          0x0000000000000000        0x0 uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+ .bss           0x0000000000000000        0x0 uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+LOAD uspace/lib/libnic.so.0.0.p/nic_src_nic_ev.c.o
+LOAD uspace/lib/libnic.so.0.0.p/nic_src_nic_addr_db.c.o
+LOAD uspace/lib/libnic.so.0.0.p/nic_src_nic_rx_control.c.o
+LOAD uspace/lib/libnic.so.0.0.p/nic_src_nic_wol_virtues.c.o
+LOAD uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+START GROUP
+LOAD uspace/lib/libdrv.so.0.0
+LOAD uspace/lib/libinet.so.0.0
+LOAD uspace/lib/libc.so.0.0
+LOAD uspace/lib/libpcm.so.0.0
+LOAD uspace/lib/libdevice.so.0.0
+LOAD /home/zyc/.local/share/HelenOS/cross/lib/gcc/amd64-helenos/13.2.0/libgcc.a
+END GROUP
+                0x0000000000000120                . = (SEGMENT_START ("text-segment", 0x0) + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000000000120      0x460
+ *(.hash)
+ .hash          0x0000000000000120      0x460 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x0000000000000580      0xdc8
+ *(.dynsym)
+ .dynsym        0x0000000000000580      0xdc8 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+
+.dynstr         0x0000000000001348      0xbd7
+ *(.dynstr)
+ .dynstr        0x0000000000001348      0xbd7 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+
+.gnu.version    0x0000000000001f20        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000001f20        0x0 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+
+.gnu.version_d  0x0000000000001f20        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000001f20        0x0 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+
+.gnu.version_r  0x0000000000001f20        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000001f20        0x0 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+
+.rela.dyn       0x0000000000001f20      0x300
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro.local.set_ops
+                0x0000000000001f20       0x60 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000001f80      0x2a0 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+ .rela.ifunc    0x0000000000002220        0x0 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+
+.rela.plt       0x0000000000002220      0x768
+ *(.rela.plt)
+ .rela.plt      0x0000000000002220      0x768 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+ *(.rela.iplt)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt            0x0000000000002990      0x500
+ *(.plt)
+ .plt           0x0000000000002990      0x500 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+ *(.iplt)
+
+.plt.got        0x0000000000002e90        0x0
+ *(.plt.got)
+ .plt.got       0x0000000000002e90        0x0 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x0000000000002e90     0x3916
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ .text.unlikely.nic_alloc_frame
+                0x0000000000002e90        0xa uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+ .text.unlikely.nic_alloc_frame_list
+                0x0000000000002e9a        0xa uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ *fill*         0x0000000000002ea4        0xc 
+ .text.period_fibril_fun
+                0x0000000000002eb0      0x184 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+ *fill*         0x0000000000003034        0xc 
+ .text.nic_driver_init
+                0x0000000000003040       0x80 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000003040                nic_driver_init
+ .text.nic_driver_implement
+                0x00000000000030c0      0x4d7 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x00000000000030c0                nic_driver_implement
+ *fill*         0x0000000000003597        0x9 
+ .text.nic_set_send_frame_handler
+                0x00000000000035a0        0xd uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x00000000000035a0                nic_set_send_frame_handler
+ *fill*         0x00000000000035ad        0x3 
+ .text.nic_set_state_change_handlers
+                0x00000000000035b0       0x1b uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x00000000000035b0                nic_set_state_change_handlers
+ *fill*         0x00000000000035cb        0x5 
+ .text.nic_set_filtering_change_handlers
+                0x00000000000035d0       0x29 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x00000000000035d0                nic_set_filtering_change_handlers
+ *fill*         0x00000000000035f9        0x7 
+ .text.nic_set_wol_virtue_change_handlers
+                0x0000000000003600       0x35 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000003600                nic_set_wol_virtue_change_handlers
+ *fill*         0x0000000000003635        0xb 
+ .text.nic_set_poll_handlers
+                0x0000000000003640       0x14 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000003640                nic_set_poll_handlers
+ *fill*         0x0000000000003654        0xc 
+ .text.nic_get_resources
+                0x0000000000003660       0x3b uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000003660                nic_get_resources
+ *fill*         0x000000000000369b        0x5 
+ .text.nic_alloc_frame
+                0x00000000000036a0       0xcf uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x00000000000036a0                nic_alloc_frame
+ *fill*         0x000000000000376f        0x1 
+ .text.nic_release_frame
+                0x0000000000003770       0xa9 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000003770                nic_release_frame
+ *fill*         0x0000000000003819        0x7 
+ .text.nic_alloc_frame_list
+                0x0000000000003820       0xa6 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000003820                nic_alloc_frame_list
+ *fill*         0x00000000000038c6        0xa 
+ .text.nic_frame_list_append
+                0x00000000000038d0       0x42 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x00000000000038d0                nic_frame_list_append
+ *fill*         0x0000000000003912        0xe 
+ .text.nic_query_poll_mode
+                0x0000000000003920       0x16 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000003920                nic_query_poll_mode
+ *fill*         0x0000000000003936        0xa 
+ .text.nic_report_poll_mode
+                0x0000000000003940       0x6f uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000003940                nic_report_poll_mode
+ *fill*         0x00000000000039af        0x1 
+ .text.nic_report_address
+                0x00000000000039b0      0x140 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x00000000000039b0                nic_report_address
+ .text.nic_query_address
+                0x0000000000003af0       0x18 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000003af0                nic_query_address
+ *fill*         0x0000000000003b08        0x8 
+ .text.nic_set_tx_busy
+                0x0000000000003b10        0x9 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000003b10                nic_set_tx_busy
+ *fill*         0x0000000000003b19        0x7 
+ .text.nic_received_frame
+                0x0000000000003b20      0x11a uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000003b20                nic_received_frame
+ *fill*         0x0000000000003c3a        0x6 
+ .text.nic_received_frame_list
+                0x0000000000003c40       0xd1 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000003c40                nic_received_frame_list
+ *fill*         0x0000000000003d11        0xf 
+ .text.nic_create_and_bind
+                0x0000000000003d20      0x11a uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000003d20                nic_create_and_bind
+ *fill*         0x0000000000003e3a        0x6 
+ .text.nic_report_hw_filtering
+                0x0000000000003e40       0x11 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000003e40                nic_report_hw_filtering
+ *fill*         0x0000000000003e51        0xf 
+ .text.nic_mcast_hash
+                0x0000000000003e60        0xa uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000003e60                nic_mcast_hash
+ *fill*         0x0000000000003e6a        0x6 
+ .text.nic_query_mcast_hash
+                0x0000000000003e70       0x38 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000003e70                nic_query_mcast_hash
+ *fill*         0x0000000000003ea8        0x8 
+ .text.nic_query_unicast
+                0x0000000000003eb0       0x2d uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000003eb0                nic_query_unicast
+ *fill*         0x0000000000003edd        0x3 
+ .text.nic_query_multicast
+                0x0000000000003ee0       0x2d uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000003ee0                nic_query_multicast
+ *fill*         0x0000000000003f0d        0x3 
+ .text.nic_query_broadcast
+                0x0000000000003f10       0x2d uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000003f10                nic_query_broadcast
+ *fill*         0x0000000000003f3d        0x3 
+ .text.nic_query_blocked_sources
+                0x0000000000003f40       0x11 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000003f40                nic_query_blocked_sources
+ *fill*         0x0000000000003f51        0xf 
+ .text.nic_query_vlan_mask
+                0x0000000000003f60       0x2d uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000003f60                nic_query_vlan_mask
+ *fill*         0x0000000000003f8d        0x3 
+ .text.nic_query_wol_max_caps
+                0x0000000000003f90        0xf uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000003f90                nic_query_wol_max_caps
+ *fill*         0x0000000000003f9f        0x1 
+ .text.nic_set_wol_max_caps
+                0x0000000000003fa0        0xf uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000003fa0                nic_set_wol_max_caps
+ *fill*         0x0000000000003faf        0x1 
+ .text.nic_get_specific
+                0x0000000000003fb0        0xd uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000003fb0                nic_get_specific
+ *fill*         0x0000000000003fbd        0x3 
+ .text.nic_set_specific
+                0x0000000000003fc0        0xd uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000003fc0                nic_set_specific
+ *fill*         0x0000000000003fcd        0x3 
+ .text.nic_query_state
+                0x0000000000003fd0        0x9 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000003fd0                nic_query_state
+ *fill*         0x0000000000003fd9        0x7 
+ .text.nic_get_ddf_dev
+                0x0000000000003fe0        0x9 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000003fe0                nic_get_ddf_dev
+ *fill*         0x0000000000003fe9        0x7 
+ .text.nic_get_ddf_fun
+                0x0000000000003ff0        0xa uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000003ff0                nic_get_ddf_fun
+ *fill*         0x0000000000003ffa        0x6 
+ .text.nic_set_ddf_fun
+                0x0000000000004000        0xa uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000004000                nic_set_ddf_fun
+ *fill*         0x000000000000400a        0x6 
+ .text.nic_get_from_ddf_dev
+                0x0000000000004010        0xa uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000004010                nic_get_from_ddf_dev
+ *fill*         0x000000000000401a        0x6 
+ .text.nic_unbind_and_destroy
+                0x0000000000004020       0x16 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000004020                nic_unbind_and_destroy
+ *fill*         0x0000000000004036        0xa 
+ .text.nic_get_from_ddf_fun
+                0x0000000000004040       0x12 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000004040                nic_get_from_ddf_fun
+ *fill*         0x0000000000004052        0xe 
+ .text.nic_report_send_ok
+                0x0000000000004060       0x41 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000004060                nic_report_send_ok
+ *fill*         0x00000000000040a1        0xf 
+ .text.nic_report_send_error
+                0x00000000000040b0       0xca uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x00000000000040b0                nic_report_send_error
+ *fill*         0x000000000000417a        0x6 
+ .text.nic_report_receive_error
+                0x0000000000004180       0xf7 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000004180                nic_report_receive_error
+ *fill*         0x0000000000004277        0x9 
+ .text.nic_report_collisions
+                0x0000000000004280       0x3b uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000004280                nic_report_collisions
+ *fill*         0x00000000000042bb        0x5 
+ .text.nic_sw_period_start
+                0x00000000000042c0       0x73 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x00000000000042c0                nic_sw_period_start
+ *fill*         0x0000000000004333        0xd 
+ .text.nic_sw_period_stop
+                0x0000000000004340        0xd uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000004340                nic_sw_period_stop
+ *fill*         0x000000000000434d        0x3 
+ .text.nic_ev_addr_changed
+                0x0000000000004350       0x91 uspace/lib/libnic.so.0.0.p/nic_src_nic_ev.c.o
+                0x0000000000004350                nic_ev_addr_changed
+ *fill*         0x00000000000043e1        0xf 
+ .text.nic_ev_device_state
+                0x00000000000043f0       0x35 uspace/lib/libnic.so.0.0.p/nic_src_nic_ev.c.o
+                0x00000000000043f0                nic_ev_device_state
+ *fill*         0x0000000000004425        0xb 
+ .text.nic_ev_received
+                0x0000000000004430       0x9b uspace/lib/libnic.so.0.0.p/nic_src_nic_ev.c.o
+                0x0000000000004430                nic_ev_received
+ *fill*         0x00000000000044cb        0x5 
+ .text.nic_addr_key_hash
+                0x00000000000044d0       0x35 uspace/lib/libnic.so.0.0.p/nic_src_nic_addr_db.c.o
+ *fill*         0x0000000000004505        0xb 
+ .text.nic_addr_hash
+                0x0000000000004510       0x2e uspace/lib/libnic.so.0.0.p/nic_src_nic_addr_db.c.o
+ *fill*         0x000000000000453e        0x2 
+ .text.nic_addr_db_fe_helper
+                0x0000000000004540       0x18 uspace/lib/libnic.so.0.0.p/nic_src_nic_addr_db.c.o
+ *fill*         0x0000000000004558        0x8 
+ .text.nic_addr_removed
+                0x0000000000004560        0xa uspace/lib/libnic.so.0.0.p/nic_src_nic_addr_db.c.o
+ *fill*         0x000000000000456a        0x6 
+ .text.nic_addr_key_equal
+                0x0000000000004570       0x1f uspace/lib/libnic.so.0.0.p/nic_src_nic_addr_db.c.o
+ *fill*         0x000000000000458f        0x1 
+ .text.nic_addr_db_init
+                0x0000000000004590       0x5e uspace/lib/libnic.so.0.0.p/nic_src_nic_addr_db.c.o
+                0x0000000000004590                nic_addr_db_init
+ *fill*         0x00000000000045ee        0x2 
+ .text.nic_addr_db_clear
+                0x00000000000045f0       0x26 uspace/lib/libnic.so.0.0.p/nic_src_nic_addr_db.c.o
+                0x00000000000045f0                nic_addr_db_clear
+ *fill*         0x0000000000004616        0xa 
+ .text.nic_addr_db_destroy
+                0x0000000000004620       0x26 uspace/lib/libnic.so.0.0.p/nic_src_nic_addr_db.c.o
+                0x0000000000004620                nic_addr_db_destroy
+ *fill*         0x0000000000004646        0xa 
+ .text.nic_addr_db_insert
+                0x0000000000004650       0xb1 uspace/lib/libnic.so.0.0.p/nic_src_nic_addr_db.c.o
+                0x0000000000004650                nic_addr_db_insert
+ *fill*         0x0000000000004701        0xf 
+ .text.nic_addr_db_remove
+                0x0000000000004710       0x4a uspace/lib/libnic.so.0.0.p/nic_src_nic_addr_db.c.o
+                0x0000000000004710                nic_addr_db_remove
+ *fill*         0x000000000000475a        0x6 
+ .text.nic_addr_db_contains
+                0x0000000000004760       0x47 uspace/lib/libnic.so.0.0.p/nic_src_nic_addr_db.c.o
+                0x0000000000004760                nic_addr_db_contains
+ *fill*         0x00000000000047a7        0x9 
+ .text.nic_addr_db_foreach
+                0x00000000000047b0       0x22 uspace/lib/libnic.so.0.0.p/nic_src_nic_addr_db.c.o
+                0x00000000000047b0                nic_addr_db_foreach
+ *fill*         0x00000000000047d2        0xe 
+ .text.nic_rxc_hash_addr
+                0x00000000000047e0      0x135 uspace/lib/libnic.so.0.0.p/nic_src_nic_rx_control.c.o
+ *fill*         0x0000000000004915        0xb 
+ .text.nic_rxc_add_addr
+                0x0000000000004920       0x38 uspace/lib/libnic.so.0.0.p/nic_src_nic_rx_control.c.o
+ *fill*         0x0000000000004958        0x8 
+ .text.nic_rxc_init
+                0x0000000000004960       0xc0 uspace/lib/libnic.so.0.0.p/nic_src_nic_rx_control.c.o
+                0x0000000000004960                nic_rxc_init
+ .text.nic_rxc_clear
+                0x0000000000004a20       0x33 uspace/lib/libnic.so.0.0.p/nic_src_nic_rx_control.c.o
+                0x0000000000004a20                nic_rxc_clear
+ *fill*         0x0000000000004a53        0xd 
+ .text.nic_rxc_set_addr
+                0x0000000000004a60       0x35 uspace/lib/libnic.so.0.0.p/nic_src_nic_rx_control.c.o
+                0x0000000000004a60                nic_rxc_set_addr
+ *fill*         0x0000000000004a95        0xb 
+ .text.nic_rxc_unicast_get_mode
+                0x0000000000004aa0       0x4e uspace/lib/libnic.so.0.0.p/nic_src_nic_rx_control.c.o
+                0x0000000000004aa0                nic_rxc_unicast_get_mode
+ *fill*         0x0000000000004aee        0x2 
+ .text.nic_rxc_unicast_set_mode
+                0x0000000000004af0       0xb7 uspace/lib/libnic.so.0.0.p/nic_src_nic_rx_control.c.o
+                0x0000000000004af0                nic_rxc_unicast_set_mode
+ *fill*         0x0000000000004ba7        0x9 
+ .text.nic_rxc_multicast_get_mode
+                0x0000000000004bb0       0x52 uspace/lib/libnic.so.0.0.p/nic_src_nic_rx_control.c.o
+                0x0000000000004bb0                nic_rxc_multicast_get_mode
+ *fill*         0x0000000000004c02        0xe 
+ .text.nic_rxc_multicast_set_mode
+                0x0000000000004c10       0xc1 uspace/lib/libnic.so.0.0.p/nic_src_nic_rx_control.c.o
+                0x0000000000004c10                nic_rxc_multicast_set_mode
+ *fill*         0x0000000000004cd1        0xf 
+ .text.nic_rxc_broadcast_get_mode
+                0x0000000000004ce0        0xe uspace/lib/libnic.so.0.0.p/nic_src_nic_rx_control.c.o
+                0x0000000000004ce0                nic_rxc_broadcast_get_mode
+ *fill*         0x0000000000004cee        0x2 
+ .text.nic_rxc_broadcast_set_mode
+                0x0000000000004cf0        0xe uspace/lib/libnic.so.0.0.p/nic_src_nic_rx_control.c.o
+                0x0000000000004cf0                nic_rxc_broadcast_set_mode
+ *fill*         0x0000000000004cfe        0x2 
+ .text.nic_rxc_blocked_sources_get
+                0x0000000000004d00       0x45 uspace/lib/libnic.so.0.0.p/nic_src_nic_rx_control.c.o
+                0x0000000000004d00                nic_rxc_blocked_sources_get
+ *fill*         0x0000000000004d45        0xb 
+ .text.nic_rxc_blocked_sources_set
+                0x0000000000004d50       0xa9 uspace/lib/libnic.so.0.0.p/nic_src_nic_rx_control.c.o
+                0x0000000000004d50                nic_rxc_blocked_sources_set
+ *fill*         0x0000000000004df9        0x7 
+ .text.nic_rxc_vlan_get_mask
+                0x0000000000004e00       0x4a uspace/lib/libnic.so.0.0.p/nic_src_nic_rx_control.c.o
+                0x0000000000004e00                nic_rxc_vlan_get_mask
+ *fill*         0x0000000000004e4a        0x6 
+ .text.nic_rxc_vlan_set_mask
+                0x0000000000004e50       0x9b uspace/lib/libnic.so.0.0.p/nic_src_nic_rx_control.c.o
+                0x0000000000004e50                nic_rxc_vlan_set_mask
+ *fill*         0x0000000000004eeb        0x5 
+ .text.nic_rxc_check
+                0x0000000000004ef0      0x16b uspace/lib/libnic.so.0.0.p/nic_src_nic_rx_control.c.o
+                0x0000000000004ef0                nic_rxc_check
+ *fill*         0x000000000000505b        0x5 
+ .text.nic_rxc_hw_filtering
+                0x0000000000005060       0x24 uspace/lib/libnic.so.0.0.p/nic_src_nic_rx_control.c.o
+                0x0000000000005060                nic_rxc_hw_filtering
+ *fill*         0x0000000000005084        0xc 
+ .text.nic_rxc_mcast_hash
+                0x0000000000005090      0x16e uspace/lib/libnic.so.0.0.p/nic_src_nic_rx_control.c.o
+                0x0000000000005090                nic_rxc_mcast_hash
+ *fill*         0x00000000000051fe        0x2 
+ .text.nic_rxc_multicast_get_hash
+                0x0000000000005200       0x42 uspace/lib/libnic.so.0.0.p/nic_src_nic_rx_control.c.o
+                0x0000000000005200                nic_rxc_multicast_get_hash
+ *fill*         0x0000000000005242        0xe 
+ .text.nic_wv_key_hash
+                0x0000000000005250        0x8 uspace/lib/libnic.so.0.0.p/nic_src_nic_wol_virtues.c.o
+ *fill*         0x0000000000005258        0x8 
+ .text.nic_wv_hash
+                0x0000000000005260        0x9 uspace/lib/libnic.so.0.0.p/nic_src_nic_wol_virtues.c.o
+ *fill*         0x0000000000005269        0x7 
+ .text.nic_wv_key_equal
+                0x0000000000005270        0xe uspace/lib/libnic.so.0.0.p/nic_src_nic_wol_virtues.c.o
+ *fill*         0x000000000000527e        0x2 
+ .text.nic_wol_virtues_init
+                0x0000000000005280       0xa6 uspace/lib/libnic.so.0.0.p/nic_src_nic_wol_virtues.c.o
+                0x0000000000005280                nic_wol_virtues_init
+ *fill*         0x0000000000005326        0xa 
+ .text.nic_wol_virtues_clear
+                0x0000000000005330       0x70 uspace/lib/libnic.so.0.0.p/nic_src_nic_wol_virtues.c.o
+                0x0000000000005330                nic_wol_virtues_clear
+ .text.nic_wol_virtues_verify
+                0x00000000000053a0       0x87 uspace/lib/libnic.so.0.0.p/nic_src_nic_wol_virtues.c.o
+                0x00000000000053a0                nic_wol_virtues_verify
+ *fill*         0x0000000000005427        0x9 
+ .text.nic_wol_virtues_add
+                0x0000000000005430       0xa8 uspace/lib/libnic.so.0.0.p/nic_src_nic_wol_virtues.c.o
+                0x0000000000005430                nic_wol_virtues_add
+ *fill*         0x00000000000054d8        0x8 
+ .text.nic_wol_virtues_remove
+                0x00000000000054e0       0xdf uspace/lib/libnic.so.0.0.p/nic_src_nic_wol_virtues.c.o
+                0x00000000000054e0                nic_wol_virtues_remove
+ *fill*         0x00000000000055bf        0x1 
+ .text.nic_wol_virtues_find
+                0x00000000000055c0       0x1a uspace/lib/libnic.so.0.0.p/nic_src_nic_wol_virtues.c.o
+                0x00000000000055c0                nic_wol_virtues_find
+ *fill*         0x00000000000055da        0x6 
+ .text.nic_wol_virtues_list
+                0x00000000000055e0      0x117 uspace/lib/libnic.so.0.0.p/nic_src_nic_wol_virtues.c.o
+                0x00000000000055e0                nic_wol_virtues_list
+ *fill*         0x00000000000056f7        0x9 
+ .text.nic_get_state_impl
+                0x0000000000005700       0x40 uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+                0x0000000000005700                nic_get_state_impl
+ .text.nic_set_state_impl
+                0x0000000000005740      0x1b6 uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+                0x0000000000005740                nic_set_state_impl
+ *fill*         0x00000000000058f6        0xa 
+ .text.nic_send_frame_impl
+                0x0000000000005900       0x66 uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+                0x0000000000005900                nic_send_frame_impl
+ *fill*         0x0000000000005966        0xa 
+ .text.nic_callback_create_impl
+                0x0000000000005970       0x4f uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+                0x0000000000005970                nic_callback_create_impl
+ *fill*         0x00000000000059bf        0x1 
+ .text.nic_get_address_impl
+                0x00000000000059c0       0x67 uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+                0x00000000000059c0                nic_get_address_impl
+ *fill*         0x0000000000005a27        0x9 
+ .text.nic_get_stats_impl
+                0x0000000000005a30      0x130 uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+                0x0000000000005a30                nic_get_stats_impl
+ .text.nic_unicast_get_mode_impl
+                0x0000000000005b60       0x67 uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+                0x0000000000005b60                nic_unicast_get_mode_impl
+ *fill*         0x0000000000005bc7        0x9 
+ .text.nic_unicast_set_mode_impl
+                0x0000000000005bd0      0x105 uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+                0x0000000000005bd0                nic_unicast_set_mode_impl
+ *fill*         0x0000000000005cd5        0xb 
+ .text.nic_multicast_get_mode_impl
+                0x0000000000005ce0       0x67 uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+                0x0000000000005ce0                nic_multicast_get_mode_impl
+ *fill*         0x0000000000005d47        0x9 
+ .text.nic_multicast_set_mode_impl
+                0x0000000000005d50       0xf2 uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+                0x0000000000005d50                nic_multicast_set_mode_impl
+ *fill*         0x0000000000005e42        0xe 
+ .text.nic_broadcast_get_mode_impl
+                0x0000000000005e50       0x4b uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+                0x0000000000005e50                nic_broadcast_get_mode_impl
+ *fill*         0x0000000000005e9b        0x5 
+ .text.nic_broadcast_set_mode_impl
+                0x0000000000005ea0       0x78 uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+                0x0000000000005ea0                nic_broadcast_set_mode_impl
+ *fill*         0x0000000000005f18        0x8 
+ .text.nic_blocked_sources_get_impl
+                0x0000000000005f20       0x5f uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+                0x0000000000005f20                nic_blocked_sources_get_impl
+ *fill*         0x0000000000005f7f        0x1 
+ .text.nic_blocked_sources_set_impl
+                0x0000000000005f80       0x66 uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+                0x0000000000005f80                nic_blocked_sources_set_impl
+ *fill*         0x0000000000005fe6        0xa 
+ .text.nic_vlan_get_mask_impl
+                0x0000000000005ff0       0x4d uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+                0x0000000000005ff0                nic_vlan_get_mask_impl
+ *fill*         0x000000000000603d        0x3 
+ .text.nic_vlan_set_mask_impl
+                0x0000000000006040       0x63 uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+                0x0000000000006040                nic_vlan_set_mask_impl
+ *fill*         0x00000000000060a3        0xd 
+ .text.nic_wol_virtue_add_impl
+                0x00000000000060b0      0x20d uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+                0x00000000000060b0                nic_wol_virtue_add_impl
+ *fill*         0x00000000000062bd        0x3 
+ .text.nic_wol_virtue_remove_impl
+                0x00000000000062c0       0xaf uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+                0x00000000000062c0                nic_wol_virtue_remove_impl
+ *fill*         0x000000000000636f        0x1 
+ .text.nic_wol_virtue_probe_impl
+                0x0000000000006370       0xc2 uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+                0x0000000000006370                nic_wol_virtue_probe_impl
+ *fill*         0x0000000000006432        0xe 
+ .text.nic_wol_virtue_list_impl
+                0x0000000000006440       0x67 uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+                0x0000000000006440                nic_wol_virtue_list_impl
+ *fill*         0x00000000000064a7        0x9 
+ .text.nic_wol_virtue_get_caps_impl
+                0x00000000000064b0       0x50 uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+                0x00000000000064b0                nic_wol_virtue_get_caps_impl
+ .text.nic_poll_get_mode_impl
+                0x0000000000006500       0x49 uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+                0x0000000000006500                nic_poll_get_mode_impl
+ *fill*         0x0000000000006549        0x7 
+ .text.nic_poll_set_mode_impl
+                0x0000000000006550      0x1a7 uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+                0x0000000000006550                nic_poll_set_mode_impl
+ *fill*         0x00000000000066f7        0x9 
+ .text.nic_poll_now_impl
+                0x0000000000006700       0x6f uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+                0x0000000000006700                nic_poll_now_impl
+ *fill*         0x000000000000676f        0x1 
+ .text.nic_default_handler_impl
+                0x0000000000006770       0x12 uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+                0x0000000000006770                nic_default_handler_impl
+ *fill*         0x0000000000006782        0xe 
+ .text.nic_open_impl
+                0x0000000000006790        0x8 uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+                0x0000000000006790                nic_open_impl
+ *fill*         0x0000000000006798        0x8 
+ .text.nic_close_impl
+                0x00000000000067a0        0x6 uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+                0x00000000000067a0                nic_close_impl
+ *(.gnu.warning)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x00000000000067a8      0x36c
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.nic_driver_init.str1.1
+                0x00000000000067a8       0x83 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                                          0xb (size before relaxing)
+ *fill*         0x000000000000682b        0x5 
+ .rodata.nic_set_wol_virtue_change_handlers.str1.8
+                0x0000000000006830      0x283 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                                         0x5a (size before relaxing)
+ .rodata.nic_frame_list_append.str1.8
+                0x0000000000006ab3       0x20 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+ .rodata.nic_report_address.str1.1
+                0x0000000000006ab3        0x9 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+ .rodata.nic_report_address.str1.8
+                0x0000000000006ab3       0x23 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+ .rodata.nic_query_unicast.str1.1
+                0x0000000000006ab3        0xd uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+ .rodata.nic_query_vlan_mask.str1.1
+                0x0000000000006ab3        0x5 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+ *fill*         0x0000000000006ab3        0x1 
+ .rodata.nic_report_send_error
+                0x0000000000006ab4       0x18 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+ .rodata.nic_report_receive_error
+                0x0000000000006acc       0x1c uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+ .rodata.nic_addr_db_init.str1.8
+                0x0000000000006ae8       0x2f uspace/lib/libnic.so.0.0.p/nic_src_nic_addr_db.c.o
+ .rodata.nic_addr_db_init.str1.1
+                0x0000000000006ae8        0x3 uspace/lib/libnic.so.0.0.p/nic_src_nic_addr_db.c.o
+ .rodata.nic_addr_db_insert.str1.1
+                0x0000000000006ae8        0xb uspace/lib/libnic.so.0.0.p/nic_src_nic_addr_db.c.o
+ .rodata.nic_rxc_blocked_sources_set.str1.8
+                0x0000000000006ae8       0x95 uspace/lib/libnic.so.0.0.p/nic_src_nic_rx_control.c.o
+ .rodata.nic_rxc_check.str1.1
+                0x0000000000006ae8       0x13 uspace/lib/libnic.so.0.0.p/nic_src_nic_rx_control.c.o
+ .rodata.cst8   0x0000000000006ae8        0x8 uspace/lib/libnic.so.0.0.p/nic_src_nic_rx_control.c.o
+ .rodata.nic_wol_virtues_verify
+                0x0000000000006af0       0x24 uspace/lib/libnic.so.0.0.p/nic_src_nic_wol_virtues.c.o
+ .rodata.nic_wol_virtues_remove.str1.8
+                0x0000000000006b14       0x59 uspace/lib/libnic.so.0.0.p/nic_src_nic_wol_virtues.c.o
+ .rodata.nic_wol_virtues_remove.str1.1
+                0x0000000000006b14        0xb uspace/lib/libnic.so.0.0.p/nic_src_nic_wol_virtues.c.o
+ .rodata.nic_get_address_impl.str1.8
+                0x0000000000006b14       0x2c uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+ .rodata.nic_get_address_impl.str1.1
+                0x0000000000006b14        0x8 uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+ .rodata.nic_get_stats_impl.str1.1
+                0x0000000000006b14        0xe uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+ .rodata.nic_unicast_set_mode_impl.str1.8
+                0x0000000000006b14       0x51 uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+ .rodata.nic_poll_set_mode_impl.str1.8
+                0x0000000000006b14       0x2b uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+ .rodata.nic_poll_set_mode_impl.str1.1
+                0x0000000000006b14       0x1b uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x0000000000006b14      0x3cc
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x0000000000006b14      0x3cc uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000006b14                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x0000000000006ee0     0x1238
+ *(.eh_frame)
+ .eh_frame      0x0000000000006ee0      0x6f8 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+ .eh_frame      0x00000000000075d8       0x28 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000000007600        0x0 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+ .eh_frame      0x0000000000007600       0x88 uspace/lib/libnic.so.0.0.p/nic_src_nic_ev.c.o
+                                         0xa0 (size before relaxing)
+ .eh_frame      0x0000000000007688      0x198 uspace/lib/libnic.so.0.0.p/nic_src_nic_addr_db.c.o
+                                        0x1b0 (size before relaxing)
+ .eh_frame      0x0000000000007820      0x2d0 uspace/lib/libnic.so.0.0.p/nic_src_nic_rx_control.c.o
+                                        0x2e8 (size before relaxing)
+ .eh_frame      0x0000000000007af0      0x198 uspace/lib/libnic.so.0.0.p/nic_src_nic_wol_virtues.c.o
+                                        0x1b0 (size before relaxing)
+ .eh_frame      0x0000000000007c88      0x490 uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+                                        0x4a8 (size before relaxing)
+ *(.eh_frame.*)
+
+.sframe         0x0000000000008118        0x0
+ *(.sframe)
+ .sframe        0x0000000000008118        0x0 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x0000000000009118                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array
+ *(.preinit_array)
+
+.init_array
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+
+.fini_array
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x0000000000009120       0x28
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ .data.rel.ro.local.set_ops
+                0x0000000000009120       0x28 uspace/lib/libnic.so.0.0.p/nic_src_nic_addr_db.c.o
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x0000000000009148        0x0 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+
+.dynamic        0x0000000000009148      0x160
+ *(.dynamic)
+ .dynamic       0x0000000000009148      0x160 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000009148                _DYNAMIC
+
+.got            0x00000000000092a8       0xe0
+ *(.got)
+ .got           0x00000000000092a8       0xe0 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+ *(.igot)
+                0x0000000000009388                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x0000000000009388      0x290
+ *(.got.plt)
+ .got.plt       0x0000000000009388      0x290 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000009388                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+
+.data
+ *(.data .data.* .gnu.linkonce.d.*)
+
+.data1
+ *(.data1)
+                [!provide]                        PROVIDE (_edata = .)
+                [!provide]                        PROVIDE (edata = .)
+                0x0000000000009618                . = .
+                [!provide]                        PROVIDE (__bss_start = .)
+
+.bss            0x0000000000009620       0x50
+ *(.dynbss)
+ .dynbss        0x0000000000009620        0x0 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss.nic_globals
+                0x0000000000009620       0x50 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                0x0000000000009620                nic_globals
+ *(COMMON)
+                0x0000000000009670                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x0000000000009670                . = ALIGN (0x8)
+                0x0000000000009670                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x000000000000b670        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x000000000000b670                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x000000000000b670                . = ALIGN (0x8)
+                [!provide]                        PROVIDE (_end = .)
+                [!provide]                        PROVIDE (end = .)
+                0x000000000000b670                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 uspace/lib/libnic.so.0.0.p/nic_src_nic_driver.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 uspace/lib/libnic.so.0.0.p/nic_src_nic_ev.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libnic.so.0.0.p/nic_src_nic_addr_db.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libnic.so.0.0.p/nic_src_nic_rx_control.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libnic.so.0.0.p/nic_src_nic_wol_virtues.c.o
+ .comment       0x0000000000000012       0x13 uspace/lib/libnic.so.0.0.p/nic_src_nic_impl.c.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(uspace/lib/libnic.so.0.0 elf64-x86-64)
