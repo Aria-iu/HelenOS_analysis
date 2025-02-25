@@ -1,7 +1,26 @@
----- elf_load Matches (6 in 3 files) ----
-elf_load.h (D:\code\helenos\kernel\generic\include\lib) line 40 : extern errno_t elf_load(elf_header_t *, as_t *);
-elf.c (D:\code\helenos\kernel\generic\src\lib) line 50 : #include <lib/elf_load.h>
-elf.c (D:\code\helenos\kernel\generic\src\lib) line 63 : errno_t elf_load(elf_header_t *header, as_t *as)
-program.c (D:\code\helenos\kernel\generic\src\proc) line 49 : #include <lib/elf_load.h>
-program_create_from_image in program.c (D:\code\helenos\kernel\generic\src\proc) : 	prg->loader_status = elf_load((elf_header_t *) image_addr, as);
-program_create_loader in program.c (D:\code\helenos\kernel\generic\src\proc) : 	prg->loader_status = elf_load((elf_header_t *) program_loader, as);
+---- context_restore_arch Matches (25 in 13 files) ----
+abs32le.c (D:\code\helenos\kernel\arch\abs32le\src) line 110 : void context_restore_arch(context_t *ctx)
+context.h (D:\code\helenos\kernel\arch\ia64\include\arch) line 45 :  * context_save_arch() and context_restore_arch() are both leaf procedures.
+context.h (D:\code\helenos\kernel\generic\include) line 51 : extern void context_restore_arch(context_t *ctx) __attribute__((noreturn));
+context_restore in context.h (D:\code\helenos\kernel\generic\include) : 	context_restore_arch(ctx);
+context_swap in context.h (D:\code\helenos\kernel\generic\include) : 		context_restore_arch(other);
+context.S (D:\code\helenos\kernel\arch\amd64\src) line 73 : # context_restore_arch ÔÚ AMD 64 ¼Ü¹¹ÏÂÊÇÖ±½ÓÊ¹ÓÃ»ã±àÓïÑÔÐ´µÄ ½«context_t ½á¹¹ÌåµÄ
+context.S (D:\code\helenos\kernel\arch\amd64\src) line 75 : FUNCTION_BEGIN(context_restore_arch)
+context.S (D:\code\helenos\kernel\arch\amd64\src) line 99 : FUNCTION_END(context_restore_arch)
+context.S (D:\code\helenos\kernel\arch\arm32\src) line 47 : FUNCTION_BEGIN(context_restore_arch)
+context.S (D:\code\helenos\kernel\arch\arm32\src) line 59 : FUNCTION_END(context_restore_arch)
+context.S (D:\code\helenos\kernel\arch\arm64\src) line 70 : FUNCTION_BEGIN(context_restore_arch)
+context.S (D:\code\helenos\kernel\arch\arm64\src) line 84 : FUNCTION_END(context_restore_arch)
+context.S (D:\code\helenos\kernel\arch\ia32\src) line 66 : FUNCTION_BEGIN(context_restore_arch)
+context.S (D:\code\helenos\kernel\arch\ia64\src) line 187 : FUNCTION_BEGIN(context_restore_arch)
+context.S (D:\code\helenos\kernel\arch\ia64\src) line 345 : FUNCTION_END(context_restore_arch)
+context.S (D:\code\helenos\kernel\arch\mips32\src) line 59 : FUNCTION_BEGIN(context_restore_arch)
+context.S (D:\code\helenos\kernel\arch\mips32\src) line 78 : FUNCTION_END(context_restore_arch)
+context.S (D:\code\helenos\kernel\arch\ppc32\src) line 69 : FUNCTION_BEGIN(context_restore_arch)
+context.S (D:\code\helenos\kernel\arch\ppc32\src) line 101 : FUNCTION_END(context_restore_arch)
+context.S (D:\code\helenos\kernel\arch\riscv64\src) line 58 : FUNCTION_BEGIN(context_restore_arch)
+context.S (D:\code\helenos\kernel\arch\riscv64\src) line 80 : FUNCTION_END(context_restore_arch)
+context.S (D:\code\helenos\kernel\arch\sparc64\src) line 70 : FUNCTION_BEGIN(context_restore_arch)
+context.S (D:\code\helenos\kernel\arch\sparc64\src) line 108 : 	xor %o0, %o0, %o0	! context_restore_arch returns 0
+context.S (D:\code\helenos\kernel\arch\sparc64\src) line 109 : FUNCTION_END(context_restore_arch)
+main_bsp_separated_stack in main.c (D:\code\helenos\kernel\generic\src\main) : 	// åˆ›å»ºä¸€ä¸ªæ–°çš„ä¸Šä¸‹æ–‡ï¼Œè°ƒç”¨ FUNCTION_BEGIN(context_restore_arch) è¿›å…¥ scheduler_runã€‚

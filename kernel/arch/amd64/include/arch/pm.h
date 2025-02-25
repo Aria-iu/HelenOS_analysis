@@ -97,6 +97,7 @@
 
 #ifndef __ASSEMBLER__
 
+// 8字节大小的GDT描述符
 typedef struct {
 	unsigned limit_0_15 : 16;
 	unsigned base_0_15 : 16;
