@@ -40,8 +40,8 @@
 
 #define STACK_FRAMES  2
 // #define FRAMES2SIZE(frames)  ((frames) << FRAME_WIDTH)
-// #define FRAME_WIDTH  12  /* 4K */
-// 8KµÄÕ»´óÐ¡¡£
+// #define FRAME_WIDTH  12  /* 4K */ 0b10 << 12 = 10 0000 0000 0000 = 0x2000
+// 8Kï¿½ï¿½Õ»ï¿½ï¿½Ð¡ï¿½ï¿½
 #define STACK_SIZE    FRAMES2SIZE(STACK_FRAMES)
 
 #define STACK_SIZE_USER  (1 * 1024 * 1024)
@@ -58,7 +58,7 @@
 #include <typedefs.h>
 
 typedef struct {
-	// uintptr_t 4×Ö½Ú¡£
+	// uintptr_t 4ï¿½Ö½Ú¡ï¿½
 	uintptr_t paddr;
 	size_t size;
 	char name[CONFIG_TASK_NAME_BUFLEN];

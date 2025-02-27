@@ -161,6 +161,8 @@ SYMBOL(multiboot2_image_start)
 	/*
 	 * Simics seems to remove hidden part of GS on entering user mode
 	 * when _visible_ part of GS does not point to user-mode segment.
+	 * Simics（一种模拟器）在从内核模式进入用户模式时，可能会清除%gs寄存器的隐藏部分（即段描述符的高16位）。
+	 * 为了避免这种情况，需要在进入用户模式之前，将用户数据段的选择器加载到%fs和%gs寄存器中。
 	 */
 	// 计算用户数据段的选择器
 	// 将 %cx 寄存器中的值（用户数据段的选择器）移动到 %fs 寄存器中，设置 fs 段为用户数据段。
@@ -307,7 +309,11 @@ pm_error_halt:
 		jmp hlt1
 
 .code64
-
+/*
+ *  现在我们到了这里，64位模式下段寄存器只有 fs和 gs起作用。
+ *  fs = $GDT_SELECTOR(UDATA_DES)
+ *  gs = $GDT_SELECTOR(UDATA_DES)
+ */
 start64:
 
 	/*
@@ -324,7 +330,7 @@ start64:
 	 *  |					|
 	 *  |		0			|	--------->  0xffffffff80107bf8 (rsp , rbp)
 	 *  |					|	--------->  0xffffffff80107c00
-	 *  |-------------------	--------->  0xffffffff80108000
+	 *  |-------------------|	--------->  0xffffffff80108000
 	 */
 	pushq $0
 	movq %rsp, %rbp

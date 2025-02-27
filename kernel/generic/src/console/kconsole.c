@@ -82,12 +82,16 @@
  * lower address must be locked first.
  */
 
+// 用来保护 cmd_list 结构的自旋锁
 SPINLOCK_INITIALIZE(cmd_lock);  /**< Lock protecting command list. */
+// 初始化 cmd_list
 LIST_INITIALIZE(cmd_list);      /**< Command list. */
 
 #define MAX_SYMBOL_NAME 64
 
-static char32_t history[KCONSOLE_HISTORY][MAX_CMDLINE] = { };
+// kconsole 记录，最多记录10条。
+static char32_t history[KCONSOLE_HISTORY][MAX_CMDLINE] = { };	// char32_t [10][256]
+// 指向 kconsole 的位置。
 static size_t history_pos = 0;
 
 /** Initialize kconsole data structures
@@ -122,6 +126,7 @@ bool cmd_register(cmd_info_t *cmd)
 	list_foreach(cmd_list, link, cmd_info_t, hlp) {
 		if (hlp == cmd) {
 			/* The command is already there. */
+            //
 			spinlock_unlock(&cmd_lock);
 			return false;
 		}
@@ -150,6 +155,7 @@ bool cmd_register(cmd_info_t *cmd)
 	/*
 	 * Now the command can be added.
 	 */
+    // 将 cmd 加入 cmd_list
 	list_append(&cmd->link, &cmd_list);
 
 	spinlock_unlock(&cmd_lock);

@@ -35,7 +35,7 @@
 #include <print.h>
 #include <stdarg.h>
 
-// ÕâÀïÊµÏÖÁËÌåÏµ½á¹¹ÎŞ¹ØµÄprintf£¬¾ßÌåµÄÊä³öÔÚ¸÷¸ö¼Ü¹¹µÄputucharµÄ¾ßÌåÊµÏÖ¡£
+// è¿™é‡Œå®ç°äº†ä½“ç³»ç»“æ„æ— å…³çš„printfï¼Œå…·ä½“çš„è¾“å‡ºåœ¨å„ä¸ªæ¶æ„çš„putucharçš„å…·ä½“å®ç°ã€‚
 int printf(const char *fmt, ...)
 {
 	int ret;

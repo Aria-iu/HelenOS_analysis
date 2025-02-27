@@ -59,6 +59,10 @@
 			|
 			|
 			grow down
+* 0x2000 - 1 = 0x1FFF
+* ~0x1fff = 0xffff ffff ffff e000
+* &0xffff ffff ffff e000 清零后面13位。
+* 栈是 0x2000对齐的，这里是找出当前栈的顶部（最低地址）。
 */
 #define CURRENT \
 	((current_t *) (((uintptr_t) __builtin_frame_address(0)) & \

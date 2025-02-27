@@ -207,7 +207,7 @@ void main_bsp_separated_stack(void)
 {
 	/* Keep this the first thing. */
 	// 将当前栈的基地址处作为CURRENT的起始地址，方便直接使用CURRENT得到当前的current_t结构。
-	current_initialize(CURRENT);
+	current_initialize(CURRENT);		// 按照map中的rsp值，这里对齐之后应该是bootstrap_stack的地址0xffffffff80180000
 	// 这里使用了printf！！！
 	version_print();
 	// 最终调用dummy_printf
@@ -221,9 +221,7 @@ void main_bsp_separated_stack(void)
 	 * because other subsystems will register their respective
 	 * commands.
 	 */
-	/*
-	* 内核控制台初始化。
-	*/
+    // 将一些命令 kconsole command 注册到 cmd_list 中。
 	kconsole_init();
 #endif
 
@@ -232,8 +230,7 @@ void main_bsp_separated_stack(void)
 	 * starts adding its own handlers
 	 */
 	/*
-	* 异常处理机制 init。
-	* 
+	* 异常处理函数初始化，这是在各个架构加入自己的处理函数之前的初始化。
 	*/
 	exc_init();
 

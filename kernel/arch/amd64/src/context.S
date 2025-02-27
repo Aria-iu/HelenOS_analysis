@@ -83,18 +83,22 @@ FUNCTION_BEGIN(context_restore_arch)
 	movq CONTEXT_OFFSET_SP(%rdi), %rsp
 
 	movq CONTEXT_OFFSET_PC(%rdi), %rdx
+	# 将context里面的pc值存储到rsp指向的位置，相当于push了一个值。
 	movq %rdx, (%rsp)
-
+    # 将context中的tp的值加载到rcx
 	movq CONTEXT_OFFSET_TP(%rdi), %rcx
 #ifdef MEMORY_MODEL_large
 	movabsq $vreg_ptr, %rsi
 	movq (%rsi), %rsi
 #else
+    # 将 vreg_ptr 的地址加载到 %rsi
 	movq vreg_ptr, %rsi
 #endif
+    # 将context中的tp的值（rcx中），加载到vreg_ptr地址中。
 	movq %rcx, %fs:VREG_TP(%rsi)
 
 	xorl %eax, %eax       # context_restore returns 0
+	# ret指令从栈中取出上次放入的rdx的值，也就是context中的pc值。
 	ret
 FUNCTION_END(context_restore_arch)
 

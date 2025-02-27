@@ -61,7 +61,7 @@
 #define KIO_LENGTH   (KIO_PAGES * PAGE_SIZE / sizeof(char32_t))
 
 /** Kernel log cyclic buffer */
-// ÄÚºË io »·ĞÎ»º³åÇø¡£¡£´óĞ¡Îª8¸öÒ³
+// å†…æ ¸ io ç¯å½¢ç¼“å†²åŒºã€‚ã€‚å¤§å°ä¸º8ä¸ªé¡µ
 char32_t kio[KIO_LENGTH] __attribute__((aligned(PAGE_SIZE)));
 
 /** Kernel log initialized */
@@ -83,7 +83,7 @@ static size_t kio_uspace = 0;
 SPINLOCK_INITIALIZE_NAME(kio_lock, "kio_lock");
 
 /** Physical memory area used for kio buffer */
-// Á¬ĞøÎïÀíÄÚ´æ£¬ÓÃÓÚÄÚºËio¡£
+// è¿ç»­ç‰©ç†å†…å­˜ï¼Œç”¨äºå†…æ ¸ioã€‚
 static parea_t kio_parea;
 
 static indev_t stdin_sink;
@@ -190,27 +190,27 @@ static void stdout_scroll_down(outdev_t *dev)
  */
 void kio_init(void)
 {
-	// ÕÒµ½kernel io bufferµÄÎïÀíµØÖ·¡£
+	// æ‰¾åˆ°kernel io bufferçš„ç‰©ç†åœ°å€ã€‚
 	void *faddr = (void *) KA2PA(kio);
 	
-	// ¶ÔÆë¼ì²é
+	// å¯¹é½æ£€æŸ¥
 	assert((uintptr_t) faddr % FRAME_SIZE == 0);
 
 	// Initialize physical area structure.
 	ddi_parea_init(&kio_parea);
-	// ÉèÖÃkio_pareaµÄÎïÀí»ùµØÖ·¡¢Ò³ÊıºÍÆäËû×Ö¶Î¡£
+	// è®¾ç½®kio_pareaçš„ç‰©ç†åŸºåœ°å€ã€é¡µæ•°å’Œå…¶ä»–å­—æ®µã€‚
 	kio_parea.pbase = (uintptr_t) faddr;
 	kio_parea.frames = SIZE2FRAMES(sizeof(kio));
 	kio_parea.unpriv = false;
 	kio_parea.mapped = false;
-	// ×¢²áÕâ¸öparea¡£
+	// æ³¨å†Œè¿™ä¸ªpareaã€‚
 	ddi_parea_register(&kio_parea);
 
-	// ÉèÖÃÏµÍ³ĞÅÏ¢¡£
+	// è®¾ç½®ç³»ç»Ÿä¿¡æ¯ã€‚
 	sysinfo_set_item_val("kio.faddr", NULL, (sysarg_t) faddr);
 	sysinfo_set_item_val("kio.pages", NULL, KIO_PAGES);
 
-	// ÉèÖÃ EVENT_KIO µÄÊÂ¼ş£¬Èç¹û²»±»ÆÁ±Î£¬µ÷ÓÃ kio_update
+	// è®¾ç½® EVENT_KIO çš„äº‹ä»¶ï¼Œå¦‚æœä¸è¢«å±è”½ï¼Œè°ƒç”¨ kio_update
 	event_set_unmask_callback(EVENT_KIO, kio_update);
 	atomic_store(&kio_inited, true);
 }
@@ -317,11 +317,11 @@ void kio_push_char(const char32_t ch)
 		kio_uspace++;
 }
 
-// Attention plz£¡£¡£¡
-// ÕâÀïÊÇAMD64¼Ü¹¹´òÓ¡Ò»¸öucharµÄ¾ßÌåÊµÏÖ¡£
-// Ò»¸öÕæÊµµÄ´®¿ÚÉè±¸£¨ÀıÈçns16550£©ĞèÒªÇı¶¯À´ÊµÏÖËüµÄ outdev_operations_t *op;
-// È»ºó×¢²áµ½ stdout £¬¸Õ¿ªÊ¼ Êä³öĞÅÏ¢»á´æ´¢µ½Ò»¸ö»º´æÖĞ (kio_flush()ÖĞÈç¹ûstdoutÃ»ÓĞ³õÊ¼»¯£¬¾ÍÍË³ö)
-// µ±´®¿Ú±»³õÊ¼»¯Ö®ºó£¬µ÷ÓÃÊä³ö£¬¾Í»á°ÑËùÓĞĞÅÏ¢¶¼Í¨¹ı op -> writeÀ´Êä³ö¡£
+// Attention plzï¼ï¼ï¼
+// è¿™é‡Œæ˜¯AMD64æ¶æ„æ‰“å°ä¸€ä¸ªucharçš„å…·ä½“å®ç°ã€‚
+// ä¸€ä¸ªçœŸå®çš„ä¸²å£è®¾å¤‡ï¼ˆä¾‹å¦‚ns16550ï¼‰éœ€è¦é©±åŠ¨æ¥å®ç°å®ƒçš„ outdev_operations_t *op;
+// ç„¶åæ³¨å†Œåˆ° stdout ï¼Œåˆšå¼€å§‹ è¾“å‡ºä¿¡æ¯ä¼šå­˜å‚¨åˆ°ä¸€ä¸ªç¼“å­˜ä¸­ (kio_flush()ä¸­å¦‚æœstdoutæ²¡æœ‰åˆå§‹åŒ–ï¼Œå°±é€€å‡º)
+// å½“ä¸²å£è¢«åˆå§‹åŒ–ä¹‹åï¼Œè°ƒç”¨è¾“å‡ºï¼Œå°±ä¼šæŠŠæ‰€æœ‰ä¿¡æ¯éƒ½é€šè¿‡ op -> writeæ¥è¾“å‡ºã€‚
 void putuchar(const char32_t ch)
 {
 	bool ordy = ((stdout) && (stdout->op->write));
@@ -344,6 +344,7 @@ void putuchar(const char32_t ch)
 		 * Note that the early_putuchar() function might be
 		 * a no-op on certain hardware configurations.
 		 */
+        // åœ¨stdoutæ²¡æœ‰åˆå§‹åŒ–çš„æƒ…å†µä¸‹ï¼Œæ—©æœŸè¾“å‡ºåœ¨AMDæ¶æ„ä¸Šä½¿ç”¨çš„æ˜¯vgaã€‚
 		early_putuchar(ch);
 	}
 
