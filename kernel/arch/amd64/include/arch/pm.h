@@ -40,6 +40,7 @@
 #include <arch/context.h>
 #endif
 
+// 这里定义IDT表项数是64 GDT是8
 #define IDT_ITEMS  64
 #define GDT_ITEMS  8
 

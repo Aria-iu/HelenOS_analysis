@@ -230,7 +230,7 @@ void main_bsp_separated_stack(void)
 	 * starts adding its own handlers
 	 */
 	/*
-	* 异常处理函数初始化，这是在各个架构加入自己的处理函数之前的初始化。
+	* 异常（中断）处理函数初始化，这是在各个架构加入自己的处理函数之前的初始化。
 	*/
 	exc_init();
 

@@ -135,7 +135,7 @@ _NO_TRACE void exc_dispatch(unsigned int n, istate_t *istate)
 	if (THREAD)
 		THREAD->udebug.uspace_state = istate;
 #endif
-
+	// 不论 int 几 指令，异常处理流程都会在 exc_table 定义的 handler 里面
 	exc_table[n].handler(n + IVT_FIRST, istate);
 
 #ifdef CONFIG_UDEBUG
@@ -349,7 +349,7 @@ void exc_init(void)
 	// AMD64架构 IVT_ITEMS = 64.
 #if (IVT_ITEMS > 0)
 	unsigned int i;
-	// 将每个中断向量表项注册为未定义异常处理函数exc_undef。
+	// 将每个中断向量表项注册为未定义异常处理函数exc_undef。其中0-31是exc，后面是int
 	for (i = 0; i < IVT_ITEMS; i++)
 		exc_register(i, "undef", false, (iroutine_t) exc_undef);
 #endif
