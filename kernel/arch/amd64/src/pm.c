@@ -144,6 +144,7 @@ ptr_16_64_t idtr = {
 	.base = (uint64_t) idt
 };
 
+// bsp 的 tss
 static tss_t tss;
 tss_t *tss_p = NULL;
 
@@ -284,11 +285,13 @@ void pm_init(void)
 
 	if (config.cpu_active == 1) {
 		// 当前 CPU是bootstrap CPU。
+        // bsp来注册 idt的所有条目，所有cpu使用一个idt即可。
 		idt_init();
 		/*
 		 * NOTE: bootstrap CPU has statically allocated TSS, because
 		 * the heap hasn't been initialized so far.
 		 */
+        // 若是bsp，不需要再创建新的 tss
 		tss_p = &tss;
 	} else {
 		/*

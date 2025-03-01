@@ -208,6 +208,10 @@ SYMBOL(int_\i)
 	/*
 	 * Switch to kernel FS base.
 	 */
+	movl $AMD_MSR_FS, %ecx
+    rdmsr
+    movq %rax, ISTATE_OFFSET_SS(%rsp)
+
 	swapgs
 	movl $AMD_MSR_FS, %ecx
 	movl %gs:KSEG_OFFSET_FSBASE, %eax
@@ -239,6 +243,15 @@ SYMBOL(int_\i)
 	 * Restore all scratch registers and the preserved registers we have
 	 * clobbered in this handler (i.e. RBP).
 	 */
+	movq ISTATE_OFFSET_SS(%rsp), %rdx
+	movq %rdx,%rax
+	shrq $32,%rax
+	movl %eax,%eax
+	movl $AMD_MSR_FS, %ecx
+    movl %gs:KSEG_OFFSET_FSBASE, %eax
+    movl %gs:KSEG_OFFSET_FSBASE+4, %edx
+    wrmsr
+
 	movq ISTATE_OFFSET_RAX(%rsp), %rax
 	movq ISTATE_OFFSET_RCX(%rsp), %rcx
 	movq ISTATE_OFFSET_RDX(%rsp), %rdx
@@ -249,6 +262,7 @@ SYMBOL(int_\i)
 	movq ISTATE_OFFSET_R9(%rsp), %r9
 	movq ISTATE_OFFSET_R10(%rsp), %r10
 	movq ISTATE_OFFSET_R11(%rsp), %r11
+
 
 	/* $8 = Skip error word */
 	addq $(ISTATE_SOFT_SIZE + 8), %rsp
