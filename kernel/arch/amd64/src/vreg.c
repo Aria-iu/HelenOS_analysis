@@ -56,7 +56,7 @@ uint64_t *vreg_ptr = &vreg_tp_dummy;
  */
 /*
 * 为每一个CPU的虚拟寄存器分配一页内存。通过当前的FS寄存器访问page。
-* 虚拟寄存器。。。
+*
 */
 void vreg_init(void)
 {

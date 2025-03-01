@@ -126,6 +126,7 @@ static tss_t tss0;
 tss_t *tss_p = NULL;
 
 /* gdtr is changed by kmp before next CPU is initialized */
+// 重要。。。
 ptr_16_32_t gdtr = {
 	.limit = sizeof(gdt),
 	.base = (uintptr_t) gdt

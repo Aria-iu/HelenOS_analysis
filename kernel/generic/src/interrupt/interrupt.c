@@ -164,7 +164,7 @@ _NO_TRACE void exc_dispatch(unsigned int n, istate_t *istate)
 }
 
 /** Default 'null' exception handler
- *
+ *	默认的异常处理。
  */
 _NO_TRACE static void exc_undef(unsigned int n, istate_t *istate)
 {

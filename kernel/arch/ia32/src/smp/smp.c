@@ -191,6 +191,8 @@ void kmp(void *arg __attribute__((unused)))
 		memsetb(&gdt_new[TSS_DES], sizeof(descriptor_t), 0);
 		protected_ap_gdtr.limit = GDT_ITEMS * sizeof(descriptor_t);
 		protected_ap_gdtr.base = KA2PA((uintptr_t) gdt_new);
+        // 这里将gdtr变量的base改为 gdt_new 但是没有load gdtr。
+        // 这样 ap在访问 gdtr变量时候访问的就是新的gdtr而不是原来的gdtr。
 		gdtr.base = (uintptr_t) gdt_new;
 
 		// 发送INIT IPI
