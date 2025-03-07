@@ -239,6 +239,7 @@ void main_bsp_separated_stack(void)
 	 * 内存管理子系统初始化
 	 */
 	// 这个宏在AMD64架构下调用 amd64_pre_mm_init
+        // 在这里调用了 pm_init() interrupt_init() bios_init() i8259_init()
 	ARCH_OP(pre_mm_init);
 	// 将内核的内存进行直接映射。
 	km_identity_init();

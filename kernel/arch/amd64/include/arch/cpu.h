@@ -70,7 +70,19 @@
 
 /* MSR registers */
 #define AMD_MSR_APIC_BASE	0x0000001b
+// Extended Feature Enable Register
+/* 这个寄存器包含一些控制位，控制一些旧的控制寄存器不能控制的新加的处理器特性。
+* */
 #define AMD_MSR_EFER		0xc0000080
+/*
+* 	STAR LSTAR CSTAR 用来specify the target address of a SYSCALL instruction as well as the CS and
+* 	SS selectors of the called and returned procedures
+*
+* 	The SFMASK register is used to specify which RFLAGS bits are cleared during a
+* 	SYSCALL. In long mode, SFMASK is used to specify which RFLAGS bits are cleared when
+* 	SYSCALL is executed. If a bit in SFMASK is set to 1, the corresponding bit in RFLAGS is cleared
+* 	to 0. If a bit in SFMASK is cleared to 0, the corresponding RFLAGS bit is not modified.
+ * */
 #define AMD_MSR_STAR		0xc0000081
 #define AMD_MSR_LSTAR		0xc0000082
 #define AMD_MSR_SFMASK		0xc0000084
