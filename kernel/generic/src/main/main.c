@@ -244,7 +244,7 @@ void main_bsp_separated_stack(void)
 	km_identity_init();
 	// 物理页帧初始化。。
 	frame_init();
-	// zones_print_list();
+
 	// slab 分配器初始化。
 	slab_cache_init();
 	// 初始化malloc分配器。malloc依赖slab分配器来分配内存。
@@ -352,7 +352,8 @@ void main_bsp_separated_stack(void)
 	task_t *kernel = task_create(AS_KERNEL, "kernel");
 	if (!kernel)
 		panic("Cannot create kernel task.");
-
+	// 这里的打印在截图中。
+    // zones_print_list();
 	/*
 	 * Create the first thread.
 	 */

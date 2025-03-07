@@ -674,8 +674,8 @@ _NO_TRACE static void zone_construct(zone_t *zone, pfn_t start, size_t count,
 		/*
 		 * Initialize the array of frame_t structures.
 		 */
-		// ï¿½É¼ï¿½ï¿½ï¿½ï¿½ï½«confdataï¿½ï¿½Îªï¿½æ´¢Ò³ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ÄµØ·ï¿½
-		// ï¿½ï¿½Ò»ï¿½ï¿½zoneï¿½ï¿½framesï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò³Ö¡ï¿½ï¿½
+		// „1¤70¯9„1¤7„1¤7„1¤7„1¤7„1–7confdata„1¤7„1¤70Ë2„1¤7›¥0Ü7„1¤7„1¤7„1¤7„1¤70Î4„1¤7071…5„1¤7
+		// „1¤7„1¤70Ý5„1¤7„1¤7zone„1¤7„1¤7frames„1¤7„1¤7„1¤7„1¤70ö8„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤70Ü70ô5„1¤7„1¤7
 		zone->frames = (frame_t *) confdata;
 
 		for (size_t i = 0; i < count; i++)
@@ -693,7 +693,7 @@ _NO_TRACE static void zone_construct(zone_t *zone, pfn_t start, size_t count,
  * @return Size of zone configuration info (in bytes).
  *
  */
-// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½zoneï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢Õ¼ï¿½Ãµï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½
+// „1¤7„1¤7„1¤7„1¤70Ý5„1¤7„1¤7zone„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤70Î40ð8„1¤70‹1„1¤7„1¤70÷3„1¤7„1¤7„1¤7„1¤7„1¤7
 size_t zone_conf_size(size_t count)
 {
 	return (count * sizeof(frame_t) + bitmap_size(count));
@@ -722,11 +722,13 @@ pfn_t zone_external_conf_alloc(size_t count)
  *                  modified not to include it.
  *
  * @return Zone number or -1 on error.
- *
+ * confframe ÅäÖÃÖ¡ºÅ£¬ÓÃÓÚ´æ´¢ÇøÓòµÄÅäÖÃÊý¾Ý¡£Èç¹ûÎª 0£¬Ôò±íÊ¾Ã»ÓÐÅäÖÃÊý¾Ý¡£
  */
 size_t zone_create(pfn_t start, size_t count, pfn_t confframe,
     zone_flags_t flags)
 {
+  /** ZYC test here!!! */
+  // printf("Zone Created !! start is %d , count is %d , confframe is %d , flags is %d\n",start,count,confframe,flags);
 	irq_spinlock_lock(&zones.lock, true);
 
 	if (flags & ZONE_AVAILABLE) {  /* Create available zone */
@@ -768,34 +770,34 @@ size_t zone_create(pfn_t start, size_t count, pfn_t confframe,
 				}
 
 				if (overlap)
-					// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë£ï¿½ï¿½ï¿½Ò»Ö±ï¿½Ò¡ï¿½
+					// „1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤70¹7„1¤7„1¤7„1¤70Ý50ö1„1¤70Ú9„1¤7
 					continue;
 
 				break;
 			}
 
-			// ï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Úºï¿½panicï¿½ï¿½
+			// „1¤7„1¤7„1¤7„1¤70Ü6„1¤7„1¤7„1¤7„1¤7„1¤7„1¤71’6„1¤7panic„1¤7„1¤7
 			if (confframe >= start + count)
 				panic("Cannot find configuration data for zone.");
 		}
 
-		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Âµï¿½zoneï¿½ï¿½ï¿½ï¿½ï¿½ëµ½zonesï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ó£¬·ï¿½ï¿½ï¿½znumï¿½Â±ê¡£
+		// „1¤7„1¤7„1¤7„1¤70Ý5„1¤7„1¤7„1¤70…8„1¤7zone„1¤7„1¤7„1¤7„1¤7„1¤7ƒ1—2zones„1¤7„1¤7„1¤7„1¤7„1¤7§µ„1¤7„1¤7„1¤7„1¤7„1¤7Ô8™7„1¤7„1¤7„1¤7znum„1¤7¡À‚6ñ0
 		size_t znum = zones_insert_zone(start, count, flags);
 		if (znum == (size_t) -1) {
 			irq_spinlock_unlock(&zones.lock, true);
 			return (size_t) -1;
 		}
 
-		// confdataÖ¸ï¿½ï¿½ï¿½ï¿½ï¿½zoneï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¡ï¿½ï¿½ï¿½ÚºËµï¿½Ö·ï¿½ï¿½
+		// confdata0ö8„1¤7„1¤7„1¤7„1¤7„1¤7zone„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤70ô5„1¤7„1¤7„1¤71’60»5„1¤70ö7„1¤7„1¤7
 		void *confdata = (void *) PA2KA(PFN2ADDR(confframe));
 		// Create new frame zone.
-		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½zoneï¿½á¹¹ï¿½å£¬ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// „1¤7„1¤7„1¤7„1¤70Ý5„1¤7„1¤7„1¤7„1¤7„1¤7zone„1¤75ú5„1¤7ÈÉ„1¤7„1¤70¶3„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7
 		zone_construct(&zones.info[znum], start, count, flags, confdata);
 
 		/* If confdata in zone, mark as unavailable */
-		// å¦‚æžœconfframeåœ¨startåˆ°start+countä¹‹é—´ï¼Œè¯´æ˜Žconfdataéœ€è¦å ç”¨ä¸€äº›å¸§ï¼Œ
-		// æ•°é‡æ˜¯ confcountã€‚
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¡ï¿½ï¿½zoneï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½Ã¡ï¿½
+		// Èç¹ûconfframeÔÚstartµ½start+countÖ®¼ä£¬ËµÃ÷confdataÐèÒªÕ¼ÓÃÒ»Ð©Ö¡£¬
+		// ÊýÁ¿ÊÇ confcount¡£
+		// „1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤70ô5„1¤7„1¤7zone„1¤7§µ„1¤7„1¤7„1¤7„1¤7„1¤7„1¤70Ë2„1¤7„1¤7„1¤7„1¤7„1¤7¨¢„1¤7
 		if ((confframe >= start) && (confframe < start + count)) {
 			for (size_t i = confframe; i < confframe + confcount; i++)
 				zone_mark_unavailable(&zones.info[znum],
@@ -814,8 +816,8 @@ size_t zone_create(pfn_t start, size_t count, pfn_t confframe,
 		return (size_t) -1;
 	}
 	
-	// ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½ï¿½Ú´æ²¿ï¿½Ö£ï¿½Ö±ï¿½ï¿½ï¿½ï¿½zonesï¿½Ð¼ï¿½ï¿½ï¿½Ò»ï¿½ï¿½zone_tï¿½ï¿½ï¿½ï¿½ï¿½Í¿ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¡ï¿½ï¿½ï¿½æ´¢ï¿½ï¿½Ï¢ï¿½ï¿½
-	// ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½NULLï¿½ï¿½
+	// „1¤7„1¤7„1¤7„1¤7„1¤70‹1„1¤7„1¤71’0ÑØ„1¤70ô7„1¤70ö1„1¤7„1¤7„1¤7„1¤7zones„1¤7§Þ„1¤7„1¤7„1¤70Ý5„1¤7„1¤7zone_t„1¤7„1¤7„1¤7„1¤7„1¤70É3„1¤7„1¤70ç9„1¤7„1¤7„1¤7„1¤7„1¤70Û8„1¤7„1¤70Ý5„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤70ô5„1¤7„1¤7„1¤7›¥„1¤7„1¤70Î4„1¤7„1¤7
+	// „1¤7„1¤7„1¤70Ý5„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7NULL„1¤7„1¤7
 	zone_construct(&zones.info[znum], start, count, flags, NULL);
 
 	irq_spinlock_unlock(&zones.lock, true);
@@ -901,7 +903,7 @@ loop:
 	irq_spinlock_lock(&zones.lock, true);
 
 	// TODO: Print diagnostic if neither is explicitly specified.
-	// è¿™é‡Œlowmemæ˜¯ç”¨æ¥åˆ¤æ–­æ˜¯è¦ä»Žä½Žç«¯å†…å­˜åˆ†é…frameè¿˜æ˜¯é«˜ç«¯å†…å­˜åˆ†é…frameã€‚
+	// ÕâÀïlowmemÊÇÓÃÀ´ÅÐ¶ÏÊÇÒª´ÓµÍ¶ËÄÚ´æ·ÖÅäframe»¹ÊÇ¸ß¶ËÄÚ´æ·ÖÅäframe¡£
 	bool lowmem = (flags & FRAME_LOWMEM) || !(flags & FRAME_HIGHMEM);
 
 	/*
@@ -1129,22 +1131,22 @@ void frame_init(void)
 	}
 
 	/* Tell the architecture to create some memory */
-	// AMD64ï¿½Ü¹ï¿½Êµï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½ ia32 ï¿½ï¿½ frame_low_arch_initï¿½ï¿½
 	frame_low_arch_init();
 
 	// ADDR2PFN(addr)   --->  ((addr) >> 12)  // 4K
 	// SIZE2FRAMES(size)--->  (((size) == 0) ? 0 : ((((size) - 1) >> 12) + 1))
 	if (config.cpu_active == 1) {
-		// ï¿½ï¿½ï¿½Úºï¿½Õ¼ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½Ö¡ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ½«bspÄÚºËÕ¼ÓÃµÄÄÚ´æÉèÖÃÎª²»¿ÉÓÃ
+        // 0x108000 - 0x108000 + 0xA3000
 		frame_mark_unavailable(ADDR2PFN(KA2PA(config.base)),
 		    SIZE2FRAMES(config.kernel_size));
 
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½init.tasksï¿½ï¿½ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½Ã¡ï¿½
+		// „1¤7„1¤7„1¤7„1¤7„1¤7„1¤70¶3„1¤7„1¤70µ2„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7§Ò„1¤7init.tasks„1¤7„1¤7„1¤7„1¤70‹7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤71’0„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤70Ë2„1¤7„1¤7„1¤7„1¤7„1¤7¨¢„1¤7
 		for (size_t i = 0; i < init.cnt; i++)
 			frame_mark_unavailable(ADDR2PFN(init.tasks[i].paddr),
 			    SIZE2FRAMES(init.tasks[i].size));
 
-		// ï¿½ï¿½ï¿½ï¿½ Boot allocations. ï¿½ï¿½ï¿½Ö£ï¿½ï¿½â²¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½Ã¡ï¿½
+		// „1¤7„1¤7„1¤7„1¤7 Boot allocations. „1¤7„1¤7„1¤70ô7„1¤7„1¤78Ð9„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤71’0„1¤7„1¤7„1¤70Ë2„1¤7„1¤7„1¤7„1¤7„1¤7¨¢„1¤7
 		if (ballocs.size)
 			frame_mark_unavailable(ADDR2PFN(KA2PA(ballocs.base)),
 			    SIZE2FRAMES(ballocs.size));
@@ -1153,8 +1155,6 @@ void frame_init(void)
 		 * Blacklist first frame, as allocating NULL would
 		 * fail in some places
 		 */
-		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¡ï¿½ï¿½Ò³ï¿½ï¿½ï¿½Îª0ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½Ã¡ï¿½
-		// ï¿½ï¿½ï¿½ï¿½Îªï¿½Ë±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ë£¨NULLï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½Ä³Ð©ï¿½Ø·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Ü»áµ¼ï¿½Â´ï¿½ï¿½ï¿½
 		frame_mark_unavailable(0, 1);
 	}
 
@@ -1177,8 +1177,7 @@ void frame_init(void)
  */
 bool frame_adjust_zone_bounds(bool low, uintptr_t *basep, size_t *sizep)
 {
-	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½limitï¿½ï¿½ï¿½ÖµÍ¶ï¿½ï¿½Ú´ï¿½Í¸ß¶ï¿½ï¿½Ú´ï¿½
-	// limit = 0x80000000ï¿½ï¿½2GBï¿½ï¿½
+	// limit = 0x80000000
 	uintptr_t limit = KA2PA(config.identity_base) + config.identity_size;
 
 	if (low) {

@@ -78,7 +78,7 @@ void cpu_setup_fpu(void)
 	// 设置该位表示CPU支持懒惰上下文切换（lazy context switch）。
 	write_cr0((read_cr0() & ~CR0_EM) | CR0_MP);
 	// 设置CR4_OSFXSR位，表示“操作系统支持FXSAVE和FXRSTOR指令”。
-	// 这些指令用于保存和恢复FPU的状态，包括浮点寄存器、SIMD寄存器等。F
+	// 这些指令用于保存和恢复FPU的状态，包括浮点寄存器、SIMD寄存器等。
 	write_cr4(read_cr4() | CR4_OSFXSR);
 }
 

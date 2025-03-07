@@ -47,6 +47,11 @@
 
 #define PHYSMEM_LIMIT32  UINT64_C(0x100000000)
 
+/*
+* e820 是 x86 架构中用来描述物理内存布局的标准，
+* 它把内存划分为多个块，每个块有基地址、大小和类型。
+* 代码的任务就是遍历这些内存块，根据类型将它们划分到不同的内存区域中。
+ * */
 static void init_e820_memory(pfn_t minconf, bool low)
 {
 	unsigned int i;
@@ -56,6 +61,7 @@ static void init_e820_memory(pfn_t minconf, bool low)
 		uint64_t base64 = e820table[i].base_address;
 		uint64_t size64 = e820table[i].size;
 
+// AMD64架构，这个宏不会被定义
 #ifdef KARCH_ia32
 		/*
 		 * Restrict the e820 table entries to 32-bits.
@@ -94,7 +100,7 @@ static void init_e820_memory(pfn_t minconf, bool low)
 			if (low) {
 				// 低内存：对AMD64架构，是0-2GB。
 				if ((minconf < pfn) || (minconf >= pfn + count))
-					// ——————————————————
+					// ————————————————————————————————————
 					// |		AP_KERNEL				  |
 					// |								  |----> pfn2
 					// |								  |
@@ -110,7 +116,7 @@ static void init_e820_memory(pfn_t minconf, bool low)
 					// 将新的conf设置为pfn。
 					conf = pfn;
 				else
-					// ——————————————————
+					// ————————————————————————————————————
 					// |		AP_KERNEL				  |
 					// |								  |
 					// |								  |
@@ -193,11 +199,14 @@ void frame_low_arch_init(void)
 #ifdef CONFIG_SMP
 		// 如果是多核系统，之前会把内核copy到AP_BOOT_OFFSET上，长度是unmapped_size
 		// 所以需要确定多核心系统需要设置的内核占用内存。。。
+
 		size_t unmapped_size =
 		    (uintptr_t) unmapped_end - BOOT_OFFSET;
-
 		// FRAME_WIDTH = 12
+        // 页大小是4K
 		// ADDR2PFN(addr) = ((addr) >> FRAME_WIDTH)
+        // 0x14000 = AP_BOOT_OFFSET + unmapped_size
+        // ADDR2PFN(AP_BOOT_OFFSET + unmapped_size) = 0x14 = 20
 		minconf = max(minconf,
 		    ADDR2PFN(AP_BOOT_OFFSET + unmapped_size));
 #endif
