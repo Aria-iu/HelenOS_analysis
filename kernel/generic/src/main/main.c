@@ -250,8 +250,7 @@ void main_bsp_separated_stack(void)
 	slab_cache_init();
 	// 初始化malloc分配器。malloc依赖slab分配器来分配内存。
 	malloc_init();
-	// 内存区域初始化，是在slab分配器的基础上创建了一个名为ra_segment_t的slab_cash
-	// 用来分配 ra_segment_t 结构的内存。
+	// 资源分配器
 	ra_init();
 	// 在slab分配器的基础上创建了一个名为sysinfo_item_t的slab_cash
 	// 用来分配 sysinfo_item_t的内存。
@@ -259,8 +258,21 @@ void main_bsp_separated_stack(void)
 	sysinfo_init();
 
 	// 初始化地址空间子系统。address space init
+    // 在这里创建了内核的地址空间。--->  as_t *AS_KERNEL;
 	as_init();
 	// 分页机制初始化。
+    // 写入页表到cr3寄存器，但是没有设置cr0的pg位，因为早在boot时，我们就初始化了启动页表，开启了分页机制。
+        // 因为在multiboot2.S中，
+        /*
+ 		* 	 Enable paging to activate long mode (set CR0.PG = 1) */
+			// 将控制寄存器CR0的值加载到EAX寄存器中。CR0寄存器用于控制处理器的某些功能，如分页等。
+			//	movl %cr0, %eax
+			// 将EAX寄存器的值与CR0_PG的值进行逻辑或操作。
+			// CR0_PG是分页的位掩码，设置此位可以启用分页。
+			//	orl $CR0_PG, %eax
+			// 将EAX寄存器的值（即已设置分页的CR0值）写回CR0寄存器，
+			// 从而启用分页并激活长模式。
+			//	movl %eax, %cr0
 	page_init();
 	// TLB是硬件实现，直接使用即可。
 	tlb_init();

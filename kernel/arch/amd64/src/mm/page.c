@@ -66,7 +66,9 @@ void page_arch_init(void)
 	 * 将所有low-memory的帧映射到对于的内核虚拟地址。
 	 */
 	// config.identity_size = 0x80000000
-	// config.physmem_end   = ？？ 内存边界大小一般会大于2G，所以这里通常会取identity_size
+    // QEMU中物理内存的界限（参考截图mem2.png），其中可以内存（aviliable）最大到 7fdf000
+	// config.physmem_end   = 7fdf000
+    // 这里将 0-7fdf000，按照FRAME_SIZE大小，0-7fdf，加入到AS_KERNEL内核地址空间的映射中。
 	for (cur = 0; cur < min(config.identity_size, config.physmem_end);
 	    cur += FRAME_SIZE)
 		page_mapping_insert(AS_KERNEL, PA2KA(cur), cur, identity_flags);

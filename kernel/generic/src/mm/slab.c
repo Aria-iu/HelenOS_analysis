@@ -118,8 +118,20 @@
 #include <stdlib.h>
 
 // 初始化了一个自旋锁 slab_cache_lock，用于保护访问 slab_cache_t 相关的共享资源。
+// static irq_spinlock_t slab_cache_lock =
+// {
+//		.lock =  { .name = "slab_cache_lock", .flag = ATOMIC_FLAG_INIT },
+//		.guard = false,
+//		.ipl = 0,
+//	};
 IRQ_SPINLOCK_STATIC_INITIALIZE(slab_cache_lock);
 // 初始化了一个链表 slab_cache_list，用于存放所有的 SLAB 缓存对象（slab_cache_t）。
+// list_t slab_cache_list = {
+//		.head = {
+//			.prev = &(slab_cache_list).head,
+//			.next = &(slab_cache_list).head
+//		}
+//	};
 static LIST_INITIALIZE(slab_cache_list);
 
 /** Magazine cache */

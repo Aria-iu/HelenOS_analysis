@@ -149,6 +149,25 @@ _NO_TRACE static size_t as_destructor(void *obj)
 void as_init(void)
 {
 	// AMD64架构地址空间初始化调用的是ia32架构的as_arch_init。
+    // 因为不同的架构，对于地址空间的操作是不同的，抽象出来一组操作
+    /*
+	*	typedef struct {
+	*		pte_t *(*page_table_create)(unsigned int);
+	*		void (*page_table_destroy)(pte_t *);
+	*		void (*page_table_lock)(as_t *, bool);
+	*		void (*page_table_unlock)(as_t *, bool);
+	*		bool (*page_table_locked)(as_t *);
+	*	} as_operations_t;
+ 	*
+	 * AMD64使用的是
+	 * const as_operations_t as_pt_operations = {
+	*	.page_table_create = ptl0_create,
+	*	.page_table_destroy = ptl0_destroy,
+	*	.page_table_lock = pt_lock,
+	*	.page_table_unlock = pt_unlock,
+	*	.page_table_locked = pt_locked,
+	*	};
+	 * */
 	as_arch_init();
 
 	// 创建一个slab分配器分配结构体 as_t
@@ -188,6 +207,7 @@ as_t *as_create(unsigned int flags)
 	// 初始化這個字典。
 	odict_initialize(&as->as_areas, as_areas_getkey, as_areas_cmp);
 
+    // FLAG_AS_KERNEL = 1<<0
 	if (flags & FLAG_AS_KERNEL)
 		as->asid = ASID_KERNEL;
 	else
@@ -199,6 +219,26 @@ as_t *as_create(unsigned int flags)
 #ifdef AS_PAGE_TABLE
 	// AMD64结构走这个分支
 	// 创建一个页表，设置为内核地址空间as的genarch.page_table字段。
+
+    /*这个字段是pte的类型
+*
+	* /** Page Table Entry. */
+//	typedef struct {
+//		unsigned int present : 1;
+//		unsigned int writeable : 1;
+//		unsigned int uaccessible : 1;
+//		unsigned int page_write_through : 1;
+//		unsigned int page_cache_disable : 1;
+//		unsigned int accessed : 1;
+//		unsigned int dirty : 1;
+//		unsigned int pat : 1;
+//		unsigned int global : 1;
+//		unsigned int soft_valid : 1;  /**< Valid content even if present bit is cleared. */
+//		unsigned int avl : 2;
+//		unsigned long addr_12_51 : 40;
+//		unsigned int reserved : 11;
+//		unsigned int no_execute : 1;
+//	} __attribute__((packed)) pte_t;
 	as->genarch.page_table = page_table_create(flags);
 #else
 	page_table_create(flags);
